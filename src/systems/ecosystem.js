@@ -2,7 +2,7 @@
 // Replaces flat 0.5/tick regeneration with soil fertility, water levels,
 // biodiversity, and extraction pressure mechanics.
 
-import { getProperties } from '../materials.js';
+import { getProperties } from './materials.js';
 
 // --- Zone-specific ecosystem profiles ---
 const ZONE_PROFILES = {
