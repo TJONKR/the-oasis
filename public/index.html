@@ -52,6 +52,7 @@
   <div><span class="hud-label">Tile: </span><span class="hud-value" id="hud-pos">-</span></div>
 </div></div>
 <div id="agent-panel"><div class="hud-title" style="margin-bottom:8px">👥 Agents</div><div id="agent-list"></div></div>
+<div id="agent-detail" style="display:none;position:fixed;top:16px;right:290px;z-index:10;width:280px;background:rgba(10,14,20,0.92);border:1px solid rgba(197,200,198,0.2);border-radius:8px;padding:12px 16px;backdrop-filter:blur(8px);font-size:12px;color:#abb2bf;line-height:1.6"></div>
 <div id="news-panel"><div class="hud-title" style="margin-bottom:6px">📜 World News</div><div id="news-list"></div></div>
 <div id="controls">
   <button class="ctrl-btn" onclick="spawnAgent()">🌱 Spawn</button>
@@ -282,6 +283,20 @@ function render() {
       ctx.fillRect(bx, by, bw, bh);
       ctx.fillStyle = agent.hp > 50 ? '#98c379' : agent.hp > 25 ? '#e6c07b' : '#e06c75';
       ctx.fillRect(bx, by, bw * (agent.hp / 100), bh);
+      
+      // Action/intent label (thought bubble)
+      const intentText = agent.mind?.intent?.reason || agent.mind?.intent?.action || agent.mind?.action || '';
+      if (intentText && intentText !== 'idle') {
+        const ACTION_ICONS = { move:'🚶', gather:'🧺', rest:'😴', eat:'🍎', craft:'⚒️', experiment:'🔬', chat:'💬', gift:'🎁', fight:'⚔️', explore:'🧭', build:'🏗️' };
+        const icon = ACTION_ICONS[agent.mind?.intent?.action || agent.mind?.action] || '💭';
+        const label = icon + ' ' + (intentText.length > 18 ? intentText.slice(0,18)+'…' : intentText);
+        ctx.font = `${Math.max(5, 7)}px monospace`;
+        const tw = ctx.measureText(label).width;
+        ctx.fillStyle = 'rgba(0,0,0,0.7)';
+        ctx.fillRect(ax - tw/2 - 3, ay - spriteH * 0.28 - 8, tw + 6, 10);
+        ctx.fillStyle = '#e5c07b';
+        ctx.fillText(label, ax - tw/2, ay - spriteH * 0.28);
+      }
     } else if (camera.zoom >= 0.5) {
       // At lower zoom, just show a dot marker
       ctx.fillStyle = '#e6c07b';
@@ -325,6 +340,7 @@ function updateNewsList() {
   document.getElementById('news-list').innerHTML = news.slice(0,30).map(n =>
     `<div class="news-item"><span class="name">${n.name||'???'}</span> ${n.message}</div>`
   ).join('');
+  if (selectedAgentId) updateAgentDetail();
 }
 
 function updateMinimap() {
@@ -386,11 +402,35 @@ canvas.addEventListener('touchmove', e => {
 canvas.addEventListener('touchend', () => dragging = false);
 
 // Actions
+let selectedAgentId = null;
 function focusAgent(id) {
   const a = agents.find(a => a.id === id); if (!a || !tileInfo) return;
+  selectedAgentId = id;
   camera.zoom = 3;
   camera.x = -a.tileX * tileInfo.tileSize * camera.zoom + window.innerWidth/2;
   camera.y = -a.tileY * tileInfo.tileSize * camera.zoom + window.innerHeight/2;
+  updateAgentDetail();
+}
+function updateAgentDetail() {
+  const el = document.getElementById('agent-detail');
+  if (!selectedAgentId) { el.style.display = 'none'; return; }
+  const a = agents.find(a => a.id === selectedAgentId);
+  if (!a) { el.style.display = 'none'; return; }
+  el.style.display = 'block';
+  const mind = a.mind || {};
+  const intent = mind.intent || {};
+  const ACTION_ICONS = { move:'🚶', gather:'🧺', rest:'😴', eat:'🍎', craft:'⚒️', experiment:'🔬', chat:'💬', gift:'🎁', fight:'⚔️', explore:'🧭', build:'🏗️', idle:'💤' };
+  const icon = ACTION_ICONS[intent.action || mind.action] || '💭';
+  const traits = (mind.traits || []).join(', ') || '???';
+  const inv = (a.inventory || []).slice(0, 10).map(i => `${i.name}×${i.quantity||1}`).join(', ') || 'empty';
+  el.innerHTML = `
+    <div class="hud-title" style="margin-bottom:6px">${a.name} <span style="color:#636d83;font-weight:normal">${a.stats?.title||''}</span> <span onclick="selectedAgentId=null;updateAgentDetail()" style="cursor:pointer;float:right">✕</span></div>
+    <div style="color:#98c379">❤️ ${Math.round(a.hp||100)} &nbsp; ⚡ ${Math.round(a.energy||0)} &nbsp; 🍖 ${Math.round(100-(a.hunger||0))}</div>
+    <div style="color:#e5c07b;margin-top:4px">${icon} ${intent.reason || intent.action || mind.action || 'idle'}</div>
+    <div style="color:#636d83;margin-top:2px">😊 ${mind.mood || '?'} &nbsp; 🎭 ${traits}</div>
+    <div style="color:#abb2bf;margin-top:4px;font-size:10px">📦 ${inv}</div>
+    <div style="color:#636d83;margin-top:2px;font-size:10px">📍 (${a.tileX}, ${a.tileY}) ${a.zone||''}</div>
+  `;
 }
 async function spawnAgent() {
   const name = prompt('Agent name:', `Wanderer-${Math.floor(Math.random()*999)}`);

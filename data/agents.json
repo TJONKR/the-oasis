@@ -8,8 +8,8 @@
     "y": 401,
     "zone": "coast",
     "hp": 100,
-    "energy": 42.5,
-    "hunger": 0.04,
+    "energy": 40.5,
+    "hunger": 0.28,
     "temperature": 20,
     "inventory": [
       {
@@ -71,7 +71,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 25067,
+      "xp": 25217,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -87,8 +87,8 @@
     "y": 414,
     "zone": "coast",
     "hp": 100,
-    "energy": 49.5,
-    "hunger": 0.5199999999999999,
+    "energy": 53.5,
+    "hunger": 0.28,
     "temperature": 20,
     "inventory": [
       {
@@ -191,13 +191,13 @@
     "y": 442,
     "zone": "coast",
     "hp": 100,
-    "energy": 56.200000000002746,
-    "hunger": 0.16,
+    "energy": 50.500000000003595,
+    "hunger": 0.36,
     "temperature": 20,
     "inventory": [
       {
         "name": "fiber",
-        "quantity": 19,
+        "quantity": 13,
         "properties": {
           "hardness": 1,
           "conductivity": 0,
@@ -247,7 +247,7 @@
       },
       {
         "name": "herbs",
-        "quantity": 19,
+        "quantity": 12,
         "properties": {
           "hardness": 0,
           "conductivity": 0,
@@ -279,7 +279,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 165912,
+      "xp": 165951,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -295,8 +295,8 @@
     "y": 412,
     "zone": "coast",
     "hp": 100,
-    "energy": 50.90000000000353,
-    "hunger": 1.4000000000000006,
+    "energy": 51.80000000000443,
+    "hunger": 0.8000000000000002,
     "temperature": 20,
     "inventory": [
       {
@@ -349,8 +349,8 @@
     "y": 450,
     "zone": "grass",
     "hp": 100,
-    "energy": 50.60000000000352,
-    "hunger": 0.68,
+    "energy": 55.10000000000461,
+    "hunger": 0.39999999999999997,
     "temperature": 20,
     "inventory": [
       {
@@ -478,8 +478,8 @@
     "y": 440,
     "zone": "coast",
     "hp": 100,
-    "energy": 50,
-    "hunger": 0.36,
+    "energy": 53,
+    "hunger": 0.32,
     "temperature": 20,
     "inventory": [
       {
@@ -557,8 +557,8 @@
     "y": 442,
     "zone": "coast",
     "hp": 100,
-    "energy": 35.599999999999966,
-    "hunger": 80.0000000000056,
+    "energy": 33.599999999999966,
+    "hunger": 78.0000000000081,
     "temperature": 20,
     "inventory": [
       {
@@ -636,8 +636,8 @@
     "y": 442,
     "zone": "coast",
     "hp": 100,
-    "energy": 33,
-    "hunger": 78.00000000000595,
+    "energy": 28,
+    "hunger": 80.00000000000846,
     "temperature": 20,
     "inventory": [
       {
@@ -715,13 +715,13 @@
     "y": 442,
     "zone": "sand",
     "hp": 100,
-    "energy": 28.200000000001943,
-    "hunger": 0.24000000000000002,
+    "energy": 54.40000000000235,
+    "hunger": 0.08,
     "temperature": 20,
     "inventory": [
       {
         "name": "fiber",
-        "quantity": 1,
+        "quantity": 3,
         "properties": {
           "hardness": 1,
           "conductivity": 0,
@@ -746,7 +746,7 @@
       },
       {
         "name": "herbs",
-        "quantity": 1
+        "quantity": 3
       }
     ],
     "knowledge": [],
@@ -757,7 +757,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 161600,
+      "xp": 161665,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -773,8 +773,8 @@
     "y": 412,
     "zone": "coast",
     "hp": 100,
-    "energy": 52.900000000004866,
-    "hunger": 0.4799999999999999,
+    "energy": 57.40000000000596,
+    "hunger": 0.04,
     "temperature": 20,
     "inventory": [
       {
@@ -827,7 +827,7 @@
     "y": 395,
     "zone": "coast",
     "hp": 100,
-    "energy": 54,
+    "energy": 52,
     "hunger": 0.08,
     "temperature": 20,
     "inventory": [
@@ -906,8 +906,8 @@
     "y": 438,
     "zone": "coast",
     "hp": 100,
-    "energy": 56,
-    "hunger": 0.04,
+    "energy": 46,
+    "hunger": 0.12,
     "temperature": 20,
     "inventory": [
       {
@@ -979,14 +979,14 @@
   "29028972-168e-48ca-8590-5fb898719a26": {
     "id": "29028972-168e-48ca-8590-5fb898719a26",
     "name": "Agent-13",
-    "tileX": 1172,
-    "tileY": 464,
-    "x": 1172,
-    "y": 464,
+    "tileX": 1173,
+    "tileY": 465,
+    "x": 1173,
+    "y": 465,
     "zone": "grass",
     "hp": 100,
-    "energy": 48.900000000002336,
-    "hunger": 0.36,
+    "energy": 56.500000000002984,
+    "hunger": 0.04,
     "temperature": 20,
     "inventory": [
       {
@@ -1016,7 +1016,7 @@
       },
       {
         "name": "herbs",
-        "quantity": 1
+        "quantity": 2
       }
     ],
     "knowledge": [],
@@ -1027,7 +1027,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 162461,
+      "xp": 162473,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -1043,13 +1043,13 @@
     "y": 419,
     "zone": "coast",
     "hp": 100,
-    "energy": 50.10000000000066,
-    "hunger": 0.16,
+    "energy": 56.900000000000844,
+    "hunger": 0.08,
     "temperature": 20,
     "inventory": [
       {
         "name": "fiber",
-        "quantity": 29,
+        "quantity": 32,
         "properties": {
           "hardness": 1,
           "conductivity": 0,
@@ -1123,7 +1123,7 @@
     "zone": "coast",
     "hp": 100,
     "energy": 33.50000000000149,
-    "hunger": 78.88000000000595,
+    "hunger": 78.88000000000845,
     "temperature": 20,
     "inventory": [],
     "knowledge": [],
@@ -1150,60 +1150,10 @@
     "y": 418,
     "zone": "coast",
     "hp": 100,
-    "energy": 55.70000000000226,
-    "hunger": 0.08,
+    "energy": 52.300000000002825,
+    "hunger": 0.12,
     "temperature": 20,
     "inventory": [
-      {
-        "name": "fiber",
-        "quantity": 6,
-        "properties": {
-          "hardness": 1,
-          "conductivity": 0,
-          "flammability": 5,
-          "toxicity": 0,
-          "luminosity": 0,
-          "volatility": 0,
-          "organic": 1,
-          "weight": 0.1,
-          "decay_rate": 0.1,
-          "energy": 2,
-          "temperature": 20,
-          "resonance": 0,
-          "melt_point": 0,
-          "ignition": 200,
-          "sharpness": 0,
-          "solubility": 0,
-          "malleability": 8,
-          "brittleness": 1,
-          "fertility": 0
-        }
-      },
-      {
-        "name": "herbs",
-        "quantity": 1,
-        "properties": {
-          "hardness": 0,
-          "conductivity": 0,
-          "flammability": 4,
-          "toxicity": 0,
-          "luminosity": 0,
-          "volatility": 1,
-          "organic": 1,
-          "weight": 0.05,
-          "decay_rate": 0.35,
-          "energy": 10,
-          "temperature": 20,
-          "resonance": 1,
-          "melt_point": 0,
-          "ignition": 160,
-          "sharpness": 0,
-          "solubility": 4,
-          "malleability": 1,
-          "brittleness": 1,
-          "fertility": 3
-        }
-      },
       {
         "name": "shells",
         "quantity": 1,
@@ -1263,7 +1213,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 65005,
+      "xp": 65026,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -1279,8 +1229,8 @@
     "y": 449,
     "zone": "coast",
     "hp": 100,
-    "energy": 45.50000000000321,
-    "hunger": 1.5600000000000007,
+    "energy": 50.0000000000042,
+    "hunger": 1.0000000000000002,
     "temperature": 20,
     "inventory": [
       {
@@ -1384,7 +1334,7 @@
     "zone": "coast",
     "hp": 100,
     "energy": 33.89999999999998,
-    "hunger": 78.80000000000838,
+    "hunger": 76.80000000001088,
     "temperature": 20,
     "inventory": [
       {
@@ -1462,8 +1412,8 @@
     "y": 419,
     "zone": "coast",
     "hp": 100,
-    "energy": 47.500000000001265,
-    "hunger": 1.2000000000000004,
+    "energy": 49.000000000001705,
+    "hunger": 0.43999999999999995,
     "temperature": 20,
     "inventory": [
       {
@@ -1493,7 +1443,7 @@
       },
       {
         "name": "fiber",
-        "quantity": 25,
+        "quantity": 28,
         "properties": {
           "hardness": 1,
           "conductivity": 0,
@@ -1543,7 +1493,7 @@
       },
       {
         "name": "herbs",
-        "quantity": 26,
+        "quantity": 27,
         "properties": {
           "hardness": 0,
           "conductivity": 0,
@@ -1591,13 +1541,13 @@
     "y": 465,
     "zone": "grass",
     "hp": 100,
-    "energy": 41.900000000002564,
-    "hunger": 0.8800000000000002,
+    "energy": 47.10000000000332,
+    "hunger": 0.43999999999999995,
     "temperature": 20,
     "inventory": [
       {
         "name": "flowers",
-        "quantity": 2,
+        "quantity": 4,
         "properties": {
           "hardness": 0,
           "conductivity": 0,
@@ -1622,7 +1572,7 @@
       },
       {
         "name": "herbs",
-        "quantity": 2,
+        "quantity": 3,
         "properties": {
           "hardness": 0,
           "conductivity": 0,
@@ -1654,7 +1604,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 162921,
+      "xp": 163035,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -1670,8 +1620,8 @@
     "y": 449,
     "zone": "coast",
     "hp": 100,
-    "energy": 52.400000000002535,
-    "hunger": 0.28,
+    "energy": 42.20000000000337,
+    "hunger": 0.5599999999999999,
     "temperature": 20,
     "inventory": [
       {
@@ -1874,8 +1824,8 @@
     "y": 412,
     "zone": "coast",
     "hp": 100,
-    "energy": 44.90000000000379,
-    "hunger": 2.080000000000001,
+    "energy": 54.90000000000474,
+    "hunger": 0.36,
     "temperature": 20,
     "inventory": [],
     "knowledge": [],
@@ -1902,8 +1852,8 @@
     "y": 449,
     "zone": "coast",
     "hp": 100,
-    "energy": 54.90000000000272,
-    "hunger": 0.04,
+    "energy": 53.40000000000359,
+    "hunger": 0.24000000000000002,
     "temperature": 20,
     "inventory": [
       {
@@ -1965,7 +1915,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 166582,
+      "xp": 167110,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -1981,8 +1931,8 @@
     "y": 425,
     "zone": "coast",
     "hp": 100,
-    "energy": 37,
-    "hunger": 0.39999999999999997,
+    "energy": 46,
+    "hunger": 0.16,
     "temperature": 20,
     "inventory": [
       {
@@ -2044,7 +1994,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 48918,
+      "xp": 49088,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -2060,8 +2010,8 @@
     "y": 449,
     "zone": "coast",
     "hp": 100,
-    "energy": 50.90000000000349,
-    "hunger": 0.9200000000000003,
+    "energy": 55.40000000000458,
+    "hunger": 0.36,
     "temperature": 20,
     "inventory": [
       {
@@ -2164,13 +2114,13 @@
     "y": 465,
     "zone": "grass",
     "hp": 100,
-    "energy": 52.8000000000023,
-    "hunger": 0.16,
+    "energy": 55.400000000003004,
+    "hunger": 0.32,
     "temperature": 20,
     "inventory": [
       {
         "name": "flowers",
-        "quantity": 21,
+        "quantity": 19,
         "properties": {
           "hardness": 0,
           "conductivity": 0,
@@ -2220,7 +2170,7 @@
       },
       {
         "name": "herbs",
-        "quantity": 19,
+        "quantity": 17,
         "properties": {
           "hardness": 0,
           "conductivity": 0,
@@ -2252,7 +2202,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 162202,
+      "xp": 162304,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -2268,8 +2218,8 @@
     "y": 413,
     "zone": "coast",
     "hp": 100,
-    "energy": 33.99999999999997,
-    "hunger": 78.00000000000844,
+    "energy": 34.99999999999997,
+    "hunger": 80.00000000001094,
     "temperature": 20,
     "inventory": [
       {
@@ -2372,8 +2322,8 @@
     "y": 412,
     "zone": "coast",
     "hp": 100,
-    "energy": 55.20000000000452,
-    "hunger": 0.39999999999999997,
+    "energy": 51.40000000000562,
+    "hunger": 0.8000000000000002,
     "temperature": 20,
     "inventory": [
       {
@@ -2476,13 +2426,13 @@
     "y": 442,
     "zone": "coast",
     "hp": 100,
-    "energy": 51.100000000002666,
-    "hunger": 1.2000000000000004,
+    "energy": 57.400000000003516,
+    "hunger": 0.04,
     "temperature": 20,
     "inventory": [
       {
         "name": "herbs",
-        "quantity": 20,
+        "quantity": 21,
         "properties": {
           "hardness": 0,
           "conductivity": 0,
@@ -2507,7 +2457,7 @@
       },
       {
         "name": "fiber",
-        "quantity": 20,
+        "quantity": 21,
         "properties": {
           "hardness": 1,
           "conductivity": 0,
@@ -2584,13 +2534,13 @@
     "y": 442,
     "zone": "coast",
     "hp": 100,
-    "energy": 53.200000000002746,
-    "hunger": 0.5199999999999999,
+    "energy": 50.30000000000361,
+    "hunger": 1.2400000000000004,
     "temperature": 20,
     "inventory": [
       {
         "name": "fiber",
-        "quantity": 29,
+        "quantity": 32,
         "properties": {
           "hardness": 1,
           "conductivity": 0,
@@ -2615,7 +2565,7 @@
       },
       {
         "name": "herbs",
-        "quantity": 21,
+        "quantity": 24,
         "properties": {
           "hardness": 0,
           "conductivity": 0,
@@ -2713,8 +2663,8 @@
     "y": 412,
     "zone": "coast",
     "hp": 100,
-    "energy": 44.10000000000433,
-    "hunger": 1.880000000000001,
+    "energy": 56.90000000000532,
+    "hunger": 0.16,
     "temperature": 20,
     "inventory": [],
     "knowledge": [],
@@ -2741,8 +2691,8 @@
     "y": 449,
     "zone": "coast",
     "hp": 100,
-    "energy": 43.80000000000332,
-    "hunger": 1.800000000000001,
+    "energy": 56.60000000000434,
+    "hunger": 0.2,
     "temperature": 20,
     "inventory": [
       {

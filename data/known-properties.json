@@ -602,6 +602,27 @@
       "solubility",
       "ignition",
       "resonance"
+    ],
+    "driftwood": [
+      "weight",
+      "energy",
+      "melt_point",
+      "luminosity",
+      "malleability",
+      "fertility",
+      "hardness",
+      "volatility",
+      "conductivity",
+      "temperature",
+      "ignition",
+      "sharpness",
+      "decay_rate",
+      "resonance",
+      "toxicity",
+      "brittleness",
+      "solubility",
+      "organic",
+      "flammability"
     ]
   },
   "d56be782-7d0b-48d3-b5bc-cd2f59d54c48": {

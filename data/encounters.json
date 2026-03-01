@@ -237,15 +237,6 @@
       {
         "type": "discovery",
         "effects": [
-          "Found 19 coins",
-          "Gained 15 XP"
-        ],
-        "survived": true,
-        "timestamp": 1772387752665
-      },
-      {
-        "type": "discovery",
-        "effects": [
           "Found 12 coins",
           "Gained 15 XP"
         ],
@@ -323,6 +314,15 @@
         ],
         "survived": true,
         "timestamp": 1772391195675
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 18 energy (now 35.90000000000218)",
+          "herbs damaged (quantity: 1)"
+        ],
+        "survived": true,
+        "timestamp": 1772392001847
       }
     ],
     "fe02d354-e4fb-4535-8cad-e9d9e4828245": [
