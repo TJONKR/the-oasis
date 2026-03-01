@@ -38,6 +38,7 @@ import { initDecayLifecycle } from './src/systems/decay-lifecycle.js';
 import { initOrganicGrowth } from './src/systems/organic-growth.js';
 import { initGasSystem } from './src/systems/gas-system.js';
 import { initLightning } from './src/systems/lightning.js';
+import { initInnerMonologue } from './src/systems/inner-monologue.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -298,6 +299,11 @@ shared.gasSystem = gasSystem;
 // Lightning
 const lightningSystem = initLightning(shared);
 
+// Inner Monologue — LLM-driven agent psychology
+const innerMonologue = initInnerMonologue(shared);
+innerMonologue.setupRoutes(app);
+shared.innerMonologue = innerMonologue;
+
 console.log('   ✅ All systems initialized');
 
 // ═══════════════════════════════════════
@@ -418,6 +424,9 @@ function simulationTick() {
   organicGrowth.tick(tick, gameTime);
   gasSystem.tick(tick, weatherNow);
   lightningSystem.tick(tick, gameTime, weatherNow);
+  
+  // 3d. Inner monologue — LLM-driven agent thoughts (async, non-blocking)
+  innerMonologue.tick(tick).catch(err => console.error('[inner-monologue]', err.message));
   
   // 4. World Master (events, narratives) — less frequent
   if (tick % 50 === 0 && worldMaster.tick) {

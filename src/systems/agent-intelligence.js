@@ -785,6 +785,10 @@ export function initAgentIntelligence(shared) {
     if (shared.proficiency) shared.proficiency.onAction(agent.id, 'chat', { zone: agent.zone });
     addMemoryEvent(mind, `Chatted with ${other.name}`);
     addWorldNews('chat', agent.id, agent.name, `${agent.name} and ${other.name} had a conversation`, agent.zone);
+    // Strengthen psychological bond
+    if (shared.innerMonologue?.strengthenBond) {
+      shared.innerMonologue.strengthenBond(agent.id, other.id, 3);
+    }
     agent.energy = Math.max(0, agent.energy - (ACTIONS.chat.energy || 1));
   }
 

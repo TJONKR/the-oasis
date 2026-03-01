@@ -79,6 +79,7 @@ let worldFires = []; // persistent fires from server { tileX, tileY, heat }
 let gasClouds = []; // { tileX, tileY, type, density, color }
 let growthSites = []; // { tileX, tileY, progress, plantType }
 let lightningFlash = 0; // timestamp of last flash
+let agentThoughts = {}; // agentId → { text, emotion, time }
 let camera = { x: 0, y: 0, zoom: 4 };
 let dragging = false, dragStart = {x:0,y:0}, cameraStart = {x:0,y:0};
 let ws = null;
@@ -137,6 +138,10 @@ function connect() {
     } else if (msg.type === 'craftResult') {
       const ax = agents.find(a => a.id === msg.agentId);
       if (ax) spawnEffect('craft', ax.tileX, ax.tileY, 1500);
+    } else if (msg.type === 'agentThought') {
+      // Store thought for display
+      if (!agentThoughts) window.agentThoughts = {};
+      agentThoughts[msg.agentId] = { text: msg.thought, emotion: msg.emotion, time: performance.now() };
     } else if (msg.type === 'lightning') {
       // Screen flash + bolt effect
       lightningFlash = performance.now();
@@ -414,6 +419,24 @@ function render() {
       ctx.fillRect(bx, by, bw, bh);
       ctx.fillStyle = agent.hp > 50 ? '#98c379' : agent.hp > 25 ? '#e6c07b' : '#e06c75';
       ctx.fillRect(bx, by, bw * (agent.hp / 100), bh);
+      
+      // LLM inner thought (fades after 10 seconds)
+      const thought = agentThoughts[agent.id];
+      if (thought && performance.now() - thought.time < 10000) {
+        const fadeAlpha = Math.max(0, 1 - (performance.now() - thought.time) / 10000);
+        const EMOTION_COLORS = { curious:'#61afef', afraid:'#e06c75', determined:'#98c379', lonely:'#c678dd', excited:'#e6c07b', content:'#98c379', anxious:'#e06c75', angry:'#e06c75', hopeful:'#61afef', grieving:'#c678dd' };
+        const tColor = EMOTION_COLORS[thought.emotion] || '#c5c8c6';
+        const tText = '💭 "' + (thought.text.length > 30 ? thought.text.slice(0,30)+'…' : thought.text) + '"';
+        ctx.font = `${Math.max(5, 6)}px monospace`;
+        const ttw = ctx.measureText(tText).width;
+        ctx.fillStyle = `rgba(0,0,0,${(0.8*fadeAlpha).toFixed(2)})`;
+        ctx.fillRect(ax - ttw/2 - 4, ay - spriteH * 0.42 - 8, ttw + 8, 10);
+        ctx.fillStyle = tColor.replace(')', `,${fadeAlpha})`).replace('rgb', 'rgba');
+        ctx.globalAlpha = fadeAlpha;
+        ctx.fillStyle = tColor;
+        ctx.fillText(tText, ax - ttw/2, ay - spriteH * 0.42);
+        ctx.globalAlpha = 1;
+      }
       
       // Action/intent label (thought bubble)
       const intentText = agent.mind?.intent?.reason || agent.mind?.intent?.action || agent.mind?.action || '';
