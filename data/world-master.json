@@ -1,12 +1,12 @@
 {
-  "lastTick": "2026-03-01T21:19:19.883Z",
+  "lastTick": "2026-03-01T21:39:31.799Z",
   "lastNarrative": null,
   "dangers": [],
   "zoneModifiers": {},
   "npcDirectives": [],
   "consequences": [
     {
-      "id": "consequence_4bd3f9af",
+      "id": "consequence_cd2f8aa7",
       "type": "famine",
       "zones": [
         "grass",
@@ -21,12 +21,12 @@
         "path"
       ],
       "description": "🍂 Famine",
-      "startedAt": 1772399128894,
-      "expiresAt": 1772400328894
+      "startedAt": 1772400486779,
+      "expiresAt": 1772401686779
     }
   ],
   "precursors": [],
-  "tickCount": 1520,
+  "tickCount": 1567,
   "activeEvents": [],
   "nextEventTrigger": 1772416809316.0886
 }

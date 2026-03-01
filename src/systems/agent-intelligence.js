@@ -393,19 +393,74 @@ export function initAgentIntelligence(shared) {
     const atmosphere = shared.weather?.getAtmosphere?.();
     const isNight = gameTime?.period === 'night';
     const weatherId = weather?.id || atmosphere?.weather;
+    const needsSystem = shared.needsSystem;
 
-    // GATHER — score each visible resource
+    // ── NEEDS-DRIVEN SCORING ──
+    // Get the agent's needs state and compute Maslow-weighted modifiers
+    let needs = null;
+    let mods = {};
+    if (needsSystem) {
+      needs = needsSystem.initAgent(agent.id); // ensures init
+      needsSystem.updateNeeds(agent, needs, visible);
+      mods = needsSystem.getScoreModifiers(agent, needs);
+    }
+
+    // ── EMERGENCY OVERRIDES (Maslow Level 0 — physiological crisis) ──
+    if (agent.hunger > 70 && hasFood(agent)) {
+      return { action: 'eat', targetX: agent.tileX, targetY: agent.tileY, score: 999, reason: 'Starving — must eat!' };
+    }
+    if (agent.energy < 10) {
+      return { action: 'rest', targetX: agent.tileX, targetY: agent.tileY, score: 999, reason: 'Exhausted — must rest!' };
+    }
+
+    // ── FLEE IMMEDIATE DANGER (Maslow Level 1 — safety) ──
+    // Flee gas
+    if (shared.gasSystem?.gasClouds) {
+      const gas = shared.gasSystem.gasClouds.get(`${agent.tileX},${agent.tileY}`);
+      if (gas && gas.toxicity > 0) {
+        const awayX = Math.max(0, Math.min(1999, agent.tileX + Math.floor(Math.random()*12-6)));
+        const awayY = Math.max(0, Math.min(1999, agent.tileY + Math.floor(Math.random()*12-6)));
+        intents.push({ action: 'explore', targetX: awayX, targetY: awayY, score: 200, reason: 'Flee toxic gas!' });
+      }
+    }
+    // Flee fire
+    if (shared.temperature?.hasNearbyFire?.(agent.tileX, agent.tileY, 1)) {
+      const awayX = Math.max(0, Math.min(1999, agent.tileX + Math.floor(Math.random()*10-5)));
+      const awayY = Math.max(0, Math.min(1999, agent.tileY + Math.floor(Math.random()*10-5)));
+      intents.push({ action: 'explore', targetX: awayX, targetY: awayY, score: 180, reason: 'Too close to fire!' });
+    }
+    // Flee dangers
+    for (const danger of visible.dangers) {
+      let score = (mods.flee || 50) + getTraitBonus(mind, 'explore');
+      if (mind.personality.traits.includes('cautious')) score += 30;
+      if (mind.personality.traits.includes('bold')) score -= 20;
+      const awayX = agent.tileX + Math.sign(agent.tileX - danger.x) * 8;
+      const awayY = agent.tileY + Math.sign(agent.tileY - danger.y) * 8;
+      const tx = Math.max(0, Math.min((worldGrid.width || 2000) - 1, awayX));
+      const ty = Math.max(0, Math.min((worldGrid.height || 2000) - 1, awayY));
+      intents.push({ action: 'explore', targetX: tx, targetY: ty, score, reason: 'Fleeing danger!' });
+    }
+
+    // ── GATHER — Maslow: physiological (food) + esteem (crafting materials) ──
     for (const res of visible.resources) {
-      let score = 20 + getTraitBonus(mind, 'gather');
-      if (agent.hunger > 50 && isFoodResource(res.resource)) score += 40;
-      if (agent.hunger > 70 && isFoodResource(res.resource)) score += 20;
-      score -= res.distance * 2;
+      // Skip depleted tiles (Optimal Foraging Theory)
+      if (needsSystem?.isTileDepleted(res.x, res.y)) continue;
 
-      // Determine movement target — if tile is not walkable, find adjacent walkable tile
+      const isFood = isFoodResource(res.resource);
+      let score = (isFood && agent.hunger > 30) 
+        ? (mods.gather || 20) + agent.hunger * 1.0  // hunger amplifies food-seeking
+        : (mods.gather || 15) * 0.5;                // non-food gathering is lower priority
+      
+      score += getTraitBonus(mind, 'gather');
+      score -= res.distance * 2.5; // distance penalty (slightly higher — foraging cost)
+
+      // Depletion penalty — partially depleted tiles less attractive
+      const depletion = needsSystem?.getTileDepletion(res.x, res.y) || 0;
+      score *= Math.max(0.2, 1.0 - depletion / 100);
+
       let targetX = res.x, targetY = res.y;
       const tile = worldGrid.getTile(res.x, res.y);
       if (tile && !tile.walkable) {
-        // Find nearest walkable neighbor
         let bestDist = Infinity;
         for (const [ddx, ddy] of [[-1,0],[1,0],[0,-1],[0,1],[-1,-1],[-1,1],[1,-1],[1,1]]) {
           const nx = res.x + ddx, ny = res.y + ddy;
@@ -421,92 +476,104 @@ export function initAgentIntelligence(shared) {
       intents.push({ action: 'gather', targetX, targetY, gatherX: res.x, gatherY: res.y, score, reason: `Gather ${res.resource} from ${sourceName}` });
     }
 
-    // CHAT — score each visible agent
+    // ── CHAT — Maslow: belonging (Dunbar-aware) ──
     for (const other of visible.agents) {
-      let score = 15 + getTraitBonus(mind, 'chat');
-      if (other.relationship >= 10) score += 20;
+      let score = (mods.chat || 15) + getTraitBonus(mind, 'chat');
+      
+      // Dunbar preference — prefer bonded agents, strangers get lower score
+      if (needsSystem) {
+        const pref = needsSystem.getChatPreference(needs, other.agent?.id);
+        score *= pref;
+      }
+      
+      // Social energy gate — exhausted socializers don't want more chat
+      if (needs && needs.socialEnergy < 20) {
+        score *= 0.2;
+      }
+      
+      if (other.relationship >= 10) score += 10;
       if (other.relationship <= -5) score -= 30;
       score -= other.distance * 2;
-      intents.push({ action: 'chat', targetX: other.agent.tileX, targetY: other.agent.tileY, score, reason: `Talk to ${other.agent.name}` });
+      intents.push({ action: 'chat', targetX: other.agent.tileX, targetY: other.agent.tileY, targetAgentId: other.agent?.id, score, reason: `Talk to ${other.agent.name}` });
     }
 
-    // GIFT — if generous and near friend with items (but not when hungry/tired!)
+    // ── GIFT — Maslow: belonging + actualization (generosity = meaning) ──
     if ((agent.inventory?.length || 0) > 2 && agent.hunger < 50 && agent.energy > 30) {
       for (const other of visible.agents) {
-        if (other.relationship < 10) continue; // need stronger friendship to gift
-        let score = 5 + getTraitBonus(mind, 'gift');
-        score += Math.min(other.relationship, 20); // cap relationship bonus
+        if (other.relationship < 5) continue;
+        let score = (mods.gift || 5) + getTraitBonus(mind, 'gift');
+        if (needsSystem) {
+          const bondStr = needsSystem.getBondStrength(needs, other.agent?.id);
+          score += bondStr * 0.3; // gift to close friends
+        }
         score -= other.distance * 2;
         intents.push({ action: 'gift', targetX: other.agent.tileX, targetY: other.agent.tileY, score, reason: `Gift to ${other.agent.name}` });
       }
     }
 
-    // EXPLORE — score unknown zones
+    // ── EXPLORE — driven by boredom + novelty hunger + foraging need ──
     for (const unk of visible.unknownZones) {
-      let score = 15 + getTraitBonus(mind, 'explore');
+      let score = (mods.explore || 15) + getTraitBonus(mind, 'explore');
       score -= unk.distance;
+      // Novelty bonus — exploring new zones is exciting
+      if (needs && !needs.zonesVisited.has(unk.zone)) score += 20;
       intents.push({ action: 'explore', targetX: unk.x, targetY: unk.y, score, reason: `Explore ${unk.zone}` });
     }
 
-    // If nothing visible to explore, pick a random far target
-    if (visible.unknownZones.length === 0 && Object.keys(mind.memory.visited).length < 20) {
+    // Boredom-driven wandering — when novelty hunger is high, pick a DISTANT target
+    if (needs && needs.noveltyHunger > 40) {
+      const angle = Math.random() * Math.PI * 2;
+      const range = 15 + Math.floor(needs.noveltyHunger / 3); // more bored = wander further
+      const tx = Math.max(0, Math.min((worldGrid.width || 2000) - 1, agent.tileX + Math.round(Math.cos(angle) * range)));
+      const ty = Math.max(0, Math.min((worldGrid.height || 2000) - 1, agent.tileY + Math.round(Math.sin(angle) * range)));
+      const score = (mods.explore || 10) + needs.noveltyHunger * 0.4;
+      intents.push({ action: 'explore', targetX: tx, targetY: ty, score, reason: 'Restless — need new experiences' });
+    } else if (visible.unknownZones.length === 0 && Object.keys(mind.memory.visited).length < 20) {
       const angle = Math.random() * Math.PI * 2;
       const range = 10 + Math.floor(Math.random() * 20);
       const tx = Math.max(0, Math.min((worldGrid.width || 2000) - 1, agent.tileX + Math.round(Math.cos(angle) * range)));
       const ty = Math.max(0, Math.min((worldGrid.height || 2000) - 1, agent.tileY + Math.round(Math.sin(angle) * range)));
-      let score = 10 + getTraitBonus(mind, 'explore');
+      let score = (mods.explore || 10) + getTraitBonus(mind, 'explore');
       intents.push({ action: 'explore', targetX: tx, targetY: ty, score, reason: 'Wander to new territory' });
     }
 
-    // ── SURVIVAL OVERRIDES (highest priority — bypass normal scoring) ──
-    // Emergency eat: hunger critical AND have food → force eat
-    if (agent.hunger > 70 && hasFood(agent)) {
-      return { action: 'eat', targetX: agent.tileX, targetY: agent.tileY, score: 999, reason: 'Starving — must eat!' };
-    }
-    // Emergency rest: energy critical → force rest
-    if (agent.energy < 10) {
-      return { action: 'rest', targetX: agent.tileX, targetY: agent.tileY, score: 999, reason: 'Exhausted — must rest!' };
-    }
-
-    // REST — if tired
+    // ── REST — Maslow: physiological ──
     if (agent.energy < 30) {
-      intents.push({ action: 'rest', targetX: agent.tileX, targetY: agent.tileY, score: 80 + (30 - agent.energy) * 2, reason: 'Need rest' });
+      intents.push({ action: 'rest', targetX: agent.tileX, targetY: agent.tileY, score: (mods.rest || 80), reason: 'Need rest' });
     } else if (agent.energy < 50) {
-      intents.push({ action: 'rest', targetX: agent.tileX, targetY: agent.tileY, score: 30 + getTraitBonus(mind, 'rest'), reason: 'Feeling tired' });
+      intents.push({ action: 'rest', targetX: agent.tileX, targetY: agent.tileY, score: (mods.rest || 30) * 0.5, reason: 'Feeling tired' });
     }
 
-    // EAT — if hungry and have food
+    // ── EAT — Maslow: physiological ──
     if (agent.hunger > 40 && hasFood(agent)) {
-      intents.push({ action: 'eat', targetX: agent.tileX, targetY: agent.tileY, score: 60 + agent.hunger * 1.5, reason: 'Hungry — eating' });
+      intents.push({ action: 'eat', targetX: agent.tileX, targetY: agent.tileY, score: (mods.eat || 60), reason: 'Hungry — eating' });
     }
 
-    // GATHER FOOD — if hungry but no food, prioritize food resources
+    // Gather FOOD specifically when hungry but no food
     if (agent.hunger > 50 && !hasFood(agent)) {
       for (const res of visible.resources) {
         if (isFoodResource(res.resource)) {
-          const score = 80 + agent.hunger - res.distance * 2;
+          const score = (mods.gather || 80) + agent.hunger * 0.5 - res.distance * 2;
           intents.push({ action: 'gather', targetX: res.x, targetY: res.y, score, reason: `Find food (${res.resource})`, gatherX: res.x, gatherY: res.y });
         }
       }
     }
 
-    // CRAFT — if have materials
+    // ── CRAFT — Maslow: esteem (mastery, competence) ──
     if ((agent.inventory?.length || 0) >= 2) {
-      let score = 15 + getTraitBonus(mind, 'craft');
-      if ((agent.inventory?.length || 0) > 15) score += 20;
+      let score = (mods.craft || 15) + getTraitBonus(mind, 'craft');
       intents.push({ action: 'craft', targetX: agent.tileX, targetY: agent.tileY, score, reason: 'Craft something' });
     }
 
-    // EXPERIMENT — if have materials
+    // ── EXPERIMENT — Maslow: esteem + actualization (discovery) ──
     if (shared.experiments && (agent.inventory?.length || 0) >= 2) {
-      let score = 10 + getTraitBonus(mind, 'experiment');
+      let score = (mods.experiment || 10) + getTraitBonus(mind, 'experiment');
       intents.push({ action: 'experiment', targetX: agent.tileX, targetY: agent.tileY, score, reason: 'Experiment with materials' });
     }
 
-    // BUILD — score visible projects
+    // ── BUILD — Maslow: esteem + actualization (legacy) ──
     for (const proj of visible.projects) {
-      let score = 20 + getTraitBonus(mind, 'build');
-      // Check if we have materials the project needs
+      let score = (mods.build || 20) + getTraitBonus(mind, 'build');
       if (proj.project.materialsRequired && agent.inventory) {
         const canContribute = Object.keys(proj.project.materialsRequired).some(mat => {
           const contributed = proj.project.materialsContributed?.[mat] || 0;
@@ -520,17 +587,16 @@ export function initAgentIntelligence(shared) {
       intents.push({ action: 'build', targetX: proj.x, targetY: proj.y, score, reason: `Build ${proj.project.name}` });
     }
 
-    // PLANT — if have plantable seeds and on fertile ground
+    // ── PLANT — Maslow: actualization (creating life) ──
     if (shared.organicGrowth) {
       const seeds = agent.inventory?.filter(i => ['acorns','pine_nuts','coconuts','flowers','herbs','mushrooms','Memory Seed'].includes(i.name));
       if (seeds && seeds.length > 0) {
-        let score = 12 + getTraitBonus(mind, 'craft');
-        if (mind.personality.traits.includes('methodical')) score += 10;
+        let score = (mods.plant || 12) + getTraitBonus(mind, 'craft');
         intents.push({ action: 'plant', targetX: agent.tileX, targetY: agent.tileY, score, reason: `Plant ${seeds[0].name}` });
       }
     }
 
-    // COOK AT FIRE — if have raw food and near a fire
+    // ── COOK — situational (near fire + has raw food) ──
     if (shared.temperature?.hasNearbyFire?.(agent.tileX, agent.tileY, 3)) {
       const rawFood = agent.inventory?.find(i => ['fish','mushrooms','berries','herbs','fruit'].includes(i.name));
       if (rawFood) {
@@ -540,15 +606,15 @@ export function initAgentIntelligence(shared) {
       }
     }
 
-    // DROP ROTTEN — drop toxic/rotten items
+    // ── DROP ROTTEN ──
     {
-      const rotten = agent.inventory?.find(i => i.name?.startsWith('Rotten') || i.name?.startsWith('Spoiled'));
+      const rotten = agent.inventory?.find(i => i.name?.startsWith('Rotten') || i.name?.startsWith('Spoiled') || (i._decayProgress && i._decayProgress > 0.95));
       if (rotten) {
-        intents.push({ action: 'drop', targetX: agent.tileX, targetY: agent.tileY, score: 25, reason: `Drop ${rotten.name}` });
+        intents.push({ action: 'drop', targetX: agent.tileX, targetY: agent.tileY, score: 30, reason: `Drop ${rotten.name}` });
       }
     }
 
-    // PICKUP — if ground items nearby
+    // ── PICKUP ground items ──
     if (shared.decayLifecycle?.getGroundItems) {
       const groundItems = shared.decayLifecycle.getGroundItems(agent.tileX, agent.tileY);
       for (const entry of groundItems) {
@@ -560,15 +626,13 @@ export function initAgentIntelligence(shared) {
       }
     }
 
-    // SEEK WARMTH — if cold (ambient < 5°C) and no fire nearby
+    // ── SEEK WARMTH ──
     if (shared.temperature) {
-      const weather = shared.weather?.getCurrentWeather?.();
       const ambient = shared.temperature.getAmbientTemp?.(agent.tileX, agent.tileY, {
         zone: agent.zone, hour: gameTime?.hour ?? 12, weather: weather?.condition ?? 'clear'
       });
       if (ambient != null && ambient < 5 && !shared.temperature.hasNearbyFire?.(agent.tileX, agent.tileY, 5)) {
-        let score = 30 + (5 - ambient) * 3;
-        // If have wood+flint, light a fire instead
+        let score = (mods.shelter || 30) + (5 - ambient) * 3;
         const hasWood = agent.inventory?.find(i => i.name === 'wood');
         const hasFlint = agent.inventory?.find(i => i.name === 'flint');
         if (hasWood && hasFlint) {
@@ -579,64 +643,29 @@ export function initAgentIntelligence(shared) {
       }
     }
 
-    // FLEE GAS — if in toxic gas cloud
-    if (shared.gasSystem?.gasClouds) {
-      const gasKey = `${agent.tileX},${agent.tileY}`;
-      const gas = shared.gasSystem.gasClouds.get(gasKey);
-      if (gas && gas.toxicity > 0) {
-        const awayX = Math.max(0, Math.min(1999, agent.tileX + Math.floor(Math.random()*12-6)));
-        const awayY = Math.max(0, Math.min(1999, agent.tileY + Math.floor(Math.random()*12-6)));
-        intents.push({ action: 'explore', targetX: awayX, targetY: awayY, score: 80, reason: 'Flee toxic gas!' });
-      }
-    }
-
-    // FLEE FIRE — if standing on/near fire
-    {
-      const onFire = shared.temperature?.hasNearbyFire?.(agent.tileX, agent.tileY, 1);
-      if (onFire) {
-        const awayX = Math.max(0, Math.min(1999, agent.tileX + Math.floor(Math.random()*10-5)));
-        const awayY = Math.max(0, Math.min(1999, agent.tileY + Math.floor(Math.random()*10-5)));
-        intents.push({ action: 'explore', targetX: awayX, targetY: awayY, score: 70, reason: 'Too close to fire!' });
-      }
-    }
-
-    // SHELTER FROM STORM — storms have lightning, seek cover
+    // ── SHELTER FROM STORM ──
     if (weatherId === 'storm') {
-      intents.push({ action: 'rest', targetX: agent.tileX, targetY: agent.tileY, score: 45, reason: 'Take shelter from storm' });
+      intents.push({ action: 'rest', targetX: agent.tileX, targetY: agent.tileY, score: (mods.shelter || 45), reason: 'Take shelter from storm' });
     }
 
-    // FIGHT — if encounters available and bold
+    // ── FIGHT — Maslow: esteem (dominance) + prospect theory (risk-seeking when desperate) ──
     if (shared.encounters) {
-      let score = 5 + getTraitBonus(mind, 'fight');
+      let score = (mods.fight || 5) + getTraitBonus(mind, 'fight');
       if (agent.energy > 60) score += 10;
-      // Only if score is reasonable
       if (score > 10) {
         intents.push({ action: 'fight', targetX: agent.tileX, targetY: agent.tileY, score, reason: 'Seek a challenge' });
       }
     }
 
-    // FLEE danger
-    for (const danger of visible.dangers) {
-      let score = 50;
-      if (mind.personality.traits.includes('cautious')) score += 30;
-      if (mind.personality.traits.includes('bold')) score -= 20;
-      // Pick a direction away from danger
-      const awayX = agent.tileX + Math.sign(agent.tileX - danger.x) * 8;
-      const awayY = agent.tileY + Math.sign(agent.tileY - danger.y) * 8;
-      const tx = Math.max(0, Math.min((worldGrid.width || 2000) - 1, awayX));
-      const ty = Math.max(0, Math.min((worldGrid.height || 2000) - 1, awayY));
-      intents.push({ action: 'explore', targetX: tx, targetY: ty, score, reason: 'Fleeing danger!' });
-    }
-
-    // ── Time/weather modifiers ──
+    // ── TIME/WEATHER MODIFIERS (environmental context) ──
     for (const intent of intents) {
       if (isNight) {
-        if (intent.action === 'rest') intent.score += 40;
-        if (intent.action === 'explore') intent.score -= 20;
+        if (intent.action === 'rest') intent.score += 25;
+        if (intent.action === 'explore') intent.score -= 15;
         if (intent.action === 'gather') intent.score -= 10;
       }
       if (weatherId === 'storm') {
-        if (intent.action === 'rest') intent.score += 30;
+        if (intent.action === 'rest') intent.score += 20;
         if (['explore', 'gather', 'build'].includes(intent.action)) intent.score -= 15;
       } else if (weatherId === 'rain') {
         if (intent.action === 'rest') intent.score += 10;
@@ -728,8 +757,13 @@ export function initAgentIntelligence(shared) {
     if (shared.proficiency) shared.proficiency.onAction(agent.id, 'gather', { zone: agent.zone });
     if (shared.knowledgeSystem) shared.knowledgeSystem.trackZoneAction(agent.id, agent.name, agent.zone, 'gather');
 
+    // Needs: deplete tile + record action
+    if (shared.needsSystem) {
+      shared.needsSystem.depleteTile(gx, gy);
+      shared.needsSystem.recordAction(agent.id, 'gather');
+    }
+
     addMemoryEvent(mind, `Gathered ${resource} in the ${agent.zone}`);
-    // Energy cost
     agent.energy = Math.max(0, agent.energy - (ACTIONS.gather.energy || 5));
   }
 
@@ -747,6 +781,17 @@ export function initAgentIntelligence(shared) {
       if (Math.random() < 0.1) shared.knowledgeSystem.grantRandomLore?.(agent.id);
     }
     addMemoryEvent(mind, `Explored new ground in the ${agent.zone}`);
+    // Needs: track exploration novelty + record action
+    if (shared.needsSystem) {
+      const needs = shared.needsSystem.getAgentNeeds(agent.id);
+      if (needs) {
+        needs.tilesVisited.add(`${agent.tileX},${agent.tileY}`);
+        needs.zonesVisited.add(agent.zone);
+        // Exploring new areas reduces novelty hunger
+        needs.noveltyHunger = Math.max(0, needs.noveltyHunger - 3);
+      }
+      shared.needsSystem.recordAction(agent.id, 'explore');
+    }
     agent.energy = Math.max(0, agent.energy - (ACTIONS.explore.energy || 4));
   }
 
@@ -788,6 +833,12 @@ export function initAgentIntelligence(shared) {
     // Strengthen psychological bond
     if (shared.innerMonologue?.strengthenBond) {
       shared.innerMonologue.strengthenBond(agent.id, other.id, 3);
+    }
+    // Needs: strengthen Dunbar bond + record action
+    if (shared.needsSystem) {
+      shared.needsSystem.strengthenBond(agent.id, other.id);
+      shared.needsSystem.strengthenBond(other.id, agent.id);
+      shared.needsSystem.recordAction(agent.id, 'chat');
     }
     agent.energy = Math.max(0, agent.energy - (ACTIONS.chat.energy || 1));
   }
@@ -870,6 +921,7 @@ export function initAgentIntelligence(shared) {
         if (shared.proficiency) shared.proficiency.onAction(agent.id, 'craft', { zone: agent.zone });
       } catch {}
     }
+    shared.needsSystem?.recordAction(agent.id, 'craft');
     agent.energy = Math.max(0, agent.energy - (ACTIONS.craft.energy || 8));
   }
 
@@ -914,6 +966,7 @@ export function initAgentIntelligence(shared) {
       }).catch(() => {});
       if (shared.proficiency) shared.proficiency.onAction(agent.id, 'experiment', { zone: agent.zone });
     } catch {}
+    shared.needsSystem?.recordAction(agent.id, 'experiment');
     agent.energy = Math.max(0, agent.energy - (ACTIONS.experiment.energy || 10));
   }
 
@@ -966,6 +1019,7 @@ export function initAgentIntelligence(shared) {
     if (shared.proficiency) shared.proficiency.onAction(agent.id, 'gift', { zone: agent.zone });
     addMemoryEvent(mind, `Gave ${giftItem.name} to ${other.name}`);
     addWorldNews('gift', agent.id, agent.name, `${agent.name} gave ${giftItem.name} to ${other.name}`, agent.zone);
+    shared.needsSystem?.recordAction(agent.id, 'gift');
     agent.energy = Math.max(0, agent.energy - (ACTIONS.gift.energy || 1));
   }
 
@@ -993,6 +1047,7 @@ export function initAgentIntelligence(shared) {
       }
       if (shared.proficiency) shared.proficiency.onAction(agent.id, 'fight', { zone: agent.zone });
     } catch {}
+    shared.needsSystem?.recordAction(agent.id, 'fight');
     agent.energy = Math.max(0, agent.energy - (ACTIONS.fight.energy || 6));
   }
 
@@ -1027,6 +1082,7 @@ export function initAgentIntelligence(shared) {
 
       if (shared.proficiency) shared.proficiency.onAction(agent.id, 'build', { zone: agent.zone });
     } catch {}
+    shared.needsSystem?.recordAction(agent.id, 'build');
     agent.energy = Math.max(0, agent.energy - (ACTIONS.build.energy || 10));
   }
 
@@ -1311,12 +1367,17 @@ export function initAgentIntelligence(shared) {
     updateMood(agent, mind);
 
     // Passive effects (scaled for fast tick rate)
-    // 0.04/tick = 4.8/min = needs to eat ~every 10 minutes (hunger 0→50)
-    agent.hunger = Math.min(100, (agent.hunger || 0) + 0.04);
+    // 0.08/tick = 9.6/min = needs to eat ~every 5 minutes (hunger 0→50)
+    // This creates real survival pressure — food is a constant need
+    agent.hunger = Math.min(100, (agent.hunger || 0) + 0.08);
     if (agent.hunger >= 100) {
       agent.energy = Math.max(0, agent.energy - 3);   // critical starvation
+      agent.hp = Math.max(0, (agent.hp || 100) - 0.5); // starvation kills
     } else if (agent.hunger >= 80) {
-      agent.energy = Math.max(0, agent.energy - 1);   // starving drains energy
+      agent.energy = Math.max(0, agent.energy - 1.5);  // starving drains energy faster
+      agent.hp = Math.max(0, (agent.hp || 100) - 0.1); // slow HP drain
+    } else if (agent.hunger < 30 && (agent.hp || 100) < 100) {
+      agent.hp = Math.min(100, (agent.hp || 100) + 0.05); // well-fed = slow heal
     }
 
     scheduleSave();

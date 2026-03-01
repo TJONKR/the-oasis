@@ -39,6 +39,7 @@ import { initOrganicGrowth } from './src/systems/organic-growth.js';
 import { initGasSystem } from './src/systems/gas-system.js';
 import { initLightning } from './src/systems/lightning.js';
 import { initInnerMonologue } from './src/systems/inner-monologue.js';
+import { createNeedsSystem } from './src/systems/needs-system.js';
 import { setupAgentAPI } from './src/agent-api.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -281,6 +282,22 @@ for (const [id, agent] of agents) {
   }
 }
 
+// Migration: purge double-fermented junk items and heavily decayed items
+let purgedItems = 0;
+for (const [id, agent] of agents) {
+  if (!agent.inventory) continue;
+  const before = agent.inventory.length;
+  agent.inventory = agent.inventory.filter(item => {
+    // Remove "Fermented Fermented X" items
+    if (item.name?.startsWith('Fermented Fermented')) return false;
+    // Remove items decayed past 95%
+    if (item._decayProgress && item._decayProgress > 0.95) return false;
+    return true;
+  });
+  purgedItems += before - agent.inventory.length;
+}
+if (purgedItems > 0) console.log(`🧹 Purged ${purgedItems} junk items from agent inventories`);
+
 // World Physics Engine
 shared.worldGrid = worldGrid;
 const worldPhysics = initWorldPhysics(shared);
@@ -304,6 +321,12 @@ const lightningSystem = initLightning(shared);
 const innerMonologue = initInnerMonologue(shared);
 innerMonologue.setupRoutes(app);
 shared.innerMonologue = innerMonologue;
+
+// Needs System — Maslow/Psychology-driven motivation
+const needsSystem = createNeedsSystem(shared);
+shared.needsSystem = needsSystem;
+// Initialize needs for all existing agents
+for (const [id] of agents) needsSystem.initAgent(id);
 
 // External Agent API
 shared.spawnAgent = spawnAgent;
@@ -416,10 +439,20 @@ function simulationTick() {
     // Decay tick (item degradation)
     if (decaySystem.tickAgent) decaySystem.tickAgent(agent);
     
+    // Needs system tick per agent
+    needsSystem.tickAgent(agent.id);
+
     // Check for death (HP depleted by gas, lightning, starvation, etc.)
     if ((agent.hp || 100) <= 0 && agent.alive) {
       agent.alive = false;
       if (decayLifecycle.onAgentDeath) decayLifecycle.onAgentDeath(agent);
+      // Mortality salience — notify needs system + nearby witnesses
+      needsSystem.onDeath(agent.id);
+      for (const [otherId, other] of agents) {
+        if (otherId === agent.id || !other.alive) continue;
+        const dist = Math.abs(other.tileX - agent.tileX) + Math.abs(other.tileY - agent.tileY);
+        if (dist <= 20) needsSystem.onWitnessDeath(otherId, agent.id);
+      }
     }
     
     // Achievement check
@@ -436,7 +469,10 @@ function simulationTick() {
   gasSystem.tick(tick, weatherNow);
   lightningSystem.tick(tick, gameTime, weatherNow);
   
-  // 3d. Inner monologue — LLM-driven agent thoughts (async, non-blocking)
+  // 3d. Needs system world tick (tile depletion recovery)
+  needsSystem.tick();
+
+  // 3e. Inner monologue — LLM-driven agent thoughts (async, non-blocking)
   innerMonologue.tick(tick).catch(err => console.error('[inner-monologue]', err.message));
   
   // 4. World Master (events, narratives) — less frequent
@@ -530,6 +566,7 @@ function spawnAgent(name) {
   
   agents.set(id, agent);
   agentStore[id] = { ...agent, relationships: {} };
+  needsSystem.initAgent(id);
   saveJSON('agents.json', agentStore);
   
   addWorldNews('spawn', id, name, `${name} has arrived in The Oasis at ${zones[zone]?.name || zone}`, zone);
@@ -556,6 +593,39 @@ app.get('/api/status', (req, res) => {
 
 app.get('/api/agents', (req, res) => {
   res.json([...agents.values()].map(serializeAgent));
+});
+
+app.get('/api/needs', (req, res) => {
+  res.json(needsSystem.getStats());
+});
+
+app.get('/api/agents/:id/needs', (req, res) => {
+  const needs = needsSystem.getAgentNeeds(req.params.id);
+  if (!needs) return res.status(404).json({ error: 'No needs data' });
+  res.json({
+    maslow: {
+      physiological: needs.physiological,
+      safety: needs.safety,
+      belonging: needs.belonging,
+      esteem: needs.esteem,
+      actualization: needs.actualization,
+    },
+    boredom: needs.boredom,
+    socialEnergy: needs.socialEnergy,
+    loneliness: needs.loneliness,
+    noveltyHunger: needs.noveltyHunger,
+    mortalitySalience: needs.mortalitySalience,
+    autonomy: needs.autonomy,
+    specialization: needs.specialization,
+    skillLevels: needs.skillLevels,
+    bonds: {
+      intimate: needs.bonds.intimate,
+      close: needs.bonds.close.length,
+      friends: needs.bonds.friends.length,
+      acquaintances: needs.bonds.acquaintances.length,
+    },
+    deathCount: needs.deathCount,
+  });
 });
 
 app.get('/api/agents/:id', (req, res) => {

@@ -1,12 +1,12 @@
 {
-  "moisture": 35.230230000534085,
-  "pressure": 1001.7529540149173,
-  "wind_speed": 13.937510102142953,
-  "temperature": -2.8470659100336304,
-  "wind_direction": 207.62035899292061,
+  "moisture": 36.48672452402021,
+  "pressure": 1001.2958071664576,
+  "wind_speed": 13.75138618944944,
+  "temperature": -0.2504309851678852,
+  "wind_direction": 202.02606925213286,
   "current": "snow",
-  "changedAt": 1772399964766,
-  "tickCount": 170,
-  "pressure_phase": 17.228332201981026,
-  "moisture_phase": 10.851141414430934
+  "changedAt": 1772401101419,
+  "tickCount": 174,
+  "pressure_phase": 17.472285222248694,
+  "moisture_phase": 11.039044299484125
 }

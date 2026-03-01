@@ -235,6 +235,7 @@ const TIMED_REACTIONS = {
     // Only ferment raw organic items in swamp/wet zones — needs moisture
     check: (item, ambientTemp, nearFire, isWet) => {
       if (item._reacted) return false; // already transformed once
+      if (item.name?.startsWith('Fermented')) return false; // never double-ferment
       if (!isWet) return false; // needs wet environment
       return (item.properties?.organic ?? 0) >= 0.5 && (item.properties?.solubility ?? 0) >= 2;
     },

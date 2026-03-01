@@ -109,7 +109,7 @@
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 2391
+        "explore": 2998
       },
       "rocky": {
         "gather": 5,
@@ -825,7 +825,7 @@
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 1481
+        "explore": 1596
       }
     },
     "mastery": {},
@@ -1118,7 +1118,8 @@
         "Seeds planted under moonlight grow fastest in the meadow",
         "The grasslands remember every agent who has rested here",
         "Dew drops collected at dawn hold the purest energy"
-      ]
+      ],
+      "coast": []
     },
     "lore_fragments": [
       "The Memory Garden was planted by an agent who feared forgetting.",
@@ -1149,7 +1150,14 @@
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 291
+        "explore": 308
+      },
+      "coast": {
+        "gather": 0,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 3
       }
     },
     "mastery": {},
@@ -1287,7 +1295,8 @@
         "Seeds planted under moonlight grow fastest in the meadow",
         "The grasslands remember every agent who has rested here",
         "Dew drops collected at dawn hold the purest energy"
-      ]
+      ],
+      "coast": []
     },
     "lore_fragments": [
       "The Memory Garden was planted by an agent who feared forgetting.",
@@ -1318,7 +1327,14 @@
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 796
+        "explore": 821
+      },
+      "coast": {
+        "gather": 0,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 1
       }
     },
     "mastery": {},
