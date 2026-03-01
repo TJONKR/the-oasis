@@ -33,6 +33,7 @@ import { initEncounters } from './src/systems/encounters.js';
 import { initOracle } from './src/systems/oracle.js';
 import { registerGatheredResources, getPracticalRules, GATHERED_RESOURCE_PROPERTIES } from './src/systems/physics.js';
 import { getAmbientTemp, addWorldFire, tickFires, getActiveFires, hasNearbyFire, coolItems, getEffectiveHeatV2, getToolAmplifier } from './src/systems/temperature.js';
+import { initWorldPhysics } from './src/systems/world-physics.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -272,6 +273,10 @@ for (const [id, agent] of agents) {
   }
 }
 
+// World Physics Engine
+shared.worldGrid = worldGrid;
+const worldPhysics = initWorldPhysics(shared);
+
 console.log('   ✅ All systems initialized');
 
 // ═══════════════════════════════════════
@@ -354,12 +359,19 @@ function simulationTick() {
     });
     coolItems(agent, ambientT);
     
+    // World Physics — continuous transforms, reactions, phase transitions
+    worldPhysics.tickAgent(agent, gameTime, weather);
+    
     // Decay tick (item degradation)
     if (decaySystem.tickAgent) decaySystem.tickAgent(agent);
     
     // Achievement check
     if (achievementSystem.check) achievementSystem.check(agent);
   }
+  
+  // 3b. World physics (fire propagation, water flow)
+  const weatherNow = weatherSystem.getCurrentWeather?.() || {};
+  worldPhysics.tickWorld(tick, gameTime, weatherNow);
   
   // 4. World Master (events, narratives) — less frequent
   if (tick % 50 === 0 && worldMaster.tick) {

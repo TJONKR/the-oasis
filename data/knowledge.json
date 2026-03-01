@@ -109,7 +109,7 @@
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 134
+        "explore": 412
       },
       "rocky": {
         "gather": 5,
@@ -248,7 +248,7 @@
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 234
+        "explore": 606
       },
       "rocky": {
         "gather": 65,
@@ -825,7 +825,7 @@
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 590
+        "explore": 716
       }
     },
     "mastery": {},
@@ -1149,7 +1149,7 @@
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 88
+        "explore": 110
       }
     },
     "mastery": {},
@@ -1318,7 +1318,7 @@
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 328
+        "explore": 388
       }
     },
     "mastery": {},

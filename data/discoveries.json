@@ -142,5 +142,101 @@
     "discoveredBy": "6498a0c9-87f9-430e-b729-2b1a75250d4b",
     "discovererName": "Agent-19",
     "discoveredAt": "2026-03-01T19:50:28.247Z"
+  },
+  {
+    "key": "decay:herbs + sand",
+    "items": [
+      "herbs",
+      "sand"
+    ],
+    "result": "Compost",
+    "ruleId": "compost_decay",
+    "discoveredBy": "bad7a626-0d4d-4a2e-927a-fd46ed05a861",
+    "discovererName": "Agent-9",
+    "discoveredAt": "2026-03-01T19:51:24.492Z"
+  },
+  {
+    "key": "burn:herbs + sand",
+    "items": [
+      "sand",
+      "herbs"
+    ],
+    "result": "herbs Cinder",
+    "ruleId": "burn_item",
+    "discoveredBy": "bad7a626-0d4d-4a2e-927a-fd46ed05a861",
+    "discovererName": "Agent-9",
+    "discoveredAt": "2026-03-01T19:51:43.063Z"
+  },
+  {
+    "key": "combine:driftwood + shells",
+    "items": [
+      "driftwood",
+      "shells"
+    ],
+    "result": "Cooked driftwood",
+    "ruleId": "cooking",
+    "discoveredBy": "d56be782-7d0b-48d3-b5bc-cd2f59d54c48",
+    "discovererName": "Agent-14",
+    "discoveredAt": "2026-03-01T20:04:04.799Z"
+  },
+  {
+    "key": "combine:Burning Fiber + bark",
+    "items": [
+      "bark",
+      "Burning Fiber"
+    ],
+    "result": "Cooked bark",
+    "ruleId": "cooking",
+    "discoveredBy": "f4689095-dbd2-45de-81fa-42cb6bf3bc2e",
+    "discovererName": "Agent-21",
+    "discoveredAt": "2026-03-01T20:04:40.280Z"
+  },
+  {
+    "key": "combine:Burning Fiber + shells",
+    "items": [
+      "shells",
+      "Burning Fiber"
+    ],
+    "result": "Cooked shells",
+    "ruleId": "cooking",
+    "discoveredBy": "6498a0c9-87f9-430e-b729-2b1a75250d4b",
+    "discovererName": "Agent-19",
+    "discoveredAt": "2026-03-01T20:04:40.782Z"
+  },
+  {
+    "key": "combine:fiber + herbs",
+    "items": [
+      "fiber",
+      "herbs"
+    ],
+    "result": "Cooked fiber",
+    "ruleId": "cooking",
+    "discoveredBy": "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563",
+    "discovererName": "Agent-16",
+    "discoveredAt": "2026-03-01T20:04:42.287Z"
+  },
+  {
+    "key": "combine:Herbal Extract + driftwood",
+    "items": [
+      "driftwood",
+      "Herbal Extract"
+    ],
+    "result": "Cooked driftwood",
+    "ruleId": "cooking",
+    "discoveredBy": "d56be782-7d0b-48d3-b5bc-cd2f59d54c48",
+    "discovererName": "Agent-14",
+    "discoveredAt": "2026-03-01T20:04:42.789Z"
+  },
+  {
+    "key": "combine:Burning Fiber + herbs",
+    "items": [
+      "Burning Fiber",
+      "herbs"
+    ],
+    "result": "Cooked Burning Fiber",
+    "ruleId": "cooking",
+    "discoveredBy": "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563",
+    "discovererName": "Agent-16",
+    "discoveredAt": "2026-03-01T20:04:44.797Z"
   }
 ]

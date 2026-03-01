@@ -624,7 +624,28 @@
       "resonance",
       "luminosity"
     ],
-    "herbs": []
+    "herbs": [],
+    "Burning Fiber": [
+      "flammability",
+      "sharpness",
+      "malleability",
+      "weight",
+      "luminosity",
+      "resonance",
+      "energy",
+      "hardness",
+      "fertility",
+      "decay_rate",
+      "organic",
+      "conductivity",
+      "temperature",
+      "melt_point",
+      "volatility",
+      "solubility",
+      "brittleness",
+      "toxicity",
+      "ignition"
+    ]
   },
   "8b9d8eba-3738-41a1-a443-61c71b68a086": {
     "shells": [
@@ -849,6 +870,12 @@
       "solubility",
       "organic",
       "flammability"
+    ],
+    "Burning Fiber": [
+      "hardness",
+      "resonance",
+      "temperature",
+      "malleability"
     ]
   },
   "d56be782-7d0b-48d3-b5bc-cd2f59d54c48": {
@@ -935,6 +962,27 @@
       "resonance",
       "solubility",
       "decay_rate"
+    ],
+    "Herbal Extract": [
+      "melt_point",
+      "malleability",
+      "organic",
+      "toxicity",
+      "sharpness",
+      "temperature",
+      "hardness",
+      "conductivity",
+      "decay_rate",
+      "luminosity",
+      "volatility",
+      "brittleness",
+      "fertility",
+      "flammability",
+      "ignition",
+      "resonance",
+      "energy",
+      "solubility",
+      "weight"
     ]
   },
   "e14594ab-eddd-48ac-8227-a2e33c1868ef": {
@@ -1215,6 +1263,17 @@
       "toxicity",
       "sharpness",
       "malleability",
+      "ignition"
+    ],
+    "Burning Fiber": [
+      "hardness",
+      "decay_rate",
+      "energy",
+      "luminosity",
+      "resonance",
+      "temperature",
+      "fertility",
+      "volatility",
       "ignition"
     ]
   },

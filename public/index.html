@@ -183,6 +183,7 @@ function updateAndDrawEffects(ctx, T) {
       p.ox += p.vx * dt;
       p.oy += p.vy * dt;
       if (eff.type === 'fire') p.vy -= 15 * dt; // fire rises
+      if (eff.type === 'smoke' || eff.type === 'fireOut') { p.vy -= 8 * dt; p.vx += (Math.random()-0.5) * 2; } // smoke drifts up
       if (eff.type === 'explosion') { p.vx *= 0.96; p.vy *= 0.96; p.vy += 20 * dt; }
       
       const alpha = Math.min(1, p.life) * (1 - progress * 0.5);
@@ -202,6 +203,11 @@ function updateAndDrawEffects(ctx, T) {
         color = `rgba(255,${Math.floor(200 - t*150)},${Math.floor(80 - t*80)},${alpha.toFixed(2)})`;
       } else if (eff.type === 'craft') {
         color = `rgba(${180+Math.random()*75},${200+Math.random()*55},255,${alpha.toFixed(2)})`;
+      } else if (eff.type === 'smoke') {
+        const g = Math.floor(100 + Math.random() * 50);
+        color = `rgba(${g},${g},${g},${(alpha * 0.6).toFixed(2)})`;
+      } else if (eff.type === 'fireOut') {
+        color = `rgba(${80+Math.random()*40},${80+Math.random()*40},${80+Math.random()*40},${(alpha * 0.4).toFixed(2)})`;
       } else { // sparkle
         color = `rgba(255,${220+Math.random()*35},${100+Math.random()*100},${alpha.toFixed(2)})`;
       }
