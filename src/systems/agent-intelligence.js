@@ -81,7 +81,7 @@ const TERRAIN_COST = {
   water: Infinity, ocean: Infinity,
 };
 
-const VISION_RANGE = 12; // balance between awareness and CPU (25x25 = 625 tiles per agent per tick)
+const VISION_RANGE = 20;
 
 function getTerrainCost(tile) {
   if (!tile || !tile.walkable) return Infinity;

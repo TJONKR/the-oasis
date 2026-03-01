@@ -45,7 +45,7 @@
         "explore": 22
       },
       "coast": {
-        "gather": 4132,
+        "gather": 4346,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -119,7 +119,7 @@
         "explore": 2
       },
       "forest": {
-        "gather": 31,
+        "gather": 32,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -250,7 +250,7 @@
         "explore": 1
       },
       "rocky": {
-        "gather": 41,
+        "gather": 42,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -317,7 +317,7 @@
         "explore": 17
       },
       "coast": {
-        "gather": 13478,
+        "gather": 14136,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -437,7 +437,7 @@
         "explore": 29
       },
       "coast": {
-        "gather": 530,
+        "gather": 570,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -504,7 +504,7 @@
         "explore": 12
       },
       "coast": {
-        "gather": 12508,
+        "gather": 13143,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -569,7 +569,7 @@
         "explore": 13
       },
       "coast": {
-        "gather": 1735,
+        "gather": 1826,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -632,7 +632,7 @@
         "explore": 4
       },
       "coast": {
-        "gather": 13129,
+        "gather": 13781,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -686,7 +686,7 @@
         "explore": 40
       },
       "grass": {
-        "gather": 205,
+        "gather": 206,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -748,7 +748,7 @@
         "explore": 74
       },
       "coast": {
-        "gather": 13191,
+        "gather": 13839,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -871,7 +871,7 @@
         "explore": 1
       },
       "coast": {
-        "gather": 61,
+        "gather": 63,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -925,7 +925,7 @@
         "explore": 1
       },
       "grass": {
-        "gather": 10660,
+        "gather": 11221,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -1218,7 +1218,7 @@
     "known_recipes": [],
     "zone_counts": {
       "grass": {
-        "gather": 79,
+        "gather": 88,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -1260,7 +1260,7 @@
     "known_recipes": [],
     "zone_counts": {
       "grass": {
-        "gather": 122,
+        "gather": 142,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -1302,7 +1302,7 @@
     "known_recipes": [],
     "zone_counts": {
       "grass": {
-        "gather": 89,
+        "gather": 90,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -1352,7 +1352,7 @@
         "trade": 0
       },
       "coast": {
-        "gather": 543,
+        "gather": 586,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -1457,7 +1457,7 @@
         "trade": 0
       },
       "grass": {
-        "gather": 8153,
+        "gather": 8594,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -1588,7 +1588,7 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 511,
+        "gather": 555,
         "visit": 0,
         "craft": 0,
         "trade": 0

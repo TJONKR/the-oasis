@@ -1,32 +1,21 @@
 {
-  "lastTick": "2026-03-01T13:39:45.643Z",
+  "lastTick": "2026-03-01T13:54:32.758Z",
   "lastNarrative": null,
   "dangers": [],
   "zoneModifiers": {},
   "npcDirectives": [],
-  "consequences": [
+  "consequences": [],
+  "precursors": [
     {
-      "id": "consequence_28d0049d",
+      "id": "precursor_a76a0448",
       "type": "famine",
-      "zones": [
-        "grass",
-        "forest",
-        "rocky",
-        "sand",
-        "water",
-        "swamp",
-        "river",
-        "cave",
-        "coast",
-        "path"
-      ],
-      "description": "🍂 Famine",
-      "startedAt": 1772371926752,
-      "expiresAt": 1772373126752
+      "message": "Food prices are creeping up in the market...",
+      "zone": "grass",
+      "sentAt": 1772373136936,
+      "expiresAt": 1772373436936
     }
   ],
-  "precursors": [],
-  "tickCount": 460,
+  "tickCount": 478,
   "activeEvents": [],
   "nextEventTrigger": 1772376592934.858
 }

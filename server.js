@@ -285,7 +285,7 @@ function serializeAgent(a) {
 // Simulation
 // ═══════════════════════════════════════
 let tick = loadJSON('tick.json', { tick: 0 }).tick || 0;
-const TICK_MS = 1000; // 1 tile/sec — balanced between visual smoothness and memory usage
+const TICK_MS = 500; // Fast ticks — agents move 1 tile per tick, so 2 tiles/sec
 
 // Game time (1 tick = 10 minutes game time)
 function getGameTime() {
