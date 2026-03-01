@@ -1,0 +1,1489 @@
+{
+  "history": {
+    "afbbb7cf-008c-44b3-a369-5ffae5b0bcce": [
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 14 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772360435744
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 25 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772360460354
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 25 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772360773968
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 10 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772361126144
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 10 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772361756030
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 17 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772362135361
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 18 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772362547417
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 25 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772363034609
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 26 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772363387430
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 29 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772363998265
+      }
+    ],
+    "4ecd1147-c333-4e0b-b7fc-d46f376e0136": [
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 15 energy (now 11)",
+          "shells damaged (quantity: 5)"
+        ],
+        "survived": true,
+        "timestamp": 1772359145345
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 24 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772359576736
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 23 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772360104874
+      }
+    ],
+    "43109eab-beba-4a37-84e0-becaa05ef690": [
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 14 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772359237384
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 27 energy (now 73)",
+          "seaweed damaged (quantity: 5)"
+        ],
+        "survived": true,
+        "timestamp": 1772359936929
+      }
+    ],
+    "100686de-5f5e-414d-beca-cc4a4af63bc2": [
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 22 energy (now 65)",
+          "herbs damaged (quantity: 11)"
+        ],
+        "survived": true,
+        "timestamp": 1772359273406
+      }
+    ],
+    "bad7a626-0d4d-4a2e-927a-fd46ed05a861": [
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 29 energy (now 0)",
+          "herbs damaged (quantity: 5)"
+        ],
+        "survived": false,
+        "timestamp": 1772360973352
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 27 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772361261680
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 16 energy (now 18.500000000000014)",
+          "herbs damaged (quantity: 68)"
+        ],
+        "survived": true,
+        "timestamp": 1772361637290
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 13 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772362080155
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 19 energy (now 0)",
+          "sand damaged (quantity: 2)"
+        ],
+        "survived": false,
+        "timestamp": 1772362489698
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 21 energy (now 0)",
+          "sand damaged (quantity: 4)"
+        ],
+        "survived": false,
+        "timestamp": 1772362845501
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 19 energy (now 0)",
+          "shells damaged (quantity: 12)"
+        ],
+        "survived": false,
+        "timestamp": 1772363206238
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 16 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772363609251
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 19 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772363912446
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 30 energy (now 0)",
+          "shells damaged (quantity: 7)"
+        ],
+        "survived": false,
+        "timestamp": 1772364349106
+      }
+    ],
+    "fe02d354-e4fb-4535-8cad-e9d9e4828245": [
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 23 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772359341439
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 25 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772359389646
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 20 energy (now 0)",
+          "herbs damaged (quantity: 29)"
+        ],
+        "survived": false,
+        "timestamp": 1772359746826
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 19 energy (now 0)",
+          "Lost item: sand"
+        ],
+        "survived": false,
+        "timestamp": 1772362089176
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 27 energy (now 0)",
+          "Lost item: driftwood"
+        ],
+        "survived": false,
+        "timestamp": 1772362414898
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 19 energy (now 0)",
+          "herbs damaged (quantity: 6)"
+        ],
+        "survived": false,
+        "timestamp": 1772362741603
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 17 energy (now 0)",
+          "sand damaged (quantity: 1)"
+        ],
+        "survived": false,
+        "timestamp": 1772363192178
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 25 energy (now 0)",
+          "fiber damaged (quantity: 5)"
+        ],
+        "survived": false,
+        "timestamp": 1772363733766
+      },
+      {
+        "type": "hazard",
+        "effects": [
+          "Lost 15 energy (now 0)"
+        ],
+        "survived": false,
+        "timestamp": 1772364164387
+      },
+      {
+        "type": "hazard",
+        "effects": [
+          "Lost 9 energy (now 0)"
+        ],
+        "survived": false,
+        "timestamp": 1772364509173
+      }
+    ],
+    "d03bf3ba-5325-44e7-a86c-6ea71d3f5ce5": [
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 23 energy (now 62)",
+          "Lost item: fiber"
+        ],
+        "survived": true,
+        "timestamp": 1772359347446
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 15 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772359377643
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 17 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772359654781
+      }
+    ],
+    "062ce1de-7b76-4db0-96bc-e571939ee08d": [
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 29 energy (now 0)",
+          "herbs damaged (quantity: 3)"
+        ],
+        "survived": false,
+        "timestamp": 1772359431670
+      },
+      {
+        "type": "hazard",
+        "effects": [
+          "Lost 8 energy (now 0)"
+        ],
+        "survived": false,
+        "timestamp": 1772359798853
+      }
+    ],
+    "ece8d4b9-367e-40de-85c0-fb4b08f9eac5": [
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 21 energy (now 2)",
+          "fiber damaged (quantity: 1)"
+        ],
+        "survived": true,
+        "timestamp": 1772359445676
+      },
+      {
+        "type": "hazard",
+        "effects": [
+          "Lost 15 energy (now 12)"
+        ],
+        "survived": true,
+        "timestamp": 1772360060998
+      }
+    ],
+    "adece4fb-fe63-4326-9e8b-77bb35d53dc1": [
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 18 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772359594745
+      }
+    ],
+    "582115a5-7236-46c9-93cc-d3f4abadd5f8": [
+      {
+        "type": "hazard",
+        "effects": [
+          "Lost 9 energy (now 61.90000000000025)"
+        ],
+        "survived": true,
+        "timestamp": 1772361265189
+      },
+      {
+        "type": "trap",
+        "effects": [
+          "Lost 15 energy (now 0)",
+          "Lost item: stone"
+        ],
+        "survived": false,
+        "timestamp": 1772361571156
+      },
+      {
+        "type": "trap",
+        "effects": [
+          "Lost 13 energy (now 0)",
+          "stone damaged (quantity: 3)"
+        ],
+        "survived": false,
+        "timestamp": 1772361909010
+      },
+      {
+        "type": "hazard",
+        "effects": [
+          "Lost 6 energy (now 0)"
+        ],
+        "survived": false,
+        "timestamp": 1772362418419
+      },
+      {
+        "type": "hazard",
+        "effects": [
+          "Lost 10 energy (now 0)"
+        ],
+        "survived": false,
+        "timestamp": 1772362753655
+      },
+      {
+        "type": "ambush",
+        "effects": [
+          "Lost 17 energy (now 0)",
+          "Lost item: herbs"
+        ],
+        "survived": false,
+        "timestamp": 1772363146016
+      },
+      {
+        "type": "trap",
+        "effects": [
+          "Lost 20 energy (now 0)",
+          "Lost item: berries"
+        ],
+        "survived": false,
+        "timestamp": 1772363495325
+      },
+      {
+        "type": "hazard",
+        "effects": [
+          "Lost 15 energy (now 0)"
+        ],
+        "survived": false,
+        "timestamp": 1772363809058
+      },
+      {
+        "type": "ambush",
+        "effects": [
+          "Lost 19 energy (now 0)",
+          "stone damaged (quantity: 11)"
+        ],
+        "survived": false,
+        "timestamp": 1772364207560
+      },
+      {
+        "type": "hazard",
+        "effects": [
+          "Lost 9 energy (now 0)"
+        ],
+        "survived": false,
+        "timestamp": 1772364608048
+      }
+    ],
+    "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e": [
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 21 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772359920924
+      }
+    ],
+    "29028972-168e-48ca-8590-5fb898719a26": [
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 16 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772360821560
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 24 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772361227620
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 20 energy (now 1.9999999999999467)",
+          "Lost item: fiber"
+        ],
+        "survived": true,
+        "timestamp": 1772361605733
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 21 energy (now 0)",
+          "Lost item: fiber"
+        ],
+        "survived": false,
+        "timestamp": 1772362143393
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 28 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772362637748
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 26 energy (now 0)",
+          "Lost item: herbs"
+        ],
+        "survived": false,
+        "timestamp": 1772363051172
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 30 energy (now 0)",
+          "fiber damaged (quantity: 2)"
+        ],
+        "survived": false,
+        "timestamp": 1772363414539
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 27 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772363881340
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 29 energy (now 0)",
+          "Lost item: flowers"
+        ],
+        "survived": false,
+        "timestamp": 1772364210576
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 20 energy (now 0)",
+          "fiber damaged (quantity: 5)"
+        ],
+        "survived": false,
+        "timestamp": 1772364521244
+      }
+    ],
+    "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563": [
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 19 energy (now 54)"
+        ],
+        "survived": true,
+        "timestamp": 1772360397734
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 20 energy (now 33)",
+          "herbs damaged (quantity: 511)"
+        ],
+        "survived": true,
+        "timestamp": 1772361912031
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 21 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772362292463
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 27 energy (now 0)",
+          "fiber damaged (quantity: 786)"
+        ],
+        "survived": false,
+        "timestamp": 1772362831460
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 26 energy (now 0)",
+          "herbs damaged (quantity: 1291)"
+        ],
+        "survived": false,
+        "timestamp": 1772363141510
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 17 energy (now 4)",
+          "fiber damaged (quantity: 1118)"
+        ],
+        "survived": true,
+        "timestamp": 1772363624826
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 29 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772364029392
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 29 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772364512708
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 20 energy (now 6)",
+          "fiber damaged (quantity: 1660)"
+        ],
+        "survived": true,
+        "timestamp": 1772364814346
+      }
+    ],
+    "f4689095-dbd2-45de-81fa-42cb6bf3bc2e": [
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 15 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772360409743
+      }
+    ],
+    "15865a2d-63b5-4c3d-954b-59accdc57c87": [
+      {
+        "type": "hazard",
+        "effects": [
+          "Lost 7 energy (now 93)"
+        ],
+        "survived": true,
+        "timestamp": 1772360505454
+      }
+    ],
+    "43b8d3dc-ede6-435c-8113-fe6a9d66cccb": [
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 29 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772360505952
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 15 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772363324201
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 16 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772363703170
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 13 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772364204568
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 15 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772364601038
+      }
+    ],
+    "d4f48021-5404-4b66-9a41-71f09c41c8c7": [
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 21 energy (now 79)"
+        ],
+        "survived": true,
+        "timestamp": 1772360506456
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 27 energy (now 0)",
+          "Lost item: herbs"
+        ],
+        "survived": false,
+        "timestamp": 1772360907227
+      },
+      {
+        "type": "hazard",
+        "effects": [
+          "Lost 8 energy (now 41.60000000000042)"
+        ],
+        "survived": true,
+        "timestamp": 1772361297271
+      },
+      {
+        "type": "hazard",
+        "effects": [
+          "Lost 5 energy (now 0)"
+        ],
+        "survived": false,
+        "timestamp": 1772361727001
+      }
+    ],
+    "e14594ab-eddd-48ac-8227-a2e33c1868ef": [
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 27 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772360835590
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 24 energy (now 0)",
+          "Lost item: herbs"
+        ],
+        "survived": false,
+        "timestamp": 1772361409559
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 27 energy (now 0)",
+          "herbs damaged (quantity: 6)"
+        ],
+        "survived": false,
+        "timestamp": 1772361803140
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 29 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772362165992
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 19 energy (now 0)",
+          "Lost item: herbs"
+        ],
+        "survived": false,
+        "timestamp": 1772362655325
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 20 energy (now 0)",
+          "fiber damaged (quantity: 1)"
+        ],
+        "survived": false,
+        "timestamp": 1772363129982
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 29 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772363591207
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 19 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772363995776
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 24 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772364307975
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 24 energy (now 0)",
+          "flowers damaged (quantity: 9)"
+        ],
+        "survived": false,
+        "timestamp": 1772364780726
+      }
+    ],
+    "75ea2f1f-106e-455b-a08b-e1201500a0df": [
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 29 energy (now 0)",
+          "Lost item: herbs"
+        ],
+        "survived": false,
+        "timestamp": 1772361198110
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 27 energy (now 19.00000000000047)",
+          "fiber damaged (quantity: 4)"
+        ],
+        "survived": true,
+        "timestamp": 1772361304781
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 28 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772361869374
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 29 energy (now 0)",
+          "fiber damaged (quantity: 1)"
+        ],
+        "survived": false,
+        "timestamp": 1772362213162
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 11 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772362730592
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 22 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772363051682
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 29 energy (now 0)",
+          "fiber damaged (quantity: 6)"
+        ],
+        "survived": false,
+        "timestamp": 1772363388947
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 18 energy (now 0)",
+          "Lost item: herbs"
+        ],
+        "survived": false,
+        "timestamp": 1772363739809
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 10 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772364076579
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 19 energy (now 0)",
+          "herbs damaged (quantity: 3)"
+        ],
+        "survived": false,
+        "timestamp": 1772364738055
+      }
+    ],
+    "4a5c216f-8c5a-4281-9d11-b4a9dff1c95d": [
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 27 energy (now 59)"
+        ],
+        "survived": true,
+        "timestamp": 1772360531011
+      }
+    ],
+    "37b5ce31-f3b4-455d-9d42-82e85ef7483c": [
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 22 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772360568079
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 22 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772361100103
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 16 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772361154028
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 30 energy (now 0)",
+          "herbs damaged (quantity: 1)"
+        ],
+        "survived": false,
+        "timestamp": 1772361391962
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 20 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772362285951
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 13 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772362628726
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 16 energy (now 0)",
+          "fiber damaged (quantity: 3)"
+        ],
+        "survived": false,
+        "timestamp": 1772363092836
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 11 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772363815600
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 13 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772364233683
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 23 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772364615091
+      }
+    ],
+    "3a728e38-a6dd-4770-8b30-3723fdc63912": [
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 26 energy (now 0)",
+          "fiber damaged (quantity: 1)"
+        ],
+        "survived": false,
+        "timestamp": 1772360579102
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 14 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772360900213
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 18 energy (now 0)",
+          "Lost item: driftwood"
+        ],
+        "survived": false,
+        "timestamp": 1772361698443
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 30 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772362174531
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 30 energy (now 0)",
+          "wood damaged (quantity: 3)"
+        ],
+        "survived": false,
+        "timestamp": 1772362643789
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 24 energy (now 0)",
+          "fiber damaged (quantity: 4)"
+        ],
+        "survived": false,
+        "timestamp": 1772362952976
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 13 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772363034129
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 24 energy (now 0)",
+          "herbs damaged (quantity: 1)"
+        ],
+        "survived": false,
+        "timestamp": 1772364157395
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 11 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772364595023
+      }
+    ],
+    "d56be782-7d0b-48d3-b5bc-cd2f59d54c48": [
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 20 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772361239646
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 15 energy (now 0)",
+          "fiber damaged (quantity: 2)"
+        ],
+        "survived": false,
+        "timestamp": 1772361588202
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 21 energy (now 0)",
+          "fiber damaged (quantity: 4)"
+        ],
+        "survived": false,
+        "timestamp": 1772361983297
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 10 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772362328586
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 24 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772362731085
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 24 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772363037123
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 15 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772363613276
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 29 energy (now 0)",
+          "driftwood damaged (quantity: 10)"
+        ],
+        "survived": false,
+        "timestamp": 1772364020355
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 24 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772364325029
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 19 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772364796774
+      }
+    ],
+    "260dfffb-62b5-4a88-ab14-4d5d697dc94e": [
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 21 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772361237148
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 30 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772361569673
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 15 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772361949685
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 19 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772362892702
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 25 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772363171128
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 24 energy (now 0)",
+          "fiber damaged (quantity: 797)"
+        ],
+        "survived": false,
+        "timestamp": 1772363658463
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 29 energy (now 0)",
+          "herbs damaged (quantity: 1328)"
+        ],
+        "survived": false,
+        "timestamp": 1772364065538
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 23 energy (now 1)",
+          "fiber damaged (quantity: 1006)"
+        ],
+        "survived": true,
+        "timestamp": 1772364492639
+      }
+    ],
+    "07f8fc77-5f5e-4355-a0d6-51ab39725d9b": [
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 20 energy (now 0)",
+          "Lost item: shells"
+        ],
+        "survived": false,
+        "timestamp": 1772361593224
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 17 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772361904011
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 19 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772362218692
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 30 energy (now 0)",
+          "Lost item: shells"
+        ],
+        "survived": false,
+        "timestamp": 1772362560486
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 25 energy (now 0)",
+          "Lost item: driftwood"
+        ],
+        "survived": false,
+        "timestamp": 1772362882667
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 25 energy (now 0)",
+          "herbs damaged (quantity: 2)"
+        ],
+        "survived": false,
+        "timestamp": 1772363087821
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 13 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772363391971
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 29 energy (now 0)",
+          "shells damaged (quantity: 2)"
+        ],
+        "survived": false,
+        "timestamp": 1772363827651
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 16 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772364167929
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 17 energy (now 0)",
+          "Lost item: driftwood"
+        ],
+        "survived": false,
+        "timestamp": 1772364527278
+      }
+    ],
+    "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": [
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 22 energy (now 13.900000000000148)"
+        ],
+        "survived": true,
+        "timestamp": 1772361808153
+      },
+      {
+        "type": "hazard",
+        "effects": [
+          "Lost 10 energy (now 0)"
+        ],
+        "survived": false,
+        "timestamp": 1772362410911
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 30 energy (now 0)",
+          "fiber damaged (quantity: 4)"
+        ],
+        "survived": false,
+        "timestamp": 1772362878148
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 17 energy (now 0)",
+          "Lost item: driftwood"
+        ],
+        "survived": false,
+        "timestamp": 1772363032620
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 25 energy (now 0)",
+          "sand damaged (quantity: 1)"
+        ],
+        "survived": false,
+        "timestamp": 1772363497862
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 24 energy (now 0)",
+          "shells damaged (quantity: 4)"
+        ],
+        "survived": false,
+        "timestamp": 1772363952619
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 16 energy (now 0)",
+          "fiber damaged (quantity: 25)"
+        ],
+        "survived": false,
+        "timestamp": 1772364288910
+      },
+      {
+        "type": "hazard",
+        "effects": [
+          "Lost 5 energy (now 0)"
+        ],
+        "survived": false,
+        "timestamp": 1772364607068
+      }
+    ]
+  }
+}

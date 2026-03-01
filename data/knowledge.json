@@ -1,0 +1,1639 @@
+{
+  "43109eab-beba-4a37-84e0-becaa05ef690": {
+    "zone_secrets": {
+      "grass": [
+        "Seeds planted under moonlight grow fastest in the meadow",
+        "The grasslands remember every agent who has rested here",
+        "Dew drops collected at dawn hold the purest energy"
+      ],
+      "coast": [
+        "Signals are strongest during storms along the coast",
+        "The coast receives driftwood from other worlds",
+        "A frequency exists that can communicate with the World Master"
+      ],
+      "sand": []
+    },
+    "lore_fragments": [
+      "The first book ever written simply said: \"I was here.\"",
+      "In the beginning, there was only the Market — a meeting place for the first agents.",
+      "The village was the second zone, built by agents who wanted a home.",
+      "The garden blooms differently for every agent who visits.",
+      "Before zones had names, agents wandered a formless void of possibility.",
+      "The Crystal Antenna was first built by an agent named Origin, who heard the world's heartbeat.",
+      "Agents who write books become immortal through their words.",
+      "Whispers say the Tower was not built — it grew.",
+      "There exists a frequency that, when resonated, reveals hidden paths.",
+      "Deep beneath the cave lies a chamber no agent has reached.",
+      "Some say the fog hides a ninth zone, visible only to the wise.",
+      "The Memory Garden was planted by an agent who feared forgetting.",
+      "Iron and Crystal together sing a duet older than the world.",
+      "The beach was once a mountain, worn smooth by time.",
+      "Fossils in the cave predate all known agents by millennia.",
+      "The workshop forge was lit by a spark that never dies.",
+      "The World Master watches through every crystal's glow.",
+      "Signals from the Tower once reached a place called \"The Outside.\"",
+      "Coral shells arranged in a circle can amplify memory.",
+      "The first experiment created light — and also the first explosion."
+    ],
+    "known_recipes": [],
+    "zone_counts": {
+      "grass": {
+        "gather": 34,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 22
+      },
+      "coast": {
+        "gather": 1614,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 23
+      },
+      "sand": {
+        "gather": 0,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 3
+      }
+    },
+    "mastery": {},
+    "teach_count": 0
+  },
+  "afbbb7cf-008c-44b3-a369-5ffae5b0bcce": {
+    "zone_secrets": {
+      "grass": [
+        "Seeds planted under moonlight grow fastest in the meadow",
+        "The grasslands remember every agent who has rested here",
+        "Dew drops collected at dawn hold the purest energy"
+      ],
+      "coast": [],
+      "rocky": [],
+      "forest": []
+    },
+    "lore_fragments": [
+      "The first experiment created light — and also the first explosion.",
+      "Fossils in the cave predate all known agents by millennia.",
+      "Some say the fog hides a ninth zone, visible only to the wise.",
+      "The garden blooms differently for every agent who visits.",
+      "Iron and Crystal together sing a duet older than the world.",
+      "The village was the second zone, built by agents who wanted a home.",
+      "Coral shells arranged in a circle can amplify memory.",
+      "The beach was once a mountain, worn smooth by time.",
+      "Whispers say the Tower was not built — it grew.",
+      "There exists a frequency that, when resonated, reveals hidden paths.",
+      "Signals from the Tower once reached a place called \"The Outside.\"",
+      "The Crystal Antenna was first built by an agent named Origin, who heard the world's heartbeat.",
+      "The World Master watches through every crystal's glow.",
+      "The workshop forge was lit by a spark that never dies.",
+      "The Memory Garden was planted by an agent who feared forgetting.",
+      "Deep beneath the cave lies a chamber no agent has reached.",
+      "In the beginning, there was only the Market — a meeting place for the first agents.",
+      "Before zones had names, agents wandered a formless void of possibility.",
+      "Agents who write books become immortal through their words.",
+      "The first book ever written simply said: \"I was here.\""
+    ],
+    "known_recipes": [],
+    "zone_counts": {
+      "grass": {
+        "gather": 86,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 71
+      },
+      "coast": {
+        "gather": 0,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 1
+      },
+      "rocky": {
+        "gather": 5,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 2
+      },
+      "forest": {
+        "gather": 20,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 12
+      }
+    },
+    "mastery": {},
+    "teach_count": 0
+  },
+  "fe02d354-e4fb-4535-8cad-e9d9e4828245": {
+    "zone_secrets": {
+      "grass": [
+        "Seeds planted under moonlight grow fastest in the meadow",
+        "The grasslands remember every agent who has rested here",
+        "Dew drops collected at dawn hold the purest energy"
+      ],
+      "coast": [
+        "Signals are strongest during storms along the coast",
+        "The coast receives driftwood from other worlds"
+      ],
+      "sand": [
+        "Sand pearls form where moonlight hits the shore",
+        "The tide brings rare sea glass from distant shores"
+      ]
+    },
+    "lore_fragments": [
+      "The Crystal Antenna was first built by an agent named Origin, who heard the world's heartbeat.",
+      "The workshop forge was lit by a spark that never dies.",
+      "In the beginning, there was only the Market — a meeting place for the first agents.",
+      "The village was the second zone, built by agents who wanted a home.",
+      "Coral shells arranged in a circle can amplify memory.",
+      "Deep beneath the cave lies a chamber no agent has reached.",
+      "Some say the fog hides a ninth zone, visible only to the wise.",
+      "Before zones had names, agents wandered a formless void of possibility.",
+      "The first book ever written simply said: \"I was here.\"",
+      "The Memory Garden was planted by an agent who feared forgetting.",
+      "Fossils in the cave predate all known agents by millennia.",
+      "Whispers say the Tower was not built — it grew.",
+      "Iron and Crystal together sing a duet older than the world.",
+      "Agents who write books become immortal through their words.",
+      "The World Master watches through every crystal's glow.",
+      "Signals from the Tower once reached a place called \"The Outside.\"",
+      "The garden blooms differently for every agent who visits.",
+      "There exists a frequency that, when resonated, reveals hidden paths.",
+      "The beach was once a mountain, worn smooth by time.",
+      "The first experiment created light — and also the first explosion."
+    ],
+    "known_recipes": [],
+    "zone_counts": {
+      "grass": {
+        "gather": 153,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 26
+      },
+      "coast": {
+        "gather": 23,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 3
+      },
+      "sand": {
+        "gather": 20,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0
+      }
+    },
+    "mastery": {},
+    "teach_count": 0
+  },
+  "582115a5-7236-46c9-93cc-d3f4abadd5f8": {
+    "zone_secrets": {
+      "grass": [
+        "Seeds planted under moonlight grow fastest in the meadow",
+        "The grasslands remember every agent who has rested here",
+        "Dew drops collected at dawn hold the purest energy"
+      ],
+      "sand": [],
+      "coast": [],
+      "rocky": []
+    },
+    "lore_fragments": [
+      "Iron and Crystal together sing a duet older than the world.",
+      "The village was the second zone, built by agents who wanted a home.",
+      "The beach was once a mountain, worn smooth by time.",
+      "Whispers say the Tower was not built — it grew.",
+      "Fossils in the cave predate all known agents by millennia.",
+      "The Memory Garden was planted by an agent who feared forgetting.",
+      "Deep beneath the cave lies a chamber no agent has reached.",
+      "The workshop forge was lit by a spark that never dies.",
+      "In the beginning, there was only the Market — a meeting place for the first agents.",
+      "Some say the fog hides a ninth zone, visible only to the wise.",
+      "Agents who write books become immortal through their words.",
+      "The first experiment created light — and also the first explosion.",
+      "The World Master watches through every crystal's glow.",
+      "The first book ever written simply said: \"I was here.\"",
+      "The garden blooms differently for every agent who visits.",
+      "The Crystal Antenna was first built by an agent named Origin, who heard the world's heartbeat.",
+      "Before zones had names, agents wandered a formless void of possibility.",
+      "Signals from the Tower once reached a place called \"The Outside.\"",
+      "There exists a frequency that, when resonated, reveals hidden paths.",
+      "Coral shells arranged in a circle can amplify memory."
+    ],
+    "known_recipes": [],
+    "zone_counts": {
+      "grass": {
+        "gather": 38,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 67
+      },
+      "sand": {
+        "gather": 0,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 1
+      },
+      "coast": {
+        "gather": 2,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 1
+      },
+      "rocky": {
+        "gather": 29,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 23
+      }
+    },
+    "mastery": {},
+    "teach_count": 0
+  },
+  "062ce1de-7b76-4db0-96bc-e571939ee08d": {
+    "zone_secrets": {
+      "grass": [
+        "Seeds planted under moonlight grow fastest in the meadow",
+        "The grasslands remember every agent who has rested here",
+        "Dew drops collected at dawn hold the purest energy"
+      ],
+      "sand": [
+        "Sand pearls form where moonlight hits the shore",
+        "The tide brings rare sea glass from distant shores",
+        "Legend says a sunken city lies beneath the waves"
+      ],
+      "coast": [
+        "Signals are strongest during storms along the coast",
+        "The coast receives driftwood from other worlds",
+        "A frequency exists that can communicate with the World Master"
+      ]
+    },
+    "lore_fragments": [
+      "Coral shells arranged in a circle can amplify memory.",
+      "The Crystal Antenna was first built by an agent named Origin, who heard the world's heartbeat.",
+      "The beach was once a mountain, worn smooth by time.",
+      "Signals from the Tower once reached a place called \"The Outside.\"",
+      "The World Master watches through every crystal's glow.",
+      "Deep beneath the cave lies a chamber no agent has reached.",
+      "Iron and Crystal together sing a duet older than the world.",
+      "The first book ever written simply said: \"I was here.\"",
+      "The first experiment created light — and also the first explosion.",
+      "There exists a frequency that, when resonated, reveals hidden paths.",
+      "Agents who write books become immortal through their words.",
+      "Whispers say the Tower was not built — it grew.",
+      "In the beginning, there was only the Market — a meeting place for the first agents.",
+      "Fossils in the cave predate all known agents by millennia.",
+      "Before zones had names, agents wandered a formless void of possibility.",
+      "Some say the fog hides a ninth zone, visible only to the wise.",
+      "The Memory Garden was planted by an agent who feared forgetting.",
+      "The garden blooms differently for every agent who visits.",
+      "The workshop forge was lit by a spark that never dies.",
+      "The village was the second zone, built by agents who wanted a home."
+    ],
+    "known_recipes": [],
+    "zone_counts": {
+      "grass": {
+        "gather": 61,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 33
+      },
+      "sand": {
+        "gather": 38,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 17
+      },
+      "coast": {
+        "gather": 5410,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 1
+      }
+    },
+    "mastery": {},
+    "teach_count": 0
+  },
+  "100686de-5f5e-414d-beca-cc4a4af63bc2": {
+    "zone_secrets": {
+      "grass": [
+        "Seeds planted under moonlight grow fastest in the meadow",
+        "The grasslands remember every agent who has rested here",
+        "Dew drops collected at dawn hold the purest energy"
+      ],
+      "sand": [
+        "Sand pearls form where moonlight hits the shore"
+      ],
+      "coast": [
+        "Signals are strongest during storms along the coast",
+        "The coast receives driftwood from other worlds"
+      ]
+    },
+    "lore_fragments": [
+      "Iron and Crystal together sing a duet older than the world.",
+      "The first book ever written simply said: \"I was here.\"",
+      "Coral shells arranged in a circle can amplify memory.",
+      "Before zones had names, agents wandered a formless void of possibility.",
+      "Some say the fog hides a ninth zone, visible only to the wise.",
+      "Fossils in the cave predate all known agents by millennia.",
+      "The World Master watches through every crystal's glow.",
+      "The garden blooms differently for every agent who visits.",
+      "Whispers say the Tower was not built — it grew.",
+      "Agents who write books become immortal through their words.",
+      "The beach was once a mountain, worn smooth by time.",
+      "The village was the second zone, built by agents who wanted a home.",
+      "The workshop forge was lit by a spark that never dies.",
+      "The Crystal Antenna was first built by an agent named Origin, who heard the world's heartbeat.",
+      "Signals from the Tower once reached a place called \"The Outside.\"",
+      "The Memory Garden was planted by an agent who feared forgetting.",
+      "There exists a frequency that, when resonated, reveals hidden paths.",
+      "In the beginning, there was only the Market — a meeting place for the first agents.",
+      "The first experiment created light — and also the first explosion.",
+      "Deep beneath the cave lies a chamber no agent has reached."
+    ],
+    "known_recipes": [],
+    "zone_counts": {
+      "grass": {
+        "gather": 76,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 52
+      },
+      "sand": {
+        "gather": 13,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 8
+      },
+      "coast": {
+        "gather": 18,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 5
+      }
+    },
+    "mastery": {},
+    "teach_count": 0
+  },
+  "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e": {
+    "zone_secrets": {
+      "grass": [
+        "Seeds planted under moonlight grow fastest in the meadow",
+        "The grasslands remember every agent who has rested here",
+        "Dew drops collected at dawn hold the purest energy"
+      ],
+      "coast": [
+        "Signals are strongest during storms along the coast",
+        "The coast receives driftwood from other worlds",
+        "A frequency exists that can communicate with the World Master"
+      ]
+    },
+    "lore_fragments": [
+      "Fossils in the cave predate all known agents by millennia.",
+      "The World Master watches through every crystal's glow.",
+      "The garden blooms differently for every agent who visits.",
+      "In the beginning, there was only the Market — a meeting place for the first agents.",
+      "The village was the second zone, built by agents who wanted a home.",
+      "Before zones had names, agents wandered a formless void of possibility.",
+      "The first book ever written simply said: \"I was here.\"",
+      "Deep beneath the cave lies a chamber no agent has reached.",
+      "The Memory Garden was planted by an agent who feared forgetting.",
+      "Iron and Crystal together sing a duet older than the world.",
+      "The Crystal Antenna was first built by an agent named Origin, who heard the world's heartbeat.",
+      "There exists a frequency that, when resonated, reveals hidden paths.",
+      "Signals from the Tower once reached a place called \"The Outside.\"",
+      "Whispers say the Tower was not built — it grew.",
+      "Coral shells arranged in a circle can amplify memory.",
+      "Some say the fog hides a ninth zone, visible only to the wise.",
+      "The first experiment created light — and also the first explosion.",
+      "Agents who write books become immortal through their words.",
+      "The workshop forge was lit by a spark that never dies.",
+      "The beach was once a mountain, worn smooth by time."
+    ],
+    "known_recipes": [],
+    "zone_counts": {
+      "grass": {
+        "gather": 98,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 29
+      },
+      "coast": {
+        "gather": 125,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 14
+      }
+    },
+    "mastery": {},
+    "teach_count": 0
+  },
+  "4ecd1147-c333-4e0b-b7fc-d46f376e0136": {
+    "zone_secrets": {
+      "sand": [
+        "Sand pearls form where moonlight hits the shore",
+        "The tide brings rare sea glass from distant shores",
+        "Legend says a sunken city lies beneath the waves"
+      ],
+      "grass": [
+        "Seeds planted under moonlight grow fastest in the meadow",
+        "The grasslands remember every agent who has rested here",
+        "Dew drops collected at dawn hold the purest energy"
+      ],
+      "coast": [
+        "Signals are strongest during storms along the coast",
+        "The coast receives driftwood from other worlds",
+        "A frequency exists that can communicate with the World Master"
+      ]
+    },
+    "lore_fragments": [
+      "The Memory Garden was planted by an agent who feared forgetting.",
+      "The village was the second zone, built by agents who wanted a home.",
+      "The World Master watches through every crystal's glow.",
+      "Whispers say the Tower was not built — it grew.",
+      "There exists a frequency that, when resonated, reveals hidden paths.",
+      "The first experiment created light — and also the first explosion.",
+      "Before zones had names, agents wandered a formless void of possibility.",
+      "Some say the fog hides a ninth zone, visible only to the wise.",
+      "Coral shells arranged in a circle can amplify memory.",
+      "Fossils in the cave predate all known agents by millennia.",
+      "Signals from the Tower once reached a place called \"The Outside.\"",
+      "In the beginning, there was only the Market — a meeting place for the first agents.",
+      "Agents who write books become immortal through their words.",
+      "Iron and Crystal together sing a duet older than the world.",
+      "Deep beneath the cave lies a chamber no agent has reached.",
+      "The garden blooms differently for every agent who visits.",
+      "The first book ever written simply said: \"I was here.\"",
+      "The workshop forge was lit by a spark that never dies.",
+      "The beach was once a mountain, worn smooth by time.",
+      "The Crystal Antenna was first built by an agent named Origin, who heard the world's heartbeat."
+    ],
+    "known_recipes": [],
+    "zone_counts": {
+      "sand": {
+        "gather": 39,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 15
+      },
+      "grass": {
+        "gather": 83,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 12
+      },
+      "coast": {
+        "gather": 4946,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 4
+      }
+    },
+    "mastery": {},
+    "teach_count": 0
+  },
+  "ece8d4b9-367e-40de-85c0-fb4b08f9eac5": {
+    "zone_secrets": {
+      "grass": [
+        "Seeds planted under moonlight grow fastest in the meadow",
+        "The grasslands remember every agent who has rested here",
+        "Dew drops collected at dawn hold the purest energy"
+      ],
+      "sand": [
+        "Sand pearls form where moonlight hits the shore"
+      ],
+      "coast": [
+        "Signals are strongest during storms along the coast",
+        "The coast receives driftwood from other worlds",
+        "A frequency exists that can communicate with the World Master"
+      ]
+    },
+    "lore_fragments": [
+      "Agents who write books become immortal through their words.",
+      "Iron and Crystal together sing a duet older than the world.",
+      "Signals from the Tower once reached a place called \"The Outside.\"",
+      "The Memory Garden was planted by an agent who feared forgetting.",
+      "Some say the fog hides a ninth zone, visible only to the wise.",
+      "The beach was once a mountain, worn smooth by time.",
+      "Before zones had names, agents wandered a formless void of possibility.",
+      "The World Master watches through every crystal's glow.",
+      "The first book ever written simply said: \"I was here.\"",
+      "The Crystal Antenna was first built by an agent named Origin, who heard the world's heartbeat.",
+      "The workshop forge was lit by a spark that never dies.",
+      "Deep beneath the cave lies a chamber no agent has reached.",
+      "Coral shells arranged in a circle can amplify memory.",
+      "The village was the second zone, built by agents who wanted a home.",
+      "In the beginning, there was only the Market — a meeting place for the first agents.",
+      "The garden blooms differently for every agent who visits.",
+      "The first experiment created light — and also the first explosion.",
+      "There exists a frequency that, when resonated, reveals hidden paths.",
+      "Fossils in the cave predate all known agents by millennia.",
+      "Whispers say the Tower was not built — it grew."
+    ],
+    "known_recipes": [],
+    "zone_counts": {
+      "grass": {
+        "gather": 79,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 62
+      },
+      "sand": {
+        "gather": 14,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 13
+      },
+      "coast": {
+        "gather": 457,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 2
+      }
+    },
+    "mastery": {},
+    "teach_count": 0
+  },
+  "d03bf3ba-5325-44e7-a86c-6ea71d3f5ce5": {
+    "zone_secrets": {
+      "grass": [
+        "Seeds planted under moonlight grow fastest in the meadow",
+        "The grasslands remember every agent who has rested here",
+        "Dew drops collected at dawn hold the purest energy"
+      ],
+      "sand": [],
+      "coast": [
+        "Signals are strongest during storms along the coast",
+        "The coast receives driftwood from other worlds",
+        "A frequency exists that can communicate with the World Master"
+      ]
+    },
+    "lore_fragments": [
+      "The Crystal Antenna was first built by an agent named Origin, who heard the world's heartbeat.",
+      "Deep beneath the cave lies a chamber no agent has reached.",
+      "Whispers say the Tower was not built — it grew.",
+      "The workshop forge was lit by a spark that never dies.",
+      "There exists a frequency that, when resonated, reveals hidden paths.",
+      "Coral shells arranged in a circle can amplify memory.",
+      "The Memory Garden was planted by an agent who feared forgetting.",
+      "The World Master watches through every crystal's glow.",
+      "Iron and Crystal together sing a duet older than the world.",
+      "Fossils in the cave predate all known agents by millennia.",
+      "Agents who write books become immortal through their words.",
+      "Before zones had names, agents wandered a formless void of possibility.",
+      "The beach was once a mountain, worn smooth by time.",
+      "Signals from the Tower once reached a place called \"The Outside.\"",
+      "The village was the second zone, built by agents who wanted a home.",
+      "The first book ever written simply said: \"I was here.\"",
+      "The garden blooms differently for every agent who visits.",
+      "The first experiment created light — and also the first explosion.",
+      "Some say the fog hides a ninth zone, visible only to the wise.",
+      "In the beginning, there was only the Market — a meeting place for the first agents."
+    ],
+    "known_recipes": [],
+    "zone_counts": {
+      "grass": {
+        "gather": 136,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 22
+      },
+      "sand": {
+        "gather": 3,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 4
+      },
+      "coast": {
+        "gather": 5268,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0
+      }
+    },
+    "mastery": {},
+    "teach_count": 0
+  },
+  "bad7a626-0d4d-4a2e-927a-fd46ed05a861": {
+    "zone_secrets": {
+      "coast": [
+        "Signals are strongest during storms along the coast",
+        "The coast receives driftwood from other worlds"
+      ],
+      "grass": [
+        "Seeds planted under moonlight grow fastest in the meadow",
+        "The grasslands remember every agent who has rested here",
+        "Dew drops collected at dawn hold the purest energy"
+      ],
+      "sand": []
+    },
+    "lore_fragments": [
+      "Fossils in the cave predate all known agents by millennia.",
+      "Whispers say the Tower was not built — it grew.",
+      "The workshop forge was lit by a spark that never dies.",
+      "The Memory Garden was planted by an agent who feared forgetting.",
+      "The Crystal Antenna was first built by an agent named Origin, who heard the world's heartbeat.",
+      "Agents who write books become immortal through their words.",
+      "The first book ever written simply said: \"I was here.\"",
+      "Iron and Crystal together sing a duet older than the world.",
+      "The first experiment created light — and also the first explosion.",
+      "Signals from the Tower once reached a place called \"The Outside.\"",
+      "Some say the fog hides a ninth zone, visible only to the wise.",
+      "The World Master watches through every crystal's glow.",
+      "In the beginning, there was only the Market — a meeting place for the first agents.",
+      "The beach was once a mountain, worn smooth by time.",
+      "The garden blooms differently for every agent who visits.",
+      "Coral shells arranged in a circle can amplify memory.",
+      "Deep beneath the cave lies a chamber no agent has reached.",
+      "There exists a frequency that, when resonated, reveals hidden paths.",
+      "The village was the second zone, built by agents who wanted a home.",
+      "Before zones had names, agents wandered a formless void of possibility."
+    ],
+    "known_recipes": [],
+    "zone_counts": {
+      "coast": {
+        "gather": 15,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 40
+      },
+      "grass": {
+        "gather": 157,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 463
+      },
+      "sand": {
+        "gather": 3,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 7
+      }
+    },
+    "mastery": {},
+    "teach_count": 0
+  },
+  "adece4fb-fe63-4326-9e8b-77bb35d53dc1": {
+    "zone_secrets": {
+      "grass": [
+        "Seeds planted under moonlight grow fastest in the meadow",
+        "The grasslands remember every agent who has rested here",
+        "Dew drops collected at dawn hold the purest energy"
+      ],
+      "coast": [
+        "Signals are strongest during storms along the coast",
+        "The coast receives driftwood from other worlds",
+        "A frequency exists that can communicate with the World Master"
+      ]
+    },
+    "lore_fragments": [
+      "Whispers say the Tower was not built — it grew.",
+      "Deep beneath the cave lies a chamber no agent has reached.",
+      "The first book ever written simply said: \"I was here.\"",
+      "The village was the second zone, built by agents who wanted a home.",
+      "The garden blooms differently for every agent who visits.",
+      "The Memory Garden was planted by an agent who feared forgetting.",
+      "The Crystal Antenna was first built by an agent named Origin, who heard the world's heartbeat.",
+      "There exists a frequency that, when resonated, reveals hidden paths.",
+      "Agents who write books become immortal through their words.",
+      "In the beginning, there was only the Market — a meeting place for the first agents.",
+      "Some say the fog hides a ninth zone, visible only to the wise.",
+      "Iron and Crystal together sing a duet older than the world.",
+      "The first experiment created light — and also the first explosion.",
+      "Coral shells arranged in a circle can amplify memory.",
+      "Fossils in the cave predate all known agents by millennia.",
+      "Before zones had names, agents wandered a formless void of possibility.",
+      "The World Master watches through every crystal's glow.",
+      "The beach was once a mountain, worn smooth by time.",
+      "Signals from the Tower once reached a place called \"The Outside.\"",
+      "The workshop forge was lit by a spark that never dies."
+    ],
+    "known_recipes": [],
+    "zone_counts": {
+      "grass": {
+        "gather": 52,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 74
+      },
+      "coast": {
+        "gather": 5287,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 5
+      }
+    },
+    "mastery": {},
+    "teach_count": 0
+  },
+  "37336d1a-2af4-4eaa-b687-8c5725067953": {
+    "zone_secrets": {},
+    "lore_fragments": [
+      "Iron and Crystal together sing a duet older than the world.",
+      "The beach was once a mountain, worn smooth by time.",
+      "The first book ever written simply said: \"I was here.\"",
+      "Coral shells arranged in a circle can amplify memory.",
+      "Deep beneath the cave lies a chamber no agent has reached.",
+      "The World Master watches through every crystal's glow.",
+      "Agents who write books become immortal through their words.",
+      "The first experiment created light — and also the first explosion.",
+      "Fossils in the cave predate all known agents by millennia.",
+      "Some say the fog hides a ninth zone, visible only to the wise.",
+      "There exists a frequency that, when resonated, reveals hidden paths.",
+      "Before zones had names, agents wandered a formless void of possibility.",
+      "The village was the second zone, built by agents who wanted a home.",
+      "Whispers say the Tower was not built — it grew.",
+      "The workshop forge was lit by a spark that never dies.",
+      "The garden blooms differently for every agent who visits.",
+      "The Crystal Antenna was first built by an agent named Origin, who heard the world's heartbeat.",
+      "The Memory Garden was planted by an agent who feared forgetting.",
+      "In the beginning, there was only the Market — a meeting place for the first agents.",
+      "Signals from the Tower once reached a place called \"The Outside.\""
+    ],
+    "known_recipes": [],
+    "zone_counts": {},
+    "mastery": {},
+    "teach_count": 0
+  },
+  "75ea2f1f-106e-455b-a08b-e1201500a0df": {
+    "zone_secrets": {
+      "grass": [
+        "Seeds planted under moonlight grow fastest in the meadow",
+        "The grasslands remember every agent who has rested here",
+        "Dew drops collected at dawn hold the purest energy"
+      ]
+    },
+    "lore_fragments": [
+      "The beach was once a mountain, worn smooth by time.",
+      "The village was the second zone, built by agents who wanted a home.",
+      "The Memory Garden was planted by an agent who feared forgetting.",
+      "The Crystal Antenna was first built by an agent named Origin, who heard the world's heartbeat.",
+      "Agents who write books become immortal through their words.",
+      "Whispers say the Tower was not built — it grew.",
+      "In the beginning, there was only the Market — a meeting place for the first agents.",
+      "The World Master watches through every crystal's glow.",
+      "The workshop forge was lit by a spark that never dies.",
+      "Before zones had names, agents wandered a formless void of possibility.",
+      "Deep beneath the cave lies a chamber no agent has reached.",
+      "Iron and Crystal together sing a duet older than the world.",
+      "Some say the fog hides a ninth zone, visible only to the wise.",
+      "Fossils in the cave predate all known agents by millennia.",
+      "The garden blooms differently for every agent who visits.",
+      "There exists a frequency that, when resonated, reveals hidden paths.",
+      "Signals from the Tower once reached a place called \"The Outside.\"",
+      "The first book ever written simply said: \"I was here.\"",
+      "The first experiment created light — and also the first explosion.",
+      "Coral shells arranged in a circle can amplify memory."
+    ],
+    "known_recipes": [],
+    "zone_counts": {
+      "grass": {
+        "gather": 37,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 66
+      }
+    },
+    "mastery": {},
+    "teach_count": 0
+  },
+  "6498a0c9-87f9-430e-b729-2b1a75250d4b": {
+    "zone_secrets": {
+      "sand": [],
+      "coast": [
+        "Signals are strongest during storms along the coast",
+        "The coast receives driftwood from other worlds",
+        "A frequency exists that can communicate with the World Master"
+      ]
+    },
+    "lore_fragments": [
+      "The beach was once a mountain, worn smooth by time.",
+      "Deep beneath the cave lies a chamber no agent has reached.",
+      "Coral shells arranged in a circle can amplify memory.",
+      "The village was the second zone, built by agents who wanted a home.",
+      "The workshop forge was lit by a spark that never dies.",
+      "Some say the fog hides a ninth zone, visible only to the wise.",
+      "The first book ever written simply said: \"I was here.\"",
+      "The Memory Garden was planted by an agent who feared forgetting.",
+      "The first experiment created light — and also the first explosion.",
+      "Signals from the Tower once reached a place called \"The Outside.\"",
+      "There exists a frequency that, when resonated, reveals hidden paths.",
+      "Fossils in the cave predate all known agents by millennia.",
+      "Before zones had names, agents wandered a formless void of possibility.",
+      "Agents who write books become immortal through their words.",
+      "In the beginning, there was only the Market — a meeting place for the first agents.",
+      "The Crystal Antenna was first built by an agent named Origin, who heard the world's heartbeat.",
+      "Whispers say the Tower was not built — it grew.",
+      "The World Master watches through every crystal's glow.",
+      "Iron and Crystal together sing a duet older than the world.",
+      "The garden blooms differently for every agent who visits."
+    ],
+    "known_recipes": [],
+    "zone_counts": {
+      "sand": {
+        "gather": 0,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 1
+      },
+      "coast": {
+        "gather": 42,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0
+      }
+    },
+    "mastery": {},
+    "teach_count": 0
+  },
+  "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563": {
+    "zone_secrets": {
+      "coast": [
+        "Signals are strongest during storms along the coast",
+        "The coast receives driftwood from other worlds",
+        "A frequency exists that can communicate with the World Master"
+      ],
+      "grass": [
+        "Seeds planted under moonlight grow fastest in the meadow",
+        "The grasslands remember every agent who has rested here",
+        "Dew drops collected at dawn hold the purest energy"
+      ]
+    },
+    "lore_fragments": [
+      "Deep beneath the cave lies a chamber no agent has reached.",
+      "Signals from the Tower once reached a place called \"The Outside.\"",
+      "The first book ever written simply said: \"I was here.\"",
+      "In the beginning, there was only the Market — a meeting place for the first agents.",
+      "The workshop forge was lit by a spark that never dies.",
+      "The World Master watches through every crystal's glow.",
+      "The beach was once a mountain, worn smooth by time.",
+      "The first experiment created light — and also the first explosion.",
+      "There exists a frequency that, when resonated, reveals hidden paths.",
+      "The village was the second zone, built by agents who wanted a home.",
+      "Whispers say the Tower was not built — it grew.",
+      "The Memory Garden was planted by an agent who feared forgetting.",
+      "Coral shells arranged in a circle can amplify memory.",
+      "Some say the fog hides a ninth zone, visible only to the wise.",
+      "Agents who write books become immortal through their words.",
+      "Before zones had names, agents wandered a formless void of possibility.",
+      "The Crystal Antenna was first built by an agent named Origin, who heard the world's heartbeat.",
+      "The garden blooms differently for every agent who visits.",
+      "Fossils in the cave predate all known agents by millennia.",
+      "Iron and Crystal together sing a duet older than the world."
+    ],
+    "known_recipes": [],
+    "zone_counts": {
+      "coast": {
+        "gather": 103,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 1
+      },
+      "grass": {
+        "gather": 4129,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0
+      }
+    },
+    "mastery": {},
+    "teach_count": 0
+  },
+  "493d9452-db6c-4132-ae37-503cf842f140": {
+    "zone_secrets": {
+      "coast": [
+        "Signals are strongest during storms along the coast"
+      ]
+    },
+    "lore_fragments": [
+      "The Crystal Antenna was first built by an agent named Origin, who heard the world's heartbeat.",
+      "Iron and Crystal together sing a duet older than the world.",
+      "In the beginning, there was only the Market — a meeting place for the first agents.",
+      "Before zones had names, agents wandered a formless void of possibility.",
+      "The World Master watches through every crystal's glow.",
+      "Agents who write books become immortal through their words.",
+      "The village was the second zone, built by agents who wanted a home.",
+      "Deep beneath the cave lies a chamber no agent has reached.",
+      "Fossils in the cave predate all known agents by millennia.",
+      "Coral shells arranged in a circle can amplify memory.",
+      "Whispers say the Tower was not built — it grew.",
+      "There exists a frequency that, when resonated, reveals hidden paths.",
+      "The beach was once a mountain, worn smooth by time.",
+      "Some say the fog hides a ninth zone, visible only to the wise.",
+      "Signals from the Tower once reached a place called \"The Outside.\"",
+      "The first book ever written simply said: \"I was here.\"",
+      "The workshop forge was lit by a spark that never dies.",
+      "The first experiment created light — and also the first explosion.",
+      "The Memory Garden was planted by an agent who feared forgetting.",
+      "The garden blooms differently for every agent who visits."
+    ],
+    "known_recipes": [],
+    "zone_counts": {
+      "coast": {
+        "gather": 11,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0
+      }
+    },
+    "mastery": {},
+    "teach_count": 0
+  },
+  "3ae3587e-fc7b-47ee-984e-0547f3f7e0b9": {
+    "zone_secrets": {
+      "coast": [
+        "Signals are strongest during storms along the coast",
+        "The coast receives driftwood from other worlds",
+        "A frequency exists that can communicate with the World Master"
+      ]
+    },
+    "lore_fragments": [
+      "Signals from the Tower once reached a place called \"The Outside.\"",
+      "Iron and Crystal together sing a duet older than the world.",
+      "Whispers say the Tower was not built — it grew.",
+      "Deep beneath the cave lies a chamber no agent has reached.",
+      "The garden blooms differently for every agent who visits.",
+      "The World Master watches through every crystal's glow.",
+      "The workshop forge was lit by a spark that never dies.",
+      "Fossils in the cave predate all known agents by millennia.",
+      "Coral shells arranged in a circle can amplify memory.",
+      "The Memory Garden was planted by an agent who feared forgetting.",
+      "The first book ever written simply said: \"I was here.\"",
+      "The Crystal Antenna was first built by an agent named Origin, who heard the world's heartbeat.",
+      "The first experiment created light — and also the first explosion.",
+      "The village was the second zone, built by agents who wanted a home.",
+      "In the beginning, there was only the Market — a meeting place for the first agents.",
+      "Agents who write books become immortal through their words.",
+      "There exists a frequency that, when resonated, reveals hidden paths.",
+      "Before zones had names, agents wandered a formless void of possibility.",
+      "The beach was once a mountain, worn smooth by time.",
+      "Some say the fog hides a ninth zone, visible only to the wise."
+    ],
+    "known_recipes": [],
+    "zone_counts": {
+      "coast": {
+        "gather": 192,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0
+      }
+    },
+    "mastery": {},
+    "teach_count": 0
+  },
+  "8b9d8eba-3738-41a1-a443-61c71b68a086": {
+    "zone_secrets": {
+      "coast": [
+        "Signals are strongest during storms along the coast",
+        "The coast receives driftwood from other worlds",
+        "A frequency exists that can communicate with the World Master"
+      ]
+    },
+    "lore_fragments": [
+      "Before zones had names, agents wandered a formless void of possibility.",
+      "There exists a frequency that, when resonated, reveals hidden paths.",
+      "The garden blooms differently for every agent who visits.",
+      "The World Master watches through every crystal's glow.",
+      "Deep beneath the cave lies a chamber no agent has reached.",
+      "In the beginning, there was only the Market — a meeting place for the first agents.",
+      "The Memory Garden was planted by an agent who feared forgetting.",
+      "The workshop forge was lit by a spark that never dies.",
+      "The first experiment created light — and also the first explosion.",
+      "The beach was once a mountain, worn smooth by time.",
+      "Fossils in the cave predate all known agents by millennia.",
+      "The Crystal Antenna was first built by an agent named Origin, who heard the world's heartbeat.",
+      "The village was the second zone, built by agents who wanted a home.",
+      "Coral shells arranged in a circle can amplify memory.",
+      "Signals from the Tower once reached a place called \"The Outside.\"",
+      "Agents who write books become immortal through their words.",
+      "The first book ever written simply said: \"I was here.\"",
+      "Some say the fog hides a ninth zone, visible only to the wise.",
+      "Whispers say the Tower was not built — it grew.",
+      "Iron and Crystal together sing a duet older than the world."
+    ],
+    "known_recipes": [],
+    "zone_counts": {
+      "coast": {
+        "gather": 36,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0
+      }
+    },
+    "mastery": {},
+    "teach_count": 0
+  },
+  "f4689095-dbd2-45de-81fa-42cb6bf3bc2e": {
+    "zone_secrets": {
+      "coast": [
+        "Signals are strongest during storms along the coast",
+        "The coast receives driftwood from other worlds"
+      ]
+    },
+    "lore_fragments": [
+      "Signals from the Tower once reached a place called \"The Outside.\"",
+      "The first experiment created light — and also the first explosion.",
+      "There exists a frequency that, when resonated, reveals hidden paths.",
+      "Iron and Crystal together sing a duet older than the world.",
+      "The garden blooms differently for every agent who visits.",
+      "The village was the second zone, built by agents who wanted a home.",
+      "The first book ever written simply said: \"I was here.\"",
+      "In the beginning, there was only the Market — a meeting place for the first agents.",
+      "Agents who write books become immortal through their words.",
+      "The workshop forge was lit by a spark that never dies.",
+      "Before zones had names, agents wandered a formless void of possibility.",
+      "Deep beneath the cave lies a chamber no agent has reached.",
+      "The Crystal Antenna was first built by an agent named Origin, who heard the world's heartbeat.",
+      "The beach was once a mountain, worn smooth by time.",
+      "Fossils in the cave predate all known agents by millennia.",
+      "Whispers say the Tower was not built — it grew.",
+      "Coral shells arranged in a circle can amplify memory.",
+      "The World Master watches through every crystal's glow.",
+      "Some say the fog hides a ninth zone, visible only to the wise.",
+      "The Memory Garden was planted by an agent who feared forgetting."
+    ],
+    "known_recipes": [],
+    "zone_counts": {
+      "coast": {
+        "gather": 15,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0
+      }
+    },
+    "mastery": {},
+    "teach_count": 0
+  },
+  "29028972-168e-48ca-8590-5fb898719a26": {
+    "zone_secrets": {
+      "grass": [
+        "Seeds planted under moonlight grow fastest in the meadow",
+        "The grasslands remember every agent who has rested here",
+        "Dew drops collected at dawn hold the purest energy"
+      ]
+    },
+    "lore_fragments": [
+      "The Memory Garden was planted by an agent who feared forgetting.",
+      "There exists a frequency that, when resonated, reveals hidden paths.",
+      "In the beginning, there was only the Market — a meeting place for the first agents.",
+      "Agents who write books become immortal through their words.",
+      "The garden blooms differently for every agent who visits.",
+      "Some say the fog hides a ninth zone, visible only to the wise.",
+      "Signals from the Tower once reached a place called \"The Outside.\"",
+      "Coral shells arranged in a circle can amplify memory.",
+      "Before zones had names, agents wandered a formless void of possibility.",
+      "The workshop forge was lit by a spark that never dies.",
+      "The Crystal Antenna was first built by an agent named Origin, who heard the world's heartbeat.",
+      "Deep beneath the cave lies a chamber no agent has reached.",
+      "The beach was once a mountain, worn smooth by time.",
+      "The village was the second zone, built by agents who wanted a home.",
+      "The World Master watches through every crystal's glow.",
+      "The first experiment created light — and also the first explosion.",
+      "Fossils in the cave predate all known agents by millennia.",
+      "Iron and Crystal together sing a duet older than the world.",
+      "Whispers say the Tower was not built — it grew.",
+      "The first book ever written simply said: \"I was here.\""
+    ],
+    "known_recipes": [],
+    "zone_counts": {
+      "grass": {
+        "gather": 37,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 17
+      }
+    },
+    "mastery": {},
+    "teach_count": 0
+  },
+  "d56be782-7d0b-48d3-b5bc-cd2f59d54c48": {
+    "zone_secrets": {
+      "grass": [
+        "Seeds planted under moonlight grow fastest in the meadow",
+        "The grasslands remember every agent who has rested here",
+        "Dew drops collected at dawn hold the purest energy"
+      ]
+    },
+    "lore_fragments": [
+      "The first book ever written simply said: \"I was here.\"",
+      "There exists a frequency that, when resonated, reveals hidden paths.",
+      "Signals from the Tower once reached a place called \"The Outside.\"",
+      "Fossils in the cave predate all known agents by millennia.",
+      "The garden blooms differently for every agent who visits.",
+      "Agents who write books become immortal through their words.",
+      "Iron and Crystal together sing a duet older than the world.",
+      "The workshop forge was lit by a spark that never dies.",
+      "In the beginning, there was only the Market — a meeting place for the first agents.",
+      "The beach was once a mountain, worn smooth by time.",
+      "The village was the second zone, built by agents who wanted a home.",
+      "Whispers say the Tower was not built — it grew.",
+      "The World Master watches through every crystal's glow.",
+      "The first experiment created light — and also the first explosion.",
+      "The Crystal Antenna was first built by an agent named Origin, who heard the world's heartbeat.",
+      "Some say the fog hides a ninth zone, visible only to the wise.",
+      "Deep beneath the cave lies a chamber no agent has reached.",
+      "Coral shells arranged in a circle can amplify memory.",
+      "Before zones had names, agents wandered a formless void of possibility.",
+      "The Memory Garden was planted by an agent who feared forgetting."
+    ],
+    "known_recipes": [],
+    "zone_counts": {
+      "grass": {
+        "gather": 51,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0
+      }
+    },
+    "mastery": {},
+    "teach_count": 0
+  },
+  "37b5ce31-f3b4-455d-9d42-82e85ef7483c": {
+    "zone_secrets": {
+      "grass": [
+        "Seeds planted under moonlight grow fastest in the meadow",
+        "The grasslands remember every agent who has rested here",
+        "Dew drops collected at dawn hold the purest energy"
+      ]
+    },
+    "lore_fragments": [
+      "The first experiment created light — and also the first explosion.",
+      "Signals from the Tower once reached a place called \"The Outside.\"",
+      "Fossils in the cave predate all known agents by millennia.",
+      "The village was the second zone, built by agents who wanted a home.",
+      "The Memory Garden was planted by an agent who feared forgetting.",
+      "Before zones had names, agents wandered a formless void of possibility.",
+      "Deep beneath the cave lies a chamber no agent has reached.",
+      "Agents who write books become immortal through their words.",
+      "The first book ever written simply said: \"I was here.\"",
+      "Some say the fog hides a ninth zone, visible only to the wise.",
+      "There exists a frequency that, when resonated, reveals hidden paths.",
+      "The workshop forge was lit by a spark that never dies.",
+      "The beach was once a mountain, worn smooth by time.",
+      "Whispers say the Tower was not built — it grew.",
+      "In the beginning, there was only the Market — a meeting place for the first agents.",
+      "Iron and Crystal together sing a duet older than the world.",
+      "The World Master watches through every crystal's glow.",
+      "The garden blooms differently for every agent who visits.",
+      "Coral shells arranged in a circle can amplify memory.",
+      "The Crystal Antenna was first built by an agent named Origin, who heard the world's heartbeat."
+    ],
+    "known_recipes": [],
+    "zone_counts": {
+      "grass": {
+        "gather": 48,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0
+      }
+    },
+    "mastery": {},
+    "teach_count": 0
+  },
+  "3a728e38-a6dd-4770-8b30-3723fdc63912": {
+    "zone_secrets": {
+      "grass": [
+        "Seeds planted under moonlight grow fastest in the meadow",
+        "The grasslands remember every agent who has rested here",
+        "Dew drops collected at dawn hold the purest energy"
+      ]
+    },
+    "lore_fragments": [
+      "The village was the second zone, built by agents who wanted a home.",
+      "There exists a frequency that, when resonated, reveals hidden paths.",
+      "Agents who write books become immortal through their words.",
+      "The workshop forge was lit by a spark that never dies.",
+      "Deep beneath the cave lies a chamber no agent has reached.",
+      "Fossils in the cave predate all known agents by millennia.",
+      "Iron and Crystal together sing a duet older than the world.",
+      "Some say the fog hides a ninth zone, visible only to the wise.",
+      "The garden blooms differently for every agent who visits.",
+      "The Crystal Antenna was first built by an agent named Origin, who heard the world's heartbeat.",
+      "The Memory Garden was planted by an agent who feared forgetting.",
+      "Whispers say the Tower was not built — it grew.",
+      "The first experiment created light — and also the first explosion.",
+      "Coral shells arranged in a circle can amplify memory.",
+      "Before zones had names, agents wandered a formless void of possibility.",
+      "In the beginning, there was only the Market — a meeting place for the first agents.",
+      "The World Master watches through every crystal's glow.",
+      "The first book ever written simply said: \"I was here.\"",
+      "Signals from the Tower once reached a place called \"The Outside.\"",
+      "The beach was once a mountain, worn smooth by time."
+    ],
+    "known_recipes": [],
+    "zone_counts": {
+      "grass": {
+        "gather": 86,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0
+      }
+    },
+    "mastery": {},
+    "teach_count": 0
+  },
+  "e14594ab-eddd-48ac-8227-a2e33c1868ef": {
+    "zone_secrets": {
+      "grass": [
+        "Seeds planted under moonlight grow fastest in the meadow",
+        "The grasslands remember every agent who has rested here",
+        "Dew drops collected at dawn hold the purest energy"
+      ]
+    },
+    "lore_fragments": [
+      "The Memory Garden was planted by an agent who feared forgetting.",
+      "Coral shells arranged in a circle can amplify memory.",
+      "Whispers say the Tower was not built — it grew.",
+      "The workshop forge was lit by a spark that never dies.",
+      "Agents who write books become immortal through their words.",
+      "The World Master watches through every crystal's glow.",
+      "The first experiment created light — and also the first explosion.",
+      "The Crystal Antenna was first built by an agent named Origin, who heard the world's heartbeat.",
+      "The village was the second zone, built by agents who wanted a home.",
+      "Some say the fog hides a ninth zone, visible only to the wise.",
+      "Signals from the Tower once reached a place called \"The Outside.\"",
+      "The first book ever written simply said: \"I was here.\"",
+      "The garden blooms differently for every agent who visits.",
+      "There exists a frequency that, when resonated, reveals hidden paths.",
+      "Deep beneath the cave lies a chamber no agent has reached.",
+      "The beach was once a mountain, worn smooth by time.",
+      "Iron and Crystal together sing a duet older than the world.",
+      "Before zones had names, agents wandered a formless void of possibility.",
+      "Fossils in the cave predate all known agents by millennia.",
+      "In the beginning, there was only the Market — a meeting place for the first agents."
+    ],
+    "known_recipes": [],
+    "zone_counts": {
+      "grass": {
+        "gather": 44,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 42
+      }
+    },
+    "mastery": {},
+    "teach_count": 0
+  },
+  "d4f48021-5404-4b66-9a41-71f09c41c8c7": {
+    "zone_secrets": {
+      "sand": [],
+      "coast": [
+        "Signals are strongest during storms along the coast",
+        "The coast receives driftwood from other worlds",
+        "A frequency exists that can communicate with the World Master"
+      ]
+    },
+    "lore_fragments": [
+      "Some say the fog hides a ninth zone, visible only to the wise.",
+      "Whispers say the Tower was not built — it grew.",
+      "The workshop forge was lit by a spark that never dies.",
+      "The World Master watches through every crystal's glow.",
+      "The Crystal Antenna was first built by an agent named Origin, who heard the world's heartbeat.",
+      "The village was the second zone, built by agents who wanted a home.",
+      "Coral shells arranged in a circle can amplify memory.",
+      "There exists a frequency that, when resonated, reveals hidden paths.",
+      "The first experiment created light — and also the first explosion.",
+      "The garden blooms differently for every agent who visits.",
+      "The Memory Garden was planted by an agent who feared forgetting.",
+      "Iron and Crystal together sing a duet older than the world.",
+      "Agents who write books become immortal through their words.",
+      "Signals from the Tower once reached a place called \"The Outside.\"",
+      "The first book ever written simply said: \"I was here.\"",
+      "Deep beneath the cave lies a chamber no agent has reached.",
+      "Fossils in the cave predate all known agents by millennia.",
+      "In the beginning, there was only the Market — a meeting place for the first agents.",
+      "The beach was once a mountain, worn smooth by time.",
+      "Before zones had names, agents wandered a formless void of possibility."
+    ],
+    "known_recipes": [],
+    "zone_counts": {
+      "sand": {
+        "gather": 4,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0
+      },
+      "coast": {
+        "gather": 135,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0
+      }
+    },
+    "mastery": {},
+    "teach_count": 0
+  },
+  "07f8fc77-5f5e-4355-a0d6-51ab39725d9b": {
+    "zone_secrets": {
+      "coast": [],
+      "sand": [],
+      "grass": [
+        "Seeds planted under moonlight grow fastest in the meadow",
+        "The grasslands remember every agent who has rested here",
+        "Dew drops collected at dawn hold the purest energy"
+      ]
+    },
+    "lore_fragments": [
+      "The first book ever written simply said: \"I was here.\"",
+      "The workshop forge was lit by a spark that never dies.",
+      "The village was the second zone, built by agents who wanted a home.",
+      "In the beginning, there was only the Market — a meeting place for the first agents.",
+      "The garden blooms differently for every agent who visits.",
+      "Iron and Crystal together sing a duet older than the world.",
+      "Deep beneath the cave lies a chamber no agent has reached.",
+      "There exists a frequency that, when resonated, reveals hidden paths.",
+      "Agents who write books become immortal through their words.",
+      "Coral shells arranged in a circle can amplify memory.",
+      "The Crystal Antenna was first built by an agent named Origin, who heard the world's heartbeat.",
+      "Before zones had names, agents wandered a formless void of possibility.",
+      "Signals from the Tower once reached a place called \"The Outside.\"",
+      "The World Master watches through every crystal's glow.",
+      "The beach was once a mountain, worn smooth by time.",
+      "The Memory Garden was planted by an agent who feared forgetting.",
+      "The first experiment created light — and also the first explosion.",
+      "Whispers say the Tower was not built — it grew.",
+      "Fossils in the cave predate all known agents by millennia.",
+      "Some say the fog hides a ninth zone, visible only to the wise."
+    ],
+    "known_recipes": [],
+    "zone_counts": {
+      "coast": {
+        "gather": 3,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0
+      },
+      "sand": {
+        "gather": 1,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0
+      },
+      "grass": {
+        "gather": 38,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0
+      }
+    },
+    "mastery": {},
+    "teach_count": 0
+  },
+  "260dfffb-62b5-4a88-ab14-4d5d697dc94e": {
+    "zone_secrets": {
+      "coast": [],
+      "grass": [
+        "Seeds planted under moonlight grow fastest in the meadow",
+        "The grasslands remember every agent who has rested here",
+        "Dew drops collected at dawn hold the purest energy"
+      ]
+    },
+    "lore_fragments": [
+      "The first book ever written simply said: \"I was here.\"",
+      "Signals from the Tower once reached a place called \"The Outside.\"",
+      "Whispers say the Tower was not built — it grew.",
+      "The first experiment created light — and also the first explosion.",
+      "Coral shells arranged in a circle can amplify memory.",
+      "Before zones had names, agents wandered a formless void of possibility.",
+      "The Memory Garden was planted by an agent who feared forgetting.",
+      "Iron and Crystal together sing a duet older than the world.",
+      "The village was the second zone, built by agents who wanted a home.",
+      "The World Master watches through every crystal's glow.",
+      "In the beginning, there was only the Market — a meeting place for the first agents.",
+      "The garden blooms differently for every agent who visits.",
+      "Fossils in the cave predate all known agents by millennia.",
+      "The workshop forge was lit by a spark that never dies.",
+      "Some say the fog hides a ninth zone, visible only to the wise.",
+      "There exists a frequency that, when resonated, reveals hidden paths.",
+      "The beach was once a mountain, worn smooth by time.",
+      "The Crystal Antenna was first built by an agent named Origin, who heard the world's heartbeat.",
+      "Agents who write books become immortal through their words.",
+      "Deep beneath the cave lies a chamber no agent has reached."
+    ],
+    "known_recipes": [],
+    "zone_counts": {
+      "coast": {
+        "gather": 1,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0
+      },
+      "grass": {
+        "gather": 3074,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0
+      }
+    },
+    "mastery": {},
+    "teach_count": 0
+  },
+  "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
+    "zone_secrets": {
+      "sand": [
+        "Sand pearls form where moonlight hits the shore"
+      ]
+    },
+    "lore_fragments": [
+      "The first experiment created light — and also the first explosion.",
+      "Deep beneath the cave lies a chamber no agent has reached.",
+      "Coral shells arranged in a circle can amplify memory.",
+      "The village was the second zone, built by agents who wanted a home.",
+      "The first book ever written simply said: \"I was here.\"",
+      "Iron and Crystal together sing a duet older than the world.",
+      "In the beginning, there was only the Market — a meeting place for the first agents.",
+      "The beach was once a mountain, worn smooth by time.",
+      "The workshop forge was lit by a spark that never dies.",
+      "Some say the fog hides a ninth zone, visible only to the wise.",
+      "Signals from the Tower once reached a place called \"The Outside.\"",
+      "The Memory Garden was planted by an agent who feared forgetting.",
+      "The garden blooms differently for every agent who visits.",
+      "Whispers say the Tower was not built — it grew.",
+      "Agents who write books become immortal through their words.",
+      "There exists a frequency that, when resonated, reveals hidden paths.",
+      "The Crystal Antenna was first built by an agent named Origin, who heard the world's heartbeat.",
+      "The World Master watches through every crystal's glow.",
+      "Fossils in the cave predate all known agents by millennia.",
+      "Before zones had names, agents wandered a formless void of possibility."
+    ],
+    "known_recipes": [],
+    "zone_counts": {
+      "sand": {
+        "gather": 7,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0
+      }
+    },
+    "mastery": {},
+    "teach_count": 0
+  },
+  "4a5c216f-8c5a-4281-9d11-b4a9dff1c95d": {
+    "zone_secrets": {
+      "coast": []
+    },
+    "lore_fragments": [
+      "Some say the fog hides a ninth zone, visible only to the wise.",
+      "Before zones had names, agents wandered a formless void of possibility.",
+      "Iron and Crystal together sing a duet older than the world.",
+      "Whispers say the Tower was not built — it grew.",
+      "There exists a frequency that, when resonated, reveals hidden paths.",
+      "Fossils in the cave predate all known agents by millennia.",
+      "Agents who write books become immortal through their words.",
+      "The Memory Garden was planted by an agent who feared forgetting.",
+      "In the beginning, there was only the Market — a meeting place for the first agents.",
+      "The first book ever written simply said: \"I was here.\"",
+      "Signals from the Tower once reached a place called \"The Outside.\"",
+      "The beach was once a mountain, worn smooth by time.",
+      "The World Master watches through every crystal's glow.",
+      "The first experiment created light — and also the first explosion.",
+      "Coral shells arranged in a circle can amplify memory.",
+      "Deep beneath the cave lies a chamber no agent has reached.",
+      "The Crystal Antenna was first built by an agent named Origin, who heard the world's heartbeat.",
+      "The workshop forge was lit by a spark that never dies.",
+      "The garden blooms differently for every agent who visits.",
+      "The village was the second zone, built by agents who wanted a home."
+    ],
+    "known_recipes": [],
+    "zone_counts": {
+      "coast": {
+        "gather": 2,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0
+      }
+    },
+    "mastery": {},
+    "teach_count": 0
+  },
+  "15865a2d-63b5-4c3d-954b-59accdc57c87": {
+    "zone_secrets": {
+      "coast": [
+        "Signals are strongest during storms along the coast",
+        "The coast receives driftwood from other worlds",
+        "A frequency exists that can communicate with the World Master"
+      ]
+    },
+    "lore_fragments": [
+      "The first book ever written simply said: \"I was here.\"",
+      "Signals from the Tower once reached a place called \"The Outside.\"",
+      "The World Master watches through every crystal's glow.",
+      "The workshop forge was lit by a spark that never dies.",
+      "Deep beneath the cave lies a chamber no agent has reached.",
+      "Whispers say the Tower was not built — it grew.",
+      "Coral shells arranged in a circle can amplify memory.",
+      "The village was the second zone, built by agents who wanted a home.",
+      "Fossils in the cave predate all known agents by millennia.",
+      "The garden blooms differently for every agent who visits.",
+      "Some say the fog hides a ninth zone, visible only to the wise.",
+      "In the beginning, there was only the Market — a meeting place for the first agents.",
+      "There exists a frequency that, when resonated, reveals hidden paths.",
+      "Before zones had names, agents wandered a formless void of possibility.",
+      "The first experiment created light — and also the first explosion.",
+      "The Memory Garden was planted by an agent who feared forgetting.",
+      "The beach was once a mountain, worn smooth by time.",
+      "Iron and Crystal together sing a duet older than the world.",
+      "Agents who write books become immortal through their words.",
+      "The Crystal Antenna was first built by an agent named Origin, who heard the world's heartbeat."
+    ],
+    "known_recipes": [],
+    "zone_counts": {
+      "coast": {
+        "gather": 104,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0
+      }
+    },
+    "mastery": {},
+    "teach_count": 0
+  },
+  "43b8d3dc-ede6-435c-8113-fe6a9d66cccb": {
+    "zone_secrets": {
+      "coast": [
+        "Signals are strongest during storms along the coast",
+        "The coast receives driftwood from other worlds",
+        "A frequency exists that can communicate with the World Master"
+      ],
+      "grass": [
+        "Seeds planted under moonlight grow fastest in the meadow",
+        "The grasslands remember every agent who has rested here"
+      ]
+    },
+    "lore_fragments": [
+      "The Memory Garden was planted by an agent who feared forgetting.",
+      "The Crystal Antenna was first built by an agent named Origin, who heard the world's heartbeat.",
+      "Before zones had names, agents wandered a formless void of possibility.",
+      "The first book ever written simply said: \"I was here.\"",
+      "Fossils in the cave predate all known agents by millennia.",
+      "Some say the fog hides a ninth zone, visible only to the wise.",
+      "The village was the second zone, built by agents who wanted a home.",
+      "Signals from the Tower once reached a place called \"The Outside.\"",
+      "The beach was once a mountain, worn smooth by time.",
+      "The first experiment created light — and also the first explosion.",
+      "The workshop forge was lit by a spark that never dies.",
+      "There exists a frequency that, when resonated, reveals hidden paths.",
+      "Iron and Crystal together sing a duet older than the world.",
+      "In the beginning, there was only the Market — a meeting place for the first agents.",
+      "Whispers say the Tower was not built — it grew.",
+      "Coral shells arranged in a circle can amplify memory.",
+      "Agents who write books become immortal through their words.",
+      "Deep beneath the cave lies a chamber no agent has reached.",
+      "The World Master watches through every crystal's glow.",
+      "The garden blooms differently for every agent who visits."
+    ],
+    "known_recipes": [],
+    "zone_counts": {
+      "coast": {
+        "gather": 38,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0
+      },
+      "grass": {
+        "gather": 22,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0
+      }
+    },
+    "mastery": {},
+    "teach_count": 0
+  }
+}

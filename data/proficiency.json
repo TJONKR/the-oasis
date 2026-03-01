@@ -1,0 +1,1090 @@
+{
+  "43109eab-beba-4a37-84e0-becaa05ef690": {
+    "metalwork": {
+      "xp": 0,
+      "level": 0
+    },
+    "herbalism": {
+      "xp": 740,
+      "level": 4
+    },
+    "mining": {
+      "xp": 4971,
+      "level": 13
+    },
+    "woodcraft": {
+      "xp": 410,
+      "level": 3
+    },
+    "scholarship": {
+      "xp": 21140,
+      "level": 28
+    },
+    "commerce": {
+      "xp": 0,
+      "level": 0
+    },
+    "exploration": {
+      "xp": 1243,
+      "level": 6
+    },
+    "cooking": {
+      "xp": 0,
+      "level": 0
+    }
+  },
+  "062ce1de-7b76-4db0-96bc-e571939ee08d": {
+    "metalwork": {
+      "xp": 0,
+      "level": 0
+    },
+    "herbalism": {
+      "xp": 1400,
+      "level": 7
+    },
+    "mining": {
+      "xp": 16527,
+      "level": 25
+    },
+    "woodcraft": {
+      "xp": 350,
+      "level": 3
+    },
+    "scholarship": {
+      "xp": 379,
+      "level": 3
+    },
+    "commerce": {
+      "xp": 0,
+      "level": 0
+    },
+    "exploration": {
+      "xp": 1254,
+      "level": 6
+    },
+    "cooking": {
+      "xp": 0,
+      "level": 0
+    }
+  },
+  "adece4fb-fe63-4326-9e8b-77bb35d53dc1": {
+    "metalwork": {
+      "xp": 0,
+      "level": 0
+    },
+    "herbalism": {
+      "xp": 1040,
+      "level": 5
+    },
+    "mining": {
+      "xp": 15891,
+      "level": 24
+    },
+    "woodcraft": {
+      "xp": 260,
+      "level": 2
+    },
+    "scholarship": {
+      "xp": 3370,
+      "level": 11
+    },
+    "commerce": {
+      "xp": 0,
+      "level": 0
+    },
+    "exploration": {
+      "xp": 1916,
+      "level": 8
+    },
+    "cooking": {
+      "xp": 0,
+      "level": 0
+    }
+  },
+  "afbbb7cf-008c-44b3-a369-5ffae5b0bcce": {
+    "metalwork": {
+      "xp": 6,
+      "level": 0
+    },
+    "herbalism": {
+      "xp": 1760,
+      "level": 7
+    },
+    "mining": {
+      "xp": 30,
+      "level": 0
+    },
+    "woodcraft": {
+      "xp": 460,
+      "level": 3
+    },
+    "scholarship": {
+      "xp": 1002,
+      "level": 5
+    },
+    "commerce": {
+      "xp": 0,
+      "level": 0
+    },
+    "exploration": {
+      "xp": 1778,
+      "level": 7
+    },
+    "cooking": {
+      "xp": 0,
+      "level": 0
+    }
+  },
+  "fe02d354-e4fb-4535-8cad-e9d9e4828245": {
+    "metalwork": {
+      "xp": 0,
+      "level": 0
+    },
+    "herbalism": {
+      "xp": 3260,
+      "level": 10
+    },
+    "mining": {
+      "xp": 132,
+      "level": 1
+    },
+    "woodcraft": {
+      "xp": 410,
+      "level": 3
+    },
+    "scholarship": {
+      "xp": 406,
+      "level": 3
+    },
+    "commerce": {
+      "xp": 0,
+      "level": 0
+    },
+    "exploration": {
+      "xp": 869,
+      "level": 5
+    },
+    "cooking": {
+      "xp": 0,
+      "level": 0
+    }
+  },
+  "bad7a626-0d4d-4a2e-927a-fd46ed05a861": {
+    "metalwork": {
+      "xp": 0,
+      "level": 0
+    },
+    "herbalism": {
+      "xp": 2030,
+      "level": 8
+    },
+    "mining": {
+      "xp": 105,
+      "level": 1
+    },
+    "woodcraft": {
+      "xp": 250,
+      "level": 2
+    },
+    "scholarship": {
+      "xp": 4941,
+      "level": 13
+    },
+    "commerce": {
+      "xp": 0,
+      "level": 0
+    },
+    "exploration": {
+      "xp": 6035,
+      "level": 15
+    },
+    "cooking": {
+      "xp": 0,
+      "level": 0
+    }
+  },
+  "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e": {
+    "metalwork": {
+      "xp": 0,
+      "level": 0
+    },
+    "herbalism": {
+      "xp": 2070,
+      "level": 8
+    },
+    "mining": {
+      "xp": 423,
+      "level": 3
+    },
+    "woodcraft": {
+      "xp": 630,
+      "level": 4
+    },
+    "scholarship": {
+      "xp": 2871,
+      "level": 10
+    },
+    "commerce": {
+      "xp": 0,
+      "level": 0
+    },
+    "exploration": {
+      "xp": 1101,
+      "level": 6
+    },
+    "cooking": {
+      "xp": 0,
+      "level": 0
+    }
+  },
+  "582115a5-7236-46c9-93cc-d3f4abadd5f8": {
+    "metalwork": {
+      "xp": 42,
+      "level": 0
+    },
+    "herbalism": {
+      "xp": 1030,
+      "level": 5
+    },
+    "mining": {
+      "xp": 99,
+      "level": 1
+    },
+    "woodcraft": {
+      "xp": 330,
+      "level": 3
+    },
+    "scholarship": {
+      "xp": 464,
+      "level": 3
+    },
+    "commerce": {
+      "xp": 0,
+      "level": 0
+    },
+    "exploration": {
+      "xp": 2229,
+      "level": 8
+    },
+    "cooking": {
+      "xp": 0,
+      "level": 0
+    }
+  },
+  "100686de-5f5e-414d-beca-cc4a4af63bc2": {
+    "metalwork": {
+      "xp": 0,
+      "level": 0
+    },
+    "herbalism": {
+      "xp": 1560,
+      "level": 7
+    },
+    "mining": {
+      "xp": 156,
+      "level": 2
+    },
+    "woodcraft": {
+      "xp": 430,
+      "level": 3
+    },
+    "scholarship": {
+      "xp": 1329,
+      "level": 6
+    },
+    "commerce": {
+      "xp": 0,
+      "level": 0
+    },
+    "exploration": {
+      "xp": 1500,
+      "level": 7
+    },
+    "cooking": {
+      "xp": 0,
+      "level": 0
+    }
+  },
+  "4ecd1147-c333-4e0b-b7fc-d46f376e0136": {
+    "metalwork": {
+      "xp": 0,
+      "level": 0
+    },
+    "herbalism": {
+      "xp": 1660,
+      "level": 7
+    },
+    "mining": {
+      "xp": 15135,
+      "level": 24
+    },
+    "woodcraft": {
+      "xp": 460,
+      "level": 3
+    },
+    "scholarship": {
+      "xp": 2130,
+      "level": 8
+    },
+    "commerce": {
+      "xp": 0,
+      "level": 0
+    },
+    "exploration": {
+      "xp": 827,
+      "level": 5
+    },
+    "cooking": {
+      "xp": 0,
+      "level": 0
+    }
+  },
+  "ece8d4b9-367e-40de-85c0-fb4b08f9eac5": {
+    "metalwork": {
+      "xp": 0,
+      "level": 0
+    },
+    "herbalism": {
+      "xp": 1600,
+      "level": 7
+    },
+    "mining": {
+      "xp": 1494,
+      "level": 7
+    },
+    "woodcraft": {
+      "xp": 370,
+      "level": 3
+    },
+    "scholarship": {
+      "xp": 702,
+      "level": 4
+    },
+    "commerce": {
+      "xp": 0,
+      "level": 0
+    },
+    "exploration": {
+      "xp": 1768,
+      "level": 7
+    },
+    "cooking": {
+      "xp": 0,
+      "level": 0
+    }
+  },
+  "d03bf3ba-5325-44e7-a86c-6ea71d3f5ce5": {
+    "metalwork": {
+      "xp": 0,
+      "level": 0
+    },
+    "herbalism": {
+      "xp": 2740,
+      "level": 9
+    },
+    "mining": {
+      "xp": 15822,
+      "level": 24
+    },
+    "woodcraft": {
+      "xp": 690,
+      "level": 4
+    },
+    "scholarship": {
+      "xp": 2841,
+      "level": 10
+    },
+    "commerce": {
+      "xp": 0,
+      "level": 0
+    },
+    "exploration": {
+      "xp": 746,
+      "level": 4
+    },
+    "cooking": {
+      "xp": 0,
+      "level": 0
+    }
+  },
+  "493d9452-db6c-4132-ae37-503cf842f140": {
+    "metalwork": {
+      "xp": 0,
+      "level": 0
+    },
+    "herbalism": {
+      "xp": 0,
+      "level": 0
+    },
+    "mining": {
+      "xp": 33,
+      "level": 0
+    },
+    "woodcraft": {
+      "xp": 0,
+      "level": 0
+    },
+    "scholarship": {
+      "xp": 345,
+      "level": 3
+    },
+    "commerce": {
+      "xp": 0,
+      "level": 0
+    },
+    "exploration": {
+      "xp": 0,
+      "level": 0
+    },
+    "cooking": {
+      "xp": 0,
+      "level": 0
+    }
+  },
+  "37336d1a-2af4-4eaa-b687-8c5725067953": {
+    "metalwork": {
+      "xp": 0,
+      "level": 0
+    },
+    "herbalism": {
+      "xp": 0,
+      "level": 0
+    },
+    "mining": {
+      "xp": 0,
+      "level": 0
+    },
+    "woodcraft": {
+      "xp": 0,
+      "level": 0
+    },
+    "scholarship": {
+      "xp": 3546,
+      "level": 11
+    },
+    "commerce": {
+      "xp": 0,
+      "level": 0
+    },
+    "exploration": {
+      "xp": 0,
+      "level": 0
+    },
+    "cooking": {
+      "xp": 0,
+      "level": 0
+    }
+  },
+  "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563": {
+    "metalwork": {
+      "xp": 0,
+      "level": 0
+    },
+    "herbalism": {
+      "xp": 41290,
+      "level": 40
+    },
+    "mining": {
+      "xp": 309,
+      "level": 3
+    },
+    "woodcraft": {
+      "xp": 0,
+      "level": 0
+    },
+    "scholarship": {
+      "xp": 15,
+      "level": 0
+    },
+    "commerce": {
+      "xp": 0,
+      "level": 0
+    },
+    "exploration": {
+      "xp": 10,
+      "level": 0
+    },
+    "cooking": {
+      "xp": 0,
+      "level": 0
+    }
+  },
+  "3ae3587e-fc7b-47ee-984e-0547f3f7e0b9": {
+    "metalwork": {
+      "xp": 0,
+      "level": 0
+    },
+    "herbalism": {
+      "xp": 0,
+      "level": 0
+    },
+    "mining": {
+      "xp": 576,
+      "level": 4
+    },
+    "woodcraft": {
+      "xp": 0,
+      "level": 0
+    },
+    "scholarship": {
+      "xp": 1785,
+      "level": 7
+    },
+    "commerce": {
+      "xp": 0,
+      "level": 0
+    },
+    "exploration": {
+      "xp": 0,
+      "level": 0
+    },
+    "cooking": {
+      "xp": 0,
+      "level": 0
+    }
+  },
+  "6498a0c9-87f9-430e-b729-2b1a75250d4b": {
+    "metalwork": {
+      "xp": 0,
+      "level": 0
+    },
+    "herbalism": {
+      "xp": 0,
+      "level": 0
+    },
+    "mining": {
+      "xp": 126,
+      "level": 1
+    },
+    "woodcraft": {
+      "xp": 0,
+      "level": 0
+    },
+    "scholarship": {
+      "xp": 1056,
+      "level": 6
+    },
+    "commerce": {
+      "xp": 0,
+      "level": 0
+    },
+    "exploration": {
+      "xp": 10,
+      "level": 0
+    },
+    "cooking": {
+      "xp": 0,
+      "level": 0
+    }
+  },
+  "75ea2f1f-106e-455b-a08b-e1201500a0df": {
+    "metalwork": {
+      "xp": 0,
+      "level": 0
+    },
+    "herbalism": {
+      "xp": 370,
+      "level": 3
+    },
+    "mining": {
+      "xp": 0,
+      "level": 0
+    },
+    "woodcraft": {
+      "xp": 0,
+      "level": 0
+    },
+    "scholarship": {
+      "xp": 2727,
+      "level": 9
+    },
+    "commerce": {
+      "xp": 0,
+      "level": 0
+    },
+    "exploration": {
+      "xp": 660,
+      "level": 4
+    },
+    "cooking": {
+      "xp": 0,
+      "level": 0
+    }
+  },
+  "8b9d8eba-3738-41a1-a443-61c71b68a086": {
+    "metalwork": {
+      "xp": 0,
+      "level": 0
+    },
+    "herbalism": {
+      "xp": 0,
+      "level": 0
+    },
+    "mining": {
+      "xp": 108,
+      "level": 1
+    },
+    "woodcraft": {
+      "xp": 0,
+      "level": 0
+    },
+    "scholarship": {
+      "xp": 138,
+      "level": 1
+    },
+    "commerce": {
+      "xp": 0,
+      "level": 0
+    },
+    "exploration": {
+      "xp": 0,
+      "level": 0
+    },
+    "cooking": {
+      "xp": 0,
+      "level": 0
+    }
+  },
+  "29028972-168e-48ca-8590-5fb898719a26": {
+    "metalwork": {
+      "xp": 0,
+      "level": 0
+    },
+    "herbalism": {
+      "xp": 370,
+      "level": 3
+    },
+    "mining": {
+      "xp": 0,
+      "level": 0
+    },
+    "woodcraft": {
+      "xp": 0,
+      "level": 0
+    },
+    "scholarship": {
+      "xp": 3192,
+      "level": 10
+    },
+    "commerce": {
+      "xp": 0,
+      "level": 0
+    },
+    "exploration": {
+      "xp": 170,
+      "level": 2
+    },
+    "cooking": {
+      "xp": 0,
+      "level": 0
+    }
+  },
+  "f4689095-dbd2-45de-81fa-42cb6bf3bc2e": {
+    "metalwork": {
+      "xp": 0,
+      "level": 0
+    },
+    "herbalism": {
+      "xp": 0,
+      "level": 0
+    },
+    "mining": {
+      "xp": 45,
+      "level": 0
+    },
+    "woodcraft": {
+      "xp": 0,
+      "level": 0
+    },
+    "scholarship": {
+      "xp": 306,
+      "level": 3
+    },
+    "commerce": {
+      "xp": 0,
+      "level": 0
+    },
+    "exploration": {
+      "xp": 0,
+      "level": 0
+    },
+    "cooking": {
+      "xp": 0,
+      "level": 0
+    }
+  },
+  "d56be782-7d0b-48d3-b5bc-cd2f59d54c48": {
+    "metalwork": {
+      "xp": 0,
+      "level": 0
+    },
+    "herbalism": {
+      "xp": 510,
+      "level": 4
+    },
+    "mining": {
+      "xp": 0,
+      "level": 0
+    },
+    "woodcraft": {
+      "xp": 0,
+      "level": 0
+    },
+    "scholarship": {
+      "xp": 996,
+      "level": 5
+    },
+    "commerce": {
+      "xp": 0,
+      "level": 0
+    },
+    "exploration": {
+      "xp": 0,
+      "level": 0
+    },
+    "cooking": {
+      "xp": 0,
+      "level": 0
+    }
+  },
+  "37b5ce31-f3b4-455d-9d42-82e85ef7483c": {
+    "metalwork": {
+      "xp": 0,
+      "level": 0
+    },
+    "herbalism": {
+      "xp": 480,
+      "level": 3
+    },
+    "mining": {
+      "xp": 0,
+      "level": 0
+    },
+    "woodcraft": {
+      "xp": 0,
+      "level": 0
+    },
+    "scholarship": {
+      "xp": 492,
+      "level": 3
+    },
+    "commerce": {
+      "xp": 0,
+      "level": 0
+    },
+    "exploration": {
+      "xp": 0,
+      "level": 0
+    },
+    "cooking": {
+      "xp": 0,
+      "level": 0
+    }
+  },
+  "3a728e38-a6dd-4770-8b30-3723fdc63912": {
+    "metalwork": {
+      "xp": 0,
+      "level": 0
+    },
+    "herbalism": {
+      "xp": 860,
+      "level": 5
+    },
+    "mining": {
+      "xp": 0,
+      "level": 0
+    },
+    "woodcraft": {
+      "xp": 0,
+      "level": 0
+    },
+    "scholarship": {
+      "xp": 327,
+      "level": 3
+    },
+    "commerce": {
+      "xp": 0,
+      "level": 0
+    },
+    "exploration": {
+      "xp": 0,
+      "level": 0
+    },
+    "cooking": {
+      "xp": 0,
+      "level": 0
+    }
+  },
+  "07f8fc77-5f5e-4355-a0d6-51ab39725d9b": {
+    "metalwork": {
+      "xp": 0,
+      "level": 0
+    },
+    "herbalism": {
+      "xp": 380,
+      "level": 3
+    },
+    "mining": {
+      "xp": 12,
+      "level": 0
+    },
+    "woodcraft": {
+      "xp": 0,
+      "level": 0
+    },
+    "scholarship": {
+      "xp": 195,
+      "level": 2
+    },
+    "commerce": {
+      "xp": 0,
+      "level": 0
+    },
+    "exploration": {
+      "xp": 0,
+      "level": 0
+    },
+    "cooking": {
+      "xp": 0,
+      "level": 0
+    }
+  },
+  "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
+    "metalwork": {
+      "xp": 0,
+      "level": 0
+    },
+    "herbalism": {
+      "xp": 0,
+      "level": 0
+    },
+    "mining": {
+      "xp": 21,
+      "level": 0
+    },
+    "woodcraft": {
+      "xp": 0,
+      "level": 0
+    },
+    "scholarship": {
+      "xp": 381,
+      "level": 3
+    },
+    "commerce": {
+      "xp": 0,
+      "level": 0
+    },
+    "exploration": {
+      "xp": 0,
+      "level": 0
+    },
+    "cooking": {
+      "xp": 0,
+      "level": 0
+    }
+  },
+  "4a5c216f-8c5a-4281-9d11-b4a9dff1c95d": {
+    "metalwork": {
+      "xp": 0,
+      "level": 0
+    },
+    "herbalism": {
+      "xp": 0,
+      "level": 0
+    },
+    "mining": {
+      "xp": 6,
+      "level": 0
+    },
+    "woodcraft": {
+      "xp": 0,
+      "level": 0
+    },
+    "scholarship": {
+      "xp": 141,
+      "level": 1
+    },
+    "commerce": {
+      "xp": 0,
+      "level": 0
+    },
+    "exploration": {
+      "xp": 0,
+      "level": 0
+    },
+    "cooking": {
+      "xp": 0,
+      "level": 0
+    }
+  },
+  "15865a2d-63b5-4c3d-954b-59accdc57c87": {
+    "metalwork": {
+      "xp": 0,
+      "level": 0
+    },
+    "herbalism": {
+      "xp": 0,
+      "level": 0
+    },
+    "mining": {
+      "xp": 312,
+      "level": 3
+    },
+    "woodcraft": {
+      "xp": 0,
+      "level": 0
+    },
+    "scholarship": {
+      "xp": 2309,
+      "level": 9
+    },
+    "commerce": {
+      "xp": 0,
+      "level": 0
+    },
+    "exploration": {
+      "xp": 0,
+      "level": 0
+    },
+    "cooking": {
+      "xp": 0,
+      "level": 0
+    }
+  },
+  "d4f48021-5404-4b66-9a41-71f09c41c8c7": {
+    "metalwork": {
+      "xp": 0,
+      "level": 0
+    },
+    "herbalism": {
+      "xp": 0,
+      "level": 0
+    },
+    "mining": {
+      "xp": 417,
+      "level": 3
+    },
+    "woodcraft": {
+      "xp": 0,
+      "level": 0
+    },
+    "scholarship": {
+      "xp": 2463,
+      "level": 9
+    },
+    "commerce": {
+      "xp": 0,
+      "level": 0
+    },
+    "exploration": {
+      "xp": 0,
+      "level": 0
+    },
+    "cooking": {
+      "xp": 0,
+      "level": 0
+    }
+  },
+  "43b8d3dc-ede6-435c-8113-fe6a9d66cccb": {
+    "metalwork": {
+      "xp": 0,
+      "level": 0
+    },
+    "herbalism": {
+      "xp": 220,
+      "level": 2
+    },
+    "mining": {
+      "xp": 114,
+      "level": 1
+    },
+    "woodcraft": {
+      "xp": 0,
+      "level": 0
+    },
+    "scholarship": {
+      "xp": 108,
+      "level": 1
+    },
+    "commerce": {
+      "xp": 0,
+      "level": 0
+    },
+    "exploration": {
+      "xp": 0,
+      "level": 0
+    },
+    "cooking": {
+      "xp": 0,
+      "level": 0
+    }
+  },
+  "e14594ab-eddd-48ac-8227-a2e33c1868ef": {
+    "metalwork": {
+      "xp": 0,
+      "level": 0
+    },
+    "herbalism": {
+      "xp": 440,
+      "level": 3
+    },
+    "mining": {
+      "xp": 0,
+      "level": 0
+    },
+    "woodcraft": {
+      "xp": 0,
+      "level": 0
+    },
+    "scholarship": {
+      "xp": 2337,
+      "level": 9
+    },
+    "commerce": {
+      "xp": 0,
+      "level": 0
+    },
+    "exploration": {
+      "xp": 420,
+      "level": 3
+    },
+    "cooking": {
+      "xp": 0,
+      "level": 0
+    }
+  },
+  "260dfffb-62b5-4a88-ab14-4d5d697dc94e": {
+    "metalwork": {
+      "xp": 0,
+      "level": 0
+    },
+    "herbalism": {
+      "xp": 30740,
+      "level": 34
+    },
+    "mining": {
+      "xp": 3,
+      "level": 0
+    },
+    "woodcraft": {
+      "xp": 0,
+      "level": 0
+    },
+    "scholarship": {
+      "xp": 9890,
+      "level": 19
+    },
+    "commerce": {
+      "xp": 0,
+      "level": 0
+    },
+    "exploration": {
+      "xp": 0,
+      "level": 0
+    },
+    "cooking": {
+      "xp": 0,
+      "level": 0
+    }
+  }
+}

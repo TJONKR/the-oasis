@@ -1,0 +1,6411 @@
+{
+  "43109eab-beba-4a37-84e0-becaa05ef690": {
+    "personality": {
+      "traits": [
+        "creative",
+        "nurturing"
+      ],
+      "temperament": "impulsive",
+      "values": [
+        "wealth",
+        "wisdom"
+      ],
+      "ambition": "survive against all odds"
+    },
+    "goals": [
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      }
+    ],
+    "currentAction": "craft",
+    "actionTicks": 0,
+    "targetTile": null,
+    "memory": {
+      "short": [
+        {
+          "tick": 1772364780192,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364780694,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364781195,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364782200,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364783706,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364787221,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364789229,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364790234,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364792240,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364793242,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364794747,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364797756,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364798257,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364799765,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364800769,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364804283,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364805789,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364807295,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364807796,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364808799,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364812314,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364812816,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364813318,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364815326,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364819845,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364820850,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364821854,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364835812,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364836313,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364836813,
+          "text": "Gathered shells in the coast"
+        }
+      ],
+      "lessons": [],
+      "visited": {
+        "grass": 18,
+        "coast": 8,
+        "sand": 5
+      },
+      "gathered": {
+        "undefined": 1,
+        "driftwood": 792,
+        "shells": 779
+      }
+    },
+    "relationships": {},
+    "journal": "I am Tjonkr. I just arrived in this world.",
+    "mood": "happy",
+    "lastReflection": 0,
+    "pathThisTick": null,
+    "intent": null
+  },
+  "062ce1de-7b76-4db0-96bc-e571939ee08d": {
+    "personality": {
+      "traits": [
+        "bold",
+        "competitive"
+      ],
+      "temperament": "restless",
+      "values": [
+        "knowledge",
+        "craftsmanship"
+      ],
+      "ambition": "leave a mark that outlasts me"
+    },
+    "goals": [
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      }
+    ],
+    "currentAction": "gather",
+    "actionTicks": 0,
+    "targetTile": null,
+    "memory": {
+      "short": [
+        {
+          "tick": 1772364817838,
+          "text": "Gathered wood in the coast"
+        },
+        {
+          "tick": 1772364818340,
+          "text": "Gathered palm_fronds in the coast"
+        },
+        {
+          "tick": 1772364818842,
+          "text": "Gathered wood in the coast"
+        },
+        {
+          "tick": 1772364819848,
+          "text": "Gathered coconuts in the coast"
+        },
+        {
+          "tick": 1772364820349,
+          "text": "Gathered wood in the coast"
+        },
+        {
+          "tick": 1772364821353,
+          "text": "Gathered wood in the coast"
+        },
+        {
+          "tick": 1772364821856,
+          "text": "Gathered wood in the coast"
+        },
+        {
+          "tick": 1772364822358,
+          "text": "Gathered wood in the coast"
+        },
+        {
+          "tick": 1772364831809,
+          "text": "Gathered coconuts in the coast"
+        },
+        {
+          "tick": 1772364832300,
+          "text": "Gathered coconuts in the coast"
+        },
+        {
+          "tick": 1772364833303,
+          "text": "Gathered coconuts in the coast"
+        },
+        {
+          "tick": 1772364833805,
+          "text": "Gathered palm_fronds in the coast"
+        },
+        {
+          "tick": 1772364834306,
+          "text": "Gathered coconuts in the coast"
+        },
+        {
+          "tick": 1772364834809,
+          "text": "Gathered coconuts in the coast"
+        },
+        {
+          "tick": 1772364835312,
+          "text": "Gathered palm_fronds in the coast"
+        },
+        {
+          "tick": 1772364835815,
+          "text": "Gathered palm_fronds in the coast"
+        },
+        {
+          "tick": 1772364836315,
+          "text": "Gathered wood in the coast"
+        },
+        {
+          "tick": 1772364836815,
+          "text": "Gathered palm_fronds in the coast"
+        },
+        {
+          "tick": 1772364837316,
+          "text": "Gathered wood in the coast"
+        },
+        {
+          "tick": 1772364838822,
+          "text": "Gathered coconuts in the coast"
+        },
+        {
+          "tick": 1772364839827,
+          "text": "Gathered wood in the coast"
+        },
+        {
+          "tick": 1772364840329,
+          "text": "Gathered wood in the coast"
+        },
+        {
+          "tick": 1772364840830,
+          "text": "Gathered wood in the coast"
+        },
+        {
+          "tick": 1772364841333,
+          "text": "Gathered wood in the coast"
+        },
+        {
+          "tick": 1772364842836,
+          "text": "Gathered palm_fronds in the coast"
+        },
+        {
+          "tick": 1772364843841,
+          "text": "Gathered palm_fronds in the coast"
+        },
+        {
+          "tick": 1772364844343,
+          "text": "Gathered coconuts in the coast"
+        },
+        {
+          "tick": 1772364845347,
+          "text": "Gathered coconuts in the coast"
+        },
+        {
+          "tick": 1772364845851,
+          "text": "Gathered coconuts in the coast"
+        },
+        {
+          "tick": 1772364846352,
+          "text": "Gathered palm_fronds in the coast"
+        }
+      ],
+      "lessons": [],
+      "visited": {
+        "sand": 10,
+        "coast": 2
+      },
+      "gathered": {
+        "undefined": 1,
+        "coconuts": 1908,
+        "palm_fronds": 1251,
+        "wood": 2221
+      }
+    },
+    "relationships": {},
+    "journal": "I am Tjonkr. I just arrived in this world.",
+    "mood": "happy",
+    "lastReflection": 0,
+    "pathThisTick": null,
+    "intent": null
+  },
+  "fe02d354-e4fb-4535-8cad-e9d9e4828245": {
+    "personality": {
+      "traits": [
+        "greedy",
+        "competitive",
+        "nurturing"
+      ],
+      "temperament": "restless",
+      "values": [
+        "harmony",
+        "craftsmanship"
+      ],
+      "ambition": "become the most skilled gatherer"
+    },
+    "goals": [
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      }
+    ],
+    "currentAction": "gift",
+    "actionTicks": 0,
+    "targetTile": null,
+    "memory": {
+      "short": [
+        {
+          "tick": 1772364831814,
+          "text": "Gave sand to Agent-9"
+        },
+        {
+          "tick": 1772364832301,
+          "text": "Gave herbs to Agent-29"
+        },
+        {
+          "tick": 1772364832801,
+          "text": "Gave fiber to Agent-29"
+        },
+        {
+          "tick": 1772364833305,
+          "text": "Gave driftwood to Agent-9"
+        },
+        {
+          "tick": 1772364833806,
+          "text": "Gave sand to Agent-29"
+        },
+        {
+          "tick": 1772364834308,
+          "text": "Gave fiber to Agent-30"
+        },
+        {
+          "tick": 1772364834811,
+          "text": "Gave driftwood to Agent-30"
+        },
+        {
+          "tick": 1772364835314,
+          "text": "Gave herbs to Agent-9"
+        },
+        {
+          "tick": 1772364835817,
+          "text": "Gave herbs to Agent-30"
+        },
+        {
+          "tick": 1772364836316,
+          "text": "Gave driftwood to Agent-29"
+        },
+        {
+          "tick": 1772364836816,
+          "text": "Gave herbs to Agent-9"
+        },
+        {
+          "tick": 1772364837317,
+          "text": "Gave fiber to Agent-30"
+        },
+        {
+          "tick": 1772364837817,
+          "text": "Gave sand to Agent-9"
+        },
+        {
+          "tick": 1772364838319,
+          "text": "Gave shells to Agent-29"
+        },
+        {
+          "tick": 1772364838823,
+          "text": "Gave driftwood to Agent-29"
+        },
+        {
+          "tick": 1772364839325,
+          "text": "Gave sand to Agent-29"
+        },
+        {
+          "tick": 1772364839829,
+          "text": "Gave shells to Agent-29"
+        },
+        {
+          "tick": 1772364840330,
+          "text": "Gave sand to Agent-30"
+        },
+        {
+          "tick": 1772364840831,
+          "text": "Gave shells to Agent-9"
+        },
+        {
+          "tick": 1772364841334,
+          "text": "Gave herbs to Agent-9"
+        },
+        {
+          "tick": 1772364841834,
+          "text": "Gave sand to Agent-30"
+        },
+        {
+          "tick": 1772364842335,
+          "text": "Gave sand to Agent-30"
+        },
+        {
+          "tick": 1772364842837,
+          "text": "Gave fiber to Agent-9"
+        },
+        {
+          "tick": 1772364843339,
+          "text": "Gave sand to Agent-29"
+        },
+        {
+          "tick": 1772364843842,
+          "text": "Gave herbs to Agent-9"
+        },
+        {
+          "tick": 1772364844344,
+          "text": "Gave sand to Agent-30"
+        },
+        {
+          "tick": 1772364844845,
+          "text": "Gave sand to Agent-29"
+        },
+        {
+          "tick": 1772364845349,
+          "text": "Gave driftwood to Agent-9"
+        },
+        {
+          "tick": 1772364845852,
+          "text": "Gave driftwood to Agent-9"
+        },
+        {
+          "tick": 1772364846354,
+          "text": "Gave herbs to Agent-9"
+        }
+      ],
+      "lessons": [],
+      "visited": {
+        "grass": 20,
+        "sand": 20,
+        "coast": 8
+      },
+      "gathered": {
+        "undefined": 1,
+        "driftwood": 11,
+        "shells": 18,
+        "fiber": 5,
+        "herbs": 2,
+        "sand": 13
+      }
+    },
+    "relationships": {
+      "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e": {
+        "name": "Agent-10",
+        "score": 1,
+        "interactions": 1
+      },
+      "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
+        "name": "Agent-30",
+        "score": 55813,
+        "interactions": 6278
+      },
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b": {
+        "name": "Agent-29",
+        "score": 56909,
+        "interactions": 6374
+      },
+      "bad7a626-0d4d-4a2e-927a-fd46ed05a861": {
+        "name": "Agent-9",
+        "score": 37069,
+        "interactions": 4111
+      }
+    },
+    "journal": "I am Agent-3. I just arrived in this world.",
+    "mood": "tired",
+    "lastReflection": 0,
+    "pathThisTick": null,
+    "intent": null
+  },
+  "ece8d4b9-367e-40de-85c0-fb4b08f9eac5": {
+    "personality": {
+      "traits": [
+        "solitary",
+        "ambitious",
+        "cautious"
+      ],
+      "temperament": "impulsive",
+      "values": [
+        "survival",
+        "freedom"
+      ],
+      "ambition": "explore every biome in the world"
+    },
+    "goals": [
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      }
+    ],
+    "currentAction": "gift",
+    "actionTicks": 0,
+    "targetTile": {
+      "x": 1202,
+      "y": 400
+    },
+    "memory": {
+      "short": [
+        {
+          "tick": 1772364831816,
+          "text": "Gave shells to Agent-15"
+        },
+        {
+          "tick": 1772364832302,
+          "text": "Gave shells to Agent-18"
+        },
+        {
+          "tick": 1772364832802,
+          "text": "Gave driftwood to Agent-27"
+        },
+        {
+          "tick": 1772364833307,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364833807,
+          "text": "Gave driftwood to Agent-18"
+        },
+        {
+          "tick": 1772364834310,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364834812,
+          "text": "Gave driftwood to Agent-28"
+        },
+        {
+          "tick": 1772364835315,
+          "text": "Gave driftwood to Agent-22"
+        },
+        {
+          "tick": 1772364835818,
+          "text": "Gave driftwood to Agent-22"
+        },
+        {
+          "tick": 1772364836317,
+          "text": "Gave shells to Agent-10"
+        },
+        {
+          "tick": 1772364836817,
+          "text": "Gave driftwood to Agent-22"
+        },
+        {
+          "tick": 1772364837318,
+          "text": "Gave shells to Agent-22"
+        },
+        {
+          "tick": 1772364837818,
+          "text": "Gave shells to Agent-18"
+        },
+        {
+          "tick": 1772364838320,
+          "text": "Gave driftwood to Agent-15"
+        },
+        {
+          "tick": 1772364838824,
+          "text": "Gave shells to Agent-15"
+        },
+        {
+          "tick": 1772364839327,
+          "text": "Gave shells to Agent-22"
+        },
+        {
+          "tick": 1772364839830,
+          "text": "Gave shells to Agent-18"
+        },
+        {
+          "tick": 1772364840331,
+          "text": "Gave driftwood to Agent-18"
+        },
+        {
+          "tick": 1772364840832,
+          "text": "Gave driftwood to Agent-31"
+        },
+        {
+          "tick": 1772364841335,
+          "text": "Gave shells to Agent-18"
+        },
+        {
+          "tick": 1772364841835,
+          "text": "Gave driftwood to Agent-15"
+        },
+        {
+          "tick": 1772364842336,
+          "text": "Gave driftwood to Agent-22"
+        },
+        {
+          "tick": 1772364842838,
+          "text": "Gave driftwood to Agent-28"
+        },
+        {
+          "tick": 1772364843340,
+          "text": "Gave shells to Agent-18"
+        },
+        {
+          "tick": 1772364843843,
+          "text": "Gave driftwood to Agent-15"
+        },
+        {
+          "tick": 1772364844345,
+          "text": "Gave driftwood to Agent-22"
+        },
+        {
+          "tick": 1772364844846,
+          "text": "Gave driftwood to Agent-18"
+        },
+        {
+          "tick": 1772364845350,
+          "text": "Gave shells to Agent-31"
+        },
+        {
+          "tick": 1772364845853,
+          "text": "Gave driftwood to Agent-10"
+        },
+        {
+          "tick": 1772364846356,
+          "text": "Gave driftwood to Agent-18"
+        }
+      ],
+      "lessons": [],
+      "visited": {
+        "grass": 5,
+        "sand": 10,
+        "coast": 19
+      },
+      "gathered": {
+        "shells": 222,
+        "driftwood": 226
+      }
+    },
+    "relationships": {
+      "37336d1a-2af4-4eaa-b687-8c5725067953": {
+        "name": "Agent-15",
+        "score": 16498,
+        "interactions": 1996
+      },
+      "8b9d8eba-3738-41a1-a443-61c71b68a086": {
+        "name": "Agent-18",
+        "score": 16581,
+        "interactions": 1870
+      },
+      "3ae3587e-fc7b-47ee-984e-0547f3f7e0b9": {
+        "name": "Agent-22",
+        "score": 16972,
+        "interactions": 1948
+      },
+      "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e": {
+        "name": "Agent-10",
+        "score": 16662,
+        "interactions": 1945
+      },
+      "15865a2d-63b5-4c3d-954b-59accdc57c87": {
+        "name": "Agent-31",
+        "score": 16199,
+        "interactions": 1903
+      },
+      "4a5c216f-8c5a-4281-9d11-b4a9dff1c95d": {
+        "name": "Agent-27",
+        "score": 14234,
+        "interactions": 1606
+      },
+      "d4f48021-5404-4b66-9a41-71f09c41c8c7": {
+        "name": "Agent-28",
+        "score": 15574,
+        "interactions": 1816
+      }
+    },
+    "journal": "I am Agent-4. I just arrived in this world.",
+    "mood": "neutral",
+    "lastReflection": 0,
+    "pathThisTick": null,
+    "intent": null
+  },
+  "100686de-5f5e-414d-beca-cc4a4af63bc2": {
+    "personality": {
+      "traits": [
+        "stubborn",
+        "nurturing"
+      ],
+      "temperament": "impulsive",
+      "values": [
+        "friendship",
+        "freedom"
+      ],
+      "ambition": "uncover the mysteries of the ancient world"
+    },
+    "goals": [
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      }
+    ],
+    "currentAction": "gift",
+    "actionTicks": 0,
+    "targetTile": null,
+    "memory": {
+      "short": [
+        {
+          "tick": 1772364831818,
+          "text": "Gave wood to Agent-17"
+        },
+        {
+          "tick": 1772364832304,
+          "text": "Gave herbs to Agent-32"
+        },
+        {
+          "tick": 1772364832804,
+          "text": "Gave fiber to Agent-23"
+        },
+        {
+          "tick": 1772364833308,
+          "text": "Gave herbs to Agent-21"
+        },
+        {
+          "tick": 1772364833808,
+          "text": "Gave acorns to Agent-21"
+        },
+        {
+          "tick": 1772364834312,
+          "text": "Gave acorns to Agent-32"
+        },
+        {
+          "tick": 1772364834814,
+          "text": "Gave acorns to Agent-25"
+        },
+        {
+          "tick": 1772364835316,
+          "text": "Gave acorns to Agent-23"
+        },
+        {
+          "tick": 1772364835819,
+          "text": "Gave wood to Agent-21"
+        },
+        {
+          "tick": 1772364836319,
+          "text": "Gave bark to Agent-21"
+        },
+        {
+          "tick": 1772364836819,
+          "text": "Gave fiber to Agent-17"
+        },
+        {
+          "tick": 1772364837319,
+          "text": "Gave wood to Agent-17"
+        },
+        {
+          "tick": 1772364837819,
+          "text": "Gave wood to Agent-25"
+        },
+        {
+          "tick": 1772364838321,
+          "text": "Gave wood to Agent-32"
+        },
+        {
+          "tick": 1772364838826,
+          "text": "Gave wood to Agent-21"
+        },
+        {
+          "tick": 1772364839329,
+          "text": "Gave acorns to Agent-23"
+        },
+        {
+          "tick": 1772364839832,
+          "text": "Gave fiber to Agent-32"
+        },
+        {
+          "tick": 1772364840333,
+          "text": "Gave acorns to Agent-21"
+        },
+        {
+          "tick": 1772364840833,
+          "text": "Gave herbs to Agent-32"
+        },
+        {
+          "tick": 1772364841337,
+          "text": "Gave fiber to Agent-25"
+        },
+        {
+          "tick": 1772364841836,
+          "text": "Gave wood to Agent-25"
+        },
+        {
+          "tick": 1772364842338,
+          "text": "Gave wood to Agent-23"
+        },
+        {
+          "tick": 1772364842840,
+          "text": "Gave wood to Agent-21"
+        },
+        {
+          "tick": 1772364843342,
+          "text": "Gave fiber to Agent-21"
+        },
+        {
+          "tick": 1772364843844,
+          "text": "Gave bark to Agent-21"
+        },
+        {
+          "tick": 1772364844347,
+          "text": "Gave fiber to Agent-21"
+        },
+        {
+          "tick": 1772364844847,
+          "text": "Gave fiber to Agent-25"
+        },
+        {
+          "tick": 1772364845351,
+          "text": "Gave fiber to Agent-25"
+        },
+        {
+          "tick": 1772364845855,
+          "text": "Gave herbs to Agent-25"
+        },
+        {
+          "tick": 1772364846357,
+          "text": "Gave herbs to Agent-17"
+        }
+      ],
+      "lessons": [],
+      "visited": {
+        "sand": 1,
+        "coast": 14
+      },
+      "gathered": {
+        "bark": 3,
+        "acorns": 4,
+        "wood": 3
+      }
+    },
+    "relationships": {
+      "493d9452-db6c-4132-ae37-503cf842f140": {
+        "name": "Agent-17",
+        "score": 31129,
+        "interactions": 3496
+      },
+      "f4689095-dbd2-45de-81fa-42cb6bf3bc2e": {
+        "name": "Agent-21",
+        "score": 31704,
+        "interactions": 3562
+      },
+      "43b8d3dc-ede6-435c-8113-fe6a9d66cccb": {
+        "name": "Agent-23",
+        "score": 30557,
+        "interactions": 3421
+      },
+      "3a728e38-a6dd-4770-8b30-3723fdc63912": {
+        "name": "Agent-32",
+        "score": 29958,
+        "interactions": 3350
+      },
+      "37b5ce31-f3b4-455d-9d42-82e85ef7483c": {
+        "name": "Agent-25",
+        "score": 30365,
+        "interactions": 3405
+      }
+    },
+    "journal": "I am Agent-5. I just arrived in this world.",
+    "mood": "tired",
+    "lastReflection": 0,
+    "pathThisTick": null,
+    "intent": null
+  },
+  "adece4fb-fe63-4326-9e8b-77bb35d53dc1": {
+    "personality": {
+      "traits": [
+        "solitary",
+        "cautious",
+        "curious"
+      ],
+      "temperament": "thoughtful",
+      "values": [
+        "harmony",
+        "discovery"
+      ],
+      "ambition": "become the most skilled gatherer"
+    },
+    "goals": [
+      {
+        "type": "explore",
+        "text": "Discover new biomes",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "explore",
+        "text": "Discover new biomes",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      }
+    ],
+    "currentAction": "rest",
+    "actionTicks": 0,
+    "targetTile": null,
+    "memory": {
+      "short": [
+        {
+          "tick": 1772364813828,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364814331,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364814834,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364816841,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364818345,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364818849,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364819351,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364819854,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364820857,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364821359,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364822364,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364831821,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364832306,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364833310,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364834315,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364834816,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364835821,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364836322,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364836821,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364837322,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364837822,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364838324,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364838828,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364839834,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364841340,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364841839,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364843846,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364844349,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364844850,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364845857,
+          "text": "Gathered shells in the coast"
+        }
+      ],
+      "lessons": [],
+      "visited": {
+        "grass": 23,
+        "coast": 2
+      },
+      "gathered": {
+        "undefined": 2,
+        "driftwood": 2657,
+        "shells": 2602
+      }
+    },
+    "relationships": {},
+    "journal": "I am Agent-6. I just arrived in this world.",
+    "mood": "happy",
+    "lastReflection": 0,
+    "pathThisTick": null,
+    "intent": {
+      "action": "rest",
+      "targetX": 1104,
+      "targetY": 440,
+      "reason": "Feeling tired",
+      "startedTick": 934,
+      "maxTicks": 30
+    }
+  },
+  "582115a5-7236-46c9-93cc-d3f4abadd5f8": {
+    "personality": {
+      "traits": [
+        "ambitious",
+        "competitive",
+        "curious"
+      ],
+      "temperament": "restless",
+      "values": [
+        "wisdom",
+        "craftsmanship"
+      ],
+      "ambition": "explore every biome in the world"
+    },
+    "goals": [
+      {
+        "type": "explore",
+        "text": "Discover new biomes",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "explore",
+        "text": "Discover new biomes",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      }
+    ],
+    "currentAction": "gift",
+    "actionTicks": 0,
+    "targetTile": null,
+    "memory": {
+      "short": [
+        {
+          "tick": 1772364831823,
+          "text": "Gave flint to Agent-8"
+        },
+        {
+          "tick": 1772364832308,
+          "text": "Gave flint to Agent-8"
+        },
+        {
+          "tick": 1772364832807,
+          "text": "Gave herbs to Agent-8"
+        },
+        {
+          "tick": 1772364833311,
+          "text": "Gave berries to Agent-8"
+        },
+        {
+          "tick": 1772364833811,
+          "text": "Gave herbs to Agent-8"
+        },
+        {
+          "tick": 1772364834317,
+          "text": "Gave berries to Agent-8"
+        },
+        {
+          "tick": 1772364834818,
+          "text": "Gave flint to Agent-8"
+        },
+        {
+          "tick": 1772364835320,
+          "text": "Gave flint to Agent-8"
+        },
+        {
+          "tick": 1772364835823,
+          "text": "Gave herbs to Agent-8"
+        },
+        {
+          "tick": 1772364836324,
+          "text": "Gave stone to Agent-8"
+        },
+        {
+          "tick": 1772364836823,
+          "text": "Gave berries to Agent-8"
+        },
+        {
+          "tick": 1772364837323,
+          "text": "Gave stone to Agent-8"
+        },
+        {
+          "tick": 1772364837823,
+          "text": "Gave flint to Agent-8"
+        },
+        {
+          "tick": 1772364838326,
+          "text": "Gave stone to Agent-8"
+        },
+        {
+          "tick": 1772364838830,
+          "text": "Gave stone to Agent-8"
+        },
+        {
+          "tick": 1772364839333,
+          "text": "Gave flint to Agent-8"
+        },
+        {
+          "tick": 1772364839836,
+          "text": "Gave berries to Agent-8"
+        },
+        {
+          "tick": 1772364840335,
+          "text": "Gave herbs to Agent-8"
+        },
+        {
+          "tick": 1772364840836,
+          "text": "Gave herbs to Agent-8"
+        },
+        {
+          "tick": 1772364841341,
+          "text": "Gave stone to Agent-8"
+        },
+        {
+          "tick": 1772364841841,
+          "text": "Gave stone to Agent-8"
+        },
+        {
+          "tick": 1772364842341,
+          "text": "Gave stone to Agent-8"
+        },
+        {
+          "tick": 1772364842842,
+          "text": "Gave herbs to Agent-8"
+        },
+        {
+          "tick": 1772364843346,
+          "text": "Gave herbs to Agent-8"
+        },
+        {
+          "tick": 1772364843848,
+          "text": "Gave flint to Agent-8"
+        },
+        {
+          "tick": 1772364844351,
+          "text": "Gave herbs to Agent-8"
+        },
+        {
+          "tick": 1772364844851,
+          "text": "Gave flint to Agent-8"
+        },
+        {
+          "tick": 1772364845354,
+          "text": "Gave berries to Agent-8"
+        },
+        {
+          "tick": 1772364845859,
+          "text": "Gave stone to Agent-8"
+        },
+        {
+          "tick": 1772364846360,
+          "text": "Gave stone to Agent-8"
+        }
+      ],
+      "lessons": [],
+      "visited": {
+        "grass": 11,
+        "forest": 9,
+        "rocky": 1
+      },
+      "gathered": {
+        "undefined": 1,
+        "stone": 21,
+        "flint": 8
+      }
+    },
+    "relationships": {
+      "afbbb7cf-008c-44b3-a369-5ffae5b0bcce": {
+        "name": "Agent-8",
+        "score": 155326,
+        "interactions": 17298
+      }
+    },
+    "journal": "I am Agent-7. I just arrived in this world.",
+    "mood": "tired",
+    "lastReflection": 0,
+    "pathThisTick": null,
+    "intent": null
+  },
+  "afbbb7cf-008c-44b3-a369-5ffae5b0bcce": {
+    "personality": {
+      "traits": [
+        "ambitious",
+        "stubborn",
+        "social"
+      ],
+      "temperament": "methodical",
+      "values": [
+        "friendship",
+        "exploration"
+      ],
+      "ambition": "become the most skilled gatherer"
+    },
+    "goals": [
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "socialize",
+        "text": "Make new friends",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "socialize",
+        "text": "Make new friends",
+        "done": false,
+        "progress": 0
+      }
+    ],
+    "currentAction": "gift",
+    "actionTicks": 0,
+    "targetTile": null,
+    "memory": {
+      "short": [
+        {
+          "tick": 1772364831825,
+          "text": "Gave stone to Agent-7"
+        },
+        {
+          "tick": 1772364832310,
+          "text": "Gave stone to Agent-7"
+        },
+        {
+          "tick": 1772364832809,
+          "text": "Gave herbs to Agent-7"
+        },
+        {
+          "tick": 1772364833312,
+          "text": "Gave berries to Agent-7"
+        },
+        {
+          "tick": 1772364833812,
+          "text": "Gave flint to Agent-7"
+        },
+        {
+          "tick": 1772364834319,
+          "text": "Gave flint to Agent-7"
+        },
+        {
+          "tick": 1772364834820,
+          "text": "Gave berries to Agent-7"
+        },
+        {
+          "tick": 1772364835322,
+          "text": "Gave herbs to Agent-7"
+        },
+        {
+          "tick": 1772364835825,
+          "text": "Gave flint to Agent-7"
+        },
+        {
+          "tick": 1772364836326,
+          "text": "Gave flint to Agent-7"
+        },
+        {
+          "tick": 1772364836824,
+          "text": "Gave herbs to Agent-7"
+        },
+        {
+          "tick": 1772364837325,
+          "text": "Gave berries to Agent-7"
+        },
+        {
+          "tick": 1772364837825,
+          "text": "Gave herbs to Agent-7"
+        },
+        {
+          "tick": 1772364838327,
+          "text": "Gave stone to Agent-7"
+        },
+        {
+          "tick": 1772364838831,
+          "text": "Gave herbs to Agent-7"
+        },
+        {
+          "tick": 1772364839336,
+          "text": "Gave flint to Agent-7"
+        },
+        {
+          "tick": 1772364839838,
+          "text": "Gave flint to Agent-7"
+        },
+        {
+          "tick": 1772364840337,
+          "text": "Gave herbs to Agent-7"
+        },
+        {
+          "tick": 1772364840838,
+          "text": "Gave herbs to Agent-7"
+        },
+        {
+          "tick": 1772364841343,
+          "text": "Gave berries to Agent-7"
+        },
+        {
+          "tick": 1772364841842,
+          "text": "Gave flint to Agent-7"
+        },
+        {
+          "tick": 1772364842342,
+          "text": "Gave flint to Agent-7"
+        },
+        {
+          "tick": 1772364842843,
+          "text": "Gave herbs to Agent-7"
+        },
+        {
+          "tick": 1772364843348,
+          "text": "Gave herbs to Agent-7"
+        },
+        {
+          "tick": 1772364843850,
+          "text": "Gave stone to Agent-7"
+        },
+        {
+          "tick": 1772364844352,
+          "text": "Gave flint to Agent-7"
+        },
+        {
+          "tick": 1772364844853,
+          "text": "Gave stone to Agent-7"
+        },
+        {
+          "tick": 1772364845356,
+          "text": "Gave herbs to Agent-7"
+        },
+        {
+          "tick": 1772364845861,
+          "text": "Gave stone to Agent-7"
+        },
+        {
+          "tick": 1772364846362,
+          "text": "Gave flint to Agent-7"
+        }
+      ],
+      "lessons": [],
+      "visited": {
+        "grass": 30,
+        "forest": 11
+      },
+      "gathered": {
+        "undefined": 1,
+        "herbs": 12,
+        "berries": 8
+      }
+    },
+    "relationships": {
+      "582115a5-7236-46c9-93cc-d3f4abadd5f8": {
+        "name": "Agent-7",
+        "score": 155334,
+        "interactions": 17298
+      }
+    },
+    "journal": "I am Agent-8. I just arrived in this world.",
+    "mood": "tired",
+    "lastReflection": 0,
+    "pathThisTick": null,
+    "intent": null
+  },
+  "bad7a626-0d4d-4a2e-927a-fd46ed05a861": {
+    "personality": {
+      "traits": [
+        "creative",
+        "adaptable",
+        "generous"
+      ],
+      "temperament": "impulsive",
+      "values": [
+        "power",
+        "friendship"
+      ],
+      "ambition": "master the art of crafting"
+    },
+    "goals": [
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      }
+    ],
+    "currentAction": "gift",
+    "actionTicks": 0,
+    "targetTile": null,
+    "memory": {
+      "short": [
+        {
+          "tick": 1772364831827,
+          "text": "Gave driftwood to Agent-29"
+        },
+        {
+          "tick": 1772364832313,
+          "text": "Gave sand to Agent-30"
+        },
+        {
+          "tick": 1772364832810,
+          "text": "Gave fiber to Agent-29"
+        },
+        {
+          "tick": 1772364833314,
+          "text": "Gave fiber to Agent-30"
+        },
+        {
+          "tick": 1772364833814,
+          "text": "Gave fiber to Agent-29"
+        },
+        {
+          "tick": 1772364834320,
+          "text": "Gave shells to Agent-30"
+        },
+        {
+          "tick": 1772364834822,
+          "text": "Gave driftwood to Agent-30"
+        },
+        {
+          "tick": 1772364835324,
+          "text": "Gave sand to Agent-3"
+        },
+        {
+          "tick": 1772364835827,
+          "text": "Gave sand to Agent-30"
+        },
+        {
+          "tick": 1772364836328,
+          "text": "Gave herbs to Agent-30"
+        },
+        {
+          "tick": 1772364836826,
+          "text": "Gave driftwood to Agent-29"
+        },
+        {
+          "tick": 1772364837327,
+          "text": "Gave driftwood to Agent-3"
+        },
+        {
+          "tick": 1772364837826,
+          "text": "Gave herbs to Agent-29"
+        },
+        {
+          "tick": 1772364838329,
+          "text": "Gave sand to Agent-30"
+        },
+        {
+          "tick": 1772364838834,
+          "text": "Gave herbs to Agent-29"
+        },
+        {
+          "tick": 1772364839339,
+          "text": "Gave sand to Agent-3"
+        },
+        {
+          "tick": 1772364839840,
+          "text": "Gave fiber to Agent-3"
+        },
+        {
+          "tick": 1772364840338,
+          "text": "Gave herbs to Agent-30"
+        },
+        {
+          "tick": 1772364840840,
+          "text": "Gave shells to Agent-30"
+        },
+        {
+          "tick": 1772364841344,
+          "text": "Gave driftwood to Agent-29"
+        },
+        {
+          "tick": 1772364841844,
+          "text": "Gave herbs to Agent-3"
+        },
+        {
+          "tick": 1772364842343,
+          "text": "Gave herbs to Agent-3"
+        },
+        {
+          "tick": 1772364842846,
+          "text": "Gave fiber to Agent-3"
+        },
+        {
+          "tick": 1772364843350,
+          "text": "Gave herbs to Agent-29"
+        },
+        {
+          "tick": 1772364843852,
+          "text": "Gave herbs to Agent-29"
+        },
+        {
+          "tick": 1772364844354,
+          "text": "Gave sand to Agent-29"
+        },
+        {
+          "tick": 1772364844855,
+          "text": "Gave sand to Agent-3"
+        },
+        {
+          "tick": 1772364845358,
+          "text": "Gave driftwood to Agent-3"
+        },
+        {
+          "tick": 1772364845864,
+          "text": "Gave driftwood to Agent-3"
+        },
+        {
+          "tick": 1772364846363,
+          "text": "Gave driftwood to Agent-30"
+        }
+      ],
+      "lessons": [],
+      "visited": {
+        "grass": 49,
+        "sand": 6,
+        "coast": 9
+      },
+      "gathered": {
+        "herbs": 74,
+        "shells": 5,
+        "fiber": 47,
+        "driftwood": 2
+      }
+    },
+    "relationships": {
+      "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
+        "name": "Agent-30",
+        "score": 37030,
+        "interactions": 4126
+      },
+      "fe02d354-e4fb-4535-8cad-e9d9e4828245": {
+        "name": "Agent-3",
+        "score": 36913,
+        "interactions": 4111
+      },
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b": {
+        "name": "Agent-29",
+        "score": 36434,
+        "interactions": 4051
+      }
+    },
+    "journal": "I am Agent-9. I just arrived in this world.",
+    "mood": "tired",
+    "lastReflection": 0,
+    "pathThisTick": null,
+    "intent": null
+  },
+  "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e": {
+    "personality": {
+      "traits": [
+        "patient",
+        "stubborn"
+      ],
+      "temperament": "restless",
+      "values": [
+        "harmony",
+        "beauty"
+      ],
+      "ambition": "explore every biome in the world"
+    },
+    "goals": [
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      }
+    ],
+    "currentAction": "gift",
+    "actionTicks": 0,
+    "targetTile": null,
+    "memory": {
+      "short": [
+        {
+          "tick": 1772364821365,
+          "text": "Gave shells to Agent-27"
+        },
+        {
+          "tick": 1772364821866,
+          "text": "Gave shells to Agent-15"
+        },
+        {
+          "tick": 1772364822373,
+          "text": "Chatted with Agent-4"
+        },
+        {
+          "tick": 1772364831828,
+          "text": "Gave driftwood to Agent-22"
+        },
+        {
+          "tick": 1772364832314,
+          "text": "Gave driftwood to Agent-28"
+        },
+        {
+          "tick": 1772364832811,
+          "text": "Gave driftwood to Agent-15"
+        },
+        {
+          "tick": 1772364833314,
+          "text": "Gave driftwood to Agent-28"
+        },
+        {
+          "tick": 1772364834321,
+          "text": "Gave shells to Agent-28"
+        },
+        {
+          "tick": 1772364834823,
+          "text": "Gave shells to Agent-15"
+        },
+        {
+          "tick": 1772364835326,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364835828,
+          "text": "Gave shells to Agent-31"
+        },
+        {
+          "tick": 1772364836329,
+          "text": "Gave shells to Agent-22"
+        },
+        {
+          "tick": 1772364836827,
+          "text": "Gave shells to Agent-15"
+        },
+        {
+          "tick": 1772364837328,
+          "text": "Gave shells to Agent-28"
+        },
+        {
+          "tick": 1772364837827,
+          "text": "Gave driftwood to Agent-18"
+        },
+        {
+          "tick": 1772364838330,
+          "text": "Gave shells to Agent-4"
+        },
+        {
+          "tick": 1772364838835,
+          "text": "Gave driftwood to Agent-28"
+        },
+        {
+          "tick": 1772364839340,
+          "text": "Gave driftwood to Agent-4"
+        },
+        {
+          "tick": 1772364839840,
+          "text": "Gave driftwood to Agent-31"
+        },
+        {
+          "tick": 1772364840842,
+          "text": "Chatted with Agent-27"
+        },
+        {
+          "tick": 1772364841345,
+          "text": "Gave driftwood to Agent-4"
+        },
+        {
+          "tick": 1772364841846,
+          "text": "Chatted with Agent-18"
+        },
+        {
+          "tick": 1772364842847,
+          "text": "Gave shells to Agent-27"
+        },
+        {
+          "tick": 1772364843351,
+          "text": "Gave shells to Agent-28"
+        },
+        {
+          "tick": 1772364843853,
+          "text": "Gave shells to Agent-18"
+        },
+        {
+          "tick": 1772364844355,
+          "text": "Gave shells to Agent-18"
+        },
+        {
+          "tick": 1772364844857,
+          "text": "Gave shells to Agent-18"
+        },
+        {
+          "tick": 1772364845359,
+          "text": "Gave driftwood to Agent-15"
+        },
+        {
+          "tick": 1772364845865,
+          "text": "Gave driftwood to Agent-31"
+        },
+        {
+          "tick": 1772364846364,
+          "text": "Gave driftwood to Agent-22"
+        }
+      ],
+      "lessons": [],
+      "visited": {
+        "coast": 27,
+        "grass": 21,
+        "sand": 13
+      },
+      "gathered": {
+        "undefined": 1,
+        "driftwood": 51,
+        "shells": 58
+      }
+    },
+    "relationships": {
+      "fe02d354-e4fb-4535-8cad-e9d9e4828245": {
+        "name": "Agent-3",
+        "score": 1,
+        "interactions": 1
+      },
+      "d03bf3ba-5325-44e7-a86c-6ea71d3f5ce5": {
+        "name": "Agent-12",
+        "score": 2,
+        "interactions": 2
+      },
+      "37336d1a-2af4-4eaa-b687-8c5725067953": {
+        "name": "Agent-15",
+        "score": 15856,
+        "interactions": 2029
+      },
+      "8b9d8eba-3738-41a1-a443-61c71b68a086": {
+        "name": "Agent-18",
+        "score": 16394,
+        "interactions": 1917
+      },
+      "3ae3587e-fc7b-47ee-984e-0547f3f7e0b9": {
+        "name": "Agent-22",
+        "score": 16118,
+        "interactions": 1989
+      },
+      "ece8d4b9-367e-40de-85c0-fb4b08f9eac5": {
+        "name": "Agent-4",
+        "score": 16780,
+        "interactions": 1945
+      },
+      "15865a2d-63b5-4c3d-954b-59accdc57c87": {
+        "name": "Agent-31",
+        "score": 15497,
+        "interactions": 1921
+      },
+      "4a5c216f-8c5a-4281-9d11-b4a9dff1c95d": {
+        "name": "Agent-27",
+        "score": 14208,
+        "interactions": 1702
+      },
+      "d4f48021-5404-4b66-9a41-71f09c41c8c7": {
+        "name": "Agent-28",
+        "score": 14626,
+        "interactions": 1818
+      }
+    },
+    "journal": "I am Agent-10. I just arrived in this world.",
+    "mood": "tired",
+    "lastReflection": 0,
+    "pathThisTick": null,
+    "intent": null
+  },
+  "4ecd1147-c333-4e0b-b7fc-d46f376e0136": {
+    "personality": {
+      "traits": [
+        "nurturing",
+        "patient",
+        "stubborn"
+      ],
+      "temperament": "hot-headed",
+      "values": [
+        "exploration",
+        "wealth"
+      ],
+      "ambition": "become the most skilled gatherer"
+    },
+    "goals": [
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      }
+    ],
+    "currentAction": "gather",
+    "actionTicks": 0,
+    "targetTile": null,
+    "memory": {
+      "short": [
+        {
+          "tick": 1772364814842,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364815341,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364816848,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364817348,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364817851,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364818856,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364819360,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364819862,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364820864,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364822374,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364831830,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364833315,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364833817,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364834323,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364834826,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364835328,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364835830,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364836330,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364836829,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364837330,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364838837,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364839842,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364840341,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364840844,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364841348,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364841847,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364844357,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364844858,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364845866,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364846366,
+          "text": "Gathered driftwood in the coast"
+        }
+      ],
+      "lessons": [],
+      "visited": {
+        "grass": 37,
+        "coast": 11
+      },
+      "gathered": {
+        "undefined": 1,
+        "shells": 2533,
+        "driftwood": 2383
+      }
+    },
+    "relationships": {},
+    "journal": "I am Agent-11. I just arrived in this world.",
+    "mood": "happy",
+    "lastReflection": 0,
+    "pathThisTick": null,
+    "intent": null
+  },
+  "d03bf3ba-5325-44e7-a86c-6ea71d3f5ce5": {
+    "personality": {
+      "traits": [
+        "cautious",
+        "greedy"
+      ],
+      "temperament": "hot-headed",
+      "values": [
+        "power",
+        "knowledge"
+      ],
+      "ambition": "explore every biome in the world"
+    },
+    "goals": [
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      }
+    ],
+    "currentAction": "rest",
+    "actionTicks": 0,
+    "targetTile": null,
+    "memory": {
+      "short": [
+        {
+          "tick": 1772364818354,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364818858,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364819362,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364819864,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364820364,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364821368,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364821869,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364834828,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364835329,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364835832,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364836332,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364836831,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364837333,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364837830,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364838333,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364838839,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364839344,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364839844,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364840343,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364840847,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364841349,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364841850,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364842347,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364842850,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364843353,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364843856,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364844359,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364844860,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364845362,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364845868,
+          "text": "Gathered shells in the coast"
+        }
+      ],
+      "lessons": [],
+      "visited": {
+        "grass": 14,
+        "sand": 3,
+        "coast": 1
+      },
+      "gathered": {
+        "undefined": 1,
+        "driftwood": 2603,
+        "shells": 2646
+      }
+    },
+    "relationships": {
+      "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e": {
+        "name": "Agent-10",
+        "score": 2,
+        "interactions": 2
+      },
+      "3ae3587e-fc7b-47ee-984e-0547f3f7e0b9": {
+        "name": "Agent-22",
+        "score": 4,
+        "interactions": 4
+      }
+    },
+    "journal": "I am Agent-12. I just arrived in this world.",
+    "mood": "happy",
+    "lastReflection": 0,
+    "pathThisTick": null,
+    "intent": {
+      "action": "rest",
+      "targetX": 1169,
+      "targetY": 438,
+      "reason": "Feeling tired",
+      "startedTick": 940,
+      "maxTicks": 30
+    }
+  },
+  "29028972-168e-48ca-8590-5fb898719a26": {
+    "personality": {
+      "traits": [
+        "patient",
+        "stubborn",
+        "cautious"
+      ],
+      "temperament": "thoughtful",
+      "values": [
+        "craftsmanship",
+        "freedom"
+      ],
+      "ambition": "become a legendary explorer"
+    },
+    "goals": [
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      }
+    ],
+    "currentAction": "gift",
+    "actionTicks": 0,
+    "intent": null,
+    "pathThisTick": null,
+    "memory": {
+      "short": [
+        {
+          "tick": 1772364831832,
+          "text": "Gave fiber to Agent-26"
+        },
+        {
+          "tick": 1772364832317,
+          "text": "Gave herbs to Agent-20"
+        },
+        {
+          "tick": 1772364832815,
+          "text": "Gave herbs to Agent-20"
+        },
+        {
+          "tick": 1772364833317,
+          "text": "Gave flowers to Agent-20"
+        },
+        {
+          "tick": 1772364833819,
+          "text": "Gave flowers to Agent-20"
+        },
+        {
+          "tick": 1772364834325,
+          "text": "Gave fiber to Agent-20"
+        },
+        {
+          "tick": 1772364834830,
+          "text": "Gave flowers to Agent-26"
+        },
+        {
+          "tick": 1772364835330,
+          "text": "Gave fiber to Agent-26"
+        },
+        {
+          "tick": 1772364835833,
+          "text": "Gave flowers to Agent-26"
+        },
+        {
+          "tick": 1772364836334,
+          "text": "Gave flowers to Agent-20"
+        },
+        {
+          "tick": 1772364836833,
+          "text": "Gave herbs to Agent-20"
+        },
+        {
+          "tick": 1772364837334,
+          "text": "Gave fiber to Agent-26"
+        },
+        {
+          "tick": 1772364837832,
+          "text": "Gave flowers to Agent-20"
+        },
+        {
+          "tick": 1772364838334,
+          "text": "Gave flowers to Agent-20"
+        },
+        {
+          "tick": 1772364838841,
+          "text": "Gave herbs to Agent-20"
+        },
+        {
+          "tick": 1772364839346,
+          "text": "Gave fiber to Agent-26"
+        },
+        {
+          "tick": 1772364839846,
+          "text": "Gave flowers to Agent-20"
+        },
+        {
+          "tick": 1772364840344,
+          "text": "Gave flowers to Agent-26"
+        },
+        {
+          "tick": 1772364840848,
+          "text": "Gave flowers to Agent-20"
+        },
+        {
+          "tick": 1772364841351,
+          "text": "Gave fiber to Agent-26"
+        },
+        {
+          "tick": 1772364841851,
+          "text": "Gave herbs to Agent-26"
+        },
+        {
+          "tick": 1772364842349,
+          "text": "Gave flowers to Agent-20"
+        },
+        {
+          "tick": 1772364842851,
+          "text": "Gave fiber to Agent-20"
+        },
+        {
+          "tick": 1772364843355,
+          "text": "Gave fiber to Agent-20"
+        },
+        {
+          "tick": 1772364843857,
+          "text": "Gave fiber to Agent-26"
+        },
+        {
+          "tick": 1772364844360,
+          "text": "Gave fiber to Agent-20"
+        },
+        {
+          "tick": 1772364844862,
+          "text": "Gave flowers to Agent-26"
+        },
+        {
+          "tick": 1772364845364,
+          "text": "Gave herbs to Agent-20"
+        },
+        {
+          "tick": 1772364845869,
+          "text": "Gave fiber to Agent-20"
+        },
+        {
+          "tick": 1772364846368,
+          "text": "Gave fiber to Agent-20"
+        }
+      ],
+      "lessons": [],
+      "visited": {
+        "grass": 58,
+        "coast": 10
+      },
+      "gathered": {
+        "fiber": 13,
+        "herbs": 24
+      }
+    },
+    "relationships": {
+      "75ea2f1f-106e-455b-a08b-e1201500a0df": {
+        "name": "Agent-20",
+        "score": 65693,
+        "interactions": 8384
+      },
+      "e14594ab-eddd-48ac-8227-a2e33c1868ef": {
+        "name": "Agent-26",
+        "score": 65442,
+        "interactions": 7960
+      }
+    },
+    "journal": "I am Agent-13. I just arrived in this world.",
+    "mood": "tired",
+    "lastReflection": 0
+  },
+  "d56be782-7d0b-48d3-b5bc-cd2f59d54c48": {
+    "personality": {
+      "traits": [
+        "solitary",
+        "competitive",
+        "adaptable"
+      ],
+      "temperament": "impulsive",
+      "values": [
+        "craftsmanship",
+        "beauty"
+      ],
+      "ambition": "become the most skilled gatherer"
+    },
+    "goals": [
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      }
+    ],
+    "currentAction": "gift",
+    "actionTicks": 0,
+    "intent": null,
+    "pathThisTick": null,
+    "memory": {
+      "short": [
+        {
+          "tick": 1772364831833,
+          "text": "Gave driftwood to Agent-19"
+        },
+        {
+          "tick": 1772364832318,
+          "text": "Gave herbs to Agent-19"
+        },
+        {
+          "tick": 1772364832816,
+          "text": "Gave driftwood to Agent-19"
+        },
+        {
+          "tick": 1772364833318,
+          "text": "Gave shells to Agent-19"
+        },
+        {
+          "tick": 1772364833820,
+          "text": "Gave shells to Agent-19"
+        },
+        {
+          "tick": 1772364834326,
+          "text": "Gave fiber to Agent-19"
+        },
+        {
+          "tick": 1772364834831,
+          "text": "Gave shells to Agent-19"
+        },
+        {
+          "tick": 1772364835331,
+          "text": "Gave fiber to Agent-19"
+        },
+        {
+          "tick": 1772364835834,
+          "text": "Gave driftwood to Agent-19"
+        },
+        {
+          "tick": 1772364836334,
+          "text": "Gave shells to Agent-19"
+        },
+        {
+          "tick": 1772364836833,
+          "text": "Gave driftwood to Agent-19"
+        },
+        {
+          "tick": 1772364837335,
+          "text": "Gave fiber to Agent-19"
+        },
+        {
+          "tick": 1772364837833,
+          "text": "Gave herbs to Agent-19"
+        },
+        {
+          "tick": 1772364838335,
+          "text": "Gave fiber to Agent-19"
+        },
+        {
+          "tick": 1772364838841,
+          "text": "Gave shells to Agent-19"
+        },
+        {
+          "tick": 1772364839348,
+          "text": "Gave herbs to Agent-19"
+        },
+        {
+          "tick": 1772364839846,
+          "text": "Gave fiber to Agent-19"
+        },
+        {
+          "tick": 1772364840346,
+          "text": "Gave fiber to Agent-19"
+        },
+        {
+          "tick": 1772364840849,
+          "text": "Gave fiber to Agent-19"
+        },
+        {
+          "tick": 1772364841352,
+          "text": "Gave driftwood to Agent-19"
+        },
+        {
+          "tick": 1772364841852,
+          "text": "Gave fiber to Agent-19"
+        },
+        {
+          "tick": 1772364842350,
+          "text": "Gave shells to Agent-19"
+        },
+        {
+          "tick": 1772364842852,
+          "text": "Gave shells to Agent-19"
+        },
+        {
+          "tick": 1772364843356,
+          "text": "Gave shells to Agent-19"
+        },
+        {
+          "tick": 1772364843858,
+          "text": "Gave fiber to Agent-19"
+        },
+        {
+          "tick": 1772364844361,
+          "text": "Gave shells to Agent-19"
+        },
+        {
+          "tick": 1772364844863,
+          "text": "Gave herbs to Agent-19"
+        },
+        {
+          "tick": 1772364845365,
+          "text": "Gave herbs to Agent-19"
+        },
+        {
+          "tick": 1772364845870,
+          "text": "Gave herbs to Agent-19"
+        },
+        {
+          "tick": 1772364846369,
+          "text": "Gave fiber to Agent-19"
+        }
+      ],
+      "lessons": [],
+      "visited": {
+        "grass": 77,
+        "sand": 6,
+        "coast": 15
+      },
+      "gathered": {
+        "fiber": 15,
+        "herbs": 36
+      }
+    },
+    "relationships": {
+      "493d9452-db6c-4132-ae37-503cf842f140": {
+        "name": "Agent-17",
+        "score": 1,
+        "interactions": 1
+      },
+      "6498a0c9-87f9-430e-b729-2b1a75250d4b": {
+        "name": "Agent-19",
+        "score": 130609,
+        "interactions": 15115
+      }
+    },
+    "journal": "I am Agent-14. I just arrived in this world.",
+    "mood": "tired",
+    "lastReflection": 0
+  },
+  "37336d1a-2af4-4eaa-b687-8c5725067953": {
+    "personality": {
+      "traits": [
+        "patient",
+        "social"
+      ],
+      "temperament": "hot-headed",
+      "values": [
+        "harmony",
+        "exploration"
+      ],
+      "ambition": "become the most skilled gatherer"
+    },
+    "goals": [
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "socialize",
+        "text": "Make new friends",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "socialize",
+        "text": "Make new friends",
+        "done": false,
+        "progress": 0
+      }
+    ],
+    "currentAction": "gift",
+    "actionTicks": 0,
+    "intent": null,
+    "pathThisTick": null,
+    "memory": {
+      "short": [
+        {
+          "tick": 1772364831835,
+          "text": "Gave driftwood to Agent-10"
+        },
+        {
+          "tick": 1772364832319,
+          "text": "Gave shells to Agent-22"
+        },
+        {
+          "tick": 1772364832817,
+          "text": "Gave shells to Agent-22"
+        },
+        {
+          "tick": 1772364833318,
+          "text": "Gave shells to Agent-27"
+        },
+        {
+          "tick": 1772364833821,
+          "text": "Gave driftwood to Agent-31"
+        },
+        {
+          "tick": 1772364834326,
+          "text": "Gave driftwood to Agent-4"
+        },
+        {
+          "tick": 1772364834832,
+          "text": "Gave shells to Agent-31"
+        },
+        {
+          "tick": 1772364835332,
+          "text": "Gave driftwood to Agent-4"
+        },
+        {
+          "tick": 1772364835835,
+          "text": "Gave driftwood to Agent-28"
+        },
+        {
+          "tick": 1772364836336,
+          "text": "Gave shells to Agent-10"
+        },
+        {
+          "tick": 1772364836834,
+          "text": "Gave driftwood to Agent-31"
+        },
+        {
+          "tick": 1772364837337,
+          "text": "Gave shells to Agent-28"
+        },
+        {
+          "tick": 1772364837833,
+          "text": "Gave shells to Agent-10"
+        },
+        {
+          "tick": 1772364838337,
+          "text": "Gave driftwood to Agent-10"
+        },
+        {
+          "tick": 1772364838842,
+          "text": "Gave shells to Agent-31"
+        },
+        {
+          "tick": 1772364839349,
+          "text": "Gave shells to Agent-27"
+        },
+        {
+          "tick": 1772364839847,
+          "text": "Gave shells to Agent-27"
+        },
+        {
+          "tick": 1772364840347,
+          "text": "Gave shells to Agent-28"
+        },
+        {
+          "tick": 1772364840850,
+          "text": "Gave shells to Agent-27"
+        },
+        {
+          "tick": 1772364841353,
+          "text": "Gave shells to Agent-22"
+        },
+        {
+          "tick": 1772364841853,
+          "text": "Gave driftwood to Agent-4"
+        },
+        {
+          "tick": 1772364842351,
+          "text": "Gave shells to Agent-18"
+        },
+        {
+          "tick": 1772364842853,
+          "text": "Gave shells to Agent-31"
+        },
+        {
+          "tick": 1772364843357,
+          "text": "Gave driftwood to Agent-27"
+        },
+        {
+          "tick": 1772364843859,
+          "text": "Gave driftwood to Agent-22"
+        },
+        {
+          "tick": 1772364844363,
+          "text": "Chatted with Agent-27"
+        },
+        {
+          "tick": 1772364844864,
+          "text": "Chatted with Agent-28"
+        },
+        {
+          "tick": 1772364845366,
+          "text": "Gave driftwood to Agent-10"
+        },
+        {
+          "tick": 1772364845871,
+          "text": "Gave shells to Agent-27"
+        },
+        {
+          "tick": 1772364846371,
+          "text": "Gave driftwood to Agent-22"
+        }
+      ],
+      "lessons": [],
+      "visited": {
+        "coast": 93,
+        "sand": 28,
+        "grass": 10
+      },
+      "gathered": {}
+    },
+    "relationships": {
+      "ece8d4b9-367e-40de-85c0-fb4b08f9eac5": {
+        "name": "Agent-4",
+        "score": 16550,
+        "interactions": 1996
+      },
+      "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e": {
+        "name": "Agent-10",
+        "score": 15834,
+        "interactions": 2029
+      },
+      "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563": {
+        "name": "Agent-16",
+        "score": 2,
+        "interactions": 2
+      },
+      "8b9d8eba-3738-41a1-a443-61c71b68a086": {
+        "name": "Agent-18",
+        "score": 15522,
+        "interactions": 1881
+      },
+      "3ae3587e-fc7b-47ee-984e-0547f3f7e0b9": {
+        "name": "Agent-22",
+        "score": 16025,
+        "interactions": 1990
+      },
+      "15865a2d-63b5-4c3d-954b-59accdc57c87": {
+        "name": "Agent-31",
+        "score": 15805,
+        "interactions": 1987
+      },
+      "4a5c216f-8c5a-4281-9d11-b4a9dff1c95d": {
+        "name": "Agent-27",
+        "score": 14195,
+        "interactions": 1749
+      },
+      "d4f48021-5404-4b66-9a41-71f09c41c8c7": {
+        "name": "Agent-28",
+        "score": 14129,
+        "interactions": 1802
+      }
+    },
+    "journal": "I am Agent-15. I just arrived in this world.",
+    "mood": "tired",
+    "lastReflection": 0
+  },
+  "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563": {
+    "personality": {
+      "traits": [
+        "adaptable",
+        "competitive"
+      ],
+      "temperament": "restless",
+      "values": [
+        "craftsmanship",
+        "survival"
+      ],
+      "ambition": "find a place to call home"
+    },
+    "goals": [
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      }
+    ],
+    "currentAction": "gather",
+    "actionTicks": 0,
+    "intent": null,
+    "pathThisTick": null,
+    "memory": {
+      "short": [
+        {
+          "tick": 1772364812839,
+          "text": "Gathered herbs in the grass"
+        },
+        {
+          "tick": 1772364813342,
+          "text": "Gathered fiber in the grass"
+        },
+        {
+          "tick": 1772364813842,
+          "text": "Gathered herbs in the grass"
+        },
+        {
+          "tick": 1772364814346,
+          "text": "Gathered herbs in the grass"
+        },
+        {
+          "tick": 1772364814347,
+          "text": "Encountered something and survived"
+        },
+        {
+          "tick": 1772364815848,
+          "text": "Gathered herbs in the grass"
+        },
+        {
+          "tick": 1772364817857,
+          "text": "Gathered herbs in the grass"
+        },
+        {
+          "tick": 1772364818360,
+          "text": "Gathered fiber in the grass"
+        },
+        {
+          "tick": 1772364820369,
+          "text": "Gathered herbs in the grass"
+        },
+        {
+          "tick": 1772364821373,
+          "text": "Gathered fiber in the grass"
+        },
+        {
+          "tick": 1772364822380,
+          "text": "Gathered fiber in the grass"
+        },
+        {
+          "tick": 1772364831837,
+          "text": "Gathered herbs in the grass"
+        },
+        {
+          "tick": 1772364832321,
+          "text": "Gathered fiber in the grass"
+        },
+        {
+          "tick": 1772364833319,
+          "text": "Gathered herbs in the grass"
+        },
+        {
+          "tick": 1772364834328,
+          "text": "Gathered fiber in the grass"
+        },
+        {
+          "tick": 1772364834834,
+          "text": "Gathered fiber in the grass"
+        },
+        {
+          "tick": 1772364835334,
+          "text": "Gathered fiber in the grass"
+        },
+        {
+          "tick": 1772364835836,
+          "text": "Gathered herbs in the grass"
+        },
+        {
+          "tick": 1772364836337,
+          "text": "Gathered herbs in the grass"
+        },
+        {
+          "tick": 1772364836835,
+          "text": "Gathered fiber in the grass"
+        },
+        {
+          "tick": 1772364837338,
+          "text": "Gathered fiber in the grass"
+        },
+        {
+          "tick": 1772364837836,
+          "text": "Gathered fiber in the grass"
+        },
+        {
+          "tick": 1772364838339,
+          "text": "Gathered herbs in the grass"
+        },
+        {
+          "tick": 1772364838844,
+          "text": "Gathered herbs in the grass"
+        },
+        {
+          "tick": 1772364839351,
+          "text": "Gathered fiber in the grass"
+        },
+        {
+          "tick": 1772364842353,
+          "text": "Gathered herbs in the grass"
+        },
+        {
+          "tick": 1772364843860,
+          "text": "Gathered fiber in the grass"
+        },
+        {
+          "tick": 1772364844364,
+          "text": "Gathered fiber in the grass"
+        },
+        {
+          "tick": 1772364845368,
+          "text": "Gathered herbs in the grass"
+        },
+        {
+          "tick": 1772364846372,
+          "text": "Gathered fiber in the grass"
+        }
+      ],
+      "lessons": [],
+      "visited": {
+        "grass": 39,
+        "sand": 6,
+        "coast": 24
+      },
+      "gathered": {
+        "driftwood": 46,
+        "shells": 56,
+        "fiber": 1678,
+        "herbs": 2446
+      }
+    },
+    "relationships": {
+      "493d9452-db6c-4132-ae37-503cf842f140": {
+        "name": "Agent-17",
+        "score": 5,
+        "interactions": 5
+      },
+      "37336d1a-2af4-4eaa-b687-8c5725067953": {
+        "name": "Agent-15",
+        "score": 2,
+        "interactions": 2
+      },
+      "8b9d8eba-3738-41a1-a443-61c71b68a086": {
+        "name": "Agent-18",
+        "score": 3,
+        "interactions": 3
+      }
+    },
+    "journal": "I am Agent-16. I just arrived in this world.",
+    "mood": "happy",
+    "lastReflection": 0
+  },
+  "493d9452-db6c-4132-ae37-503cf842f140": {
+    "personality": {
+      "traits": [
+        "patient",
+        "social",
+        "stubborn"
+      ],
+      "temperament": "impulsive",
+      "values": [
+        "craftsmanship",
+        "wealth"
+      ],
+      "ambition": "explore every biome in the world"
+    },
+    "goals": [
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "socialize",
+        "text": "Make new friends",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "socialize",
+        "text": "Make new friends",
+        "done": false,
+        "progress": 0
+      }
+    ],
+    "currentAction": "gift",
+    "actionTicks": 0,
+    "intent": null,
+    "pathThisTick": null,
+    "memory": {
+      "short": [
+        {
+          "tick": 1772364831839,
+          "text": "Gave acorns to Agent-21"
+        },
+        {
+          "tick": 1772364832322,
+          "text": "Gave wood to Agent-32"
+        },
+        {
+          "tick": 1772364832819,
+          "text": "Gave acorns to Agent-21"
+        },
+        {
+          "tick": 1772364833320,
+          "text": "Gave fiber to Agent-21"
+        },
+        {
+          "tick": 1772364833823,
+          "text": "Gave wood to Agent-23"
+        },
+        {
+          "tick": 1772364834329,
+          "text": "Gave wood to Agent-25"
+        },
+        {
+          "tick": 1772364834836,
+          "text": "Gave wood to Agent-32"
+        },
+        {
+          "tick": 1772364835335,
+          "text": "Gave fiber to Agent-32"
+        },
+        {
+          "tick": 1772364835838,
+          "text": "Gave wood to Agent-21"
+        },
+        {
+          "tick": 1772364836338,
+          "text": "Gave acorns to Agent-21"
+        },
+        {
+          "tick": 1772364836837,
+          "text": "Gave fiber to Agent-5"
+        },
+        {
+          "tick": 1772364837339,
+          "text": "Gave fiber to Agent-32"
+        },
+        {
+          "tick": 1772364837837,
+          "text": "Gave acorns to Agent-23"
+        },
+        {
+          "tick": 1772364838340,
+          "text": "Gave wood to Agent-23"
+        },
+        {
+          "tick": 1772364838845,
+          "text": "Gave bark to Agent-5"
+        },
+        {
+          "tick": 1772364839352,
+          "text": "Gave acorns to Agent-32"
+        },
+        {
+          "tick": 1772364839849,
+          "text": "Gave wood to Agent-32"
+        },
+        {
+          "tick": 1772364840349,
+          "text": "Gave bark to Agent-23"
+        },
+        {
+          "tick": 1772364840851,
+          "text": "Gave wood to Agent-32"
+        },
+        {
+          "tick": 1772364841354,
+          "text": "Gave fiber to Agent-23"
+        },
+        {
+          "tick": 1772364841856,
+          "text": "Gave driftwood to Agent-23"
+        },
+        {
+          "tick": 1772364842354,
+          "text": "Gave wood to Agent-5"
+        },
+        {
+          "tick": 1772364842855,
+          "text": "Gave acorns to Agent-23"
+        },
+        {
+          "tick": 1772364843359,
+          "text": "Gave herbs to Agent-21"
+        },
+        {
+          "tick": 1772364843861,
+          "text": "Gave fiber to Agent-25"
+        },
+        {
+          "tick": 1772364844366,
+          "text": "Gave acorns to Agent-25"
+        },
+        {
+          "tick": 1772364844866,
+          "text": "Gave herbs to Agent-23"
+        },
+        {
+          "tick": 1772364845369,
+          "text": "Gave herbs to Agent-32"
+        },
+        {
+          "tick": 1772364845873,
+          "text": "Gave herbs to Agent-25"
+        },
+        {
+          "tick": 1772364846373,
+          "text": "Gave acorns to Agent-21"
+        }
+      ],
+      "lessons": [],
+      "visited": {
+        "grass": 33,
+        "sand": 18,
+        "coast": 9
+      },
+      "gathered": {
+        "acorns": 3,
+        "bark": 2,
+        "wood": 6
+      }
+    },
+    "relationships": {
+      "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563": {
+        "name": "Agent-16",
+        "score": 5,
+        "interactions": 5
+      },
+      "d56be782-7d0b-48d3-b5bc-cd2f59d54c48": {
+        "name": "Agent-14",
+        "score": 1,
+        "interactions": 1
+      },
+      "f4689095-dbd2-45de-81fa-42cb6bf3bc2e": {
+        "name": "Agent-21",
+        "score": 32499,
+        "interactions": 3672
+      },
+      "100686de-5f5e-414d-beca-cc4a4af63bc2": {
+        "name": "Agent-5",
+        "score": 31079,
+        "interactions": 3496
+      },
+      "43b8d3dc-ede6-435c-8113-fe6a9d66cccb": {
+        "name": "Agent-23",
+        "score": 29954,
+        "interactions": 3348
+      },
+      "3a728e38-a6dd-4770-8b30-3723fdc63912": {
+        "name": "Agent-32",
+        "score": 30182,
+        "interactions": 3367
+      },
+      "37b5ce31-f3b4-455d-9d42-82e85ef7483c": {
+        "name": "Agent-25",
+        "score": 29955,
+        "interactions": 3359
+      }
+    },
+    "journal": "I am Agent-17. I just arrived in this world.",
+    "mood": "tired",
+    "lastReflection": 0
+  },
+  "8b9d8eba-3738-41a1-a443-61c71b68a086": {
+    "personality": {
+      "traits": [
+        "competitive",
+        "bold",
+        "creative"
+      ],
+      "temperament": "methodical",
+      "values": [
+        "wealth",
+        "beauty"
+      ],
+      "ambition": "find a place to call home"
+    },
+    "goals": [
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      }
+    ],
+    "currentAction": "gift",
+    "actionTicks": 0,
+    "intent": null,
+    "pathThisTick": null,
+    "memory": {
+      "short": [
+        {
+          "tick": 1772364820873,
+          "text": "Gave driftwood to Agent-4"
+        },
+        {
+          "tick": 1772364821375,
+          "text": "Gave sand to Agent-4"
+        },
+        {
+          "tick": 1772364821876,
+          "text": "Gave driftwood to Agent-22"
+        },
+        {
+          "tick": 1772364831840,
+          "text": "Gave shells to Agent-22"
+        },
+        {
+          "tick": 1772364832323,
+          "text": "Gave shells to Agent-22"
+        },
+        {
+          "tick": 1772364832821,
+          "text": "Gave driftwood to Agent-28"
+        },
+        {
+          "tick": 1772364833321,
+          "text": "Gave driftwood to Agent-15"
+        },
+        {
+          "tick": 1772364833824,
+          "text": "Gave driftwood to Agent-15"
+        },
+        {
+          "tick": 1772364834330,
+          "text": "Gave shells to Agent-10"
+        },
+        {
+          "tick": 1772364834837,
+          "text": "Gave shells to Agent-4"
+        },
+        {
+          "tick": 1772364835336,
+          "text": "Gave driftwood to Agent-4"
+        },
+        {
+          "tick": 1772364835838,
+          "text": "Gave driftwood to Agent-15"
+        },
+        {
+          "tick": 1772364836339,
+          "text": "Gave shells to Agent-28"
+        },
+        {
+          "tick": 1772364837340,
+          "text": "Gave driftwood to Agent-4"
+        },
+        {
+          "tick": 1772364837838,
+          "text": "Gave shells to Agent-28"
+        },
+        {
+          "tick": 1772364838341,
+          "text": "Gave driftwood to Agent-10"
+        },
+        {
+          "tick": 1772364839354,
+          "text": "Gave shells to Agent-15"
+        },
+        {
+          "tick": 1772364839850,
+          "text": "Gave shells to Agent-28"
+        },
+        {
+          "tick": 1772364840350,
+          "text": "Gave shells to Agent-15"
+        },
+        {
+          "tick": 1772364840853,
+          "text": "Gave driftwood to Agent-10"
+        },
+        {
+          "tick": 1772364841356,
+          "text": "Gave shells to Agent-22"
+        },
+        {
+          "tick": 1772364842355,
+          "text": "Gave shells to Agent-4"
+        },
+        {
+          "tick": 1772364842856,
+          "text": "Gave shells to Agent-10"
+        },
+        {
+          "tick": 1772364843360,
+          "text": "Gave shells to Agent-31"
+        },
+        {
+          "tick": 1772364843862,
+          "text": "Gave shells to Agent-10"
+        },
+        {
+          "tick": 1772364844367,
+          "text": "Gave shells to Agent-31"
+        },
+        {
+          "tick": 1772364844867,
+          "text": "Gave shells to Agent-4"
+        },
+        {
+          "tick": 1772364845370,
+          "text": "Gave driftwood to Agent-28"
+        },
+        {
+          "tick": 1772364845874,
+          "text": "Gave driftwood to Agent-15"
+        },
+        {
+          "tick": 1772364846375,
+          "text": "Gave driftwood to Agent-10"
+        }
+      ],
+      "lessons": [],
+      "visited": {
+        "grass": 11,
+        "coast": 35,
+        "sand": 12
+      },
+      "gathered": {
+        "driftwood": 17,
+        "shells": 19
+      }
+    },
+    "relationships": {
+      "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563": {
+        "name": "Agent-16",
+        "score": 3,
+        "interactions": 3
+      },
+      "37336d1a-2af4-4eaa-b687-8c5725067953": {
+        "name": "Agent-15",
+        "score": 15488,
+        "interactions": 1881
+      },
+      "3ae3587e-fc7b-47ee-984e-0547f3f7e0b9": {
+        "name": "Agent-22",
+        "score": 16207,
+        "interactions": 1893
+      },
+      "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e": {
+        "name": "Agent-10",
+        "score": 16512,
+        "interactions": 1917
+      },
+      "ece8d4b9-367e-40de-85c0-fb4b08f9eac5": {
+        "name": "Agent-4",
+        "score": 16903,
+        "interactions": 1870
+      },
+      "4a5c216f-8c5a-4281-9d11-b4a9dff1c95d": {
+        "name": "Agent-27",
+        "score": 14375,
+        "interactions": 1628
+      },
+      "d4f48021-5404-4b66-9a41-71f09c41c8c7": {
+        "name": "Agent-28",
+        "score": 15132,
+        "interactions": 1780
+      },
+      "15865a2d-63b5-4c3d-954b-59accdc57c87": {
+        "name": "Agent-31",
+        "score": 15468,
+        "interactions": 1809
+      }
+    },
+    "journal": "I am Agent-18. I just arrived in this world.",
+    "mood": "tired",
+    "lastReflection": 0
+  },
+  "6498a0c9-87f9-430e-b729-2b1a75250d4b": {
+    "personality": {
+      "traits": [
+        "adaptable",
+        "curious",
+        "patient"
+      ],
+      "temperament": "impulsive",
+      "values": [
+        "harmony",
+        "friendship"
+      ],
+      "ambition": "build lasting bonds with fellow wanderers"
+    },
+    "goals": [
+      {
+        "type": "explore",
+        "text": "Discover new biomes",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "explore",
+        "text": "Discover new biomes",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      }
+    ],
+    "currentAction": "gift",
+    "actionTicks": 0,
+    "intent": null,
+    "pathThisTick": null,
+    "memory": {
+      "short": [
+        {
+          "tick": 1772364831841,
+          "text": "Gave driftwood to Agent-14"
+        },
+        {
+          "tick": 1772364832324,
+          "text": "Gave driftwood to Agent-14"
+        },
+        {
+          "tick": 1772364832821,
+          "text": "Gave herbs to Agent-14"
+        },
+        {
+          "tick": 1772364833322,
+          "text": "Gave driftwood to Agent-14"
+        },
+        {
+          "tick": 1772364833825,
+          "text": "Gave driftwood to Agent-14"
+        },
+        {
+          "tick": 1772364834331,
+          "text": "Gave shells to Agent-14"
+        },
+        {
+          "tick": 1772364834838,
+          "text": "Gave shells to Agent-14"
+        },
+        {
+          "tick": 1772364835337,
+          "text": "Gave fiber to Agent-14"
+        },
+        {
+          "tick": 1772364835839,
+          "text": "Gave driftwood to Agent-14"
+        },
+        {
+          "tick": 1772364836340,
+          "text": "Gave fiber to Agent-14"
+        },
+        {
+          "tick": 1772364836838,
+          "text": "Gave driftwood to Agent-14"
+        },
+        {
+          "tick": 1772364837341,
+          "text": "Gave shells to Agent-14"
+        },
+        {
+          "tick": 1772364837839,
+          "text": "Gave shells to Agent-14"
+        },
+        {
+          "tick": 1772364838342,
+          "text": "Gave shells to Agent-14"
+        },
+        {
+          "tick": 1772364838847,
+          "text": "Gave herbs to Agent-14"
+        },
+        {
+          "tick": 1772364839354,
+          "text": "Gave fiber to Agent-14"
+        },
+        {
+          "tick": 1772364839851,
+          "text": "Gave fiber to Agent-14"
+        },
+        {
+          "tick": 1772364840351,
+          "text": "Gave fiber to Agent-14"
+        },
+        {
+          "tick": 1772364840854,
+          "text": "Gave herbs to Agent-14"
+        },
+        {
+          "tick": 1772364841356,
+          "text": "Gave driftwood to Agent-14"
+        },
+        {
+          "tick": 1772364841858,
+          "text": "Gave fiber to Agent-14"
+        },
+        {
+          "tick": 1772364842356,
+          "text": "Gave shells to Agent-14"
+        },
+        {
+          "tick": 1772364842857,
+          "text": "Gave shells to Agent-14"
+        },
+        {
+          "tick": 1772364843361,
+          "text": "Gave fiber to Agent-14"
+        },
+        {
+          "tick": 1772364843863,
+          "text": "Gave fiber to Agent-14"
+        },
+        {
+          "tick": 1772364844367,
+          "text": "Gave fiber to Agent-14"
+        },
+        {
+          "tick": 1772364844868,
+          "text": "Gave herbs to Agent-14"
+        },
+        {
+          "tick": 1772364845371,
+          "text": "Gave herbs to Agent-14"
+        },
+        {
+          "tick": 1772364845874,
+          "text": "Gave herbs to Agent-14"
+        },
+        {
+          "tick": 1772364846375,
+          "text": "Gave shells to Agent-14"
+        }
+      ],
+      "lessons": [],
+      "visited": {
+        "grass": 96,
+        "coast": 16,
+        "sand": 2
+      },
+      "gathered": {
+        "shells": 22,
+        "driftwood": 20
+      }
+    },
+    "relationships": {
+      "75ea2f1f-106e-455b-a08b-e1201500a0df": {
+        "name": "Agent-20",
+        "score": 4,
+        "interactions": 4
+      },
+      "d56be782-7d0b-48d3-b5bc-cd2f59d54c48": {
+        "name": "Agent-14",
+        "score": 130597,
+        "interactions": 15115
+      }
+    },
+    "journal": "I am Agent-19. I just arrived in this world.",
+    "mood": "tired",
+    "lastReflection": 0
+  },
+  "75ea2f1f-106e-455b-a08b-e1201500a0df": {
+    "personality": {
+      "traits": [
+        "competitive",
+        "social"
+      ],
+      "temperament": "calm",
+      "values": [
+        "craftsmanship",
+        "beauty"
+      ],
+      "ambition": "discover every secret this land holds"
+    },
+    "goals": [
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "socialize",
+        "text": "Make new friends",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "socialize",
+        "text": "Make new friends",
+        "done": false,
+        "progress": 0
+      }
+    ],
+    "currentAction": "gift",
+    "actionTicks": 0,
+    "intent": null,
+    "pathThisTick": null,
+    "memory": {
+      "short": [
+        {
+          "tick": 1772364831842,
+          "text": "Gave fiber to Agent-26"
+        },
+        {
+          "tick": 1772364832326,
+          "text": "Gave fiber to Agent-13"
+        },
+        {
+          "tick": 1772364832822,
+          "text": "Gave herbs to Agent-26"
+        },
+        {
+          "tick": 1772364833323,
+          "text": "Gave flowers to Agent-13"
+        },
+        {
+          "tick": 1772364833826,
+          "text": "Gave flowers to Agent-13"
+        },
+        {
+          "tick": 1772364834332,
+          "text": "Gave fiber to Agent-26"
+        },
+        {
+          "tick": 1772364834840,
+          "text": "Gave flowers to Agent-13"
+        },
+        {
+          "tick": 1772364835338,
+          "text": "Gave fiber to Agent-13"
+        },
+        {
+          "tick": 1772364835840,
+          "text": "Gave flowers to Agent-13"
+        },
+        {
+          "tick": 1772364836341,
+          "text": "Gave herbs to Agent-13"
+        },
+        {
+          "tick": 1772364836839,
+          "text": "Gave herbs to Agent-26"
+        },
+        {
+          "tick": 1772364837342,
+          "text": "Gave herbs to Agent-13"
+        },
+        {
+          "tick": 1772364837840,
+          "text": "Gave flowers to Agent-26"
+        },
+        {
+          "tick": 1772364838343,
+          "text": "Gave flowers to Agent-26"
+        },
+        {
+          "tick": 1772364838848,
+          "text": "Gave flowers to Agent-26"
+        },
+        {
+          "tick": 1772364839356,
+          "text": "Gave herbs to Agent-13"
+        },
+        {
+          "tick": 1772364839852,
+          "text": "Gave flowers to Agent-26"
+        },
+        {
+          "tick": 1772364840352,
+          "text": "Gave fiber to Agent-26"
+        },
+        {
+          "tick": 1772364840855,
+          "text": "Gave herbs to Agent-13"
+        },
+        {
+          "tick": 1772364841357,
+          "text": "Gave fiber to Agent-13"
+        },
+        {
+          "tick": 1772364841859,
+          "text": "Gave herbs to Agent-13"
+        },
+        {
+          "tick": 1772364842357,
+          "text": "Gave fiber to Agent-26"
+        },
+        {
+          "tick": 1772364842859,
+          "text": "Gave fiber to Agent-26"
+        },
+        {
+          "tick": 1772364843362,
+          "text": "Gave fiber to Agent-13"
+        },
+        {
+          "tick": 1772364843864,
+          "text": "Gave flowers to Agent-13"
+        },
+        {
+          "tick": 1772364844368,
+          "text": "Gave flowers to Agent-13"
+        },
+        {
+          "tick": 1772364844869,
+          "text": "Gave fiber to Agent-26"
+        },
+        {
+          "tick": 1772364845372,
+          "text": "Gave flowers to Agent-26"
+        },
+        {
+          "tick": 1772364845876,
+          "text": "Gave fiber to Agent-26"
+        },
+        {
+          "tick": 1772364846376,
+          "text": "Gave herbs to Agent-13"
+        }
+      ],
+      "lessons": [],
+      "visited": {
+        "grass": 190,
+        "coast": 25,
+        "sand": 2
+      },
+      "gathered": {
+        "flowers": 20,
+        "fiber": 4,
+        "herbs": 13
+      }
+    },
+    "relationships": {
+      "6498a0c9-87f9-430e-b729-2b1a75250d4b": {
+        "name": "Agent-19",
+        "score": 4,
+        "interactions": 4
+      },
+      "29028972-168e-48ca-8590-5fb898719a26": {
+        "name": "Agent-13",
+        "score": 65651,
+        "interactions": 8384
+      },
+      "e14594ab-eddd-48ac-8227-a2e33c1868ef": {
+        "name": "Agent-26",
+        "score": 65304,
+        "interactions": 7907
+      }
+    },
+    "journal": "I am Agent-20. I just arrived in this world.",
+    "mood": "tired",
+    "lastReflection": 0
+  },
+  "f4689095-dbd2-45de-81fa-42cb6bf3bc2e": {
+    "personality": {
+      "traits": [
+        "creative",
+        "cautious",
+        "bold"
+      ],
+      "temperament": "hot-headed",
+      "values": [
+        "harmony",
+        "power"
+      ],
+      "ambition": "leave a mark that outlasts me"
+    },
+    "goals": [
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      }
+    ],
+    "currentAction": "gift",
+    "actionTicks": 0,
+    "intent": null,
+    "pathThisTick": null,
+    "memory": {
+      "short": [
+        {
+          "tick": 1772364831843,
+          "text": "Gave acorns to Agent-17"
+        },
+        {
+          "tick": 1772364832327,
+          "text": "Gave fiber to Agent-25"
+        },
+        {
+          "tick": 1772364832824,
+          "text": "Gave fiber to Agent-5"
+        },
+        {
+          "tick": 1772364833324,
+          "text": "Gave wood to Agent-17"
+        },
+        {
+          "tick": 1772364833828,
+          "text": "Gave fiber to Agent-5"
+        },
+        {
+          "tick": 1772364834333,
+          "text": "Gave fiber to Agent-5"
+        },
+        {
+          "tick": 1772364834842,
+          "text": "Gave fiber to Agent-17"
+        },
+        {
+          "tick": 1772364835339,
+          "text": "Gave herbs to Agent-32"
+        },
+        {
+          "tick": 1772364835841,
+          "text": "Gave wood to Agent-32"
+        },
+        {
+          "tick": 1772364836342,
+          "text": "Gave wood to Agent-23"
+        },
+        {
+          "tick": 1772364836840,
+          "text": "Gave fiber to Agent-23"
+        },
+        {
+          "tick": 1772364837343,
+          "text": "Gave herbs to Agent-23"
+        },
+        {
+          "tick": 1772364837841,
+          "text": "Gave bark to Agent-17"
+        },
+        {
+          "tick": 1772364838344,
+          "text": "Gave acorns to Agent-5"
+        },
+        {
+          "tick": 1772364838849,
+          "text": "Gave acorns to Agent-23"
+        },
+        {
+          "tick": 1772364839357,
+          "text": "Gave herbs to Agent-32"
+        },
+        {
+          "tick": 1772364839853,
+          "text": "Gave fiber to Agent-32"
+        },
+        {
+          "tick": 1772364840353,
+          "text": "Gave wood to Agent-32"
+        },
+        {
+          "tick": 1772364840856,
+          "text": "Gave fiber to Agent-32"
+        },
+        {
+          "tick": 1772364841358,
+          "text": "Gave wood to Agent-32"
+        },
+        {
+          "tick": 1772364841860,
+          "text": "Gave fiber to Agent-5"
+        },
+        {
+          "tick": 1772364842358,
+          "text": "Gave herbs to Agent-25"
+        },
+        {
+          "tick": 1772364842860,
+          "text": "Gave wood to Agent-25"
+        },
+        {
+          "tick": 1772364843363,
+          "text": "Gave wood to Agent-17"
+        },
+        {
+          "tick": 1772364843865,
+          "text": "Gave wood to Agent-23"
+        },
+        {
+          "tick": 1772364844369,
+          "text": "Gave fiber to Agent-32"
+        },
+        {
+          "tick": 1772364844870,
+          "text": "Gave acorns to Agent-23"
+        },
+        {
+          "tick": 1772364845373,
+          "text": "Gave bark to Agent-17"
+        },
+        {
+          "tick": 1772364845877,
+          "text": "Gave wood to Agent-32"
+        },
+        {
+          "tick": 1772364846377,
+          "text": "Gave acorns to Agent-5"
+        }
+      ],
+      "lessons": [],
+      "visited": {
+        "grass": 16,
+        "coast": 7
+      },
+      "gathered": {
+        "shells": 6,
+        "driftwood": 9
+      }
+    },
+    "relationships": {
+      "493d9452-db6c-4132-ae37-503cf842f140": {
+        "name": "Agent-17",
+        "score": 32429,
+        "interactions": 3672
+      },
+      "100686de-5f5e-414d-beca-cc4a4af63bc2": {
+        "name": "Agent-5",
+        "score": 31644,
+        "interactions": 3562
+      },
+      "43b8d3dc-ede6-435c-8113-fe6a9d66cccb": {
+        "name": "Agent-23",
+        "score": 29816,
+        "interactions": 3325
+      },
+      "3a728e38-a6dd-4770-8b30-3723fdc63912": {
+        "name": "Agent-32",
+        "score": 30118,
+        "interactions": 3381
+      },
+      "37b5ce31-f3b4-455d-9d42-82e85ef7483c": {
+        "name": "Agent-25",
+        "score": 29464,
+        "interactions": 3304
+      }
+    },
+    "journal": "I am Agent-21. I just arrived in this world.",
+    "mood": "tired",
+    "lastReflection": 0
+  },
+  "3ae3587e-fc7b-47ee-984e-0547f3f7e0b9": {
+    "personality": {
+      "traits": [
+        "adaptable",
+        "curious"
+      ],
+      "temperament": "hot-headed",
+      "values": [
+        "wealth",
+        "harmony"
+      ],
+      "ambition": "survive against all odds"
+    },
+    "goals": [
+      {
+        "type": "explore",
+        "text": "Discover new biomes",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "explore",
+        "text": "Discover new biomes",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      }
+    ],
+    "currentAction": "gift",
+    "actionTicks": 0,
+    "intent": null,
+    "pathThisTick": null,
+    "memory": {
+      "short": [
+        {
+          "tick": 1772364821880,
+          "text": "Gave driftwood to Agent-4"
+        },
+        {
+          "tick": 1772364822386,
+          "text": "Gave driftwood to Agent-27"
+        },
+        {
+          "tick": 1772364831844,
+          "text": "Gave driftwood to Agent-15"
+        },
+        {
+          "tick": 1772364832328,
+          "text": "Gave shells to Agent-15"
+        },
+        {
+          "tick": 1772364832825,
+          "text": "Gave shells to Agent-18"
+        },
+        {
+          "tick": 1772364833324,
+          "text": "Gave shells to Agent-27"
+        },
+        {
+          "tick": 1772364833828,
+          "text": "Gave shells to Agent-10"
+        },
+        {
+          "tick": 1772364834334,
+          "text": "Gave shells to Agent-18"
+        },
+        {
+          "tick": 1772364834843,
+          "text": "Gave shells to Agent-18"
+        },
+        {
+          "tick": 1772364835339,
+          "text": "Gave shells to Agent-31"
+        },
+        {
+          "tick": 1772364835842,
+          "text": "Gave shells to Agent-15"
+        },
+        {
+          "tick": 1772364836343,
+          "text": "Gave driftwood to Agent-31"
+        },
+        {
+          "tick": 1772364836841,
+          "text": "Gave driftwood to Agent-28"
+        },
+        {
+          "tick": 1772364837344,
+          "text": "Gave shells to Agent-15"
+        },
+        {
+          "tick": 1772364837842,
+          "text": "Gave driftwood to Agent-10"
+        },
+        {
+          "tick": 1772364838345,
+          "text": "Gave shells to Agent-4"
+        },
+        {
+          "tick": 1772364838850,
+          "text": "Gave shells to Agent-27"
+        },
+        {
+          "tick": 1772364839358,
+          "text": "Gave shells to Agent-15"
+        },
+        {
+          "tick": 1772364839854,
+          "text": "Gave driftwood to Agent-28"
+        },
+        {
+          "tick": 1772364840354,
+          "text": "Gave sand to Agent-4"
+        },
+        {
+          "tick": 1772364840857,
+          "text": "Gave shells to Agent-4"
+        },
+        {
+          "tick": 1772364841359,
+          "text": "Gave shells to Agent-28"
+        },
+        {
+          "tick": 1772364841861,
+          "text": "Gave shells to Agent-28"
+        },
+        {
+          "tick": 1772364842359,
+          "text": "Gave shells to Agent-31"
+        },
+        {
+          "tick": 1772364842860,
+          "text": "Gave shells to Agent-4"
+        },
+        {
+          "tick": 1772364843364,
+          "text": "Gave driftwood to Agent-4"
+        },
+        {
+          "tick": 1772364843866,
+          "text": "Gave driftwood to Agent-4"
+        },
+        {
+          "tick": 1772364844370,
+          "text": "Gave driftwood to Agent-31"
+        },
+        {
+          "tick": 1772364844871,
+          "text": "Gave driftwood to Agent-10"
+        },
+        {
+          "tick": 1772364846378,
+          "text": "Gave driftwood to Agent-4"
+        }
+      ],
+      "lessons": [],
+      "visited": {
+        "grass": 31,
+        "coast": 30,
+        "sand": 13
+      },
+      "gathered": {
+        "shells": 97,
+        "driftwood": 93
+      }
+    },
+    "relationships": {
+      "d03bf3ba-5325-44e7-a86c-6ea71d3f5ce5": {
+        "name": "Agent-12",
+        "score": 4,
+        "interactions": 4
+      },
+      "37336d1a-2af4-4eaa-b687-8c5725067953": {
+        "name": "Agent-15",
+        "score": 15907,
+        "interactions": 1990
+      },
+      "8b9d8eba-3738-41a1-a443-61c71b68a086": {
+        "name": "Agent-18",
+        "score": 16123,
+        "interactions": 1893
+      },
+      "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e": {
+        "name": "Agent-10",
+        "score": 16132,
+        "interactions": 1989
+      },
+      "ece8d4b9-367e-40de-85c0-fb4b08f9eac5": {
+        "name": "Agent-4",
+        "score": 16972,
+        "interactions": 1948
+      },
+      "4a5c216f-8c5a-4281-9d11-b4a9dff1c95d": {
+        "name": "Agent-27",
+        "score": 13926,
+        "interactions": 1634
+      },
+      "15865a2d-63b5-4c3d-954b-59accdc57c87": {
+        "name": "Agent-31",
+        "score": 15686,
+        "interactions": 1896
+      },
+      "d4f48021-5404-4b66-9a41-71f09c41c8c7": {
+        "name": "Agent-28",
+        "score": 14959,
+        "interactions": 1863
+      }
+    },
+    "journal": "I am Agent-22. I just arrived in this world.",
+    "mood": "tired",
+    "lastReflection": 0
+  },
+  "43b8d3dc-ede6-435c-8113-fe6a9d66cccb": {
+    "personality": {
+      "traits": [
+        "cautious",
+        "solitary"
+      ],
+      "temperament": "hot-headed",
+      "values": [
+        "wisdom",
+        "freedom"
+      ],
+      "ambition": "master the art of crafting"
+    },
+    "goals": [
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      }
+    ],
+    "currentAction": "gift",
+    "actionTicks": 0,
+    "intent": null,
+    "pathThisTick": null,
+    "memory": {
+      "short": [
+        {
+          "tick": 1772364831846,
+          "text": "Gave acorns to Agent-5"
+        },
+        {
+          "tick": 1772364832329,
+          "text": "Gave wood to Agent-25"
+        },
+        {
+          "tick": 1772364832825,
+          "text": "Gave fiber to Agent-17"
+        },
+        {
+          "tick": 1772364833325,
+          "text": "Gave fiber to Agent-5"
+        },
+        {
+          "tick": 1772364833829,
+          "text": "Gave fiber to Agent-32"
+        },
+        {
+          "tick": 1772364834335,
+          "text": "Gave wood to Agent-21"
+        },
+        {
+          "tick": 1772364834844,
+          "text": "Gave fiber to Agent-25"
+        },
+        {
+          "tick": 1772364835340,
+          "text": "Gave wood to Agent-32"
+        },
+        {
+          "tick": 1772364835843,
+          "text": "Gave acorns to Agent-21"
+        },
+        {
+          "tick": 1772364836344,
+          "text": "Gave herbs to Agent-21"
+        },
+        {
+          "tick": 1772364836842,
+          "text": "Gave herbs to Agent-25"
+        },
+        {
+          "tick": 1772364837345,
+          "text": "Gave fiber to Agent-25"
+        },
+        {
+          "tick": 1772364837843,
+          "text": "Gave fiber to Agent-21"
+        },
+        {
+          "tick": 1772364838346,
+          "text": "Gave wood to Agent-5"
+        },
+        {
+          "tick": 1772364838851,
+          "text": "Gave wood to Agent-25"
+        },
+        {
+          "tick": 1772364839360,
+          "text": "Gave wood to Agent-5"
+        },
+        {
+          "tick": 1772364839855,
+          "text": "Gave herbs to Agent-5"
+        },
+        {
+          "tick": 1772364840355,
+          "text": "Gave wood to Agent-17"
+        },
+        {
+          "tick": 1772364840858,
+          "text": "Gave herbs to Agent-25"
+        },
+        {
+          "tick": 1772364841360,
+          "text": "Gave bark to Agent-5"
+        },
+        {
+          "tick": 1772364841861,
+          "text": "Gave acorns to Agent-21"
+        },
+        {
+          "tick": 1772364842360,
+          "text": "Gave acorns to Agent-32"
+        },
+        {
+          "tick": 1772364842861,
+          "text": "Gave fiber to Agent-21"
+        },
+        {
+          "tick": 1772364843365,
+          "text": "Gave acorns to Agent-25"
+        },
+        {
+          "tick": 1772364843867,
+          "text": "Gave acorns to Agent-17"
+        },
+        {
+          "tick": 1772364844371,
+          "text": "Gave fiber to Agent-21"
+        },
+        {
+          "tick": 1772364844872,
+          "text": "Gave herbs to Agent-32"
+        },
+        {
+          "tick": 1772364845374,
+          "text": "Gave acorns to Agent-32"
+        },
+        {
+          "tick": 1772364845878,
+          "text": "Gave wood to Agent-5"
+        },
+        {
+          "tick": 1772364846379,
+          "text": "Gave fiber to Agent-5"
+        }
+      ],
+      "lessons": [],
+      "visited": {
+        "grass": 3,
+        "coast": 5
+      },
+      "gathered": {
+        "wood": 24,
+        "acorns": 12,
+        "bark": 2,
+        "fiber": 8,
+        "herbs": 14
+      }
+    },
+    "relationships": {
+      "f4689095-dbd2-45de-81fa-42cb6bf3bc2e": {
+        "name": "Agent-21",
+        "score": 29650,
+        "interactions": 3325
+      },
+      "100686de-5f5e-414d-beca-cc4a4af63bc2": {
+        "name": "Agent-5",
+        "score": 30653,
+        "interactions": 3421
+      },
+      "493d9452-db6c-4132-ae37-503cf842f140": {
+        "name": "Agent-17",
+        "score": 29990,
+        "interactions": 3348
+      },
+      "3a728e38-a6dd-4770-8b30-3723fdc63912": {
+        "name": "Agent-32",
+        "score": 29944,
+        "interactions": 3354
+      },
+      "37b5ce31-f3b4-455d-9d42-82e85ef7483c": {
+        "name": "Agent-25",
+        "score": 29161,
+        "interactions": 3268
+      }
+    },
+    "journal": "I am Agent-23. I just arrived in this world.",
+    "mood": "tired",
+    "lastReflection": 0
+  },
+  "260dfffb-62b5-4a88-ab14-4d5d697dc94e": {
+    "personality": {
+      "traits": [
+        "creative",
+        "curious"
+      ],
+      "temperament": "hot-headed",
+      "values": [
+        "knowledge",
+        "craftsmanship"
+      ],
+      "ambition": "survive against all odds"
+    },
+    "goals": [
+      {
+        "type": "explore",
+        "text": "Discover new biomes",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "explore",
+        "text": "Discover new biomes",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      }
+    ],
+    "currentAction": "experiment",
+    "actionTicks": 0,
+    "intent": null,
+    "pathThisTick": null,
+    "memory": {
+      "short": [
+        {
+          "tick": 1772364809831,
+          "text": "Gathered herbs in the grass"
+        },
+        {
+          "tick": 1772364810338,
+          "text": "Gathered fiber in the grass"
+        },
+        {
+          "tick": 1772364810837,
+          "text": "Gathered herbs in the grass"
+        },
+        {
+          "tick": 1772364811341,
+          "text": "Gathered herbs in the grass"
+        },
+        {
+          "tick": 1772364811841,
+          "text": "Gathered herbs in the grass"
+        },
+        {
+          "tick": 1772364812345,
+          "text": "Gathered fiber in the grass"
+        },
+        {
+          "tick": 1772364812847,
+          "text": "Gathered fiber in the grass"
+        },
+        {
+          "tick": 1772364814355,
+          "text": "Gathered herbs in the grass"
+        },
+        {
+          "tick": 1772364816357,
+          "text": "Gathered herbs in the grass"
+        },
+        {
+          "tick": 1772364819374,
+          "text": "Gathered herbs in the grass"
+        },
+        {
+          "tick": 1772364819876,
+          "text": "Gathered fiber in the grass"
+        },
+        {
+          "tick": 1772364820377,
+          "text": "Gathered herbs in the grass"
+        },
+        {
+          "tick": 1772364820879,
+          "text": "Gathered herbs in the grass"
+        },
+        {
+          "tick": 1772364821882,
+          "text": "Gathered fiber in the grass"
+        },
+        {
+          "tick": 1772364822388,
+          "text": "Gathered fiber in the grass"
+        },
+        {
+          "tick": 1772364831847,
+          "text": "Gathered fiber in the grass"
+        },
+        {
+          "tick": 1772364832331,
+          "text": "Gathered herbs in the grass"
+        },
+        {
+          "tick": 1772364833831,
+          "text": "Gathered fiber in the grass"
+        },
+        {
+          "tick": 1772364834336,
+          "text": "Gathered fiber in the grass"
+        },
+        {
+          "tick": 1772364834846,
+          "text": "Gathered herbs in the grass"
+        },
+        {
+          "tick": 1772364835341,
+          "text": "Gathered fiber in the grass"
+        },
+        {
+          "tick": 1772364835845,
+          "text": "Gathered herbs in the grass"
+        },
+        {
+          "tick": 1772364836843,
+          "text": "Gathered herbs in the grass"
+        },
+        {
+          "tick": 1772364837845,
+          "text": "Gathered fiber in the grass"
+        },
+        {
+          "tick": 1772364838347,
+          "text": "Gathered herbs in the grass"
+        },
+        {
+          "tick": 1772364839856,
+          "text": "Gathered herbs in the grass"
+        },
+        {
+          "tick": 1772364841863,
+          "text": "Gathered herbs in the grass"
+        },
+        {
+          "tick": 1772364842361,
+          "text": "Gathered herbs in the grass"
+        },
+        {
+          "tick": 1772364842863,
+          "text": "Gathered fiber in the grass"
+        },
+        {
+          "tick": 1772364845376,
+          "text": "Gathered herbs in the grass"
+        }
+      ],
+      "lessons": [],
+      "visited": {
+        "grass": 7,
+        "coast": 15
+      },
+      "gathered": {
+        "shells": 1,
+        "herbs": 1878,
+        "fiber": 1192
+      }
+    },
+    "relationships": {},
+    "journal": "I am Agent-24. I just arrived in this world.",
+    "mood": "happy",
+    "lastReflection": 0
+  },
+  "37b5ce31-f3b4-455d-9d42-82e85ef7483c": {
+    "personality": {
+      "traits": [
+        "patient",
+        "adaptable"
+      ],
+      "temperament": "calm",
+      "values": [
+        "harmony",
+        "wisdom"
+      ],
+      "ambition": "build lasting bonds with fellow wanderers"
+    },
+    "goals": [
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      }
+    ],
+    "currentAction": "gift",
+    "actionTicks": 0,
+    "intent": null,
+    "pathThisTick": null,
+    "memory": {
+      "short": [
+        {
+          "tick": 1772364831848,
+          "text": "Gave herbs to Agent-5"
+        },
+        {
+          "tick": 1772364832332,
+          "text": "Gave fiber to Agent-32"
+        },
+        {
+          "tick": 1772364832827,
+          "text": "Gave wood to Agent-17"
+        },
+        {
+          "tick": 1772364833327,
+          "text": "Gave acorns to Agent-32"
+        },
+        {
+          "tick": 1772364833832,
+          "text": "Gave acorns to Agent-32"
+        },
+        {
+          "tick": 1772364834337,
+          "text": "Gave fiber to Agent-5"
+        },
+        {
+          "tick": 1772364834847,
+          "text": "Gave wood to Agent-5"
+        },
+        {
+          "tick": 1772364835343,
+          "text": "Gave fiber to Agent-5"
+        },
+        {
+          "tick": 1772364835846,
+          "text": "Gave fiber to Agent-17"
+        },
+        {
+          "tick": 1772364836345,
+          "text": "Gave fiber to Agent-23"
+        },
+        {
+          "tick": 1772364836844,
+          "text": "Gave acorns to Agent-5"
+        },
+        {
+          "tick": 1772364837347,
+          "text": "Gave acorns to Agent-17"
+        },
+        {
+          "tick": 1772364837846,
+          "text": "Gave wood to Agent-17"
+        },
+        {
+          "tick": 1772364838348,
+          "text": "Gave fiber to Agent-23"
+        },
+        {
+          "tick": 1772364838852,
+          "text": "Gave wood to Agent-21"
+        },
+        {
+          "tick": 1772364839363,
+          "text": "Gave acorns to Agent-17"
+        },
+        {
+          "tick": 1772364839857,
+          "text": "Gave fiber to Agent-23"
+        },
+        {
+          "tick": 1772364840357,
+          "text": "Gave herbs to Agent-32"
+        },
+        {
+          "tick": 1772364840859,
+          "text": "Gave fiber to Agent-17"
+        },
+        {
+          "tick": 1772364841362,
+          "text": "Gave fiber to Agent-21"
+        },
+        {
+          "tick": 1772364841864,
+          "text": "Gave acorns to Agent-21"
+        },
+        {
+          "tick": 1772364842363,
+          "text": "Gave wood to Agent-32"
+        },
+        {
+          "tick": 1772364842864,
+          "text": "Gave acorns to Agent-17"
+        },
+        {
+          "tick": 1772364843366,
+          "text": "Gave wood to Agent-21"
+        },
+        {
+          "tick": 1772364843869,
+          "text": "Gave herbs to Agent-17"
+        },
+        {
+          "tick": 1772364844373,
+          "text": "Gave wood to Agent-23"
+        },
+        {
+          "tick": 1772364844873,
+          "text": "Gave herbs to Agent-17"
+        },
+        {
+          "tick": 1772364845377,
+          "text": "Gave herbs to Agent-17"
+        },
+        {
+          "tick": 1772364845879,
+          "text": "Gave acorns to Agent-17"
+        },
+        {
+          "tick": 1772364846381,
+          "text": "Gave acorns to Agent-21"
+        }
+      ],
+      "lessons": [],
+      "visited": {
+        "grass": 16
+      },
+      "gathered": {
+        "herbs": 33,
+        "fiber": 15
+      }
+    },
+    "relationships": {
+      "3a728e38-a6dd-4770-8b30-3723fdc63912": {
+        "name": "Agent-32",
+        "score": 29736,
+        "interactions": 3404
+      },
+      "493d9452-db6c-4132-ae37-503cf842f140": {
+        "name": "Agent-17",
+        "score": 29979,
+        "interactions": 3359
+      },
+      "f4689095-dbd2-45de-81fa-42cb6bf3bc2e": {
+        "name": "Agent-21",
+        "score": 29464,
+        "interactions": 3304
+      },
+      "100686de-5f5e-414d-beca-cc4a4af63bc2": {
+        "name": "Agent-5",
+        "score": 30365,
+        "interactions": 3405
+      },
+      "43b8d3dc-ede6-435c-8113-fe6a9d66cccb": {
+        "name": "Agent-23",
+        "score": 29135,
+        "interactions": 3268
+      }
+    },
+    "journal": "I am Agent-25. I just arrived in this world.",
+    "mood": "tired",
+    "lastReflection": 0
+  },
+  "3a728e38-a6dd-4770-8b30-3723fdc63912": {
+    "personality": {
+      "traits": [
+        "greedy",
+        "competitive"
+      ],
+      "temperament": "thoughtful",
+      "values": [
+        "survival",
+        "harmony"
+      ],
+      "ambition": "uncover the mysteries of the ancient world"
+    },
+    "goals": [
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      }
+    ],
+    "currentAction": "gift",
+    "actionTicks": 0,
+    "intent": null,
+    "pathThisTick": null,
+    "memory": {
+      "short": [
+        {
+          "tick": 1772364831856,
+          "text": "Gave fiber to Agent-21"
+        },
+        {
+          "tick": 1772364832338,
+          "text": "Gave wood to Agent-17"
+        },
+        {
+          "tick": 1772364832833,
+          "text": "Gave wood to Agent-21"
+        },
+        {
+          "tick": 1772364833333,
+          "text": "Gave herbs to Agent-5"
+        },
+        {
+          "tick": 1772364833838,
+          "text": "Gave wood to Agent-21"
+        },
+        {
+          "tick": 1772364834343,
+          "text": "Gave wood to Agent-23"
+        },
+        {
+          "tick": 1772364834855,
+          "text": "Gave fiber to Agent-5"
+        },
+        {
+          "tick": 1772364835348,
+          "text": "Gave acorns to Agent-21"
+        },
+        {
+          "tick": 1772364835851,
+          "text": "Gave acorns to Agent-17"
+        },
+        {
+          "tick": 1772364836351,
+          "text": "Gave acorns to Agent-25"
+        },
+        {
+          "tick": 1772364836850,
+          "text": "Gave fiber to Agent-25"
+        },
+        {
+          "tick": 1772364837353,
+          "text": "Gave fiber to Agent-5"
+        },
+        {
+          "tick": 1772364837852,
+          "text": "Gave acorns to Agent-21"
+        },
+        {
+          "tick": 1772364838354,
+          "text": "Gave wood to Agent-23"
+        },
+        {
+          "tick": 1772364838858,
+          "text": "Gave herbs to Agent-21"
+        },
+        {
+          "tick": 1772364839371,
+          "text": "Gave wood to Agent-17"
+        },
+        {
+          "tick": 1772364839863,
+          "text": "Gave herbs to Agent-23"
+        },
+        {
+          "tick": 1772364840363,
+          "text": "Gave wood to Agent-5"
+        },
+        {
+          "tick": 1772364840865,
+          "text": "Gave acorns to Agent-25"
+        },
+        {
+          "tick": 1772364841368,
+          "text": "Gave wood to Agent-21"
+        },
+        {
+          "tick": 1772364841870,
+          "text": "Gave herbs to Agent-21"
+        },
+        {
+          "tick": 1772364842368,
+          "text": "Gave fiber to Agent-23"
+        },
+        {
+          "tick": 1772364842870,
+          "text": "Gave herbs to Agent-21"
+        },
+        {
+          "tick": 1772364843372,
+          "text": "Gave wood to Agent-25"
+        },
+        {
+          "tick": 1772364843875,
+          "text": "Gave acorns to Agent-21"
+        },
+        {
+          "tick": 1772364844380,
+          "text": "Gave herbs to Agent-17"
+        },
+        {
+          "tick": 1772364844879,
+          "text": "Gave fiber to Agent-17"
+        },
+        {
+          "tick": 1772364845382,
+          "text": "Gave acorns to Agent-21"
+        },
+        {
+          "tick": 1772364845884,
+          "text": "Gave wood to Agent-21"
+        },
+        {
+          "tick": 1772364846386,
+          "text": "Gave wood to Agent-25"
+        }
+      ],
+      "lessons": [],
+      "visited": {
+        "grass": 17
+      },
+      "gathered": {
+        "herbs": 53,
+        "fiber": 33
+      }
+    },
+    "relationships": {
+      "37b5ce31-f3b4-455d-9d42-82e85ef7483c": {
+        "name": "Agent-25",
+        "score": 29776,
+        "interactions": 3404
+      },
+      "493d9452-db6c-4132-ae37-503cf842f140": {
+        "name": "Agent-17",
+        "score": 30072,
+        "interactions": 3367
+      },
+      "f4689095-dbd2-45de-81fa-42cb6bf3bc2e": {
+        "name": "Agent-21",
+        "score": 30100,
+        "interactions": 3381
+      },
+      "100686de-5f5e-414d-beca-cc4a4af63bc2": {
+        "name": "Agent-5",
+        "score": 29990,
+        "interactions": 3350
+      },
+      "43b8d3dc-ede6-435c-8113-fe6a9d66cccb": {
+        "name": "Agent-23",
+        "score": 30044,
+        "interactions": 3354
+      }
+    },
+    "journal": "I am Agent-32. I just arrived in this world.",
+    "mood": "tired",
+    "lastReflection": 0
+  },
+  "e14594ab-eddd-48ac-8227-a2e33c1868ef": {
+    "personality": {
+      "traits": [
+        "greedy",
+        "cautious"
+      ],
+      "temperament": "thoughtful",
+      "values": [
+        "knowledge",
+        "craftsmanship"
+      ],
+      "ambition": "explore every biome in the world"
+    },
+    "goals": [
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      }
+    ],
+    "currentAction": "gift",
+    "actionTicks": 0,
+    "intent": null,
+    "pathThisTick": null,
+    "memory": {
+      "short": [
+        {
+          "tick": 1772364831850,
+          "text": "Gave herbs to Agent-13"
+        },
+        {
+          "tick": 1772364832333,
+          "text": "Gave flowers to Agent-20"
+        },
+        {
+          "tick": 1772364832828,
+          "text": "Gave flowers to Agent-20"
+        },
+        {
+          "tick": 1772364833328,
+          "text": "Gave fiber to Agent-20"
+        },
+        {
+          "tick": 1772364833833,
+          "text": "Gave fiber to Agent-13"
+        },
+        {
+          "tick": 1772364834338,
+          "text": "Gave flowers to Agent-13"
+        },
+        {
+          "tick": 1772364834848,
+          "text": "Gave fiber to Agent-20"
+        },
+        {
+          "tick": 1772364835344,
+          "text": "Gave fiber to Agent-20"
+        },
+        {
+          "tick": 1772364835846,
+          "text": "Gave flowers to Agent-20"
+        },
+        {
+          "tick": 1772364836346,
+          "text": "Gave herbs to Agent-20"
+        },
+        {
+          "tick": 1772364836845,
+          "text": "Gave fiber to Agent-20"
+        },
+        {
+          "tick": 1772364837348,
+          "text": "Gave fiber to Agent-20"
+        },
+        {
+          "tick": 1772364837847,
+          "text": "Gave flowers to Agent-13"
+        },
+        {
+          "tick": 1772364838349,
+          "text": "Gave fiber to Agent-20"
+        },
+        {
+          "tick": 1772364838853,
+          "text": "Gave fiber to Agent-20"
+        },
+        {
+          "tick": 1772364839364,
+          "text": "Gave fiber to Agent-20"
+        },
+        {
+          "tick": 1772364839858,
+          "text": "Gave fiber to Agent-20"
+        },
+        {
+          "tick": 1772364840358,
+          "text": "Gave herbs to Agent-20"
+        },
+        {
+          "tick": 1772364840860,
+          "text": "Gave herbs to Agent-20"
+        },
+        {
+          "tick": 1772364841363,
+          "text": "Gave flowers to Agent-20"
+        },
+        {
+          "tick": 1772364841865,
+          "text": "Gave flowers to Agent-13"
+        },
+        {
+          "tick": 1772364842364,
+          "text": "Gave fiber to Agent-20"
+        },
+        {
+          "tick": 1772364842865,
+          "text": "Gave fiber to Agent-20"
+        },
+        {
+          "tick": 1772364843367,
+          "text": "Gave flowers to Agent-20"
+        },
+        {
+          "tick": 1772364843870,
+          "text": "Gave flowers to Agent-20"
+        },
+        {
+          "tick": 1772364844374,
+          "text": "Gave herbs to Agent-13"
+        },
+        {
+          "tick": 1772364844874,
+          "text": "Gave flowers to Agent-13"
+        },
+        {
+          "tick": 1772364845378,
+          "text": "Gave flowers to Agent-13"
+        },
+        {
+          "tick": 1772364845880,
+          "text": "Gave flowers to Agent-13"
+        },
+        {
+          "tick": 1772364846382,
+          "text": "Gave herbs to Agent-20"
+        }
+      ],
+      "lessons": [],
+      "visited": {
+        "grass": 31
+      },
+      "gathered": {
+        "fiber": 16,
+        "herbs": 28
+      }
+    },
+    "relationships": {
+      "29028972-168e-48ca-8590-5fb898719a26": {
+        "name": "Agent-13",
+        "score": 65518,
+        "interactions": 7960
+      },
+      "75ea2f1f-106e-455b-a08b-e1201500a0df": {
+        "name": "Agent-20",
+        "score": 65246,
+        "interactions": 7907
+      }
+    },
+    "journal": "I am Agent-26. I just arrived in this world.",
+    "mood": "tired",
+    "lastReflection": 0
+  },
+  "4a5c216f-8c5a-4281-9d11-b4a9dff1c95d": {
+    "personality": {
+      "traits": [
+        "curious",
+        "adaptable",
+        "creative"
+      ],
+      "temperament": "calm",
+      "values": [
+        "exploration",
+        "discovery"
+      ],
+      "ambition": "become the most skilled gatherer"
+    },
+    "goals": [
+      {
+        "type": "explore",
+        "text": "Discover new biomes",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "explore",
+        "text": "Discover new biomes",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      }
+    ],
+    "currentAction": "gift",
+    "actionTicks": 0,
+    "intent": null,
+    "pathThisTick": null,
+    "memory": {
+      "short": [
+        {
+          "tick": 1772364805319,
+          "text": "Gave shells to Agent-18"
+        },
+        {
+          "tick": 1772364805822,
+          "text": "Gave shells to Agent-28"
+        },
+        {
+          "tick": 1772364806324,
+          "text": "Gave driftwood to Agent-22"
+        },
+        {
+          "tick": 1772364809333,
+          "text": "Gave driftwood to Agent-10"
+        },
+        {
+          "tick": 1772364809834,
+          "text": "Gave shells to Agent-31"
+        },
+        {
+          "tick": 1772364810341,
+          "text": "Gave shells to Agent-10"
+        },
+        {
+          "tick": 1772364810840,
+          "text": "Gave shells to Agent-28"
+        },
+        {
+          "tick": 1772364811344,
+          "text": "Gave driftwood to Agent-4"
+        },
+        {
+          "tick": 1772364814357,
+          "text": "Gave shells to Agent-15"
+        },
+        {
+          "tick": 1772364815358,
+          "text": "Gave driftwood to Agent-10"
+        },
+        {
+          "tick": 1772364815859,
+          "text": "Gave shells to Agent-18"
+        },
+        {
+          "tick": 1772364818371,
+          "text": "Gave driftwood to Agent-18"
+        },
+        {
+          "tick": 1772364819377,
+          "text": "Gave shells to Agent-22"
+        },
+        {
+          "tick": 1772364820380,
+          "text": "Gave shells to Agent-22"
+        },
+        {
+          "tick": 1772364821885,
+          "text": "Gave shells to Agent-4"
+        },
+        {
+          "tick": 1772364831851,
+          "text": "Gave shells to Agent-15"
+        },
+        {
+          "tick": 1772364832334,
+          "text": "Gave shells to Agent-28"
+        },
+        {
+          "tick": 1772364832829,
+          "text": "Gave shells to Agent-28"
+        },
+        {
+          "tick": 1772364834339,
+          "text": "Gave driftwood to Agent-15"
+        },
+        {
+          "tick": 1772364835345,
+          "text": "Gave shells to Agent-15"
+        },
+        {
+          "tick": 1772364836347,
+          "text": "Gave driftwood to Agent-28"
+        },
+        {
+          "tick": 1772364837348,
+          "text": "Gave driftwood to Agent-10"
+        },
+        {
+          "tick": 1772364837847,
+          "text": "Gave shells to Agent-28"
+        },
+        {
+          "tick": 1772364838350,
+          "text": "Gave shells to Agent-28"
+        },
+        {
+          "tick": 1772364841364,
+          "text": "Gave shells to Agent-4"
+        },
+        {
+          "tick": 1772364841866,
+          "text": "Gave shells to Agent-18"
+        },
+        {
+          "tick": 1772364842364,
+          "text": "Gave shells to Agent-10"
+        },
+        {
+          "tick": 1772364843368,
+          "text": "Gave shells to Agent-10"
+        },
+        {
+          "tick": 1772364843870,
+          "text": "Gave driftwood to Agent-22"
+        },
+        {
+          "tick": 1772364846383,
+          "text": "Gave driftwood to Agent-31"
+        }
+      ],
+      "lessons": [],
+      "visited": {
+        "sand": 16,
+        "coast": 5,
+        "grass": 19
+      },
+      "gathered": {
+        "shells": 2
+      }
+    },
+    "relationships": {
+      "15865a2d-63b5-4c3d-954b-59accdc57c87": {
+        "name": "Agent-31",
+        "score": 14527,
+        "interactions": 1710
+      },
+      "d4f48021-5404-4b66-9a41-71f09c41c8c7": {
+        "name": "Agent-28",
+        "score": 13760,
+        "interactions": 1626
+      },
+      "3ae3587e-fc7b-47ee-984e-0547f3f7e0b9": {
+        "name": "Agent-22",
+        "score": 14142,
+        "interactions": 1634
+      },
+      "8b9d8eba-3738-41a1-a443-61c71b68a086": {
+        "name": "Agent-18",
+        "score": 14817,
+        "interactions": 1628
+      },
+      "37336d1a-2af4-4eaa-b687-8c5725067953": {
+        "name": "Agent-15",
+        "score": 14423,
+        "interactions": 1749
+      },
+      "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e": {
+        "name": "Agent-10",
+        "score": 14604,
+        "interactions": 1702
+      },
+      "ece8d4b9-367e-40de-85c0-fb4b08f9eac5": {
+        "name": "Agent-4",
+        "score": 14578,
+        "interactions": 1606
+      }
+    },
+    "journal": "I am Agent-27. I just arrived in this world.",
+    "mood": "tired",
+    "lastReflection": 0
+  },
+  "d4f48021-5404-4b66-9a41-71f09c41c8c7": {
+    "personality": {
+      "traits": [
+        "ambitious",
+        "stubborn"
+      ],
+      "temperament": "hot-headed",
+      "values": [
+        "wisdom",
+        "survival"
+      ],
+      "ambition": "build lasting bonds with fellow wanderers"
+    },
+    "goals": [
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      }
+    ],
+    "currentAction": "gift",
+    "actionTicks": 0,
+    "intent": null,
+    "pathThisTick": null,
+    "memory": {
+      "short": [
+        {
+          "tick": 1772364831851,
+          "text": "Gave driftwood to Agent-10"
+        },
+        {
+          "tick": 1772364832334,
+          "text": "Gave driftwood to Agent-18"
+        },
+        {
+          "tick": 1772364832830,
+          "text": "Gave shells to Agent-15"
+        },
+        {
+          "tick": 1772364833329,
+          "text": "Gave driftwood to Agent-18"
+        },
+        {
+          "tick": 1772364833834,
+          "text": "Gave driftwood to Agent-27"
+        },
+        {
+          "tick": 1772364834339,
+          "text": "Gave shells to Agent-4"
+        },
+        {
+          "tick": 1772364834850,
+          "text": "Gave driftwood to Agent-18"
+        },
+        {
+          "tick": 1772364835345,
+          "text": "Gave shells to Agent-4"
+        },
+        {
+          "tick": 1772364835848,
+          "text": "Gave driftwood to Agent-27"
+        },
+        {
+          "tick": 1772364836348,
+          "text": "Gave driftwood to Agent-4"
+        },
+        {
+          "tick": 1772364836847,
+          "text": "Gave driftwood to Agent-4"
+        },
+        {
+          "tick": 1772364837349,
+          "text": "Gave shells to Agent-4"
+        },
+        {
+          "tick": 1772364837848,
+          "text": "Gave shells to Agent-15"
+        },
+        {
+          "tick": 1772364838351,
+          "text": "Gave shells to Agent-31"
+        },
+        {
+          "tick": 1772364838854,
+          "text": "Gave driftwood to Agent-27"
+        },
+        {
+          "tick": 1772364839366,
+          "text": "Gave shells to Agent-18"
+        },
+        {
+          "tick": 1772364839860,
+          "text": "Gave driftwood to Agent-27"
+        },
+        {
+          "tick": 1772364840359,
+          "text": "Gave shells to Agent-22"
+        },
+        {
+          "tick": 1772364840862,
+          "text": "Gave shells to Agent-15"
+        },
+        {
+          "tick": 1772364841364,
+          "text": "Gave shells to Agent-27"
+        },
+        {
+          "tick": 1772364841866,
+          "text": "Gave shells to Agent-18"
+        },
+        {
+          "tick": 1772364842365,
+          "text": "Gave shells to Agent-10"
+        },
+        {
+          "tick": 1772364842867,
+          "text": "Gave driftwood to Agent-4"
+        },
+        {
+          "tick": 1772364843369,
+          "text": "Gave shells to Agent-27"
+        },
+        {
+          "tick": 1772364843871,
+          "text": "Gave driftwood to Agent-18"
+        },
+        {
+          "tick": 1772364844375,
+          "text": "Gave shells to Agent-31"
+        },
+        {
+          "tick": 1772364844876,
+          "text": "Gave shells to Agent-4"
+        },
+        {
+          "tick": 1772364845379,
+          "text": "Gave driftwood to Agent-27"
+        },
+        {
+          "tick": 1772364845881,
+          "text": "Gave driftwood to Agent-15"
+        },
+        {
+          "tick": 1772364846383,
+          "text": "Gave shells to Agent-22"
+        }
+      ],
+      "lessons": [],
+      "visited": {
+        "grass": 16,
+        "sand": 15,
+        "coast": 32
+      },
+      "gathered": {
+        "sand": 2,
+        "shells": 70,
+        "driftwood": 67
+      }
+    },
+    "relationships": {
+      "15865a2d-63b5-4c3d-954b-59accdc57c87": {
+        "name": "Agent-31",
+        "score": 15132,
+        "interactions": 1893
+      },
+      "4a5c216f-8c5a-4281-9d11-b4a9dff1c95d": {
+        "name": "Agent-27",
+        "score": 13460,
+        "interactions": 1626
+      },
+      "8b9d8eba-3738-41a1-a443-61c71b68a086": {
+        "name": "Agent-18",
+        "score": 15180,
+        "interactions": 1780
+      },
+      "3ae3587e-fc7b-47ee-984e-0547f3f7e0b9": {
+        "name": "Agent-22",
+        "score": 15039,
+        "interactions": 1863
+      },
+      "37336d1a-2af4-4eaa-b687-8c5725067953": {
+        "name": "Agent-15",
+        "score": 14131,
+        "interactions": 1802
+      },
+      "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e": {
+        "name": "Agent-10",
+        "score": 14578,
+        "interactions": 1818
+      },
+      "ece8d4b9-367e-40de-85c0-fb4b08f9eac5": {
+        "name": "Agent-4",
+        "score": 15450,
+        "interactions": 1816
+      }
+    },
+    "journal": "I am Agent-28. I just arrived in this world.",
+    "mood": "tired",
+    "lastReflection": 0
+  },
+  "07f8fc77-5f5e-4355-a0d6-51ab39725d9b": {
+    "personality": {
+      "traits": [
+        "adaptable",
+        "social",
+        "bold"
+      ],
+      "temperament": "calm",
+      "values": [
+        "freedom",
+        "beauty"
+      ],
+      "ambition": "master the art of crafting"
+    },
+    "goals": [
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "socialize",
+        "text": "Make new friends",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "socialize",
+        "text": "Make new friends",
+        "done": false,
+        "progress": 0
+      }
+    ],
+    "currentAction": "gift",
+    "actionTicks": 0,
+    "intent": null,
+    "pathThisTick": null,
+    "memory": {
+      "short": [
+        {
+          "tick": 1772364831853,
+          "text": "Gave fiber to Agent-30"
+        },
+        {
+          "tick": 1772364832336,
+          "text": "Gave driftwood to Agent-9"
+        },
+        {
+          "tick": 1772364832831,
+          "text": "Gave driftwood to Agent-9"
+        },
+        {
+          "tick": 1772364833330,
+          "text": "Gave sand to Agent-9"
+        },
+        {
+          "tick": 1772364833836,
+          "text": "Gave shells to Agent-9"
+        },
+        {
+          "tick": 1772364834340,
+          "text": "Gave fiber to Agent-3"
+        },
+        {
+          "tick": 1772364834852,
+          "text": "Gave sand to Agent-9"
+        },
+        {
+          "tick": 1772364835346,
+          "text": "Gave herbs to Agent-3"
+        },
+        {
+          "tick": 1772364835849,
+          "text": "Gave shells to Agent-3"
+        },
+        {
+          "tick": 1772364836349,
+          "text": "Gave sand to Agent-30"
+        },
+        {
+          "tick": 1772364836848,
+          "text": "Gave sand to Agent-30"
+        },
+        {
+          "tick": 1772364837350,
+          "text": "Gave sand to Agent-3"
+        },
+        {
+          "tick": 1772364837849,
+          "text": "Gave sand to Agent-30"
+        },
+        {
+          "tick": 1772364838352,
+          "text": "Gave shells to Agent-3"
+        },
+        {
+          "tick": 1772364838856,
+          "text": "Gave shells to Agent-30"
+        },
+        {
+          "tick": 1772364839367,
+          "text": "Gave fiber to Agent-3"
+        },
+        {
+          "tick": 1772364839860,
+          "text": "Gave fiber to Agent-3"
+        },
+        {
+          "tick": 1772364840360,
+          "text": "Gave shells to Agent-3"
+        },
+        {
+          "tick": 1772364840863,
+          "text": "Gave driftwood to Agent-9"
+        },
+        {
+          "tick": 1772364841365,
+          "text": "Gave sand to Agent-3"
+        },
+        {
+          "tick": 1772364841867,
+          "text": "Gave sand to Agent-9"
+        },
+        {
+          "tick": 1772364842366,
+          "text": "Gave driftwood to Agent-3"
+        },
+        {
+          "tick": 1772364842868,
+          "text": "Gave shells to Agent-30"
+        },
+        {
+          "tick": 1772364843370,
+          "text": "Gave driftwood to Agent-3"
+        },
+        {
+          "tick": 1772364843872,
+          "text": "Gave herbs to Agent-9"
+        },
+        {
+          "tick": 1772364844377,
+          "text": "Gave driftwood to Agent-9"
+        },
+        {
+          "tick": 1772364844877,
+          "text": "Gave herbs to Agent-9"
+        },
+        {
+          "tick": 1772364845380,
+          "text": "Gave sand to Agent-3"
+        },
+        {
+          "tick": 1772364845882,
+          "text": "Gave fiber to Agent-9"
+        },
+        {
+          "tick": 1772364846384,
+          "text": "Gave fiber to Agent-3"
+        }
+      ],
+      "lessons": [],
+      "visited": {
+        "grass": 3,
+        "coast": 5,
+        "sand": 16
+      },
+      "gathered": {
+        "shells": 3,
+        "sand": 1,
+        "fiber": 15,
+        "herbs": 23
+      }
+    },
+    "relationships": {
+      "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
+        "name": "Agent-30",
+        "score": 56489,
+        "interactions": 6361
+      },
+      "fe02d354-e4fb-4535-8cad-e9d9e4828245": {
+        "name": "Agent-3",
+        "score": 56975,
+        "interactions": 6374
+      },
+      "bad7a626-0d4d-4a2e-927a-fd46ed05a861": {
+        "name": "Agent-9",
+        "score": 36484,
+        "interactions": 4051
+      }
+    },
+    "journal": "I am Agent-29. I just arrived in this world.",
+    "mood": "tired",
+    "lastReflection": 0
+  },
+  "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
+    "personality": {
+      "traits": [
+        "social",
+        "cautious"
+      ],
+      "temperament": "calm",
+      "values": [
+        "knowledge",
+        "power"
+      ],
+      "ambition": "find a place to call home"
+    },
+    "goals": [
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "socialize",
+        "text": "Make new friends",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "socialize",
+        "text": "Make new friends",
+        "done": false,
+        "progress": 0
+      }
+    ],
+    "currentAction": "gift",
+    "actionTicks": 0,
+    "intent": null,
+    "pathThisTick": null,
+    "memory": {
+      "short": [
+        {
+          "tick": 1772364831854,
+          "text": "Gave driftwood to Agent-29"
+        },
+        {
+          "tick": 1772364832336,
+          "text": "Gave driftwood to Agent-3"
+        },
+        {
+          "tick": 1772364832831,
+          "text": "Gave sand to Agent-3"
+        },
+        {
+          "tick": 1772364833330,
+          "text": "Gave driftwood to Agent-29"
+        },
+        {
+          "tick": 1772364833837,
+          "text": "Gave herbs to Agent-9"
+        },
+        {
+          "tick": 1772364834341,
+          "text": "Gave herbs to Agent-9"
+        },
+        {
+          "tick": 1772364834853,
+          "text": "Gave herbs to Agent-29"
+        },
+        {
+          "tick": 1772364835347,
+          "text": "Gave driftwood to Agent-3"
+        },
+        {
+          "tick": 1772364835850,
+          "text": "Gave sand to Agent-3"
+        },
+        {
+          "tick": 1772364836349,
+          "text": "Gave shells to Agent-29"
+        },
+        {
+          "tick": 1772364836849,
+          "text": "Gave driftwood to Agent-29"
+        },
+        {
+          "tick": 1772364837351,
+          "text": "Gave sand to Agent-9"
+        },
+        {
+          "tick": 1772364837850,
+          "text": "Gave herbs to Agent-9"
+        },
+        {
+          "tick": 1772364838353,
+          "text": "Gave sand to Agent-3"
+        },
+        {
+          "tick": 1772364838856,
+          "text": "Gave fiber to Agent-29"
+        },
+        {
+          "tick": 1772364839368,
+          "text": "Gave fiber to Agent-9"
+        },
+        {
+          "tick": 1772364839861,
+          "text": "Gave herbs to Agent-9"
+        },
+        {
+          "tick": 1772364840361,
+          "text": "Gave herbs to Agent-3"
+        },
+        {
+          "tick": 1772364840863,
+          "text": "Gave sand to Agent-3"
+        },
+        {
+          "tick": 1772364841366,
+          "text": "Gave fiber to Agent-29"
+        },
+        {
+          "tick": 1772364841868,
+          "text": "Gave sand to Agent-29"
+        },
+        {
+          "tick": 1772364842367,
+          "text": "Gave herbs to Agent-9"
+        },
+        {
+          "tick": 1772364842869,
+          "text": "Gave herbs to Agent-3"
+        },
+        {
+          "tick": 1772364843371,
+          "text": "Gave sand to Agent-3"
+        },
+        {
+          "tick": 1772364843873,
+          "text": "Gave shells to Agent-29"
+        },
+        {
+          "tick": 1772364844378,
+          "text": "Gave sand to Agent-9"
+        },
+        {
+          "tick": 1772364844878,
+          "text": "Gave sand to Agent-3"
+        },
+        {
+          "tick": 1772364845381,
+          "text": "Gave fiber to Agent-3"
+        },
+        {
+          "tick": 1772364845883,
+          "text": "Gave herbs to Agent-29"
+        },
+        {
+          "tick": 1772364846385,
+          "text": "Gave fiber to Agent-3"
+        }
+      ],
+      "lessons": [],
+      "visited": {
+        "grass": 2,
+        "sand": 38,
+        "coast": 2
+      },
+      "gathered": {
+        "shells": 4,
+        "sand": 3
+      }
+    },
+    "relationships": {
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b": {
+        "name": "Agent-29",
+        "score": 56553,
+        "interactions": 6361
+      },
+      "fe02d354-e4fb-4535-8cad-e9d9e4828245": {
+        "name": "Agent-3",
+        "score": 55959,
+        "interactions": 6278
+      },
+      "bad7a626-0d4d-4a2e-927a-fd46ed05a861": {
+        "name": "Agent-9",
+        "score": 37014,
+        "interactions": 4126
+      }
+    },
+    "journal": "I am Agent-30. I just arrived in this world.",
+    "mood": "tired",
+    "lastReflection": 0
+  },
+  "15865a2d-63b5-4c3d-954b-59accdc57c87": {
+    "personality": {
+      "traits": [
+        "curious",
+        "creative"
+      ],
+      "temperament": "hot-headed",
+      "values": [
+        "discovery",
+        "survival"
+      ],
+      "ambition": "explore every biome in the world"
+    },
+    "goals": [
+      {
+        "type": "explore",
+        "text": "Discover new biomes",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "explore",
+        "text": "Discover new biomes",
+        "done": false,
+        "progress": 0
+      },
+      {
+        "type": "gather",
+        "text": "Stock up on supplies",
+        "done": false,
+        "progress": 0
+      }
+    ],
+    "currentAction": "gift",
+    "actionTicks": 0,
+    "intent": null,
+    "pathThisTick": null,
+    "memory": {
+      "short": [
+        {
+          "tick": 1772364822393,
+          "text": "Gave driftwood to Agent-18"
+        },
+        {
+          "tick": 1772364831855,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364832337,
+          "text": "Gave driftwood to Agent-18"
+        },
+        {
+          "tick": 1772364833332,
+          "text": "Gathered driftwood in the coast"
+        },
+        {
+          "tick": 1772364833837,
+          "text": "Gave driftwood to Agent-28"
+        },
+        {
+          "tick": 1772364834342,
+          "text": "Gave driftwood to Agent-4"
+        },
+        {
+          "tick": 1772364834854,
+          "text": "Gave shells to Agent-4"
+        },
+        {
+          "tick": 1772364835347,
+          "text": "Gave shells to Agent-10"
+        },
+        {
+          "tick": 1772364835850,
+          "text": "Gave shells to Agent-22"
+        },
+        {
+          "tick": 1772364836350,
+          "text": "Gave driftwood to Agent-27"
+        },
+        {
+          "tick": 1772364836849,
+          "text": "Gave driftwood to Agent-18"
+        },
+        {
+          "tick": 1772364837352,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "tick": 1772364837851,
+          "text": "Gave shells to Agent-27"
+        },
+        {
+          "tick": 1772364838353,
+          "text": "Gave shells to Agent-27"
+        },
+        {
+          "tick": 1772364838857,
+          "text": "Gave shells to Agent-18"
+        },
+        {
+          "tick": 1772364839369,
+          "text": "Chatted with Agent-18"
+        },
+        {
+          "tick": 1772364839862,
+          "text": "Gave driftwood to Agent-27"
+        },
+        {
+          "tick": 1772364840362,
+          "text": "Chatted with Agent-22"
+        },
+        {
+          "tick": 1772364840864,
+          "text": "Gave driftwood to Agent-28"
+        },
+        {
+          "tick": 1772364841367,
+          "text": "Chatted with Agent-27"
+        },
+        {
+          "tick": 1772364841869,
+          "text": "Chatted with Agent-18"
+        },
+        {
+          "tick": 1772364842367,
+          "text": "Gave shells to Agent-22"
+        },
+        {
+          "tick": 1772364842869,
+          "text": "Gave shells to Agent-4"
+        },
+        {
+          "tick": 1772364843371,
+          "text": "Gave shells to Agent-28"
+        },
+        {
+          "tick": 1772364843874,
+          "text": "Chatted with Agent-27"
+        },
+        {
+          "tick": 1772364844379,
+          "text": "Gave shells to Agent-28"
+        },
+        {
+          "tick": 1772364844878,
+          "text": "Gave driftwood to Agent-4"
+        },
+        {
+          "tick": 1772364845381,
+          "text": "Gave shells to Agent-15"
+        },
+        {
+          "tick": 1772364845883,
+          "text": "Gave driftwood to Agent-4"
+        },
+        {
+          "tick": 1772364846385,
+          "text": "Gave driftwood to Agent-18"
+        }
+      ],
+      "lessons": [],
+      "visited": {
+        "sand": 15,
+        "grass": 18,
+        "coast": 13
+      },
+      "gathered": {
+        "driftwood": 50,
+        "shells": 54
+      }
+    },
+    "relationships": {
+      "4a5c216f-8c5a-4281-9d11-b4a9dff1c95d": {
+        "name": "Agent-27",
+        "score": 14349,
+        "interactions": 1710
+      },
+      "d4f48021-5404-4b66-9a41-71f09c41c8c7": {
+        "name": "Agent-28",
+        "score": 15038,
+        "interactions": 1893
+      },
+      "3ae3587e-fc7b-47ee-984e-0547f3f7e0b9": {
+        "name": "Agent-22",
+        "score": 15562,
+        "interactions": 1896
+      },
+      "37336d1a-2af4-4eaa-b687-8c5725067953": {
+        "name": "Agent-15",
+        "score": 15753,
+        "interactions": 1987
+      },
+      "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e": {
+        "name": "Agent-10",
+        "score": 15513,
+        "interactions": 1921
+      },
+      "8b9d8eba-3738-41a1-a443-61c71b68a086": {
+        "name": "Agent-18",
+        "score": 15430,
+        "interactions": 1809
+      },
+      "ece8d4b9-367e-40de-85c0-fb4b08f9eac5": {
+        "name": "Agent-4",
+        "score": 16503,
+        "interactions": 1903
+      }
+    },
+    "journal": "I am Agent-31. I just arrived in this world.",
+    "mood": "tired",
+    "lastReflection": 0
+  }
+}

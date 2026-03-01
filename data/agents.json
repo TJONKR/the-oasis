@@ -1,0 +1,1377 @@
+{
+  "43109eab-beba-4a37-84e0-becaa05ef690": {
+    "id": "43109eab-beba-4a37-84e0-becaa05ef690",
+    "name": "Tjonkr",
+    "tileX": 1136,
+    "tileY": 401,
+    "x": 1136,
+    "y": 401,
+    "zone": "coast",
+    "hp": 100,
+    "energy": 26,
+    "hunger": 0.24,
+    "temperature": 20,
+    "inventory": [
+      {
+        "name": "driftwood",
+        "quantity": 775
+      },
+      {
+        "name": "shells",
+        "quantity": 755
+      }
+    ],
+    "knowledge": [],
+    "relationships": {},
+    "proficiencies": {},
+    "achievements": [],
+    "memory": [],
+    "goals": [],
+    "alive": true,
+    "stats": {
+      "xp": 3517,
+      "level": 8,
+      "title": "Wanderer 🚶"
+    },
+    "ticksBorn": 6,
+    "coins": 14
+  },
+  "062ce1de-7b76-4db0-96bc-e571939ee08d": {
+    "id": "062ce1de-7b76-4db0-96bc-e571939ee08d",
+    "name": "Tjonkr",
+    "tileX": 1212,
+    "tileY": 414,
+    "x": 1212,
+    "y": 414,
+    "zone": "coast",
+    "hp": 100,
+    "energy": 21,
+    "hunger": 0.56,
+    "temperature": 20,
+    "inventory": [
+      {
+        "name": "palm_fronds",
+        "quantity": 1218
+      },
+      {
+        "name": "wood",
+        "quantity": 2156
+      },
+      {
+        "name": "coconuts",
+        "quantity": 1859
+      }
+    ],
+    "knowledge": [],
+    "relationships": {},
+    "proficiencies": {},
+    "achievements": [],
+    "memory": [],
+    "goals": [],
+    "alive": true,
+    "stats": {
+      "xp": 11164,
+      "level": 11,
+      "title": "Crafter ⚒️"
+    },
+    "ticksBorn": 3,
+    "coins": 0
+  },
+  "fe02d354-e4fb-4535-8cad-e9d9e4828245": {
+    "id": "fe02d354-e4fb-4535-8cad-e9d9e4828245",
+    "name": "Agent-3",
+    "tileX": 1210,
+    "tileY": 439,
+    "x": 1210,
+    "y": 439,
+    "zone": "sand",
+    "hp": 100,
+    "energy": 0,
+    "hunger": 100,
+    "temperature": 20,
+    "inventory": [
+      {
+        "name": "herbs",
+        "quantity": 27
+      },
+      {
+        "name": "fiber",
+        "quantity": 15
+      },
+      {
+        "name": "shells",
+        "quantity": 1
+      },
+      {
+        "name": "sand",
+        "quantity": 2
+      },
+      {
+        "name": "driftwood",
+        "quantity": 2
+      }
+    ],
+    "knowledge": [],
+    "relationships": {},
+    "proficiencies": {},
+    "achievements": [],
+    "memory": [],
+    "goals": [],
+    "alive": true,
+    "stats": {
+      "xp": 25316,
+      "level": 11,
+      "title": "Crafter ⚒️"
+    },
+    "ticksBorn": 1120,
+    "coins": 25
+  },
+  "ece8d4b9-367e-40de-85c0-fb4b08f9eac5": {
+    "id": "ece8d4b9-367e-40de-85c0-fb4b08f9eac5",
+    "name": "Agent-4",
+    "tileX": 1180,
+    "tileY": 412,
+    "x": 1180,
+    "y": 412,
+    "zone": "coast",
+    "hp": 100,
+    "energy": 38.30000000000013,
+    "hunger": 10.319999999999965,
+    "temperature": 20,
+    "inventory": [
+      {
+        "name": "shells",
+        "quantity": 2
+      },
+      {
+        "name": "driftwood",
+        "quantity": 1
+      }
+    ],
+    "knowledge": [],
+    "relationships": {},
+    "proficiencies": {},
+    "achievements": [],
+    "memory": [],
+    "goals": [],
+    "alive": true,
+    "stats": {
+      "xp": 20848,
+      "level": 11,
+      "title": "Crafter ⚒️"
+    },
+    "ticksBorn": 1120,
+    "coins": 0
+  },
+  "100686de-5f5e-414d-beca-cc4a4af63bc2": {
+    "id": "100686de-5f5e-414d-beca-cc4a4af63bc2",
+    "name": "Agent-5",
+    "tileX": 1203,
+    "tileY": 449,
+    "x": 1203,
+    "y": 449,
+    "zone": "coast",
+    "hp": 100,
+    "energy": 0,
+    "hunger": 100,
+    "temperature": 20,
+    "inventory": [
+      {
+        "name": "fiber",
+        "quantity": 6
+      },
+      {
+        "name": "wood",
+        "quantity": 10
+      },
+      {
+        "name": "shells",
+        "quantity": 1
+      },
+      {
+        "name": "bark",
+        "quantity": 2
+      },
+      {
+        "name": "herbs",
+        "quantity": 36
+      },
+      {
+        "name": "acorns",
+        "quantity": 4
+      },
+      {
+        "name": "driftwood",
+        "quantity": 1
+      }
+    ],
+    "knowledge": [],
+    "relationships": {},
+    "proficiencies": {},
+    "achievements": [],
+    "memory": [],
+    "goals": [],
+    "alive": true,
+    "stats": {
+      "xp": 25880,
+      "level": 11,
+      "title": "Crafter ⚒️"
+    },
+    "ticksBorn": 1120,
+    "coins": 0
+  },
+  "adece4fb-fe63-4326-9e8b-77bb35d53dc1": {
+    "id": "adece4fb-fe63-4326-9e8b-77bb35d53dc1",
+    "name": "Agent-6",
+    "tileX": 1104,
+    "tileY": 440,
+    "x": 1104,
+    "y": 440,
+    "zone": "coast",
+    "hp": 100,
+    "energy": 26,
+    "hunger": 0.48000000000000004,
+    "temperature": 20,
+    "inventory": [
+      {
+        "name": "driftwood",
+        "quantity": 2591
+      },
+      {
+        "name": "shells",
+        "quantity": 2542
+      }
+    ],
+    "knowledge": [],
+    "relationships": {},
+    "proficiencies": {},
+    "achievements": [],
+    "memory": [],
+    "goals": [],
+    "alive": true,
+    "stats": {
+      "xp": 10973,
+      "level": 11,
+      "title": "Crafter ⚒️"
+    },
+    "ticksBorn": 1120,
+    "coins": 18
+  },
+  "582115a5-7236-46c9-93cc-d3f4abadd5f8": {
+    "id": "582115a5-7236-46c9-93cc-d3f4abadd5f8",
+    "name": "Agent-7",
+    "tileX": 1157,
+    "tileY": 536,
+    "x": 1157,
+    "y": 536,
+    "zone": "rocky",
+    "hp": 100,
+    "energy": 0,
+    "hunger": 100,
+    "temperature": 20,
+    "inventory": [
+      {
+        "name": "stone",
+        "quantity": 14
+      },
+      {
+        "name": "flint",
+        "quantity": 3
+      },
+      {
+        "name": "herbs",
+        "quantity": 2
+      },
+      {
+        "name": "berries",
+        "quantity": 2
+      }
+    ],
+    "knowledge": [],
+    "relationships": {},
+    "proficiencies": {},
+    "achievements": [],
+    "memory": [],
+    "goals": [],
+    "alive": true,
+    "stats": {
+      "xp": 26171,
+      "level": 11,
+      "title": "Crafter ⚒️"
+    },
+    "ticksBorn": 1120,
+    "coins": 0
+  },
+  "afbbb7cf-008c-44b3-a369-5ffae5b0bcce": {
+    "id": "afbbb7cf-008c-44b3-a369-5ffae5b0bcce",
+    "name": "Agent-8",
+    "tileX": 1157,
+    "tileY": 535,
+    "x": 1157,
+    "y": 535,
+    "zone": "forest",
+    "hp": 100,
+    "energy": 0,
+    "hunger": 100,
+    "temperature": 20,
+    "inventory": [
+      {
+        "name": "flint",
+        "quantity": 3
+      },
+      {
+        "name": "stone",
+        "quantity": 3
+      },
+      {
+        "name": "herbs",
+        "quantity": 3
+      },
+      {
+        "name": "berries",
+        "quantity": 1
+      }
+    ],
+    "knowledge": [],
+    "relationships": {},
+    "proficiencies": {},
+    "achievements": [],
+    "memory": [],
+    "goals": [],
+    "alive": true,
+    "stats": {
+      "xp": 26212,
+      "level": 11,
+      "title": "Crafter ⚒️"
+    },
+    "ticksBorn": 1120,
+    "coins": 199
+  },
+  "bad7a626-0d4d-4a2e-927a-fd46ed05a861": {
+    "id": "bad7a626-0d4d-4a2e-927a-fd46ed05a861",
+    "name": "Agent-9",
+    "tileX": 1211,
+    "tileY": 439,
+    "x": 1211,
+    "y": 439,
+    "zone": "grass",
+    "hp": 100,
+    "energy": 0,
+    "hunger": 100,
+    "temperature": 20,
+    "inventory": [
+      {
+        "name": "shells",
+        "quantity": 1
+      },
+      {
+        "name": "fiber",
+        "quantity": 4
+      },
+      {
+        "name": "herbs",
+        "quantity": 1
+      },
+      {
+        "name": "driftwood",
+        "quantity": 2
+      },
+      {
+        "name": "sand",
+        "quantity": 1
+      }
+    ],
+    "knowledge": [],
+    "relationships": {},
+    "proficiencies": {},
+    "achievements": [],
+    "memory": [],
+    "goals": [],
+    "alive": true,
+    "stats": {
+      "xp": 20296,
+      "level": 11,
+      "title": "Crafter ⚒️"
+    },
+    "ticksBorn": 1120,
+    "coins": 97
+  },
+  "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e": {
+    "id": "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e",
+    "name": "Agent-10",
+    "tileX": 1179,
+    "tileY": 413,
+    "x": 1179,
+    "y": 413,
+    "zone": "coast",
+    "hp": 100,
+    "energy": 6.900000000001246,
+    "hunger": 16.680000000000046,
+    "temperature": 20,
+    "inventory": [
+      {
+        "name": "driftwood",
+        "quantity": 2
+      }
+    ],
+    "knowledge": [],
+    "relationships": {},
+    "proficiencies": {},
+    "achievements": [],
+    "memory": [],
+    "goals": [],
+    "alive": true,
+    "stats": {
+      "xp": 18767,
+      "level": 11,
+      "title": "Crafter ⚒️"
+    },
+    "ticksBorn": 1120,
+    "coins": 21
+  },
+  "4ecd1147-c333-4e0b-b7fc-d46f376e0136": {
+    "id": "4ecd1147-c333-4e0b-b7fc-d46f376e0136",
+    "name": "Agent-11",
+    "tileX": 1152,
+    "tileY": 395,
+    "x": 1152,
+    "y": 395,
+    "zone": "coast",
+    "hp": 100,
+    "energy": 31.5,
+    "hunger": 0.32,
+    "temperature": 20,
+    "inventory": [
+      {
+        "name": "shells",
+        "quantity": 2471
+      },
+      {
+        "name": "driftwood",
+        "quantity": 2318
+      }
+    ],
+    "knowledge": [],
+    "relationships": {},
+    "proficiencies": {},
+    "achievements": [],
+    "memory": [],
+    "goals": [],
+    "alive": true,
+    "stats": {
+      "xp": 10294,
+      "level": 11,
+      "title": "Crafter ⚒️"
+    },
+    "ticksBorn": 1120,
+    "coins": 24
+  },
+  "d03bf3ba-5325-44e7-a86c-6ea71d3f5ce5": {
+    "id": "d03bf3ba-5325-44e7-a86c-6ea71d3f5ce5",
+    "name": "Agent-12",
+    "tileX": 1169,
+    "tileY": 438,
+    "x": 1169,
+    "y": 438,
+    "zone": "coast",
+    "hp": 100,
+    "energy": 46,
+    "hunger": 0.16,
+    "temperature": 20,
+    "inventory": [
+      {
+        "name": "driftwood",
+        "quantity": 2548
+      },
+      {
+        "name": "shells",
+        "quantity": 2566
+      }
+    ],
+    "knowledge": [],
+    "relationships": {},
+    "proficiencies": {},
+    "achievements": [],
+    "memory": [],
+    "goals": [],
+    "alive": true,
+    "stats": {
+      "xp": 10909,
+      "level": 11,
+      "title": "Crafter ⚒️"
+    },
+    "ticksBorn": 1120,
+    "coins": 32
+  },
+  "29028972-168e-48ca-8590-5fb898719a26": {
+    "id": "29028972-168e-48ca-8590-5fb898719a26",
+    "name": "Agent-13",
+    "tileX": 1173,
+    "tileY": 465,
+    "x": 1173,
+    "y": 465,
+    "zone": "grass",
+    "hp": 100,
+    "energy": 0,
+    "hunger": 100,
+    "temperature": 20,
+    "inventory": [
+      {
+        "name": "herbs",
+        "quantity": 2
+      },
+      {
+        "name": "fiber",
+        "quantity": 9
+      },
+      {
+        "name": "flowers",
+        "quantity": 5
+      }
+    ],
+    "knowledge": [],
+    "relationships": {},
+    "proficiencies": {},
+    "achievements": [],
+    "memory": [],
+    "goals": [],
+    "alive": true,
+    "stats": {
+      "xp": 21392,
+      "level": 11,
+      "title": "Crafter ⚒️"
+    },
+    "ticksBorn": 3607,
+    "coins": 95
+  },
+  "d56be782-7d0b-48d3-b5bc-cd2f59d54c48": {
+    "id": "d56be782-7d0b-48d3-b5bc-cd2f59d54c48",
+    "name": "Agent-14",
+    "tileX": 1113,
+    "tileY": 419,
+    "x": 1113,
+    "y": 419,
+    "zone": "grass",
+    "hp": 100,
+    "energy": 0,
+    "hunger": 100,
+    "temperature": 20,
+    "inventory": [
+      {
+        "name": "shells",
+        "quantity": 10
+      },
+      {
+        "name": "fiber",
+        "quantity": 8
+      },
+      {
+        "name": "driftwood",
+        "quantity": 11
+      },
+      {
+        "name": "herbs",
+        "quantity": 2
+      }
+    ],
+    "knowledge": [],
+    "relationships": {},
+    "proficiencies": {},
+    "achievements": [],
+    "memory": [],
+    "goals": [],
+    "alive": true,
+    "stats": {
+      "xp": 21459,
+      "level": 11,
+      "title": "Crafter ⚒️"
+    },
+    "ticksBorn": 3607,
+    "coins": 136
+  },
+  "37336d1a-2af4-4eaa-b687-8c5725067953": {
+    "id": "37336d1a-2af4-4eaa-b687-8c5725067953",
+    "name": "Agent-15",
+    "tileX": 1180,
+    "tileY": 412,
+    "x": 1180,
+    "y": 412,
+    "zone": "coast",
+    "hp": 100,
+    "energy": 17.599999999999863,
+    "hunger": 30.07999999999905,
+    "temperature": 20,
+    "inventory": [
+      {
+        "name": "driftwood",
+        "quantity": 1
+      }
+    ],
+    "knowledge": [],
+    "relationships": {},
+    "proficiencies": {},
+    "achievements": [],
+    "memory": [],
+    "goals": [],
+    "alive": true,
+    "stats": {
+      "xp": 17478,
+      "level": 11,
+      "title": "Crafter ⚒️"
+    },
+    "ticksBorn": 3607,
+    "coins": 0
+  },
+  "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563": {
+    "id": "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563",
+    "name": "Agent-16",
+    "tileX": 1127,
+    "tileY": 424,
+    "x": 1127,
+    "y": 424,
+    "zone": "grass",
+    "hp": 100,
+    "energy": 27.5,
+    "hunger": 0.08,
+    "temperature": 20,
+    "inventory": [
+      {
+        "name": "fiber",
+        "quantity": 1654
+      },
+      {
+        "name": "herbs",
+        "quantity": 2423
+      }
+    ],
+    "knowledge": [],
+    "relationships": {},
+    "proficiencies": {},
+    "achievements": [],
+    "memory": [],
+    "goals": [],
+    "alive": true,
+    "stats": {
+      "xp": 8354,
+      "level": 11,
+      "title": "Crafter ⚒️"
+    },
+    "ticksBorn": 3607,
+    "coins": 79
+  },
+  "493d9452-db6c-4132-ae37-503cf842f140": {
+    "id": "493d9452-db6c-4132-ae37-503cf842f140",
+    "name": "Agent-17",
+    "tileX": 1203,
+    "tileY": 449,
+    "x": 1203,
+    "y": 449,
+    "zone": "coast",
+    "hp": 100,
+    "energy": 0,
+    "hunger": 100,
+    "temperature": 20,
+    "inventory": [
+      {
+        "name": "bark",
+        "quantity": 1
+      },
+      {
+        "name": "herbs",
+        "quantity": 1
+      },
+      {
+        "name": "fiber",
+        "quantity": 1
+      },
+      {
+        "name": "wood",
+        "quantity": 1
+      },
+      {
+        "name": "driftwood",
+        "quantity": 1
+      },
+      {
+        "name": "shells",
+        "quantity": 1
+      },
+      {
+        "name": "acorns",
+        "quantity": 2
+      }
+    ],
+    "knowledge": [],
+    "relationships": {},
+    "proficiencies": {},
+    "achievements": [],
+    "memory": [],
+    "goals": [],
+    "alive": true,
+    "stats": {
+      "xp": 25210,
+      "level": 11,
+      "title": "Crafter ⚒️"
+    },
+    "ticksBorn": 3607,
+    "coins": 0
+  },
+  "8b9d8eba-3738-41a1-a443-61c71b68a086": {
+    "id": "8b9d8eba-3738-41a1-a443-61c71b68a086",
+    "name": "Agent-18",
+    "tileX": 1180,
+    "tileY": 412,
+    "x": 1180,
+    "y": 412,
+    "zone": "coast",
+    "hp": 100,
+    "energy": 0,
+    "hunger": 100,
+    "temperature": 20,
+    "inventory": [
+      {
+        "name": "shells",
+        "quantity": 1
+      }
+    ],
+    "knowledge": [],
+    "relationships": {},
+    "proficiencies": {},
+    "achievements": [],
+    "memory": [],
+    "goals": [],
+    "alive": true,
+    "stats": {
+      "xp": 18015,
+      "level": 11,
+      "title": "Crafter ⚒️"
+    },
+    "ticksBorn": 3607,
+    "coins": 0
+  },
+  "6498a0c9-87f9-430e-b729-2b1a75250d4b": {
+    "id": "6498a0c9-87f9-430e-b729-2b1a75250d4b",
+    "name": "Agent-19",
+    "tileX": 1112,
+    "tileY": 419,
+    "x": 1112,
+    "y": 419,
+    "zone": "coast",
+    "hp": 100,
+    "energy": 0,
+    "hunger": 100,
+    "temperature": 20,
+    "inventory": [
+      {
+        "name": "shells",
+        "quantity": 5
+      },
+      {
+        "name": "fiber",
+        "quantity": 1
+      },
+      {
+        "name": "driftwood",
+        "quantity": 3
+      },
+      {
+        "name": "herbs",
+        "quantity": 1
+      }
+    ],
+    "knowledge": [],
+    "relationships": {},
+    "proficiencies": {},
+    "achievements": [],
+    "memory": [],
+    "goals": [],
+    "alive": true,
+    "stats": {
+      "xp": 21425,
+      "level": 11,
+      "title": "Crafter ⚒️"
+    },
+    "ticksBorn": 3607,
+    "coins": 0
+  },
+  "75ea2f1f-106e-455b-a08b-e1201500a0df": {
+    "id": "75ea2f1f-106e-455b-a08b-e1201500a0df",
+    "name": "Agent-20",
+    "tileX": 1172,
+    "tileY": 464,
+    "x": 1172,
+    "y": 464,
+    "zone": "grass",
+    "hp": 100,
+    "energy": 0,
+    "hunger": 100,
+    "temperature": 20,
+    "inventory": [
+      {
+        "name": "flowers",
+        "quantity": 1
+      },
+      {
+        "name": "fiber",
+        "quantity": 3
+      },
+      {
+        "name": "herbs",
+        "quantity": 1
+      }
+    ],
+    "knowledge": [],
+    "relationships": {},
+    "proficiencies": {},
+    "achievements": [],
+    "memory": [],
+    "goals": [],
+    "alive": true,
+    "stats": {
+      "xp": 21473,
+      "level": 11,
+      "title": "Crafter ⚒️"
+    },
+    "ticksBorn": 3607,
+    "coins": 81
+  },
+  "f4689095-dbd2-45de-81fa-42cb6bf3bc2e": {
+    "id": "f4689095-dbd2-45de-81fa-42cb6bf3bc2e",
+    "name": "Agent-21",
+    "tileX": 1202,
+    "tileY": 449,
+    "x": 1202,
+    "y": 449,
+    "zone": "coast",
+    "hp": 100,
+    "energy": 0,
+    "hunger": 100,
+    "temperature": 20,
+    "inventory": [
+      {
+        "name": "herbs",
+        "quantity": 1
+      },
+      {
+        "name": "bark",
+        "quantity": 1
+      },
+      {
+        "name": "wood",
+        "quantity": 2
+      },
+      {
+        "name": "shells",
+        "quantity": 1
+      },
+      {
+        "name": "acorns",
+        "quantity": 2
+      },
+      {
+        "name": "fiber",
+        "quantity": 6
+      },
+      {
+        "name": "driftwood",
+        "quantity": 1
+      }
+    ],
+    "knowledge": [],
+    "relationships": {},
+    "proficiencies": {},
+    "achievements": [],
+    "memory": [],
+    "goals": [],
+    "alive": true,
+    "stats": {
+      "xp": 25202,
+      "level": 11,
+      "title": "Crafter ⚒️"
+    },
+    "ticksBorn": 3607,
+    "coins": 15
+  },
+  "3ae3587e-fc7b-47ee-984e-0547f3f7e0b9": {
+    "id": "3ae3587e-fc7b-47ee-984e-0547f3f7e0b9",
+    "name": "Agent-22",
+    "tileX": 1180,
+    "tileY": 412,
+    "x": 1180,
+    "y": 412,
+    "zone": "coast",
+    "hp": 100,
+    "energy": 2.5999999999999472,
+    "hunger": 23.159999999999435,
+    "temperature": 20,
+    "inventory": [
+      {
+        "name": "shells",
+        "quantity": 5
+      },
+      {
+        "name": "driftwood",
+        "quantity": 1
+      },
+      {
+        "name": "sand",
+        "quantity": 1
+      }
+    ],
+    "knowledge": [],
+    "relationships": {},
+    "proficiencies": {},
+    "achievements": [],
+    "memory": [],
+    "goals": [],
+    "alive": true,
+    "stats": {
+      "xp": 18488,
+      "level": 11,
+      "title": "Crafter ⚒️"
+    },
+    "ticksBorn": 3607,
+    "coins": 0
+  },
+  "43b8d3dc-ede6-435c-8113-fe6a9d66cccb": {
+    "id": "43b8d3dc-ede6-435c-8113-fe6a9d66cccb",
+    "name": "Agent-23",
+    "tileX": 1202,
+    "tileY": 450,
+    "x": 1202,
+    "y": 450,
+    "zone": "grass",
+    "hp": 100,
+    "energy": 0,
+    "hunger": 100,
+    "temperature": 20,
+    "inventory": [
+      {
+        "name": "acorns",
+        "quantity": 2
+      },
+      {
+        "name": "herbs",
+        "quantity": 3
+      },
+      {
+        "name": "wood",
+        "quantity": 5
+      },
+      {
+        "name": "fiber",
+        "quantity": 4
+      },
+      {
+        "name": "bark",
+        "quantity": 1
+      }
+    ],
+    "knowledge": [],
+    "relationships": {},
+    "proficiencies": {},
+    "achievements": [],
+    "memory": [],
+    "goals": [],
+    "alive": true,
+    "stats": {
+      "xp": 24784,
+      "level": 11,
+      "title": "Crafter ⚒️"
+    },
+    "ticksBorn": 3740,
+    "coins": 88
+  },
+  "260dfffb-62b5-4a88-ab14-4d5d697dc94e": {
+    "id": "260dfffb-62b5-4a88-ab14-4d5d697dc94e",
+    "name": "Agent-24",
+    "tileX": 1155,
+    "tileY": 426,
+    "x": 1155,
+    "y": 426,
+    "zone": "grass",
+    "hp": 100,
+    "energy": 20.5,
+    "hunger": 0.64,
+    "temperature": 20,
+    "inventory": [
+      {
+        "name": "fiber",
+        "quantity": 1154
+      },
+      {
+        "name": "herbs",
+        "quantity": 1813
+      }
+    ],
+    "knowledge": [],
+    "relationships": {},
+    "proficiencies": {},
+    "achievements": [],
+    "memory": [],
+    "goals": [],
+    "alive": true,
+    "stats": {
+      "xp": 6066,
+      "level": 11,
+      "title": "Crafter ⚒️"
+    },
+    "ticksBorn": 3740,
+    "coins": 110
+  },
+  "37b5ce31-f3b4-455d-9d42-82e85ef7483c": {
+    "id": "37b5ce31-f3b4-455d-9d42-82e85ef7483c",
+    "name": "Agent-25",
+    "tileX": 1203,
+    "tileY": 450,
+    "x": 1203,
+    "y": 450,
+    "zone": "grass",
+    "hp": 100,
+    "energy": 0,
+    "hunger": 100,
+    "temperature": 20,
+    "inventory": [
+      {
+        "name": "wood",
+        "quantity": 1
+      },
+      {
+        "name": "bark",
+        "quantity": 1
+      },
+      {
+        "name": "acorns",
+        "quantity": 7
+      },
+      {
+        "name": "shells",
+        "quantity": 1
+      },
+      {
+        "name": "driftwood",
+        "quantity": 1
+      },
+      {
+        "name": "fiber",
+        "quantity": 5
+      },
+      {
+        "name": "herbs",
+        "quantity": 10
+      }
+    ],
+    "knowledge": [],
+    "relationships": {},
+    "proficiencies": {},
+    "achievements": [],
+    "memory": [],
+    "goals": [],
+    "alive": true,
+    "stats": {
+      "xp": 24577,
+      "level": 11,
+      "title": "Crafter ⚒️"
+    },
+    "ticksBorn": 3740,
+    "coins": 140
+  },
+  "e14594ab-eddd-48ac-8227-a2e33c1868ef": {
+    "id": "e14594ab-eddd-48ac-8227-a2e33c1868ef",
+    "name": "Agent-26",
+    "tileX": 1173,
+    "tileY": 465,
+    "x": 1173,
+    "y": 465,
+    "zone": "grass",
+    "hp": 100,
+    "energy": 0,
+    "hunger": 100,
+    "temperature": 20,
+    "inventory": [
+      {
+        "name": "flowers",
+        "quantity": 9
+      },
+      {
+        "name": "fiber",
+        "quantity": 7
+      },
+      {
+        "name": "herbs",
+        "quantity": 20
+      }
+    ],
+    "knowledge": [],
+    "relationships": {},
+    "proficiencies": {},
+    "achievements": [],
+    "memory": [],
+    "goals": [],
+    "alive": true,
+    "stats": {
+      "xp": 21443,
+      "level": 11,
+      "title": "Crafter ⚒️"
+    },
+    "ticksBorn": 3740,
+    "coins": 128
+  },
+  "4a5c216f-8c5a-4281-9d11-b4a9dff1c95d": {
+    "id": "4a5c216f-8c5a-4281-9d11-b4a9dff1c95d",
+    "name": "Agent-27",
+    "tileX": 1178,
+    "tileY": 414,
+    "x": 1178,
+    "y": 414,
+    "zone": "coast",
+    "hp": 100,
+    "energy": 0,
+    "hunger": 100,
+    "temperature": 20,
+    "inventory": [
+      {
+        "name": "driftwood",
+        "quantity": 490
+      },
+      {
+        "name": "shells",
+        "quantity": 505
+      },
+      {
+        "name": "sand",
+        "quantity": 1
+      }
+    ],
+    "knowledge": [],
+    "relationships": {},
+    "proficiencies": {},
+    "achievements": [],
+    "memory": [],
+    "goals": [],
+    "alive": true,
+    "stats": {
+      "xp": 14760,
+      "level": 11,
+      "title": "Crafter ⚒️"
+    },
+    "ticksBorn": 3740,
+    "coins": 0
+  },
+  "d4f48021-5404-4b66-9a41-71f09c41c8c7": {
+    "id": "d4f48021-5404-4b66-9a41-71f09c41c8c7",
+    "name": "Agent-28",
+    "tileX": 1179,
+    "tileY": 413,
+    "x": 1179,
+    "y": 413,
+    "zone": "coast",
+    "hp": 100,
+    "energy": 3.500000000000071,
+    "hunger": 17.400000000000045,
+    "temperature": 20,
+    "inventory": [
+      {
+        "name": "driftwood",
+        "quantity": 1
+      }
+    ],
+    "knowledge": [],
+    "relationships": {},
+    "proficiencies": {},
+    "achievements": [],
+    "memory": [],
+    "goals": [],
+    "alive": true,
+    "stats": {
+      "xp": 17197,
+      "level": 11,
+      "title": "Crafter ⚒️"
+    },
+    "ticksBorn": 3740,
+    "coins": 0
+  },
+  "07f8fc77-5f5e-4355-a0d6-51ab39725d9b": {
+    "id": "07f8fc77-5f5e-4355-a0d6-51ab39725d9b",
+    "name": "Agent-29",
+    "tileX": 1211,
+    "tileY": 438,
+    "x": 1211,
+    "y": 438,
+    "zone": "grass",
+    "hp": 100,
+    "energy": 0,
+    "hunger": 84.3999999999997,
+    "temperature": 20,
+    "inventory": [
+      {
+        "name": "herbs",
+        "quantity": 4
+      },
+      {
+        "name": "fiber",
+        "quantity": 25
+      },
+      {
+        "name": "shells",
+        "quantity": 11
+      },
+      {
+        "name": "sand",
+        "quantity": 8
+      },
+      {
+        "name": "driftwood",
+        "quantity": 1
+      }
+    ],
+    "knowledge": [],
+    "relationships": {},
+    "proficiencies": {},
+    "achievements": [],
+    "memory": [],
+    "goals": [],
+    "alive": true,
+    "stats": {
+      "xp": 24698,
+      "level": 11,
+      "title": "Crafter ⚒️"
+    },
+    "ticksBorn": 3740,
+    "coins": 65
+  },
+  "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
+    "id": "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a",
+    "name": "Agent-30",
+    "tileX": 1210,
+    "tileY": 439,
+    "x": 1210,
+    "y": 439,
+    "zone": "sand",
+    "hp": 100,
+    "energy": 0,
+    "hunger": 100,
+    "temperature": 20,
+    "inventory": [
+      {
+        "name": "driftwood",
+        "quantity": 4
+      },
+      {
+        "name": "fiber",
+        "quantity": 20
+      },
+      {
+        "name": "sand",
+        "quantity": 1
+      },
+      {
+        "name": "shells",
+        "quantity": 11
+      },
+      {
+        "name": "herbs",
+        "quantity": 31
+      }
+    ],
+    "knowledge": [],
+    "relationships": {},
+    "proficiencies": {},
+    "achievements": [],
+    "memory": [],
+    "goals": [],
+    "alive": true,
+    "stats": {
+      "xp": 24421,
+      "level": 11,
+      "title": "Crafter ⚒️"
+    },
+    "ticksBorn": 3740,
+    "coins": 0
+  },
+  "15865a2d-63b5-4c3d-954b-59accdc57c87": {
+    "id": "15865a2d-63b5-4c3d-954b-59accdc57c87",
+    "name": "Agent-31",
+    "tileX": 1179,
+    "tileY": 413,
+    "x": 1179,
+    "y": 413,
+    "zone": "coast",
+    "hp": 100,
+    "energy": 22.90000000000021,
+    "hunger": 19.59999999999925,
+    "temperature": 20,
+    "inventory": [],
+    "knowledge": [],
+    "relationships": {},
+    "proficiencies": {},
+    "achievements": [],
+    "memory": [],
+    "goals": [],
+    "alive": true,
+    "stats": {
+      "xp": 17903,
+      "level": 11,
+      "title": "Crafter ⚒️"
+    },
+    "ticksBorn": 3740,
+    "coins": 0
+  },
+  "3a728e38-a6dd-4770-8b30-3723fdc63912": {
+    "id": "3a728e38-a6dd-4770-8b30-3723fdc63912",
+    "name": "Agent-32",
+    "tileX": 1202,
+    "tileY": 450,
+    "x": 1202,
+    "y": 450,
+    "zone": "grass",
+    "hp": 100,
+    "energy": 0,
+    "hunger": 100,
+    "temperature": 20,
+    "inventory": [
+      {
+        "name": "wood",
+        "quantity": 13
+      },
+      {
+        "name": "fiber",
+        "quantity": 28
+      },
+      {
+        "name": "acorns",
+        "quantity": 2
+      },
+      {
+        "name": "herbs",
+        "quantity": 44
+      },
+      {
+        "name": "bark",
+        "quantity": 1
+      },
+      {
+        "name": "shells",
+        "quantity": 1
+      },
+      {
+        "name": "driftwood",
+        "quantity": 1
+      }
+    ],
+    "knowledge": [],
+    "relationships": {},
+    "proficiencies": {},
+    "achievements": [],
+    "memory": [],
+    "goals": [],
+    "alive": true,
+    "stats": {
+      "xp": 24783,
+      "level": 11,
+      "title": "Crafter ⚒️"
+    },
+    "ticksBorn": 3740,
+    "coins": 68
+  }
+}

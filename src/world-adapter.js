@@ -70,18 +70,33 @@ const TERRAIN_TRAVEL_COST = {
   water: 999, river: 1.4,
 };
 
-// Resources available per zone/biome
+// Resources available per zone/biome (basic fallback for plain terrain)
 const TERRAIN_RESOURCES = {
-  grass:  { resources: ['herbs', 'berries', 'flowers', 'fiber'], weight: [40, 30, 20, 10] },
-  forest: { resources: ['wood', 'mushrooms', 'herbs', 'berries', 'resin'], weight: [30, 25, 20, 15, 10] },
-  rocky:  { resources: ['stone', 'ore', 'crystals', 'flint'], weight: [35, 30, 20, 15] },
-  sand:   { resources: ['shells', 'driftwood', 'salt', 'sand'], weight: [30, 25, 25, 20] },
-  swamp:  { resources: ['peat', 'mushrooms', 'herbs', 'slime'], weight: [25, 30, 25, 20] },
-  river:  { resources: ['fish', 'clay', 'freshwater', 'reeds'], weight: [35, 25, 25, 15] },
-  cave:   { resources: ['crystals', 'ore', 'gems', 'bat_guano'], weight: [25, 30, 25, 20] },
-  coast:  { resources: ['fish', 'shells', 'seaweed', 'driftwood'], weight: [30, 25, 25, 20] },
+  grass:  { resources: ['herbs', 'fiber'], weight: [60, 40] },
+  forest: { resources: ['herbs', 'berries'], weight: [50, 50] },
+  rocky:  { resources: ['pebbles', 'dust'], weight: [60, 40] },
+  sand:   { resources: ['sand', 'shells'], weight: [60, 40] },
+  swamp:  { resources: ['peat', 'slime'], weight: [50, 50] },
+  river:  { resources: ['fish', 'freshwater'], weight: [50, 50] },
+  cave:   { resources: ['bat_guano', 'dust'], weight: [50, 50] },
+  coast:  { resources: ['shells', 'driftwood'], weight: [50, 50] },
   water:  { resources: [], weight: [] },
-  path:   { resources: ['herbs', 'fiber'], weight: [60, 40] },
+  path:   { resources: ['herbs'], weight: [100] },
+};
+
+// Decoration-based resources (what you SEE is what you GET)
+const DECO_RESOURCES = {
+  150: { name: 'pine_tree',   resources: ['wood', 'resin', 'pine_nuts'],          weights: [50, 30, 20] },
+  151: { name: 'oak_tree',    resources: ['wood', 'acorns', 'bark'],              weights: [50, 30, 20] },
+  152: { name: 'palm_tree',   resources: ['wood', 'coconuts', 'palm_fronds'],     weights: [40, 35, 25] },
+  153: { name: 'small_rock',  resources: ['stone', 'flint'],                      weights: [60, 40] },
+  154: { name: 'large_rock',  resources: ['ore', 'crystals', 'stone'],            weights: [35, 25, 40] },
+  155: { name: 'flower',      resources: ['flowers', 'herbs', 'fiber'],           weights: [45, 35, 20] },
+  156: { name: 'cactus',      resources: ['cactus_fruit', 'fiber', 'cactus_water'], weights: [40, 30, 30] },
+  157: { name: 'mushroom',    resources: ['mushrooms'],                           weights: [100] },
+  158: { name: 'reed',        resources: ['reeds', 'fiber', 'clay'],              weights: [40, 30, 30] },
+  159: { name: 'snowdrift',   resources: ['ice', 'freshwater'],                   weights: [50, 50] },
+  160: { name: 'seaweed',     resources: ['seaweed', 'salt'],                     weights: [55, 45] },
 };
 
 // ═══════════════════════════════
@@ -412,11 +427,26 @@ export function initWorldAdapter(worldData, dataDir) {
   // ═══════════════════════════════
   
   function getTileResources(x, y) {
+    if (x < 0 || x >= width || y < 0 || y >= height) return null;
+    // Check decoration first
+    const decoId = decorations ? decorations[y * width + x] : 0;
+    if (decoId && DECO_RESOURCES[decoId]) {
+      const deco = DECO_RESOURCES[decoId];
+      return {
+        terrain: getZone(x, y),
+        source: deco.name,
+        available: true,
+        resources: deco.resources,
+        weights: deco.weights,
+      };
+    }
+    // Fall back to zone-based resources for plain terrain
     const zone = getZone(x, y);
     const res = TERRAIN_RESOURCES[zone];
     if (!res || res.resources.length === 0) return null;
     return {
       terrain: zone,
+      source: zone,
       available: true,
       resources: res.resources,
       weights: res.weight,
@@ -434,6 +464,13 @@ export function initWorldAdapter(worldData, dataDir) {
       if (roll <= 0) return res.resources[i];
     }
     return res.resources[0];
+  }
+
+  function getDecoration(x, y) {
+    if (x < 0 || x >= width || y < 0 || y >= height) return null;
+    const decoId = decorations ? decorations[y * width + x] : 0;
+    if (!decoId || !DECO_RESOURCES[decoId]) return null;
+    return { id: decoId, ...DECO_RESOURCES[decoId] };
   }
 
   // ═══════════════════════════════
@@ -530,6 +567,8 @@ export function initWorldAdapter(worldData, dataDir) {
     getAgentTerrain,
     getTileResources,
     rollResource,
+    getDecoration,
+    DECO_RESOURCES,
     getTilesInRadius,
     getAgentsNearby,
     

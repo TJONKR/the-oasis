@@ -1,0 +1,82 @@
+{
+  "grass": {
+    "soil_fertility": 80,
+    "water_level": 80,
+    "biodiversity": 70,
+    "extraction_pressure": 0,
+    "health": 76.67,
+    "gather_history": []
+  },
+  "forest": {
+    "soil_fertility": 70,
+    "water_level": 60,
+    "biodiversity": 70,
+    "extraction_pressure": 0,
+    "health": 66.67,
+    "gather_history": []
+  },
+  "rocky": {
+    "soil_fertility": 30,
+    "water_level": 40,
+    "biodiversity": 30,
+    "extraction_pressure": 0,
+    "health": 33.33,
+    "gather_history": []
+  },
+  "sand": {
+    "soil_fertility": 45,
+    "water_level": 80,
+    "biodiversity": 65,
+    "extraction_pressure": 0,
+    "health": 63.33,
+    "gather_history": []
+  },
+  "water": {
+    "soil_fertility": 70,
+    "water_level": 60,
+    "biodiversity": 70,
+    "extraction_pressure": 0,
+    "health": 66.67,
+    "gather_history": []
+  },
+  "swamp": {
+    "soil_fertility": 60,
+    "water_level": 90,
+    "biodiversity": 75,
+    "extraction_pressure": 0,
+    "health": 75,
+    "gather_history": []
+  },
+  "river": {
+    "soil_fertility": 70,
+    "water_level": 60,
+    "biodiversity": 70,
+    "extraction_pressure": 0,
+    "health": 66.67,
+    "gather_history": []
+  },
+  "cave": {
+    "soil_fertility": 40,
+    "water_level": 60,
+    "biodiversity": 50,
+    "extraction_pressure": 0,
+    "health": 50,
+    "gather_history": []
+  },
+  "coast": {
+    "soil_fertility": 50,
+    "water_level": 80,
+    "biodiversity": 55,
+    "extraction_pressure": 0,
+    "health": 61.67,
+    "gather_history": []
+  },
+  "path": {
+    "soil_fertility": 30,
+    "water_level": 40,
+    "biodiversity": 30,
+    "extraction_pressure": 0,
+    "health": 33.33,
+    "gather_history": []
+  }
+}

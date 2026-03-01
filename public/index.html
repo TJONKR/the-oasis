@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Oasis 🏜️</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0a0e14; color: #c5c8c6; font-family: 'SF Mono', 'Fira Code', monospace; overflow: hidden; }
+  #canvas { position: fixed; top: 0; left: 0; cursor: grab; image-rendering: pixelated; }
+  #canvas.dragging { cursor: grabbing; }
+  #hud { position: fixed; top: 16px; left: 16px; z-index: 10; pointer-events: none; }
+  #hud > div { pointer-events: auto; }
+  .hud-panel { background: rgba(10,14,20,0.85); border: 1px solid rgba(197,200,198,0.15); border-radius: 8px; padding: 12px 16px; margin-bottom: 8px; backdrop-filter: blur(8px); font-size: 13px; line-height: 1.6; }
+  .hud-title { color: #e6c07b; font-weight: 700; font-size: 15px; margin-bottom: 4px; }
+  .hud-label { color: #636d83; }
+  .hud-value { color: #98c379; }
+  .hud-time { color: #61afef; }
+  #agent-panel { position: fixed; top: 16px; right: 16px; z-index: 10; width: 260px; background: rgba(10,14,20,0.85); border: 1px solid rgba(197,200,198,0.15); border-radius: 8px; padding: 12px 16px; backdrop-filter: blur(8px); max-height: 400px; overflow-y: auto; font-size: 12px; }
+  .agent-row { display: flex; align-items: center; gap: 8px; padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,0.05); cursor: pointer; }
+  .agent-row:hover { background: rgba(255,255,255,0.05); }
+  .agent-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+  .agent-dot.alive { background: #98c379; box-shadow: 0 0 6px #98c379; }
+  .agent-dot.dead { background: #e06c75; }
+  .agent-name { color: #c5c8c6; flex: 1; }
+  .agent-level { color: #e6c07b; font-size: 11px; }
+  #news-panel { position: fixed; bottom: 16px; left: 16px; z-index: 10; width: 400px; background: rgba(10,14,20,0.85); border: 1px solid rgba(197,200,198,0.15); border-radius: 8px; padding: 12px 16px; backdrop-filter: blur(8px); max-height: 200px; overflow-y: auto; font-size: 11px; line-height: 1.5; }
+  .news-item { color: #636d83; padding: 2px 0; }
+  .news-item .name { color: #61afef; }
+  #minimap { position: fixed; bottom: 16px; right: 16px; z-index: 10; border: 2px solid rgba(197,200,198,0.2); border-radius: 4px; image-rendering: pixelated; cursor: pointer; }
+  #minimap-viewport { position: absolute; border: 1.5px solid #e6c07b; pointer-events: none; z-index: 11; }
+  #controls { position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%); z-index: 10; display: flex; gap: 8px; }
+  .ctrl-btn { background: rgba(10,14,20,0.85); border: 1px solid rgba(197,200,198,0.2); border-radius: 6px; padding: 8px 16px; color: #c5c8c6; font-family: inherit; font-size: 12px; cursor: pointer; backdrop-filter: blur(8px); }
+  .ctrl-btn:hover { border-color: #e6c07b; color: #e6c07b; }
+  #loading { position: fixed; inset: 0; background: #0a0e14; z-index: 100; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 16px; }
+  #loading h1 { font-size: 32px; color: #e6c07b; }
+  #loading p { color: #636d83; }
+  .spinner { width: 40px; height: 40px; border: 3px solid rgba(230,192,123,0.2); border-top-color: #e6c07b; border-radius: 50%; animation: spin 1s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+<div id="loading"><h1>🏜️ The Oasis</h1><div class="spinner"></div><p>Loading world...</p></div>
+<canvas id="canvas"></canvas>
+<div id="hud"><div class="hud-panel">
+  <div class="hud-title">🏜️ The Oasis</div>
+  <div><span class="hud-label">Day </span><span class="hud-value" id="hud-day">1</span> <span class="hud-time" id="hud-time">06:00</span> <span id="hud-period">☀️</span></div>
+  <div><span class="hud-label">Weather: </span><span class="hud-value" id="hud-weather">Clear</span></div>
+  <div><span class="hud-label">Tick: </span><span class="hud-value" id="hud-tick">0</span></div>
+  <div><span class="hud-label">Agents: </span><span class="hud-value" id="hud-agents">0</span></div>
+  <div><span class="hud-label">Zoom: </span><span class="hud-value" id="hud-zoom">1.0</span></div>
+  <div><span class="hud-label">Tile: </span><span class="hud-value" id="hud-pos">-</span></div>
+</div></div>
+<div id="agent-panel"><div class="hud-title" style="margin-bottom:8px">👥 Agents</div><div id="agent-list"></div></div>
+<div id="news-panel"><div class="hud-title" style="margin-bottom:6px">📜 World News</div><div id="news-list"></div></div>
+<div id="controls">
+  <button class="ctrl-btn" onclick="spawnAgent()">🌱 Spawn</button>
+  <button class="ctrl-btn" onclick="spawnMany(10)">👥 Spawn 10</button>
+  <button class="ctrl-btn" onclick="resetView()">🏠 Home</button>
+</div>
+<canvas id="minimap" width="200" height="200"></canvas>
+<div id="minimap-viewport"></div>
+
+<script src="sprites.js"></script>
+<script>
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+const minimap = document.getElementById('minimap');
+const minimapCtx = minimap.getContext('2d');
+
+let worldInfo = null;
+let tileInfo = null; // from /api/tile/info
+let agents = [];
+let agentVisuals = {}; // id → { renderX, renderY } for smooth lerping
+let news = [];
+let camera = { x: 0, y: 0, zoom: 4 };
+let dragging = false, dragStart = {x:0,y:0}, cameraStart = {x:0,y:0};
+let ws = null;
+let overviewImage = null;
+
+// Tile chunk cache: key "cx_cy" → { img: Image, loading: bool }
+const chunkCache = new Map();
+const MAX_CACHED_CHUNKS = 200;
+
+// ═══════════════════════════════
+// WebSocket
+// ═══════════════════════════════
+function connect() {
+  ws = new WebSocket(`ws://${location.hostname}:${location.port || 3001}`);
+  ws.onopen = () => console.log('🔌 Connected');
+  ws.onclose = () => { setTimeout(connect, 2000); };
+  ws.onmessage = (e) => {
+    const msg = JSON.parse(e.data);
+    if (msg.type === 'init') {
+      worldInfo = msg.world;
+      agents = msg.agents || [];
+      news = msg.news || [];
+      updateHUD(msg.tick);
+      updateAgentList();
+      updateNewsList();
+      init();
+    } else if (msg.type === 'tick') {
+      agents = msg.agents || agents;
+      // Update lerp targets
+      for (const a of agents) {
+        if (!agentVisuals[a.id]) agentVisuals[a.id] = { renderX: a.tileX, renderY: a.tileY };
+        agentVisuals[a.id].targetX = a.tileX;
+        agentVisuals[a.id].targetY = a.tileY;
+      }
+      if (msg.gameTime) updateHUD(msg.tick, msg.gameTime, msg.weather);
+      updateAgentList();
+    } else if (msg.type === 'agent_spawn') {
+      if (msg.agent) agents.push(msg.agent);
+      updateAgentList();
+    }
+  };
+}
+
+async function init() {
+  // Load tile info
+  try {
+    const res = await fetch('/api/tile/info');
+    tileInfo = await res.json();
+  } catch { tileInfo = { tileSize: 16, chunkTiles: 32, chunkPx: 512, worldWidth: 2000, worldHeight: 2000, chunksX: 63, chunksY: 63 }; }
+
+  // Load overview for minimap + zoomed-out view
+  const img = new Image();
+  img.onload = () => {
+    overviewImage = img;
+    minimapCtx.drawImage(img, 0, 0, 200, 200);
+    // Center on spawn
+    const sx = worldInfo?.spawnPoint?.x || 1000;
+    const sy = worldInfo?.spawnPoint?.y || 500;
+    camera.x = -sx * tileInfo.tileSize * camera.zoom + window.innerWidth / 2;
+    camera.y = -sy * tileInfo.tileSize * camera.zoom + window.innerHeight / 2;
+    document.getElementById('loading').style.display = 'none';
+    requestAnimationFrame(render);
+  };
+  img.onerror = () => {
+    document.getElementById('loading').style.display = 'none';
+    requestAnimationFrame(render);
+  };
+  img.src = '/world-overview.png';
+}
+
+// ═══════════════════════════════
+// Chunk Loading
+// ═══════════════════════════════
+function loadChunk(cx, cy) {
+  const key = `${cx}_${cy}`;
+  if (chunkCache.has(key)) return chunkCache.get(key);
+  
+  const entry = { img: null, loading: true };
+  chunkCache.set(key, entry);
+  
+  // LRU eviction
+  if (chunkCache.size > MAX_CACHED_CHUNKS) {
+    const first = chunkCache.keys().next().value;
+    chunkCache.delete(first);
+  }
+  
+  const img = new Image();
+  img.onload = () => { entry.img = img; entry.loading = false; };
+  img.onerror = () => { entry.loading = false; };
+  img.src = `/api/tile/${cx}/${cy}`;
+  
+  return entry;
+}
+
+// ═══════════════════════════════
+// Rendering
+// ═══════════════════════════════
+function render() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  ctx.imageSmoothingEnabled = false;
+  
+  ctx.fillStyle = '#0a0e14';
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+  if (!tileInfo) { requestAnimationFrame(render); return; }
+
+  const T = tileInfo.tileSize; // 16
+  const CT = tileInfo.chunkTiles; // 32
+  const CP = tileInfo.chunkPx; // 512
+  const pixelSize = T * camera.zoom; // pixels per tile on screen
+
+  // If zoomed out far enough, use overview image
+  if (pixelSize < 2 && overviewImage) {
+    ctx.save();
+    ctx.translate(camera.x, camera.y);
+    ctx.scale(camera.zoom, camera.zoom);
+    // Overview is worldWidth/2 × worldHeight/2, so each overview pixel = 2 tiles
+    const scale = T * 2; // overview pixel covers 2 tiles, at T px each
+    ctx.drawImage(overviewImage, 0, 0, tileInfo.worldWidth * T, tileInfo.worldHeight * T);
+    ctx.restore();
+  } else {
+    // Tile streaming mode
+    ctx.save();
+    ctx.translate(camera.x, camera.y);
+    ctx.scale(camera.zoom, camera.zoom);
+
+    // Determine visible chunks
+    const viewLeft = -camera.x / camera.zoom;
+    const viewTop = -camera.y / camera.zoom;
+    const viewRight = viewLeft + canvas.width / camera.zoom;
+    const viewBottom = viewTop + canvas.height / camera.zoom;
+
+    const startCX = Math.max(0, Math.floor(viewLeft / CP));
+    const startCY = Math.max(0, Math.floor(viewTop / CP));
+    const endCX = Math.min(tileInfo.chunksX - 1, Math.floor(viewRight / CP));
+    const endCY = Math.min(tileInfo.chunksY - 1, Math.floor(viewBottom / CP));
+
+    for (let cy = startCY; cy <= endCY; cy++) {
+      for (let cx = startCX; cx <= endCX; cx++) {
+        const chunk = loadChunk(cx, cy);
+        if (chunk.img) {
+          ctx.drawImage(chunk.img, cx * CP, cy * CP, CP, CP);
+        } else if (overviewImage) {
+          // Fallback: draw overview section while loading
+          const srcX = (cx * CT * 2 / tileInfo.worldWidth) * overviewImage.width;
+          const srcY = (cy * CT * 2 / tileInfo.worldHeight) * overviewImage.height;
+          const srcW = (CT * 2 / tileInfo.worldWidth) * overviewImage.width;
+          const srcH = (CT * 2 / tileInfo.worldHeight) * overviewImage.height;
+          ctx.drawImage(overviewImage, srcX, srcY, Math.max(1,srcW), Math.max(1,srcH), cx * CP, cy * CP, CP, CP);
+        }
+      }
+    }
+
+    ctx.restore();
+  }
+
+  // Draw agents (always on top)
+  ctx.save();
+  ctx.translate(camera.x, camera.y);
+  ctx.scale(camera.zoom, camera.zoom);
+  ctx.imageSmoothingEnabled = false;
+  
+  const T2 = tileInfo.tileSize;
+  // Lerp agent positions for smooth movement
+  const lerpSpeed = 0.08;
+  for (const agent of agents) {
+    if (!agent.alive) continue;
+    let v = agentVisuals[agent.id];
+    if (!v) { v = agentVisuals[agent.id] = { renderX: agent.tileX, renderY: agent.tileY, targetX: agent.tileX, targetY: agent.tileY }; }
+    v.renderX += (v.targetX - v.renderX) * lerpSpeed;
+    v.renderY += (v.targetY - v.renderY) * lerpSpeed;
+    // Snap if close enough
+    if (Math.abs(v.renderX - v.targetX) < 0.01) v.renderX = v.targetX;
+    if (Math.abs(v.renderY - v.targetY) < 0.01) v.renderY = v.targetY;
+  }
+  for (const agent of agents) {
+    if (!agent.alive) continue;
+    const v = agentVisuals[agent.id];
+    const drawX = v ? v.renderX : agent.tileX;
+    const drawY = v ? v.renderY : agent.tileY;
+    
+    // Draw pixel sprite at lerped position
+    const lerpedAgent = { ...agent, tileX: drawX, tileY: drawY };
+    drawAgentSprite(ctx, lerpedAgent, T2);
+    
+    // Name + HP label
+    const ax = drawX * T2 + T2/2;
+    const ay = drawY * T2;
+    const spriteH = (22 / 8) * T2; // sprite height scaled
+    
+    if (camera.zoom >= 1.5) {
+      ctx.fillStyle = '#fff';
+      ctx.font = `bold ${Math.max(6, 8)}px monospace`;
+      ctx.textAlign = 'center';
+      ctx.shadowColor = '#000';
+      ctx.shadowBlur = 2;
+      ctx.fillText(agent.name, ax, ay - spriteH * 0.15);
+      ctx.shadowBlur = 0;
+      
+      // HP bar
+      const bw = T2 * 1.5;
+      const bh = 2;
+      const bx = ax - bw/2;
+      const by = ay - spriteH * 0.08;
+      ctx.fillStyle = 'rgba(0,0,0,0.6)';
+      ctx.fillRect(bx, by, bw, bh);
+      ctx.fillStyle = agent.hp > 50 ? '#98c379' : agent.hp > 25 ? '#e6c07b' : '#e06c75';
+      ctx.fillRect(bx, by, bw * (agent.hp / 100), bh);
+    } else if (camera.zoom >= 0.5) {
+      // At lower zoom, just show a dot marker
+      ctx.fillStyle = '#e6c07b';
+      ctx.beginPath();
+      ctx.arc(ax, drawY * T2 + T2/2, 3, 0, Math.PI * 2);
+      ctx.fill();
+    }
+  }
+  ctx.restore();
+
+  // HUD updates
+  document.getElementById('hud-zoom').textContent = camera.zoom.toFixed(1) + 'x';
+  updateMinimap();
+  requestAnimationFrame(render);
+}
+
+// ═══════════════════════════════
+// HUD
+// ═══════════════════════════════
+function updateHUD(tick, gameTime, weather) {
+  document.getElementById('hud-tick').textContent = tick || 0;
+  document.getElementById('hud-agents').textContent = agents.filter(a => a.alive).length;
+  if (gameTime) {
+    document.getElementById('hud-day').textContent = gameTime.day;
+    document.getElementById('hud-time').textContent = `${String(gameTime.hour).padStart(2,'0')}:00`;
+    document.getElementById('hud-period').textContent = gameTime.period === 'day' ? '☀️' : '🌙';
+  }
+  if (weather) document.getElementById('hud-weather').textContent = weather.condition || weather.type || 'Clear';
+}
+
+function updateAgentList() {
+  document.getElementById('agent-list').innerHTML = agents.map(a => `
+    <div class="agent-row" onclick="focusAgent('${a.id}')">
+      <div class="agent-dot ${a.alive ? 'alive' : 'dead'}"></div>
+      <span class="agent-name">${a.name}</span>
+      <span class="agent-level">${a.stats?.title || 'Lv.' + (a.stats?.level||1)}</span>
+    </div>`).join('');
+}
+
+function updateNewsList() {
+  document.getElementById('news-list').innerHTML = news.slice(0,30).map(n =>
+    `<div class="news-item"><span class="name">${n.name||'???'}</span> ${n.message}</div>`
+  ).join('');
+}
+
+function updateMinimap() {
+  if (!tileInfo || !overviewImage) return;
+  const vp = document.getElementById('minimap-viewport');
+  const T = tileInfo.tileSize;
+  const worldPx = tileInfo.worldWidth * T;
+  const worldPy = tileInfo.worldHeight * T;
+  const sx = 200 / worldPx, sy = 200 / worldPy;
+  const vpX = (-camera.x / camera.zoom) * sx;
+  const vpY = (-camera.y / camera.zoom) * sy;
+  const vpW = (canvas.width / camera.zoom) * sx;
+  const vpH = (canvas.height / camera.zoom) * sy;
+  vp.style.display = 'block';
+  vp.style.left = (minimap.offsetLeft + Math.max(0, vpX)) + 'px';
+  vp.style.top = (minimap.offsetTop + Math.max(0, vpY)) + 'px';
+  vp.style.width = Math.min(200, vpW) + 'px';
+  vp.style.height = Math.min(200, vpH) + 'px';
+}
+
+// ═══════════════════════════════
+// Input
+// ═══════════════════════════════
+canvas.addEventListener('mousedown', e => {
+  dragging = true; dragStart = {x:e.clientX, y:e.clientY}; cameraStart = {x:camera.x, y:camera.y};
+  canvas.classList.add('dragging');
+});
+canvas.addEventListener('mousemove', e => {
+  if (dragging) { camera.x = cameraStart.x + (e.clientX - dragStart.x); camera.y = cameraStart.y + (e.clientY - dragStart.y); }
+  if (tileInfo) {
+    const T = tileInfo.tileSize;
+    const tx = Math.floor((e.clientX - camera.x) / (T * camera.zoom));
+    const ty = Math.floor((e.clientY - camera.y) / (T * camera.zoom));
+    document.getElementById('hud-pos').textContent = `(${tx}, ${ty})`;
+  }
+});
+canvas.addEventListener('mouseup', () => { dragging = false; canvas.classList.remove('dragging'); });
+canvas.addEventListener('mouseleave', () => { dragging = false; canvas.classList.remove('dragging'); });
+
+canvas.addEventListener('wheel', e => {
+  e.preventDefault();
+  const oldZoom = camera.zoom;
+  camera.zoom = Math.max(0.1, Math.min(30, camera.zoom * (e.deltaY < 0 ? 1.15 : 1/1.15)));
+  camera.x = e.clientX - (e.clientX - camera.x) * (camera.zoom / oldZoom);
+  camera.y = e.clientY - (e.clientY - camera.y) * (camera.zoom / oldZoom);
+}, { passive: false });
+
+// Touch
+let lastDist = 0;
+canvas.addEventListener('touchstart', e => {
+  if (e.touches.length === 1) { dragging = true; dragStart = {x:e.touches[0].clientX, y:e.touches[0].clientY}; cameraStart = {x:camera.x, y:camera.y}; }
+  else if (e.touches.length === 2) lastDist = Math.hypot(e.touches[0].clientX-e.touches[1].clientX, e.touches[0].clientY-e.touches[1].clientY);
+});
+canvas.addEventListener('touchmove', e => {
+  e.preventDefault();
+  if (e.touches.length === 1 && dragging) { camera.x = cameraStart.x + (e.touches[0].clientX - dragStart.x); camera.y = cameraStart.y + (e.touches[0].clientY - dragStart.y); }
+  else if (e.touches.length === 2) { const d = Math.hypot(e.touches[0].clientX-e.touches[1].clientX, e.touches[0].clientY-e.touches[1].clientY); camera.zoom = Math.max(0.1, Math.min(30, camera.zoom * d / lastDist)); lastDist = d; }
+}, { passive: false });
+canvas.addEventListener('touchend', () => dragging = false);
+
+// Actions
+function focusAgent(id) {
+  const a = agents.find(a => a.id === id); if (!a || !tileInfo) return;
+  camera.zoom = 3;
+  camera.x = -a.tileX * tileInfo.tileSize * camera.zoom + window.innerWidth/2;
+  camera.y = -a.tileY * tileInfo.tileSize * camera.zoom + window.innerHeight/2;
+}
+async function spawnAgent() {
+  const name = prompt('Agent name:', `Wanderer-${Math.floor(Math.random()*999)}`);
+  if (!name) return;
+  await fetch('/api/spawn', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({name}) });
+}
+async function spawnMany(n) { await fetch('/api/spawn-many', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({count:n}) }); }
+function resetView() {
+  if (!worldInfo || !tileInfo) return;
+  camera.zoom = 3;
+  const sx = worldInfo.spawnPoint?.x || 1000, sy = worldInfo.spawnPoint?.y || 500;
+  camera.x = -sx * tileInfo.tileSize * camera.zoom + window.innerWidth/2;
+  camera.y = -sy * tileInfo.tileSize * camera.zoom + window.innerHeight/2;
+}
+document.addEventListener('keydown', e => {
+  const s = 80;
+  if (e.key==='ArrowLeft'||e.key==='a') camera.x += s;
+  if (e.key==='ArrowRight'||e.key==='d') camera.x -= s;
+  if (e.key==='ArrowUp'||e.key==='w') camera.y += s;
+  if (e.key==='ArrowDown'||e.key==='s') camera.y -= s;
+  if (e.key==='+'||e.key==='=') camera.zoom = Math.min(30, camera.zoom * 1.2);
+  if (e.key==='-') camera.zoom = Math.max(0.1, camera.zoom / 1.2);
+  if (e.key==='h') resetView();
+});
+
+connect();
+</script>
+</body>
+</html>

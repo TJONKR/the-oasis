@@ -10,8 +10,10 @@ import crypto from 'crypto';
 
 // World adapter (bridges WORLD terrain → ClawScape-style zones)
 import { initWorldAdapter } from './src/world-adapter.js';
+import { initTileRenderer } from './src/tile-renderer.js';
 
 // Game Systems
+import { initAgentIntelligence } from './src/systems/agent-intelligence.js';
 import { initWeather } from './src/systems/weather.js';
 import { initProficiency } from './src/systems/proficiency.js';
 import { initEcosystem } from './src/systems/ecosystem.js';
@@ -78,6 +80,11 @@ console.log(`   ${worldData.width}x${worldData.height} tiles loaded`);
 console.log('🔌 Initializing world adapter...');
 const worldGrid = initWorldAdapter(worldData, DATA_DIR);
 worldGrid.setupRoutes(app);
+
+console.log('🎨 Initializing tile renderer...');
+const TILE_CACHE = join(__dirname, 'cache', 'tiles');
+const tileRenderer = initTileRenderer(worldData, TILE_CACHE);
+tileRenderer.setupRoutes(app);
 
 // ═══════════════════════════════════════
 // Agent State
@@ -208,6 +215,8 @@ const repSystem = initReputation({ loadJSON, saveJSON, agents });
 const relSystem = initRelationships({ loadJSON, saveJSON, agents, agentStore, broadcast, addWorldNews });
 const npcSocial = initNPCSocial({ ...shared, relationships: relSystem, reputation: repSystem });
 const experiments = initExperiments(shared);
+shared.experiments = experiments;
+shared.npcSocial = npcSocial;
 const survivalSystem = initSurvival(shared);
 const decaySystem = initDecay(shared);
 const knowledgeSystem = initKnowledge({ ...shared, relationships: relSystem });
@@ -232,8 +241,16 @@ const worldMaster = initWorldMaster({
   weatherSystem, survivalSystem,
   relationships: relSystem,
   reputation: repSystem,
+  getGameTime,
 });
 shared.worldMaster = worldMaster;
+
+shared.getGameTime = getGameTime;
+
+// Agent Intelligence — the autonomous brain
+const agentAI = initAgentIntelligence(shared);
+agentAI.setupRoutes(app);
+shared.agentAI = agentAI;
 
 console.log('   ✅ All systems initialized');
 
@@ -251,6 +268,16 @@ function serializeAgent(a) {
     alive: a.alive,
     proficiencies: a.proficiencies,
     achievements: a.achievements?.length || 0,
+    mind: agentAI?.minds?.[a.id] ? {
+      action: agentAI.minds[a.id].currentAction,
+      mood: agentAI.minds[a.id].mood,
+      traits: agentAI.minds[a.id].personality?.traits,
+      intent: agentAI.minds[a.id].intent ? {
+        action: agentAI.minds[a.id].intent.action,
+        reason: agentAI.minds[a.id].intent.reason,
+      } : null,
+      pathThisTick: agentAI.minds[a.id].pathThisTick || null,
+    } : null,
   };
 }
 
@@ -258,7 +285,7 @@ function serializeAgent(a) {
 // Simulation
 // ═══════════════════════════════════════
 let tick = loadJSON('tick.json', { tick: 0 }).tick || 0;
-const TICK_MS = 2000;
+const TICK_MS = 500; // Fast ticks — agents move 1 tile per tick, so 2 tiles/sec
 
 // Game time (1 tick = 10 minutes game time)
 function getGameTime() {
@@ -285,6 +312,9 @@ function simulationTick() {
     ensureAgentStats(agent);
     worldGrid.migrateAgentPosition(agent);
     
+    // Agent Intelligence — autonomous decisions
+    agentAI.tickAgent(agent);
+    
     // Survival tick (energy, hunger, temperature)
     if (survivalSystem.tick) survivalSystem.tick(agent);
     
@@ -305,7 +335,7 @@ function simulationTick() {
     collectiveProjects.tick();
   }
   
-  // 6. Broadcast state
+  // 6. Broadcast state (every tick for smooth movement, full data every 5)
   if (tick % 5 === 0) {
     broadcast({
       type: 'tick',
@@ -313,6 +343,18 @@ function simulationTick() {
       gameTime,
       weather: weatherSystem.getCurrentWeather?.() || null,
       agents: [...agents.values()].filter(a => a.alive).map(serializeAgent),
+    });
+  } else {
+    // Lightweight position update
+    broadcast({
+      type: 'tick',
+      tick,
+      agents: [...agents.values()].filter(a => a.alive).map(a => ({
+        id: a.id, name: a.name, tileX: a.tileX, tileY: a.tileY,
+        hp: a.hp, energy: a.energy, hunger: a.hunger, alive: a.alive,
+        stats: a.stats, inventory: a.inventory,
+        mind: agentAI?.minds?.[a.id] ? { action: agentAI.minds[a.id].currentAction, mood: agentAI.minds[a.id].mood, traits: agentAI.minds[a.id].personality?.traits, intent: agentAI.minds[a.id].intent ? { action: agentAI.minds[a.id].intent.action, reason: agentAI.minds[a.id].intent.reason } : null } : null,
+      })),
     });
   }
   
