@@ -8,25 +8,25 @@
     "y": 401,
     "zone": "coast",
     "hp": 100,
-    "energy": 24.5,
-    "hunger": 0.2,
+    "energy": 36.5,
+    "hunger": 0.04,
     "temperature": 20,
     "inventory": [
       {
-        "name": "driftwood",
+        "name": "Fermented driftwood",
         "quantity": 20,
         "properties": {
           "hardness": 3,
           "conductivity": 0,
           "flammability": 7,
-          "toxicity": 0,
+          "toxicity": 1,
           "luminosity": 0,
           "volatility": 0,
           "organic": 1,
           "weight": 1.5,
-          "decay_rate": 0.2,
-          "energy": 8,
-          "temperature": 22.90099742816215,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 200,
@@ -35,23 +35,25 @@
           "malleability": 4,
           "brittleness": 4,
           "fertility": 1
-        }
+        },
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       },
       {
-        "name": "shells",
+        "name": "Fermented shells",
         "quantity": 20,
         "properties": {
           "hardness": 4,
           "conductivity": 0,
           "flammability": 0,
-          "toxicity": 0,
+          "toxicity": 1,
           "luminosity": 1,
           "volatility": 0,
           "organic": 0.5,
           "weight": 0.2,
           "decay_rate": 0.05,
-          "energy": 1,
-          "temperature": 22.90099742816215,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 1,
           "melt_point": 500,
           "ignition": 0,
@@ -60,7 +62,9 @@
           "malleability": 0,
           "brittleness": 7,
           "fertility": 1
-        }
+        },
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       }
     ],
     "knowledge": [],
@@ -71,7 +75,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 27587,
+      "xp": 28287,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -87,25 +91,25 @@
     "y": 414,
     "zone": "coast",
     "hp": 100,
-    "energy": 51.5,
+    "energy": 47.5,
     "hunger": 0.2,
     "temperature": 20,
     "inventory": [
       {
-        "name": "palm_fronds",
+        "name": "Fermented palm_fronds",
         "quantity": 20,
         "properties": {
           "hardness": 1,
           "conductivity": 0,
           "flammability": 5,
-          "toxicity": 0,
+          "toxicity": 1,
           "luminosity": 0,
           "volatility": 0,
           "organic": 1,
           "weight": 0.3,
-          "decay_rate": 0.25,
-          "energy": 3,
-          "temperature": 22.90099742816215,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 180,
@@ -114,23 +118,25 @@
           "malleability": 7,
           "brittleness": 2,
           "fertility": 1
-        }
+        },
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       },
       {
-        "name": "wood",
+        "name": "Fermented wood",
         "quantity": 20,
         "properties": {
           "hardness": 4,
           "conductivity": 0,
           "flammability": 7,
-          "toxicity": 0,
+          "toxicity": 1,
           "luminosity": 0,
           "volatility": 0,
           "organic": 1,
           "weight": 3,
-          "decay_rate": 0.1,
-          "energy": 8,
-          "temperature": 22.90099742816215,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 250,
@@ -139,23 +145,25 @@
           "malleability": 4,
           "brittleness": 3,
           "fertility": 1
-        }
+        },
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       },
       {
-        "name": "coconuts",
+        "name": "Fermented coconuts",
         "quantity": 20,
         "properties": {
           "hardness": 5,
           "conductivity": 0,
           "flammability": 3,
-          "toxicity": 0,
+          "toxicity": 1,
           "luminosity": 0,
           "volatility": 0,
           "organic": 1,
           "weight": 1.5,
-          "decay_rate": 0.2,
-          "energy": 25,
-          "temperature": 22.90099742816215,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 250,
@@ -164,7 +172,9 @@
           "malleability": 0,
           "brittleness": 6,
           "fertility": 2
-        }
+        },
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       }
     ],
     "knowledge": [],
@@ -175,7 +185,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 80498,
+      "xp": 84226,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -185,69 +195,19 @@
   "fe02d354-e4fb-4535-8cad-e9d9e4828245": {
     "id": "fe02d354-e4fb-4535-8cad-e9d9e4828245",
     "name": "Agent-3",
-    "tileX": 1202,
-    "tileY": 435,
-    "x": 1202,
-    "y": 435,
-    "zone": "coast",
+    "tileX": 1181,
+    "tileY": 412,
+    "x": 1181,
+    "y": 412,
+    "zone": "sand",
     "hp": 100,
-    "energy": 41.80000000001699,
-    "hunger": 0.4799999999999999,
+    "energy": 33.00000000002135,
+    "hunger": 0.08,
     "temperature": 20,
     "inventory": [
       {
-        "name": "fiber",
-        "quantity": 17,
-        "properties": {
-          "hardness": 1,
-          "conductivity": 0,
-          "flammability": 5,
-          "toxicity": 0,
-          "luminosity": 0,
-          "volatility": 0,
-          "organic": 1,
-          "weight": 0.1,
-          "decay_rate": 0.1,
-          "energy": 2,
-          "temperature": 22.90099742816215,
-          "resonance": 0,
-          "melt_point": 0,
-          "ignition": 200,
-          "sharpness": 0,
-          "solubility": 0,
-          "malleability": 8,
-          "brittleness": 1,
-          "fertility": 0
-        }
-      },
-      {
-        "name": "herbs",
-        "quantity": 13,
-        "properties": {
-          "hardness": 0,
-          "conductivity": 0,
-          "flammability": 4,
-          "toxicity": 0,
-          "luminosity": 0,
-          "volatility": 1,
-          "organic": 1,
-          "weight": 0.05,
-          "decay_rate": 0.35,
-          "energy": 10,
-          "temperature": 22.90099742816215,
-          "resonance": 1,
-          "melt_point": 0,
-          "ignition": 160,
-          "sharpness": 0,
-          "solubility": 4,
-          "malleability": 1,
-          "brittleness": 1,
-          "fertility": 3
-        }
-      },
-      {
         "name": "sand",
-        "quantity": 4,
+        "quantity": 1,
         "properties": {
           "hardness": 2,
           "conductivity": 0,
@@ -259,7 +219,7 @@
           "weight": 2,
           "decay_rate": 0,
           "energy": 0,
-          "temperature": 22.90099742816215,
+          "temperature": 43.903825272303195,
           "resonance": 0,
           "melt_point": 1200,
           "ignition": 0,
@@ -268,31 +228,6 @@
           "malleability": 3,
           "brittleness": 0,
           "fertility": 0
-        }
-      },
-      {
-        "name": "shells",
-        "quantity": 1,
-        "properties": {
-          "hardness": 4,
-          "conductivity": 0,
-          "flammability": 0,
-          "toxicity": 0,
-          "luminosity": 1,
-          "volatility": 0,
-          "organic": 0.5,
-          "weight": 0.2,
-          "decay_rate": 0.05,
-          "energy": 1,
-          "temperature": 22.90099742816215,
-          "resonance": 1,
-          "melt_point": 500,
-          "ignition": 0,
-          "sharpness": 2,
-          "solubility": 2,
-          "malleability": 0,
-          "brittleness": 7,
-          "fertility": 1
         }
       }
     ],
@@ -304,12 +239,12 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 166677,
+      "xp": 166759,
       "level": 11,
       "title": "Crafter ⚒️"
     },
     "ticksBorn": 1120,
-    "coins": 25
+    "coins": 45
   },
   "ece8d4b9-367e-40de-85c0-fb4b08f9eac5": {
     "id": "ece8d4b9-367e-40de-85c0-fb4b08f9eac5",
@@ -320,25 +255,25 @@
     "y": 412,
     "zone": "coast",
     "hp": 100,
-    "energy": 56.10000000001892,
-    "hunger": 0.08,
+    "energy": 48.600000000024,
+    "hunger": 0.12,
     "temperature": 20,
     "inventory": [
       {
-        "name": "shells",
+        "name": "Fermented shells",
         "quantity": 2,
         "properties": {
           "hardness": 4,
           "conductivity": 0,
           "flammability": 0,
-          "toxicity": 0,
+          "toxicity": 1,
           "luminosity": 1,
           "volatility": 0,
           "organic": 0.5,
           "weight": 0.2,
           "decay_rate": 0.05,
-          "energy": 1,
-          "temperature": 22.90099742816215,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 1,
           "melt_point": 500,
           "ignition": 0,
@@ -347,7 +282,9 @@
           "malleability": 0,
           "brittleness": 7,
           "fertility": 1
-        }
+        },
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       }
     ],
     "knowledge": [],
@@ -374,25 +311,25 @@
     "y": 450,
     "zone": "grass",
     "hp": 100,
-    "energy": 49.200000000022136,
-    "hunger": 0.24000000000000002,
+    "energy": 50.80000000002826,
+    "hunger": 0.12,
     "temperature": 20,
     "inventory": [
       {
-        "name": "wood",
+        "name": "Fermented wood",
         "quantity": 4,
         "properties": {
           "hardness": 4,
           "conductivity": 0,
-          "flammability": 7,
-          "toxicity": 0,
+          "flammability": 8,
+          "toxicity": 1,
           "luminosity": 0,
           "volatility": 0,
           "organic": 1,
           "weight": 3,
-          "decay_rate": 0.1,
-          "energy": 8,
-          "temperature": 184.54499026727206,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 25.903825272303195,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 250,
@@ -401,48 +338,55 @@
           "malleability": 4,
           "brittleness": 3,
           "fertility": 1
-        }
+        },
+        "_heatStage": "smoking",
+        "_reacted": true,
+        "_decayProgress": 0.01548061227736686
       },
       {
-        "name": "herbs",
+        "name": "Fermented Herbal Extract",
         "quantity": 20,
         "properties": {
           "hardness": 0,
-          "conductivity": 0,
-          "flammability": 4,
-          "toxicity": 0,
-          "luminosity": 0,
+          "conductivity": 1,
+          "flammability": 2,
+          "toxicity": 1,
+          "luminosity": 1,
           "volatility": 1,
           "organic": 1,
-          "weight": 0.05,
-          "decay_rate": 0.35,
-          "energy": 10,
-          "temperature": 184.54499026727206,
-          "resonance": 1,
+          "weight": 0.1,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 25.903825272303195,
+          "resonance": 2,
           "melt_point": 0,
-          "ignition": 160,
+          "ignition": 0,
           "sharpness": 0,
-          "solubility": 4,
-          "malleability": 1,
-          "brittleness": 1,
-          "fertility": 3
-        }
+          "solubility": 8,
+          "malleability": 0,
+          "brittleness": 0,
+          "fertility": 2
+        },
+        "_heatStage": "brewing",
+        "_state": "liquid",
+        "_reacted": true,
+        "_decayProgress": 0.01548061227736686
       },
       {
-        "name": "acorns",
+        "name": "Fermented acorns",
         "quantity": 1,
         "properties": {
           "hardness": 3,
           "conductivity": 0,
           "flammability": 3,
-          "toxicity": 0,
+          "toxicity": 1,
           "luminosity": 0,
           "volatility": 0,
           "organic": 1,
           "weight": 0.1,
-          "decay_rate": 0.2,
-          "energy": 12,
-          "temperature": 184.54499026727206,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 25.903825272303195,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 200,
@@ -451,32 +395,37 @@
           "malleability": 0,
           "brittleness": 5,
           "fertility": 5
-        }
+        },
+        "_reacted": true,
+        "_decayProgress": 0.01548061227736686
       },
       {
-        "name": "fiber",
-        "quantity": 18,
+        "name": "Fermented Burning Fiber",
+        "quantity": 17,
         "properties": {
-          "hardness": 1,
+          "hardness": 0,
           "conductivity": 0,
-          "flammability": 5,
-          "toxicity": 0,
-          "luminosity": 0,
-          "volatility": 0,
+          "flammability": 10,
+          "toxicity": 1,
+          "luminosity": 4,
+          "volatility": 1,
           "organic": 1,
-          "weight": 0.1,
-          "decay_rate": 0.1,
-          "energy": 2,
-          "temperature": 184.54499026727206,
+          "weight": 0.05,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 25.903825272303195,
           "resonance": 0,
           "melt_point": 0,
-          "ignition": 200,
+          "ignition": 0,
           "sharpness": 0,
           "solubility": 0,
-          "malleability": 8,
-          "brittleness": 1,
+          "malleability": 0,
+          "brittleness": 0,
           "fertility": 0
-        }
+        },
+        "_heatStage": "igniting",
+        "_reacted": true,
+        "_decayProgress": 0.01548061227736686
       }
     ],
     "knowledge": [],
@@ -487,12 +436,12 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 166377,
+      "xp": 166387,
       "level": 11,
       "title": "Crafter ⚒️"
     },
     "ticksBorn": 1120,
-    "coins": 621
+    "coins": 644
   },
   "adece4fb-fe63-4326-9e8b-77bb35d53dc1": {
     "id": "adece4fb-fe63-4326-9e8b-77bb35d53dc1",
@@ -503,25 +452,25 @@
     "y": 440,
     "zone": "coast",
     "hp": 100,
-    "energy": 55,
-    "hunger": 0.12,
+    "energy": 44,
+    "hunger": 0.24000000000000002,
     "temperature": 20,
     "inventory": [
       {
-        "name": "driftwood",
+        "name": "Fermented driftwood",
         "quantity": 20,
         "properties": {
           "hardness": 3,
           "conductivity": 0,
           "flammability": 7,
-          "toxicity": 0,
+          "toxicity": 1,
           "luminosity": 0,
           "volatility": 0,
           "organic": 1,
           "weight": 1.5,
-          "decay_rate": 0.2,
-          "energy": 8,
-          "temperature": 22.90099742816215,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 200,
@@ -530,23 +479,25 @@
           "malleability": 4,
           "brittleness": 4,
           "fertility": 1
-        }
+        },
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       },
       {
-        "name": "shells",
+        "name": "Fermented shells",
         "quantity": 20,
         "properties": {
           "hardness": 4,
           "conductivity": 0,
           "flammability": 0,
-          "toxicity": 0,
+          "toxicity": 1,
           "luminosity": 1,
           "volatility": 0,
           "organic": 0.5,
           "weight": 0.2,
           "decay_rate": 0.05,
-          "energy": 1,
-          "temperature": 22.90099742816215,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 1,
           "melt_point": 500,
           "ignition": 0,
@@ -555,7 +506,9 @@
           "malleability": 0,
           "brittleness": 7,
           "fertility": 1
-        }
+        },
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       }
     ],
     "knowledge": [],
@@ -582,13 +535,13 @@
     "y": 404,
     "zone": "coast",
     "hp": 100,
-    "energy": 29.00000000000209,
-    "hunger": 0.16,
+    "energy": 39.40000000000314,
+    "hunger": 0.04,
     "temperature": 20,
     "inventory": [
       {
         "name": "stone",
-        "quantity": 11,
+        "quantity": 10,
         "properties": {
           "hardness": 7,
           "conductivity": 1,
@@ -600,7 +553,7 @@
           "weight": 8,
           "decay_rate": 0,
           "energy": 0,
-          "temperature": 22.886854043608572,
+          "temperature": 30.90192253100653,
           "resonance": 0.5,
           "melt_point": 1200,
           "ignition": 0,
@@ -625,7 +578,7 @@
           "weight": 0.5,
           "decay_rate": 0,
           "energy": 5,
-          "temperature": 22.886854043608572,
+          "temperature": 30.90192253100653,
           "resonance": 0,
           "melt_point": 1400,
           "ignition": 0,
@@ -645,7 +598,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 177302,
+      "xp": 182449,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -661,8 +614,8 @@
     "y": 404,
     "zone": "coast",
     "hp": 100,
-    "energy": 46.50000000000458,
-    "hunger": 0.04,
+    "energy": 51.60000000000683,
+    "hunger": 0.2,
     "temperature": 20,
     "inventory": [
       {
@@ -679,7 +632,7 @@
           "weight": 0.5,
           "decay_rate": 0,
           "energy": 5,
-          "temperature": 22.900997428163645,
+          "temperature": 30.90382527230354,
           "resonance": 0,
           "melt_point": 1400,
           "ignition": 0,
@@ -692,7 +645,7 @@
       },
       {
         "name": "stone",
-        "quantity": 3,
+        "quantity": 2,
         "properties": {
           "hardness": 7,
           "conductivity": 1,
@@ -704,7 +657,7 @@
           "weight": 8,
           "decay_rate": 0,
           "energy": 0,
-          "temperature": 22.900997428163645,
+          "temperature": 30.90382527230354,
           "resonance": 0.5,
           "melt_point": 1200,
           "ignition": 0,
@@ -724,7 +677,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 179809,
+      "xp": 184674,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -734,25 +687,16 @@
   "bad7a626-0d4d-4a2e-927a-fd46ed05a861": {
     "id": "bad7a626-0d4d-4a2e-927a-fd46ed05a861",
     "name": "Agent-9",
-    "tileX": 1202,
-    "tileY": 435,
-    "x": 1202,
-    "y": 435,
-    "zone": "coast",
+    "tileX": 1181,
+    "tileY": 412,
+    "x": 1181,
+    "y": 412,
+    "zone": "sand",
     "hp": 100,
-    "energy": 24.500000000005745,
-    "hunger": 0.28,
+    "energy": 30.500000000009344,
+    "hunger": 0.12,
     "temperature": 20,
-    "inventory": [
-      {
-        "name": "sand",
-        "quantity": 1
-      },
-      {
-        "name": "herbs",
-        "quantity": 4
-      }
-    ],
+    "inventory": [],
     "knowledge": [],
     "relationships": {},
     "proficiencies": {},
@@ -761,12 +705,12 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 162868,
+      "xp": 162964,
       "level": 11,
       "title": "Crafter ⚒️"
     },
     "ticksBorn": 1120,
-    "coins": 852
+    "coins": 832
   },
   "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e": {
     "id": "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e",
@@ -777,25 +721,25 @@
     "y": 412,
     "zone": "coast",
     "hp": 100,
-    "energy": 22.900000000023592,
-    "hunger": 0.5599999999999999,
+    "energy": 50.10000000002974,
+    "hunger": 0.04,
     "temperature": 20,
     "inventory": [
       {
-        "name": "driftwood",
+        "name": "Fermented driftwood",
         "quantity": 2,
         "properties": {
           "hardness": 3,
           "conductivity": 0,
           "flammability": 7,
-          "toxicity": 0,
+          "toxicity": 1,
           "luminosity": 0,
           "volatility": 0,
           "organic": 1,
           "weight": 1.5,
-          "decay_rate": 0.2,
-          "energy": 8,
-          "temperature": 22.90099742816215,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 200,
@@ -804,7 +748,9 @@
           "malleability": 4,
           "brittleness": 4,
           "fertility": 1
-        }
+        },
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       }
     ],
     "knowledge": [],
@@ -831,25 +777,25 @@
     "y": 395,
     "zone": "coast",
     "hp": 100,
-    "energy": 52,
-    "hunger": 0.04,
+    "energy": 53,
+    "hunger": 0.08,
     "temperature": 20,
     "inventory": [
       {
-        "name": "shells",
+        "name": "Fermented shells",
         "quantity": 20,
         "properties": {
           "hardness": 4,
           "conductivity": 0,
           "flammability": 0,
-          "toxicity": 0,
+          "toxicity": 1,
           "luminosity": 1,
           "volatility": 0,
           "organic": 0.5,
           "weight": 0.2,
           "decay_rate": 0.05,
-          "energy": 1,
-          "temperature": 22.90099742816215,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 1,
           "melt_point": 500,
           "ignition": 0,
@@ -858,23 +804,25 @@
           "malleability": 0,
           "brittleness": 7,
           "fertility": 1
-        }
+        },
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       },
       {
-        "name": "driftwood",
+        "name": "Fermented driftwood",
         "quantity": 20,
         "properties": {
           "hardness": 3,
           "conductivity": 0,
           "flammability": 7,
-          "toxicity": 0,
+          "toxicity": 1,
           "luminosity": 0,
           "volatility": 0,
           "organic": 1,
           "weight": 1.5,
-          "decay_rate": 0.2,
-          "energy": 8,
-          "temperature": 22.90099742816215,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 200,
@@ -883,7 +831,9 @@
           "malleability": 4,
           "brittleness": 4,
           "fertility": 1
-        }
+        },
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       }
     ],
     "knowledge": [],
@@ -910,25 +860,25 @@
     "y": 438,
     "zone": "coast",
     "hp": 100,
-    "energy": 46,
-    "hunger": 0.16,
+    "energy": 50,
+    "hunger": 0.12,
     "temperature": 20,
     "inventory": [
       {
-        "name": "driftwood",
+        "name": "Fermented driftwood",
         "quantity": 20,
         "properties": {
           "hardness": 3,
           "conductivity": 0,
           "flammability": 7,
-          "toxicity": 0,
+          "toxicity": 1,
           "luminosity": 0,
           "volatility": 0,
           "organic": 1,
           "weight": 1.5,
-          "decay_rate": 0.2,
-          "energy": 8,
-          "temperature": 22.90099742816215,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 200,
@@ -937,23 +887,25 @@
           "malleability": 4,
           "brittleness": 4,
           "fertility": 1
-        }
+        },
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       },
       {
-        "name": "shells",
+        "name": "Fermented shells",
         "quantity": 20,
         "properties": {
           "hardness": 4,
           "conductivity": 0,
           "flammability": 0,
-          "toxicity": 0,
+          "toxicity": 1,
           "luminosity": 1,
           "volatility": 0,
           "organic": 0.5,
           "weight": 0.2,
           "decay_rate": 0.05,
-          "energy": 1,
-          "temperature": 22.90099742816215,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 1,
           "melt_point": 500,
           "ignition": 0,
@@ -962,7 +914,9 @@
           "malleability": 0,
           "brittleness": 7,
           "fertility": 1
-        }
+        },
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       }
     ],
     "knowledge": [],
@@ -989,17 +943,19 @@
     "y": 465,
     "zone": "grass",
     "hp": 100,
-    "energy": 49.900000000014316,
-    "hunger": 0.12,
+    "energy": 54.300000000018315,
+    "hunger": 0.08,
     "temperature": 20,
     "inventory": [
       {
-        "name": "herbs",
-        "quantity": 1
+        "name": "Fermented flowers",
+        "quantity": 2,
+        "_reacted": true
       },
       {
-        "name": "flowers",
-        "quantity": 1
+        "name": "Fermented herbs",
+        "quantity": 3,
+        "_reacted": true
       }
     ],
     "knowledge": [],
@@ -1010,12 +966,12 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 163090,
+      "xp": 163285,
       "level": 11,
       "title": "Crafter ⚒️"
     },
     "ticksBorn": 3607,
-    "coins": 812
+    "coins": 855
   },
   "d56be782-7d0b-48d3-b5bc-cd2f59d54c48": {
     "id": "d56be782-7d0b-48d3-b5bc-cd2f59d54c48",
@@ -1026,42 +982,19 @@
     "y": 419,
     "zone": "coast",
     "hp": 100,
-    "energy": 36.80000000000479,
+    "energy": 50.000000000006054,
     "hunger": 0.12,
     "temperature": 20,
     "inventory": [
       {
-        "name": "driftwood",
+        "name": "Fermented driftwood",
+        "quantity": 1,
+        "_reacted": true
+      },
+      {
+        "name": "Fermented shells",
         "quantity": 2,
-        "properties": {
-          "hardness": 3,
-          "conductivity": 0,
-          "flammability": 7,
-          "toxicity": 0,
-          "luminosity": 0,
-          "volatility": 0,
-          "organic": 1,
-          "weight": 1.5,
-          "decay_rate": 0.2,
-          "energy": 8,
-          "temperature": 189.53790988034265,
-          "resonance": 0,
-          "melt_point": 0,
-          "ignition": 200,
-          "sharpness": 0,
-          "solubility": 0,
-          "malleability": 4,
-          "brittleness": 4,
-          "fertility": 1
-        }
-      },
-      {
-        "name": "herbs",
-        "quantity": 3
-      },
-      {
-        "name": "shells",
-        "quantity": 1
+        "_reacted": true
       }
     ],
     "knowledge": [],
@@ -1072,7 +1005,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 168394,
+      "xp": 168806,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -1088,8 +1021,8 @@
     "y": 412,
     "zone": "coast",
     "hp": 100,
-    "energy": 30.100000000012656,
-    "hunger": 0.16,
+    "energy": 24.10000000001752,
+    "hunger": 0.43999999999999995,
     "temperature": 20,
     "inventory": [],
     "knowledge": [],
@@ -1116,17 +1049,19 @@
     "y": 418,
     "zone": "coast",
     "hp": 100,
-    "energy": 45.40000000001234,
-    "hunger": 0.16,
+    "energy": 46.9000000000155,
+    "hunger": 0.12,
     "temperature": 20,
     "inventory": [
       {
-        "name": "fiber",
-        "quantity": 1
+        "name": "Fermented Herbal Extract",
+        "quantity": 1,
+        "_reacted": true
       },
       {
-        "name": "driftwood",
-        "quantity": 1
+        "name": "Fermented driftwood",
+        "quantity": 1,
+        "_reacted": true
       }
     ],
     "knowledge": [],
@@ -1137,7 +1072,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 70858,
+      "xp": 74402,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -1153,50 +1088,53 @@
     "y": 449,
     "zone": "coast",
     "hp": 100,
-    "energy": 32.10000000001876,
+    "energy": 34.40000000002378,
     "hunger": 0.12,
     "temperature": 20,
     "inventory": [
       {
-        "name": "fiber",
+        "name": "Fermented Burning Fiber",
         "quantity": 20,
         "properties": {
-          "hardness": 1,
+          "hardness": 0,
           "conductivity": 0,
-          "flammability": 5,
-          "toxicity": 0,
-          "luminosity": 0,
-          "volatility": 0,
+          "flammability": 10,
+          "toxicity": 1,
+          "luminosity": 4,
+          "volatility": 1,
           "organic": 1,
-          "weight": 0.1,
-          "decay_rate": 0.1,
-          "energy": 2,
-          "temperature": 222.90099742816216,
+          "weight": 0.05,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 0,
           "melt_point": 0,
-          "ignition": 200,
+          "ignition": 0,
           "sharpness": 0,
           "solubility": 0,
-          "malleability": 8,
-          "brittleness": 1,
+          "malleability": 0,
+          "brittleness": 0,
           "fertility": 0
-        }
+        },
+        "_heatStage": "igniting",
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       },
       {
-        "name": "wood",
+        "name": "Fermented wood",
         "quantity": 3,
         "properties": {
           "hardness": 4,
           "conductivity": 0,
-          "flammability": 7,
-          "toxicity": 0,
+          "flammability": 8,
+          "toxicity": 1,
           "luminosity": 0,
           "volatility": 0,
           "organic": 1,
           "weight": 3,
-          "decay_rate": 0.1,
-          "energy": 8,
-          "temperature": 222.90099742816216,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 250,
@@ -1205,23 +1143,26 @@
           "malleability": 4,
           "brittleness": 3,
           "fertility": 1
-        }
+        },
+        "_heatStage": "smoking",
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       },
       {
-        "name": "herbs",
+        "name": "Fermented herbs",
         "quantity": 12,
         "properties": {
           "hardness": 0,
           "conductivity": 0,
-          "flammability": 4,
-          "toxicity": 0,
+          "flammability": 6,
+          "toxicity": 1,
           "luminosity": 0,
           "volatility": 1,
           "organic": 1,
           "weight": 0.05,
-          "decay_rate": 0.35,
-          "energy": 10,
-          "temperature": 222.90099742816216,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 1,
           "melt_point": 0,
           "ignition": 160,
@@ -1230,7 +1171,10 @@
           "malleability": 1,
           "brittleness": 1,
           "fertility": 3
-        }
+        },
+        "_heatStage": "burning",
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       }
     ],
     "knowledge": [],
@@ -1257,25 +1201,25 @@
     "y": 412,
     "zone": "coast",
     "hp": 100,
-    "energy": 30.50000000000608,
+    "energy": 31.300000000008907,
     "hunger": 0.04,
     "temperature": 20,
     "inventory": [
       {
-        "name": "driftwood",
+        "name": "Fermented driftwood",
         "quantity": 2,
         "properties": {
           "hardness": 3,
           "conductivity": 0,
           "flammability": 7,
-          "toxicity": 0,
+          "toxicity": 1,
           "luminosity": 0,
           "volatility": 0,
           "organic": 1,
           "weight": 1.5,
-          "decay_rate": 0.2,
-          "energy": 8,
-          "temperature": 22.90099742816215,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 200,
@@ -1284,23 +1228,25 @@
           "malleability": 4,
           "brittleness": 4,
           "fertility": 1
-        }
+        },
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       },
       {
-        "name": "shells",
+        "name": "Fermented shells",
         "quantity": 1,
         "properties": {
           "hardness": 4,
           "conductivity": 0,
           "flammability": 0,
-          "toxicity": 0,
+          "toxicity": 1,
           "luminosity": 1,
           "volatility": 0,
           "organic": 0.5,
           "weight": 0.2,
           "decay_rate": 0.05,
-          "energy": 1,
-          "temperature": 22.90099742816215,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 1,
           "melt_point": 500,
           "ignition": 0,
@@ -1309,7 +1255,9 @@
           "malleability": 0,
           "brittleness": 7,
           "fertility": 1
-        }
+        },
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       }
     ],
     "knowledge": [],
@@ -1336,25 +1284,25 @@
     "y": 419,
     "zone": "coast",
     "hp": 100,
-    "energy": 48.50000000000905,
-    "hunger": 0.24000000000000002,
+    "energy": 47.00000000001158,
+    "hunger": 0.2,
     "temperature": 20,
     "inventory": [
       {
-        "name": "shells",
-        "quantity": 19,
+        "name": "Fermented shells",
+        "quantity": 18,
         "properties": {
           "hardness": 4,
           "conductivity": 0,
           "flammability": 0,
-          "toxicity": 0,
+          "toxicity": 1,
           "luminosity": 1,
           "volatility": 0,
           "organic": 0.5,
           "weight": 0.2,
           "decay_rate": 0.05,
-          "energy": 1,
-          "temperature": 189.53790988034265,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 1,
           "melt_point": 500,
           "ignition": 0,
@@ -1363,48 +1311,53 @@
           "malleability": 0,
           "brittleness": 7,
           "fertility": 1
-        }
+        },
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       },
       {
-        "name": "fiber",
-        "quantity": 21,
+        "name": "Fermented Burning Fiber",
+        "quantity": 20,
         "properties": {
-          "hardness": 1,
+          "hardness": 0,
           "conductivity": 0,
-          "flammability": 5,
-          "toxicity": 0,
-          "luminosity": 0,
-          "volatility": 0,
+          "flammability": 10,
+          "toxicity": 1,
+          "luminosity": 4,
+          "volatility": 1,
           "organic": 1,
-          "weight": 0.1,
-          "decay_rate": 0.1,
-          "energy": 2,
-          "temperature": 189.53790988034265,
+          "weight": 0.05,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 0,
           "melt_point": 0,
-          "ignition": 200,
+          "ignition": 0,
           "sharpness": 0,
           "solubility": 0,
-          "malleability": 8,
-          "brittleness": 1,
+          "malleability": 0,
+          "brittleness": 0,
           "fertility": 0
-        }
+        },
+        "_heatStage": "igniting",
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       },
       {
-        "name": "driftwood",
-        "quantity": 18,
+        "name": "Fermented driftwood",
+        "quantity": 19,
         "properties": {
           "hardness": 3,
           "conductivity": 0,
           "flammability": 7,
-          "toxicity": 0,
+          "toxicity": 1,
           "luminosity": 0,
           "volatility": 0,
           "organic": 1,
           "weight": 1.5,
-          "decay_rate": 0.2,
-          "energy": 8,
-          "temperature": 189.53790988034265,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 200,
@@ -1413,23 +1366,54 @@
           "malleability": 4,
           "brittleness": 4,
           "fertility": 1
-        }
+        },
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       },
       {
-        "name": "herbs",
+        "name": "Fermented Herbal Extract",
         "quantity": 17,
+        "properties": {
+          "hardness": 0,
+          "conductivity": 1,
+          "flammability": 2,
+          "toxicity": 1,
+          "luminosity": 1,
+          "volatility": 1,
+          "organic": 1,
+          "weight": 0.1,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 30.903825272303195,
+          "resonance": 2,
+          "melt_point": 0,
+          "ignition": 0,
+          "sharpness": 0,
+          "solubility": 8,
+          "malleability": 0,
+          "brittleness": 0,
+          "fertility": 2
+        },
+        "_heatStage": "brewing",
+        "_state": "liquid",
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
+      },
+      {
+        "name": "Fermented herbs",
+        "quantity": 2,
         "properties": {
           "hardness": 0,
           "conductivity": 0,
           "flammability": 4,
-          "toxicity": 0,
+          "toxicity": 1,
           "luminosity": 0,
           "volatility": 1,
           "organic": 1,
           "weight": 0.05,
-          "decay_rate": 0.35,
-          "energy": 10,
-          "temperature": 189.53790988034265,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 1,
           "melt_point": 0,
           "ignition": 160,
@@ -1438,7 +1422,9 @@
           "malleability": 1,
           "brittleness": 1,
           "fertility": 3
-        }
+        },
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       }
     ],
     "knowledge": [],
@@ -1449,7 +1435,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 162873,
+      "xp": 163154,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -1465,17 +1451,41 @@
     "y": 465,
     "zone": "grass",
     "hp": 100,
-    "energy": 48.30000000001552,
-    "hunger": 0.12,
+    "energy": 35.90000000001959,
+    "hunger": 0.2,
     "temperature": 20,
     "inventory": [
       {
-        "name": "herbs",
-        "quantity": 2
+        "name": "Fermented fiber",
+        "quantity": 1,
+        "properties": {
+          "hardness": 1,
+          "conductivity": 0,
+          "flammability": 5,
+          "toxicity": 1,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 0.1,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 25.903825272303195,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 200,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 8,
+          "brittleness": 1,
+          "fertility": 0
+        },
+        "_reacted": true,
+        "_decayProgress": 0.01548061227736686
       },
       {
-        "name": "fiber",
-        "quantity": 2
+        "name": "Fermented flowers",
+        "quantity": 2,
+        "_reacted": true
       }
     ],
     "knowledge": [],
@@ -1486,7 +1496,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 164904,
+      "xp": 165589,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -1502,25 +1512,25 @@
     "y": 449,
     "zone": "coast",
     "hp": 100,
-    "energy": 46.600000000016365,
-    "hunger": 0.04,
+    "energy": 38.70000000002098,
+    "hunger": 0.12,
     "temperature": 20,
     "inventory": [
       {
-        "name": "bark",
+        "name": "Fermented bark",
         "quantity": 1,
         "properties": {
           "hardness": 3,
           "conductivity": 0,
-          "flammability": 6,
-          "toxicity": 0,
+          "flammability": 8,
+          "toxicity": 1,
           "luminosity": 0,
           "volatility": 0,
           "organic": 1,
           "weight": 0.5,
-          "decay_rate": 0.15,
-          "energy": 5,
-          "temperature": 204.68770487548704,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 220,
@@ -1529,73 +1539,83 @@
           "malleability": 3,
           "brittleness": 4,
           "fertility": 1
-        }
+        },
+        "_heatStage": "smoking",
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       },
       {
-        "name": "herbs",
+        "name": "Fermented Herbal Extract",
+        "quantity": 20,
+        "properties": {
+          "hardness": 0,
+          "conductivity": 1,
+          "flammability": 2,
+          "toxicity": 1,
+          "luminosity": 1,
+          "volatility": 1,
+          "organic": 1,
+          "weight": 0.1,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 30.903825272303195,
+          "resonance": 2,
+          "melt_point": 0,
+          "ignition": 0,
+          "sharpness": 0,
+          "solubility": 8,
+          "malleability": 0,
+          "brittleness": 0,
+          "fertility": 2
+        },
+        "_heatStage": "brewing",
+        "_state": "liquid",
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
+      },
+      {
+        "name": "Fermented Burning Fiber",
         "quantity": 20,
         "properties": {
           "hardness": 0,
           "conductivity": 0,
-          "flammability": 4,
-          "toxicity": 0,
-          "luminosity": 0,
+          "flammability": 10,
+          "toxicity": 1,
+          "luminosity": 4,
           "volatility": 1,
           "organic": 1,
           "weight": 0.05,
-          "decay_rate": 0.35,
-          "energy": 10,
-          "temperature": 204.68770487548704,
-          "resonance": 1,
-          "melt_point": 0,
-          "ignition": 160,
-          "sharpness": 0,
-          "solubility": 4,
-          "malleability": 1,
-          "brittleness": 1,
-          "fertility": 3
-        }
-      },
-      {
-        "name": "fiber",
-        "quantity": 20,
-        "properties": {
-          "hardness": 1,
-          "conductivity": 0,
-          "flammability": 5,
-          "toxicity": 0,
-          "luminosity": 0,
-          "volatility": 0,
-          "organic": 1,
-          "weight": 0.1,
-          "decay_rate": 0.1,
-          "energy": 2,
-          "temperature": 204.68770487548704,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 0,
           "melt_point": 0,
-          "ignition": 200,
+          "ignition": 0,
           "sharpness": 0,
           "solubility": 0,
-          "malleability": 8,
-          "brittleness": 1,
+          "malleability": 0,
+          "brittleness": 0,
           "fertility": 0
-        }
+        },
+        "_heatStage": "igniting",
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       },
       {
-        "name": "acorns",
+        "name": "Fermented acorns",
         "quantity": 1,
         "properties": {
           "hardness": 3,
           "conductivity": 0,
           "flammability": 3,
-          "toxicity": 0,
+          "toxicity": 1,
           "luminosity": 0,
           "volatility": 0,
           "organic": 1,
           "weight": 0.1,
-          "decay_rate": 0.2,
-          "energy": 12,
-          "temperature": 204.68770487548704,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 200,
@@ -1604,23 +1624,25 @@
           "malleability": 0,
           "brittleness": 5,
           "fertility": 5
-        }
+        },
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       },
       {
-        "name": "wood",
+        "name": "Fermented wood",
         "quantity": 3,
         "properties": {
           "hardness": 4,
           "conductivity": 0,
-          "flammability": 7,
-          "toxicity": 0,
+          "flammability": 8,
+          "toxicity": 1,
           "luminosity": 0,
           "volatility": 0,
           "organic": 1,
           "weight": 3,
-          "decay_rate": 0.1,
-          "energy": 8,
-          "temperature": 204.68770487548704,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 250,
@@ -1629,23 +1651,26 @@
           "malleability": 4,
           "brittleness": 3,
           "fertility": 1
-        }
+        },
+        "_heatStage": "smoking",
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       },
       {
-        "name": "shells",
+        "name": "Fermented shells",
         "quantity": 1,
         "properties": {
           "hardness": 4,
           "conductivity": 0,
           "flammability": 0,
-          "toxicity": 0,
+          "toxicity": 1,
           "luminosity": 1,
           "volatility": 0,
           "organic": 0.5,
           "weight": 0.2,
           "decay_rate": 0.05,
-          "energy": 1,
-          "temperature": 204.68770487548704,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 1,
           "melt_point": 500,
           "ignition": 0,
@@ -1654,23 +1679,25 @@
           "malleability": 0,
           "brittleness": 7,
           "fertility": 1
-        }
+        },
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       },
       {
-        "name": "driftwood",
+        "name": "Fermented driftwood",
         "quantity": 1,
         "properties": {
           "hardness": 3,
           "conductivity": 0,
           "flammability": 7,
-          "toxicity": 0,
+          "toxicity": 1,
           "luminosity": 0,
           "volatility": 0,
           "organic": 1,
           "weight": 1.5,
-          "decay_rate": 0.2,
-          "energy": 8,
-          "temperature": 204.68770487548704,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 200,
@@ -1679,7 +1706,9 @@
           "malleability": 4,
           "brittleness": 4,
           "fertility": 1
-        }
+        },
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       }
     ],
     "knowledge": [],
@@ -1690,7 +1719,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 168655,
+      "xp": 172295,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -1706,8 +1735,8 @@
     "y": 412,
     "zone": "coast",
     "hp": 100,
-    "energy": 28.600000000019087,
-    "hunger": 0.12,
+    "energy": 31.300000000024067,
+    "hunger": 1.7200000000000009,
     "temperature": 20,
     "inventory": [],
     "knowledge": [],
@@ -1734,25 +1763,25 @@
     "y": 449,
     "zone": "coast",
     "hp": 100,
-    "energy": 53.900000000016846,
-    "hunger": 0.12,
+    "energy": 49.00000000002157,
+    "hunger": 0.04,
     "temperature": 20,
     "inventory": [
       {
-        "name": "wood",
+        "name": "Fermented wood",
         "quantity": 1,
         "properties": {
           "hardness": 4,
           "conductivity": 0,
-          "flammability": 7,
-          "toxicity": 0,
+          "flammability": 8,
+          "toxicity": 1,
           "luminosity": 0,
           "volatility": 0,
           "organic": 1,
           "weight": 3,
-          "decay_rate": 0.1,
-          "energy": 8,
-          "temperature": 222.90099742816216,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 250,
@@ -1761,23 +1790,26 @@
           "malleability": 4,
           "brittleness": 3,
           "fertility": 1
-        }
+        },
+        "_heatStage": "smoking",
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       },
       {
-        "name": "bark",
+        "name": "Fermented bark",
         "quantity": 1,
         "properties": {
           "hardness": 3,
           "conductivity": 0,
-          "flammability": 6,
-          "toxicity": 0,
-          "luminosity": 0,
+          "flammability": 8,
+          "toxicity": 1,
+          "luminosity": 2,
           "volatility": 0,
           "organic": 1,
           "weight": 0.5,
-          "decay_rate": 0.15,
-          "energy": 5,
-          "temperature": 222.90099742816216,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 220,
@@ -1786,7 +1818,10 @@
           "malleability": 3,
           "brittleness": 4,
           "fertility": 1
-        }
+        },
+        "_heatStage": "igniting",
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       }
     ],
     "knowledge": [],
@@ -1797,7 +1832,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 177382,
+      "xp": 180806,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -1813,25 +1848,25 @@
     "y": 425,
     "zone": "coast",
     "hp": 100,
-    "energy": 30,
-    "hunger": 0.12,
+    "energy": 39,
+    "hunger": 0.04,
     "temperature": 20,
     "inventory": [
       {
-        "name": "fiber",
+        "name": "Fermented fiber",
         "quantity": 20,
         "properties": {
           "hardness": 1,
           "conductivity": 0,
           "flammability": 5,
-          "toxicity": 0,
+          "toxicity": 1,
           "luminosity": 0,
           "volatility": 0,
           "organic": 1,
           "weight": 0.1,
-          "decay_rate": 0.1,
-          "energy": 2,
-          "temperature": 22.90099742816215,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 200,
@@ -1840,23 +1875,25 @@
           "malleability": 8,
           "brittleness": 1,
           "fertility": 0
-        }
+        },
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       },
       {
-        "name": "herbs",
+        "name": "Fermented herbs",
         "quantity": 20,
         "properties": {
           "hardness": 0,
           "conductivity": 0,
           "flammability": 4,
-          "toxicity": 0,
+          "toxicity": 1,
           "luminosity": 0,
           "volatility": 1,
           "organic": 1,
           "weight": 0.05,
-          "decay_rate": 0.35,
-          "energy": 10,
-          "temperature": 22.90099742816215,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 1,
           "melt_point": 0,
           "ignition": 160,
@@ -1865,7 +1902,9 @@
           "malleability": 1,
           "brittleness": 1,
           "fertility": 3
-        }
+        },
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       }
     ],
     "knowledge": [],
@@ -1876,7 +1915,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 51348,
+      "xp": 52128,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -1892,50 +1931,54 @@
     "y": 449,
     "zone": "coast",
     "hp": 100,
-    "energy": 37.50000000002222,
-    "hunger": 0.16,
+    "energy": 55.80000000002836,
+    "hunger": 0.08,
     "temperature": 20,
     "inventory": [
       {
-        "name": "herbs",
+        "name": "Fermented Herbal Extract",
         "quantity": 16,
         "properties": {
           "hardness": 0,
-          "conductivity": 0,
-          "flammability": 4,
-          "toxicity": 0,
-          "luminosity": 0,
+          "conductivity": 1,
+          "flammability": 2,
+          "toxicity": 1,
+          "luminosity": 1,
           "volatility": 1,
           "organic": 1,
-          "weight": 0.05,
-          "decay_rate": 0.35,
-          "energy": 10,
-          "temperature": 204.68770487548704,
-          "resonance": 1,
+          "weight": 0.1,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 30.903825272303195,
+          "resonance": 2,
           "melt_point": 0,
-          "ignition": 160,
+          "ignition": 0,
           "sharpness": 0,
-          "solubility": 4,
-          "malleability": 1,
-          "brittleness": 1,
-          "fertility": 3
-        }
+          "solubility": 8,
+          "malleability": 0,
+          "brittleness": 0,
+          "fertility": 2
+        },
+        "_heatStage": "brewing",
+        "_state": "liquid",
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       },
       {
-        "name": "wood",
+        "name": "Fermented wood",
         "quantity": 1,
         "properties": {
           "hardness": 4,
           "conductivity": 0,
-          "flammability": 7,
-          "toxicity": 0,
+          "flammability": 8,
+          "toxicity": 1,
           "luminosity": 0,
           "volatility": 0,
           "organic": 1,
           "weight": 3,
-          "decay_rate": 0.1,
-          "energy": 8,
-          "temperature": 204.68770487548704,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 250,
@@ -1944,32 +1987,38 @@
           "malleability": 4,
           "brittleness": 3,
           "fertility": 1
-        }
+        },
+        "_heatStage": "smoking",
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       },
       {
-        "name": "fiber",
+        "name": "Fermented Burning Fiber",
         "quantity": 20,
         "properties": {
-          "hardness": 1,
+          "hardness": 0,
           "conductivity": 0,
-          "flammability": 5,
-          "toxicity": 0,
-          "luminosity": 0,
-          "volatility": 0,
+          "flammability": 10,
+          "toxicity": 1,
+          "luminosity": 4,
+          "volatility": 1,
           "organic": 1,
-          "weight": 0.1,
-          "decay_rate": 0.1,
-          "energy": 2,
-          "temperature": 204.68770487548704,
+          "weight": 0.05,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 0,
           "melt_point": 0,
-          "ignition": 200,
+          "ignition": 0,
           "sharpness": 0,
           "solubility": 0,
-          "malleability": 8,
-          "brittleness": 1,
+          "malleability": 0,
+          "brittleness": 0,
           "fertility": 0
-        }
+        },
+        "_heatStage": "igniting",
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       }
     ],
     "knowledge": [],
@@ -1996,25 +2045,25 @@
     "y": 465,
     "zone": "grass",
     "hp": 100,
-    "energy": 56.60000000001491,
-    "hunger": 0.04,
+    "energy": 50.800000000019054,
+    "hunger": 0.08,
     "temperature": 20,
     "inventory": [
       {
-        "name": "flowers",
-        "quantity": 18,
+        "name": "Fermented flowers",
+        "quantity": 14,
         "properties": {
           "hardness": 0,
           "conductivity": 0,
           "flammability": 4,
-          "toxicity": 0,
+          "toxicity": 1,
           "luminosity": 1,
           "volatility": 0,
           "organic": 1,
           "weight": 0.05,
-          "decay_rate": 0.4,
-          "energy": 5,
-          "temperature": 17.900997428162146,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 25.903825272303195,
           "resonance": 2,
           "melt_point": 0,
           "ignition": 150,
@@ -2023,23 +2072,25 @@
           "malleability": 1,
           "brittleness": 1,
           "fertility": 4
-        }
+        },
+        "_reacted": true,
+        "_decayProgress": 0.01548061227736686
       },
       {
-        "name": "fiber",
-        "quantity": 18,
+        "name": "Fermented fiber",
+        "quantity": 17,
         "properties": {
           "hardness": 1,
           "conductivity": 0,
           "flammability": 5,
-          "toxicity": 0,
+          "toxicity": 1,
           "luminosity": 0,
           "volatility": 0,
           "organic": 1,
           "weight": 0.1,
-          "decay_rate": 0.1,
-          "energy": 2,
-          "temperature": 17.900997428162146,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 25.903825272303195,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 200,
@@ -2048,23 +2099,25 @@
           "malleability": 8,
           "brittleness": 1,
           "fertility": 0
-        }
+        },
+        "_reacted": true,
+        "_decayProgress": 0.01548061227736686
       },
       {
-        "name": "herbs",
-        "quantity": 15,
+        "name": "Fermented herbs",
+        "quantity": 13,
         "properties": {
           "hardness": 0,
           "conductivity": 0,
           "flammability": 4,
-          "toxicity": 0,
+          "toxicity": 1,
           "luminosity": 0,
           "volatility": 1,
           "organic": 1,
           "weight": 0.05,
-          "decay_rate": 0.35,
-          "energy": 10,
-          "temperature": 17.900997428162146,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 25.903825272303195,
           "resonance": 1,
           "melt_point": 0,
           "ignition": 160,
@@ -2073,7 +2126,18 @@
           "malleability": 1,
           "brittleness": 1,
           "fertility": 3
-        }
+        },
+        "_reacted": true,
+        "_decayProgress": 0.01548061227736686
+      },
+      {
+        "name": "Fermented fiber",
+        "quantity": 1,
+        "_reacted": true
+      },
+      {
+        "name": "Fermented flowers",
+        "quantity": 1
       }
     ],
     "knowledge": [],
@@ -2084,12 +2148,12 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 163376,
+      "xp": 163747,
       "level": 11,
       "title": "Crafter ⚒️"
     },
     "ticksBorn": 3740,
-    "coins": 788
+    "coins": 811
   },
   "4a5c216f-8c5a-4281-9d11-b4a9dff1c95d": {
     "id": "4a5c216f-8c5a-4281-9d11-b4a9dff1c95d",
@@ -2100,25 +2164,25 @@
     "y": 413,
     "zone": "coast",
     "hp": 100,
-    "energy": 34.50000000000729,
+    "energy": 23.50000000001044,
     "hunger": 0.04,
     "temperature": 20,
     "inventory": [
       {
-        "name": "driftwood",
+        "name": "Fermented driftwood",
         "quantity": 20,
         "properties": {
           "hardness": 3,
           "conductivity": 0,
           "flammability": 7,
-          "toxicity": 0,
+          "toxicity": 1,
           "luminosity": 0,
           "volatility": 0,
           "organic": 1,
           "weight": 1.5,
-          "decay_rate": 0.2,
-          "energy": 8,
-          "temperature": 22.90099742816215,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 200,
@@ -2127,23 +2191,25 @@
           "malleability": 4,
           "brittleness": 4,
           "fertility": 1
-        }
+        },
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       },
       {
-        "name": "shells",
+        "name": "Fermented shells",
         "quantity": 20,
         "properties": {
           "hardness": 4,
           "conductivity": 0,
           "flammability": 0,
-          "toxicity": 0,
+          "toxicity": 1,
           "luminosity": 1,
           "volatility": 0,
           "organic": 0.5,
           "weight": 0.2,
           "decay_rate": 0.05,
-          "energy": 1,
-          "temperature": 22.90099742816215,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 1,
           "melt_point": 500,
           "ignition": 0,
@@ -2152,7 +2218,9 @@
           "malleability": 0,
           "brittleness": 7,
           "fertility": 1
-        }
+        },
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       },
       {
         "name": "sand",
@@ -2168,7 +2236,7 @@
           "weight": 2,
           "decay_rate": 0,
           "energy": 0,
-          "temperature": 22.90099742816215,
+          "temperature": 30.903825272303195,
           "resonance": 0,
           "melt_point": 1200,
           "ignition": 0,
@@ -2204,25 +2272,25 @@
     "y": 412,
     "zone": "coast",
     "hp": 100,
-    "energy": 41.8000000000232,
-    "hunger": 0.2,
+    "energy": 44.10000000002937,
+    "hunger": 0.32,
     "temperature": 20,
     "inventory": [
       {
-        "name": "driftwood",
+        "name": "Fermented driftwood",
         "quantity": 1,
         "properties": {
           "hardness": 3,
           "conductivity": 0,
           "flammability": 7,
-          "toxicity": 0,
+          "toxicity": 1,
           "luminosity": 0,
           "volatility": 0,
           "organic": 1,
           "weight": 1.5,
-          "decay_rate": 0.2,
-          "energy": 8,
-          "temperature": 22.90099742816215,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 200,
@@ -2231,23 +2299,25 @@
           "malleability": 4,
           "brittleness": 4,
           "fertility": 1
-        }
+        },
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       },
       {
-        "name": "shells",
+        "name": "Fermented shells",
         "quantity": 1,
         "properties": {
           "hardness": 4,
           "conductivity": 0,
           "flammability": 0,
-          "toxicity": 0,
+          "toxicity": 1,
           "luminosity": 1,
           "volatility": 0,
           "organic": 0.5,
           "weight": 0.2,
           "decay_rate": 0.05,
-          "energy": 1,
-          "temperature": 22.90099742816215,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 1,
           "melt_point": 500,
           "ignition": 0,
@@ -2256,7 +2326,9 @@
           "malleability": 0,
           "brittleness": 7,
           "fertility": 1
-        }
+        },
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       },
       {
         "name": "sand",
@@ -2272,7 +2344,7 @@
           "weight": 2,
           "decay_rate": 0,
           "energy": 0,
-          "temperature": 22.90099742816215,
+          "temperature": 30.903825272303195,
           "resonance": 0,
           "melt_point": 1200,
           "ignition": 0,
@@ -2302,27 +2374,45 @@
   "07f8fc77-5f5e-4355-a0d6-51ab39725d9b": {
     "id": "07f8fc77-5f5e-4355-a0d6-51ab39725d9b",
     "name": "Agent-29",
-    "tileX": 1202,
-    "tileY": 435,
-    "x": 1202,
-    "y": 435,
-    "zone": "coast",
+    "tileX": 1181,
+    "tileY": 412,
+    "x": 1181,
+    "y": 412,
+    "zone": "sand",
     "hp": 100,
-    "energy": 43.600000000018056,
-    "hunger": 0.04,
+    "energy": 34.30000000002268,
+    "hunger": 0.08,
     "temperature": 20,
     "inventory": [
       {
-        "name": "fiber",
-        "quantity": 1
+        "name": "Fermented herbs",
+        "quantity": 1,
+        "_reacted": true
       },
       {
-        "name": "herbs",
-        "quantity": 5
-      },
-      {
-        "name": "shells",
-        "quantity": 1
+        "name": "sand",
+        "quantity": 1,
+        "properties": {
+          "hardness": 2,
+          "conductivity": 0,
+          "flammability": 0,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 0,
+          "weight": 2,
+          "decay_rate": 0,
+          "energy": 0,
+          "temperature": 43.903825272303195,
+          "resonance": 0,
+          "melt_point": 1200,
+          "ignition": 0,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 3,
+          "brittleness": 0,
+          "fertility": 0
+        }
       }
     ],
     "knowledge": [],
@@ -2333,7 +2423,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 166288,
+      "xp": 166380,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -2343,22 +2433,23 @@
   "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
     "id": "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a",
     "name": "Agent-30",
-    "tileX": 1202,
-    "tileY": 436,
-    "x": 1202,
-    "y": 436,
-    "zone": "coast",
+    "tileX": 1181,
+    "tileY": 412,
+    "x": 1181,
+    "y": 412,
+    "zone": "sand",
     "hp": 100,
-    "energy": 45.00000000001907,
-    "hunger": 0.24000000000000002,
+    "energy": 28.300000000023783,
+    "hunger": 0.32,
     "temperature": 20,
     "inventory": [
       {
-        "name": "fiber",
-        "quantity": 3
+        "name": "Fermented herbs",
+        "quantity": 1,
+        "_reacted": true
       },
       {
-        "name": "sand",
+        "name": "Fermented herbs",
         "quantity": 1
       }
     ],
@@ -2370,12 +2461,12 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 165688,
+      "xp": 165793,
       "level": 11,
       "title": "Crafter ⚒️"
     },
     "ticksBorn": 3740,
-    "coins": 453
+    "coins": 478
   },
   "15865a2d-63b5-4c3d-954b-59accdc57c87": {
     "id": "15865a2d-63b5-4c3d-954b-59accdc57c87",
@@ -2386,8 +2477,8 @@
     "y": 412,
     "zone": "coast",
     "hp": 100,
-    "energy": 30.700000000019966,
-    "hunger": 0.2,
+    "energy": 32.70000000002513,
+    "hunger": 0.08,
     "temperature": 20,
     "inventory": [],
     "knowledge": [],
@@ -2414,50 +2505,53 @@
     "y": 449,
     "zone": "coast",
     "hp": 100,
-    "energy": 30.40000000001956,
-    "hunger": 0.24000000000000002,
+    "energy": 32.70000000002467,
+    "hunger": 0.16,
     "temperature": 20,
     "inventory": [
       {
-        "name": "fiber",
-        "quantity": 20,
-        "properties": {
-          "hardness": 1,
-          "conductivity": 0,
-          "flammability": 5,
-          "toxicity": 0,
-          "luminosity": 0,
-          "volatility": 0,
-          "organic": 1,
-          "weight": 0.1,
-          "decay_rate": 0.1,
-          "energy": 2,
-          "temperature": 222.90099742816216,
-          "resonance": 0,
-          "melt_point": 0,
-          "ignition": 200,
-          "sharpness": 0,
-          "solubility": 0,
-          "malleability": 8,
-          "brittleness": 1,
-          "fertility": 0
-        }
-      },
-      {
-        "name": "herbs",
+        "name": "Fermented Burning Fiber",
         "quantity": 20,
         "properties": {
           "hardness": 0,
           "conductivity": 0,
-          "flammability": 4,
-          "toxicity": 0,
+          "flammability": 10,
+          "toxicity": 1,
+          "luminosity": 4,
+          "volatility": 1,
+          "organic": 1,
+          "weight": 0.05,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 30.903825272303195,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 0,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 0,
+          "brittleness": 0,
+          "fertility": 0
+        },
+        "_heatStage": "igniting",
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
+      },
+      {
+        "name": "Fermented herbs",
+        "quantity": 20,
+        "properties": {
+          "hardness": 0,
+          "conductivity": 0,
+          "flammability": 6,
+          "toxicity": 1,
           "luminosity": 0,
           "volatility": 1,
           "organic": 1,
           "weight": 0.05,
-          "decay_rate": 0.35,
-          "energy": 10,
-          "temperature": 222.90099742816216,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 1,
           "melt_point": 0,
           "ignition": 160,
@@ -2466,23 +2560,26 @@
           "malleability": 1,
           "brittleness": 1,
           "fertility": 3
-        }
+        },
+        "_heatStage": "burning",
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       },
       {
-        "name": "wood",
+        "name": "Fermented wood",
         "quantity": 5,
         "properties": {
           "hardness": 4,
           "conductivity": 0,
-          "flammability": 7,
-          "toxicity": 0,
+          "flammability": 8,
+          "toxicity": 1,
           "luminosity": 0,
           "volatility": 0,
           "organic": 1,
           "weight": 3,
-          "decay_rate": 0.1,
-          "energy": 8,
-          "temperature": 222.90099742816216,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 30.903825272303195,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 250,
@@ -2491,7 +2588,10 @@
           "malleability": 4,
           "brittleness": 3,
           "fertility": 1
-        }
+        },
+        "_heatStage": "smoking",
+        "_reacted": true,
+        "_decayProgress": 0.01623061227736686
       }
     ],
     "knowledge": [],

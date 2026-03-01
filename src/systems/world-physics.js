@@ -232,7 +232,12 @@ function tickWater(worldGrid, weatherData, gameTime) {
 const TIMED_REACTIONS = {
   fermentation: {
     duration: 60, // ticks (~30 seconds)
-    check: (item) => (item.properties?.organic ?? 0) >= 0.5 && item._state !== 'solid',
+    // Only ferment raw organic items in swamp/wet zones — needs moisture
+    check: (item, ambientTemp, nearFire, isWet) => {
+      if (item._reacted) return false; // already transformed once
+      if (!isWet) return false; // needs wet environment
+      return (item.properties?.organic ?? 0) >= 0.5 && (item.properties?.solubility ?? 0) >= 2;
+    },
     result: (item) => ({
       name: `Fermented ${item.name}`,
       propOverrides: { toxicity: 1, energy: 18, decay_rate: 0.05 },
@@ -240,7 +245,11 @@ const TIMED_REACTIONS = {
   },
   drying: {
     duration: 40, // ticks (~20 seconds)
-    check: (item, ambientTemp) => ambientTemp > 25 && (item.properties?.organic ?? 0) >= 0.5,
+    // Only in hot+dry biomes (desert, sand) with high temp
+    check: (item, ambientTemp) => {
+      if (item._reacted) return false;
+      return ambientTemp > 35 && (item.properties?.organic ?? 0) >= 0.5 && (item.properties?.decay_rate ?? 0) > 0.15;
+    },
     result: (item) => ({
       name: `Dried ${item.name}`,
       propOverrides: { weight: (item.properties?.weight ?? 1) * 0.5, decay_rate: 0.01, flammability: (item.properties?.flammability ?? 0) + 2 },
@@ -248,7 +257,10 @@ const TIMED_REACTIONS = {
   },
   smoking: {
     duration: 80, // ticks (~40 seconds) — needs nearby fire
-    check: (item, ambientTemp, nearFire) => nearFire && (item.properties?.organic ?? 0) >= 0.5,
+    check: (item, ambientTemp, nearFire) => {
+      if (item._reacted) return false;
+      return nearFire && (item.properties?.organic ?? 0) >= 0.5 && (item.properties?.decay_rate ?? 0) > 0.1;
+    },
     result: (item) => ({
       name: `Smoked ${item.name}`,
       propOverrides: { decay_rate: 0.005, energy: (item.properties?.energy ?? 5) + 5, toxicity: 0 },
@@ -256,7 +268,10 @@ const TIMED_REACTIONS = {
   },
   rusting: {
     duration: 200, // ticks (~100 seconds)
-    check: (item, ambientTemp, nearFire, isWet) => isWet && (item.properties?.conductivity ?? 0) >= 4 && !item.properties?.organic,
+    check: (item, ambientTemp, nearFire, isWet) => {
+      if (item._reacted) return false;
+      return isWet && (item.properties?.conductivity ?? 0) >= 4 && (item.properties?.organic ?? 0) < 0.5;
+    },
     result: (item) => ({
       name: `Rusted ${item.name}`,
       propOverrides: { hardness: Math.max(0, (item.properties?.hardness ?? 5) - 2), brittleness: (item.properties?.brittleness ?? 0) + 3 },
@@ -279,18 +294,20 @@ function tickReactions(agent, ambientTemp, nearFire, isWet) {
       const def = TIMED_REACTIONS[item._reaction.type];
       if (def && item._reaction.progress >= def.duration) {
         // Reaction complete!
+        const reactionType = item._reaction.type;
         const result = def.result(item);
         const oldName = item.name;
         item.name = result.name;
         if (result.propOverrides && item.properties) {
           Object.assign(item.properties, result.propOverrides);
         }
+        item._reacted = true; // prevent re-reaction
         delete item._reaction;
         results.push({
           agentId: agent.id,
           item,
           completed: true,
-          message: `${oldName} has ${item._reaction?.type || 'transformed'} into ${result.name}!`,
+          message: `${oldName} has ${reactionType} into ${result.name}!`,
         });
       }
       continue;

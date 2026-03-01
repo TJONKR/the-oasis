@@ -34,6 +34,10 @@ import { initOracle } from './src/systems/oracle.js';
 import { registerGatheredResources, getPracticalRules, GATHERED_RESOURCE_PROPERTIES } from './src/systems/physics.js';
 import { getAmbientTemp, addWorldFire, tickFires, getActiveFires, hasNearbyFire, coolItems, getEffectiveHeatV2, getToolAmplifier } from './src/systems/temperature.js';
 import { initWorldPhysics } from './src/systems/world-physics.js';
+import { initDecayLifecycle } from './src/systems/decay-lifecycle.js';
+import { initOrganicGrowth } from './src/systems/organic-growth.js';
+import { initGasSystem } from './src/systems/gas-system.js';
+import { initLightning } from './src/systems/lightning.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -167,6 +171,8 @@ wss.on('connection', (ws) => {
     agents: [...agents.values()].map(serializeAgent),
     news: worldNews.items.slice(0, 20),
     fires: getActiveFires(),
+    gasClouds: gasSystem.getGasClouds(),
+    growthSites: organicGrowth.getGrowthSites(),
   }));
 
   ws.on('message', (raw) => {
@@ -277,6 +283,21 @@ for (const [id, agent] of agents) {
 shared.worldGrid = worldGrid;
 const worldPhysics = initWorldPhysics(shared);
 
+// Decay & Lifecycle
+const decayLifecycle = initDecayLifecycle(shared);
+shared.decayLifecycle = decayLifecycle;
+
+// Organic Growth
+const organicGrowth = initOrganicGrowth(shared);
+shared.organicGrowth = organicGrowth;
+
+// Gas & Smoke
+const gasSystem = initGasSystem(shared);
+shared.gasSystem = gasSystem;
+
+// Lightning
+const lightningSystem = initLightning(shared);
+
 console.log('   ✅ All systems initialized');
 
 // ═══════════════════════════════════════
@@ -335,6 +356,18 @@ function simulationTick() {
   const expiredFires = tickFires();
   for (const f of expiredFires) {
     broadcast({ type: 'tileEffect', effect: 'fireOut', tileX: f.tileX, tileY: f.tileY, duration: 1000 });
+    // Burned-out fires leave smoke and mark for regrowth
+    if (gasSystem) gasSystem.emitGas('smoke', f.tileX, f.tileY, 0.6);
+    if (organicGrowth) {
+      const zone = worldGrid?.getZone?.(f.tileX, f.tileY) || 'grass';
+      organicGrowth.markFireRegrowth(f.tileX, f.tileY, zone);
+    }
+  }
+  // Active fires emit smoke every 10 ticks
+  if (tick % 10 === 0) {
+    for (const fire of getActiveFires()) {
+      if (gasSystem && fire.heat > 80) gasSystem.emitGas('smoke', fire.tileX, fire.tileY, 0.3);
+    }
   }
   
   // 2. Ecosystem (resource respawn etc)
@@ -373,6 +406,12 @@ function simulationTick() {
   const weatherNow = weatherSystem.getCurrentWeather?.() || {};
   worldPhysics.tickWorld(tick, gameTime, weatherNow);
   
+  // 3c. Decay, growth, gas, lightning
+  decayLifecycle.tick(tick);
+  organicGrowth.tick(tick, gameTime);
+  gasSystem.tick(tick, weatherNow);
+  lightningSystem.tick(tick, gameTime, weatherNow);
+  
   // 4. World Master (events, narratives) — less frequent
   if (tick % 50 === 0 && worldMaster.tick) {
     worldMaster.tick();
@@ -402,8 +441,12 @@ function simulationTick() {
         mind: m ? { action: m.currentAction, mood: m.mood, intent: m.intent ? { action: m.intent.action, reason: m.intent.reason } : null } : null });
     }
     const tickMsg = { type: 'tick', tick, agents: positions };
-    // Send fires every 10 ticks
-    if (tick % 10 === 0) tickMsg.fires = getActiveFires();
+    // Send environmental state every 10 ticks
+    if (tick % 10 === 0) {
+      tickMsg.fires = getActiveFires();
+      tickMsg.gasClouds = gasSystem.getGasClouds();
+      tickMsg.growthSites = organicGrowth.getGrowthSites();
+    }
     broadcast(tickMsg);
   }
   

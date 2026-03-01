@@ -76,6 +76,9 @@ let agentVisuals = {}; // id → { renderX, renderY } for smooth lerping
 let news = [];
 let tileEffects = []; // { type, x, y, startTime, duration, particles[] }
 let worldFires = []; // persistent fires from server { tileX, tileY, heat }
+let gasClouds = []; // { tileX, tileY, type, density, color }
+let growthSites = []; // { tileX, tileY, progress, plantType }
+let lightningFlash = 0; // timestamp of last flash
 let camera = { x: 0, y: 0, zoom: 4 };
 let dragging = false, dragStart = {x:0,y:0}, cameraStart = {x:0,y:0};
 let ws = null;
@@ -99,6 +102,8 @@ function connect() {
       agents = msg.agents || [];
       news = msg.news || [];
       worldFires = msg.fires || [];
+      gasClouds = msg.gasClouds || [];
+      growthSites = msg.growthSites || [];
       updateHUD(msg.tick);
       updateAgentList();
       updateNewsList();
@@ -112,6 +117,8 @@ function connect() {
         agentVisuals[a.id].targetY = a.tileY;
       }
       if (msg.fires) worldFires = msg.fires;
+      if (msg.gasClouds) gasClouds = msg.gasClouds;
+      if (msg.growthSites) growthSites = msg.growthSites;
       if (msg.gameTime) updateHUD(msg.tick, msg.gameTime, msg.weather);
       updateAgentList();
     } else if (msg.type === 'agent_spawn') {
@@ -130,6 +137,10 @@ function connect() {
     } else if (msg.type === 'craftResult') {
       const ax = agents.find(a => a.id === msg.agentId);
       if (ax) spawnEffect('craft', ax.tileX, ax.tileY, 1500);
+    } else if (msg.type === 'lightning') {
+      // Screen flash + bolt effect
+      lightningFlash = performance.now();
+      spawnEffect('explosion', msg.tileX, msg.tileY, 2000);
     }
   };
 }
@@ -451,6 +462,38 @@ function render() {
     }
   }
   
+  // Draw gas clouds
+  for (const gas of gasClouds) {
+    const gx = gas.tileX * T2 + T2/2;
+    const gy = gas.tileY * T2 + T2/2;
+    const r = T2 * (1 + gas.density);
+    const [cr, cg, cb] = gas.color || [120,120,120];
+    const alpha = Math.min(0.5, gas.density * 0.35);
+    const grad = ctx.createRadialGradient(gx, gy, 0, gx, gy, r);
+    grad.addColorStop(0, `rgba(${cr},${cg},${cb},${alpha.toFixed(2)})`);
+    grad.addColorStop(1, `rgba(${cr},${cg},${cb},0)`);
+    ctx.fillStyle = grad;
+    ctx.beginPath(); ctx.arc(gx, gy, r, 0, Math.PI * 2); ctx.fill();
+  }
+  
+  // Draw growth sites (small green dots that grow)
+  for (const site of growthSites) {
+    const sx = site.tileX * T2 + T2/2;
+    const sy = site.tileY * T2 + T2/2;
+    const p = Math.max(0, site.progress);
+    const size = 1 + p * 4; // grows from 1px to 5px
+    const green = Math.floor(120 + p * 135);
+    ctx.fillStyle = `rgba(60,${green},40,${(0.4 + p * 0.5).toFixed(2)})`;
+    ctx.beginPath(); ctx.arc(sx, sy, size, 0, Math.PI * 2); ctx.fill();
+    // Tiny leaf shape at higher progress
+    if (p > 0.5) {
+      ctx.fillStyle = `rgba(40,${green},30,0.6)`;
+      ctx.beginPath();
+      ctx.ellipse(sx, sy - size, size * 0.6, size * 1.2, 0, 0, Math.PI * 2);
+      ctx.fill();
+    }
+  }
+  
   // Draw tile effects (fire, explosions, sparkles)
   if (tileEffects.length > 0) {
     updateAndDrawEffects(ctx, T2);
@@ -458,6 +501,18 @@ function render() {
   
   ctx.restore();
 
+  // Lightning flash overlay
+  if (lightningFlash) {
+    const elapsed = performance.now() - lightningFlash;
+    if (elapsed < 300) {
+      const alpha = (1 - elapsed / 300) * 0.6;
+      ctx.fillStyle = `rgba(220,230,255,${alpha.toFixed(2)})`;
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+    } else if (elapsed > 1000) {
+      lightningFlash = 0;
+    }
+  }
+  
   // HUD updates
   document.getElementById('hud-zoom').textContent = camera.zoom.toFixed(1) + 'x';
   updateMinimap();
