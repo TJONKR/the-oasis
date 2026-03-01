@@ -39,6 +39,7 @@ import { initOrganicGrowth } from './src/systems/organic-growth.js';
 import { initGasSystem } from './src/systems/gas-system.js';
 import { initLightning } from './src/systems/lightning.js';
 import { initInnerMonologue } from './src/systems/inner-monologue.js';
+import { setupAgentAPI } from './src/agent-api.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -304,6 +305,15 @@ const innerMonologue = initInnerMonologue(shared);
 innerMonologue.setupRoutes(app);
 shared.innerMonologue = innerMonologue;
 
+// External Agent API
+shared.spawnAgent = spawnAgent;
+shared.serializeAgent = serializeAgent;
+shared.worldNews = worldNews;
+shared.getProperties = getProperties;
+shared.GATHERED_RESOURCE_PROPERTIES = GATHERED_RESOURCE_PROPERTIES;
+// shared.experiments already set above
+setupAgentAPI(app, shared);
+
 console.log('   ✅ All systems initialized');
 
 // ═══════════════════════════════════════
@@ -387,7 +397,8 @@ function simulationTick() {
     worldGrid.migrateAgentPosition(agent);
     
     // Agent Intelligence — autonomous decisions
-    agentAI.tickAgent(agent);
+    // Skip autonomous AI for externally controlled agents
+    if (!agent.external) agentAI.tickAgent(agent);
     
     // Survival tick (energy, hunger, temperature)
     if (survivalSystem.tick) survivalSystem.tick(agent);

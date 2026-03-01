@@ -8,8 +8,8 @@
     "y": 401,
     "zone": "coast",
     "hp": 100,
-    "energy": 42.5,
-    "hunger": 0.28,
+    "energy": 49.5,
+    "hunger": 0.08,
     "temperature": 20,
     "inventory": [
       {
@@ -37,7 +37,7 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       },
       {
         "name": "Fermented Fermented shells",
@@ -64,7 +64,7 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       }
     ],
     "knowledge": [],
@@ -75,7 +75,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 29177,
+      "xp": 30417,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -91,8 +91,8 @@
     "y": 414,
     "zone": "coast",
     "hp": 100,
-    "energy": 52.5,
-    "hunger": 0.6,
+    "energy": 55.5,
+    "hunger": 0.24000000000000002,
     "temperature": 20,
     "inventory": [
       {
@@ -120,7 +120,7 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       },
       {
         "name": "Fermented Fermented wood",
@@ -147,7 +147,7 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       },
       {
         "name": "Fermented Fermented coconuts",
@@ -174,7 +174,7 @@
           "fertility": 2
         },
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       }
     ],
     "knowledge": [],
@@ -185,7 +185,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 88138,
+      "xp": 93858,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -201,8 +201,8 @@
     "y": 412,
     "zone": "sand",
     "hp": 100,
-    "energy": 56.10000000002799,
-    "hunger": 0.2,
+    "energy": 54.700000000036184,
+    "hunger": 0.43999999999999995,
     "temperature": 20,
     "inventory": [],
     "knowledge": [],
@@ -213,7 +213,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 166774,
+      "xp": 166799,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -229,8 +229,8 @@
     "y": 412,
     "zone": "coast",
     "hp": 100,
-    "energy": 56.10000000002975,
-    "hunger": 0.28,
+    "energy": 56.80000000003757,
+    "hunger": 0.16,
     "temperature": 20,
     "inventory": [
       {
@@ -258,7 +258,7 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       }
     ],
     "knowledge": [],
@@ -285,8 +285,8 @@
     "y": 450,
     "zone": "grass",
     "hp": 100,
-    "energy": 51.90000000003552,
-    "hunger": 0.8400000000000002,
+    "energy": 53.70000000004506,
+    "hunger": 0.4799999999999999,
     "temperature": 20,
     "inventory": [
       {
@@ -315,11 +315,11 @@
         },
         "_heatStage": "smoking",
         "_reacted": true,
-        "_decayProgress": 0.67548376273757
+        "_decayProgress": 0.9554149358704984
       },
       {
         "name": "Fermented Fermented Herbal Extract",
-        "quantity": 20,
+        "quantity": 19,
         "properties": {
           "hardness": 0,
           "conductivity": 1,
@@ -344,7 +344,7 @@
         "_heatStage": "brewing",
         "_state": "liquid",
         "_reacted": true,
-        "_decayProgress": 0.67548376273757
+        "_decayProgress": 0.9554149358704984
       },
       {
         "name": "Fermented Fermented acorns",
@@ -371,7 +371,7 @@
           "fertility": 5
         },
         "_reacted": true,
-        "_decayProgress": 0.67548376273757
+        "_decayProgress": 0.9554149358704984
       },
       {
         "name": "Fermented Fermented Burning Fiber",
@@ -399,7 +399,7 @@
         },
         "_heatStage": "igniting",
         "_reacted": true,
-        "_decayProgress": 0.67548376273757
+        "_decayProgress": 0.9554149358704984
       }
     ],
     "knowledge": [],
@@ -410,7 +410,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 166392,
+      "xp": 166397,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -426,8 +426,8 @@
     "y": 440,
     "zone": "coast",
     "hp": 100,
-    "energy": 51,
-    "hunger": 0.04,
+    "energy": 49,
+    "hunger": 0.2,
     "temperature": 20,
     "inventory": [
       {
@@ -455,7 +455,7 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       },
       {
         "name": "Fermented Fermented shells",
@@ -482,7 +482,7 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       }
     ],
     "knowledge": [],
@@ -509,8 +509,8 @@
     "y": 245,
     "zone": "coast",
     "hp": 100,
-    "energy": 51.30000000000403,
-    "hunger": 39.91999999999913,
+    "energy": 54.30000000000403,
+    "hunger": 24.599999999999653,
     "temperature": 20,
     "inventory": [
       {
@@ -527,7 +527,7 @@
           "weight": 8,
           "decay_rate": 0,
           "energy": 0,
-          "temperature": 19.76037944301207,
+          "temperature": 19.760379443153994,
           "resonance": 0.5,
           "melt_point": 1200,
           "ignition": 0,
@@ -563,8 +563,8 @@
     "y": 404,
     "zone": "coast",
     "hp": 100,
-    "energy": 51.40000000000846,
-    "hunger": 0.16,
+    "energy": 54.90000000000846,
+    "hunger": 0.08,
     "temperature": 20,
     "inventory": [
       {
@@ -581,7 +581,7 @@
           "weight": 0.5,
           "decay_rate": 0,
           "energy": 5,
-          "temperature": 20.10960180302051,
+          "temperature": 19.805731486586154,
           "resonance": 0,
           "melt_point": 1400,
           "ignition": 0,
@@ -606,7 +606,7 @@
           "weight": 8,
           "decay_rate": 0,
           "energy": 0,
-          "temperature": 20.10960180302051,
+          "temperature": 19.805731486586154,
           "resonance": 0.5,
           "melt_point": 1200,
           "ignition": 0,
@@ -626,7 +626,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 191470,
+      "xp": 205348,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -642,8 +642,8 @@
     "y": 412,
     "zone": "sand",
     "hp": 100,
-    "energy": 54.700000000015905,
-    "hunger": 0.43999999999999995,
+    "energy": 56.1000000000242,
+    "hunger": 0.28,
     "temperature": 20,
     "inventory": [],
     "knowledge": [],
@@ -654,7 +654,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 162979,
+      "xp": 162994,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -670,8 +670,8 @@
     "y": 412,
     "zone": "coast",
     "hp": 100,
-    "energy": 51.200000000036994,
-    "hunger": 0.9200000000000003,
+    "energy": 49.80000000004665,
+    "hunger": 1.1200000000000003,
     "temperature": 20,
     "inventory": [
       {
@@ -699,7 +699,7 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       }
     ],
     "knowledge": [],
@@ -726,8 +726,8 @@
     "y": 395,
     "zone": "coast",
     "hp": 100,
-    "energy": 52,
-    "hunger": 0.08,
+    "energy": 49,
+    "hunger": 0.16,
     "temperature": 20,
     "inventory": [
       {
@@ -755,7 +755,7 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       },
       {
         "name": "Fermented Fermented driftwood",
@@ -782,7 +782,7 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       }
     ],
     "knowledge": [],
@@ -809,8 +809,8 @@
     "y": 438,
     "zone": "coast",
     "hp": 100,
-    "energy": 46,
-    "hunger": 0.2,
+    "energy": 49,
+    "hunger": 0.16,
     "temperature": 20,
     "inventory": [
       {
@@ -838,7 +838,7 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       },
       {
         "name": "Fermented Fermented shells",
@@ -865,7 +865,7 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       }
     ],
     "knowledge": [],
@@ -892,8 +892,8 @@
     "y": 465,
     "zone": "grass",
     "hp": 100,
-    "energy": 53.10000000002276,
-    "hunger": 0.43999999999999995,
+    "energy": 57.3000000000291,
+    "hunger": 0.04,
     "temperature": 20,
     "inventory": [
       {
@@ -901,7 +901,7 @@
         "quantity": 1
       },
       {
-        "name": "Fermented Fermented herbs",
+        "name": "Fermented Fermented flowers",
         "quantity": 1
       }
     ],
@@ -913,12 +913,12 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 163616,
+      "xp": 164091,
       "level": 11,
       "title": "Crafter ⚒️"
     },
     "ticksBorn": 3607,
-    "coins": 866
+    "coins": 939
   },
   "d56be782-7d0b-48d3-b5bc-cd2f59d54c48": {
     "id": "d56be782-7d0b-48d3-b5bc-cd2f59d54c48",
@@ -929,17 +929,17 @@
     "y": 419,
     "zone": "coast",
     "hp": 100,
-    "energy": 54.70000000000735,
-    "hunger": 0.12,
+    "energy": 50.80000000000918,
+    "hunger": 0.2,
     "temperature": 20,
     "inventory": [
       {
-        "name": "Fermented Fermented driftwood",
+        "name": "Fermented Fermented Herbal Extract",
         "quantity": 1
       },
       {
-        "name": "Fermented Fermented shells",
-        "quantity": 2
+        "name": "Fermented Fermented driftwood",
+        "quantity": 1
       }
     ],
     "knowledge": [],
@@ -950,7 +950,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 168806,
+      "xp": 168830,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -966,8 +966,8 @@
     "y": 412,
     "zone": "coast",
     "hp": 100,
-    "energy": 50.10000000002405,
-    "hunger": 0.6,
+    "energy": 48.700000000032205,
+    "hunger": 0.9200000000000003,
     "temperature": 20,
     "inventory": [],
     "knowledge": [],
@@ -994,16 +994,16 @@
     "y": 418,
     "zone": "coast",
     "hp": 100,
-    "energy": 55.00000000001932,
-    "hunger": 0.16,
+    "energy": 52.20000000002413,
+    "hunger": 0.28,
     "temperature": 20,
     "inventory": [
       {
-        "name": "Fermented Fermented Herbal Extract",
+        "name": "Fermented Fermented shells",
         "quantity": 1
       },
       {
-        "name": "Fermented Fermented driftwood",
+        "name": "Fermented Fermented Burning Fiber",
         "quantity": 1
       }
     ],
@@ -1015,7 +1015,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 74402,
+      "xp": 74423,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -1031,8 +1031,8 @@
     "y": 449,
     "zone": "coast",
     "hp": 100,
-    "energy": 52.100000000030235,
-    "hunger": 0.5599999999999999,
+    "energy": 50.70000000003856,
+    "hunger": 1.0000000000000002,
     "temperature": 20,
     "inventory": [
       {
@@ -1061,7 +1061,7 @@
         },
         "_heatStage": "igniting",
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       },
       {
         "name": "Fermented Fermented wood",
@@ -1089,7 +1089,7 @@
         },
         "_heatStage": "smoking",
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       },
       {
         "name": "Fermented Fermented herbs",
@@ -1117,7 +1117,7 @@
         },
         "_heatStage": "burning",
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       }
     ],
     "knowledge": [],
@@ -1144,8 +1144,8 @@
     "y": 412,
     "zone": "coast",
     "hp": 100,
-    "energy": 43.100000000012656,
-    "hunger": 0.64,
+    "energy": 57.80000000001719,
+    "hunger": 0.04,
     "temperature": 20,
     "inventory": [
       {
@@ -1173,7 +1173,7 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       },
       {
         "name": "Fermented Fermented shells",
@@ -1200,7 +1200,7 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       }
     ],
     "knowledge": [],
@@ -1227,13 +1227,13 @@
     "y": 419,
     "zone": "coast",
     "hp": 100,
-    "energy": 51.30000000001439,
-    "hunger": 0.5199999999999999,
+    "energy": 52.10000000001824,
+    "hunger": 0.28,
     "temperature": 20,
     "inventory": [
       {
         "name": "Fermented Fermented shells",
-        "quantity": 18,
+        "quantity": 19,
         "properties": {
           "hardness": 4,
           "conductivity": 0,
@@ -1256,11 +1256,11 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       },
       {
         "name": "Fermented Fermented Burning Fiber",
-        "quantity": 20,
+        "quantity": 19,
         "properties": {
           "hardness": 0,
           "conductivity": 0,
@@ -1284,11 +1284,11 @@
         },
         "_heatStage": "igniting",
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       },
       {
         "name": "Fermented Fermented driftwood",
-        "quantity": 19,
+        "quantity": 20,
         "properties": {
           "hardness": 3,
           "conductivity": 0,
@@ -1311,7 +1311,7 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       },
       {
         "name": "Fermented Fermented Herbal Extract",
@@ -1340,7 +1340,7 @@
         "_heatStage": "brewing",
         "_state": "liquid",
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       },
       {
         "name": "Fermented herbs",
@@ -1367,7 +1367,7 @@
           "fertility": 3
         },
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       }
     ],
     "knowledge": [],
@@ -1378,7 +1378,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 163284,
+      "xp": 163508,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -1394,16 +1394,16 @@
     "y": 465,
     "zone": "grass",
     "hp": 100,
-    "energy": 54.00000000002451,
-    "hunger": 0.08,
+    "energy": 59.50000000003119,
+    "hunger": 1.920000000000001,
     "temperature": 20,
     "inventory": [
       {
-        "name": "Fermented Fermented fiber",
+        "name": "Fermented Fermented herbs",
         "quantity": 2
       },
       {
-        "name": "Fermented Fermented flowers",
+        "name": "Fermented Fermented fiber",
         "quantity": 3
       }
     ],
@@ -1415,12 +1415,12 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 166509,
+      "xp": 167658,
       "level": 11,
       "title": "Crafter ⚒️"
     },
     "ticksBorn": 3607,
-    "coins": 815
+    "coins": 877
   },
   "f4689095-dbd2-45de-81fa-42cb6bf3bc2e": {
     "id": "f4689095-dbd2-45de-81fa-42cb6bf3bc2e",
@@ -1431,7 +1431,7 @@
     "y": 449,
     "zone": "coast",
     "hp": 100,
-    "energy": 55.80000000002633,
+    "energy": 54.20000000003368,
     "hunger": 0.12,
     "temperature": 20,
     "inventory": [
@@ -1461,7 +1461,7 @@
         },
         "_heatStage": "smoking",
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       },
       {
         "name": "Fermented Fermented Herbal Extract",
@@ -1490,7 +1490,7 @@
         "_heatStage": "brewing",
         "_state": "liquid",
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       },
       {
         "name": "Fermented Fermented Burning Fiber",
@@ -1518,7 +1518,7 @@
         },
         "_heatStage": "igniting",
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       },
       {
         "name": "Fermented Fermented acorns",
@@ -1545,7 +1545,7 @@
           "fertility": 5
         },
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       },
       {
         "name": "Fermented Fermented wood",
@@ -1573,7 +1573,7 @@
         },
         "_heatStage": "smoking",
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       },
       {
         "name": "Fermented Fermented shells",
@@ -1600,7 +1600,7 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       },
       {
         "name": "Fermented Fermented driftwood",
@@ -1627,7 +1627,7 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       }
     ],
     "knowledge": [],
@@ -1638,7 +1638,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 176671,
+      "xp": 182015,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -1654,8 +1654,8 @@
     "y": 412,
     "zone": "coast",
     "hp": 100,
-    "energy": 51.00000000003034,
-    "hunger": 0.7600000000000001,
+    "energy": 49.300000000038345,
+    "hunger": 1.1200000000000003,
     "temperature": 20,
     "inventory": [],
     "knowledge": [],
@@ -1682,8 +1682,8 @@
     "y": 449,
     "zone": "coast",
     "hp": 100,
-    "energy": 56.2000000000271,
-    "hunger": 0.12,
+    "energy": 57.400000000034424,
+    "hunger": 0.08,
     "temperature": 20,
     "inventory": [
       {
@@ -1712,7 +1712,7 @@
         },
         "_heatStage": "smoking",
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       },
       {
         "name": "Fermented Fermented bark",
@@ -1740,7 +1740,7 @@
         },
         "_heatStage": "igniting",
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       }
     ],
     "knowledge": [],
@@ -1751,7 +1751,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 184806,
+      "xp": 190262,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -1767,8 +1767,8 @@
     "y": 425,
     "zone": "coast",
     "hp": 100,
-    "energy": 44,
-    "hunger": 0.28,
+    "energy": 54,
+    "hunger": 0.2,
     "temperature": 20,
     "inventory": [
       {
@@ -1796,7 +1796,7 @@
           "fertility": 0
         },
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       },
       {
         "name": "Fermented Fermented herbs",
@@ -1823,7 +1823,7 @@
           "fertility": 3
         },
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       }
     ],
     "knowledge": [],
@@ -1834,7 +1834,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 53058,
+      "xp": 54178,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -1850,8 +1850,8 @@
     "y": 449,
     "zone": "coast",
     "hp": 100,
-    "energy": 56.90000000003562,
-    "hunger": 0.04,
+    "energy": 55.200000000045236,
+    "hunger": 0.39999999999999997,
     "temperature": 20,
     "inventory": [
       {
@@ -1881,7 +1881,7 @@
         "_heatStage": "brewing",
         "_state": "liquid",
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       },
       {
         "name": "Fermented Fermented wood",
@@ -1909,7 +1909,7 @@
         },
         "_heatStage": "smoking",
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       },
       {
         "name": "Fermented Fermented Burning Fiber",
@@ -1937,7 +1937,7 @@
         },
         "_heatStage": "igniting",
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       }
     ],
     "knowledge": [],
@@ -1964,13 +1964,13 @@
     "y": 465,
     "zone": "grass",
     "hp": 100,
-    "energy": 46.50000000002395,
-    "hunger": 0.39999999999999997,
+    "energy": 48.90000000003034,
+    "hunger": 0.28,
     "temperature": 20,
     "inventory": [
       {
         "name": "Fermented Fermented flowers",
-        "quantity": 14,
+        "quantity": 16,
         "properties": {
           "hardness": 0,
           "conductivity": 0,
@@ -1993,11 +1993,11 @@
           "fertility": 4
         },
         "_reacted": true,
-        "_decayProgress": 0.67548376273757
+        "_decayProgress": 0.9554149358704984
       },
       {
         "name": "Fermented Fermented fiber",
-        "quantity": 13,
+        "quantity": 10,
         "properties": {
           "hardness": 1,
           "conductivity": 0,
@@ -2020,11 +2020,11 @@
           "fertility": 0
         },
         "_reacted": true,
-        "_decayProgress": 0.67548376273757
+        "_decayProgress": 0.9554149358704984
       },
       {
         "name": "Fermented Fermented herbs",
-        "quantity": 13,
+        "quantity": 12,
         "properties": {
           "hardness": 0,
           "conductivity": 0,
@@ -2047,7 +2047,7 @@
           "fertility": 3
         },
         "_reacted": true,
-        "_decayProgress": 0.67548376273757
+        "_decayProgress": 0.9554149358704984
       },
       {
         "name": "Fermented fiber",
@@ -2067,12 +2067,12 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 164312,
+      "xp": 165058,
       "level": 11,
       "title": "Crafter ⚒️"
     },
     "ticksBorn": 3740,
-    "coins": 811
+    "coins": 869
   },
   "4a5c216f-8c5a-4281-9d11-b4a9dff1c95d": {
     "id": "4a5c216f-8c5a-4281-9d11-b4a9dff1c95d",
@@ -2083,8 +2083,8 @@
     "y": 413,
     "zone": "coast",
     "hp": 100,
-    "energy": 50.80000000001465,
-    "hunger": 0.28,
+    "energy": 53.80000000001999,
+    "hunger": 0.12,
     "temperature": 20,
     "inventory": [
       {
@@ -2112,7 +2112,7 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       },
       {
         "name": "Fermented Fermented shells",
@@ -2139,7 +2139,7 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       },
       {
         "name": "sand",
@@ -2191,8 +2191,8 @@
     "y": 412,
     "zone": "coast",
     "hp": 100,
-    "energy": 53.50000000003662,
-    "hunger": 0.5199999999999999,
+    "energy": 52.10000000004628,
+    "hunger": 0.8000000000000002,
     "temperature": 20,
     "inventory": [
       {
@@ -2220,7 +2220,7 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       },
       {
         "name": "Fermented Fermented shells",
@@ -2247,7 +2247,7 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       },
       {
         "name": "sand",
@@ -2299,36 +2299,10 @@
     "y": 412,
     "zone": "sand",
     "hp": 100,
-    "energy": 52.50000000002915,
-    "hunger": 0.7600000000000001,
+    "energy": 45.500000000037296,
+    "hunger": 1.3200000000000005,
     "temperature": 20,
-    "inventory": [
-      {
-        "name": "sand",
-        "quantity": 1,
-        "properties": {
-          "hardness": 2,
-          "conductivity": 0,
-          "flammability": 0,
-          "toxicity": 0,
-          "luminosity": 0,
-          "volatility": 0,
-          "organic": 0,
-          "weight": 2,
-          "decay_rate": 0,
-          "energy": 0,
-          "temperature": 32.760379443153994,
-          "resonance": 0,
-          "melt_point": 1200,
-          "ignition": 0,
-          "sharpness": 0,
-          "solubility": 0,
-          "malleability": 3,
-          "brittleness": 0,
-          "fertility": 0
-        }
-      }
-    ],
+    "inventory": [],
     "knowledge": [],
     "relationships": {},
     "proficiencies": {},
@@ -2337,7 +2311,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 166395,
+      "xp": 166415,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -2353,8 +2327,8 @@
     "y": 412,
     "zone": "sand",
     "hp": 100,
-    "energy": 52.10000000003025,
-    "hunger": 0.8000000000000002,
+    "energy": 57.20000000003833,
+    "hunger": 0.12,
     "temperature": 20,
     "inventory": [],
     "knowledge": [],
@@ -2365,7 +2339,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 165808,
+      "xp": 165823,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -2381,8 +2355,8 @@
     "y": 412,
     "zone": "coast",
     "hp": 100,
-    "energy": 50.400000000031824,
-    "hunger": 0.8400000000000002,
+    "energy": 49.00000000004015,
+    "hunger": 0.9600000000000003,
     "temperature": 20,
     "inventory": [],
     "knowledge": [],
@@ -2409,8 +2383,8 @@
     "y": 449,
     "zone": "coast",
     "hp": 100,
-    "energy": 50.40000000003138,
-    "hunger": 1.0400000000000003,
+    "energy": 57.30000000003973,
+    "hunger": 0.12,
     "temperature": 20,
     "inventory": [
       {
@@ -2439,7 +2413,7 @@
         },
         "_heatStage": "igniting",
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       },
       {
         "name": "Fermented Fermented herbs",
@@ -2467,7 +2441,7 @@
         },
         "_heatStage": "burning",
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       },
       {
         "name": "Fermented Fermented wood",
@@ -2495,7 +2469,7 @@
         },
         "_heatStage": "smoking",
         "_reacted": true,
-        "_decayProgress": 0.7092337627375708
+        "_decayProgress": 0.9267816179442435
       }
     ],
     "knowledge": [],
@@ -2512,5 +2486,36 @@
     },
     "ticksBorn": 3740,
     "coins": 605
+  },
+  "76205147-e54e-4086-80d3-f61595243b05": {
+    "id": "76205147-e54e-4086-80d3-f61595243b05",
+    "name": "TestExplorer",
+    "tileX": 1210,
+    "tileY": 437,
+    "x": 1210,
+    "y": 437,
+    "zone": "sand",
+    "hp": 100,
+    "energy": 100,
+    "hunger": 0,
+    "temperature": 20,
+    "inventory": [],
+    "knowledge": [],
+    "relationships": {},
+    "proficiencies": {},
+    "achievements": [],
+    "memory": [],
+    "goals": [],
+    "alive": true,
+    "stats": {
+      "xp": 0,
+      "level": 1,
+      "title": "Hatchling 🥚"
+    },
+    "ticksBorn": 76032,
+    "coins": 0,
+    "description": "A test agent from the outside",
+    "external": true,
+    "autonomous": false
   }
 }
