@@ -45,7 +45,7 @@
         "explore": 22
       },
       "coast": {
-        "gather": 4346,
+        "gather": 12465,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -119,7 +119,7 @@
         "explore": 2
       },
       "forest": {
-        "gather": 32,
+        "gather": 42,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -142,7 +142,8 @@
       ],
       "sand": [
         "Sand pearls form where moonlight hits the shore",
-        "The tide brings rare sea glass from distant shores"
+        "The tide brings rare sea glass from distant shores",
+        "Legend says a sunken city lies beneath the waves"
       ]
     },
     "lore_fragments": [
@@ -184,7 +185,7 @@
         "explore": 3
       },
       "sand": {
-        "gather": 22,
+        "gather": 50,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -250,7 +251,7 @@
         "explore": 1
       },
       "rocky": {
-        "gather": 42,
+        "gather": 65,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -317,7 +318,7 @@
         "explore": 17
       },
       "coast": {
-        "gather": 14136,
+        "gather": 40418,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -368,7 +369,7 @@
     "known_recipes": [],
     "zone_counts": {
       "grass": {
-        "gather": 82,
+        "gather": 152,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -437,7 +438,7 @@
         "explore": 29
       },
       "coast": {
-        "gather": 570,
+        "gather": 2219,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -504,7 +505,7 @@
         "explore": 12
       },
       "coast": {
-        "gather": 13143,
+        "gather": 37726,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -569,7 +570,7 @@
         "explore": 13
       },
       "coast": {
-        "gather": 1826,
+        "gather": 9526,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -632,7 +633,7 @@
         "explore": 4
       },
       "coast": {
-        "gather": 13781,
+        "gather": 39591,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -686,7 +687,7 @@
         "explore": 40
       },
       "grass": {
-        "gather": 206,
+        "gather": 208,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -748,7 +749,7 @@
         "explore": 74
       },
       "coast": {
-        "gather": 13839,
+        "gather": 39719,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -820,11 +821,11 @@
     "known_recipes": [],
     "zone_counts": {
       "grass": {
-        "gather": 64,
+        "gather": 75,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 66
+        "explore": 73
       }
     },
     "mastery": {},
@@ -871,7 +872,7 @@
         "explore": 1
       },
       "coast": {
-        "gather": 63,
+        "gather": 87,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -925,7 +926,7 @@
         "explore": 1
       },
       "grass": {
-        "gather": 11221,
+        "gather": 32301,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -939,6 +940,11 @@
       "coast": [
         "Signals are strongest during storms along the coast",
         "The coast receives driftwood from other worlds"
+      ],
+      "grass": [
+        "Seeds planted under moonlight grow fastest in the meadow",
+        "The grasslands remember every agent who has rested here",
+        "Dew drops collected at dawn hold the purest energy"
       ]
     },
     "lore_fragments": [
@@ -966,7 +972,13 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 19,
+        "gather": 22,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0
+      },
+      "grass": {
+        "gather": 119,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -1008,7 +1020,7 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 624,
+        "gather": 3273,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -1133,7 +1145,7 @@
     "known_recipes": [],
     "zone_counts": {
       "grass": {
-        "gather": 41,
+        "gather": 143,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -1176,7 +1188,7 @@
     "known_recipes": [],
     "zone_counts": {
       "grass": {
-        "gather": 64,
+        "gather": 86,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -1218,7 +1230,7 @@
     "known_recipes": [],
     "zone_counts": {
       "grass": {
-        "gather": 88,
+        "gather": 163,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -1302,11 +1314,11 @@
     "known_recipes": [],
     "zone_counts": {
       "grass": {
-        "gather": 90,
+        "gather": 178,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 42
+        "explore": 49
       }
     },
     "mastery": {},
@@ -1352,7 +1364,7 @@
         "trade": 0
       },
       "coast": {
-        "gather": 586,
+        "gather": 2397,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -1408,7 +1420,7 @@
         "trade": 0
       },
       "grass": {
-        "gather": 110,
+        "gather": 196,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -1457,7 +1469,7 @@
         "trade": 0
       },
       "grass": {
-        "gather": 8594,
+        "gather": 24587,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -1508,7 +1520,7 @@
         "trade": 0
       },
       "grass": {
-        "gather": 46,
+        "gather": 89,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -1588,7 +1600,7 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 555,
+        "gather": 2297,
         "visit": 0,
         "craft": 0,
         "trade": 0

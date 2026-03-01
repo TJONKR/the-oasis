@@ -1,21 +1,41 @@
 {
-  "lastTick": "2026-03-01T13:54:32.758Z",
+  "lastTick": "2026-03-01T18:54:01.366Z",
   "lastNarrative": null,
   "dangers": [],
   "zoneModifiers": {},
   "npcDirectives": [],
-  "consequences": [],
-  "precursors": [
+  "consequences": [
     {
-      "id": "precursor_a76a0448",
+      "id": "consequence_a5d8b513",
       "type": "famine",
-      "message": "Food prices are creeping up in the market...",
-      "zone": "grass",
-      "sentAt": 1772373136936,
-      "expiresAt": 1772373436936
+      "zones": [
+        "grass",
+        "forest",
+        "rocky",
+        "sand",
+        "water",
+        "swamp",
+        "river",
+        "cave",
+        "coast",
+        "path"
+      ],
+      "description": "🍂 Famine",
+      "startedAt": 1772390966198,
+      "expiresAt": 1772392166198
     }
   ],
-  "tickCount": 478,
+  "precursors": [
+    {
+      "id": "precursor_6f014bdd",
+      "type": "earthquake",
+      "message": "Faint tremors ripple through the ground...",
+      "zone": "rocky",
+      "sentAt": 1772391066574,
+      "expiresAt": 1772391366574
+    }
+  ],
+  "tickCount": 1183,
   "activeEvents": [],
-  "nextEventTrigger": 1772376592934.858
+  "nextEventTrigger": 1772393381642.8223
 }

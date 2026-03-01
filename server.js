@@ -269,13 +269,16 @@ function serializeAgent(a) {
     proficiencies: a.proficiencies,
     achievements: a.achievements?.length || 0,
     mind: agentAI?.minds?.[a.id] ? {
-      action: agentAI.minds[a.id].currentAction,
+      action: agentAI.minds[a.id].currentAction || 'idle',
       mood: agentAI.minds[a.id].mood,
       traits: agentAI.minds[a.id].personality?.traits,
       intent: agentAI.minds[a.id].intent ? {
         action: agentAI.minds[a.id].intent.action,
         reason: agentAI.minds[a.id].intent.reason,
-      } : null,
+      } : (agentAI.minds[a.id].currentAction ? {
+        action: agentAI.minds[a.id].currentAction,
+        reason: agentAI.minds[a.id].lastReason || '',
+      } : null),
       pathThisTick: agentAI.minds[a.id].pathThisTick || null,
     } : null,
   };
@@ -479,7 +482,7 @@ const ZONES_REF = worldGrid.zones;
 // ═══════════════════════════════════════
 // Start
 // ═══════════════════════════════════════
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 server.listen(PORT, () => {
   const gameTime = getGameTime();
   console.log(`

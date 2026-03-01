@@ -5,7 +5,8 @@
     "berries": [],
     "fiber": [],
     "herbs": [],
-    "shells": []
+    "shells": [],
+    "sand": []
   },
   "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e": {
     "undefined": [],
@@ -29,7 +30,9 @@
     "sand": [],
     "driftwood": [],
     "shells": [],
-    "fish": []
+    "fish": [],
+    "palm_fronds": [],
+    "wood": []
   },
   "afbbb7cf-008c-44b3-a369-5ffae5b0bcce": {
     "undefined": [],
@@ -70,7 +73,9 @@
     "berries": [],
     "sand": [],
     "herbs": [],
-    "fiber": []
+    "fiber": [],
+    "driftwood": [],
+    "shells": []
   },
   "adece4fb-fe63-4326-9e8b-77bb35d53dc1": {
     "undefined": [],
@@ -80,7 +85,8 @@
     "fish": [],
     "flowers": [],
     "seaweed": [],
-    "shells": []
+    "shells": [],
+    "driftwood": []
   },
   "582115a5-7236-46c9-93cc-d3f4abadd5f8": {
     "undefined": [],
@@ -130,7 +136,9 @@
     "berries": [],
     "salt": [],
     "flowers": [],
-    "shells": []
+    "shells": [],
+    "bark": [],
+    "herbs": []
   },
   "8b9d8eba-3738-41a1-a443-61c71b68a086": {
     "shells": [],
@@ -156,6 +164,27 @@
   },
   "d56be782-7d0b-48d3-b5bc-cd2f59d54c48": {
     "shells": [],
+    "herbs": [],
+    "driftwood": [],
+    "fiber": []
+  },
+  "e14594ab-eddd-48ac-8227-a2e33c1868ef": {
+    "flowers": [],
+    "fiber": [],
+    "herbs": []
+  },
+  "75ea2f1f-106e-455b-a08b-e1201500a0df": {
+    "fiber": [],
+    "flowers": []
+  },
+  "29028972-168e-48ca-8590-5fb898719a26": {
+    "fiber": [],
+    "herbs": []
+  },
+  "6498a0c9-87f9-430e-b729-2b1a75250d4b": {
+    "shells": [],
+    "fiber": [],
+    "driftwood": [],
     "herbs": []
   }
 }

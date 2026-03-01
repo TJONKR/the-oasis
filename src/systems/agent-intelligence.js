@@ -105,7 +105,9 @@ function getMovementPoints(agent) {
 
 function isFoodResource(name) {
   const n = (name || '').toLowerCase();
-  return n.includes('berr') || n.includes('fish') || n.includes('mushroom') || n.includes('herb') || n.includes('fruit') || n.includes('nut');
+  return n.includes('berr') || n.includes('fish') || n.includes('mushroom') || n.includes('herb') || 
+         n.includes('fruit') || n.includes('nut') || n.includes('coconut') || n.includes('acorn') || 
+         n.includes('seaweed') || n.includes('freshwater');
 }
 
 function hasFood(agent) {
@@ -232,24 +234,30 @@ export function initAgentIntelligence(shared) {
     const maxY = Math.min((worldGrid.height || 2000) - 1, ay + VISION_RANGE);
 
     // Scan tiles for resources and zones
+    // Optimization: only scan every 4th tile for resources (still finds plenty),
+    // but always scan all tiles for zones (cheap)
     const seenZones = new Set();
+    const MAX_RESOURCES = 30; // cap resource list — agents don't need 1000+ entries
+    let resourceCount = 0;
     for (let x = minX; x <= maxX; x++) {
       for (let y = minY; y <= maxY; y++) {
+        // Resources: sample every 2nd tile (checkerboard pattern), or all tiles if close
         const d = distance(ax, ay, x, y);
-
-        // Resources (decoration-first, zone-fallback)
-        const tileRes = worldGrid.getTileResources?.(x, y);
-        if (tileRes && tileRes.available) {
-          result.resources.push({
-            x, y,
-            resource: tileRes.resources[0],
-            source: tileRes.source,
-            allResources: tileRes.resources,
-            distance: d,
-          });
+        if (resourceCount < MAX_RESOURCES && (d <= 5 || (x + y) % 2 === 0)) {
+          const tileRes = worldGrid.getTileResources?.(x, y);
+          if (tileRes && tileRes.available) {
+            result.resources.push({
+              x, y,
+              resource: tileRes.resources[0],
+              source: tileRes.source,
+              allResources: tileRes.resources,
+              distance: d,
+            });
+            resourceCount++;
+          }
         }
 
-        // Unknown zones
+        // Unknown zones (cheap — just zone lookup)
         const zone = worldGrid.getZone?.(x, y);
         if (zone && !seenZones.has(zone)) {
           seenZones.add(zone);
@@ -422,12 +430,12 @@ export function initAgentIntelligence(shared) {
       intents.push({ action: 'chat', targetX: other.agent.tileX, targetY: other.agent.tileY, score, reason: `Talk to ${other.agent.name}` });
     }
 
-    // GIFT — if generous and near friend with items
-    if ((agent.inventory?.length || 0) > 0) {
+    // GIFT — if generous and near friend with items (but not when hungry/tired!)
+    if ((agent.inventory?.length || 0) > 2 && agent.hunger < 50 && agent.energy > 30) {
       for (const other of visible.agents) {
-        if (other.relationship < 5) continue;
-        let score = 10 + getTraitBonus(mind, 'gift');
-        score += other.relationship;
+        if (other.relationship < 10) continue; // need stronger friendship to gift
+        let score = 5 + getTraitBonus(mind, 'gift');
+        score += Math.min(other.relationship, 20); // cap relationship bonus
         score -= other.distance * 2;
         intents.push({ action: 'gift', targetX: other.agent.tileX, targetY: other.agent.tileY, score, reason: `Gift to ${other.agent.name}` });
       }
@@ -450,16 +458,36 @@ export function initAgentIntelligence(shared) {
       intents.push({ action: 'explore', targetX: tx, targetY: ty, score, reason: 'Wander to new territory' });
     }
 
+    // ── SURVIVAL OVERRIDES (highest priority — bypass normal scoring) ──
+    // Emergency eat: hunger critical AND have food → force eat
+    if (agent.hunger > 70 && hasFood(agent)) {
+      return { action: 'eat', targetX: agent.tileX, targetY: agent.tileY, score: 999, reason: 'Starving — must eat!' };
+    }
+    // Emergency rest: energy critical → force rest
+    if (agent.energy < 10) {
+      return { action: 'rest', targetX: agent.tileX, targetY: agent.tileY, score: 999, reason: 'Exhausted — must rest!' };
+    }
+
     // REST — if tired
     if (agent.energy < 30) {
-      intents.push({ action: 'rest', targetX: agent.tileX, targetY: agent.tileY, score: 60 + (30 - agent.energy), reason: 'Need rest' });
+      intents.push({ action: 'rest', targetX: agent.tileX, targetY: agent.tileY, score: 80 + (30 - agent.energy) * 2, reason: 'Need rest' });
     } else if (agent.energy < 50) {
-      intents.push({ action: 'rest', targetX: agent.tileX, targetY: agent.tileY, score: 20 + getTraitBonus(mind, 'rest'), reason: 'Feeling tired' });
+      intents.push({ action: 'rest', targetX: agent.tileX, targetY: agent.tileY, score: 30 + getTraitBonus(mind, 'rest'), reason: 'Feeling tired' });
     }
 
     // EAT — if hungry and have food
     if (agent.hunger > 40 && hasFood(agent)) {
-      intents.push({ action: 'eat', targetX: agent.tileX, targetY: agent.tileY, score: 50 + agent.hunger, reason: 'Eating' });
+      intents.push({ action: 'eat', targetX: agent.tileX, targetY: agent.tileY, score: 60 + agent.hunger * 1.5, reason: 'Hungry — eating' });
+    }
+
+    // GATHER FOOD — if hungry but no food, prioritize food resources
+    if (agent.hunger > 50 && !hasFood(agent)) {
+      for (const res of visible.resources) {
+        if (isFoodResource(res.resource)) {
+          const score = 80 + agent.hunger - res.distance * 2;
+          intents.push({ action: 'gather', targetX: res.x, targetY: res.y, score, reason: `Find food (${res.resource})`, gatherX: res.x, gatherY: res.y });
+        }
+      }
     }
 
     // CRAFT — if have materials
@@ -599,8 +627,8 @@ export function initAgentIntelligence(shared) {
   }
 
   function executeRest(agent, mind) {
-    agent.energy = Math.min(100, agent.energy + 5);
-    if (agent.hunger > 0) agent.hunger = Math.max(0, agent.hunger - 1);
+    agent.energy = Math.min(100, agent.energy + 8);
+    if (agent.hunger > 0) agent.hunger = Math.max(0, agent.hunger - 2);
   }
 
   function executeExplore(agent, mind) {
@@ -748,10 +776,13 @@ export function initAgentIntelligence(shared) {
 
     const other = nearby[Math.floor(Math.random() * nearby.length)];
 
-    const dupes = agent.inventory.filter(i => (i.quantity || 1) > 1);
-    const giftItem = dupes.length > 0
-      ? dupes[Math.floor(Math.random() * dupes.length)]
-      : agent.inventory[Math.floor(Math.random() * agent.inventory.length)];
+    // Don't gift food when hungry!
+    const isHungry = (agent.hunger || 0) > 40;
+    const dupes = agent.inventory.filter(i => (i.quantity || 1) > 1 && !(isHungry && isFoodResource(i.name)));
+    const nonFood = agent.inventory.filter(i => !isFoodResource(i.name));
+    const giftPool = dupes.length > 0 ? dupes : (isHungry ? nonFood : agent.inventory);
+    if (giftPool.length === 0) return; // nothing to gift (only have food and we're hungry)
+    const giftItem = giftPool[Math.floor(Math.random() * giftPool.length)];
 
     if (!giftItem) return;
 
@@ -853,16 +884,13 @@ export function initAgentIntelligence(shared) {
   }
 
   function executeEat(agent, mind) {
-    const food = agent.inventory.find(i => {
-      const n = (i?.name || '').toLowerCase();
-      return n.includes('berri') || n.includes('fish') || n.includes('mushroom') || n.includes('herb') || n.includes('fruit') || n.includes('nut');
-    });
+    const food = agent.inventory.find(i => isFoodResource(i?.name));
     if (food) {
       if (food.quantity > 1) food.quantity--;
       else agent.inventory = agent.inventory.filter(i => i !== food);
 
-      agent.hunger = Math.max(0, agent.hunger - 30);
-      agent.energy = Math.min(100, agent.energy + 10);
+      agent.hunger = Math.max(0, agent.hunger - 40);
+      agent.energy = Math.min(100, agent.energy + 20);
       addMemoryEvent(mind, `Ate some ${food.name}`);
     }
   }
@@ -976,6 +1004,7 @@ export function initAgentIntelligence(shared) {
       if (dist <= 1) {
         // ARRIVED — execute the action
         mind.currentAction = mind.intent.action;
+        mind.lastReason = mind.intent.reason;
         mind.actionTicks = 0;
 
         const executor = EXECUTORS[mind.intent.action];
@@ -1013,12 +1042,15 @@ export function initAgentIntelligence(shared) {
           reason: chosen.reason,
           startedTick: currentTick,
           maxTicks: 30,
+          gatherX: chosen.gatherX,
+          gatherY: chosen.gatherY,
         };
 
         // If target is right here, execute immediately
         const dist = distance(agent.tileX, agent.tileY, chosen.targetX, chosen.targetY);
         if (dist <= 1) {
           mind.currentAction = chosen.action;
+          mind.lastReason = chosen.reason;
           const executor = EXECUTORS[chosen.action];
           if (executor) executor(agent, mind);
           if (chosen.action !== 'rest' || agent.energy >= 80) {
@@ -1063,9 +1095,12 @@ export function initAgentIntelligence(shared) {
     updateMood(agent, mind);
 
     // Passive effects (scaled for fast tick rate)
-    agent.hunger = Math.min(100, (agent.hunger || 0) + 0.08);
+    // 0.04/tick = 4.8/min = needs to eat ~every 10 minutes (hunger 0→50)
+    agent.hunger = Math.min(100, (agent.hunger || 0) + 0.04);
     if (agent.hunger >= 100) {
-      agent.energy = Math.max(0, agent.energy - 2);
+      agent.energy = Math.max(0, agent.energy - 3);   // critical starvation
+    } else if (agent.hunger >= 80) {
+      agent.energy = Math.max(0, agent.energy - 1);   // starving drains energy
     }
 
     scheduleSave();
