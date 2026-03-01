@@ -573,10 +573,25 @@ export function initAgentIntelligence(shared) {
 
     // Gather FOOD specifically when hungry but no food
     if (agent.hunger > 50 && !hasFood(agent)) {
+      // First: check visible resources
       for (const res of visible.resources) {
         if (isFoodResource(res.resource)) {
           const score = (mods.gather || 80) + agent.hunger * 0.5 - res.distance * 2;
           intents.push({ action: 'gather', targetX: res.x, targetY: res.y, score, reason: `Find food (${res.resource})`, gatherX: res.x, gatherY: res.y });
+        }
+      }
+      // Second: use KNOWLEDGE — go to remembered food locations beyond vision
+      if (shared.agentKnowledge) {
+        const kb = shared.agentKnowledge.getOrCreate(agent.id);
+        const knownFood = kb.getKnownFoodLocations(agent.tileX, agent.tileY, 100);
+        for (const loc of knownFood.slice(0, 3)) {
+          if (loc.distance <= VISION_RANGE) continue; // already in vision scan
+          const score = (mods.gather || 60) + agent.hunger * 0.3 - loc.distance * 0.5;
+          intents.push({
+            action: 'gather', targetX: loc.x, targetY: loc.y,
+            gatherX: loc.x, gatherY: loc.y,
+            score, reason: `Remember food (${loc.resource}) at (${loc.x},${loc.y})`
+          });
         }
       }
     }
@@ -694,6 +709,13 @@ export function initAgentIntelligence(shared) {
     }
 
     // ── FLEE PREDATORS — Maslow: safety (survival!) ──
+    // Learn danger zones from predator sightings
+    if (shared.agentKnowledge && visible.predators?.length > 0) {
+      const kb = shared.agentKnowledge.getOrCreate(agent.id);
+      for (const pred of visible.predators) {
+        kb.learnDanger(pred.tileX, pred.tileY, pred.species, pred.distance < 5 ? 8 : 5);
+      }
+    }
     for (const pred of (visible.predators || [])) {
       let score = 100 + (20 - pred.distance) * 5; // closer = more urgent
       if (mind.personality.traits.includes('cautious')) score += 30;
@@ -825,6 +847,18 @@ export function initAgentIntelligence(shared) {
       shared.needsSystem.recordAction(agent.id, 'gather');
     }
 
+    // Knowledge: learn this resource location
+    if (shared.agentKnowledge) {
+      const kb = shared.agentKnowledge.getOrCreate(agent.id);
+      kb.discoverResource(gx, gy, resource, agent.zone);
+      kb.practiceSkill('foraging', 1);
+      // Check if tile is now depleted
+      const resHP = worldGrid.getResourceHP?.(gx, gy);
+      if (resHP && resHP.depleted) {
+        kb.markDepleted(gx, gy);
+      }
+    }
+
     addMemoryEvent(mind, `Gathered ${resource} in the ${agent.zone}`);
     agent.energy = Math.max(0, agent.energy - (ACTIONS.gather.energy || 5));
   }
@@ -843,6 +877,20 @@ export function initAgentIntelligence(shared) {
       if (Math.random() < 0.1) shared.knowledgeSystem.grantRandomLore?.(agent.id);
     }
     addMemoryEvent(mind, `Explored new ground in the ${agent.zone}`);
+    // Knowledge: discover resources in new area
+    if (shared.agentKnowledge) {
+      const kb = shared.agentKnowledge.getOrCreate(agent.id);
+      // Scan nearby tiles for resources to remember
+      for (let dx = -3; dx <= 3; dx++) {
+        for (let dy = -3; dy <= 3; dy++) {
+          const rx = agent.tileX + dx, ry = agent.tileY + dy;
+          const res = worldGrid.getTileResources?.(rx, ry);
+          if (res && res.available) {
+            kb.discoverResource(rx, ry, res.resources[0], res.source);
+          }
+        }
+      }
+    }
     // Needs: track exploration novelty + record action
     if (shared.needsSystem) {
       const needs = shared.needsSystem.getAgentNeeds(agent.id);
@@ -901,6 +949,17 @@ export function initAgentIntelligence(shared) {
       shared.needsSystem.strengthenBond(agent.id, other.id);
       shared.needsSystem.strengthenBond(other.id, agent.id);
       shared.needsSystem.recordAction(agent.id, 'chat');
+    }
+    // Knowledge: teach exchange — agents share what they know
+    if (shared.agentKnowledge) {
+      const result = shared.agentKnowledge.teachExchange(agent.id, other.id);
+      const result2 = shared.agentKnowledge.teachExchange(other.id, agent.id);
+      const totalLearned = result.learned + result2.learned;
+      if (totalLearned > 0) {
+        addWorldNews('teach', agent.id, agent.name,
+          `${agent.name} and ${other.name} shared knowledge (${totalLearned} things learned)`,
+          agent.zone);
+      }
     }
     agent.energy = Math.max(0, agent.energy - (ACTIONS.chat.energy || 1));
   }
@@ -984,6 +1043,9 @@ export function initAgentIntelligence(shared) {
       } catch {}
     }
     shared.needsSystem?.recordAction(agent.id, 'craft');
+    if (shared.agentKnowledge) {
+      shared.agentKnowledge.getOrCreate(agent.id).practiceSkill('crafting', 2);
+    }
     agent.energy = Math.max(0, agent.energy - (ACTIONS.craft.energy || 8));
   }
 
@@ -1248,6 +1310,9 @@ export function initAgentIntelligence(shared) {
       addMemoryEvent(mind, `Fought an animal — took ${result.counterDmg} damage`);
     }
     shared.needsSystem?.recordAction(agent.id, 'hunt');
+    if (shared.agentKnowledge) {
+      shared.agentKnowledge.getOrCreate(agent.id).practiceSkill('hunting', result.killed ? 3 : 1);
+    }
     agent.energy = Math.max(0, agent.energy - 8);
   }
 

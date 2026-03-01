@@ -41,6 +41,7 @@ import { initLightning } from './src/systems/lightning.js';
 import { initInnerMonologue } from './src/systems/inner-monologue.js';
 import { createNeedsSystem } from './src/systems/needs-system.js';
 import { initWildlife } from './src/systems/wildlife.js';
+import { initAgentKnowledge } from './src/systems/agent-knowledge.js';
 import { setupAgentAPI } from './src/agent-api.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -335,6 +336,11 @@ const wildlife = initWildlife(shared);
 wildlife.setupRoutes(app);
 shared.wildlife = wildlife;
 
+// Agent Knowledge — Phase 3: personal knowledge, teaching, knowledge death
+const agentKnowledge = initAgentKnowledge(shared);
+agentKnowledge.setupRoutes(app);
+shared.agentKnowledge = agentKnowledge;
+
 // External Agent API
 shared.spawnAgent = spawnAgent;
 shared.serializeAgent = serializeAgent;
@@ -453,6 +459,19 @@ function simulationTick() {
     if ((agent.hp || 100) <= 0 && agent.alive) {
       agent.alive = false;
       if (decayLifecycle.onAgentDeath) decayLifecycle.onAgentDeath(agent);
+      // Knowledge death — all knowledge lost forever
+      const lostKnowledge = agentKnowledge.onDeath(agent.id);
+      if (lostKnowledge) {
+        const lostMsg = [];
+        if (lostKnowledge.resourcesLost > 0) lostMsg.push(`${lostKnowledge.resourcesLost} resource locations`);
+        if (lostKnowledge.recipesLost > 0) lostMsg.push(`${lostKnowledge.recipesLost} recipes`);
+        if (lostKnowledge.skillsLost.length > 0) lostMsg.push(`skills: ${lostKnowledge.skillsLost.map(([s,l]) => `${s}(${l})`).join(', ')}`);
+        if (lostMsg.length > 0) {
+          addWorldNews('knowledge_death', agent.id, agent.name,
+            `💀 ${agent.name}'s knowledge is lost forever: ${lostMsg.join(', ')}`,
+            agent.zone);
+        }
+      }
       // Mortality salience — notify needs system + nearby witnesses
       needsSystem.onDeath(agent.id);
       for (const [otherId, other] of agents) {
@@ -481,7 +500,13 @@ function simulationTick() {
   // 3d. Wildlife tick (animal AI, spawning, combat)
   wildlife.tick(tick);
 
-  // 3e. Needs system world tick (tile depletion recovery)
+  // 3e. Resource regrowth (trees, herbs come back over time)
+  if (tick % 10 === 0) worldGrid.tickRegrowth(tick);
+
+  // 3e-2. Knowledge skill decay
+  if (tick % 20 === 0) agentKnowledge.tick();
+
+  // 3f. Needs system world tick (tile depletion recovery)
   needsSystem.tick();
 
   // 3e. Inner monologue — LLM-driven agent thoughts (async, non-blocking)

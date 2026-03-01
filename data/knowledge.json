@@ -183,7 +183,7 @@
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 26
+        "explore": 34
       },
       "coast": {
         "gather": 23,
@@ -197,6 +197,13 @@
         "visit": 0,
         "craft": 0,
         "trade": 0
+      },
+      "river": {
+        "gather": 0,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 1
       }
     },
     "mastery": {},
@@ -631,7 +638,7 @@
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 23
+        "explore": 29
       },
       "sand": {
         "gather": 3,
@@ -707,6 +714,13 @@
         "craft": 0,
         "trade": 0,
         "explore": 7
+      },
+      "river": {
+        "gather": 0,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 2
       }
     },
     "mastery": {},
@@ -754,14 +768,21 @@
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 74
+        "explore": 75
       },
       "coast": {
-        "gather": 39719,
+        "gather": 39720,
         "visit": 0,
         "craft": 0,
         "trade": 0,
         "explore": 5
+      },
+      "river": {
+        "gather": 0,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 1
       }
     },
     "mastery": {},
@@ -846,7 +867,8 @@
         "Signals are strongest during storms along the coast",
         "The coast receives driftwood from other worlds",
         "A frequency exists that can communicate with the World Master"
-      ]
+      ],
+      "grass": []
     },
     "lore_fragments": [
       "The beach was once a mountain, worn smooth by time.",
@@ -884,6 +906,20 @@
         "visit": 0,
         "craft": 0,
         "trade": 0
+      },
+      "grass": {
+        "gather": 0,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 50
+      },
+      "river": {
+        "gather": 0,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 4
       }
     },
     "mastery": {},
@@ -1292,7 +1328,15 @@
         "gather": 142,
         "visit": 0,
         "craft": 0,
-        "trade": 0
+        "trade": 0,
+        "explore": 3
+      },
+      "river": {
+        "gather": 0,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 1
       }
     },
     "mastery": {},
@@ -1448,7 +1492,15 @@
         "gather": 196,
         "visit": 0,
         "craft": 0,
-        "trade": 0
+        "trade": 0,
+        "explore": 1
+      },
+      "river": {
+        "gather": 0,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 1
       }
     },
     "mastery": {},
@@ -1598,7 +1650,8 @@
         "Signals are strongest during storms along the coast",
         "The coast receives driftwood from other worlds",
         "A frequency exists that can communicate with the World Master"
-      ]
+      ],
+      "grass": []
     },
     "lore_fragments": [
       "The first book ever written simply said: \"I was here.\"",
@@ -1626,6 +1679,20 @@
     "zone_counts": {
       "coast": {
         "gather": 2297,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 1
+      },
+      "grass": {
+        "gather": 0,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 10
+      },
+      "river": {
+        "gather": 0,
         "visit": 0,
         "craft": 0,
         "trade": 0,

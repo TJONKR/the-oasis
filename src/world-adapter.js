@@ -426,8 +426,95 @@ export function initWorldAdapter(worldData, dataDir) {
   // Resources
   // ═══════════════════════════════
   
+  // ── RESOURCE DEPLETION ──
+  // Each tile with a decoration has a resource HP pool.
+  // Gathering drains it. When empty, the decoration is "harvested" (gone).
+  // Tiles slowly regrow over time.
+  const resourceHP = new Map(); // "x,y" → { hp, maxHp, depleted, depletedTick }
+  
+  // How much HP each decoration type has (how many gathers before gone)
+  const DECO_MAX_HP = {
+    150: 8,   // pine_tree — sturdy, many gathers
+    151: 8,   // oak_tree
+    152: 6,   // palm_tree
+    153: 5,   // small_rock
+    154: 10,  // large_rock — lots of stone
+    155: 3,   // flower — fragile, depletes fast
+    156: 4,   // cactus
+    157: 2,   // mushroom — tiny, gone fast
+    158: 3,   // reed
+    159: 6,   // snowdrift
+    160: 4,   // seaweed
+  };
+  
+  // Regrowth time in ticks (how long before a depleted resource comes back)
+  const REGROWTH_TICKS = {
+    155: 200,  // flowers — regrow fast (~100 seconds)
+    157: 150,  // mushrooms — regrow fast
+    158: 180,  // reeds
+    150: 600,  // pine tree — slow regrowth (~5 minutes)
+    151: 600,  // oak tree
+    152: 500,  // palm tree
+    153: 0,    // small rock — never regrows
+    154: 0,    // large rock — never regrows
+    156: 400,  // cactus
+    159: 300,  // snowdrift
+    160: 250,  // seaweed
+  };
+
+  function getResourceHP(x, y) {
+    const key = `${x},${y}`;
+    if (resourceHP.has(key)) return resourceHP.get(key);
+    // Initialize from decoration
+    const idx = y * width + x;
+    const decoId = decorations ? decorations[idx] : 0;
+    if (!decoId || !DECO_RESOURCES[decoId]) return null;
+    const maxHp = DECO_MAX_HP[decoId] || 5;
+    const state = { hp: maxHp, maxHp, depleted: false, depletedTick: 0, decoId };
+    resourceHP.set(key, state);
+    return state;
+  }
+
+  function harvestResource(x, y) {
+    const state = getResourceHP(x, y);
+    if (!state || state.depleted) return false;
+    state.hp--;
+    if (state.hp <= 0) {
+      state.depleted = true;
+      state.depletedTick = Date.now();
+      // Visually remove the decoration from the world data
+      const idx = y * width + x;
+      if (decorations) decorations[idx] = 0;
+    }
+    return true;
+  }
+
+  // Tick regrowth — call periodically
+  function tickRegrowth(currentTick) {
+    for (const [key, state] of resourceHP) {
+      if (!state.depleted) continue;
+      const regrowthTime = REGROWTH_TICKS[state.decoId] || 0;
+      if (regrowthTime <= 0) continue; // never regrows (rocks)
+      
+      const elapsed = currentTick - state.depletedTick;
+      if (elapsed >= regrowthTime) {
+        // Regrow! Restore decoration
+        state.depleted = false;
+        state.hp = state.maxHp;
+        const [sx, sy] = key.split(',').map(Number);
+        const idx = sy * width + sx;
+        if (decorations) decorations[idx] = state.decoId;
+      }
+    }
+  }
+
   function getTileResources(x, y) {
     if (x < 0 || x >= width || y < 0 || y >= height) return null;
+    
+    // Check resource HP — depleted tiles have nothing
+    const state = getResourceHP(x, y);
+    if (state && state.depleted) return null;
+    
     // Check decoration first
     const decoId = decorations ? decorations[y * width + x] : 0;
     if (decoId && DECO_RESOURCES[decoId]) {
@@ -438,6 +525,8 @@ export function initWorldAdapter(worldData, dataDir) {
         available: true,
         resources: deco.resources,
         weights: deco.weights,
+        hp: state ? state.hp : null,
+        maxHp: state ? state.maxHp : null,
       };
     }
     // Fall back to zone-based resources for plain terrain
@@ -456,6 +545,10 @@ export function initWorldAdapter(worldData, dataDir) {
   function rollResource(x, y) {
     const res = getTileResources(x, y);
     if (!res) return null;
+    
+    // Drain resource HP on gather
+    harvestResource(x, y);
+    
     // Weighted random pick
     const totalWeight = res.weights.reduce((a, b) => a + b, 0);
     let roll = Math.random() * totalWeight;
@@ -568,6 +661,9 @@ export function initWorldAdapter(worldData, dataDir) {
     getTileResources,
     rollResource,
     getDecoration,
+    getResourceHP,
+    harvestResource,
+    tickRegrowth,
     DECO_RESOURCES,
     getTilesInRadius,
     getAgentsNearby,
