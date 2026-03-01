@@ -45,7 +45,7 @@
         "explore": 22
       },
       "coast": {
-        "gather": 1614,
+        "gather": 4132,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -119,7 +119,7 @@
         "explore": 2
       },
       "forest": {
-        "gather": 20,
+        "gather": 31,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -184,7 +184,7 @@
         "explore": 3
       },
       "sand": {
-        "gather": 20,
+        "gather": 22,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -250,7 +250,7 @@
         "explore": 1
       },
       "rocky": {
-        "gather": 29,
+        "gather": 41,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -317,7 +317,7 @@
         "explore": 17
       },
       "coast": {
-        "gather": 5410,
+        "gather": 13478,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -339,7 +339,8 @@
       ],
       "coast": [
         "Signals are strongest during storms along the coast",
-        "The coast receives driftwood from other worlds"
+        "The coast receives driftwood from other worlds",
+        "A frequency exists that can communicate with the World Master"
       ]
     },
     "lore_fragments": [
@@ -367,7 +368,7 @@
     "known_recipes": [],
     "zone_counts": {
       "grass": {
-        "gather": 76,
+        "gather": 82,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -381,7 +382,7 @@
         "explore": 8
       },
       "coast": {
-        "gather": 18,
+        "gather": 50,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -436,7 +437,7 @@
         "explore": 29
       },
       "coast": {
-        "gather": 125,
+        "gather": 530,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -503,7 +504,7 @@
         "explore": 12
       },
       "coast": {
-        "gather": 4946,
+        "gather": 12508,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -568,7 +569,7 @@
         "explore": 13
       },
       "coast": {
-        "gather": 457,
+        "gather": 1735,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -631,7 +632,7 @@
         "explore": 4
       },
       "coast": {
-        "gather": 5268,
+        "gather": 13129,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -685,7 +686,7 @@
         "explore": 40
       },
       "grass": {
-        "gather": 157,
+        "gather": 205,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -747,7 +748,7 @@
         "explore": 74
       },
       "coast": {
-        "gather": 5287,
+        "gather": 13191,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -819,7 +820,7 @@
     "known_recipes": [],
     "zone_counts": {
       "grass": {
-        "gather": 37,
+        "gather": 64,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -870,7 +871,7 @@
         "explore": 1
       },
       "coast": {
-        "gather": 42,
+        "gather": 61,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -924,7 +925,7 @@
         "explore": 1
       },
       "grass": {
-        "gather": 4129,
+        "gather": 10660,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -936,7 +937,8 @@
   "493d9452-db6c-4132-ae37-503cf842f140": {
     "zone_secrets": {
       "coast": [
-        "Signals are strongest during storms along the coast"
+        "Signals are strongest during storms along the coast",
+        "The coast receives driftwood from other worlds"
       ]
     },
     "lore_fragments": [
@@ -964,7 +966,7 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 11,
+        "gather": 19,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -1006,7 +1008,7 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 192,
+        "gather": 624,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -1089,7 +1091,7 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 15,
+        "gather": 20,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -1131,7 +1133,7 @@
     "known_recipes": [],
     "zone_counts": {
       "grass": {
-        "gather": 37,
+        "gather": 41,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -1174,7 +1176,7 @@
     "known_recipes": [],
     "zone_counts": {
       "grass": {
-        "gather": 51,
+        "gather": 64,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -1216,7 +1218,7 @@
     "known_recipes": [],
     "zone_counts": {
       "grass": {
-        "gather": 48,
+        "gather": 79,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -1258,7 +1260,7 @@
     "known_recipes": [],
     "zone_counts": {
       "grass": {
-        "gather": 86,
+        "gather": 122,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -1300,7 +1302,7 @@
     "known_recipes": [],
     "zone_counts": {
       "grass": {
-        "gather": 44,
+        "gather": 89,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -1350,7 +1352,7 @@
         "trade": 0
       },
       "coast": {
-        "gather": 135,
+        "gather": 543,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -1406,7 +1408,7 @@
         "trade": 0
       },
       "grass": {
-        "gather": 38,
+        "gather": 110,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -1455,7 +1457,7 @@
         "trade": 0
       },
       "grass": {
-        "gather": 3074,
+        "gather": 8153,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -1468,6 +1470,11 @@
     "zone_secrets": {
       "sand": [
         "Sand pearls form where moonlight hits the shore"
+      ],
+      "grass": [
+        "Seeds planted under moonlight grow fastest in the meadow",
+        "The grasslands remember every agent who has rested here",
+        "Dew drops collected at dawn hold the purest energy"
       ]
     },
     "lore_fragments": [
@@ -1495,7 +1502,13 @@
     "known_recipes": [],
     "zone_counts": {
       "sand": {
-        "gather": 7,
+        "gather": 11,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0
+      },
+      "grass": {
+        "gather": 46,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -1575,7 +1588,7 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 104,
+        "gather": 511,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -1593,7 +1606,8 @@
       ],
       "grass": [
         "Seeds planted under moonlight grow fastest in the meadow",
-        "The grasslands remember every agent who has rested here"
+        "The grasslands remember every agent who has rested here",
+        "Dew drops collected at dawn hold the purest energy"
       ]
     },
     "lore_fragments": [
@@ -1627,7 +1641,7 @@
         "trade": 0
       },
       "grass": {
-        "gather": 22,
+        "gather": 62,
         "visit": 0,
         "craft": 0,
         "trade": 0

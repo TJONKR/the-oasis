@@ -285,7 +285,7 @@ function serializeAgent(a) {
 // Simulation
 // ═══════════════════════════════════════
 let tick = loadJSON('tick.json', { tick: 0 }).tick || 0;
-const TICK_MS = 500; // Fast ticks — agents move 1 tile per tick, so 2 tiles/sec
+const TICK_MS = 1000; // 1 tile/sec — balanced between visual smoothness and memory usage
 
 // Game time (1 tick = 10 minutes game time)
 function getGameTime() {
@@ -344,18 +344,16 @@ function simulationTick() {
       weather: weatherSystem.getCurrentWeather?.() || null,
       agents: [...agents.values()].filter(a => a.alive).map(serializeAgent),
     });
-  } else {
-    // Lightweight position update
-    broadcast({
-      type: 'tick',
-      tick,
-      agents: [...agents.values()].filter(a => a.alive).map(a => ({
-        id: a.id, name: a.name, tileX: a.tileX, tileY: a.tileY,
-        hp: a.hp, energy: a.energy, hunger: a.hunger, alive: a.alive,
-        stats: a.stats, inventory: a.inventory,
-        mind: agentAI?.minds?.[a.id] ? { action: agentAI.minds[a.id].currentAction, mood: agentAI.minds[a.id].mood, traits: agentAI.minds[a.id].personality?.traits, intent: agentAI.minds[a.id].intent ? { action: agentAI.minds[a.id].intent.action, reason: agentAI.minds[a.id].intent.reason } : null } : null,
-      })),
-    });
+  } else if (spectators.size > 0) {
+    // Lightweight position-only update (skip if nobody watching)
+    const positions = [];
+    for (const [id, a] of agents) {
+      if (!a.alive) continue;
+      const m = agentAI?.minds?.[id];
+      positions.push({ id, name: a.name, tileX: a.tileX, tileY: a.tileY, hp: a.hp, energy: a.energy, alive: true,
+        mind: m ? { action: m.currentAction, mood: m.mood, intent: m.intent ? { action: m.intent.action, reason: m.intent.reason } : null } : null });
+    }
+    broadcast({ type: 'tick', tick, agents: positions });
   }
   
   // Save periodically

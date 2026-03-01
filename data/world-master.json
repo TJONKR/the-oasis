@@ -1,12 +1,12 @@
 {
-  "lastTick": "2026-03-01T11:33:27.333Z",
+  "lastTick": "2026-03-01T13:39:45.643Z",
   "lastNarrative": null,
   "dangers": [],
   "zoneModifiers": {},
   "npcDirectives": [],
   "consequences": [
     {
-      "id": "consequence_960ac5ab",
+      "id": "consequence_28d0049d",
       "type": "famine",
       "zones": [
         "grass",
@@ -21,21 +21,12 @@
         "path"
       ],
       "description": "🍂 Famine",
-      "startedAt": 1772363778469,
-      "expiresAt": 1772364978469
+      "startedAt": 1772371926752,
+      "expiresAt": 1772373126752
     }
   ],
-  "precursors": [
-    {
-      "id": "precursor_dc041679",
-      "type": "earthquake",
-      "message": "Faint tremors ripple through the ground...",
-      "zone": "rocky",
-      "sentAt": 1772364556393,
-      "expiresAt": 1772364856393
-    }
-  ],
-  "tickCount": 243,
+  "precursors": [],
+  "tickCount": 460,
   "activeEvents": [],
   "nextEventTrigger": 1772376592934.858
 }
