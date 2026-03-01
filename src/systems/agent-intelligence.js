@@ -107,7 +107,7 @@ function isFoodResource(name) {
   const n = (name || '').toLowerCase();
   return n.includes('berr') || n.includes('fish') || n.includes('mushroom') || n.includes('herb') || 
          n.includes('fruit') || n.includes('nut') || n.includes('coconut') || n.includes('acorn') || 
-         n.includes('seaweed') || n.includes('freshwater');
+         n.includes('seaweed') || n.includes('freshwater') || n.includes('raw_meat') || n.includes('meat');
 }
 
 function hasFood(agent) {
@@ -225,6 +225,8 @@ export function initAgentIntelligence(shared) {
       dangers: [],
       projects: [],
       unknownZones: [],
+      prey: [],      // huntable animals
+      predators: [],  // dangerous animals to flee from
     };
 
     const ax = agent.tileX, ay = agent.tileY;
@@ -280,6 +282,20 @@ export function initAgentIntelligence(shared) {
           distance: d,
           relationship: rel?.score || 0,
         });
+      }
+    }
+
+    // Scan for wildlife (prey to hunt, predators to flee)
+    if (shared.wildlife) {
+      const nearbyAnimals = shared.wildlife.getAnimalsNear(ax, ay, VISION_RANGE);
+      for (const animal of nearbyAnimals) {
+        if (animal.type === 'prey') {
+          result.prey.push(animal);
+        } else if (animal.type === 'predator') {
+          result.predators.push(animal);
+          // Predators are dangers!
+          result.dangers.push({ x: animal.tileX, y: animal.tileY, type: animal.species, distance: animal.distance, animalId: animal.id });
+        }
       }
     }
 
@@ -658,6 +674,40 @@ export function initAgentIntelligence(shared) {
     // ── SHELTER FROM STORM ──
     if (weatherId === 'storm') {
       intents.push({ action: 'rest', targetX: agent.tileX, targetY: agent.tileY, score: (mods.shelter || 45), reason: 'Take shelter from storm' });
+    }
+
+    // ── HUNT PREY — Maslow: physiological (food!) + esteem (skill) ──
+    for (const prey of (visible.prey || [])) {
+      let score = 25 + getTraitBonus(mind, 'fight');
+      // Hungry agents hunt MORE aggressively
+      if (agent.hunger > 30) score += agent.hunger * 0.8;
+      if (agent.hunger > 60) score += 30; // desperate hunting
+      // Bold agents hunt more
+      if (mind.personality.traits.includes('bold')) score += 15;
+      if (mind.personality.traits.includes('cautious')) score -= 10;
+      score -= prey.distance * 2;
+      intents.push({
+        action: 'hunt', targetX: prey.tileX, targetY: prey.tileY,
+        huntTarget: prey.id, score,
+        reason: `Hunt ${prey.species} ${prey.emoji} for food`
+      });
+    }
+
+    // ── FLEE PREDATORS — Maslow: safety (survival!) ──
+    for (const pred of (visible.predators || [])) {
+      let score = 100 + (20 - pred.distance) * 5; // closer = more urgent
+      if (mind.personality.traits.includes('cautious')) score += 30;
+      if (mind.personality.traits.includes('bold')) score -= 20;
+      // Low HP = more afraid
+      if ((agent.hp || 100) < 50) score += 40;
+      const awayX = agent.tileX + Math.sign(agent.tileX - pred.tileX) * 10;
+      const awayY = agent.tileY + Math.sign(agent.tileY - pred.tileY) * 10;
+      const tx = Math.max(0, Math.min((worldGrid.width || 2000) - 1, awayX));
+      const ty = Math.max(0, Math.min((worldGrid.height || 2000) - 1, awayY));
+      intents.push({
+        action: 'explore', targetX: tx, targetY: ty, score,
+        reason: `Flee from ${pred.species} ${pred.emoji}!`
+      });
     }
 
     // ── FIGHT — Maslow: esteem (dominance) + prospect theory (risk-seeking when desperate) ──
@@ -1176,6 +1226,31 @@ export function initAgentIntelligence(shared) {
   }
 
   // Map action names to executors
+  function executeHunt(agent, mind) {
+    const targetId = mind.intent?.huntTarget;
+    if (!targetId || !shared.wildlife) return;
+
+    const result = shared.wildlife.attackAnimal(agent, targetId);
+    if (!result) return;
+
+    if (result.killed) {
+      addMemoryEvent(mind, `Hunted and killed a ${targetId.split('_')[0]} — got meat!`);
+      if (awardXP) awardXP(agent.id, 8);
+      // Successful hunt is deeply satisfying — reduces hunger urgency perception
+      if (shared.needsSystem) {
+        const needs = shared.needsSystem.getAgentNeeds(agent.id);
+        if (needs) {
+          needs.esteem = Math.max(0, needs.esteem - 10); // pride from hunting
+          needs.masteryDesire = Math.max(0, needs.masteryDesire - 5);
+        }
+      }
+    } else {
+      addMemoryEvent(mind, `Fought an animal — took ${result.counterDmg} damage`);
+    }
+    shared.needsSystem?.recordAction(agent.id, 'hunt');
+    agent.energy = Math.max(0, agent.energy - 8);
+  }
+
   const EXECUTORS = {
     gather: executeGather,
     rest: executeRest,
@@ -1185,6 +1260,7 @@ export function initAgentIntelligence(shared) {
     experiment: executeExperiment,
     gift: executeGift,
     fight: executeFight,
+    hunt: executeHunt,
     build: executeBuild,
     eat: executeEat,
     plant: executePlant,

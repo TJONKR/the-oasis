@@ -40,6 +40,7 @@ import { initGasSystem } from './src/systems/gas-system.js';
 import { initLightning } from './src/systems/lightning.js';
 import { initInnerMonologue } from './src/systems/inner-monologue.js';
 import { createNeedsSystem } from './src/systems/needs-system.js';
+import { initWildlife } from './src/systems/wildlife.js';
 import { setupAgentAPI } from './src/agent-api.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -176,6 +177,7 @@ wss.on('connection', (ws) => {
     fires: getActiveFires(),
     gasClouds: gasSystem.getGasClouds(),
     growthSites: organicGrowth.getGrowthSites(),
+    wildlife: wildlife.getAll(),
   }));
 
   ws.on('message', (raw) => {
@@ -327,6 +329,11 @@ const needsSystem = createNeedsSystem(shared);
 shared.needsSystem = needsSystem;
 // Initialize needs for all existing agents
 for (const [id] of agents) needsSystem.initAgent(id);
+
+// Wildlife — animals, predators, prey
+const wildlife = initWildlife(shared);
+wildlife.setupRoutes(app);
+shared.wildlife = wildlife;
 
 // External Agent API
 shared.spawnAgent = spawnAgent;
@@ -507,7 +514,10 @@ function simulationTick() {
   gasSystem.tick(tick, weatherNow);
   lightningSystem.tick(tick, gameTime, weatherNow);
   
-  // 3d. Needs system world tick (tile depletion recovery)
+  // 3d. Wildlife tick (animal AI, spawning, combat)
+  wildlife.tick(tick);
+
+  // 3e. Needs system world tick (tile depletion recovery)
   needsSystem.tick();
 
   // 3e. Inner monologue — LLM-driven agent thoughts (async, non-blocking)
@@ -547,6 +557,7 @@ function simulationTick() {
       tickMsg.fires = getActiveFires();
       tickMsg.gasClouds = gasSystem.getGasClouds();
       tickMsg.growthSites = organicGrowth.getGrowthSites();
+      tickMsg.wildlife = wildlife.getAll();
     }
     broadcast(tickMsg);
   }

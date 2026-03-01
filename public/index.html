@@ -78,6 +78,7 @@ let tileEffects = []; // { type, x, y, startTime, duration, particles[] }
 let worldFires = []; // persistent fires from server { tileX, tileY, heat }
 let gasClouds = []; // { tileX, tileY, type, density, color }
 let growthSites = []; // { tileX, tileY, progress, plantType }
+let worldWildlife = []; // { id, species, type, tileX, tileY, hp, maxHp, state, emoji }
 let lightningFlash = 0; // timestamp of last flash
 let agentThoughts = {}; // agentId → { text, emotion, time }
 let camera = { x: 0, y: 0, zoom: 4 };
@@ -105,6 +106,7 @@ function connect() {
       worldFires = msg.fires || [];
       gasClouds = msg.gasClouds || [];
       growthSites = msg.growthSites || [];
+      worldWildlife = msg.wildlife || [];
       updateHUD(msg.tick);
       updateAgentList();
       updateNewsList();
@@ -120,6 +122,7 @@ function connect() {
       if (msg.fires) worldFires = msg.fires;
       if (msg.gasClouds) gasClouds = msg.gasClouds;
       if (msg.growthSites) growthSites = msg.growthSites;
+      if (msg.wildlife) worldWildlife = msg.wildlife;
       if (msg.gameTime) updateHUD(msg.tick, msg.gameTime, msg.weather);
       updateAgentList();
     } else if (msg.type === 'agent_spawn') {
@@ -441,7 +444,7 @@ function render() {
       // Action/intent label (thought bubble)
       const intentText = agent.mind?.intent?.reason || agent.mind?.intent?.action || agent.mind?.action || '';
       if (intentText && intentText !== 'idle') {
-        const ACTION_ICONS = { move:'🚶', gather:'🧺', rest:'😴', eat:'🍎', craft:'⚒️', experiment:'🔬', chat:'💬', gift:'🎁', fight:'⚔️', explore:'🧭', build:'🏗️', plant:'🌱', cook:'🍳', drop:'🗑️', pickup:'📦' };
+        const ACTION_ICONS = { move:'🚶', gather:'🧺', rest:'😴', eat:'🍎', craft:'⚒️', experiment:'🔬', chat:'💬', gift:'🎁', fight:'⚔️', hunt:'🏹', explore:'🧭', build:'🏗️', plant:'🌱', cook:'🍳', drop:'🗑️', pickup:'📦' };
         const icon = ACTION_ICONS[agent.mind?.intent?.action || agent.mind?.action] || '💭';
         const label = icon + ' ' + (intentText.length > 18 ? intentText.slice(0,18)+'…' : intentText);
         ctx.font = `${Math.max(5, 7)}px monospace`;
@@ -460,6 +463,45 @@ function render() {
     }
   }
   
+  // Draw wildlife (animals)
+  for (const animal of worldWildlife) {
+    const ax = animal.tileX * T2 + T2/2;
+    const ay = animal.tileY * T2 + T2/2;
+
+    if (camera.zoom >= 0.8) {
+      // Draw emoji at tile
+      const fontSize = Math.max(8, Math.floor(T2 * 0.8));
+      ctx.font = `${fontSize}px serif`;
+      ctx.textAlign = 'center';
+      ctx.fillText(animal.emoji || '🐾', ax, ay + fontSize * 0.3);
+
+      // HP bar for damaged animals
+      if (animal.hp < animal.maxHp && camera.zoom >= 1.5) {
+        const bw = T2 * 1.2;
+        const bh = 2;
+        const bx = ax - bw/2;
+        const by = ay - fontSize * 0.5;
+        ctx.fillStyle = 'rgba(0,0,0,0.5)';
+        ctx.fillRect(bx, by, bw, bh);
+        ctx.fillStyle = animal.type === 'predator' ? '#e06c75' : '#98c379';
+        ctx.fillRect(bx, by, bw * (animal.hp / animal.maxHp), bh);
+      }
+
+      // State indicator for predators
+      if (animal.type === 'predator' && animal.state === 'hunting' && camera.zoom >= 1.5) {
+        ctx.font = `${Math.max(6, 8)}px monospace`;
+        ctx.fillStyle = '#e06c75';
+        ctx.fillText('⚠️', ax + T2 * 0.5, ay - fontSize * 0.3);
+      }
+    } else if (camera.zoom >= 0.3) {
+      // At low zoom, colored dot — red for predators, green for prey
+      ctx.fillStyle = animal.type === 'predator' ? '#e06c75' : '#98c379';
+      ctx.beginPath();
+      ctx.arc(ax, ay, 2, 0, Math.PI * 2);
+      ctx.fill();
+    }
+  }
+
   // Draw persistent world fires
   for (const fire of worldFires) {
     const fx = fire.tileX * T2 + T2/2;

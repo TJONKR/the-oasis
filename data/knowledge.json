@@ -71,7 +71,8 @@
       ],
       "coast": [],
       "rocky": [],
-      "forest": []
+      "forest": [],
+      "sand": []
     },
     "lore_fragments": [
       "The first experiment created light — and also the first explosion.",
@@ -124,6 +125,13 @@
         "craft": 0,
         "trade": 0,
         "explore": 12
+      },
+      "sand": {
+        "gather": 0,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 1
       }
     },
     "mastery": {},
@@ -241,7 +249,7 @@
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 1
+        "explore": 2
       },
       "coast": {
         "gather": 2,
@@ -623,7 +631,7 @@
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 22
+        "explore": 23
       },
       "sand": {
         "gather": 3,
@@ -825,7 +833,7 @@
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 1596
+        "explore": 1597
       }
     },
     "mastery": {},
@@ -1150,7 +1158,7 @@
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 308
+        "explore": 309
       },
       "coast": {
         "gather": 0,
