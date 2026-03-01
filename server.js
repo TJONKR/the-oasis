@@ -466,43 +466,7 @@ function simulationTick() {
     if (achievementSystem.check) achievementSystem.check(agent);
   }
 
-  // 3a-2. Respawn dead agents after delay (death has consequences: lose inventory + XP penalty)
-  const RESPAWN_DELAY = 120; // ticks (~60 seconds)
-  for (const [id, agent] of agents) {
-    if (agent.alive || agent.external) continue;
-    if (!agent._deathTick) agent._deathTick = tick;
-    if (tick - agent._deathTick >= RESPAWN_DELAY) {
-      // Respawn: new position, empty inventory, XP penalty, keep name + personality
-      const spread = 50;
-      let tileX, tileY, attempts = 0;
-      do {
-        tileX = worldGrid.spawnPoint.x + Math.floor(Math.random() * spread * 2 - spread);
-        tileY = worldGrid.spawnPoint.y + Math.floor(Math.random() * spread * 2 - spread);
-        attempts++;
-      } while (attempts < 100 && (!worldGrid.getTile(tileX, tileY)?.walkable));
-
-      agent.alive = true;
-      agent.hp = 100;
-      agent.energy = 80;
-      agent.hunger = 20; // spawn slightly hungry — urgency from the start
-      agent.tileX = tileX;
-      agent.tileY = tileY;
-      agent.x = tileX;
-      agent.y = tileY;
-      agent.zone = worldGrid.getZone(tileX, tileY);
-      agent.inventory = []; // lose everything
-      agent.stats.xp = Math.floor(agent.stats.xp * 0.6); // 40% XP penalty
-      agent.stats.level = getLevelForXP(agent.stats.xp);
-      agent.stats.title = getTitleForLevel(agent.stats.level);
-      delete agent._deathTick;
-
-      addWorldNews('respawn', id, agent.name,
-        `${agent.name} has returned to The Oasis, humbled by death (Level ${agent.stats.level})`,
-        agent.zone);
-      broadcast({ type: 'agent_spawn', agent: serializeAgent(agent) });
-      console.log(`🔄 ${agent.name} respawned at (${tileX},${tileY}) — lost inventory, XP: ${agent.stats.xp}`);
-    }
-  }
+  // NO RESPAWN — death is permanent. Survive or die.
 
   // 3b. World physics (fire propagation, water flow)
   const weatherNow = weatherSystem.getCurrentWeather?.() || {};
