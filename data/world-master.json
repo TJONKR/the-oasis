@@ -1,5 +1,5 @@
 {
-  "lastTick": "2026-03-01T18:54:01.366Z",
+  "lastTick": "2026-03-01T19:04:42.930Z",
   "lastNarrative": null,
   "dangers": [],
   "zoneModifiers": {},
@@ -27,15 +27,15 @@
   ],
   "precursors": [
     {
-      "id": "precursor_6f014bdd",
+      "id": "precursor_151a7cf4",
       "type": "earthquake",
       "message": "Faint tremors ripple through the ground...",
-      "zone": "rocky",
-      "sentAt": 1772391066574,
-      "expiresAt": 1772391366574
+      "zone": "cave",
+      "sentAt": 1772391760594,
+      "expiresAt": 1772392060594
     }
   ],
-  "tickCount": 1183,
+  "tickCount": 1207,
   "activeEvents": [],
   "nextEventTrigger": 1772393381642.8223
 }

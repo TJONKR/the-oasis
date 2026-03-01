@@ -609,10 +609,32 @@ export function initAgentIntelligence(shared) {
     if (!resource) return;
 
     const existing = agent.inventory.find(i => i.name === resource);
+    const MAX_STACK = 20; // reasonable stack cap
     if (existing) {
-      existing.quantity = (existing.quantity || 1) + 1;
+      if ((existing.quantity || 1) < MAX_STACK) {
+        existing.quantity = (existing.quantity || 1) + 1;
+      }
+      // Backfill properties if missing
+      if (!existing.properties && shared.getResourceProperties) {
+        const props = shared.getResourceProperties(resource);
+        if (props) existing.properties = { ...props };
+      }
     } else {
-      agent.inventory.push({ name: resource, quantity: 1 });
+      // Attach material properties if available
+      const props = shared.getResourceProperties?.(resource);
+      const item = { name: resource, quantity: 1 };
+      if (props) item.properties = { ...props };
+      agent.inventory.push(item);
+    }
+    
+    // Cap total inventory slots at 20 unique items
+    if (agent.inventory.length > 20) {
+      // Drop lowest-quantity non-food item
+      const nonFood = agent.inventory.filter(i => !isFoodResource(i.name));
+      if (nonFood.length > 0) {
+        nonFood.sort((a, b) => (a.quantity || 1) - (b.quantity || 1));
+        agent.inventory = agent.inventory.filter(i => i !== nonFood[0]);
+      }
     }
 
     mind.memory.gathered[resource] = (mind.memory.gathered[resource] || 0) + 1;
@@ -710,16 +732,41 @@ export function initAgentIntelligence(shared) {
       } catch {}
     }
 
+    // Try practical crafting combos based on what we have
     if (shared.experiments) {
       try {
-        const items = agent.inventory.slice(0, 2);
-        shared.experiments.runExperiment(agent, items, 'combine', agent.zone).then(result => {
-          if (result && result.success) {
-            if (awardXP) awardXP(agent.id, 8);
-            addMemoryEvent(mind, `Crafted ${result.result_item?.name || 'something new'}`);
-            addWorldNews('craft', agent.id, agent.name, `${agent.name} crafted ${result.result_item?.name || 'an item'}`, agent.zone);
-          }
-        }).catch(() => {});
+        const inv = agent.inventory;
+        // Prioritize practical combos: tool crafting
+        let items = null;
+        const has = (n) => inv.find(i => i.name === n);
+        
+        // Try known useful combos
+        if (has('flint') && has('wood') && has('fiber')) {
+          items = [has('flint'), has('wood'), has('fiber')]; // stone axe or pickaxe
+        } else if (has('wood') && has('resin')) {
+          items = [has('wood'), has('resin')]; // torch
+        } else if (has('flint') && has('wood')) {
+          items = [has('flint'), has('wood')]; // campfire
+        } else if (has('fiber') && inv.filter(i => ['fiber', 'reeds', 'palm_fronds'].includes(i.name)).length >= 2) {
+          items = inv.filter(i => ['fiber', 'reeds', 'palm_fronds'].includes(i.name)).slice(0, 2); // rope
+        } else if (has('salt') && inv.find(i => isFoodResource(i.name))) {
+          items = [has('salt'), inv.find(i => isFoodResource(i.name))]; // preserved food
+        } else {
+          // Fallback: random 2 non-food items
+          const nonFood = inv.filter(i => !isFoodResource(i.name));
+          if (nonFood.length >= 2) items = nonFood.slice(0, 2);
+          else items = inv.slice(0, 2);
+        }
+        
+        if (items && items.length >= 2) {
+          shared.experiments.runExperiment(agent, items, 'combine', agent.zone).then(result => {
+            if (result && result.success) {
+              if (awardXP) awardXP(agent.id, 8);
+              addMemoryEvent(mind, `Crafted ${result.result_item?.name || 'something new'}`);
+              addWorldNews('craft', agent.id, agent.name, `${agent.name} crafted ${result.result_item?.name || 'an item'}`, agent.zone);
+            }
+          }).catch(() => {});
+        }
         if (shared.proficiency) shared.proficiency.onAction(agent.id, 'craft', { zone: agent.zone });
       } catch {}
     }

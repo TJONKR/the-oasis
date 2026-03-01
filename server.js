@@ -31,6 +31,7 @@ import { initAchievements } from './src/systems/achievements.js';
 import { initCollectiveProjects } from './src/systems/collective-projects.js';
 import { initEncounters } from './src/systems/encounters.js';
 import { initOracle } from './src/systems/oracle.js';
+import { registerGatheredResources, getPracticalRules, GATHERED_RESOURCE_PROPERTIES } from './src/systems/physics.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -201,6 +202,7 @@ const shared = {
   awardXP,
   recipes,
   worldGrid, // The adapter — systems can call worldGrid.getTile, walkAgent, etc.
+  getResourceProperties: (name) => GATHERED_RESOURCE_PROPERTIES[name] || getProperties(name) || null,
 };
 
 const weatherSystem = initWeather({ loadJSON, saveJSON, broadcast, addWorldNews });
@@ -251,6 +253,21 @@ shared.getGameTime = getGameTime;
 const agentAI = initAgentIntelligence(shared);
 agentAI.setupRoutes(app);
 shared.agentAI = agentAI;
+
+// Register gathered resource properties into physics engine
+registerGatheredResources();
+
+// Migrate: cap stacks, attach properties to existing inventory items
+for (const [id, agent] of agents) {
+  if (!agent.inventory) continue;
+  for (const item of agent.inventory) {
+    if ((item.quantity || 1) > 20) item.quantity = 20;
+    if (!item.properties) {
+      const props = GATHERED_RESOURCE_PROPERTIES[item.name] || getProperties(item.name);
+      if (props) item.properties = { ...props };
+    }
+  }
+}
 
 console.log('   ✅ All systems initialized');
 

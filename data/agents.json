@@ -8,17 +8,59 @@
     "y": 401,
     "zone": "coast",
     "hp": 100,
-    "energy": 51.5,
-    "hunger": 0.16,
+    "energy": 42.5,
+    "hunger": 0.04,
     "temperature": 20,
     "inventory": [
       {
         "name": "driftwood",
-        "quantity": 6158
+        "quantity": 20,
+        "properties": {
+          "hardness": 3,
+          "conductivity": 0,
+          "flammability": 7,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 1.5,
+          "decay_rate": 0.2,
+          "energy": 8,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 200,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 4,
+          "brittleness": 4,
+          "fertility": 1
+        }
       },
       {
         "name": "shells",
-        "quantity": 6122
+        "quantity": 20,
+        "properties": {
+          "hardness": 4,
+          "conductivity": 0,
+          "flammability": 0,
+          "toxicity": 0,
+          "luminosity": 1,
+          "volatility": 0,
+          "organic": 0.5,
+          "weight": 0.2,
+          "decay_rate": 0.05,
+          "energy": 1,
+          "temperature": 20,
+          "resonance": 1,
+          "melt_point": 500,
+          "ignition": 0,
+          "sharpness": 2,
+          "solubility": 2,
+          "malleability": 0,
+          "brittleness": 7,
+          "fertility": 1
+        }
       }
     ],
     "knowledge": [],
@@ -29,7 +71,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 25017,
+      "xp": 25067,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -46,20 +88,83 @@
     "zone": "coast",
     "hp": 100,
     "energy": 49.5,
-    "hunger": 0.24000000000000002,
+    "hunger": 0.5199999999999999,
     "temperature": 20,
     "inventory": [
       {
         "name": "palm_fronds",
-        "quantity": 9988
+        "quantity": 20,
+        "properties": {
+          "hardness": 1,
+          "conductivity": 0,
+          "flammability": 5,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 0.3,
+          "decay_rate": 0.25,
+          "energy": 3,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 180,
+          "sharpness": 1,
+          "solubility": 0,
+          "malleability": 7,
+          "brittleness": 2,
+          "fertility": 1
+        }
       },
       {
         "name": "wood",
-        "quantity": 15735
+        "quantity": 20,
+        "properties": {
+          "hardness": 4,
+          "conductivity": 0,
+          "flammability": 7,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 3,
+          "decay_rate": 0.1,
+          "energy": 8,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 250,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 4,
+          "brittleness": 3,
+          "fertility": 1
+        }
       },
       {
         "name": "coconuts",
-        "quantity": 14177
+        "quantity": 20,
+        "properties": {
+          "hardness": 5,
+          "conductivity": 0,
+          "flammability": 3,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 1.5,
+          "decay_rate": 0.2,
+          "energy": 25,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 250,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 0,
+          "brittleness": 6,
+          "fertility": 2
+        }
       }
     ],
     "knowledge": [],
@@ -86,21 +191,84 @@
     "y": 442,
     "zone": "coast",
     "hp": 100,
-    "energy": 56.90000000000016,
-    "hunger": 5.999999999999878,
+    "energy": 56.200000000002746,
+    "hunger": 0.16,
     "temperature": 20,
     "inventory": [
       {
         "name": "fiber",
-        "quantity": 26
+        "quantity": 19,
+        "properties": {
+          "hardness": 1,
+          "conductivity": 0,
+          "flammability": 5,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 0.1,
+          "decay_rate": 0.1,
+          "energy": 2,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 200,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 8,
+          "brittleness": 1,
+          "fertility": 0
+        }
       },
       {
         "name": "sand",
-        "quantity": 3
+        "quantity": 1,
+        "properties": {
+          "hardness": 2,
+          "conductivity": 0,
+          "flammability": 0,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 0,
+          "weight": 2,
+          "decay_rate": 0,
+          "energy": 0,
+          "temperature": 25,
+          "resonance": 0,
+          "melt_point": 1200,
+          "ignition": 0,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 3,
+          "brittleness": 0,
+          "fertility": 0
+        }
       },
       {
         "name": "herbs",
-        "quantity": 54
+        "quantity": 19,
+        "properties": {
+          "hardness": 0,
+          "conductivity": 0,
+          "flammability": 4,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 1,
+          "organic": 1,
+          "weight": 0.05,
+          "decay_rate": 0.35,
+          "energy": 10,
+          "temperature": 20,
+          "resonance": 1,
+          "melt_point": 0,
+          "ignition": 160,
+          "sharpness": 0,
+          "solubility": 4,
+          "malleability": 1,
+          "brittleness": 1,
+          "fertility": 3
+        }
       }
     ],
     "knowledge": [],
@@ -111,7 +279,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 165759,
+      "xp": 165912,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -127,13 +295,34 @@
     "y": 412,
     "zone": "coast",
     "hp": 100,
-    "energy": 52.800000000000935,
-    "hunger": 0.7200000000000001,
+    "energy": 50.90000000000353,
+    "hunger": 1.4000000000000006,
     "temperature": 20,
     "inventory": [
       {
         "name": "shells",
-        "quantity": 2
+        "quantity": 2,
+        "properties": {
+          "hardness": 4,
+          "conductivity": 0,
+          "flammability": 0,
+          "toxicity": 0,
+          "luminosity": 1,
+          "volatility": 0,
+          "organic": 0.5,
+          "weight": 0.2,
+          "decay_rate": 0.05,
+          "energy": 1,
+          "temperature": 20,
+          "resonance": 1,
+          "melt_point": 500,
+          "ignition": 0,
+          "sharpness": 2,
+          "solubility": 2,
+          "malleability": 0,
+          "brittleness": 7,
+          "fertility": 1
+        }
       }
     ],
     "knowledge": [],
@@ -160,25 +349,109 @@
     "y": 450,
     "zone": "grass",
     "hp": 100,
-    "energy": 53.70000000000023,
-    "hunger": 11.999999999999872,
+    "energy": 50.60000000000352,
+    "hunger": 0.68,
     "temperature": 20,
     "inventory": [
       {
         "name": "wood",
-        "quantity": 5
+        "quantity": 5,
+        "properties": {
+          "hardness": 4,
+          "conductivity": 0,
+          "flammability": 7,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 3,
+          "decay_rate": 0.1,
+          "energy": 8,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 250,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 4,
+          "brittleness": 3,
+          "fertility": 1
+        }
       },
       {
         "name": "herbs",
-        "quantity": 40
+        "quantity": 20,
+        "properties": {
+          "hardness": 0,
+          "conductivity": 0,
+          "flammability": 4,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 1,
+          "organic": 1,
+          "weight": 0.05,
+          "decay_rate": 0.35,
+          "energy": 10,
+          "temperature": 20,
+          "resonance": 1,
+          "melt_point": 0,
+          "ignition": 160,
+          "sharpness": 0,
+          "solubility": 4,
+          "malleability": 1,
+          "brittleness": 1,
+          "fertility": 3
+        }
       },
       {
         "name": "acorns",
-        "quantity": 1
+        "quantity": 1,
+        "properties": {
+          "hardness": 3,
+          "conductivity": 0,
+          "flammability": 3,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 0.1,
+          "decay_rate": 0.2,
+          "energy": 12,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 200,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 0,
+          "brittleness": 5,
+          "fertility": 5
+        }
       },
       {
         "name": "fiber",
-        "quantity": 51
+        "quantity": 20,
+        "properties": {
+          "hardness": 1,
+          "conductivity": 0,
+          "flammability": 5,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 0.1,
+          "decay_rate": 0.1,
+          "energy": 2,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 200,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 8,
+          "brittleness": 1,
+          "fertility": 0
+        }
       }
     ],
     "knowledge": [],
@@ -189,12 +462,12 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 166337,
+      "xp": 166342,
       "level": 11,
       "title": "Crafter ⚒️"
     },
     "ticksBorn": 1120,
-    "coins": 515
+    "coins": 533
   },
   "adece4fb-fe63-4326-9e8b-77bb35d53dc1": {
     "id": "adece4fb-fe63-4326-9e8b-77bb35d53dc1",
@@ -205,17 +478,59 @@
     "y": 440,
     "zone": "coast",
     "hp": 100,
-    "energy": 45,
-    "hunger": 0.16,
+    "energy": 50,
+    "hunger": 0.36,
     "temperature": 20,
     "inventory": [
       {
         "name": "driftwood",
-        "quantity": 19674
+        "quantity": 20,
+        "properties": {
+          "hardness": 3,
+          "conductivity": 0,
+          "flammability": 7,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 1.5,
+          "decay_rate": 0.2,
+          "energy": 8,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 200,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 4,
+          "brittleness": 4,
+          "fertility": 1
+        }
       },
       {
         "name": "shells",
-        "quantity": 19558
+        "quantity": 20,
+        "properties": {
+          "hardness": 4,
+          "conductivity": 0,
+          "flammability": 0,
+          "toxicity": 0,
+          "luminosity": 1,
+          "volatility": 0,
+          "organic": 0.5,
+          "weight": 0.2,
+          "decay_rate": 0.05,
+          "energy": 1,
+          "temperature": 20,
+          "resonance": 1,
+          "melt_point": 500,
+          "ignition": 0,
+          "sharpness": 2,
+          "solubility": 2,
+          "malleability": 0,
+          "brittleness": 7,
+          "fertility": 1
+        }
       }
     ],
     "knowledge": [],
@@ -236,23 +551,65 @@
   "582115a5-7236-46c9-93cc-d3f4abadd5f8": {
     "id": "582115a5-7236-46c9-93cc-d3f4abadd5f8",
     "name": "Agent-7",
-    "tileX": 1062,
-    "tileY": 447,
-    "x": 1062,
-    "y": 447,
+    "tileX": 1044,
+    "tileY": 442,
+    "x": 1044,
+    "y": 442,
     "zone": "coast",
     "hp": 100,
     "energy": 35.599999999999966,
-    "hunger": 53.99999999999987,
+    "hunger": 80.0000000000056,
     "temperature": 20,
     "inventory": [
       {
         "name": "stone",
-        "quantity": 11
+        "quantity": 11,
+        "properties": {
+          "hardness": 7,
+          "conductivity": 1,
+          "flammability": 0,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 0,
+          "weight": 8,
+          "decay_rate": 0,
+          "energy": 0,
+          "temperature": 20,
+          "resonance": 0.5,
+          "melt_point": 1200,
+          "ignition": 0,
+          "sharpness": 2,
+          "solubility": 0,
+          "malleability": 1,
+          "brittleness": 5,
+          "fertility": 0
+        }
       },
       {
         "name": "flint",
-        "quantity": 1
+        "quantity": 1,
+        "properties": {
+          "hardness": 8,
+          "conductivity": 0,
+          "flammability": 0,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 0,
+          "weight": 0.5,
+          "decay_rate": 0,
+          "energy": 5,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 1400,
+          "ignition": 0,
+          "sharpness": 7,
+          "solubility": 0,
+          "malleability": 0,
+          "brittleness": 7,
+          "fertility": 0
+        }
       }
     ],
     "knowledge": [],
@@ -273,23 +630,65 @@
   "afbbb7cf-008c-44b3-a369-5ffae5b0bcce": {
     "id": "afbbb7cf-008c-44b3-a369-5ffae5b0bcce",
     "name": "Agent-8",
-    "tileX": 1061,
-    "tileY": 446,
-    "x": 1061,
-    "y": 446,
+    "tileX": 1044,
+    "tileY": 442,
+    "x": 1044,
+    "y": 442,
     "zone": "coast",
     "hp": 100,
-    "energy": 32,
-    "hunger": 55.99999999999987,
+    "energy": 33,
+    "hunger": 78.00000000000595,
     "temperature": 20,
     "inventory": [
       {
         "name": "flint",
-        "quantity": 2
+        "quantity": 2,
+        "properties": {
+          "hardness": 8,
+          "conductivity": 0,
+          "flammability": 0,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 0,
+          "weight": 0.5,
+          "decay_rate": 0,
+          "energy": 5,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 1400,
+          "ignition": 0,
+          "sharpness": 7,
+          "solubility": 0,
+          "malleability": 0,
+          "brittleness": 7,
+          "fertility": 0
+        }
       },
       {
         "name": "stone",
-        "quantity": 4
+        "quantity": 4,
+        "properties": {
+          "hardness": 7,
+          "conductivity": 1,
+          "flammability": 0,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 0,
+          "weight": 8,
+          "decay_rate": 0,
+          "energy": 0,
+          "temperature": 20,
+          "resonance": 0.5,
+          "melt_point": 1200,
+          "ignition": 0,
+          "sharpness": 2,
+          "solubility": 0,
+          "malleability": 1,
+          "brittleness": 5,
+          "fertility": 0
+        }
       }
     ],
     "knowledge": [],
@@ -316,24 +715,37 @@
     "y": 442,
     "zone": "sand",
     "hp": 100,
-    "energy": 52.30000000000014,
-    "hunger": 5.99999999999989,
+    "energy": 28.200000000001943,
+    "hunger": 0.24000000000000002,
     "temperature": 20,
     "inventory": [
       {
-        "name": "herbs",
-        "quantity": 79
-      },
-      {
         "name": "fiber",
-        "quantity": 78
+        "quantity": 1,
+        "properties": {
+          "hardness": 1,
+          "conductivity": 0,
+          "flammability": 5,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 0.1,
+          "decay_rate": 0.1,
+          "energy": 2,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 200,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 8,
+          "brittleness": 1,
+          "fertility": 0
+        }
       },
       {
-        "name": "sand",
-        "quantity": 1
-      },
-      {
-        "name": "shells",
+        "name": "herbs",
         "quantity": 1
       }
     ],
@@ -345,7 +757,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 161055,
+      "xp": 161600,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -361,13 +773,34 @@
     "y": 412,
     "zone": "coast",
     "hp": 100,
-    "energy": 56.00000000000158,
-    "hunger": 0.16,
+    "energy": 52.900000000004866,
+    "hunger": 0.4799999999999999,
     "temperature": 20,
     "inventory": [
       {
         "name": "driftwood",
-        "quantity": 2
+        "quantity": 2,
+        "properties": {
+          "hardness": 3,
+          "conductivity": 0,
+          "flammability": 7,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 1.5,
+          "decay_rate": 0.2,
+          "energy": 8,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 200,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 4,
+          "brittleness": 4,
+          "fertility": 1
+        }
       }
     ],
     "knowledge": [],
@@ -394,17 +827,59 @@
     "y": 395,
     "zone": "coast",
     "hp": 100,
-    "energy": 52,
-    "hunger": 0.12,
+    "energy": 54,
+    "hunger": 0.08,
     "temperature": 20,
     "inventory": [
       {
         "name": "shells",
-        "quantity": 18602
+        "quantity": 20,
+        "properties": {
+          "hardness": 4,
+          "conductivity": 0,
+          "flammability": 0,
+          "toxicity": 0,
+          "luminosity": 1,
+          "volatility": 0,
+          "organic": 0.5,
+          "weight": 0.2,
+          "decay_rate": 0.05,
+          "energy": 1,
+          "temperature": 20,
+          "resonance": 1,
+          "melt_point": 500,
+          "ignition": 0,
+          "sharpness": 2,
+          "solubility": 2,
+          "malleability": 0,
+          "brittleness": 7,
+          "fertility": 1
+        }
       },
       {
         "name": "driftwood",
-        "quantity": 18640
+        "quantity": 20,
+        "properties": {
+          "hardness": 3,
+          "conductivity": 0,
+          "flammability": 7,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 1.5,
+          "decay_rate": 0.2,
+          "energy": 8,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 200,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 4,
+          "brittleness": 4,
+          "fertility": 1
+        }
       }
     ],
     "knowledge": [],
@@ -431,17 +906,59 @@
     "y": 438,
     "zone": "coast",
     "hp": 100,
-    "energy": 55,
+    "energy": 56,
     "hunger": 0.04,
     "temperature": 20,
     "inventory": [
       {
         "name": "driftwood",
-        "quantity": 19522
+        "quantity": 20,
+        "properties": {
+          "hardness": 3,
+          "conductivity": 0,
+          "flammability": 7,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 1.5,
+          "decay_rate": 0.2,
+          "energy": 8,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 200,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 4,
+          "brittleness": 4,
+          "fertility": 1
+        }
       },
       {
         "name": "shells",
-        "quantity": 19588
+        "quantity": 20,
+        "properties": {
+          "hardness": 4,
+          "conductivity": 0,
+          "flammability": 0,
+          "toxicity": 0,
+          "luminosity": 1,
+          "volatility": 0,
+          "organic": 0.5,
+          "weight": 0.2,
+          "decay_rate": 0.05,
+          "energy": 1,
+          "temperature": 20,
+          "resonance": 1,
+          "melt_point": 500,
+          "ignition": 0,
+          "sharpness": 2,
+          "solubility": 2,
+          "malleability": 0,
+          "brittleness": 7,
+          "fertility": 1
+        }
       }
     ],
     "knowledge": [],
@@ -468,57 +985,37 @@
     "y": 464,
     "zone": "grass",
     "hp": 100,
-    "energy": 56.60000000000019,
-    "hunger": 1.999999999999929,
+    "energy": 48.900000000002336,
+    "hunger": 0.36,
     "temperature": 20,
     "inventory": [
       {
         "name": "fiber",
-        "quantity": 42
+        "quantity": 1,
+        "properties": {
+          "hardness": 1,
+          "conductivity": 0,
+          "flammability": 5,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 0.1,
+          "decay_rate": 0.1,
+          "energy": 2,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 200,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 8,
+          "brittleness": 1,
+          "fertility": 0
+        }
       },
       {
         "name": "herbs",
-        "quantity": 38
-      },
-      {
-        "name": "flowers",
-        "quantity": 2
-      }
-    ],
-    "knowledge": [],
-    "relationships": {},
-    "proficiencies": {},
-    "achievements": [],
-    "memory": [],
-    "goals": [],
-    "alive": true,
-    "stats": {
-      "xp": 162025,
-      "level": 11,
-      "title": "Crafter ⚒️"
-    },
-    "ticksBorn": 3607,
-    "coins": 759
-  },
-  "d56be782-7d0b-48d3-b5bc-cd2f59d54c48": {
-    "id": "d56be782-7d0b-48d3-b5bc-cd2f59d54c48",
-    "name": "Agent-14",
-    "tileX": 1112,
-    "tileY": 419,
-    "x": 1112,
-    "y": 419,
-    "zone": "coast",
-    "hp": 100,
-    "energy": 53.10000000000001,
-    "hunger": 3.999999999999887,
-    "temperature": 20,
-    "inventory": [
-      {
-        "name": "herbs",
-        "quantity": 2
-      },
-      {
-        "name": "shells",
         "quantity": 1
       }
     ],
@@ -530,7 +1027,86 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 162250,
+      "xp": 162461,
+      "level": 11,
+      "title": "Crafter ⚒️"
+    },
+    "ticksBorn": 3607,
+    "coins": 788
+  },
+  "d56be782-7d0b-48d3-b5bc-cd2f59d54c48": {
+    "id": "d56be782-7d0b-48d3-b5bc-cd2f59d54c48",
+    "name": "Agent-14",
+    "tileX": 1112,
+    "tileY": 419,
+    "x": 1112,
+    "y": 419,
+    "zone": "coast",
+    "hp": 100,
+    "energy": 50.10000000000066,
+    "hunger": 0.16,
+    "temperature": 20,
+    "inventory": [
+      {
+        "name": "fiber",
+        "quantity": 29,
+        "properties": {
+          "hardness": 1,
+          "conductivity": 0,
+          "flammability": 5,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 0.1,
+          "decay_rate": 0.1,
+          "energy": 2,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 200,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 8,
+          "brittleness": 1,
+          "fertility": 0
+        }
+      },
+      {
+        "name": "herbs",
+        "quantity": 33,
+        "properties": {
+          "hardness": 0,
+          "conductivity": 0,
+          "flammability": 4,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 1,
+          "organic": 1,
+          "weight": 0.05,
+          "decay_rate": 0.35,
+          "energy": 10,
+          "temperature": 20,
+          "resonance": 1,
+          "melt_point": 0,
+          "ignition": 160,
+          "sharpness": 0,
+          "solubility": 4,
+          "malleability": 1,
+          "brittleness": 1,
+          "fertility": 3
+        }
+      }
+    ],
+    "knowledge": [],
+    "relationships": {},
+    "proficiencies": {},
+    "achievements": [],
+    "memory": [],
+    "goals": [],
+    "alive": true,
+    "stats": {
+      "xp": 162331,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -546,8 +1122,8 @@
     "y": 412,
     "zone": "coast",
     "hp": 100,
-    "energy": 39.50000000000149,
-    "hunger": 72.87999999999845,
+    "energy": 33.50000000000149,
+    "hunger": 78.88000000000595,
     "temperature": 20,
     "inventory": [],
     "knowledge": [],
@@ -574,25 +1150,109 @@
     "y": 418,
     "zone": "coast",
     "hp": 100,
-    "energy": 46.20000000000019,
-    "hunger": 0.8000000000000002,
+    "energy": 55.70000000000226,
+    "hunger": 0.08,
     "temperature": 20,
     "inventory": [
       {
         "name": "fiber",
-        "quantity": 12842
+        "quantity": 6,
+        "properties": {
+          "hardness": 1,
+          "conductivity": 0,
+          "flammability": 5,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 0.1,
+          "decay_rate": 0.1,
+          "energy": 2,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 200,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 8,
+          "brittleness": 1,
+          "fertility": 0
+        }
       },
       {
         "name": "herbs",
-        "quantity": 19098
+        "quantity": 1,
+        "properties": {
+          "hardness": 0,
+          "conductivity": 0,
+          "flammability": 4,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 1,
+          "organic": 1,
+          "weight": 0.05,
+          "decay_rate": 0.35,
+          "energy": 10,
+          "temperature": 20,
+          "resonance": 1,
+          "melt_point": 0,
+          "ignition": 160,
+          "sharpness": 0,
+          "solubility": 4,
+          "malleability": 1,
+          "brittleness": 1,
+          "fertility": 3
+        }
       },
       {
         "name": "shells",
-        "quantity": 1
+        "quantity": 1,
+        "properties": {
+          "hardness": 4,
+          "conductivity": 0,
+          "flammability": 0,
+          "toxicity": 0,
+          "luminosity": 1,
+          "volatility": 0,
+          "organic": 0.5,
+          "weight": 0.2,
+          "decay_rate": 0.05,
+          "energy": 1,
+          "temperature": 20,
+          "resonance": 1,
+          "melt_point": 500,
+          "ignition": 0,
+          "sharpness": 2,
+          "solubility": 2,
+          "malleability": 0,
+          "brittleness": 7,
+          "fertility": 1
+        }
       },
       {
         "name": "driftwood",
-        "quantity": 1
+        "quantity": 1,
+        "properties": {
+          "hardness": 3,
+          "conductivity": 0,
+          "flammability": 7,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 1.5,
+          "decay_rate": 0.2,
+          "energy": 8,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 200,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 4,
+          "brittleness": 4,
+          "fertility": 1
+        }
       }
     ],
     "knowledge": [],
@@ -603,7 +1263,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 64417,
+      "xp": 65005,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -619,21 +1279,84 @@
     "y": 449,
     "zone": "coast",
     "hp": 100,
-    "energy": 48.60000000000015,
-    "hunger": 9.999999999999872,
+    "energy": 45.50000000000321,
+    "hunger": 1.5600000000000007,
     "temperature": 20,
     "inventory": [
       {
         "name": "fiber",
-        "quantity": 22
+        "quantity": 20,
+        "properties": {
+          "hardness": 1,
+          "conductivity": 0,
+          "flammability": 5,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 0.1,
+          "decay_rate": 0.1,
+          "energy": 2,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 200,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 8,
+          "brittleness": 1,
+          "fertility": 0
+        }
       },
       {
         "name": "wood",
-        "quantity": 3
+        "quantity": 3,
+        "properties": {
+          "hardness": 4,
+          "conductivity": 0,
+          "flammability": 7,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 3,
+          "decay_rate": 0.1,
+          "energy": 8,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 250,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 4,
+          "brittleness": 3,
+          "fertility": 1
+        }
       },
       {
         "name": "herbs",
-        "quantity": 12
+        "quantity": 12,
+        "properties": {
+          "hardness": 0,
+          "conductivity": 0,
+          "flammability": 4,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 1,
+          "organic": 1,
+          "weight": 0.05,
+          "decay_rate": 0.35,
+          "energy": 10,
+          "temperature": 20,
+          "resonance": 1,
+          "melt_point": 0,
+          "ignition": 160,
+          "sharpness": 0,
+          "solubility": 4,
+          "malleability": 1,
+          "brittleness": 1,
+          "fertility": 3
+        }
       }
     ],
     "knowledge": [],
@@ -661,16 +1384,58 @@
     "zone": "coast",
     "hp": 100,
     "energy": 33.89999999999998,
-    "hunger": 76.80000000000088,
+    "hunger": 78.80000000000838,
     "temperature": 20,
     "inventory": [
       {
         "name": "driftwood",
-        "quantity": 2
+        "quantity": 2,
+        "properties": {
+          "hardness": 3,
+          "conductivity": 0,
+          "flammability": 7,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 1.5,
+          "decay_rate": 0.2,
+          "energy": 8,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 200,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 4,
+          "brittleness": 4,
+          "fertility": 1
+        }
       },
       {
         "name": "shells",
-        "quantity": 1
+        "quantity": 1,
+        "properties": {
+          "hardness": 4,
+          "conductivity": 0,
+          "flammability": 0,
+          "toxicity": 0,
+          "luminosity": 1,
+          "volatility": 0,
+          "organic": 0.5,
+          "weight": 0.2,
+          "decay_rate": 0.05,
+          "energy": 1,
+          "temperature": 20,
+          "resonance": 1,
+          "melt_point": 500,
+          "ignition": 0,
+          "sharpness": 2,
+          "solubility": 2,
+          "malleability": 0,
+          "brittleness": 7,
+          "fertility": 1
+        }
       }
     ],
     "knowledge": [],
@@ -697,25 +1462,109 @@
     "y": 419,
     "zone": "coast",
     "hp": 100,
-    "energy": 53.500000000000014,
-    "hunger": 28.000000000000682,
+    "energy": 47.500000000001265,
+    "hunger": 1.2000000000000004,
     "temperature": 20,
     "inventory": [
       {
         "name": "shells",
-        "quantity": 28
+        "quantity": 20,
+        "properties": {
+          "hardness": 4,
+          "conductivity": 0,
+          "flammability": 0,
+          "toxicity": 0,
+          "luminosity": 1,
+          "volatility": 0,
+          "organic": 0.5,
+          "weight": 0.2,
+          "decay_rate": 0.05,
+          "energy": 1,
+          "temperature": 20,
+          "resonance": 1,
+          "melt_point": 500,
+          "ignition": 0,
+          "sharpness": 2,
+          "solubility": 2,
+          "malleability": 0,
+          "brittleness": 7,
+          "fertility": 1
+        }
       },
       {
         "name": "fiber",
-        "quantity": 13
+        "quantity": 25,
+        "properties": {
+          "hardness": 1,
+          "conductivity": 0,
+          "flammability": 5,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 0.1,
+          "decay_rate": 0.1,
+          "energy": 2,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 200,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 8,
+          "brittleness": 1,
+          "fertility": 0
+        }
       },
       {
         "name": "driftwood",
-        "quantity": 27
+        "quantity": 20,
+        "properties": {
+          "hardness": 3,
+          "conductivity": 0,
+          "flammability": 7,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 1.5,
+          "decay_rate": 0.2,
+          "energy": 8,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 200,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 4,
+          "brittleness": 4,
+          "fertility": 1
+        }
       },
       {
         "name": "herbs",
-        "quantity": 3
+        "quantity": 26,
+        "properties": {
+          "hardness": 0,
+          "conductivity": 0,
+          "flammability": 4,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 1,
+          "organic": 1,
+          "weight": 0.05,
+          "decay_rate": 0.35,
+          "energy": 10,
+          "temperature": 20,
+          "resonance": 1,
+          "melt_point": 0,
+          "ignition": 160,
+          "sharpness": 0,
+          "solubility": 4,
+          "malleability": 1,
+          "brittleness": 1,
+          "fertility": 3
+        }
       }
     ],
     "knowledge": [],
@@ -742,21 +1591,59 @@
     "y": 465,
     "zone": "grass",
     "hp": 100,
-    "energy": 49.40000000000012,
-    "hunger": 1.9999999999999085,
+    "energy": 41.900000000002564,
+    "hunger": 0.8800000000000002,
     "temperature": 20,
     "inventory": [
       {
-        "name": "fiber",
-        "quantity": 15
-      },
-      {
         "name": "flowers",
-        "quantity": 18
+        "quantity": 2,
+        "properties": {
+          "hardness": 0,
+          "conductivity": 0,
+          "flammability": 4,
+          "toxicity": 0,
+          "luminosity": 1,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 0.05,
+          "decay_rate": 0.4,
+          "energy": 5,
+          "temperature": 20,
+          "resonance": 2,
+          "melt_point": 0,
+          "ignition": 150,
+          "sharpness": 0,
+          "solubility": 3,
+          "malleability": 1,
+          "brittleness": 1,
+          "fertility": 4
+        }
       },
       {
         "name": "herbs",
-        "quantity": 1
+        "quantity": 2,
+        "properties": {
+          "hardness": 0,
+          "conductivity": 0,
+          "flammability": 4,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 1,
+          "organic": 1,
+          "weight": 0.05,
+          "decay_rate": 0.35,
+          "energy": 10,
+          "temperature": 20,
+          "resonance": 1,
+          "melt_point": 0,
+          "ignition": 160,
+          "sharpness": 0,
+          "solubility": 4,
+          "malleability": 1,
+          "brittleness": 1,
+          "fertility": 3
+        }
       }
     ],
     "knowledge": [],
@@ -767,7 +1654,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 162277,
+      "xp": 162921,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -783,37 +1670,184 @@
     "y": 449,
     "zone": "coast",
     "hp": 100,
-    "energy": 51.00000000000014,
-    "hunger": 1.999999999999921,
+    "energy": 52.400000000002535,
+    "hunger": 0.28,
     "temperature": 20,
     "inventory": [
       {
         "name": "bark",
-        "quantity": 1
+        "quantity": 1,
+        "properties": {
+          "hardness": 3,
+          "conductivity": 0,
+          "flammability": 6,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 0.5,
+          "decay_rate": 0.15,
+          "energy": 5,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 220,
+          "sharpness": 0,
+          "solubility": 1,
+          "malleability": 3,
+          "brittleness": 4,
+          "fertility": 1
+        }
       },
       {
         "name": "herbs",
-        "quantity": 190
+        "quantity": 20,
+        "properties": {
+          "hardness": 0,
+          "conductivity": 0,
+          "flammability": 4,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 1,
+          "organic": 1,
+          "weight": 0.05,
+          "decay_rate": 0.35,
+          "energy": 10,
+          "temperature": 20,
+          "resonance": 1,
+          "melt_point": 0,
+          "ignition": 160,
+          "sharpness": 0,
+          "solubility": 4,
+          "malleability": 1,
+          "brittleness": 1,
+          "fertility": 3
+        }
       },
       {
         "name": "fiber",
-        "quantity": 11
+        "quantity": 20,
+        "properties": {
+          "hardness": 1,
+          "conductivity": 0,
+          "flammability": 5,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 0.1,
+          "decay_rate": 0.1,
+          "energy": 2,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 200,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 8,
+          "brittleness": 1,
+          "fertility": 0
+        }
       },
       {
         "name": "acorns",
-        "quantity": 1
+        "quantity": 1,
+        "properties": {
+          "hardness": 3,
+          "conductivity": 0,
+          "flammability": 3,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 0.1,
+          "decay_rate": 0.2,
+          "energy": 12,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 200,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 0,
+          "brittleness": 5,
+          "fertility": 5
+        }
       },
       {
         "name": "wood",
-        "quantity": 3
+        "quantity": 3,
+        "properties": {
+          "hardness": 4,
+          "conductivity": 0,
+          "flammability": 7,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 3,
+          "decay_rate": 0.1,
+          "energy": 8,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 250,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 4,
+          "brittleness": 3,
+          "fertility": 1
+        }
       },
       {
         "name": "shells",
-        "quantity": 1
+        "quantity": 1,
+        "properties": {
+          "hardness": 4,
+          "conductivity": 0,
+          "flammability": 0,
+          "toxicity": 0,
+          "luminosity": 1,
+          "volatility": 0,
+          "organic": 0.5,
+          "weight": 0.2,
+          "decay_rate": 0.05,
+          "energy": 1,
+          "temperature": 20,
+          "resonance": 1,
+          "melt_point": 500,
+          "ignition": 0,
+          "sharpness": 2,
+          "solubility": 2,
+          "malleability": 0,
+          "brittleness": 7,
+          "fertility": 1
+        }
       },
       {
         "name": "driftwood",
-        "quantity": 1
+        "quantity": 1,
+        "properties": {
+          "hardness": 3,
+          "conductivity": 0,
+          "flammability": 7,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 1.5,
+          "decay_rate": 0.2,
+          "energy": 8,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 200,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 4,
+          "brittleness": 4,
+          "fertility": 1
+        }
       }
     ],
     "knowledge": [],
@@ -840,8 +1874,8 @@
     "y": 412,
     "zone": "coast",
     "hp": 100,
-    "energy": 48.400000000000986,
-    "hunger": 1.1200000000000003,
+    "energy": 44.90000000000379,
+    "hunger": 2.080000000000001,
     "temperature": 20,
     "inventory": [],
     "knowledge": [],
@@ -868,25 +1902,59 @@
     "y": 449,
     "zone": "coast",
     "hp": 100,
-    "energy": 54.00000000000023,
-    "hunger": 11.999999999999872,
+    "energy": 54.90000000000272,
+    "hunger": 0.04,
     "temperature": 20,
     "inventory": [
       {
-        "name": "fiber",
-        "quantity": 41
-      },
-      {
-        "name": "herbs",
-        "quantity": 1
-      },
-      {
         "name": "wood",
-        "quantity": 1
+        "quantity": 1,
+        "properties": {
+          "hardness": 4,
+          "conductivity": 0,
+          "flammability": 7,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 3,
+          "decay_rate": 0.1,
+          "energy": 8,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 250,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 4,
+          "brittleness": 3,
+          "fertility": 1
+        }
       },
       {
         "name": "bark",
-        "quantity": 1
+        "quantity": 1,
+        "properties": {
+          "hardness": 3,
+          "conductivity": 0,
+          "flammability": 6,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 0.5,
+          "decay_rate": 0.15,
+          "energy": 5,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 220,
+          "sharpness": 0,
+          "solubility": 1,
+          "malleability": 3,
+          "brittleness": 4,
+          "fertility": 1
+        }
       }
     ],
     "knowledge": [],
@@ -897,7 +1965,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 165840,
+      "xp": 166582,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -913,17 +1981,59 @@
     "y": 425,
     "zone": "coast",
     "hp": 100,
-    "energy": 47,
-    "hunger": 0.16,
+    "energy": 37,
+    "hunger": 0.39999999999999997,
     "temperature": 20,
     "inventory": [
       {
         "name": "fiber",
-        "quantity": 9686
+        "quantity": 20,
+        "properties": {
+          "hardness": 1,
+          "conductivity": 0,
+          "flammability": 5,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 0.1,
+          "decay_rate": 0.1,
+          "energy": 2,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 200,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 8,
+          "brittleness": 1,
+          "fertility": 0
+        }
       },
       {
         "name": "herbs",
-        "quantity": 14565
+        "quantity": 20,
+        "properties": {
+          "hardness": 0,
+          "conductivity": 0,
+          "flammability": 4,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 1,
+          "organic": 1,
+          "weight": 0.05,
+          "decay_rate": 0.35,
+          "energy": 10,
+          "temperature": 20,
+          "resonance": 1,
+          "melt_point": 0,
+          "ignition": 160,
+          "sharpness": 0,
+          "solubility": 4,
+          "malleability": 1,
+          "brittleness": 1,
+          "fertility": 3
+        }
       }
     ],
     "knowledge": [],
@@ -934,7 +2044,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 48888,
+      "xp": 48918,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -950,21 +2060,84 @@
     "y": 449,
     "zone": "coast",
     "hp": 100,
-    "energy": 54.0000000000002,
-    "hunger": 11.999999999999872,
+    "energy": 50.90000000000349,
+    "hunger": 0.9200000000000003,
     "temperature": 20,
     "inventory": [
       {
         "name": "herbs",
-        "quantity": 16
+        "quantity": 16,
+        "properties": {
+          "hardness": 0,
+          "conductivity": 0,
+          "flammability": 4,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 1,
+          "organic": 1,
+          "weight": 0.05,
+          "decay_rate": 0.35,
+          "energy": 10,
+          "temperature": 20,
+          "resonance": 1,
+          "melt_point": 0,
+          "ignition": 160,
+          "sharpness": 0,
+          "solubility": 4,
+          "malleability": 1,
+          "brittleness": 1,
+          "fertility": 3
+        }
       },
       {
         "name": "wood",
-        "quantity": 1
+        "quantity": 1,
+        "properties": {
+          "hardness": 4,
+          "conductivity": 0,
+          "flammability": 7,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 3,
+          "decay_rate": 0.1,
+          "energy": 8,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 250,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 4,
+          "brittleness": 3,
+          "fertility": 1
+        }
       },
       {
         "name": "fiber",
-        "quantity": 31
+        "quantity": 20,
+        "properties": {
+          "hardness": 1,
+          "conductivity": 0,
+          "flammability": 5,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 0.1,
+          "decay_rate": 0.1,
+          "energy": 2,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 200,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 8,
+          "brittleness": 1,
+          "fertility": 0
+        }
       }
     ],
     "knowledge": [],
@@ -991,21 +2164,84 @@
     "y": 465,
     "zone": "grass",
     "hp": 100,
-    "energy": 52.20000000000014,
-    "hunger": 3.999999999999903,
+    "energy": 52.8000000000023,
+    "hunger": 0.16,
     "temperature": 20,
     "inventory": [
       {
         "name": "flowers",
-        "quantity": 9
+        "quantity": 21,
+        "properties": {
+          "hardness": 0,
+          "conductivity": 0,
+          "flammability": 4,
+          "toxicity": 0,
+          "luminosity": 1,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 0.05,
+          "decay_rate": 0.4,
+          "energy": 5,
+          "temperature": 20,
+          "resonance": 2,
+          "melt_point": 0,
+          "ignition": 150,
+          "sharpness": 0,
+          "solubility": 3,
+          "malleability": 1,
+          "brittleness": 1,
+          "fertility": 4
+        }
       },
       {
         "name": "fiber",
-        "quantity": 34
+        "quantity": 20,
+        "properties": {
+          "hardness": 1,
+          "conductivity": 0,
+          "flammability": 5,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 0.1,
+          "decay_rate": 0.1,
+          "energy": 2,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 200,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 8,
+          "brittleness": 1,
+          "fertility": 0
+        }
       },
       {
         "name": "herbs",
-        "quantity": 32
+        "quantity": 19,
+        "properties": {
+          "hardness": 0,
+          "conductivity": 0,
+          "flammability": 4,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 1,
+          "organic": 1,
+          "weight": 0.05,
+          "decay_rate": 0.35,
+          "energy": 10,
+          "temperature": 20,
+          "resonance": 1,
+          "melt_point": 0,
+          "ignition": 160,
+          "sharpness": 0,
+          "solubility": 4,
+          "malleability": 1,
+          "brittleness": 1,
+          "fertility": 3
+        }
       }
     ],
     "knowledge": [],
@@ -1016,12 +2252,12 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 161876,
+      "xp": 162202,
       "level": 11,
       "title": "Crafter ⚒️"
     },
     "ticksBorn": 3740,
-    "coins": 740
+    "coins": 761
   },
   "4a5c216f-8c5a-4281-9d11-b4a9dff1c95d": {
     "id": "4a5c216f-8c5a-4281-9d11-b4a9dff1c95d",
@@ -1033,20 +2269,83 @@
     "zone": "coast",
     "hp": 100,
     "energy": 33.99999999999997,
-    "hunger": 76.00000000000094,
+    "hunger": 78.00000000000844,
     "temperature": 20,
     "inventory": [
       {
         "name": "driftwood",
-        "quantity": 9680
+        "quantity": 20,
+        "properties": {
+          "hardness": 3,
+          "conductivity": 0,
+          "flammability": 7,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 1.5,
+          "decay_rate": 0.2,
+          "energy": 8,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 200,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 4,
+          "brittleness": 4,
+          "fertility": 1
+        }
       },
       {
         "name": "shells",
-        "quantity": 9817
+        "quantity": 20,
+        "properties": {
+          "hardness": 4,
+          "conductivity": 0,
+          "flammability": 0,
+          "toxicity": 0,
+          "luminosity": 1,
+          "volatility": 0,
+          "organic": 0.5,
+          "weight": 0.2,
+          "decay_rate": 0.05,
+          "energy": 1,
+          "temperature": 20,
+          "resonance": 1,
+          "melt_point": 500,
+          "ignition": 0,
+          "sharpness": 2,
+          "solubility": 2,
+          "malleability": 0,
+          "brittleness": 7,
+          "fertility": 1
+        }
       },
       {
         "name": "sand",
-        "quantity": 1
+        "quantity": 1,
+        "properties": {
+          "hardness": 2,
+          "conductivity": 0,
+          "flammability": 0,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 0,
+          "weight": 2,
+          "decay_rate": 0,
+          "energy": 0,
+          "temperature": 25,
+          "resonance": 0,
+          "melt_point": 1200,
+          "ignition": 0,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 3,
+          "brittleness": 0,
+          "fertility": 0
+        }
       }
     ],
     "knowledge": [],
@@ -1073,21 +2372,84 @@
     "y": 412,
     "zone": "coast",
     "hp": 100,
-    "energy": 50.000000000001236,
-    "hunger": 1.0000000000000002,
+    "energy": 55.20000000000452,
+    "hunger": 0.39999999999999997,
     "temperature": 20,
     "inventory": [
       {
         "name": "driftwood",
-        "quantity": 1
+        "quantity": 1,
+        "properties": {
+          "hardness": 3,
+          "conductivity": 0,
+          "flammability": 7,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 1.5,
+          "decay_rate": 0.2,
+          "energy": 8,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 200,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 4,
+          "brittleness": 4,
+          "fertility": 1
+        }
       },
       {
         "name": "shells",
-        "quantity": 1
+        "quantity": 1,
+        "properties": {
+          "hardness": 4,
+          "conductivity": 0,
+          "flammability": 0,
+          "toxicity": 0,
+          "luminosity": 1,
+          "volatility": 0,
+          "organic": 0.5,
+          "weight": 0.2,
+          "decay_rate": 0.05,
+          "energy": 1,
+          "temperature": 20,
+          "resonance": 1,
+          "melt_point": 500,
+          "ignition": 0,
+          "sharpness": 2,
+          "solubility": 2,
+          "malleability": 0,
+          "brittleness": 7,
+          "fertility": 1
+        }
       },
       {
         "name": "sand",
-        "quantity": 1
+        "quantity": 1,
+        "properties": {
+          "hardness": 2,
+          "conductivity": 0,
+          "flammability": 0,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 0,
+          "weight": 2,
+          "decay_rate": 0,
+          "energy": 0,
+          "temperature": 25,
+          "resonance": 0,
+          "melt_point": 1200,
+          "ignition": 0,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 3,
+          "brittleness": 0,
+          "fertility": 0
+        }
       }
     ],
     "knowledge": [],
@@ -1114,20 +2476,87 @@
     "y": 442,
     "zone": "coast",
     "hp": 100,
-    "energy": 52.60000000000015,
-    "hunger": 13.999999999999872,
+    "energy": 51.100000000002666,
+    "hunger": 1.2000000000000004,
     "temperature": 20,
     "inventory": [
       {
         "name": "herbs",
-        "quantity": 6
+        "quantity": 20,
+        "properties": {
+          "hardness": 0,
+          "conductivity": 0,
+          "flammability": 4,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 1,
+          "organic": 1,
+          "weight": 0.05,
+          "decay_rate": 0.35,
+          "energy": 10,
+          "temperature": 20,
+          "resonance": 1,
+          "melt_point": 0,
+          "ignition": 160,
+          "sharpness": 0,
+          "solubility": 4,
+          "malleability": 1,
+          "brittleness": 1,
+          "fertility": 3
+        }
       },
       {
         "name": "fiber",
-        "quantity": 13
+        "quantity": 20,
+        "properties": {
+          "hardness": 1,
+          "conductivity": 0,
+          "flammability": 5,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 0.1,
+          "decay_rate": 0.1,
+          "energy": 2,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 200,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 8,
+          "brittleness": 1,
+          "fertility": 0
+        }
       },
       {
         "name": "sand",
+        "quantity": 2,
+        "properties": {
+          "hardness": 2,
+          "conductivity": 0,
+          "flammability": 0,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 0,
+          "weight": 2,
+          "decay_rate": 0,
+          "energy": 0,
+          "temperature": 25,
+          "resonance": 0,
+          "melt_point": 1200,
+          "ignition": 0,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 3,
+          "brittleness": 0,
+          "fertility": 0
+        }
+      },
+      {
+        "name": "shells",
         "quantity": 1
       }
     ],
@@ -1155,25 +2584,109 @@
     "y": 442,
     "zone": "coast",
     "hp": 100,
-    "energy": 55.40000000000015,
-    "hunger": 7.999999999999882,
+    "energy": 53.200000000002746,
+    "hunger": 0.5199999999999999,
     "temperature": 20,
     "inventory": [
       {
         "name": "fiber",
-        "quantity": 17
+        "quantity": 29,
+        "properties": {
+          "hardness": 1,
+          "conductivity": 0,
+          "flammability": 5,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 0.1,
+          "decay_rate": 0.1,
+          "energy": 2,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 200,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 8,
+          "brittleness": 1,
+          "fertility": 0
+        }
       },
       {
         "name": "herbs",
-        "quantity": 15
+        "quantity": 21,
+        "properties": {
+          "hardness": 0,
+          "conductivity": 0,
+          "flammability": 4,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 1,
+          "organic": 1,
+          "weight": 0.05,
+          "decay_rate": 0.35,
+          "energy": 10,
+          "temperature": 20,
+          "resonance": 1,
+          "melt_point": 0,
+          "ignition": 160,
+          "sharpness": 0,
+          "solubility": 4,
+          "malleability": 1,
+          "brittleness": 1,
+          "fertility": 3
+        }
       },
       {
         "name": "sand",
-        "quantity": 2
+        "quantity": 4,
+        "properties": {
+          "hardness": 2,
+          "conductivity": 0,
+          "flammability": 0,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 0,
+          "weight": 2,
+          "decay_rate": 0,
+          "energy": 0,
+          "temperature": 25,
+          "resonance": 0,
+          "melt_point": 1200,
+          "ignition": 0,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 3,
+          "brittleness": 0,
+          "fertility": 0
+        }
       },
       {
         "name": "shells",
-        "quantity": 1
+        "quantity": 1,
+        "properties": {
+          "hardness": 4,
+          "conductivity": 0,
+          "flammability": 0,
+          "toxicity": 0,
+          "luminosity": 1,
+          "volatility": 0,
+          "organic": 0.5,
+          "weight": 0.2,
+          "decay_rate": 0.05,
+          "energy": 1,
+          "temperature": 20,
+          "resonance": 1,
+          "melt_point": 500,
+          "ignition": 0,
+          "sharpness": 2,
+          "solubility": 2,
+          "malleability": 0,
+          "brittleness": 7,
+          "fertility": 1
+        }
       }
     ],
     "knowledge": [],
@@ -1200,8 +2713,8 @@
     "y": 412,
     "zone": "coast",
     "hp": 100,
-    "energy": 55.50000000000129,
-    "hunger": 0.32,
+    "energy": 44.10000000000433,
+    "hunger": 1.880000000000001,
     "temperature": 20,
     "inventory": [],
     "knowledge": [],
@@ -1228,21 +2741,84 @@
     "y": 449,
     "zone": "coast",
     "hp": 100,
-    "energy": 55.200000000000216,
-    "hunger": 11.999999999999872,
+    "energy": 43.80000000000332,
+    "hunger": 1.800000000000001,
     "temperature": 20,
     "inventory": [
       {
         "name": "fiber",
-        "quantity": 31
+        "quantity": 20,
+        "properties": {
+          "hardness": 1,
+          "conductivity": 0,
+          "flammability": 5,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 0.1,
+          "decay_rate": 0.1,
+          "energy": 2,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 200,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 8,
+          "brittleness": 1,
+          "fertility": 0
+        }
       },
       {
         "name": "herbs",
-        "quantity": 40
+        "quantity": 20,
+        "properties": {
+          "hardness": 0,
+          "conductivity": 0,
+          "flammability": 4,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 1,
+          "organic": 1,
+          "weight": 0.05,
+          "decay_rate": 0.35,
+          "energy": 10,
+          "temperature": 20,
+          "resonance": 1,
+          "melt_point": 0,
+          "ignition": 160,
+          "sharpness": 0,
+          "solubility": 4,
+          "malleability": 1,
+          "brittleness": 1,
+          "fertility": 3
+        }
       },
       {
         "name": "wood",
-        "quantity": 5
+        "quantity": 5,
+        "properties": {
+          "hardness": 4,
+          "conductivity": 0,
+          "flammability": 7,
+          "toxicity": 0,
+          "luminosity": 0,
+          "volatility": 0,
+          "organic": 1,
+          "weight": 3,
+          "decay_rate": 0.1,
+          "energy": 8,
+          "temperature": 20,
+          "resonance": 0,
+          "melt_point": 0,
+          "ignition": 250,
+          "sharpness": 0,
+          "solubility": 0,
+          "malleability": 4,
+          "brittleness": 3,
+          "fertility": 1
+        }
       }
     ],
     "knowledge": [],

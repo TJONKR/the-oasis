@@ -1,0 +1,62 @@
+[
+  {
+    "key": "combine:bark + wood",
+    "items": [
+      "wood",
+      "bark"
+    ],
+    "result": "Torch",
+    "ruleId": "make_torch",
+    "discoveredBy": "43b8d3dc-ede6-435c-8113-fe6a9d66cccb",
+    "discovererName": "Agent-23",
+    "discoveredAt": "2026-03-01T19:01:25.811Z"
+  },
+  {
+    "key": "burn:driftwood + shells",
+    "items": [
+      "driftwood",
+      "shells"
+    ],
+    "result": "driftwood Cinder",
+    "ruleId": "burn_item",
+    "discoveredBy": "43109eab-beba-4a37-84e0-becaa05ef690",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T19:03:28.662Z"
+  },
+  {
+    "key": "decay:driftwood + shells",
+    "items": [
+      "shells",
+      "driftwood"
+    ],
+    "result": "Compost",
+    "ruleId": "compost_decay",
+    "discoveredBy": "43109eab-beba-4a37-84e0-becaa05ef690",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T19:03:41.207Z"
+  },
+  {
+    "key": "burn:fiber + herbs",
+    "items": [
+      "fiber",
+      "herbs"
+    ],
+    "result": "fiber Cinder",
+    "ruleId": "burn_item",
+    "discoveredBy": "260dfffb-62b5-4a88-ab14-4d5d697dc94e",
+    "discovererName": "Agent-24",
+    "discoveredAt": "2026-03-01T19:03:50.750Z"
+  },
+  {
+    "key": "decay:fiber + herbs",
+    "items": [
+      "fiber",
+      "herbs"
+    ],
+    "result": "Compost",
+    "ruleId": "compost_decay",
+    "discoveredBy": "bad7a626-0d4d-4a2e-927a-fd46ed05a861",
+    "discovererName": "Agent-9",
+    "discoveredAt": "2026-03-01T19:04:36.900Z"
+  }
+]

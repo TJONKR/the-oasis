@@ -3,6 +3,7 @@
 
 import crypto from 'crypto';
 import { getProperties, computeDerivedProperties, getEffectiveHeat, isLiquid, isSharp, MATERIAL_PROPERTIES } from './materials.js';
+import { getPracticalRules, getPhysicsFeedback } from './physics.js';
 
 // ---------- Forces ----------
 // 10 forces agents can apply to items
@@ -503,8 +504,19 @@ export function initExperiments(shared) {
     return matches[0];
   }
 
+  // Merge practical rules with built-in force rules
+  const allForceRules = [...FORCE_RULES, ...getPracticalRules()];
+
   function findMatchingForceRule(force, items, zone) {
-    const applicable = FORCE_RULES.filter(r => r.force === force && r.check(items, zone));
+    const applicable = allForceRules.filter(r => r.force === force && r.check(items, zone));
+    if (applicable.length === 0) return null;
+    applicable.sort((a, b) => b.priority - a.priority);
+    return applicable[0];
+  }
+
+  // Also check practical 'combine' rules before generic interaction rules
+  function findMatchingPracticalCombine(items, zone) {
+    const applicable = allForceRules.filter(r => r.force === 'combine' && r.check(items, zone));
     if (applicable.length === 0) return null;
     applicable.sort((a, b) => b.priority - a.priority);
     return applicable[0];
@@ -600,7 +612,30 @@ export function initExperiments(shared) {
       }
     }
 
-    // 3. Check INTERACTION_RULES (original combine rules)
+    // 3a. Check practical combine rules (specific recipes like stone_axe, rope, etc.)
+    if (force === 'combine') {
+      const practicalRule = findMatchingPracticalCombine(inputItems, zone);
+      if (practicalRule) {
+        const produced = practicalRule.produce(inputItems, zone);
+        const resultItem = buildResultItem(agent, inputItems, produced.name, produced.type, produced.rarity, produced.description, practicalRule.propOverrides || produced.propOverrides || {}, zone, force);
+        const key = getDiscoveryKey(itemNames, force);
+        const isFirstDiscovery = !discoveries.find(d => d.key === key);
+        if (isFirstDiscovery) {
+          discoveries.push({ key, items: itemNames, result: produced.name, ruleId: practicalRule.id, discoveredBy: agent.id, discovererName: agent.name, discoveredAt: new Date().toISOString() });
+          saveJSON('discoveries.json', discoveries);
+        }
+        return {
+          success: true,
+          result_item: resultItem,
+          rule_matched: practicalRule.id,
+          properties_revealed: propertiesRevealed,
+          discovery: isFirstDiscovery ? { first: true, discoverer: agent.name } : null,
+          message: isFirstDiscovery ? `NEW DISCOVERY! ${agent.name} crafted ${produced.name} via ${practicalRule.name}!` : `Crafted ${produced.name} via ${practicalRule.name}.`,
+        };
+      }
+    }
+
+    // 3b. Check INTERACTION_RULES (original combine rules — generic property-sum matches)
     if (force === 'combine') {
       const combined = computeCombined(inputItems);
       const rule = findMatchingRule(combined);
@@ -697,14 +732,14 @@ export function initExperiments(shared) {
     }
 
     // 5. No match anywhere — physics-flavored failure
-    const destroyed = Math.random() < 0.3;
-    const failMessage = getPhysicsFailureMessage(force, inputItems);
+    const destroyed = Math.random() < 0.15; // reduced from 30% to 15% — less punishing
+    const failMessage = getPhysicsFeedback(force, 'no_effect');
     return {
       success: false,
       destroyed,
       message: destroyed
-        ? `The experiment failed catastrophically! Materials destroyed. ${failMessage}`
-        : `Nothing happened. ${failMessage}`,
+        ? `The experiment failed — materials lost. ${failMessage}`
+        : failMessage,
       properties_revealed: propertiesRevealed,
     };
   }
