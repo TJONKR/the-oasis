@@ -887,6 +887,10 @@ export function initExperiments(shared) {
         xpResult = awardXP(agent, 30 + bonus, 'experiment');
         broadcast({ type: 'experimentSuccess', agentId: agent.id, name: agent.name, result: result.result_item?.name, discovery: !!result.discovery, force });
         addWorldNews('experiment', agent.id, agent.name, result.message, agent.zone);
+        // Visual fire effect for heat/burn experiments
+        if ((force === 'heat' || force === 'burn') && agent.tileX != null) {
+          broadcast({ type: 'tileEffect', effect: 'fire', tileX: agent.tileX, tileY: agent.tileY, duration: 5000 });
+        }
 
         // Proficiency: force_experiment
         if (shared.proficiency && force !== 'combine') {

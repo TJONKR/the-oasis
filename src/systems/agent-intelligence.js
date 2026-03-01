@@ -725,6 +725,7 @@ export function initAgentIntelligence(shared) {
             if (shared.proficiency) shared.proficiency.onAction(agent.id, 'craft', { zone: agent.zone });
             addMemoryEvent(mind, `Cooked something from ${foodItems[0].name}`);
             addWorldNews('craft', agent.id, agent.name, `${agent.name} cooked a meal`, agent.zone);
+            if (broadcast) broadcast({ type: 'craftResult', agentId: agent.id, name: agent.name, item: 'cooked meal' });
             agent.energy = Math.max(0, agent.energy - (ACTIONS.craft.energy || 8));
             return;
           }
@@ -764,6 +765,11 @@ export function initAgentIntelligence(shared) {
               if (awardXP) awardXP(agent.id, 8);
               addMemoryEvent(mind, `Crafted ${result.result_item?.name || 'something new'}`);
               addWorldNews('craft', agent.id, agent.name, `${agent.name} crafted ${result.result_item?.name || 'an item'}`, agent.zone);
+              if (broadcast) broadcast({ type: 'craftResult', agentId: agent.id, name: agent.name, item: result.result_item?.name });
+              // Fire effect for campfire/torch crafting
+              if (result.result_item?.name && /campfire|torch|fire/i.test(result.result_item.name)) {
+                if (broadcast) broadcast({ type: 'tileEffect', effect: 'fire', tileX: agent.tileX, tileY: agent.tileY, duration: 6000 });
+              }
             }
           }).catch(() => {});
         }

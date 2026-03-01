@@ -102,7 +102,7 @@
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 71
+        "explore": 107
       },
       "coast": {
         "gather": 0,
@@ -234,7 +234,7 @@
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 67
+        "explore": 121
       },
       "sand": {
         "gather": 0,
@@ -825,7 +825,7 @@
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 232
+        "explore": 481
       }
     },
     "mastery": {},
@@ -1149,7 +1149,7 @@
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 31
+        "explore": 70
       }
     },
     "mastery": {},
@@ -1318,7 +1318,7 @@
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 178
+        "explore": 292
       }
     },
     "mastery": {},

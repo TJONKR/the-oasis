@@ -74,6 +74,7 @@ let tileInfo = null; // from /api/tile/info
 let agents = [];
 let agentVisuals = {}; // id → { renderX, renderY } for smooth lerping
 let news = [];
+let tileEffects = []; // { type, x, y, startTime, duration, particles[] }
 let camera = { x: 0, y: 0, zoom: 4 };
 let dragging = false, dragStart = {x:0,y:0}, cameraStart = {x:0,y:0};
 let ws = null;
@@ -113,8 +114,118 @@ function connect() {
     } else if (msg.type === 'agent_spawn') {
       if (msg.agent) agents.push(msg.agent);
       updateAgentList();
+    } else if (msg.type === 'tileEffect') {
+      spawnEffect(msg.effect, msg.tileX, msg.tileY, msg.duration);
+    } else if (msg.type === 'experimentSuccess') {
+      // Fire/heat experiments get fire effect, others get sparkle
+      const eff = (msg.force === 'heat' || msg.force === 'burn') ? 'fire' : 'sparkle';
+      const ax = agents.find(a => a.id === msg.agentId);
+      if (ax) spawnEffect(eff, ax.tileX, ax.tileY, eff === 'fire' ? 4000 : 2000);
+    } else if (msg.type === 'explosion') {
+      const ax = agents.find(a => a.id === msg.agentId);
+      if (ax) spawnEffect('explosion', ax.tileX, ax.tileY, 2500);
+    } else if (msg.type === 'craftResult') {
+      const ax = agents.find(a => a.id === msg.agentId);
+      if (ax) spawnEffect('craft', ax.tileX, ax.tileY, 1500);
     }
   };
+}
+
+// ═══════════════════════════════
+// Tile Effects (fire, explosions, sparkles, craft sparks)
+// ═══════════════════════════════
+function spawnEffect(type, tileX, tileY, duration = 2000) {
+  const now = performance.now();
+  const particles = [];
+  const count = type === 'explosion' ? 20 : type === 'fire' ? 12 : 8;
+  for (let i = 0; i < count; i++) {
+    particles.push({
+      ox: (Math.random() - 0.5) * 14, // offset from center in px
+      oy: (Math.random() - 0.5) * 14,
+      vx: (Math.random() - 0.5) * (type === 'explosion' ? 40 : 8),
+      vy: -Math.random() * (type === 'explosion' ? 50 : 30) - 5,
+      size: Math.random() * 3 + 1.5,
+      life: Math.random() * 0.6 + 0.4, // 0-1, dies when reaches 0
+      decay: (0.3 + Math.random() * 0.7) / (duration / 1000), // per second
+    });
+  }
+  tileEffects.push({ type, tileX, tileY, startTime: now, duration, particles });
+}
+
+function updateAndDrawEffects(ctx, T) {
+  const now = performance.now();
+  const dt = 1/60; // approximate frame delta
+  
+  tileEffects = tileEffects.filter(eff => now - eff.startTime < eff.duration);
+  
+  for (const eff of tileEffects) {
+    const progress = (now - eff.startTime) / eff.duration;
+    const cx = eff.tileX * T + T/2;
+    const cy = eff.tileY * T + T/2;
+    
+    for (const p of eff.particles) {
+      p.life -= p.decay * dt;
+      if (p.life <= 0) {
+        // Respawn for fire (ongoing effect)
+        if (eff.type === 'fire' && progress < 0.7) {
+          p.ox = (Math.random() - 0.5) * 10;
+          p.oy = (Math.random() - 0.5) * 6;
+          p.vy = -Math.random() * 25 - 10;
+          p.vx = (Math.random() - 0.5) * 6;
+          p.life = 0.6 + Math.random() * 0.4;
+          p.size = Math.random() * 3 + 1;
+        } else continue;
+      }
+      
+      p.ox += p.vx * dt;
+      p.oy += p.vy * dt;
+      if (eff.type === 'fire') p.vy -= 15 * dt; // fire rises
+      if (eff.type === 'explosion') { p.vx *= 0.96; p.vy *= 0.96; p.vy += 20 * dt; }
+      
+      const alpha = Math.min(1, p.life) * (1 - progress * 0.5);
+      const x = cx + p.ox;
+      const y = cy + p.oy;
+      
+      // Color by type
+      let color;
+      if (eff.type === 'fire') {
+        const t = 1 - p.life;
+        const r = 255;
+        const g = Math.floor(180 - t * 120);
+        const b = Math.floor(40 - t * 40);
+        color = `rgba(${r},${g},${b},${alpha.toFixed(2)})`;
+      } else if (eff.type === 'explosion') {
+        const t = 1 - p.life;
+        color = `rgba(255,${Math.floor(200 - t*150)},${Math.floor(80 - t*80)},${alpha.toFixed(2)})`;
+      } else if (eff.type === 'craft') {
+        color = `rgba(${180+Math.random()*75},${200+Math.random()*55},255,${alpha.toFixed(2)})`;
+      } else { // sparkle
+        color = `rgba(255,${220+Math.random()*35},${100+Math.random()*100},${alpha.toFixed(2)})`;
+      }
+      
+      ctx.fillStyle = color;
+      ctx.beginPath();
+      ctx.arc(x, y, p.size * (eff.type === 'fire' ? (0.5 + p.life * 0.8) : 1), 0, Math.PI * 2);
+      ctx.fill();
+      
+      // Glow for fire
+      if (eff.type === 'fire' && p.life > 0.3) {
+        ctx.fillStyle = `rgba(255,120,20,${(alpha * 0.15).toFixed(2)})`;
+        ctx.beginPath();
+        ctx.arc(x, y, p.size * 3, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    }
+    
+    // Ground glow for fire
+    if (eff.type === 'fire') {
+      const glow = (1 - progress) * 0.25;
+      ctx.fillStyle = `rgba(255,100,20,${glow.toFixed(2)})`;
+      ctx.beginPath();
+      ctx.arc(cx, cy, T * 1.2, 0, Math.PI * 2);
+      ctx.fill();
+    }
+  }
 }
 
 async function init() {
@@ -305,6 +416,12 @@ function render() {
       ctx.fill();
     }
   }
+  
+  // Draw tile effects (fire, explosions, sparkles)
+  if (tileEffects.length > 0) {
+    updateAndDrawEffects(ctx, T2);
+  }
+  
   ctx.restore();
 
   // HUD updates

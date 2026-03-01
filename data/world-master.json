@@ -1,12 +1,12 @@
 {
-  "lastTick": "2026-03-01T19:08:03.651Z",
+  "lastTick": "2026-03-01T19:35:39.732Z",
   "lastNarrative": null,
   "dangers": [],
   "zoneModifiers": {},
   "npcDirectives": [],
   "consequences": [
     {
-      "id": "consequence_a5d8b513",
+      "id": "consequence_b5b978c7",
       "type": "famine",
       "zones": [
         "grass",
@@ -21,12 +21,34 @@
         "path"
       ],
       "description": "🍂 Famine",
-      "startedAt": 1772390966198,
-      "expiresAt": 1772392166198
+      "startedAt": 1772393689549,
+      "expiresAt": 1772394889549
     }
   ],
-  "precursors": [],
-  "tickCount": 1215,
-  "activeEvents": [],
-  "nextEventTrigger": 1772393381642.8223
+  "precursors": [
+    {
+      "id": "precursor_30288c6c",
+      "type": "earthquake",
+      "message": "Faint tremors ripple through the ground...",
+      "zone": "grass",
+      "sentAt": 1772393513926,
+      "expiresAt": 1772393813926
+    }
+  ],
+  "tickCount": 1281,
+  "activeEvents": [
+    {
+      "id": "the_stranger",
+      "name": "The Stranger",
+      "emoji": "🎭",
+      "desc": "A mysterious figure appears... First to chat gets a unique item!",
+      "durationMs": 3600000,
+      "effect": "stranger",
+      "zone": "cave",
+      "startedAt": 1772393388460,
+      "endsAt": 1772396988460,
+      "strangerClaimed": false
+    }
+  ],
+  "nextEventTrigger": 1772416809316.0886
 }

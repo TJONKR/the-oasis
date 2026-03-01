@@ -58,5 +58,65 @@
     "discoveredBy": "bad7a626-0d4d-4a2e-927a-fd46ed05a861",
     "discovererName": "Agent-9",
     "discoveredAt": "2026-03-01T19:04:36.900Z"
+  },
+  {
+    "key": "burn:fiber + sand",
+    "items": [
+      "fiber",
+      "sand"
+    ],
+    "result": "fiber Cinder",
+    "ruleId": "burn_item",
+    "discoveredBy": "bad7a626-0d4d-4a2e-927a-fd46ed05a861",
+    "discovererName": "Agent-9",
+    "discoveredAt": "2026-03-01T19:15:29.784Z"
+  },
+  {
+    "key": "decay:fiber + sand",
+    "items": [
+      "fiber",
+      "sand"
+    ],
+    "result": "Compost",
+    "ruleId": "compost_decay",
+    "discoveredBy": "bad7a626-0d4d-4a2e-927a-fd46ed05a861",
+    "discovererName": "Agent-9",
+    "discoveredAt": "2026-03-01T19:16:36.526Z"
+  },
+  {
+    "key": "combine:driftwood + fiber",
+    "items": [
+      "fiber",
+      "driftwood"
+    ],
+    "result": "Torch",
+    "ruleId": "make_torch",
+    "discoveredBy": "d56be782-7d0b-48d3-b5bc-cd2f59d54c48",
+    "discovererName": "Agent-14",
+    "discoveredAt": "2026-03-01T19:18:34.463Z"
+  },
+  {
+    "key": "combine:flint + stone",
+    "items": [
+      "stone",
+      "flint"
+    ],
+    "result": "Reinforced stone",
+    "ruleId": "sturdy_tool",
+    "discoveredBy": "582115a5-7236-46c9-93cc-d3f4abadd5f8",
+    "discovererName": "Agent-7",
+    "discoveredAt": "2026-03-01T19:19:35.671Z"
+  },
+  {
+    "key": "combine:driftwood + herbs",
+    "items": [
+      "herbs",
+      "driftwood"
+    ],
+    "result": "herbs Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "d56be782-7d0b-48d3-b5bc-cd2f59d54c48",
+    "discovererName": "Agent-14",
+    "discoveredAt": "2026-03-01T19:20:25.377Z"
   }
 ]
