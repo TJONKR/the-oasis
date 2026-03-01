@@ -75,6 +75,7 @@ let agents = [];
 let agentVisuals = {}; // id → { renderX, renderY } for smooth lerping
 let news = [];
 let tileEffects = []; // { type, x, y, startTime, duration, particles[] }
+let worldFires = []; // persistent fires from server { tileX, tileY, heat }
 let camera = { x: 0, y: 0, zoom: 4 };
 let dragging = false, dragStart = {x:0,y:0}, cameraStart = {x:0,y:0};
 let ws = null;
@@ -97,6 +98,7 @@ function connect() {
       worldInfo = msg.world;
       agents = msg.agents || [];
       news = msg.news || [];
+      worldFires = msg.fires || [];
       updateHUD(msg.tick);
       updateAgentList();
       updateNewsList();
@@ -109,6 +111,7 @@ function connect() {
         agentVisuals[a.id].targetX = a.tileX;
         agentVisuals[a.id].targetY = a.tileY;
       }
+      if (msg.fires) worldFires = msg.fires;
       if (msg.gameTime) updateHUD(msg.tick, msg.gameTime, msg.weather);
       updateAgentList();
     } else if (msg.type === 'agent_spawn') {
@@ -414,6 +417,31 @@ function render() {
       ctx.beginPath();
       ctx.arc(ax, drawY * T2 + T2/2, 3, 0, Math.PI * 2);
       ctx.fill();
+    }
+  }
+  
+  // Draw persistent world fires
+  for (const fire of worldFires) {
+    const fx = fire.tileX * T2 + T2/2;
+    const fy = fire.tileY * T2 + T2/2;
+    const t = performance.now() / 200;
+    // Flickering glow
+    const flicker = 0.7 + Math.sin(t + fire.tileX) * 0.15 + Math.sin(t * 1.7 + fire.tileY) * 0.15;
+    const r = T2 * 1.5 * flicker;
+    // Ground glow
+    const grad = ctx.createRadialGradient(fx, fy, 0, fx, fy, r);
+    grad.addColorStop(0, `rgba(255,120,20,${(0.4 * flicker).toFixed(2)})`);
+    grad.addColorStop(0.5, `rgba(255,80,10,${(0.15 * flicker).toFixed(2)})`);
+    grad.addColorStop(1, 'rgba(255,60,0,0)');
+    ctx.fillStyle = grad;
+    ctx.beginPath(); ctx.arc(fx, fy, r, 0, Math.PI * 2); ctx.fill();
+    // Fire particles (simple animated)
+    for (let i = 0; i < 4; i++) {
+      const px = fx + Math.sin(t * 2 + i * 1.5) * T2 * 0.3;
+      const py = fy - Math.abs(Math.sin(t * 3 + i)) * T2 * 0.8 - 2;
+      const s = (2 + Math.sin(t + i) * 1) * flicker;
+      ctx.fillStyle = i < 2 ? `rgba(255,200,50,${(0.8*flicker).toFixed(2)})` : `rgba(255,100,20,${(0.6*flicker).toFixed(2)})`;
+      ctx.beginPath(); ctx.arc(px, py, s, 0, Math.PI * 2); ctx.fill();
     }
   }
   

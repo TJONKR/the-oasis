@@ -1296,7 +1296,14 @@
       "weight",
       "solubility",
       "volatility",
-      "toxicity"
+      "toxicity",
+      "brittleness",
+      "resonance",
+      "temperature",
+      "fertility",
+      "hardness",
+      "sharpness",
+      "melt_point"
     ],
     "sand": [
       "hardness",
@@ -1304,7 +1311,20 @@
       "fertility",
       "resonance",
       "conductivity",
-      "volatility"
+      "volatility",
+      "flammability",
+      "organic",
+      "melt_point",
+      "toxicity",
+      "malleability",
+      "temperature",
+      "brittleness",
+      "decay_rate",
+      "sharpness",
+      "energy",
+      "ignition",
+      "weight",
+      "luminosity"
     ],
     "shells": [
       "hardness",

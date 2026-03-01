@@ -1,5 +1,5 @@
 {
-  "lastTick": "2026-03-01T19:35:39.732Z",
+  "lastTick": "2026-03-01T19:50:14.381Z",
   "lastNarrative": null,
   "dangers": [],
   "zoneModifiers": {},
@@ -25,17 +25,8 @@
       "expiresAt": 1772394889549
     }
   ],
-  "precursors": [
-    {
-      "id": "precursor_30288c6c",
-      "type": "earthquake",
-      "message": "Faint tremors ripple through the ground...",
-      "zone": "grass",
-      "sentAt": 1772393513926,
-      "expiresAt": 1772393813926
-    }
-  ],
-  "tickCount": 1281,
+  "precursors": [],
+  "tickCount": 1315,
   "activeEvents": [
     {
       "id": "the_stranger",

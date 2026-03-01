@@ -887,9 +887,13 @@ export function initExperiments(shared) {
         xpResult = awardXP(agent, 30 + bonus, 'experiment');
         broadcast({ type: 'experimentSuccess', agentId: agent.id, name: agent.name, result: result.result_item?.name, discovery: !!result.discovery, force });
         addWorldNews('experiment', agent.id, agent.name, result.message, agent.zone);
-        // Visual fire effect for heat/burn experiments
+        // Visual fire effect + world fire for heat/burn experiments
         if ((force === 'heat' || force === 'burn') && agent.tileX != null) {
           broadcast({ type: 'tileEffect', effect: 'fire', tileX: agent.tileX, tileY: agent.tileY, duration: 5000 });
+          // Persistent world fire (lasts ~60 ticks = 30 seconds at 500ms)
+          if (shared.temperature?.addWorldFire) {
+            shared.temperature.addWorldFire(agent.tileX, agent.tileY, 150, 60, agent.id);
+          }
         }
 
         // Proficiency: force_experiment

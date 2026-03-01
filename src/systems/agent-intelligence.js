@@ -769,6 +769,11 @@ export function initAgentIntelligence(shared) {
               // Fire effect for campfire/torch crafting
               if (result.result_item?.name && /campfire|torch|fire/i.test(result.result_item.name)) {
                 if (broadcast) broadcast({ type: 'tileEffect', effect: 'fire', tileX: agent.tileX, tileY: agent.tileY, duration: 6000 });
+                // Persistent world fire — campfires last ~5 minutes (600 ticks at 500ms)
+                if (shared.temperature?.addWorldFire) {
+                  const dur = /campfire/i.test(result.result_item.name) ? 600 : 120;
+                  shared.temperature.addWorldFire(agent.tileX, agent.tileY, 200, dur, agent.id);
+                }
               }
             }
           }).catch(() => {});

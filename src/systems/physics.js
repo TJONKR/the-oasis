@@ -588,6 +588,214 @@ const PRACTICAL_RULES = [
     consume: ['crystals'],
     priority: 13,
   },
+
+  // ── Phase 2: Multi-step Chain Rules ──
+
+  // Charcoal + ore → higher-quality smelt (charcoal is better fuel)
+  {
+    id: 'charcoal_smelt',
+    force: 'heat',
+    name: 'Charcoal Smelting',
+    check: (items, zone) => {
+      const hasCharcoal = items.some(i => i.name === 'Charcoal');
+      const hasOre = items.some(i => i.name === 'ore' || i.name === 'Iron Ore');
+      return hasCharcoal && hasOre;
+    },
+    produce: () => ({
+      name: 'Iron Ingot',
+      type: 'material',
+      rarity: 'Uncommon',
+      description: 'Pure iron, smelted with intense charcoal heat. Ready for forging.',
+    }),
+    propOverrides: { hardness: 8, conductivity: 6, malleability: 7, weight: 5, temperature: 300, melt_point: 1540 },
+    consume: 'all',
+    priority: 14,
+  },
+
+  // Iron Ingot + stone → Anvil (enables better forging)
+  {
+    id: 'make_anvil',
+    force: 'combine',
+    name: 'Anvil Crafting',
+    check: (items) => {
+      return items.some(i => i.name === 'Iron Ingot') && items.some(i => i.name === 'stone' || i.name === 'large_rock');
+    },
+    produce: () => ({
+      name: 'Anvil',
+      type: 'tool',
+      rarity: 'Rare',
+      description: 'A heavy iron anvil. Essential for serious metalwork.',
+    }),
+    propOverrides: { hardness: 9, weight: 30, malleability: 0, temperature: 20 },
+    consume: 'all',
+    priority: 12,
+  },
+
+  // Iron Ingot + wood → Iron Sword
+  {
+    id: 'forge_iron_sword',
+    force: 'impact',
+    name: 'Sword Forging',
+    check: (items) => {
+      const hasIron = items.some(i => i.name === 'Iron Ingot' || (i.name?.startsWith('Shaped') && i.properties?.temperature > 100));
+      const hasWood = items.some(i => i.name === 'wood');
+      return hasIron && hasWood;
+    },
+    produce: () => ({
+      name: 'Iron Sword',
+      type: 'tool',
+      rarity: 'Rare',
+      description: 'A forged iron blade with wooden grip. Deadly and beautiful.',
+    }),
+    propOverrides: { hardness: 8, sharpness: 9, weight: 4, malleability: 3 },
+    consume: 'all',
+    priority: 13,
+  },
+
+  // Resin + fiber → Waterproof Wrap
+  {
+    id: 'waterproof_wrap',
+    force: 'combine',
+    name: 'Waterproofing',
+    check: (items) => items.some(i => i.name === 'resin') && items.some(i => i.name === 'fiber'),
+    produce: () => ({
+      name: 'Waterproof Wrap',
+      type: 'material',
+      rarity: 'Common',
+      description: 'Fiber sealed with resin. Repels water.',
+    }),
+    propOverrides: { solubility: 0, decay_rate: 0.02, malleability: 6 },
+    consume: 'all',
+    priority: 9,
+  },
+
+  // Herbs + freshwater → Herbal Tea (consumable, heals)
+  {
+    id: 'herbal_tea',
+    force: 'heat',
+    name: 'Brewing',
+    check: (items) => {
+      const hasHerbs = items.some(i => i.name === 'herbs');
+      const hasWater = items.some(i => i.name === 'freshwater');
+      const hasHeat = items.some(i => (i.properties?.temperature || 0) >= 100) || items.length >= 2;
+      return hasHerbs && hasWater;
+    },
+    produce: () => ({
+      name: 'Herbal Tea',
+      type: 'consumable',
+      rarity: 'Common',
+      description: 'A warm, soothing brew. Restores energy and calms the mind.',
+    }),
+    propOverrides: { energy: 20, toxicity: 0, temperature: 60, organic: 1, decay_rate: 0.4 },
+    consume: 'all',
+    priority: 11,
+  },
+
+  // Mushrooms + herbs → Poultice (healing item)
+  {
+    id: 'make_poultice',
+    force: 'combine',
+    name: 'Poultice Making',
+    check: (items) => items.some(i => i.name === 'mushrooms') && items.some(i => i.name === 'herbs'),
+    produce: () => ({
+      name: 'Healing Poultice',
+      type: 'consumable',
+      rarity: 'Uncommon',
+      description: 'A medicinal paste. Apply to wounds for rapid healing.',
+    }),
+    propOverrides: { organic: 1, toxicity: 0, energy: 15, decay_rate: 0.3 },
+    consume: 'all',
+    priority: 10,
+  },
+
+  // Sand + heat → Glass (already in smelt_metal but explicit for sand)
+  {
+    id: 'make_glass_from_sand',
+    force: 'heat',
+    name: 'Glassmaking',
+    check: (items, zone) => {
+      const hasSand = items.some(i => i.name === 'sand');
+      const heat = items.reduce((s, i) => s + (i.properties?.temperature || 0), 0) + (zone === 'rocky' ? 400 : 0);
+      return hasSand && heat >= 600;
+    },
+    produce: () => ({
+      name: 'Raw Glass',
+      type: 'material',
+      rarity: 'Uncommon',
+      description: 'Molten sand cooled into translucent glass. Fragile but versatile.',
+    }),
+    propOverrides: { hardness: 5, brittleness: 8, luminosity: 3, conductivity: 2, sharpness: 6, melt_point: 600 },
+    consume: ['sand'],
+    priority: 12,
+  },
+
+  // Bark + resin → Bark Shield
+  {
+    id: 'bark_shield',
+    force: 'combine',
+    name: 'Shield Crafting',
+    check: (items) => items.some(i => i.name === 'bark') && items.some(i => i.name === 'resin'),
+    produce: () => ({
+      name: 'Bark Shield',
+      type: 'tool',
+      rarity: 'Common',
+      description: 'Layered bark reinforced with resin. Light but protective.',
+    }),
+    propOverrides: { hardness: 5, weight: 2, decay_rate: 0.1 },
+    consume: 'all',
+    priority: 8,
+  },
+
+  // Flowers + freshwater → Dye
+  {
+    id: 'make_dye',
+    force: 'dissolve',
+    name: 'Dye Extraction',
+    check: (items) => items.some(i => i.name === 'flowers') && items.some(i => i.name === 'freshwater'),
+    produce: () => ({
+      name: 'Natural Dye',
+      type: 'material',
+      rarity: 'Common',
+      description: 'Vibrant pigment extracted from flower petals.',
+    }),
+    propOverrides: { solubility: 8, organic: 1, luminosity: 2, decay_rate: 0.2 },
+    consume: 'all',
+    priority: 9,
+  },
+
+  // Seaweed + salt → Dried Seaweed (preserved food)
+  {
+    id: 'dry_seaweed',
+    force: 'combine',
+    name: 'Drying',
+    check: (items) => items.some(i => i.name === 'seaweed') && items.some(i => i.name === 'salt'),
+    produce: () => ({
+      name: 'Dried Seaweed',
+      type: 'consumable',
+      rarity: 'Common',
+      description: 'Salt-dried seaweed. Nutritious and long-lasting.',
+    }),
+    propOverrides: { energy: 12, decay_rate: 0.02, organic: 1 },
+    consume: 'all',
+    priority: 8,
+  },
+
+  // Crystals + fiber → Crystal Pendant (social/trade item)
+  {
+    id: 'crystal_pendant',
+    force: 'combine',
+    name: 'Jewelry Crafting',
+    check: (items) => items.some(i => i.name === 'crystals') && items.some(i => i.name === 'fiber'),
+    produce: () => ({
+      name: 'Crystal Pendant',
+      type: 'decoration',
+      rarity: 'Rare',
+      description: 'A luminous crystal suspended on woven fiber. Beautiful.',
+    }),
+    propOverrides: { luminosity: 6, resonance: 7, weight: 0.2 },
+    consume: 'all',
+    priority: 10,
+  },
 ];
 
 // ═══════════════════════════════════════

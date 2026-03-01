@@ -118,5 +118,29 @@
     "discoveredBy": "d56be782-7d0b-48d3-b5bc-cd2f59d54c48",
     "discovererName": "Agent-14",
     "discoveredAt": "2026-03-01T19:20:25.377Z"
+  },
+  {
+    "key": "combine:bark + fiber",
+    "items": [
+      "bark",
+      "fiber"
+    ],
+    "result": "Cooked bark",
+    "ruleId": "cooking",
+    "discoveredBy": "f4689095-dbd2-45de-81fa-42cb6bf3bc2e",
+    "discovererName": "Agent-21",
+    "discoveredAt": "2026-03-01T19:50:27.745Z"
+  },
+  {
+    "key": "combine:fiber + shells",
+    "items": [
+      "shells",
+      "fiber"
+    ],
+    "result": "Cooked shells",
+    "ruleId": "cooking",
+    "discoveredBy": "6498a0c9-87f9-430e-b729-2b1a75250d4b",
+    "discovererName": "Agent-19",
+    "discoveredAt": "2026-03-01T19:50:28.247Z"
   }
 ]

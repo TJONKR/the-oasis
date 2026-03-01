@@ -32,6 +32,7 @@ import { initCollectiveProjects } from './src/systems/collective-projects.js';
 import { initEncounters } from './src/systems/encounters.js';
 import { initOracle } from './src/systems/oracle.js';
 import { registerGatheredResources, getPracticalRules, GATHERED_RESOURCE_PROPERTIES } from './src/systems/physics.js';
+import { getAmbientTemp, addWorldFire, tickFires, getActiveFires, hasNearbyFire, coolItems, getEffectiveHeatV2, getToolAmplifier } from './src/systems/temperature.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -164,6 +165,7 @@ wss.on('connection', (ws) => {
     world: worldGrid.getWorldInfo(),
     agents: [...agents.values()].map(serializeAgent),
     news: worldNews.items.slice(0, 20),
+    fires: getActiveFires(),
   }));
 
   ws.on('message', (raw) => {
@@ -248,6 +250,7 @@ const worldMaster = initWorldMaster({
 shared.worldMaster = worldMaster;
 
 shared.getGameTime = getGameTime;
+shared.temperature = { getAmbientTemp, addWorldFire, getActiveFires, hasNearbyFire, getEffectiveHeatV2, getToolAmplifier };
 
 // Agent Intelligence — the autonomous brain
 const agentAI = initAgentIntelligence(shared);
@@ -323,6 +326,12 @@ function simulationTick() {
   // 1. Weather
   if (weatherSystem.tick) weatherSystem.tick();
   
+  // 1b. Tick world fires
+  const expiredFires = tickFires();
+  for (const f of expiredFires) {
+    broadcast({ type: 'tileEffect', effect: 'fireOut', tileX: f.tileX, tileY: f.tileY, duration: 1000 });
+  }
+  
   // 2. Ecosystem (resource respawn etc)
   if (ecosystemSystem.tick) ecosystemSystem.tick();
   
@@ -337,6 +346,13 @@ function simulationTick() {
     
     // Survival tick (energy, hunger, temperature)
     if (survivalSystem.tick) survivalSystem.tick(agent);
+    
+    // Cool down hot items in inventory
+    const weather = weatherSystem.getCurrentWeather?.() || {};
+    const ambientT = getAmbientTemp(agent.tileX, agent.tileY, {
+      zone: agent.zone, elevation: 0, hour: gameTime.hour, weather: weather.condition || 'clear'
+    });
+    coolItems(agent, ambientT);
     
     // Decay tick (item degradation)
     if (decaySystem.tickAgent) decaySystem.tickAgent(agent);
@@ -373,7 +389,10 @@ function simulationTick() {
       positions.push({ id, name: a.name, tileX: a.tileX, tileY: a.tileY, hp: a.hp, energy: a.energy, alive: true,
         mind: m ? { action: m.currentAction, mood: m.mood, intent: m.intent ? { action: m.intent.action, reason: m.intent.reason } : null } : null });
     }
-    broadcast({ type: 'tick', tick, agents: positions });
+    const tickMsg = { type: 'tick', tick, agents: positions };
+    // Send fires every 10 ticks
+    if (tick % 10 === 0) tickMsg.fires = getActiveFires();
+    broadcast(tickMsg);
   }
   
   // Save periodically
@@ -493,6 +512,10 @@ app.get('/api/news', (req, res) => {
 
 app.get('/api/weather', (req, res) => {
   res.json(weatherSystem.getCurrentWeather?.() || { error: 'No weather data' });
+});
+
+app.get('/api/fires', (req, res) => {
+  res.json(getActiveFires());
 });
 
 const ZONES_REF = worldGrid.zones;
