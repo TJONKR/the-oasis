@@ -347,6 +347,7 @@ function getGameTime() {
 
 function simulationTick() {
   tick++;
+  shared.tick = tick;
   const gameTime = getGameTime();
   
   // 1. Weather
@@ -397,6 +398,12 @@ function simulationTick() {
     
     // Decay tick (item degradation)
     if (decaySystem.tickAgent) decaySystem.tickAgent(agent);
+    
+    // Check for death (HP depleted by gas, lightning, starvation, etc.)
+    if ((agent.hp || 100) <= 0 && agent.alive) {
+      agent.alive = false;
+      if (decayLifecycle.onAgentDeath) decayLifecycle.onAgentDeath(agent);
+    }
     
     // Achievement check
     if (achievementSystem.check) achievementSystem.check(agent);

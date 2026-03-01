@@ -418,7 +418,7 @@ function render() {
       // Action/intent label (thought bubble)
       const intentText = agent.mind?.intent?.reason || agent.mind?.intent?.action || agent.mind?.action || '';
       if (intentText && intentText !== 'idle') {
-        const ACTION_ICONS = { move:'🚶', gather:'🧺', rest:'😴', eat:'🍎', craft:'⚒️', experiment:'🔬', chat:'💬', gift:'🎁', fight:'⚔️', explore:'🧭', build:'🏗️' };
+        const ACTION_ICONS = { move:'🚶', gather:'🧺', rest:'😴', eat:'🍎', craft:'⚒️', experiment:'🔬', chat:'💬', gift:'🎁', fight:'⚔️', explore:'🧭', build:'🏗️', plant:'🌱', cook:'🍳', drop:'🗑️', pickup:'📦' };
         const icon = ACTION_ICONS[agent.mind?.intent?.action || agent.mind?.action] || '💭';
         const label = icon + ' ' + (intentText.length > 18 ? intentText.slice(0,18)+'…' : intentText);
         ctx.font = `${Math.max(5, 7)}px monospace`;

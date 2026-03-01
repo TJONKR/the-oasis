@@ -8,12 +8,12 @@
     "y": 401,
     "zone": "coast",
     "hp": 100,
-    "energy": 36.5,
-    "hunger": 0.04,
+    "energy": 38.5,
+    "hunger": 0.32,
     "temperature": 20,
     "inventory": [
       {
-        "name": "Fermented driftwood",
+        "name": "Fermented Fermented driftwood",
         "quantity": 20,
         "properties": {
           "hardness": 3,
@@ -26,7 +26,7 @@
           "weight": 1.5,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 200,
@@ -37,10 +37,10 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       },
       {
-        "name": "Fermented shells",
+        "name": "Fermented Fermented shells",
         "quantity": 20,
         "properties": {
           "hardness": 4,
@@ -53,7 +53,7 @@
           "weight": 0.2,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 1,
           "melt_point": 500,
           "ignition": 0,
@@ -64,7 +64,7 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       }
     ],
     "knowledge": [],
@@ -75,7 +75,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 28287,
+      "xp": 28437,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -91,12 +91,12 @@
     "y": 414,
     "zone": "coast",
     "hp": 100,
-    "energy": 47.5,
-    "hunger": 0.2,
+    "energy": 52.5,
+    "hunger": 2.160000000000001,
     "temperature": 20,
     "inventory": [
       {
-        "name": "Fermented palm_fronds",
+        "name": "Fermented Fermented palm_fronds",
         "quantity": 20,
         "properties": {
           "hardness": 1,
@@ -109,7 +109,7 @@
           "weight": 0.3,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 180,
@@ -120,10 +120,10 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       },
       {
-        "name": "Fermented wood",
+        "name": "Fermented Fermented wood",
         "quantity": 20,
         "properties": {
           "hardness": 4,
@@ -136,7 +136,7 @@
           "weight": 3,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 250,
@@ -147,10 +147,10 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       },
       {
-        "name": "Fermented coconuts",
+        "name": "Fermented Fermented coconuts",
         "quantity": 20,
         "properties": {
           "hardness": 5,
@@ -163,7 +163,7 @@
           "weight": 1.5,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 250,
@@ -174,7 +174,7 @@
           "fertility": 2
         },
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       }
     ],
     "knowledge": [],
@@ -185,7 +185,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 84226,
+      "xp": 85034,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -201,8 +201,8 @@
     "y": 412,
     "zone": "sand",
     "hp": 100,
-    "energy": 33.00000000002135,
-    "hunger": 0.08,
+    "energy": 40.900000000022736,
+    "hunger": 2.280000000000001,
     "temperature": 20,
     "inventory": [
       {
@@ -219,7 +219,7 @@
           "weight": 2,
           "decay_rate": 0,
           "energy": 0,
-          "temperature": 43.903825272303195,
+          "temperature": 41.007058548134125,
           "resonance": 0,
           "melt_point": 1200,
           "ignition": 0,
@@ -239,7 +239,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 166759,
+      "xp": 166764,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -255,12 +255,12 @@
     "y": 412,
     "zone": "coast",
     "hp": 100,
-    "energy": 48.600000000024,
-    "hunger": 0.12,
+    "energy": 56.100000000025204,
+    "hunger": 0.5199999999999999,
     "temperature": 20,
     "inventory": [
       {
-        "name": "Fermented shells",
+        "name": "Fermented Fermented shells",
         "quantity": 2,
         "properties": {
           "hardness": 4,
@@ -273,7 +273,7 @@
           "weight": 0.2,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 1,
           "melt_point": 500,
           "ignition": 0,
@@ -284,7 +284,7 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       }
     ],
     "knowledge": [],
@@ -311,12 +311,12 @@
     "y": 450,
     "zone": "grass",
     "hp": 100,
-    "energy": 50.80000000002826,
-    "hunger": 0.12,
+    "energy": 51.100000000029766,
+    "hunger": 0.8800000000000002,
     "temperature": 20,
     "inventory": [
       {
-        "name": "Fermented wood",
+        "name": "Fermented Fermented wood",
         "quantity": 4,
         "properties": {
           "hardness": 4,
@@ -329,7 +329,7 @@
           "weight": 3,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 25.903825272303195,
+          "temperature": 23.007058548134125,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 250,
@@ -341,10 +341,10 @@
         },
         "_heatStage": "smoking",
         "_reacted": true,
-        "_decayProgress": 0.01548061227736686
+        "_decayProgress": 0.15000015828294253
       },
       {
-        "name": "Fermented Herbal Extract",
+        "name": "Fermented Fermented Herbal Extract",
         "quantity": 20,
         "properties": {
           "hardness": 0,
@@ -357,7 +357,7 @@
           "weight": 0.1,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 25.903825272303195,
+          "temperature": 23.007058548134125,
           "resonance": 2,
           "melt_point": 0,
           "ignition": 0,
@@ -370,10 +370,10 @@
         "_heatStage": "brewing",
         "_state": "liquid",
         "_reacted": true,
-        "_decayProgress": 0.01548061227736686
+        "_decayProgress": 0.15000015828294253
       },
       {
-        "name": "Fermented acorns",
+        "name": "Fermented Fermented acorns",
         "quantity": 1,
         "properties": {
           "hardness": 3,
@@ -386,7 +386,7 @@
           "weight": 0.1,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 25.903825272303195,
+          "temperature": 23.007058548134125,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 200,
@@ -397,10 +397,10 @@
           "fertility": 5
         },
         "_reacted": true,
-        "_decayProgress": 0.01548061227736686
+        "_decayProgress": 0.15000015828294253
       },
       {
-        "name": "Fermented Burning Fiber",
+        "name": "Fermented Fermented Burning Fiber",
         "quantity": 17,
         "properties": {
           "hardness": 0,
@@ -413,7 +413,7 @@
           "weight": 0.05,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 25.903825272303195,
+          "temperature": 23.007058548134125,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 0,
@@ -425,7 +425,7 @@
         },
         "_heatStage": "igniting",
         "_reacted": true,
-        "_decayProgress": 0.01548061227736686
+        "_decayProgress": 0.15000015828294253
       }
     ],
     "knowledge": [],
@@ -452,12 +452,12 @@
     "y": 440,
     "zone": "coast",
     "hp": 100,
-    "energy": 44,
-    "hunger": 0.24000000000000002,
+    "energy": 53,
+    "hunger": 0.36,
     "temperature": 20,
     "inventory": [
       {
-        "name": "Fermented driftwood",
+        "name": "Fermented Fermented driftwood",
         "quantity": 20,
         "properties": {
           "hardness": 3,
@@ -470,7 +470,7 @@
           "weight": 1.5,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 200,
@@ -481,10 +481,10 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       },
       {
-        "name": "Fermented shells",
+        "name": "Fermented Fermented shells",
         "quantity": 20,
         "properties": {
           "hardness": 4,
@@ -497,7 +497,7 @@
           "weight": 0.2,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 1,
           "melt_point": 500,
           "ignition": 0,
@@ -508,7 +508,7 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       }
     ],
     "knowledge": [],
@@ -535,8 +535,8 @@
     "y": 404,
     "zone": "coast",
     "hp": 100,
-    "energy": 39.40000000000314,
-    "hunger": 0.04,
+    "energy": 54.90000000000344,
+    "hunger": 0.16,
     "temperature": 20,
     "inventory": [
       {
@@ -553,7 +553,7 @@
           "weight": 8,
           "decay_rate": 0,
           "energy": 0,
-          "temperature": 30.90192253100653,
+          "temperature": 31.835995052456212,
           "resonance": 0.5,
           "melt_point": 1200,
           "ignition": 0,
@@ -578,7 +578,7 @@
           "weight": 0.5,
           "decay_rate": 0,
           "energy": 5,
-          "temperature": 30.90192253100653,
+          "temperature": 31.835995052456212,
           "resonance": 0,
           "melt_point": 1400,
           "ignition": 0,
@@ -598,7 +598,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 182449,
+      "xp": 183543,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -614,8 +614,8 @@
     "y": 404,
     "zone": "coast",
     "hp": 100,
-    "energy": 51.60000000000683,
-    "hunger": 0.2,
+    "energy": 33.50000000000736,
+    "hunger": 0.12,
     "temperature": 20,
     "inventory": [
       {
@@ -632,7 +632,7 @@
           "weight": 0.5,
           "decay_rate": 0,
           "energy": 5,
-          "temperature": 30.90382527230354,
+          "temperature": 28.593688139394985,
           "resonance": 0,
           "melt_point": 1400,
           "ignition": 0,
@@ -657,7 +657,7 @@
           "weight": 8,
           "decay_rate": 0,
           "energy": 0,
-          "temperature": 30.90382527230354,
+          "temperature": 28.593688139394985,
           "resonance": 0.5,
           "melt_point": 1200,
           "ignition": 0,
@@ -677,7 +677,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 184674,
+      "xp": 185896,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -693,8 +693,8 @@
     "y": 412,
     "zone": "sand",
     "hp": 100,
-    "energy": 30.500000000009344,
-    "hunger": 0.12,
+    "energy": 36.70000000001072,
+    "hunger": 2.7200000000000015,
     "temperature": 20,
     "inventory": [],
     "knowledge": [],
@@ -705,7 +705,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 162964,
+      "xp": 162969,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -721,12 +721,12 @@
     "y": 412,
     "zone": "coast",
     "hp": 100,
-    "energy": 50.10000000002974,
-    "hunger": 0.04,
+    "energy": 50.40000000003124,
+    "hunger": 0.9600000000000003,
     "temperature": 20,
     "inventory": [
       {
-        "name": "Fermented driftwood",
+        "name": "Fermented Fermented driftwood",
         "quantity": 2,
         "properties": {
           "hardness": 3,
@@ -739,7 +739,7 @@
           "weight": 1.5,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 200,
@@ -750,7 +750,7 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       }
     ],
     "knowledge": [],
@@ -777,12 +777,12 @@
     "y": 395,
     "zone": "coast",
     "hp": 100,
-    "energy": 53,
-    "hunger": 0.08,
+    "energy": 51,
+    "hunger": 0.28,
     "temperature": 20,
     "inventory": [
       {
-        "name": "Fermented shells",
+        "name": "Fermented Fermented shells",
         "quantity": 20,
         "properties": {
           "hardness": 4,
@@ -795,7 +795,7 @@
           "weight": 0.2,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 1,
           "melt_point": 500,
           "ignition": 0,
@@ -806,10 +806,10 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       },
       {
-        "name": "Fermented driftwood",
+        "name": "Fermented Fermented driftwood",
         "quantity": 20,
         "properties": {
           "hardness": 3,
@@ -822,7 +822,7 @@
           "weight": 1.5,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 200,
@@ -833,7 +833,7 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       }
     ],
     "knowledge": [],
@@ -860,12 +860,12 @@
     "y": 438,
     "zone": "coast",
     "hp": 100,
-    "energy": 50,
-    "hunger": 0.12,
+    "energy": 57,
+    "hunger": 0.04,
     "temperature": 20,
     "inventory": [
       {
-        "name": "Fermented driftwood",
+        "name": "Fermented Fermented driftwood",
         "quantity": 20,
         "properties": {
           "hardness": 3,
@@ -878,7 +878,7 @@
           "weight": 1.5,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 200,
@@ -889,10 +889,10 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       },
       {
-        "name": "Fermented shells",
+        "name": "Fermented Fermented shells",
         "quantity": 20,
         "properties": {
           "hardness": 4,
@@ -905,7 +905,7 @@
           "weight": 0.2,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 1,
           "melt_point": 500,
           "ignition": 0,
@@ -916,7 +916,7 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       }
     ],
     "knowledge": [],
@@ -943,19 +943,17 @@
     "y": 465,
     "zone": "grass",
     "hp": 100,
-    "energy": 54.300000000018315,
-    "hunger": 0.08,
+    "energy": 47.300000000019196,
+    "hunger": 0.36,
     "temperature": 20,
     "inventory": [
       {
-        "name": "Fermented flowers",
-        "quantity": 2,
-        "_reacted": true
+        "name": "Fermented Fermented flowers",
+        "quantity": 2
       },
       {
-        "name": "Fermented herbs",
-        "quantity": 3,
-        "_reacted": true
+        "name": "Fermented Fermented fiber",
+        "quantity": 2
       }
     ],
     "knowledge": [],
@@ -966,12 +964,12 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 163285,
+      "xp": 163356,
       "level": 11,
       "title": "Crafter ⚒️"
     },
     "ticksBorn": 3607,
-    "coins": 855
+    "coins": 866
   },
   "d56be782-7d0b-48d3-b5bc-cd2f59d54c48": {
     "id": "d56be782-7d0b-48d3-b5bc-cd2f59d54c48",
@@ -982,19 +980,17 @@
     "y": 419,
     "zone": "coast",
     "hp": 100,
-    "energy": 50.000000000006054,
+    "energy": 55.900000000006386,
     "hunger": 0.12,
     "temperature": 20,
     "inventory": [
       {
-        "name": "Fermented driftwood",
-        "quantity": 1,
-        "_reacted": true
+        "name": "Fermented Fermented driftwood",
+        "quantity": 1
       },
       {
-        "name": "Fermented shells",
-        "quantity": 2,
-        "_reacted": true
+        "name": "Fermented Fermented shells",
+        "quantity": 2
       }
     ],
     "knowledge": [],
@@ -1021,8 +1017,8 @@
     "y": 412,
     "zone": "coast",
     "hp": 100,
-    "energy": 24.10000000001752,
-    "hunger": 0.43999999999999995,
+    "energy": 41.00000000001889,
+    "hunger": 2.280000000000001,
     "temperature": 20,
     "inventory": [],
     "knowledge": [],
@@ -1049,19 +1045,17 @@
     "y": 418,
     "zone": "coast",
     "hp": 100,
-    "energy": 46.9000000000155,
-    "hunger": 0.12,
+    "energy": 45.10000000001629,
+    "hunger": 0.6,
     "temperature": 20,
     "inventory": [
       {
-        "name": "Fermented Herbal Extract",
-        "quantity": 1,
-        "_reacted": true
+        "name": "Fermented Fermented Herbal Extract",
+        "quantity": 1
       },
       {
-        "name": "Fermented driftwood",
-        "quantity": 1,
-        "_reacted": true
+        "name": "Fermented Fermented driftwood",
+        "quantity": 1
       }
     ],
     "knowledge": [],
@@ -1088,12 +1082,12 @@
     "y": 449,
     "zone": "coast",
     "hp": 100,
-    "energy": 34.40000000002378,
-    "hunger": 0.12,
+    "energy": 34.700000000025156,
+    "hunger": 3.040000000000002,
     "temperature": 20,
     "inventory": [
       {
-        "name": "Fermented Burning Fiber",
+        "name": "Fermented Fermented Burning Fiber",
         "quantity": 20,
         "properties": {
           "hardness": 0,
@@ -1106,7 +1100,7 @@
           "weight": 0.05,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 0,
@@ -1118,10 +1112,10 @@
         },
         "_heatStage": "igniting",
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       },
       {
-        "name": "Fermented wood",
+        "name": "Fermented Fermented wood",
         "quantity": 3,
         "properties": {
           "hardness": 4,
@@ -1134,7 +1128,7 @@
           "weight": 3,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 250,
@@ -1146,10 +1140,10 @@
         },
         "_heatStage": "smoking",
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       },
       {
-        "name": "Fermented herbs",
+        "name": "Fermented Fermented herbs",
         "quantity": 12,
         "properties": {
           "hardness": 0,
@@ -1162,7 +1156,7 @@
           "weight": 0.05,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 1,
           "melt_point": 0,
           "ignition": 160,
@@ -1174,7 +1168,7 @@
         },
         "_heatStage": "burning",
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       }
     ],
     "knowledge": [],
@@ -1201,12 +1195,12 @@
     "y": 412,
     "zone": "coast",
     "hp": 100,
-    "energy": 31.300000000008907,
-    "hunger": 0.04,
+    "energy": 31.100000000009675,
+    "hunger": 0.43999999999999995,
     "temperature": 20,
     "inventory": [
       {
-        "name": "Fermented driftwood",
+        "name": "Fermented Fermented driftwood",
         "quantity": 2,
         "properties": {
           "hardness": 3,
@@ -1219,7 +1213,7 @@
           "weight": 1.5,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 200,
@@ -1230,10 +1224,10 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       },
       {
-        "name": "Fermented shells",
+        "name": "Fermented Fermented shells",
         "quantity": 1,
         "properties": {
           "hardness": 4,
@@ -1246,7 +1240,7 @@
           "weight": 0.2,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 1,
           "melt_point": 500,
           "ignition": 0,
@@ -1257,7 +1251,7 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       }
     ],
     "knowledge": [],
@@ -1284,12 +1278,12 @@
     "y": 419,
     "zone": "coast",
     "hp": 100,
-    "energy": 47.00000000001158,
-    "hunger": 0.2,
+    "energy": 56.60000000001217,
+    "hunger": 0.16,
     "temperature": 20,
     "inventory": [
       {
-        "name": "Fermented shells",
+        "name": "Fermented Fermented shells",
         "quantity": 18,
         "properties": {
           "hardness": 4,
@@ -1302,7 +1296,7 @@
           "weight": 0.2,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 1,
           "melt_point": 500,
           "ignition": 0,
@@ -1313,10 +1307,10 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       },
       {
-        "name": "Fermented Burning Fiber",
+        "name": "Fermented Fermented Burning Fiber",
         "quantity": 20,
         "properties": {
           "hardness": 0,
@@ -1329,7 +1323,7 @@
           "weight": 0.05,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 0,
@@ -1341,10 +1335,10 @@
         },
         "_heatStage": "igniting",
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       },
       {
-        "name": "Fermented driftwood",
+        "name": "Fermented Fermented driftwood",
         "quantity": 19,
         "properties": {
           "hardness": 3,
@@ -1357,7 +1351,7 @@
           "weight": 1.5,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 200,
@@ -1368,10 +1362,10 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       },
       {
-        "name": "Fermented Herbal Extract",
+        "name": "Fermented Fermented Herbal Extract",
         "quantity": 17,
         "properties": {
           "hardness": 0,
@@ -1384,7 +1378,7 @@
           "weight": 0.1,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 2,
           "melt_point": 0,
           "ignition": 0,
@@ -1397,7 +1391,7 @@
         "_heatStage": "brewing",
         "_state": "liquid",
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       },
       {
         "name": "Fermented herbs",
@@ -1413,7 +1407,7 @@
           "weight": 0.05,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 1,
           "melt_point": 0,
           "ignition": 160,
@@ -1424,7 +1418,7 @@
           "fertility": 3
         },
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       }
     ],
     "knowledge": [],
@@ -1435,7 +1429,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 163154,
+      "xp": 163164,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -1451,41 +1445,17 @@
     "y": 465,
     "zone": "grass",
     "hp": 100,
-    "energy": 35.90000000001959,
+    "energy": 53.30000000002059,
     "hunger": 0.2,
     "temperature": 20,
     "inventory": [
       {
-        "name": "Fermented fiber",
-        "quantity": 1,
-        "properties": {
-          "hardness": 1,
-          "conductivity": 0,
-          "flammability": 5,
-          "toxicity": 1,
-          "luminosity": 0,
-          "volatility": 0,
-          "organic": 1,
-          "weight": 0.1,
-          "decay_rate": 0.05,
-          "energy": 18,
-          "temperature": 25.903825272303195,
-          "resonance": 0,
-          "melt_point": 0,
-          "ignition": 200,
-          "sharpness": 0,
-          "solubility": 0,
-          "malleability": 8,
-          "brittleness": 1,
-          "fertility": 0
-        },
-        "_reacted": true,
-        "_decayProgress": 0.01548061227736686
+        "name": "Fermented Fermented flowers",
+        "quantity": 2
       },
       {
-        "name": "Fermented flowers",
-        "quantity": 2,
-        "_reacted": true
+        "name": "Fermented Fermented herbs",
+        "quantity": 4
       }
     ],
     "knowledge": [],
@@ -1496,7 +1466,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 165589,
+      "xp": 165813,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -1512,12 +1482,12 @@
     "y": 449,
     "zone": "coast",
     "hp": 100,
-    "energy": 38.70000000002098,
-    "hunger": 0.12,
+    "energy": 49.70000000002211,
+    "hunger": 0.36,
     "temperature": 20,
     "inventory": [
       {
-        "name": "Fermented bark",
+        "name": "Fermented Fermented bark",
         "quantity": 1,
         "properties": {
           "hardness": 3,
@@ -1530,7 +1500,7 @@
           "weight": 0.5,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 220,
@@ -1542,10 +1512,10 @@
         },
         "_heatStage": "smoking",
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       },
       {
-        "name": "Fermented Herbal Extract",
+        "name": "Fermented Fermented Herbal Extract",
         "quantity": 20,
         "properties": {
           "hardness": 0,
@@ -1558,7 +1528,7 @@
           "weight": 0.1,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 2,
           "melt_point": 0,
           "ignition": 0,
@@ -1571,10 +1541,10 @@
         "_heatStage": "brewing",
         "_state": "liquid",
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       },
       {
-        "name": "Fermented Burning Fiber",
+        "name": "Fermented Fermented Burning Fiber",
         "quantity": 20,
         "properties": {
           "hardness": 0,
@@ -1587,7 +1557,7 @@
           "weight": 0.05,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 0,
@@ -1599,10 +1569,10 @@
         },
         "_heatStage": "igniting",
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       },
       {
-        "name": "Fermented acorns",
+        "name": "Fermented Fermented acorns",
         "quantity": 1,
         "properties": {
           "hardness": 3,
@@ -1615,7 +1585,7 @@
           "weight": 0.1,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 200,
@@ -1626,10 +1596,10 @@
           "fertility": 5
         },
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       },
       {
-        "name": "Fermented wood",
+        "name": "Fermented Fermented wood",
         "quantity": 3,
         "properties": {
           "hardness": 4,
@@ -1642,7 +1612,7 @@
           "weight": 3,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 250,
@@ -1654,10 +1624,10 @@
         },
         "_heatStage": "smoking",
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       },
       {
-        "name": "Fermented shells",
+        "name": "Fermented Fermented shells",
         "quantity": 1,
         "properties": {
           "hardness": 4,
@@ -1670,7 +1640,7 @@
           "weight": 0.2,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 1,
           "melt_point": 500,
           "ignition": 0,
@@ -1681,10 +1651,10 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       },
       {
-        "name": "Fermented driftwood",
+        "name": "Fermented Fermented driftwood",
         "quantity": 1,
         "properties": {
           "hardness": 3,
@@ -1697,7 +1667,7 @@
           "weight": 1.5,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 200,
@@ -1708,7 +1678,7 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       }
     ],
     "knowledge": [],
@@ -1719,7 +1689,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 172295,
+      "xp": 173143,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -1735,8 +1705,8 @@
     "y": 412,
     "zone": "coast",
     "hp": 100,
-    "energy": 31.300000000024067,
-    "hunger": 1.7200000000000009,
+    "energy": 40.70000000002536,
+    "hunger": 2.6800000000000015,
     "temperature": 20,
     "inventory": [],
     "knowledge": [],
@@ -1763,12 +1733,12 @@
     "y": 449,
     "zone": "coast",
     "hp": 100,
-    "energy": 49.00000000002157,
-    "hunger": 0.04,
+    "energy": 56.6000000000227,
+    "hunger": 0.12,
     "temperature": 20,
     "inventory": [
       {
-        "name": "Fermented wood",
+        "name": "Fermented Fermented wood",
         "quantity": 1,
         "properties": {
           "hardness": 4,
@@ -1781,7 +1751,7 @@
           "weight": 3,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 250,
@@ -1793,10 +1763,10 @@
         },
         "_heatStage": "smoking",
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       },
       {
-        "name": "Fermented bark",
+        "name": "Fermented Fermented bark",
         "quantity": 1,
         "properties": {
           "hardness": 3,
@@ -1809,7 +1779,7 @@
           "weight": 0.5,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 220,
@@ -1821,7 +1791,7 @@
         },
         "_heatStage": "igniting",
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       }
     ],
     "knowledge": [],
@@ -1832,7 +1802,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 180806,
+      "xp": 181670,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -1848,12 +1818,12 @@
     "y": 425,
     "zone": "coast",
     "hp": 100,
-    "energy": 39,
-    "hunger": 0.04,
+    "energy": 43,
+    "hunger": 0.36,
     "temperature": 20,
     "inventory": [
       {
-        "name": "Fermented fiber",
+        "name": "Fermented Fermented fiber",
         "quantity": 20,
         "properties": {
           "hardness": 1,
@@ -1866,7 +1836,7 @@
           "weight": 0.1,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 200,
@@ -1877,10 +1847,10 @@
           "fertility": 0
         },
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       },
       {
-        "name": "Fermented herbs",
+        "name": "Fermented Fermented herbs",
         "quantity": 20,
         "properties": {
           "hardness": 0,
@@ -1893,7 +1863,7 @@
           "weight": 0.05,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 1,
           "melt_point": 0,
           "ignition": 160,
@@ -1904,7 +1874,7 @@
           "fertility": 3
         },
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       }
     ],
     "knowledge": [],
@@ -1915,7 +1885,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 52128,
+      "xp": 52288,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -1931,12 +1901,12 @@
     "y": 449,
     "zone": "coast",
     "hp": 100,
-    "energy": 55.80000000002836,
-    "hunger": 0.08,
+    "energy": 56.100000000029866,
+    "hunger": 0.24000000000000002,
     "temperature": 20,
     "inventory": [
       {
-        "name": "Fermented Herbal Extract",
+        "name": "Fermented Fermented Herbal Extract",
         "quantity": 16,
         "properties": {
           "hardness": 0,
@@ -1949,7 +1919,7 @@
           "weight": 0.1,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 2,
           "melt_point": 0,
           "ignition": 0,
@@ -1962,10 +1932,10 @@
         "_heatStage": "brewing",
         "_state": "liquid",
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       },
       {
-        "name": "Fermented wood",
+        "name": "Fermented Fermented wood",
         "quantity": 1,
         "properties": {
           "hardness": 4,
@@ -1978,7 +1948,7 @@
           "weight": 3,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 250,
@@ -1990,10 +1960,10 @@
         },
         "_heatStage": "smoking",
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       },
       {
-        "name": "Fermented Burning Fiber",
+        "name": "Fermented Fermented Burning Fiber",
         "quantity": 20,
         "properties": {
           "hardness": 0,
@@ -2006,7 +1976,7 @@
           "weight": 0.05,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 0,
@@ -2018,7 +1988,7 @@
         },
         "_heatStage": "igniting",
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       }
     ],
     "knowledge": [],
@@ -2045,12 +2015,12 @@
     "y": 465,
     "zone": "grass",
     "hp": 100,
-    "energy": 50.800000000019054,
-    "hunger": 0.08,
+    "energy": 55.000000000020165,
+    "hunger": 0.12,
     "temperature": 20,
     "inventory": [
       {
-        "name": "Fermented flowers",
+        "name": "Fermented Fermented flowers",
         "quantity": 14,
         "properties": {
           "hardness": 0,
@@ -2063,7 +2033,7 @@
           "weight": 0.05,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 25.903825272303195,
+          "temperature": 23.007058548134125,
           "resonance": 2,
           "melt_point": 0,
           "ignition": 150,
@@ -2074,11 +2044,11 @@
           "fertility": 4
         },
         "_reacted": true,
-        "_decayProgress": 0.01548061227736686
+        "_decayProgress": 0.15000015828294253
       },
       {
-        "name": "Fermented fiber",
-        "quantity": 17,
+        "name": "Fermented Fermented fiber",
+        "quantity": 15,
         "properties": {
           "hardness": 1,
           "conductivity": 0,
@@ -2090,7 +2060,7 @@
           "weight": 0.1,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 25.903825272303195,
+          "temperature": 23.007058548134125,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 200,
@@ -2101,11 +2071,11 @@
           "fertility": 0
         },
         "_reacted": true,
-        "_decayProgress": 0.01548061227736686
+        "_decayProgress": 0.15000015828294253
       },
       {
-        "name": "Fermented herbs",
-        "quantity": 13,
+        "name": "Fermented Fermented herbs",
+        "quantity": 12,
         "properties": {
           "hardness": 0,
           "conductivity": 0,
@@ -2117,7 +2087,7 @@
           "weight": 0.05,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 25.903825272303195,
+          "temperature": 23.007058548134125,
           "resonance": 1,
           "melt_point": 0,
           "ignition": 160,
@@ -2128,7 +2098,7 @@
           "fertility": 3
         },
         "_reacted": true,
-        "_decayProgress": 0.01548061227736686
+        "_decayProgress": 0.15000015828294253
       },
       {
         "name": "Fermented fiber",
@@ -2148,7 +2118,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 163747,
+      "xp": 163834,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -2164,12 +2134,12 @@
     "y": 413,
     "zone": "coast",
     "hp": 100,
-    "energy": 23.50000000001044,
-    "hunger": 0.04,
+    "energy": 33.2000000000113,
+    "hunger": 0.24000000000000002,
     "temperature": 20,
     "inventory": [
       {
-        "name": "Fermented driftwood",
+        "name": "Fermented Fermented driftwood",
         "quantity": 20,
         "properties": {
           "hardness": 3,
@@ -2182,7 +2152,7 @@
           "weight": 1.5,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 200,
@@ -2193,10 +2163,10 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       },
       {
-        "name": "Fermented shells",
+        "name": "Fermented Fermented shells",
         "quantity": 20,
         "properties": {
           "hardness": 4,
@@ -2209,7 +2179,7 @@
           "weight": 0.2,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 1,
           "melt_point": 500,
           "ignition": 0,
@@ -2220,7 +2190,7 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       },
       {
         "name": "sand",
@@ -2236,7 +2206,7 @@
           "weight": 2,
           "decay_rate": 0,
           "energy": 0,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 0,
           "melt_point": 1200,
           "ignition": 0,
@@ -2272,12 +2242,12 @@
     "y": 412,
     "zone": "coast",
     "hp": 100,
-    "energy": 44.10000000002937,
-    "hunger": 0.32,
+    "energy": 52.70000000003087,
+    "hunger": 0.68,
     "temperature": 20,
     "inventory": [
       {
-        "name": "Fermented driftwood",
+        "name": "Fermented Fermented driftwood",
         "quantity": 1,
         "properties": {
           "hardness": 3,
@@ -2290,7 +2260,7 @@
           "weight": 1.5,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 200,
@@ -2301,10 +2271,10 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       },
       {
-        "name": "Fermented shells",
+        "name": "Fermented Fermented shells",
         "quantity": 1,
         "properties": {
           "hardness": 4,
@@ -2317,7 +2287,7 @@
           "weight": 0.2,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 1,
           "melt_point": 500,
           "ignition": 0,
@@ -2328,7 +2298,7 @@
           "fertility": 1
         },
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       },
       {
         "name": "sand",
@@ -2344,7 +2314,7 @@
           "weight": 2,
           "decay_rate": 0,
           "energy": 0,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 0,
           "melt_point": 1200,
           "ignition": 0,
@@ -2380,15 +2350,10 @@
     "y": 412,
     "zone": "sand",
     "hp": 100,
-    "energy": 34.30000000002268,
-    "hunger": 0.08,
+    "energy": 36.500000000023924,
+    "hunger": 2.320000000000001,
     "temperature": 20,
     "inventory": [
-      {
-        "name": "Fermented herbs",
-        "quantity": 1,
-        "_reacted": true
-      },
       {
         "name": "sand",
         "quantity": 1,
@@ -2403,7 +2368,7 @@
           "weight": 2,
           "decay_rate": 0,
           "energy": 0,
-          "temperature": 43.903825272303195,
+          "temperature": 41.007058548134125,
           "resonance": 0,
           "melt_point": 1200,
           "ignition": 0,
@@ -2423,7 +2388,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 166380,
+      "xp": 166385,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -2439,8 +2404,8 @@
     "y": 412,
     "zone": "sand",
     "hp": 100,
-    "energy": 28.300000000023783,
-    "hunger": 0.32,
+    "energy": 36.90000000002513,
+    "hunger": 2.8400000000000016,
     "temperature": 20,
     "inventory": [
       {
@@ -2477,8 +2442,8 @@
     "y": 412,
     "zone": "coast",
     "hp": 100,
-    "energy": 32.70000000002513,
-    "hunger": 0.08,
+    "energy": 41.30000000002647,
+    "hunger": 2.160000000000001,
     "temperature": 20,
     "inventory": [],
     "knowledge": [],
@@ -2505,12 +2470,12 @@
     "y": 449,
     "zone": "coast",
     "hp": 100,
-    "energy": 32.70000000002467,
-    "hunger": 0.16,
+    "energy": 41.30000000002607,
+    "hunger": 2.160000000000001,
     "temperature": 20,
     "inventory": [
       {
-        "name": "Fermented Burning Fiber",
+        "name": "Fermented Fermented Burning Fiber",
         "quantity": 20,
         "properties": {
           "hardness": 0,
@@ -2523,7 +2488,7 @@
           "weight": 0.05,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 0,
@@ -2535,10 +2500,10 @@
         },
         "_heatStage": "igniting",
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       },
       {
-        "name": "Fermented herbs",
+        "name": "Fermented Fermented herbs",
         "quantity": 20,
         "properties": {
           "hardness": 0,
@@ -2551,7 +2516,7 @@
           "weight": 0.05,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 1,
           "melt_point": 0,
           "ignition": 160,
@@ -2563,10 +2528,10 @@
         },
         "_heatStage": "burning",
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       },
       {
-        "name": "Fermented wood",
+        "name": "Fermented Fermented wood",
         "quantity": 5,
         "properties": {
           "hardness": 4,
@@ -2579,7 +2544,7 @@
           "weight": 3,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 30.903825272303195,
+          "temperature": 28.007058548134125,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 250,
@@ -2591,7 +2556,7 @@
         },
         "_heatStage": "smoking",
         "_reacted": true,
-        "_decayProgress": 0.01623061227736686
+        "_decayProgress": 0.15750015828294253
       }
     ],
     "knowledge": [],

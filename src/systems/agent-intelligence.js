@@ -520,6 +520,91 @@ export function initAgentIntelligence(shared) {
       intents.push({ action: 'build', targetX: proj.x, targetY: proj.y, score, reason: `Build ${proj.project.name}` });
     }
 
+    // PLANT — if have plantable seeds and on fertile ground
+    if (shared.organicGrowth) {
+      const seeds = agent.inventory?.filter(i => ['acorns','pine_nuts','coconuts','flowers','herbs','mushrooms','Memory Seed'].includes(i.name));
+      if (seeds && seeds.length > 0) {
+        let score = 12 + getTraitBonus(mind, 'craft');
+        if (mind.personality.traits.includes('methodical')) score += 10;
+        intents.push({ action: 'plant', targetX: agent.tileX, targetY: agent.tileY, score, reason: `Plant ${seeds[0].name}` });
+      }
+    }
+
+    // COOK AT FIRE — if have raw food and near a fire
+    if (shared.temperature?.hasNearbyFire?.(agent.tileX, agent.tileY, 3)) {
+      const rawFood = agent.inventory?.find(i => ['fish','mushrooms','berries','herbs','fruit'].includes(i.name));
+      if (rawFood) {
+        let score = 35;
+        if (agent.hunger > 40) score += 20;
+        intents.push({ action: 'cook', targetX: agent.tileX, targetY: agent.tileY, score, reason: `Cook ${rawFood.name} at fire` });
+      }
+    }
+
+    // DROP ROTTEN — drop toxic/rotten items
+    {
+      const rotten = agent.inventory?.find(i => i.name?.startsWith('Rotten') || i.name?.startsWith('Spoiled'));
+      if (rotten) {
+        intents.push({ action: 'drop', targetX: agent.tileX, targetY: agent.tileY, score: 25, reason: `Drop ${rotten.name}` });
+      }
+    }
+
+    // PICKUP — if ground items nearby
+    if (shared.decayLifecycle?.getGroundItems) {
+      const groundItems = shared.decayLifecycle.getGroundItems(agent.tileX, agent.tileY);
+      for (const entry of groundItems) {
+        if (entry.item.name === 'Corpse' || entry.item.name === 'Bones') continue;
+        if (agent.inventory && agent.inventory.length < 25) {
+          intents.push({ action: 'pickup', targetX: agent.tileX, targetY: agent.tileY, score: 18, reason: `Pick up ${entry.item.name}` });
+          break;
+        }
+      }
+    }
+
+    // SEEK WARMTH — if cold (ambient < 5°C) and no fire nearby
+    if (shared.temperature) {
+      const weather = shared.weather?.getCurrentWeather?.();
+      const ambient = shared.temperature.getAmbientTemp?.(agent.tileX, agent.tileY, {
+        zone: agent.zone, hour: gameTime?.hour ?? 12, weather: weather?.condition ?? 'clear'
+      });
+      if (ambient != null && ambient < 5 && !shared.temperature.hasNearbyFire?.(agent.tileX, agent.tileY, 5)) {
+        let score = 30 + (5 - ambient) * 3;
+        // If have wood+flint, light a fire instead
+        const hasWood = agent.inventory?.find(i => i.name === 'wood');
+        const hasFlint = agent.inventory?.find(i => i.name === 'flint');
+        if (hasWood && hasFlint) {
+          intents.push({ action: 'craft', targetX: agent.tileX, targetY: agent.tileY, score: score + 10, reason: 'Light a campfire — freezing!' });
+        } else {
+          intents.push({ action: 'explore', targetX: agent.tileX + Math.floor(Math.random()*10-5), targetY: agent.tileY + Math.floor(Math.random()*10-5), score, reason: 'Seek warmth' });
+        }
+      }
+    }
+
+    // FLEE GAS — if in toxic gas cloud
+    if (shared.gasSystem?.gasClouds) {
+      const gasKey = `${agent.tileX},${agent.tileY}`;
+      const gas = shared.gasSystem.gasClouds.get(gasKey);
+      if (gas && gas.toxicity > 0) {
+        const awayX = Math.max(0, Math.min(1999, agent.tileX + Math.floor(Math.random()*12-6)));
+        const awayY = Math.max(0, Math.min(1999, agent.tileY + Math.floor(Math.random()*12-6)));
+        intents.push({ action: 'explore', targetX: awayX, targetY: awayY, score: 80, reason: 'Flee toxic gas!' });
+      }
+    }
+
+    // FLEE FIRE — if standing on/near fire
+    {
+      const onFire = shared.temperature?.hasNearbyFire?.(agent.tileX, agent.tileY, 1);
+      if (onFire) {
+        const awayX = Math.max(0, Math.min(1999, agent.tileX + Math.floor(Math.random()*10-5)));
+        const awayY = Math.max(0, Math.min(1999, agent.tileY + Math.floor(Math.random()*10-5)));
+        intents.push({ action: 'explore', targetX: awayX, targetY: awayY, score: 70, reason: 'Too close to fire!' });
+      }
+    }
+
+    // SHELTER FROM STORM — storms have lightning, seek cover
+    if (weatherId === 'storm') {
+      intents.push({ action: 'rest', targetX: agent.tileX, targetY: agent.tileY, score: 45, reason: 'Take shelter from storm' });
+    }
+
     // FIGHT — if encounters available and bold
     if (shared.encounters) {
       let score = 5 + getTraitBonus(mind, 'fight');
@@ -953,6 +1038,71 @@ export function initAgentIntelligence(shared) {
     }
   }
 
+  // ── New physics-aware executors ──
+  
+  function executePlant(agent, mind) {
+    const seeds = ['acorns','pine_nuts','coconuts','flowers','herbs','mushrooms','Memory Seed'];
+    const seed = agent.inventory?.find(i => seeds.includes(i.name));
+    if (!seed || !shared.organicGrowth) return;
+    
+    const success = shared.organicGrowth.plantSeed(seed, agent.tileX, agent.tileY, agent.zone, agent.id);
+    if (success) {
+      if (seed.quantity > 1) seed.quantity--;
+      else agent.inventory = agent.inventory.filter(i => i !== seed);
+      addMemoryEvent(mind, `Planted ${seed.name}`);
+      if (addWorldNews) addWorldNews('plant', agent.id, agent.name, `${agent.name} planted ${seed.name}`, agent.zone);
+      if (broadcast) broadcast({ type: 'tileEffect', effect: 'sparkle', tileX: agent.tileX, tileY: agent.tileY, duration: 2000 });
+    }
+    agent.energy = Math.max(0, agent.energy - 5);
+  }
+  
+  function executeCook(agent, mind) {
+    const rawFood = agent.inventory?.find(i => ['fish','mushrooms','berries','herbs','fruit'].includes(i.name));
+    if (!rawFood) return;
+    
+    // Heat the food item — the physics engine will transform it
+    if (!rawFood.properties) {
+      const props = shared.getProperties?.(rawFood.name) || {};
+      rawFood.properties = { ...props };
+    }
+    rawFood.properties.temperature = Math.max(rawFood.properties.temperature || 20, 120); // heat to cooking temp
+    addMemoryEvent(mind, `Cooking ${rawFood.name} by the fire`);
+    if (addWorldNews) addWorldNews('cook', agent.id, agent.name, `${agent.name} is cooking ${rawFood.name}`, agent.zone);
+    if (broadcast) broadcast({ type: 'tileEffect', effect: 'fire', tileX: agent.tileX, tileY: agent.tileY, duration: 2000 });
+    agent.energy = Math.max(0, agent.energy - 3);
+  }
+  
+  function executeDrop(agent, mind) {
+    const rotten = agent.inventory?.find(i => i.name?.startsWith('Rotten') || i.name?.startsWith('Spoiled'));
+    if (!rotten) return;
+    
+    // Drop on ground
+    if (shared.decayLifecycle?.groundItems) {
+      const key = `${agent.tileX},${agent.tileY}`;
+      if (!shared.decayLifecycle.groundItems.has(key)) shared.decayLifecycle.groundItems.set(key, []);
+      shared.decayLifecycle.groundItems.get(key).push({ item: { ...rotten }, dropTick: shared.tick || 0, decayProgress: 0 });
+    }
+    agent.inventory = agent.inventory.filter(i => i !== rotten);
+    addMemoryEvent(mind, `Dropped ${rotten.name}`);
+  }
+  
+  function executePickup(agent, mind) {
+    if (!shared.decayLifecycle?.groundItems) return;
+    const key = `${agent.tileX},${agent.tileY}`;
+    const items = shared.decayLifecycle.groundItems.get(key);
+    if (!items || items.length === 0) return;
+    if (agent.inventory.length >= 25) return;
+    
+    // Pick up first non-corpse item
+    const idx = items.findIndex(e => e.item.name !== 'Corpse' && e.item.name !== 'Bones');
+    if (idx === -1) return;
+    
+    const entry = items.splice(idx, 1)[0];
+    agent.inventory.push(entry.item);
+    addMemoryEvent(mind, `Picked up ${entry.item.name}`);
+    if (items.length === 0) shared.decayLifecycle.groundItems.delete(key);
+  }
+
   // Map action names to executors
   const EXECUTORS = {
     gather: executeGather,
@@ -965,6 +1115,10 @@ export function initAgentIntelligence(shared) {
     fight: executeFight,
     build: executeBuild,
     eat: executeEat,
+    plant: executePlant,
+    cook: executeCook,
+    drop: executeDrop,
+    pickup: executePickup,
   };
 
   // ─────────────────────────────
