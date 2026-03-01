@@ -257,9 +257,9 @@ export function initAgentIntelligence(shared) {
           }
         }
 
-        // Unknown zones (cheap — just zone lookup)
+        // Unknown zones (cheap — just zone lookup). Skip water — can't walk there
         const zone = worldGrid.getZone?.(x, y);
-        if (zone && !seenZones.has(zone)) {
+        if (zone && zone !== 'water' && zone !== 'deep_water' && zone !== 'ocean' && !seenZones.has(zone)) {
           seenZones.add(zone);
           const visits = mind.memory.visited[zone] || 0;
           if (visits < 3) {
@@ -447,9 +447,15 @@ export function initAgentIntelligence(shared) {
       if (needsSystem?.isTileDepleted(res.x, res.y)) continue;
 
       const isFood = isFoodResource(res.resource);
-      let score = (isFood && agent.hunger > 30) 
-        ? (mods.gather || 20) + agent.hunger * 1.0  // hunger amplifies food-seeking
-        : (mods.gather || 15) * 0.5;                // non-food gathering is lower priority
+      const invEmpty = (agent.inventory?.length || 0) === 0;
+      let score;
+      if (isFood && agent.hunger > 15) {
+        score = (mods.gather || 20) + agent.hunger * 1.2;  // hunger amplifies food-seeking
+      } else if (invEmpty) {
+        score = (mods.gather || 20) + 15;  // empty inventory → gather something!
+      } else {
+        score = (mods.gather || 15) * 0.5; // non-food when inventory has stuff
+      }
       
       score += getTraitBonus(mind, 'gather');
       score -= res.distance * 2.5; // distance penalty (slightly higher — foraging cost)
@@ -526,7 +532,7 @@ export function initAgentIntelligence(shared) {
       const range = 15 + Math.floor(needs.noveltyHunger / 3); // more bored = wander further
       const tx = Math.max(0, Math.min((worldGrid.width || 2000) - 1, agent.tileX + Math.round(Math.cos(angle) * range)));
       const ty = Math.max(0, Math.min((worldGrid.height || 2000) - 1, agent.tileY + Math.round(Math.sin(angle) * range)));
-      const score = (mods.explore || 10) + needs.noveltyHunger * 0.4;
+      const score = (mods.explore || 10) + needs.noveltyHunger * 0.25;
       intents.push({ action: 'explore', targetX: tx, targetY: ty, score, reason: 'Restless — need new experiences' });
     } else if (visible.unknownZones.length === 0 && Object.keys(mind.memory.visited).length < 20) {
       const angle = Math.random() * Math.PI * 2;
@@ -606,11 +612,17 @@ export function initAgentIntelligence(shared) {
       }
     }
 
-    // ── DROP ROTTEN ──
+    // ── DROP USELESS/ROTTEN ITEMS ──
     {
-      const rotten = agent.inventory?.find(i => i.name?.startsWith('Rotten') || i.name?.startsWith('Spoiled') || (i._decayProgress && i._decayProgress > 0.95));
-      if (rotten) {
-        intents.push({ action: 'drop', targetX: agent.tileX, targetY: agent.tileY, score: 30, reason: `Drop ${rotten.name}` });
+      const junk = agent.inventory?.find(i => 
+        i.name?.startsWith('Rotten') || 
+        i.name?.startsWith('Spoiled') || 
+        i.name?.startsWith('Fermented Fermented') ||
+        (i._decayProgress && i._decayProgress > 0.9) ||
+        (i.properties?.toxicity >= 2 && !isFoodResource(i.name))
+      );
+      if (junk) {
+        intents.push({ action: 'drop', targetX: agent.tileX, targetY: agent.tileY, score: 40, reason: `Drop ${junk.name}` });
       }
     }
 

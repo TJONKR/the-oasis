@@ -36,7 +36,7 @@ const DUNBAR_SLOTS = {
 // Each action type has a "satiation" counter. Doing the same thing repeatedly
 // reduces its appeal. Novelty resets it.
 const BOREDOM_DECAY_RATE = 0.02;    // per tick, boredom recovers slowly
-const BOREDOM_PENALTY_PER_REP = 8;  // each repeat adds this much penalty
+const BOREDOM_PENALTY_PER_REP = 5;  // each repeat adds this much penalty (was 8)
 const MAX_BOREDOM = 100;
 
 // ── RESOURCE DEPLETION ──
@@ -399,7 +399,7 @@ function createNeedsSystem(shared) {
     mods.teach = needs.actualization * 1.0 * selfMult;
 
     // EXPLORATION — driven by boredom/novelty hunger + foraging need
-    const boredomPush = needs.noveltyHunger * 0.5;
+    const boredomPush = needs.noveltyHunger * 0.35;
     const foragingPush = needs.physiological > 20 ? needs.physiological * 0.3 : 0;
     mods.explore = Math.max(boredomPush, foragingPush, 10); // always some baseline urge
     // Mortality salience boosts meaning-seeking actions

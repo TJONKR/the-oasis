@@ -1,5 +1,5 @@
 {
-  "lastTick": "2026-03-01T21:39:31.799Z",
+  "lastTick": "2026-03-01T21:43:37.067Z",
   "lastNarrative": null,
   "dangers": [],
   "zoneModifiers": {},
@@ -23,10 +23,20 @@
       "description": "🍂 Famine",
       "startedAt": 1772400486779,
       "expiresAt": 1772401686779
+    },
+    {
+      "id": "consequence_6c779aec",
+      "type": "earthquake",
+      "zones": [
+        "cave"
+      ],
+      "description": "🌋 Earthquake",
+      "startedAt": 1772401417064,
+      "expiresAt": 1772401567064
     }
   ],
   "precursors": [],
-  "tickCount": 1567,
+  "tickCount": 1576,
   "activeEvents": [],
   "nextEventTrigger": 1772416809316.0886
 }
