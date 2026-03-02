@@ -285,6 +285,13 @@ export function initWildlife(shared) {
           // Kill prey
           nearestPrey.hp = 0;
           nearestPrey.alive = false;
+          
+          // Create corpse for natural predation (nutrient cycle!)
+          if (shared.decayLifecycle?.onAnimalDeath) {
+            const preySpecies = SPECIES[nearestPrey.species];
+            shared.decayLifecycle.onAnimalDeath(nearestPrey, preySpecies);
+          }
+          
           animal.restTicks = 10; // rest after eating
           animal.state = 'resting';
         } else {
@@ -435,6 +442,11 @@ export function initWildlife(shared) {
     const killed = animal.hp <= 0;
     if (killed) {
       animal.alive = false;
+
+      // Create animal corpse on ground for decomposition (nutrient cycle!)
+      if (shared.decayLifecycle?.onAnimalDeath) {
+        shared.decayLifecycle.onAnimalDeath(animal, species);
+      }
 
       // Drop items on the ground or into agent inventory
       const drops = [];

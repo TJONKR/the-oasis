@@ -427,8 +427,10 @@ function simulationTick() {
     }
   }
   
-  // 2. Ecosystem (resource respawn etc)
-  if (ecosystemSystem.tick) ecosystemSystem.tick();
+  // 2. Ecosystem (resource respawn etc) — connected to seasons & weather (nutrient cycle)
+  const weatherNow = weatherSystem.getCurrentWeather?.() || {};
+  const currentSeason = weatherSystem.getSeason?.() || 'spring';
+  if (ecosystemSystem.tickEcosystem) ecosystemSystem.tickEcosystem(weatherNow, currentSeason);
   
   // 3. Per-agent updates
   for (const [id, agent] of agents) {
@@ -492,7 +494,6 @@ function simulationTick() {
   // NO RESPAWN — death is permanent. Survive or die.
 
   // 3b. World physics (fire propagation, water flow)
-  const weatherNow = weatherSystem.getCurrentWeather?.() || {};
   worldPhysics.tickWorld(tick, gameTime, weatherNow);
   
   // 3c. Decay, growth, gas, lightning
@@ -504,8 +505,8 @@ function simulationTick() {
   // 3d. Wildlife tick (animal AI, spawning, combat)
   wildlife.tick(tick);
 
-  // 3e. Resource regrowth (trees, herbs come back over time)
-  if (tick % 10 === 0) worldGrid.tickRegrowth(tick);
+  // 3e. Resource regrowth (real growth based on soil fertility + seasons, not timers!)
+  if (tick % 10 === 0) worldGrid.tickRegrowth(tick, ecosystemSystem, currentSeason);
 
   // 3e-2. Knowledge skill decay
   if (tick % 20 === 0) agentKnowledge.tick();

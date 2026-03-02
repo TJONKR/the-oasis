@@ -79,6 +79,7 @@ export function initOrganicGrowth(shared) {
   
   /**
    * Mark a tile for fire regrowth (called when fire burns out on a tile).
+   * Fire ash enriches soil with nutrients (nutrient cycle).
    */
   function markFireRegrowth(tileX, tileY, zone) {
     const regrowth = FIRE_REGROWTH[zone];
@@ -87,6 +88,30 @@ export function initOrganicGrowth(shared) {
     
     const key = `${tileX},${tileY}`;
     if (growthSites.has(key)) return;
+    
+    // Fire ash enriches soil - add fertile ash to ground
+    if (shared.decayLifecycle?.groundItems) {
+      if (!shared.decayLifecycle.groundItems.has(key)) {
+        shared.decayLifecycle.groundItems.set(key, []);
+      }
+      
+      shared.decayLifecycle.groundItems.get(key).push({
+        item: {
+          name: 'Fire Ash',
+          type: 'material',
+          description: 'Nutrient-rich ash from burned vegetation. Excellent fertilizer.',
+          properties: { 
+            fertility: 10, // very fertile!
+            organic: 0.8, 
+            decay_rate: 0.05, // slow decay
+            weight: 0.2,
+            solubility: 6, // dissolves into soil easily
+          },
+        },
+        dropTick: shared.tick || 0,
+        decayProgress: 0,
+      });
+    }
     
     // Delayed start — nothing grows immediately after fire
     growthSites.set(key, {
@@ -98,6 +123,11 @@ export function initOrganicGrowth(shared) {
       plantedBy: 'nature',
       startTick: shared.tick || 0,
     });
+    
+    if (shared.broadcast) {
+      shared.addWorldNews?.('growth', null, 'Nature',
+        `Fire at (${tileX},${tileY}) left fertile ash. Plants will regrow stronger here.`, zone);
+    }
   }
   
   /**

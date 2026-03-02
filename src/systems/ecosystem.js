@@ -293,9 +293,19 @@ export function initEcosystem({ loadJSON, saveJSON, zones }) {
   /**
    * Called each game tick to update all zone ecosystems.
    * @param {Object} weatherState - { id, effects, ... } from weather system
+   * @param {string} season - current season from weather system (spring/summer/autumn/winter)
    */
-  function tickEcosystem(weatherState) {
+  function tickEcosystem(weatherState, season) {
     const weatherId = weatherState?.id || 'clear';
+    const currentSeason = season || 'spring';
+
+    // Season effects on soil fertility recovery
+    const SEASON_FERTILITY_MULT = {
+      spring: 2.0,  // rapid growth season
+      summer: 1.2,  // good growth  
+      autumn: 0.8,  // slowing down
+      winter: 0.3,  // minimal recovery
+    };
 
     for (const zoneId of Object.keys(state)) {
       const zone = state[zoneId];
@@ -308,9 +318,10 @@ export function initEcosystem({ loadJSON, saveJSON, zones }) {
         Math.max(0, zone.extraction_pressure - 0.5)
       );
 
-      // --- Soil fertility natural recovery ---
+      // --- Soil fertility natural recovery (seasonal effects) ---
+      const seasonMultiplier = SEASON_FERTILITY_MULT[currentSeason] || 1.0;
       zone.soil_fertility = round2(
-        clamp(zone.soil_fertility + profile.fertility_recovery, 0, 100)
+        clamp(zone.soil_fertility + profile.fertility_recovery * seasonMultiplier, 0, 100)
       );
 
       // --- Water level ---
@@ -359,12 +370,12 @@ export function initEcosystem({ loadJSON, saveJSON, zones }) {
    * Returns the resource regeneration multiplier for a zone.
    * Used by zone-evolution.js to replace flat 0.5 regen rate.
    *
-   * Formula: base_rate * (soil/100) * (water/100) * (biodiversity/100) / (1 + pressure/500)
+   * Formula: base_rate * (soil/100) * (water/100) * (biodiversity/100) / (1 + pressure/500) * season_mult
    *
    * When health < 20: zone is "degraded" — minimal resources (multiplier capped at 0.1)
    * When health <= 0: zone is "destroyed" — no resources (multiplier = 0)
    */
-  function getResourceModifier(zoneId) {
+  function getResourceModifier(zoneId, season) {
     const zone = state[zoneId];
     if (!zone) return 1.0; // default for unknown zones
 
@@ -374,11 +385,22 @@ export function initEcosystem({ loadJSON, saveJSON, zones }) {
     const profile = getProfile(zoneId);
     const pressureDivisor = profile.pressure_tolerance || 500;
 
+    // Seasonal effects on resource regeneration (nutrient cycle)
+    const currentSeason = season || 'spring';
+    const SEASON_REGEN_MULT = {
+      spring: 1.5,  // plants growing fast
+      summer: 1.2,  // peak availability
+      autumn: 0.7,  // harvest time, then decline
+      winter: 0.25, // minimal growth, food scarcity
+    };
+    const seasonMultiplier = SEASON_REGEN_MULT[currentSeason] || 1.0;
+
     const modifier = round2(
       (zone.soil_fertility / 100) *
       (zone.water_level / 100) *
       (zone.biodiversity / 100) /
-      (1 + zone.extraction_pressure / pressureDivisor)
+      (1 + zone.extraction_pressure / pressureDivisor) *
+      seasonMultiplier
     );
 
     // Degraded zone — cap at minimal

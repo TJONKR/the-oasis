@@ -144,6 +144,40 @@ export function initDecayLifecycle(shared) {
   }
   
   /**
+   * Handle animal death — create animal corpse on ground (nutrient cycle).
+   */
+  function onAnimalDeath(animal, species) {
+    if (!animal || !species) return;
+    
+    const key = `${animal.tileX},${animal.tileY}`;
+    if (!groundItems.has(key)) groundItems.set(key, []);
+    
+    // Create animal corpse (smaller than agent corpse)
+    const corpseSize = Math.max(0.5, species.hp / 20); // larger animals = more corpse mass
+    groundItems.get(key).push({
+      item: {
+        name: 'Animal Corpse',
+        type: 'organic',
+        description: `The remains of a ${animal.species} ${species.emoji}. Will decompose and enrich the soil.`,
+        properties: {
+          ...ROTTEN_MATERIALS['Corpse'],
+          weight: corpseSize * 5,
+          decay_rate: 0.6, // animals decay faster than agent corpses
+          fertility: Math.round(corpseSize * 3), // larger animals = more nutrients
+        },
+        originSpecies: animal.species,
+      },
+      dropTick: shared.tick || 0,
+      decayProgress: 0,
+    });
+    
+    if (broadcast) {
+      broadcast({ type: 'tileEffect', effect: 'blood', tileX: animal.tileX, tileY: animal.tileY, duration: 2000 });
+      addWorldNews?.('death', null, 'Nature', `A ${animal.species} ${species.emoji} has died at (${animal.tileX}, ${animal.tileY}). Nature will reclaim it.`, '');
+    }
+  }
+  
+  /**
    * Tick ground items — decay them, transform corpses to bones/compost.
    */
   function tickGroundItems(tick) {
@@ -157,32 +191,46 @@ export function initDecayLifecycle(shared) {
         entry.decayProgress += decayRate * 0.15; // ground items decay 50% faster
         
         if (entry.decayProgress >= 1) {
-          if (entry.item.name === 'Corpse') {
+          if (entry.item.name === 'Corpse' || entry.item.name === 'Animal Corpse') {
             // Corpse → Bones + Compost
             entry.item.name = 'Bones';
             entry.item.properties = { ...ROTTEN_MATERIALS['Bones'] };
             entry.decayProgress = 0;
             
-            // Also spawn compost
+            // Also spawn compost (more for larger animal corpses)
+            const compostAmount = entry.item.name === 'Animal Corpse' ? 
+              (entry.item.properties?.fertility || 8) : 8;
             items.push({
               item: {
                 name: 'Compost',
                 type: 'material',
-                properties: { fertility: 8, organic: 1, decay_rate: 0.1, weight: 1 },
+                properties: { fertility: compostAmount, organic: 1, decay_rate: 0.1, weight: 1 },
               },
               dropTick: tick,
               decayProgress: 0,
             });
             
             const [x, y] = key.split(',').map(Number);
+            
+            // Update ecosystem soil fertility (nutrient cycle connection!)
+            if (shared.ecosystem?.onCompost) {
+              const zone = shared.worldGrid?.getZone?.(x, y) || 'grass';
+              shared.ecosystem.onCompost(zone, { fertility: compostAmount });
+            }
+            
             if (broadcast) {
-              addWorldNews?.('decay', null, 'Nature', `A corpse at (${x},${y}) has decomposed into bones and compost`, '');
+              addWorldNews?.('decay', null, 'Nature', `A corpse at (${x},${y}) has decomposed into bones and compost, enriching the soil`, '');
             }
           } else if (entry.item.name === 'Bones') {
             // Bones last a very long time, don't remove
             entry.decayProgress = 0.9;
           } else if (entry.item.properties?.fertility > 3) {
-            // Fertile remains enrich the soil, then disappear
+            // Fertile remains enrich the soil directly, then disappear
+            const [x, y] = key.split(',').map(Number);
+            if (shared.ecosystem?.onCompost) {
+              const zone = shared.worldGrid?.getZone?.(x, y) || 'grass';
+              shared.ecosystem.onCompost(zone, entry.item);
+            }
             toRemove.push(i);
           } else {
             toRemove.push(i);
@@ -221,7 +269,7 @@ export function initDecayLifecycle(shared) {
     tickGroundItems(tickNum);
   }
   
-  return { tick, onAgentDeath, getTileFertility, getGroundItems, groundItems };
+  return { tick, onAgentDeath, onAnimalDeath, getTileFertility, getGroundItems, groundItems };
 }
 
 export { DECAY_TRANSFORMS, ROTTEN_MATERIALS };

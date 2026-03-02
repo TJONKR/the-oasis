@@ -1,82 +1,82 @@
 {
   "grass": {
-    "soil_fertility": 80,
-    "water_level": 80,
-    "biodiversity": 70,
+    "soil_fertility": 82.2,
+    "water_level": 69,
+    "biodiversity": 71.1,
     "extraction_pressure": 0,
-    "health": 76.67,
+    "health": 74.1,
     "gather_history": []
   },
   "forest": {
-    "soil_fertility": 70,
-    "water_level": 60,
-    "biodiversity": 70,
+    "soil_fertility": 71.1,
+    "water_level": 49,
+    "biodiversity": 71.1,
     "extraction_pressure": 0,
-    "health": 66.67,
+    "health": 63.73,
     "gather_history": []
   },
   "rocky": {
-    "soil_fertility": 30,
-    "water_level": 40,
-    "biodiversity": 30,
+    "soil_fertility": 30.44,
+    "water_level": 29,
+    "biodiversity": 31.1,
     "extraction_pressure": 0,
-    "health": 33.33,
+    "health": 30.18,
     "gather_history": []
   },
   "sand": {
-    "soil_fertility": 45,
-    "water_level": 80,
-    "biodiversity": 65,
+    "soil_fertility": 45.66,
+    "water_level": 69,
+    "biodiversity": 66.1,
     "extraction_pressure": 0,
-    "health": 63.33,
+    "health": 60.25,
     "gather_history": []
   },
   "water": {
-    "soil_fertility": 70,
-    "water_level": 60,
-    "biodiversity": 70,
+    "soil_fertility": 71.1,
+    "water_level": 49,
+    "biodiversity": 71.1,
     "extraction_pressure": 0,
-    "health": 66.67,
+    "health": 63.73,
     "gather_history": []
   },
   "swamp": {
-    "soil_fertility": 60,
-    "water_level": 90,
-    "biodiversity": 75,
+    "soil_fertility": 60.88,
+    "water_level": 79,
+    "biodiversity": 76.1,
     "extraction_pressure": 0,
-    "health": 75,
+    "health": 71.99,
     "gather_history": []
   },
   "river": {
-    "soil_fertility": 70,
-    "water_level": 60,
-    "biodiversity": 70,
+    "soil_fertility": 71.1,
+    "water_level": 49,
+    "biodiversity": 71.1,
     "extraction_pressure": 0,
-    "health": 66.67,
+    "health": 63.73,
     "gather_history": []
   },
   "cave": {
-    "soil_fertility": 40,
-    "water_level": 60,
-    "biodiversity": 50,
+    "soil_fertility": 40.44,
+    "water_level": 49,
+    "biodiversity": 51.1,
     "extraction_pressure": 0,
-    "health": 50,
+    "health": 46.85,
     "gather_history": []
   },
   "coast": {
-    "soil_fertility": 50,
-    "water_level": 80,
-    "biodiversity": 55,
+    "soil_fertility": 50.66,
+    "water_level": 69,
+    "biodiversity": 56.1,
     "extraction_pressure": 0,
-    "health": 61.67,
+    "health": 58.59,
     "gather_history": []
   },
   "path": {
-    "soil_fertility": 30,
-    "water_level": 40,
-    "biodiversity": 30,
+    "soil_fertility": 30.44,
+    "water_level": 29,
+    "biodiversity": 31.1,
     "extraction_pressure": 0,
-    "health": 33.33,
+    "health": 30.18,
     "gather_history": []
   }
 }

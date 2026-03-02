@@ -489,21 +489,39 @@ export function initWorldAdapter(worldData, dataDir) {
     return true;
   }
 
-  // Tick regrowth — call periodically
-  function tickRegrowth(currentTick) {
+  // Tick regrowth — call periodically (nutrient cycle: real growth, not timers!)
+  function tickRegrowth(currentTick, ecosystem, season) {
     for (const [key, state] of resourceHP) {
       if (!state.depleted) continue;
-      const regrowthTime = REGROWTH_TICKS[state.decoId] || 0;
-      if (regrowthTime <= 0) continue; // never regrows (rocks)
+      const baseRegrowthTime = REGROWTH_TICKS[state.decoId] || 0;
+      if (baseRegrowthTime <= 0) continue; // never regrows (rocks)
+      
+      // Get ecosystem modifier for this zone (soil fertility + season + weather)
+      const [sx, sy] = key.split(',').map(Number);
+      const zone = getZone(sx, sy);
+      let modifier = 1.0;
+      if (ecosystem?.getResourceModifier) {
+        modifier = ecosystem.getResourceModifier(zone, season);
+      }
+      
+      // Real growth: regrowth time affected by soil fertility, seasons, weather
+      // Higher modifier = faster regrowth (more fertility/better conditions)
+      const realRegrowthTime = Math.max(10, Math.round(baseRegrowthTime / modifier));
       
       const elapsed = currentTick - state.depletedTick;
-      if (elapsed >= regrowthTime) {
+      if (elapsed >= realRegrowthTime) {
         // Regrow! Restore decoration
         state.depleted = false;
         state.hp = state.maxHp;
-        const [sx, sy] = key.split(',').map(Number);
         const idx = sy * width + sx;
         if (decorations) decorations[idx] = state.decoId;
+        
+        // Log interesting regrowth events
+        if (modifier > 2.0) {
+          console.log(`🌱 Fast regrowth at (${sx},${sy}) ${zone}: ${baseRegrowthTime} → ${realRegrowthTime} ticks (${modifier.toFixed(2)}x faster due to fertile soil)`);
+        } else if (modifier < 0.5) {
+          console.log(`🐌 Slow regrowth at (${sx},${sy}) ${zone}: ${baseRegrowthTime} → ${realRegrowthTime} ticks (${modifier.toFixed(2)}x slower due to poor conditions)`);
+        }
       }
     }
   }
