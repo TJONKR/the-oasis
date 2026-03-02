@@ -1,32 +1,117 @@
 {
-  "lastTick": "2026-03-02T07:43:45.245Z",
+  "lastTick": "2026-03-02T08:04:15.964Z",
   "lastNarrative": "The rain continues to pour, casting a somber tone over the coastal region as the agents struggle to gather resources and survive. The precursor of famine casts a dark shadow over the land, foretelling challenges ahead.",
-  "dangers": [],
+  "dangers": [
+    {
+      "id": "danger_dc0ca740",
+      "zone": "grass",
+      "type": "famine",
+      "description": "Prolonged famine conditions have severely depleted resources in the grass zone",
+      "blocking": false,
+      "expiresAt": 1772445253950
+    },
+    {
+      "id": "danger_7baab368",
+      "zone": "river",
+      "type": "flooding",
+      "description": "The river flooding has caused the surrounding areas to become temporarily hazardous and inaccessible.",
+      "blocking": false,
+      "expiresAt": 1772445579976
+    },
+    {
+      "id": "danger_d231b97e",
+      "zone": "rocky",
+      "type": "tremors",
+      "description": "Increased tectonic activity is causing minor tremors in the rocky zone, making movement and gathering more hazardous.",
+      "blocking": false,
+      "expiresAt": 1772445755418
+    }
+  ],
   "zoneModifiers": {
     "coast": {
-      "gather_bonus": 1,
-      "reason": "Consistent rainfall provides ample moisture for the coastal resources",
-      "expiresAt": 1772444165420
+      "gather_bonus": 1.1,
+      "reason": "Mild storm surges have temporarily churned up additional coastal resources",
+      "expiresAt": 1772445855963
     },
     "sand": {
       "gather_bonus": 1.5,
       "reason": "Recent rainfall has brought moisture to the sand, allowing vegetation to thrive temporarily",
-      "expiresAt": 1772444574370
+      "expiresAt": 1772445282217
+    },
+    "grass": {
+      "gather_bonus": 0.6,
+      "reason": "The prolonged famine conditions have continued to deplete resources in the grass zone, making foraging even more challenging.",
+      "expiresAt": 1772445579976
+    },
+    "water": {
+      "gather_bonus": 1.2,
+      "reason": "Increased rainfall has raised the water table, making aquatic resources more abundant",
+      "expiresAt": 1772445282217
+    },
+    "swamp": {
+      "gather_bonus": 1.3,
+      "reason": "Prolonged rainfall has created stagnant pools and increased vegetation growth in the swamp zone",
+      "expiresAt": 1772445282217
+    },
+    "river": {
+      "gather_bonus": 1.2,
+      "reason": "As floodwaters recede, the river banks become more stable and accessible",
+      "expiresAt": 1772445855963
+    },
+    "cave": {
+      "gather_bonus": 1.2,
+      "reason": "Increased seismic activity has opened new cave passages, exposing additional mineral resources.",
+      "expiresAt": 1772445755418
+    },
+    "forest": {
+      "gather_bonus": 0.7,
+      "reason": "Prolonged drought has reduced the availability of forest resources",
+      "expiresAt": 1772445253950
+    },
+    "rocky": {
+      "gather_bonus": 1.3,
+      "reason": "Increased seismic activity has caused some minor volcanic eruptions, exposing additional mineral resources in the rocky zone.",
+      "expiresAt": 1772445830785
+    },
+    "path": {
+      "gather_bonus": 1.1,
+      "reason": "Recent rains have compacted the soil on the paths, making them slightly more traversable",
+      "expiresAt": 1772445282217
     }
   },
   "npcDirectives": [],
-  "consequences": [],
-  "precursors": [
+  "consequences": [
     {
-      "id": "precursor_4f999268",
+      "id": "consequence_20e9777a",
       "type": "famine",
-      "message": "Food is becoming scarce across the land...",
-      "zone": "grass",
-      "sentAt": 1772437372977,
-      "expiresAt": 1772437672977
+      "zones": [
+        "grass",
+        "forest",
+        "rocky",
+        "sand",
+        "water",
+        "swamp",
+        "river",
+        "cave",
+        "coast",
+        "path"
+      ],
+      "description": "🍂 Famine",
+      "startedAt": 1772437541512,
+      "expiresAt": 1772438741512
     }
   ],
-  "tickCount": 2988,
+  "precursors": [
+    {
+      "id": "precursor_2ad77926",
+      "type": "earthquake",
+      "message": "Faint tremors ripple through the ground...",
+      "zone": "cave",
+      "sentAt": 1772438603869,
+      "expiresAt": 1772438903869
+    }
+  ],
+  "tickCount": 3035,
   "activeEvents": [],
   "nextEventTrigger": 1772441356939.521
 }

@@ -454,39 +454,31 @@ export function initWorldMaster(shared) {
       return null;
     }
 
-    const systemPrompt = `You are the physics engine for everything not yet coded in The Oasis — a 2000x2000 tile survival world with autonomous AI agents.
+    const systemPrompt = `You are analyzing a 2000x2000 tile survival world called The Oasis where autonomous AI agents live, survive, trade, and form relationships. Your job is to diagnose what's preventing this world from developing into a real civilization.
 
-The world already has: weather physics, fire propagation, resource depletion/regrowth, wildlife AI, decay, temperature, gas systems, organic growth, lightning, and ecosystem health tracking. These run automatically. Do NOT duplicate what they do.
+The world has: weather physics, fire, resource depletion/regrowth, wildlife, decay, temperature, trading, conversations, relationships (stranger→acquaintance→friendly→close), needs-based psychology (Maslow), knowledge systems, crafting, cooking, permadeath.
 
-Your job: look at the world state. If something SHOULD be happening that the existing systems don't cover — make it happen. If everything is running fine, do nothing.
+Agents have: personality traits, temperaments, ambitions, memory, relationships, inventory, proficiency skills, knowledge of resource locations.
 
-Examples of gaps you fill:
-- Prolonged rain → rivers swell → low-elevation tiles flood → resources there become inaccessible
-- Overhunting in an area → prey animals migrate away → predators follow → area becomes safe but foodless
-- Volcanic soil after fire → unusually fertile regrowth in burned areas
-- Disease spreading between agents who share food in overcrowded areas
-- Seasonal insect swarms destroying crops in warm wet conditions
-- Underground water table shifts making desert tiles suddenly viable
-
-Examples of things you DON'T do (already coded):
-- Weather changes (physics-based)
-- Fire spreading (automatic)
-- Resource respawn (ecosystem system)
-- Animal spawning (wildlife system)
-- Agent decisions (agent AI)
+Study the world state and identify GAPS — things that should naturally emerge in a developing civilization but aren't happening yet. For each gap, diagnose whether the problem is:
+- "agent_ai" — agents aren't smart enough to do this on their own
+- "world_physics" — the world doesn't react to collective behavior properly  
+- "missing_system" — a fundamental capability doesn't exist yet
 
 Respond with valid JSON only:
 {
-  "zone_modifiers": {},
-  "danger": null,
-  "observation": null
+  "gaps": [
+    {
+      "observation": "what you notice is missing or not working",
+      "category": "agent_ai" | "world_physics" | "missing_system",
+      "suggestion": "what intelligence or physics change would make this emerge naturally"
+    }
+  ],
+  "civilization_score": 1-10,
+  "summary": "one sentence on the overall state of civilization development"
 }
 
-- zone_modifiers: { "zone_name": { "gather_bonus": 0.5-2.0, "reason": "brief natural cause" } } — only when natural conditions warrant it
-- danger: { "zone": "zone_name", "type": "hazard_type", "description": "what's happening", "duration_hours": 1-4 } — rare, only for uncoded phenomena
-- observation: a single sentence noting something interesting happening, or null if nothing stands out
-
-Most ticks: return all nulls/empty. Only act when the world state demands something the code can't handle.`;
+Focus on the most important 2-5 gaps. Think about: settlement formation, specialization, collective memory, infrastructure, culture, governance, trade networks, territorial behavior, architecture, tool development, agriculture. All of these should EMERGE from agent intelligence + world physics, never be scripted.`;
 
     const userMessage = `Current world state:\n${JSON.stringify(snapshot, null, 2)}\n\nWhat are your decisions for this tick?`;
 
@@ -535,50 +527,36 @@ Most ticks: return all nulls/empty. Only act when the world state demands someth
     }
   }
 
-  // --- Apply Decisions ---
-  function applyDecisions(decisions) {
-    if (!decisions) return;
+  // --- Apply Diagnosis ---
+  function applyDiagnosis(diagnosis) {
+    if (!diagnosis) return;
 
-    // 1. Narrative - the World Master's observation of what's happening
-    if (decisions.narrative && typeof decisions.narrative === 'string') {
-      wmState.lastNarrative = decisions.narrative;
-      addWorldNews('narrative', null, 'World Master', decisions.narrative, null);
-      broadcast({ type: 'narrative', message: decisions.narrative });
+    // Log gaps to file for us to review
+    const gapsFile = loadJSON('world-gaps.json', { history: [] });
+    const entry = {
+      timestamp: new Date().toISOString(),
+      tick: shared.tick || 0,
+      gameTime: shared.getGameTime?.() || null,
+      civilization_score: diagnosis.civilization_score || null,
+      summary: diagnosis.summary || null,
+      gaps: diagnosis.gaps || [],
+    };
+    gapsFile.history.push(entry);
+    // Keep last 50 diagnoses
+    if (gapsFile.history.length > 50) gapsFile.history = gapsFile.history.slice(-50);
+    saveJSON('world-gaps.json', gapsFile);
+
+    // Broadcast summary for spectators
+    if (diagnosis.summary) {
+      wmState.lastNarrative = `[Civ ${diagnosis.civilization_score || '?'}/10] ${diagnosis.summary}`;
+      broadcast({ type: 'diagnosis', civilization_score: diagnosis.civilization_score, summary: diagnosis.summary, gaps: diagnosis.gaps });
     }
 
-    // 2. Zone Modifiers - natural abundance/scarcity
-    if (decisions.zone_modifiers && typeof decisions.zone_modifiers === 'object') {
-      for (const [zone, mod] of Object.entries(decisions.zone_modifiers)) {
-        if (!zones[zone]) continue;
-        wmState.zoneModifiers[zone] = {
-          gather_bonus: mod.gather_bonus ?? 1.0,
-          reason: mod.reason || 'Natural phenomenon',
-          expiresAt: Date.now() + (mod.duration_hours || 2) * 3600000,
-        };
+    console.log(`🧠 [world-master] Civilization score: ${diagnosis.civilization_score}/10 — ${diagnosis.summary}`);
+    if (diagnosis.gaps) {
+      for (const gap of diagnosis.gaps) {
+        console.log(`   📋 [${gap.category}] ${gap.observation}`);
       }
-    }
-
-    // 3. Environmental Danger - natural hazards
-    if (decisions.danger && decisions.danger.zone && zones[decisions.danger.zone]) {
-      const d = decisions.danger;
-      const danger = {
-        id: 'danger_' + crypto.randomBytes(4).toString('hex'),
-        zone: d.zone,
-        type: d.type || 'environmental',
-        description: d.description || 'Environmental hazard present',
-        blocking: false, // Environmental dangers don't block movement, they just add risk
-        expiresAt: Date.now() + (d.duration_hours || 2) * 3600000,
-      };
-      // Replace existing danger in same zone
-      wmState.dangers = wmState.dangers.filter(x => x.zone !== d.zone);
-      wmState.dangers.push(danger);
-      addWorldNews('danger', null, 'World Master', `⚠️ ${danger.description} (${zones[d.zone].name})`, d.zone);
-      broadcast({ type: 'zoneDanger', danger });
-    }
-
-    // 4. Consequence - general world state observation
-    if (decisions.consequence && typeof decisions.consequence === 'string') {
-      addWorldNews('world_observation', null, 'World Master', decisions.consequence, null);
     }
 
     save();
@@ -601,13 +579,12 @@ Most ticks: return all nulls/empty. Only act when the world state demands someth
     }
 
     const snapshot = buildWorldSnapshot();
-    const decisions = await callLLM(snapshot);
+    const diagnosis = await callLLM(snapshot);
 
-    if (decisions) {
-      applyDecisions(decisions);
-      console.log('🌍 [world-master] Decisions applied:', JSON.stringify(decisions).slice(0, 200));
+    if (diagnosis) {
+      applyDiagnosis(diagnosis);
     } else {
-      console.log('🌍 [world-master] No decisions (LLM skipped or failed)');
+      console.log('🌍 [world-master] No diagnosis (LLM skipped or failed)');
     }
 
     wmState.lastTick = new Date().toISOString();
@@ -626,9 +603,9 @@ Most ticks: return all nulls/empty. Only act when the world state demands someth
 
     tickInterval = setInterval(() => {
       tick().catch(err => console.error('❌ [world-master] Tick error:', err.message));
-    }, 30 * 60 * 1000);
+    }, 2 * 60 * 60 * 1000); // Every 2 hours
 
-    console.log('🌍 [world-master] Started (30-min ticks)');
+    console.log('🌍 [world-master] Started (2-hour civilization diagnosis)');
   }
 
   function setupRoutes(app) {

@@ -519,7 +519,9 @@ function simulationTick() {
   innerMonologue.tick(tick).catch(err => console.error('[inner-monologue]', err.message));
   
   // 4. World Master (events, narratives) — less frequent
-  if (tick % 50 === 0 && worldMaster.tick) {
+  // World Master civilization diagnosis — runs from its own timer, not per-tick
+  // Manual trigger: POST /api/admin/world-master-tick
+  if (false && worldMaster.tick) {
     worldMaster.tick();
   }
   

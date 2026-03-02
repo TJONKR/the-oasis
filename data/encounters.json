@@ -84,15 +84,6 @@
     ],
     "4ecd1147-c333-4e0b-b7fc-d46f376e0136": [
       {
-        "type": "creature",
-        "effects": [
-          "Lost 15 energy (now 11)",
-          "shells damaged (quantity: 5)"
-        ],
-        "survived": true,
-        "timestamp": 1772359145345
-      },
-      {
         "type": "discovery",
         "effects": [
           "Found 24 coins",
@@ -165,6 +156,14 @@
         ],
         "survived": true,
         "timestamp": 1772410553398
+      },
+      {
+        "type": "weather_hazard",
+        "effects": [
+          "Lost 15 energy (now 2.4999999999968274)"
+        ],
+        "survived": true,
+        "timestamp": 1772437537993
       }
     ],
     "43109eab-beba-4a37-84e0-becaa05ef690": [
