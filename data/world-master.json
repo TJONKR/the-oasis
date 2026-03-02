@@ -1,6 +1,6 @@
 {
-  "lastTick": "2026-03-02T08:04:15.964Z",
-  "lastNarrative": "The rain continues to pour, casting a somber tone over the coastal region as the agents struggle to gather resources and survive. The precursor of famine casts a dark shadow over the land, foretelling challenges ahead.",
+  "lastTick": "2026-03-02T08:05:59.418Z",
+  "lastNarrative": "[Civ 2/10] The world is currently in a very primitive state, with agents exhibiting simple survival behaviors but lacking the higher-level intelligence and coordination required to develop into a true civilization.",
   "dangers": [
     {
       "id": "danger_dc0ca740",
@@ -80,27 +80,7 @@
     }
   },
   "npcDirectives": [],
-  "consequences": [
-    {
-      "id": "consequence_20e9777a",
-      "type": "famine",
-      "zones": [
-        "grass",
-        "forest",
-        "rocky",
-        "sand",
-        "water",
-        "swamp",
-        "river",
-        "cave",
-        "coast",
-        "path"
-      ],
-      "description": "🍂 Famine",
-      "startedAt": 1772437541512,
-      "expiresAt": 1772438741512
-    }
-  ],
+  "consequences": [],
   "precursors": [
     {
       "id": "precursor_2ad77926",
@@ -109,9 +89,17 @@
       "zone": "cave",
       "sentAt": 1772438603869,
       "expiresAt": 1772438903869
+    },
+    {
+      "id": "precursor_d6bc342f",
+      "type": "famine",
+      "message": "Food is becoming scarce across the land...",
+      "zone": "grass",
+      "sentAt": 1772438755570,
+      "expiresAt": 1772439055570
     }
   ],
-  "tickCount": 3035,
+  "tickCount": 3036,
   "activeEvents": [],
   "nextEventTrigger": 1772441356939.521
 }

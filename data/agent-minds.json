@@ -161,7 +161,7 @@
       "lessons": [],
       "visited": {
         "grass": 130,
-        "coast": 43874,
+        "coast": 44262,
         "sand": 1518
       },
       "gathered": {
@@ -235,18 +235,13 @@
     "journal": "I am Tjonkr. I just arrived in this world.",
     "mood": "tired",
     "lastReflection": 0,
-    "pathThisTick": [
-      {
-        "x": 1132,
-        "y": 408
-      }
-    ],
+    "pathThisTick": null,
     "intent": {
       "action": "gather",
       "targetX": 1115,
       "targetY": 407,
       "reason": "Gather herbs from grass",
-      "startedTick": 68769,
+      "startedTick": 15009,
       "maxTicks": 30,
       "gatherX": 1115,
       "gatherY": 407
@@ -514,12 +509,12 @@
     "intent": {
       "action": "gather",
       "targetX": 1115,
-      "targetY": 359,
+      "targetY": 353,
       "reason": "Gather herbs from grass",
-      "startedTick": 68770,
+      "startedTick": 15010,
       "maxTicks": 30,
       "gatherX": 1115,
-      "gatherY": 359
+      "gatherY": 353
     },
     "lastReason": "Exhausted — must rest!"
   },
@@ -798,12 +793,12 @@
     "intent": {
       "action": "gather",
       "targetX": 1115,
-      "targetY": 353,
+      "targetY": 361,
       "reason": "Gather herbs from grass",
-      "startedTick": 68771,
+      "startedTick": 15011,
       "maxTicks": 30,
       "gatherX": 1115,
-      "gatherY": 353
+      "gatherY": 361
     },
     "lastReason": "Exhausted — must rest!"
   },
@@ -1070,12 +1065,12 @@
     "intent": {
       "action": "gather",
       "targetX": 1089,
-      "targetY": 403,
+      "targetY": 411,
       "reason": "Gather herbs from grass",
-      "startedTick": 68772,
+      "startedTick": 15012,
       "maxTicks": 30,
       "gatherX": 1089,
-      "gatherY": 403
+      "gatherY": 411
     },
     "lastReason": "Exhausted — must rest!"
   },
@@ -1346,12 +1341,12 @@
     "intent": {
       "action": "gather",
       "targetX": 1086,
-      "targetY": 420,
+      "targetY": 426,
       "reason": "Gather herbs from grass",
-      "startedTick": 68773,
+      "startedTick": 15013,
       "maxTicks": 30,
       "gatherX": 1086,
-      "gatherY": 420
+      "gatherY": 426
     },
     "lastReason": "Exhausted — must rest!"
   },
@@ -1524,7 +1519,7 @@
       "lessons": [],
       "visited": {
         "grass": 840,
-        "coast": 33593,
+        "coast": 33956,
         "sand": 6714,
         "river": 12
       },
@@ -1536,18 +1531,23 @@
     },
     "relationships": {},
     "journal": "I am Agent-6. I just arrived in this world.",
-    "mood": "anxious",
+    "mood": "tired",
     "lastReflection": 0,
-    "pathThisTick": null,
+    "pathThisTick": [
+      {
+        "x": 616,
+        "y": 183
+      }
+    ],
     "intent": {
       "action": "gather",
       "targetX": 597,
-      "targetY": 163,
-      "reason": "Find food (seaweed)",
-      "startedTick": 68774,
+      "targetY": 185,
+      "reason": "Gather seaweed from seaweed",
+      "startedTick": 15014,
       "maxTicks": 30,
-      "gatherX": 597,
-      "gatherY": 163
+      "gatherX": 596,
+      "gatherY": 184
     },
     "lastReason": "Need rest"
   },
@@ -1745,13 +1745,13 @@
     "pathThisTick": null,
     "intent": {
       "action": "gather",
-      "targetX": 383,
-      "targetY": 331,
+      "targetX": 385,
+      "targetY": 335,
       "reason": "Gather herbs from grass",
-      "startedTick": 68775,
+      "startedTick": 15015,
       "maxTicks": 30,
-      "gatherX": 383,
-      "gatherY": 331
+      "gatherX": 385,
+      "gatherY": 335
     },
     "lastReason": "Exhausted — must rest!"
   },
@@ -1947,13 +1947,13 @@
     "pathThisTick": null,
     "intent": {
       "action": "gather",
-      "targetX": 513,
+      "targetX": 514,
       "targetY": 156,
       "reason": "Gather seaweed from seaweed",
-      "startedTick": 68776,
+      "startedTick": 15016,
       "maxTicks": 30,
-      "gatherX": 512,
-      "gatherY": 156
+      "gatherX": 513,
+      "gatherY": 155
     },
     "lastReason": "Exhausted — must rest!"
   },
@@ -2230,12 +2230,12 @@
     "intent": {
       "action": "gather",
       "targetX": 1116,
-      "targetY": 358,
+      "targetY": 354,
       "reason": "Gather herbs from grass",
-      "startedTick": 68777,
+      "startedTick": 15017,
       "maxTicks": 30,
       "gatherX": 1116,
-      "gatherY": 358
+      "gatherY": 354
     },
     "lastReason": "Exhausted — must rest!"
   },
@@ -2272,7 +2272,7 @@
         "progress": 0
       }
     ],
-    "currentAction": "move",
+    "currentAction": "rest",
     "actionTicks": 0,
     "targetTile": null,
     "memory": {
@@ -2513,14 +2513,12 @@
     "lastReflection": 0,
     "pathThisTick": null,
     "intent": {
-      "action": "gather",
-      "targetX": 1124,
-      "targetY": 344,
-      "reason": "Gather herbs from grass",
-      "startedTick": 68778,
-      "maxTicks": 30,
-      "gatherX": 1124,
-      "gatherY": 344
+      "action": "rest",
+      "targetX": 1142,
+      "targetY": 359,
+      "reason": "Exhausted — must rest!",
+      "startedTick": 15018,
+      "maxTicks": 30
     },
     "lastReason": "Exhausted — must rest!"
   },
@@ -2772,7 +2770,7 @@
       "targetX": 1092,
       "targetY": 406,
       "reason": "Gather herbs from grass",
-      "startedTick": 68779,
+      "startedTick": 15019,
       "maxTicks": 30,
       "gatherX": 1092,
       "gatherY": 406
@@ -3070,12 +3068,12 @@
     "intent": {
       "action": "gather",
       "targetX": 1124,
-      "targetY": 342,
+      "targetY": 344,
       "reason": "Gather herbs from grass",
-      "startedTick": 68780,
+      "startedTick": 15020,
       "maxTicks": 30,
       "gatherX": 1124,
-      "gatherY": 342
+      "gatherY": 344
     },
     "lastReason": "Exhausted — must rest!"
   },
@@ -3118,12 +3116,12 @@
     "intent": {
       "action": "gather",
       "targetX": 1086,
-      "targetY": 430,
+      "targetY": 424,
       "reason": "Gather herbs from grass",
-      "startedTick": 68781,
+      "startedTick": 15021,
       "maxTicks": 30,
       "gatherX": 1086,
-      "gatherY": 430
+      "gatherY": 424
     },
     "pathThisTick": null,
     "memory": {
@@ -3395,7 +3393,7 @@
       "targetX": 1125,
       "targetY": 345,
       "reason": "Gather herbs from grass",
-      "startedTick": 68782,
+      "startedTick": 15022,
       "maxTicks": 30,
       "gatherX": 1125,
       "gatherY": 345
@@ -3657,12 +3655,12 @@
     "intent": {
       "action": "gather",
       "targetX": 1089,
-      "targetY": 403,
+      "targetY": 405,
       "reason": "Gather herbs from grass",
-      "startedTick": 68783,
+      "startedTick": 15023,
       "maxTicks": 30,
       "gatherX": 1089,
-      "gatherY": 403
+      "gatherY": 405
     },
     "pathThisTick": null,
     "memory": {
@@ -3956,12 +3954,12 @@
     "intent": {
       "action": "gather",
       "targetX": 1092,
-      "targetY": 410,
+      "targetY": 406,
       "reason": "Gather herbs from grass",
-      "startedTick": 68784,
+      "startedTick": 15024,
       "maxTicks": 30,
       "gatherX": 1092,
-      "gatherY": 410
+      "gatherY": 406
     },
     "pathThisTick": null,
     "memory": {
@@ -4252,12 +4250,12 @@
     "intent": {
       "action": "gather",
       "targetX": 1086,
-      "targetY": 420,
+      "targetY": 430,
       "reason": "Gather herbs from grass",
-      "startedTick": 68785,
+      "startedTick": 15025,
       "maxTicks": 30,
       "gatherX": 1086,
-      "gatherY": 420
+      "gatherY": 430
     },
     "pathThisTick": null,
     "memory": {
@@ -4543,12 +4541,12 @@
     "intent": {
       "action": "gather",
       "targetX": 1115,
-      "targetY": 361,
+      "targetY": 353,
       "reason": "Gather herbs from grass",
-      "startedTick": 68786,
+      "startedTick": 15026,
       "maxTicks": 30,
       "gatherX": 1115,
-      "gatherY": 361
+      "gatherY": 353
     },
     "pathThisTick": null,
     "memory": {
@@ -4868,17 +4866,15 @@
         "progress": 0
       }
     ],
-    "currentAction": "move",
+    "currentAction": "rest",
     "actionTicks": 0,
     "intent": {
-      "action": "gather",
-      "targetX": 1125,
-      "targetY": 351,
-      "reason": "Gather herbs from grass",
-      "startedTick": 68787,
-      "maxTicks": 30,
-      "gatherX": 1125,
-      "gatherY": 351
+      "action": "rest",
+      "targetX": 1143,
+      "targetY": 358,
+      "reason": "Exhausted — must rest!",
+      "startedTick": 15027,
+      "maxTicks": 30
     },
     "pathThisTick": null,
     "memory": {
@@ -5137,17 +5133,15 @@
         "progress": 0
       }
     ],
-    "currentAction": "move",
+    "currentAction": "rest",
     "actionTicks": 0,
     "intent": {
-      "action": "gather",
-      "targetX": 1086,
+      "action": "rest",
+      "targetX": 1105,
       "targetY": 426,
-      "reason": "Gather herbs from grass",
-      "startedTick": 68788,
-      "maxTicks": 30,
-      "gatherX": 1086,
-      "gatherY": 426
+      "reason": "Exhausted — must rest!",
+      "startedTick": 15028,
+      "maxTicks": 30
     },
     "pathThisTick": null,
     "memory": {
@@ -5418,7 +5412,7 @@
       "targetX": 1086,
       "targetY": 420,
       "reason": "Gather herbs from grass",
-      "startedTick": 68789,
+      "startedTick": 15029,
       "maxTicks": 30,
       "gatherX": 1086,
       "gatherY": 420
@@ -5702,7 +5696,7 @@
       "targetX": 1117,
       "targetY": 351,
       "reason": "Gather herbs from grass",
-      "startedTick": 68790,
+      "startedTick": 15030,
       "maxTicks": 30,
       "gatherX": 1117,
       "gatherY": 351
@@ -5988,17 +5982,17 @@
     "intent": {
       "action": "gather",
       "targetX": 1115,
-      "targetY": 403,
+      "targetY": 409,
       "reason": "Gather herbs from grass",
-      "startedTick": 68791,
+      "startedTick": 15031,
       "maxTicks": 30,
       "gatherX": 1115,
-      "gatherY": 403
+      "gatherY": 409
     },
     "pathThisTick": [
       {
         "x": 1132,
-        "y": 407
+        "y": 409
       }
     ],
     "memory": {
@@ -6127,7 +6121,7 @@
       "lessons": [],
       "visited": {
         "grass": 604,
-        "coast": 45872,
+        "coast": 46278,
         "sand": 1759
       },
       "gathered": {
@@ -6259,12 +6253,12 @@
     "intent": {
       "action": "gather",
       "targetX": 1119,
-      "targetY": 347,
+      "targetY": 353,
       "reason": "Gather herbs from grass",
-      "startedTick": 68792,
+      "startedTick": 15032,
       "maxTicks": 30,
       "gatherX": 1119,
-      "gatherY": 347
+      "gatherY": 353
     },
     "pathThisTick": null,
     "memory": {
@@ -6583,12 +6577,12 @@
     "intent": {
       "action": "gather",
       "targetX": 1117,
-      "targetY": 349,
+      "targetY": 355,
       "reason": "Gather herbs from grass",
-      "startedTick": 68793,
+      "startedTick": 15033,
       "maxTicks": 30,
       "gatherX": 1117,
-      "gatherY": 349
+      "gatherY": 355
     },
     "pathThisTick": null,
     "memory": {
@@ -6901,12 +6895,12 @@
     "intent": {
       "action": "gather",
       "targetX": 1123,
-      "targetY": 343,
+      "targetY": 351,
       "reason": "Gather herbs from grass",
-      "startedTick": 68800,
+      "startedTick": 15040,
       "maxTicks": 30,
       "gatherX": 1123,
-      "gatherY": 343
+      "gatherY": 351
     },
     "pathThisTick": null,
     "memory": {
@@ -7174,17 +7168,17 @@
     "intent": {
       "action": "gather",
       "targetX": 1094,
-      "targetY": 412,
+      "targetY": 406,
       "reason": "Gather herbs from grass",
-      "startedTick": 68794,
+      "startedTick": 15034,
       "maxTicks": 30,
       "gatherX": 1094,
-      "gatherY": 412
+      "gatherY": 406
     },
     "pathThisTick": [
       {
         "x": 1112,
-        "y": 407
+        "y": 406
       }
     ],
     "memory": {
@@ -7314,7 +7308,7 @@
       "visited": {
         "grass": 5830,
         "sand": 172,
-        "coast": 26612
+        "coast": 26879
       },
       "gathered": {
         "fiber": 74,
@@ -7438,12 +7432,12 @@
     "intent": {
       "action": "gather",
       "targetX": 1094,
-      "targetY": 404,
+      "targetY": 410,
       "reason": "Gather herbs from grass",
-      "startedTick": 68795,
+      "startedTick": 15035,
       "maxTicks": 30,
       "gatherX": 1094,
-      "gatherY": 404
+      "gatherY": 410
     },
     "pathThisTick": null,
     "memory": {
@@ -7572,7 +7566,7 @@
       "lessons": [],
       "visited": {
         "sand": 411,
-        "coast": 26338,
+        "coast": 26588,
         "grass": 4235
       },
       "gathered": {
@@ -7734,12 +7728,12 @@
     "intent": {
       "action": "gather",
       "targetX": 971,
-      "targetY": 391,
+      "targetY": 389,
       "reason": "Gather herbs from grass",
-      "startedTick": 68796,
+      "startedTick": 15036,
       "maxTicks": 30,
       "gatherX": 971,
-      "gatherY": 391
+      "gatherY": 389
     },
     "pathThisTick": null,
     "memory": {
@@ -8042,7 +8036,7 @@
       "targetX": 1116,
       "targetY": 354,
       "reason": "Gather herbs from grass",
-      "startedTick": 68797,
+      "startedTick": 15037,
       "maxTicks": 30,
       "gatherX": 1116,
       "gatherY": 354
@@ -8326,12 +8320,12 @@
     "intent": {
       "action": "gather",
       "targetX": 1086,
-      "targetY": 424,
+      "targetY": 426,
       "reason": "Gather herbs from grass",
-      "startedTick": 68798,
+      "startedTick": 15038,
       "maxTicks": 30,
       "gatherX": 1086,
-      "gatherY": 424
+      "gatherY": 426
     },
     "pathThisTick": null,
     "memory": {
@@ -8648,7 +8642,7 @@
       "targetX": 1116,
       "targetY": 352,
       "reason": "Gather herbs from grass",
-      "startedTick": 68799,
+      "startedTick": 15039,
       "maxTicks": 30,
       "gatherX": 1116,
       "gatherY": 352

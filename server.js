@@ -342,6 +342,7 @@ shared.wildlife = wildlife;
 // Agent Knowledge — Phase 3: personal knowledge, teaching, knowledge death
 const agentKnowledge = initAgentKnowledge(shared);
 agentKnowledge.setupRoutes(app);
+worldMaster.setupRoutes(app);
 shared.agentKnowledge = agentKnowledge;
 
 // External Agent API
