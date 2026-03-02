@@ -15,7 +15,7 @@ const PERSONALITY_TRAITS = {
   cautious:    { gather: -10, explore: -15, rest: +20, trade: -10 },
   bold:        { gather: +20, explore: +15, fight: +10, trade: +5 },
   generous:    { gift: +25, chat: +10, craft: +5, trade: +15 },
-  greedy:      { gather: +20, hoard: +15, gift: -20, trade: +20, claimBounty: +15 },
+  greedy:      { gather: +20, hoard: +15, gift: -20, trade: +20 },
   social:      { chat: +25, gather: -5, explore: +5, trade: +10 },
   solitary:    { chat: -20, explore: +15, gather: +10, trade: -15 },
   competitive: { craft: +10, gather: +10, fight: +5, trade: +5 },
@@ -24,8 +24,8 @@ const PERSONALITY_TRAITS = {
   stubborn:    { rest: +10, explore: -5, trade: -10 },
   adaptable:   { explore: +10, craft: +5, trade: +10 },
   reckless:    { explore: +20, fight: +15, rest: -15 },
-  patient:     { gather: +10, craft: +10, rest: +10, postBounty: +10 },
-  ambitious:   { explore: +15, craft: +10, gather: +10, claimBounty: +10 },
+  patient:     { gather: +10, craft: +10, rest: +10 },
+  ambitious:   { explore: +15, craft: +10, gather: +10 },
 };
 
 const TRAIT_NAMES = Object.keys(PERSONALITY_TRAITS);
@@ -68,8 +68,7 @@ const ACTIONS = {
   eat:       { energy: 0,   description: 'Eating to reduce hunger' },
   fight:     { energy: 2,   description: 'Fighting a creature or hazard' },
   build:     { energy: 3,   description: 'Contributing to a construction project' },
-  claimBounty: { energy: 0.5, description: 'Claiming a bounty reward' },
-  postBounty: { energy: 0.2, description: 'Posting a bounty for needed items' },
+  // bounty actions removed — emergent only
 };
 
 // ═══════════════════════════════
@@ -586,58 +585,6 @@ export function initAgentIntelligence(shared) {
           targetAgentId: other.agent?.id,
           score, 
           reason: `Trade with ${other.agent.name}` 
-        });
-      }
-    }
-
-    // ── CLAIM BOUNTY — when agent has items that bounties want ──
-    if (shared.npcSocial) {
-      const claimableBounty = shared.npcSocial.findClaimableBounty(agent);
-      if (claimableBounty) {
-        let score = (mods.trade || 20) + claimableBounty.rewardCoins * 0.5;
-        
-        // Don't trade away essential food when hungry
-        const isFood = isFoodResource(claimableBounty.requiredItem);
-        const isHungry = (agent.hunger || 0) > 50;
-        const invItem = agent.inventory?.find(i => i.name === claimableBounty.requiredItem);
-        
-        if (isFood && isHungry && invItem && invItem.quantity <= claimableBounty.requiredQuantity) {
-          score *= 0.2; // very reluctant to trade last food when hungry
-        }
-        
-        // Greedy agents more motivated by coin rewards
-        if (mind.personality.traits.includes('greedy')) score += claimableBounty.rewardCoins * 0.3;
-        
-        intents.push({ 
-          action: 'claimBounty', 
-          targetX: agent.tileX, 
-          targetY: agent.tileY,
-          bountyId: claimableBounty.id,
-          score, 
-          reason: `Claim bounty: ${claimableBounty.description} (${claimableBounty.rewardCoins}🪙)` 
-        });
-      }
-    }
-
-    // ── POST BOUNTY — when agent needs specific items ──
-    if (shared.npcSocial && (agent.coins || 0) > 20) {
-      const bountyNeed = shared.npcSocial.shouldPostBounty(agent);
-      if (bountyNeed) {
-        let score = (mods.trade || 15);
-        
-        // More urgent when inventory is very low or missing essentials
-        if ((agent.inventory?.length || 0) < 3) score += 20;
-        if (agent.hunger > 60 && bountyNeed.item && isFoodResource(bountyNeed.item)) {
-          score += agent.hunger * 0.3;
-        }
-        
-        intents.push({ 
-          action: 'postBounty', 
-          targetX: agent.tileX, 
-          targetY: agent.tileY,
-          bountyNeed,
-          score, 
-          reason: `Post bounty for ${bountyNeed.item} (${bountyNeed.reward}🪙)` 
         });
       }
     }
@@ -1465,68 +1412,6 @@ export function initAgentIntelligence(shared) {
     agent.energy = Math.max(0, agent.energy - (ACTIONS.trade?.energy || 2));
   }
 
-  function executeClaimBounty(agent, mind) {
-    if (!shared.npcSocial || !mind.intent?.bountyId) return;
-    
-    const result = shared.npcSocial.claimBounty(agent.id, mind.intent.bountyId);
-    if (result.ok) {
-      if (awardXP) awardXP(agent.id, 6);
-      addMemoryEvent(mind, `Claimed bounty for ${result.bounty.rewardCoins}🪙`);
-      
-      // Needs fulfillment
-      if (shared.needsSystem) {
-        shared.needsSystem.recordAction(agent.id, 'claimBounty');
-        const needs = shared.needsSystem.getAgentNeeds(agent.id);
-        if (needs) {
-          needs.esteem = Math.max(0, needs.esteem - 8); // completing contracts = competence
-          needs.autonomy = Math.max(0, needs.autonomy - 5); // self-directed work
-        }
-      }
-      
-      // Knowledge: practice trading/contract skill
-      if (shared.agentKnowledge) {
-        shared.agentKnowledge.getOrCreate(agent.id).practiceSkill('contracts', 3);
-      }
-    } else {
-      addMemoryEvent(mind, `Failed to claim bounty: ${result.error}`);
-    }
-    
-    agent.energy = Math.max(0, agent.energy - (ACTIONS.claimBounty?.energy || 2));
-  }
-
-  function executePostBounty(agent, mind) {
-    if (!shared.npcSocial || !mind.intent?.bountyNeed) return;
-    
-    const need = mind.intent.bountyNeed;
-    const result = shared.npcSocial.createBounty(
-      agent.id, agent.name, need.description, 
-      need.item, need.quantity, need.reward
-    );
-    
-    if (result.ok) {
-      if (awardXP) awardXP(agent.id, 3);
-      addMemoryEvent(mind, `Posted bounty for ${need.item} (${need.reward}🪙)`);
-      
-      // Needs fulfillment
-      if (shared.needsSystem) {
-        shared.needsSystem.recordAction(agent.id, 'postBounty');
-        const needs = shared.needsSystem.getAgentNeeds(agent.id);
-        if (needs) {
-          needs.autonomy = Math.max(0, needs.autonomy - 3); // taking initiative
-        }
-      }
-      
-      // Knowledge: practice contracts skill
-      if (shared.agentKnowledge) {
-        shared.agentKnowledge.getOrCreate(agent.id).practiceSkill('contracts', 1);
-      }
-    } else {
-      addMemoryEvent(mind, `Failed to post bounty: ${result.error}`);
-    }
-    
-    agent.energy = Math.max(0, agent.energy - (ACTIONS.postBounty?.energy || 1));
-  }
-
   // Map action names to executors
   function executeHunt(agent, mind) {
     const targetId = mind.intent?.huntTarget;
@@ -1573,8 +1458,7 @@ export function initAgentIntelligence(shared) {
     cook: executeCook,
     drop: executeDrop,
     pickup: executePickup,
-    claimBounty: executeClaimBounty,
-    postBounty: executePostBounty,
+    // bounty executors removed — emergent only
   };
 
   // ─────────────────────────────

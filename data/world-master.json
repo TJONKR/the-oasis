@@ -1,5 +1,5 @@
 {
-  "lastTick": "2026-03-02T06:44:26.021Z",
+  "lastTick": "2026-03-02T06:47:46.769Z",
   "lastNarrative": null,
   "dangers": [],
   "zoneModifiers": {},
@@ -26,7 +26,7 @@
     }
   ],
   "precursors": [],
-  "tickCount": 2865,
+  "tickCount": 2873,
   "activeEvents": [],
   "nextEventTrigger": 1772441356939.521
 }
