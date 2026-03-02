@@ -1,5 +1,5 @@
 {
-  "lastTick": "2026-03-02T07:36:05.421Z",
+  "lastTick": "2026-03-02T07:43:45.245Z",
   "lastNarrative": "The rain continues to pour, casting a somber tone over the coastal region as the agents struggle to gather resources and survive. The precursor of famine casts a dark shadow over the land, foretelling challenges ahead.",
   "dangers": [],
   "zoneModifiers": {
@@ -7,21 +7,26 @@
       "gather_bonus": 1,
       "reason": "Consistent rainfall provides ample moisture for the coastal resources",
       "expiresAt": 1772444165420
+    },
+    "sand": {
+      "gather_bonus": 1.5,
+      "reason": "Recent rainfall has brought moisture to the sand, allowing vegetation to thrive temporarily",
+      "expiresAt": 1772444574370
     }
   },
   "npcDirectives": [],
   "consequences": [],
   "precursors": [
     {
-      "id": "precursor_af645c8c",
+      "id": "precursor_4f999268",
       "type": "famine",
       "message": "Food is becoming scarce across the land...",
       "zone": "grass",
-      "sentAt": 1772436963583,
-      "expiresAt": 1772437263583
+      "sentAt": 1772437372977,
+      "expiresAt": 1772437672977
     }
   ],
-  "tickCount": 2985,
+  "tickCount": 2988,
   "activeEvents": [],
   "nextEventTrigger": 1772441356939.521
 }
