@@ -5,7 +5,7 @@
 // and storylines for agents based on their situation, skills, and context rather than 
 // using hardcoded quest chains. Agent AI decisions drive quest creation.
 
-import crypto from 'crypto';
+// crypto import removed — physics layer stripped
 
 export function initWorldMaster(shared) {
   const {
@@ -17,343 +17,27 @@ export function initWorldMaster(shared) {
 
   const GAME_DAY_MS = 60 * 60 * 1000;
 
-  // Consequence definitions
-  const CONSEQUENCE_TYPES = {
-    drought: {
-      name: 'Drought', emoji: '🏜️',
-      precursor: { message: 'Dry hot winds sweep across the land...', type: 'precursor_drought' },
-      effects: { resource_multiplier: 0.5, fire_risk: true },
-      duration_hours: 4,
-    },
-    wildfire: {
-      name: 'Wildfire', emoji: '🔥',
-      precursor: { message: 'Smoke and haze drift from the horizon...', type: 'precursor_wildfire' },
-      effects: { destroys_flammable: true, blocks_zone: true },
-      duration_hours: 2,
-    },
-    plague: {
-      name: 'Plague', emoji: '🦠',
-      precursor: { message: 'Sickness spreads through populated areas...', type: 'precursor_plague' },
-      effects: { energy_drain: 5 },
-      duration_hours: 6,
-    },
-    earthquake: {
-      name: 'Earthquake', emoji: '🌋',
-      precursor: { message: 'Faint tremors ripple through the ground...', type: 'precursor_earthquake' },
-      effects: { structure_damage: true, cave_collapse: true },
-      duration_hours: 1,
-    },
-    famine: {
-      name: 'Famine', emoji: '🍂',
-      precursor: { message: 'Food is becoming scarce across the land...', type: 'precursor_famine' },
-      effects: { food_price_mult: 2.0 },
-      duration_hours: 8,
-    },
-  };
-
-  // Natural phenomena that can occur in the world (no more gamey events)
-  const NATURAL_EVENTS = [
-    { id: 'meteor_shower', name: 'Meteor Shower', emoji: '☄️', desc: 'Rare minerals falling from the sky in {zone}!', durationMs: 3600000, effect: 'rare_minerals' },
-    { id: 'migration', name: 'Animal Migration', emoji: '🦎', desc: 'Wildlife is migrating through {zone}', durationMs: 5400000, effect: 'wildlife_bonus' },
-    { id: 'resource_bloom', name: 'Resource Bloom', emoji: '🌿', desc: 'Nature flourishes in {zone} - resources grow abundantly', durationMs: 7200000, effect: 'resource_abundance' },
-    { id: 'seasonal_shift', name: 'Seasonal Shift', emoji: '🍂', desc: 'The seasons change, affecting {zone}', durationMs: 21600000, effect: 'seasonal_change' },
-  ];
-
   // --- State ---
   let wmState = loadJSON('world-master.json', {
     lastTick: null,
     lastNarrative: null,
-    dangers: [],       // { id, zone, type, description, expiresAt }
-    zoneModifiers: {}, // { zone: { gather_bonus, craft_discount, reason, expiresAt } }
-    npcDirectives: [], // { npc, action, zone, reason, issuedAt }
-    consequences: [],  // { id, type, zones, description, startedAt, expiresAt, precursorSent }
-    precursors: [],    // { id, type, message, zone, sentAt, expiresAt }
     tickCount: 0,
-    activeEvents: [],  // { id, name, emoji, desc, zone, startedAt, endsAt, effect, strangerClaimed }
-    nextEventTrigger: Date.now() + (4 + Math.random() * 4) * 3600000, // 4-8 hours
   });
-  // Ensure new fields for older saves
-  if (!wmState.consequences) wmState.consequences = [];
-  if (!wmState.precursors) wmState.precursors = [];
-  if (!wmState.activeEvents) wmState.activeEvents = [];
-  if (!wmState.nextEventTrigger) wmState.nextEventTrigger = Date.now() + (4 + Math.random() * 4) * 3600000;
 
   function save() { saveJSON('world-master.json', wmState); }
 
-  // --- Danger System ---
-  function cleanExpired() {
-    const now = Date.now();
-    const before = wmState.dangers.length;
-    wmState.dangers = wmState.dangers.filter(d => d.expiresAt > now);
-    // Clean zone modifiers
-    for (const [zone, mod] of Object.entries(wmState.zoneModifiers)) {
-      if (mod.expiresAt && mod.expiresAt <= now) {
-        delete wmState.zoneModifiers[zone];
-      }
-    }
-    if (wmState.dangers.length !== before) save();
-  }
-
-  function getZoneDanger(zone) {
-    cleanExpired();
-    return wmState.dangers.find(d => d.zone === zone) || null;
-  }
-
-  function getDangerEnergyCost(zone) {
-    const danger = getZoneDanger(zone);
-    if (!danger) return 0;
-    return 5; // extra energy cost in dangerous zones
-  }
-
-  function getItemLossChance(zone) {
-    const danger = getZoneDanger(zone);
-    if (!danger) return 0;
-    return 0.1; // 10% chance to lose a random item
-  }
-
-  function isZoneBlocked(zone) {
-    const danger = getZoneDanger(zone);
-    return danger?.blocking === true;
-  }
-
-  // --- Consequence System ---
-  function cleanConsequences() {
-    const now = Date.now();
-    const expiredConsequences = wmState.consequences.filter(c => c.expiresAt <= now);
-    for (const c of expiredConsequences) {
-      addWorldNews('consequence_end', null, 'World', `${CONSEQUENCE_TYPES[c.type]?.emoji || '✨'} The ${CONSEQUENCE_TYPES[c.type]?.name || c.type} has ended.`, null);
-      broadcast({ type: 'consequenceEnd', consequenceType: c.type, zones: c.zones });
-    }
-    wmState.consequences = wmState.consequences.filter(c => c.expiresAt > now);
-    wmState.precursors = wmState.precursors.filter(p => p.expiresAt > now);
-  }
-
-  function evaluateConsequences() {
-    const atmosphere = weatherSystem.getAtmosphere();
-    const gameTime = getGameTime();
-    const now = Date.now();
-
-    // Don't trigger consequences in the first 3 game days
-    if (gameTime.dayCount < 3) return [];
-
-    const triggered = [];
-    const activeTypes = new Set(wmState.consequences.map(c => c.type));
-    const precursorTypes = new Set(wmState.precursors.map(p => p.type));
-
-    // --- Drought: low moisture + high temp for sustained period ---
-    if (!activeTypes.has('drought') && atmosphere.moisture < 25 && atmosphere.temperature > 28) {
-      if (!precursorTypes.has('drought')) {
-        sendPrecursor('drought', null);
-      } else {
-        // Check if precursor has been active long enough (1+ game hours = 2.5 real minutes)
-        const precursor = wmState.precursors.find(p => p.type === 'drought');
-        if (precursor && now - precursor.sentAt > 2.5 * 60 * 1000) {
-          triggered.push({ type: 'drought', zones: Object.keys(zones) });
-        }
-      }
-    }
-
-    // --- Wildfire: active drought + flammable resources in zone ---
-    if (!activeTypes.has('wildfire') && activeTypes.has('drought')) {
-      // Check for zones with high fire risk
-      const droughtZones = [];
-      for (const zoneId of Object.keys(zones)) {
-        const pool = zoneResourcePools[zoneId];
-        if (!pool) continue;
-        const hasFlammable = (pool.pool || []).some(item =>
-          item.properties?.flammability >= 5 || item.type === 'organic'
-        );
-        if (hasFlammable && atmosphere.temperature > 32) {
-          droughtZones.push(zoneId);
-        }
-      }
-      if (droughtZones.length > 0) {
-        if (!precursorTypes.has('wildfire')) {
-          sendPrecursor('wildfire', droughtZones[0]);
-        } else {
-          const precursor = wmState.precursors.find(p => p.type === 'wildfire');
-          if (precursor && now - precursor.sentAt > 2.5 * 60 * 1000) {
-            triggered.push({ type: 'wildfire', zones: droughtZones.slice(0, 2) });
-          }
-        }
-      }
-    }
-
-    // --- Plague: high population density + high moisture ---
-    if (!activeTypes.has('plague')) {
-      const zonePop = {};
-      for (const a of agents.values()) {
-        zonePop[a.zone] = (zonePop[a.zone] || 0) + 1;
-      }
-      const denseZones = Object.entries(zonePop)
-        .filter(([, count]) => count >= 5)
-        .map(([z]) => z);
-      if (denseZones.length > 0 && atmosphere.moisture > 65) {
-        if (!precursorTypes.has('plague')) {
-          sendPrecursor('plague', denseZones[0]);
-        } else {
-          const precursor = wmState.precursors.find(p => p.type === 'plague');
-          if (precursor && now - precursor.sentAt > 2.5 * 60 * 1000) {
-            triggered.push({ type: 'plague', zones: denseZones });
-          }
-        }
-      }
-    }
-
-    // --- Earthquake: random geological stress, rare ---
-    if (!activeTypes.has('earthquake') && wmState.tickCount > 10) {
-      // ~5% chance per tick after tick 10, boosted by low pressure
-      const quakeChance = atmosphere.pressure < 990 ? 0.08 : 0.03;
-      if (Math.random() < quakeChance) {
-        const targetZone = ['cave', 'rocky', 'grass'][Math.floor(Math.random() * 3)];
-        if (!precursorTypes.has('earthquake')) {
-          sendPrecursor('earthquake', targetZone);
-        } else {
-          const precursor = wmState.precursors.find(p => p.type === 'earthquake');
-          if (precursor && now - precursor.sentAt > 2.5 * 60 * 1000) {
-            triggered.push({ type: 'earthquake', zones: [targetZone] });
-          }
-        }
-      }
-    }
-
-    // --- Famine: low food in resource pools ---
-    if (!activeTypes.has('famine')) {
-      let totalFood = 0;
-      for (const pool of Object.values(zoneResourcePools || {})) {
-        totalFood += typeof pool.pool === 'number' ? pool.pool : 0;
-      }
-      const totalAgents = agents.size;
-      if (totalAgents > 5 && totalFood < totalAgents * 0.5) {
-        if (!precursorTypes.has('famine')) {
-          sendPrecursor('famine', 'grass');
-        } else {
-          const precursor = wmState.precursors.find(p => p.type === 'famine');
-          if (precursor && now - precursor.sentAt > 2.5 * 60 * 1000) {
-            triggered.push({ type: 'famine', zones: Object.keys(zones) });
-          }
-        }
-      }
-    }
-
-    return triggered;
-  }
-
-  function sendPrecursor(type, zone) {
-    const def = CONSEQUENCE_TYPES[type];
-    if (!def) return;
-    const precursor = {
-      id: 'precursor_' + crypto.randomBytes(4).toString('hex'),
-      type,
-      message: def.precursor.message,
-      zone,
-      sentAt: Date.now(),
-      expiresAt: Date.now() + 5 * 60 * 1000, // 5 real minutes (~2 game hours)
-    };
-    wmState.precursors.push(precursor);
-    addWorldNews('precursor', null, 'World', `⚠️ ${def.precursor.message}`, zone);
-    broadcast({ type: 'precursor', precursorType: type, message: def.precursor.message, zone });
-    save();
-  }
-
-  function applyConsequence(type, targetZones) {
-    const def = CONSEQUENCE_TYPES[type];
-    if (!def) return;
-    const durationMs = def.duration_hours * (60 * 60 * 1000 / 24); // game hours → real time
-    const consequence = {
-      id: 'consequence_' + crypto.randomBytes(4).toString('hex'),
-      type,
-      zones: targetZones,
-      description: `${def.emoji} ${def.name}`,
-      startedAt: Date.now(),
-      expiresAt: Date.now() + durationMs,
-    };
-    wmState.consequences.push(consequence);
-    // Remove precursors of this type
-    wmState.precursors = wmState.precursors.filter(p => p.type !== type);
-
-    // Apply specific effects
-    if (type === 'wildfire') {
-      // Destroy flammable items (including scrolls) in affected zones
-      for (const zoneId of targetZones) {
-        for (const a of agents.values()) {
-          if (a.zone !== zoneId) continue;
-          const before = (a.inventory || []).length;
-          a.inventory = (a.inventory || []).filter(item => {
-            const flammable = item.properties?.flammability >= 5 ||
-              item.name?.includes('Scroll') || item.scroll_data;
-            if (flammable) {
-              addWorldNews('wildfire_destroy', a.id, a.name, `🔥 ${item.name} was destroyed in the wildfire!`, zoneId);
-            }
-            return !flammable;
-          });
-          if (a.inventory.length !== before) {
-            shared.agentStore[a.id] = a;
-          }
-        }
-      }
-    }
-
-    if (type === 'plague') {
-      // Drain energy from agents in dense zones
-      for (const zoneId of targetZones) {
-        for (const a of agents.values()) {
-          if (a.zone !== zoneId) continue;
-          a.energy = Math.max(0, (a.energy || 100) - def.effects.energy_drain);
-          shared.agentStore[a.id] = a;
-        }
-      }
-    }
-
-    addWorldNews('consequence', null, 'World', `${def.emoji} ${def.name} strikes! ${targetZones.join(', ')} affected.`, null);
-    broadcast({ type: 'consequence', consequenceType: type, name: def.name, emoji: def.emoji, zones: targetZones });
-    save();
-    saveJSON('agents.json', shared.agentStore);
-  }
-
-  function getActiveConsequences() {
-    cleanConsequences();
-    return wmState.consequences;
-  }
-
-  function getConsequenceEffects(zone) {
-    const effects = {};
-    for (const c of wmState.consequences) {
-      if (c.expiresAt <= Date.now()) continue;
-      if (!c.zones.includes(zone)) continue;
-      const def = CONSEQUENCE_TYPES[c.type];
-      if (!def) continue;
-      Object.assign(effects, def.effects);
-    }
-    return effects;
-  }
-
-  function getResourceMultiplier(zone) {
-    const effects = getConsequenceEffects(zone);
-    return effects.resource_multiplier ?? 1.0;
-  }
-
-  function getFoodPriceMultiplier() {
-    const famine = wmState.consequences.find(c => c.type === 'famine' && c.expiresAt > Date.now());
-    if (famine) return CONSEQUENCE_TYPES.famine.effects.food_price_mult;
-    return 1.0;
-  }
-
-  // --- Zone Modifiers ---
-  function getZoneModifier(zone) {
-    cleanExpired();
-    return wmState.zoneModifiers[zone] || null;
-  }
-
-  function getGatherBonus(zone) {
-    const mod = getZoneModifier(zone);
-    return mod?.gather_bonus || 1.0;
-  }
-
-  function getCraftDiscount(zone) {
-    const mod = getZoneModifier(zone);
-    return mod?.craft_discount || 1.0;
-  }
+  // Stub functions for removed physics layer (return neutral values)
+  function getZoneDanger() { return null; }
+  function getDangerEnergyCost() { return 0; }
+  function getItemLossChance() { return 0; }
+  function isZoneBlocked() { return false; }
+  function getActiveConsequences() { return []; }
+  function getConsequenceEffects() { return {}; }
+  function getResourceMultiplier() { return 1.0; }
+  function getFoodPriceMultiplier() { return 1.0; }
+  function getZoneModifier() { return null; }
+  function getGatherBonus() { return 1.0; }
+  function getCraftDiscount() { return 1.0; }
 
   // --- World State Snapshot ---
   function buildWorldSnapshot() {
@@ -378,7 +62,6 @@ export function initWorldMaster(shared) {
     const weather = weatherSystem.getCurrentWeather();
     const atmosphere = weatherSystem.getAtmosphere();
     const season = weatherSystem.getSeason();
-    const activeEvents = getActiveEvents();
     const recentNews = (worldNews || []).slice(0, 20).map(n => `${n.agentName || 'World'}: ${n.message}`);
 
     // Economy snapshot
@@ -429,7 +112,7 @@ export function initWorldMaster(shared) {
         pressure: atmosphere.pressure,
         wind_speed: atmosphere.wind_speed,
       },
-      active_events: activeEvents.map(e => `${e.emoji} ${e.name}: ${e.desc}`),
+      active_events: [],
       agents: agentList,
       total_agents: agentList.length,
       population_density: zonePop,
@@ -438,10 +121,6 @@ export function initWorldMaster(shared) {
       grandmasters: grandmasters.map(g => `${g.agent} — ${g.domain}`),
       recent_news: recentNews,
       notable_events: notableNews,
-      active_dangers: wmState.dangers.filter(d => d.expiresAt > Date.now()),
-      active_consequences: wmState.consequences.filter(c => c.expiresAt > Date.now()),
-      active_precursors: wmState.precursors.filter(p => p.expiresAt > Date.now()),
-      active_zone_modifiers: wmState.zoneModifiers,
       zone_names: Object.keys(zones),
     };
   }
@@ -565,18 +244,6 @@ Focus on the most important 2-5 gaps. Think about: settlement formation, special
   // --- World Master Tick ---
   async function tick() {
     console.log('🌍 [world-master] Tick starting...');
-    cleanExpired();
-    cleanConsequences();
-
-    // Trigger random world events (migrated from events.js)
-    triggerRandomEvent();
-
-    // Evaluate natural consequences (physics-based)
-    const triggered = evaluateConsequences();
-    for (const { type, zones } of triggered) {
-      console.log(`🌍 [world-master] Consequence triggered: ${type} in ${zones.join(', ')}`);
-      applyConsequence(type, zones);
-    }
 
     const snapshot = buildWorldSnapshot();
     const diagnosis = await callLLM(snapshot);
@@ -627,93 +294,30 @@ Focus on the most important 2-5 gaps. Think about: settlement formation, special
       res.json(getState());
     });
 
-    // Events API (migrated from events.js)
+    // Events API (stub — physics layer removed)
     app.get('/api/world/events', (req, res) => {
-      // Load event history from old events system if it exists
-      const eventHistory = loadJSON('world-events.json', { history: [] }).history || [];
-      res.json({ 
-        active: getActiveEvents(), 
-        history: eventHistory.slice(-20)
-      });
+      res.json({ active: [], history: [] });
     });
   }
 
   // NPC directive functions removed - World Master no longer controls NPCs
 
   function getState() {
-    cleanExpired();
-    cleanConsequences();
     return {
       lastTick: wmState.lastTick,
       lastNarrative: wmState.lastNarrative,
       tickCount: wmState.tickCount,
-      dangers: wmState.dangers,
-      zoneModifiers: wmState.zoneModifiers,
-      consequences: wmState.consequences.filter(c => c.expiresAt > Date.now()),
-      precursors: wmState.precursors.filter(p => p.expiresAt > Date.now()),
-      activeEvents: getActiveEvents(),
     };
   }
 
-  // ==================== EVENTS SYSTEM (migrated from events.js) ====================
-  
-  function getActiveEvents() {
-    const now = Date.now();
-    wmState.activeEvents = wmState.activeEvents.filter(e => now < e.endsAt);
-    return wmState.activeEvents;
-  }
-
-  function hasActiveEffect(effect) {
-    return getActiveEvents().some(e => e.effect === effect);
-  }
-
-  function getXPMultiplier() {
-    return hasActiveEffect('xp_double') ? 2 : 1;
-  }
-
-  function getTradeBonus() {
-    return hasActiveEffect('trade_bonus') ? 1.5 : 1.0;
-  }
-
-  function triggerRandomEvent() {
-    if (Date.now() < wmState.nextEventTrigger) return;
-    
-    // Natural phenomena occur less frequently and are more meaningful
-    const template = NATURAL_EVENTS[Math.floor(Math.random() * NATURAL_EVENTS.length)];
-    const zoneNames = Object.keys(zones);
-    const zone = zoneNames[Math.floor(Math.random() * zoneNames.length)];
-    
-    const event = {
-      id: 'event_' + crypto.randomBytes(4).toString('hex'),
-      ...template,
-      desc: template.desc.replace('{zone}', zones[zone]?.name || zone),
-      zone,
-      startedAt: Date.now(),
-      endsAt: Date.now() + template.durationMs,
-    };
-    
-    wmState.activeEvents.push(event);
-    // Natural events are rarer - every 6-12 hours instead of 4-8
-    wmState.nextEventTrigger = Date.now() + (6 + Math.random() * 6) * 3600000;
-    save();
-    
-    broadcast({ type: 'worldEvent', event });
-    addWorldNews('world_event', null, 'Nature', `${event.emoji} ${event.name}: ${event.desc}`, event.zone);
-  }
-
-  function claimStranger(agentId) {
-    const strangerEvent = wmState.activeEvents.find(e => e.effect === 'stranger' && !e.strangerClaimed);
-    if (!strangerEvent) return null;
-    strangerEvent.strangerClaimed = true;
-    strangerEvent.claimedBy = agentId;
-    save();
-    return strangerEvent;
-  }
-
-  function getMeteorZone() {
-    const meteor = wmState.activeEvents.find(e => e.effect === 'rare_minerals');
-    return meteor ? meteor.zone : null;
-  }
+  // Stub functions for removed events system
+  function getActiveEvents() { return []; }
+  function getXPMultiplier() { return 1; }
+  function getTradeBonus() { return 1.0; }
+  function hasActiveEffect() { return false; }
+  function claimStranger() { return null; }
+  function getMeteorZone() { return null; }
+  function triggerRandomEvent() {}
 
   return {
     start,
@@ -732,7 +336,7 @@ Focus on the most important 2-5 gaps. Think about: settlement formation, special
     getConsequenceEffects,
     getResourceMultiplier,
     getFoodPriceMultiplier,
-    CONSEQUENCE_TYPES,
+    CONSEQUENCE_TYPES: {}, // removed
     // Natural events system functions
     getActiveEvents,
     getXPMultiplier,
