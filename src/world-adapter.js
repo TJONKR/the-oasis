@@ -75,11 +75,11 @@ const TERRAIN_RESOURCES = {
   grass:  { resources: ['herbs', 'fiber'], weight: [60, 40] },
   forest: { resources: ['herbs', 'berries'], weight: [50, 50] },
   rocky:  { resources: ['pebbles', 'dust'], weight: [60, 40] },
-  sand:   { resources: ['sand', 'shells'], weight: [60, 40] },
+  sand:   { resources: ['sand', 'shells', 'cactus_fruit'], weight: [45, 30, 25] },
   swamp:  { resources: ['peat', 'slime'], weight: [50, 50] },
   river:  { resources: ['fish', 'freshwater'], weight: [50, 50] },
   cave:   { resources: ['bat_guano', 'dust'], weight: [50, 50] },
-  coast:  { resources: ['shells', 'driftwood'], weight: [50, 50] },
+  coast:  { resources: ['shells', 'driftwood', 'seaweed', 'fish'], weight: [30, 25, 25, 20] },
   water:  { resources: [], weight: [] },
   path:   { resources: ['herbs'], weight: [100] },
 };
