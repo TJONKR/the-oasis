@@ -734,14 +734,6 @@
     ],
     "adece4fb-fe63-4326-9e8b-77bb35d53dc1": [
       {
-        "type": "hazard",
-        "effects": [
-          "Lost 5 energy (now 48)"
-        ],
-        "survived": true,
-        "timestamp": 1772408353735
-      },
-      {
         "type": "creature",
         "effects": [
           "Lost 26 energy (now 17.5)"
@@ -812,6 +804,14 @@
         ],
         "survived": true,
         "timestamp": 1772434709805
+      },
+      {
+        "type": "weather_hazard",
+        "effects": [
+          "Lost 14 energy (now 5.099999999999611)"
+        ],
+        "survived": true,
+        "timestamp": 1772439489361
       }
     ],
     "582115a5-7236-46c9-93cc-d3f4abadd5f8": [
