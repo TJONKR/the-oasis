@@ -63,7 +63,9 @@ export function initInnerMonologue(shared) {
       return `${i.name}${notable.length ? ' ['+notable.join(',')+']' : ''}`;
     });
     
-    const recentMemories = (mind?.memory || []).slice(-5).map(m => m.event || m);
+    const rawMemory = mind?.memory;
+    const memoryArr = Array.isArray(rawMemory) ? rawMemory : (rawMemory?.short || []);
+    const recentMemories = memoryArr.slice(-5).map(m => m.text || m.event || m);
     
     const traumaStr = psych.trauma.length > 0 
       ? `Traumatic memories: ${psych.trauma.map(t => t.event).join('; ')}` : '';

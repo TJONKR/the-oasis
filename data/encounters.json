@@ -736,14 +736,6 @@
       {
         "type": "creature",
         "effects": [
-          "Lost 26 energy (now 17.5)"
-        ],
-        "survived": true,
-        "timestamp": 1772409622799
-      },
-      {
-        "type": "creature",
-        "effects": [
           "Lost 21 energy (now 30.5)"
         ],
         "survived": true,
@@ -812,6 +804,14 @@
         ],
         "survived": true,
         "timestamp": 1772439489361
+      },
+      {
+        "type": "terrain_danger",
+        "effects": [
+          "Lost 19 energy (now 0)"
+        ],
+        "survived": false,
+        "timestamp": 1772443276070
       }
     ],
     "582115a5-7236-46c9-93cc-d3f4abadd5f8": [
