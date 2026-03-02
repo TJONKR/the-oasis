@@ -109,7 +109,8 @@ function isFoodResource(name) {
   const n = (name || '').toLowerCase();
   return n.includes('berr') || n.includes('fish') || n.includes('mushroom') || n.includes('herb') || 
          n.includes('fruit') || n.includes('nut') || n.includes('coconut') || n.includes('acorn') || 
-         n.includes('seaweed') || n.includes('freshwater') || n.includes('raw_meat') || n.includes('meat');
+         n.includes('seaweed') || n.includes('freshwater') || n.includes('raw_meat') || n.includes('meat') ||
+         n.includes('cactus_fruit');
 }
 
 function hasFood(agent) {
@@ -927,6 +928,11 @@ export function initAgentIntelligence(shared) {
     if (shared.proficiency) shared.proficiency.onAction(agent.id, 'gather', { zone: agent.zone });
     if (shared.knowledgeSystem) shared.knowledgeSystem.trackZoneAction(agent.id, agent.name, agent.zone, 'gather');
 
+    // Ecosystem: record extraction pressure on the biome
+    if (shared.ecosystem) {
+      shared.ecosystem.onGather(agent.zone, resource);
+    }
+
     // Needs: deplete tile + record action
     if (shared.needsSystem) {
       shared.needsSystem.depleteTile(gx, gy);
@@ -1024,6 +1030,10 @@ export function initAgentIntelligence(shared) {
     }
 
     if (shared.proficiency) shared.proficiency.onAction(agent.id, 'chat', { zone: agent.zone });
+    // Record relationship interaction (both directions)
+    if (shared.relSystem) {
+      shared.relSystem.recordChat(agent.id, other.id);
+    }
     addMemoryEvent(mind, `Chatted with ${other.name}`);
     addWorldNews('chat', agent.id, agent.name, `${agent.name} and ${other.name} had a conversation`, agent.zone);
     // Strengthen psychological bond
