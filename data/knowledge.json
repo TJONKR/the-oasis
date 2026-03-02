@@ -256,7 +256,7 @@
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 2
+        "explore": 5
       },
       "coast": {
         "gather": 2,
@@ -450,7 +450,7 @@
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 29
+        "explore": 32
       },
       "coast": {
         "gather": 2219,
@@ -1037,7 +1037,8 @@
         "Signals are strongest during storms along the coast",
         "The coast receives driftwood from other worlds",
         "A frequency exists that can communicate with the World Master"
-      ]
+      ],
+      "grass": []
     },
     "lore_fragments": [
       "Signals from the Tower once reached a place called \"The Outside.\"",
@@ -1068,6 +1069,20 @@
         "visit": 0,
         "craft": 0,
         "trade": 0
+      },
+      "grass": {
+        "gather": 0,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 231
+      },
+      "river": {
+        "gather": 0,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 1
       }
     },
     "mastery": {},
@@ -1079,7 +1094,8 @@
         "Signals are strongest during storms along the coast",
         "The coast receives driftwood from other worlds",
         "A frequency exists that can communicate with the World Master"
-      ]
+      ],
+      "grass": []
     },
     "lore_fragments": [
       "Before zones had names, agents wandered a formless void of possibility.",
@@ -1110,6 +1126,20 @@
         "visit": 0,
         "craft": 0,
         "trade": 0
+      },
+      "grass": {
+        "gather": 0,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 15
+      },
+      "river": {
+        "gather": 0,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 1
       }
     },
     "mastery": {},
@@ -1120,7 +1150,8 @@
       "coast": [
         "Signals are strongest during storms along the coast",
         "The coast receives driftwood from other worlds"
-      ]
+      ],
+      "grass": []
     },
     "lore_fragments": [
       "Signals from the Tower once reached a place called \"The Outside.\"",
@@ -1151,6 +1182,20 @@
         "visit": 0,
         "craft": 0,
         "trade": 0
+      },
+      "grass": {
+        "gather": 0,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 4
+      },
+      "river": {
+        "gather": 0,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 2
       }
     },
     "mastery": {},
@@ -1194,7 +1239,7 @@
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 309
+        "explore": 312
       },
       "coast": {
         "gather": 0,
@@ -1202,6 +1247,13 @@
         "craft": 0,
         "trade": 0,
         "explore": 3
+      },
+      "river": {
+        "gather": 0,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 1
       }
     },
     "mastery": {},
@@ -1286,7 +1338,15 @@
         "gather": 163,
         "visit": 0,
         "craft": 0,
-        "trade": 0
+        "trade": 0,
+        "explore": 7
+      },
+      "river": {
+        "gather": 0,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 3
       }
     },
     "mastery": {},
@@ -1400,7 +1460,8 @@
         "Signals are strongest during storms along the coast",
         "The coast receives driftwood from other worlds",
         "A frequency exists that can communicate with the World Master"
-      ]
+      ],
+      "grass": []
     },
     "lore_fragments": [
       "Some say the fog hides a ninth zone, visible only to the wise.",
@@ -1437,6 +1498,20 @@
         "visit": 0,
         "craft": 0,
         "trade": 0
+      },
+      "grass": {
+        "gather": 0,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 16
+      },
+      "river": {
+        "gather": 0,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 1
       }
     },
     "mastery": {},
@@ -1549,7 +1624,15 @@
         "gather": 24587,
         "visit": 0,
         "craft": 0,
-        "trade": 0
+        "trade": 0,
+        "explore": 1
+      },
+      "river": {
+        "gather": 0,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 2
       }
     },
     "mastery": {},

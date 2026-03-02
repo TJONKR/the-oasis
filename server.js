@@ -233,7 +233,10 @@ const relSystem = initRelationships({ loadJSON, saveJSON, agents, agentStore, br
 const npcSocial = initNPCSocial({ ...shared, relationships: relSystem, reputation: repSystem });
 const experiments = initExperiments(shared);
 shared.experiments = experiments;
+shared.relSystem = relSystem;
 shared.npcSocial = npcSocial;
+// Give npc-social access to shared systems
+npcSocial.setShared(shared);
 const survivalSystem = initSurvival(shared);
 const decaySystem = initDecay(shared);
 const knowledgeSystem = initKnowledge({ ...shared, relationships: relSystem });
@@ -508,6 +511,9 @@ function simulationTick() {
 
   // 3f. Needs system world tick (tile depletion recovery)
   needsSystem.tick();
+
+  // 3g. Relationship decay (every 100 ticks ~ 50 seconds)
+  if (relSystem.tickDecay) relSystem.tickDecay(tick);
 
   // 3e. Inner monologue — LLM-driven agent thoughts (async, non-blocking)
   innerMonologue.tick(tick).catch(err => console.error('[inner-monologue]', err.message));

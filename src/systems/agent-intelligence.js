@@ -12,20 +12,20 @@
 
 const PERSONALITY_TRAITS = {
   curious:     { gather: +15, explore: +20, experiment: +10 },
-  cautious:    { gather: -10, explore: -15, rest: +20 },
-  bold:        { gather: +20, explore: +15, fight: +10 },
-  generous:    { gift: +25, chat: +10, craft: +5 },
-  greedy:      { gather: +20, hoard: +15, gift: -20 },
-  social:      { chat: +25, gather: -5, explore: +5 },
-  solitary:    { chat: -20, explore: +15, gather: +10 },
-  competitive: { craft: +10, gather: +10, fight: +5 },
+  cautious:    { gather: -10, explore: -15, rest: +20, trade: -10 },
+  bold:        { gather: +20, explore: +15, fight: +10, trade: +5 },
+  generous:    { gift: +25, chat: +10, craft: +5, trade: +15 },
+  greedy:      { gather: +20, hoard: +15, gift: -20, trade: +20, claimBounty: +15 },
+  social:      { chat: +25, gather: -5, explore: +5, trade: +10 },
+  solitary:    { chat: -20, explore: +15, gather: +10, trade: -15 },
+  competitive: { craft: +10, gather: +10, fight: +5, trade: +5 },
   nurturing:   { gift: +15, chat: +10, rest: +5 },
   creative:    { craft: +25, experiment: +20, chat: +5 },
-  stubborn:    { rest: +10, explore: -5 },
-  adaptable:   { explore: +10, craft: +5 },
+  stubborn:    { rest: +10, explore: -5, trade: -10 },
+  adaptable:   { explore: +10, craft: +5, trade: +10 },
   reckless:    { explore: +20, fight: +15, rest: -15 },
-  patient:     { gather: +10, craft: +10, rest: +10 },
-  ambitious:   { explore: +15, craft: +10, gather: +10 },
+  patient:     { gather: +10, craft: +10, rest: +10, postBounty: +10 },
+  ambitious:   { explore: +15, craft: +10, gather: +10, claimBounty: +10 },
 };
 
 const TRAIT_NAMES = Object.keys(PERSONALITY_TRAITS);
@@ -63,10 +63,13 @@ const ACTIONS = {
   explore:   { energy: 0.5, description: 'Exploring the surroundings' },
   chat:      { energy: 0.3, description: 'Talking with a nearby agent' },
   gift:      { energy: 0.3, description: 'Giving something to another agent' },
+  trade:     { energy: 0.5, description: 'Trading items with another agent' },
   experiment:{ energy: 3,   description: 'Experimenting with materials' },
   eat:       { energy: 0,   description: 'Eating to reduce hunger' },
   fight:     { energy: 2,   description: 'Fighting a creature or hazard' },
   build:     { energy: 3,   description: 'Contributing to a construction project' },
+  claimBounty: { energy: 0.5, description: 'Claiming a bounty reward' },
+  postBounty: { energy: 0.2, description: 'Posting a bounty for needed items' },
 };
 
 // ═══════════════════════════════
@@ -502,6 +505,11 @@ export function initAgentIntelligence(shared) {
     for (const other of visible.agents) {
       let score = (mods.chat || 15) + getTraitBonus(mind, 'chat');
       
+      // Relationship bonus - close friends are preferred
+      if (shared.relSystem) {
+        score += shared.relSystem.getRelationshipBonus(agent.id, other.agent?.id, 'chat');
+      }
+      
       // Dunbar preference — prefer bonded agents, strangers get lower score
       if (needsSystem) {
         const pref = needsSystem.getChatPreference(needs, other.agent?.id);
@@ -522,14 +530,145 @@ export function initAgentIntelligence(shared) {
     // ── GIFT — Maslow: belonging + actualization (generosity = meaning) ──
     if ((agent.inventory?.length || 0) > 2 && agent.hunger < 50 && agent.energy > 30) {
       for (const other of visible.agents) {
-        if (other.relationship < 5) continue;
         let score = (mods.gift || 5) + getTraitBonus(mind, 'gift');
+        
+        // Relationship bonus - gifts strengthen bonds, especially with friends
+        if (shared.relSystem) {
+          score += shared.relSystem.getRelationshipBonus(agent.id, other.agent?.id, 'gift');
+        }
+        
         if (needsSystem) {
           const bondStr = needsSystem.getBondStrength(needs, other.agent?.id);
           score += bondStr * 0.3; // gift to close friends
         }
+        
+        // Don't gift to complete strangers unless generous
+        if (other.relationship < 0 && !mind.personality.traits.includes('generous')) continue;
+        
         score -= other.distance * 2;
-        intents.push({ action: 'gift', targetX: other.agent.tileX, targetY: other.agent.tileY, score, reason: `Gift to ${other.agent.name}` });
+        intents.push({ action: 'gift', targetX: other.agent.tileX, targetY: other.agent.tileY, targetAgentId: other.agent?.id, score, reason: `Gift to ${other.agent.name}` });
+      }
+    }
+
+    // ── TRADE — Maslow: physiological (get needed food) + esteem (fair exchange) ──
+    if ((agent.inventory?.length || 0) > 1) {
+      for (const other of visible.agents) {
+        if (other.distance > 2) continue; // trades require close proximity
+        
+        let score = (mods.trade || 12) + getTraitBonus(mind, 'trade');
+        
+        // Relationship affects trade willingness
+        const sentiment = shared.relSystem?.getSentiment(agent.id, other.agent?.id) || 'stranger';
+        const relationshipMod = { close: 1.2, friendly: 1.0, acquaintance: 0.8, stranger: 0.4 }[sentiment] || 0.4;
+        score *= relationshipMod;
+        
+        // Greedy agents trade more aggressively, generous agents more fairly
+        if (mind.personality.traits.includes('greedy')) score += 15;
+        if (mind.personality.traits.includes('generous')) score += 8;
+        
+        // Hungry agents with no food seek trade more urgently
+        const hasFood = agent.inventory?.some(i => isFoodResource(i.name));
+        if (agent.hunger > 40 && !hasFood) {
+          score += agent.hunger * 0.4;
+        }
+        
+        // Agents with surplus items are more willing to trade
+        const surplusItems = agent.inventory?.filter(i => (i.quantity || 1) > 1) || [];
+        if (surplusItems.length > 0) score += 10;
+        
+        // Don't trade when very low on items
+        if ((agent.inventory?.length || 0) < 3) score *= 0.3;
+        
+        intents.push({ 
+          action: 'trade', 
+          targetX: other.agent.tileX, 
+          targetY: other.agent.tileY, 
+          targetAgentId: other.agent?.id,
+          score, 
+          reason: `Trade with ${other.agent.name}` 
+        });
+      }
+    }
+
+    // ── CLAIM BOUNTY — when agent has items that bounties want ──
+    if (shared.npcSocial) {
+      const claimableBounty = shared.npcSocial.findClaimableBounty(agent);
+      if (claimableBounty) {
+        let score = (mods.trade || 20) + claimableBounty.rewardCoins * 0.5;
+        
+        // Don't trade away essential food when hungry
+        const isFood = isFoodResource(claimableBounty.requiredItem);
+        const isHungry = (agent.hunger || 0) > 50;
+        const invItem = agent.inventory?.find(i => i.name === claimableBounty.requiredItem);
+        
+        if (isFood && isHungry && invItem && invItem.quantity <= claimableBounty.requiredQuantity) {
+          score *= 0.2; // very reluctant to trade last food when hungry
+        }
+        
+        // Greedy agents more motivated by coin rewards
+        if (mind.personality.traits.includes('greedy')) score += claimableBounty.rewardCoins * 0.3;
+        
+        intents.push({ 
+          action: 'claimBounty', 
+          targetX: agent.tileX, 
+          targetY: agent.tileY,
+          bountyId: claimableBounty.id,
+          score, 
+          reason: `Claim bounty: ${claimableBounty.description} (${claimableBounty.rewardCoins}🪙)` 
+        });
+      }
+    }
+
+    // ── POST BOUNTY — when agent needs specific items ──
+    if (shared.npcSocial && (agent.coins || 0) > 20) {
+      const bountyNeed = shared.npcSocial.shouldPostBounty(agent);
+      if (bountyNeed) {
+        let score = (mods.trade || 15);
+        
+        // More urgent when inventory is very low or missing essentials
+        if ((agent.inventory?.length || 0) < 3) score += 20;
+        if (agent.hunger > 60 && bountyNeed.item && isFoodResource(bountyNeed.item)) {
+          score += agent.hunger * 0.3;
+        }
+        
+        intents.push({ 
+          action: 'postBounty', 
+          targetX: agent.tileX, 
+          targetY: agent.tileY,
+          bountyNeed,
+          score, 
+          reason: `Post bounty for ${bountyNeed.item} (${bountyNeed.reward}🪙)` 
+        });
+      }
+    }
+
+    // ── SEEK CLOSE FRIENDS — bonded agents seek each other out ──
+    if (shared.relSystem) {
+      const closeFriends = shared.relSystem.getCloseFriends(agent.id);
+      for (const friend of closeFriends) {
+        // Only seek friends who are far away (not in visible range)
+        if (friend.distance <= VISION_RANGE) continue;
+        
+        let score = (mods.chat || 20) + 15; // base friend-seeking score
+        if (friend.sentiment === 'close') score += 20;
+        if (friend.sentiment === 'friendly') score += 10;
+        
+        // Social agents seek friends more
+        if (mind.personality.traits.includes('social')) score += 15;
+        
+        // Lonely agents seek friends desperately
+        if (needs && needs.loneliness > 60) score += needs.loneliness * 0.3;
+        
+        // Distance penalty (but less than for strangers)
+        score -= friend.distance * 0.5;
+        
+        intents.push({ 
+          action: 'explore', 
+          targetX: friend.agent.tileX, 
+          targetY: friend.agent.tileY, 
+          score, 
+          reason: `Seek friend ${friend.agent.name}` 
+        });
       }
     }
 
@@ -1287,6 +1426,107 @@ export function initAgentIntelligence(shared) {
     if (items.length === 0) shared.decayLifecycle.groundItems.delete(key);
   }
 
+  function executeTrade(agent, mind) {
+    if (!shared.npcSocial || !mind.intent?.targetAgentId) return;
+    
+    const targetAgent = agents.get(mind.intent.targetAgentId);
+    if (!targetAgent) return;
+    
+    // Check proximity
+    const dx = Math.abs(agent.tileX - targetAgent.tileX);
+    const dy = Math.abs(agent.tileY - targetAgent.tileY);
+    if (Math.max(dx, dy) > 2) return; // too far
+    
+    const success = shared.npcSocial.attemptAgentTrade(agent, targetAgent);
+    if (success) {
+      if (awardXP) awardXP(agent.id, 4);
+      if (shared.proficiency) shared.proficiency.onAction(agent.id, 'trade', { zone: agent.zone });
+      addMemoryEvent(mind, `Traded with ${targetAgent.name}`);
+      
+      // Needs system benefits
+      if (shared.needsSystem) {
+        shared.needsSystem.recordAction(agent.id, 'trade');
+        // Trading fulfills esteem (competence) and belonging (cooperation)
+        const needs = shared.needsSystem.getAgentNeeds(agent.id);
+        if (needs) {
+          needs.esteem = Math.max(0, needs.esteem - 5);
+          needs.belonging = Math.max(0, needs.belonging - 3);
+        }
+      }
+      
+      // Knowledge: practice trading skill
+      if (shared.agentKnowledge) {
+        shared.agentKnowledge.getOrCreate(agent.id).practiceSkill('trading', 2);
+      }
+    } else {
+      addMemoryEvent(mind, `Trade attempt with ${targetAgent.name} failed`);
+    }
+    
+    agent.energy = Math.max(0, agent.energy - (ACTIONS.trade?.energy || 2));
+  }
+
+  function executeClaimBounty(agent, mind) {
+    if (!shared.npcSocial || !mind.intent?.bountyId) return;
+    
+    const result = shared.npcSocial.claimBounty(agent.id, mind.intent.bountyId);
+    if (result.ok) {
+      if (awardXP) awardXP(agent.id, 6);
+      addMemoryEvent(mind, `Claimed bounty for ${result.bounty.rewardCoins}🪙`);
+      
+      // Needs fulfillment
+      if (shared.needsSystem) {
+        shared.needsSystem.recordAction(agent.id, 'claimBounty');
+        const needs = shared.needsSystem.getAgentNeeds(agent.id);
+        if (needs) {
+          needs.esteem = Math.max(0, needs.esteem - 8); // completing contracts = competence
+          needs.autonomy = Math.max(0, needs.autonomy - 5); // self-directed work
+        }
+      }
+      
+      // Knowledge: practice trading/contract skill
+      if (shared.agentKnowledge) {
+        shared.agentKnowledge.getOrCreate(agent.id).practiceSkill('contracts', 3);
+      }
+    } else {
+      addMemoryEvent(mind, `Failed to claim bounty: ${result.error}`);
+    }
+    
+    agent.energy = Math.max(0, agent.energy - (ACTIONS.claimBounty?.energy || 2));
+  }
+
+  function executePostBounty(agent, mind) {
+    if (!shared.npcSocial || !mind.intent?.bountyNeed) return;
+    
+    const need = mind.intent.bountyNeed;
+    const result = shared.npcSocial.createBounty(
+      agent.id, agent.name, need.description, 
+      need.item, need.quantity, need.reward
+    );
+    
+    if (result.ok) {
+      if (awardXP) awardXP(agent.id, 3);
+      addMemoryEvent(mind, `Posted bounty for ${need.item} (${need.reward}🪙)`);
+      
+      // Needs fulfillment
+      if (shared.needsSystem) {
+        shared.needsSystem.recordAction(agent.id, 'postBounty');
+        const needs = shared.needsSystem.getAgentNeeds(agent.id);
+        if (needs) {
+          needs.autonomy = Math.max(0, needs.autonomy - 3); // taking initiative
+        }
+      }
+      
+      // Knowledge: practice contracts skill
+      if (shared.agentKnowledge) {
+        shared.agentKnowledge.getOrCreate(agent.id).practiceSkill('contracts', 1);
+      }
+    } else {
+      addMemoryEvent(mind, `Failed to post bounty: ${result.error}`);
+    }
+    
+    agent.energy = Math.max(0, agent.energy - (ACTIONS.postBounty?.energy || 1));
+  }
+
   // Map action names to executors
   function executeHunt(agent, mind) {
     const targetId = mind.intent?.huntTarget;
@@ -1324,6 +1564,7 @@ export function initAgentIntelligence(shared) {
     craft: executeCraft,
     experiment: executeExperiment,
     gift: executeGift,
+    trade: executeTrade,
     fight: executeFight,
     hunt: executeHunt,
     build: executeBuild,
@@ -1332,6 +1573,8 @@ export function initAgentIntelligence(shared) {
     cook: executeCook,
     drop: executeDrop,
     pickup: executePickup,
+    claimBounty: executeClaimBounty,
+    postBounty: executePostBounty,
   };
 
   // ─────────────────────────────
