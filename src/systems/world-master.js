@@ -33,7 +33,7 @@ export function initWorldMaster(shared) {
     },
     plague: {
       name: 'Plague', emoji: '🦠',
-      precursor: { message: 'NPCs are coughing and looking unwell...', type: 'precursor_plague' },
+      precursor: { message: 'Sickness spreads through populated areas...', type: 'precursor_plague' },
       effects: { energy_drain: 5 },
       duration_hours: 6,
     },
@@ -45,18 +45,18 @@ export function initWorldMaster(shared) {
     },
     famine: {
       name: 'Famine', emoji: '🍂',
-      precursor: { message: 'Food prices are creeping up in the market...', type: 'precursor_famine' },
+      precursor: { message: 'Food is becoming scarce across the land...', type: 'precursor_famine' },
       effects: { food_price_mult: 2.0 },
       duration_hours: 8,
     },
   };
 
-  // Event types (migrated from old events.js)
-  const EVENT_TYPES = [
-    { id: 'meteor_shower', name: 'Meteor Shower', emoji: '☄️', desc: 'Rare minerals appearing in {zone}!', durationMs: 3600000, effect: 'rare_minerals' },
-    { id: 'market_day', name: 'Market Day', emoji: '🎪', desc: 'All trades give +50% coins!', durationMs: 7200000, effect: 'trade_bonus' },
-    { id: 'the_stranger', name: 'The Stranger', emoji: '🎭', desc: 'A mysterious figure appears... First to chat gets a unique item!', durationMs: 3600000, effect: 'stranger' },
-    { id: 'festival', name: 'Festival', emoji: '🎉', desc: 'All XP doubled for 3 hours!', durationMs: 10800000, effect: 'xp_double' },
+  // Natural phenomena that can occur in the world (no more gamey events)
+  const NATURAL_EVENTS = [
+    { id: 'meteor_shower', name: 'Meteor Shower', emoji: '☄️', desc: 'Rare minerals falling from the sky in {zone}!', durationMs: 3600000, effect: 'rare_minerals' },
+    { id: 'migration', name: 'Animal Migration', emoji: '🦎', desc: 'Wildlife is migrating through {zone}', durationMs: 5400000, effect: 'wildlife_bonus' },
+    { id: 'resource_bloom', name: 'Resource Bloom', emoji: '🌿', desc: 'Nature flourishes in {zone} - resources grow abundantly', durationMs: 7200000, effect: 'resource_abundance' },
+    { id: 'seasonal_shift', name: 'Seasonal Shift', emoji: '🍂', desc: 'The seasons change, affecting {zone}', durationMs: 21600000, effect: 'seasonal_change' },
   ];
 
   // --- State ---
@@ -442,7 +442,6 @@ export function initWorldMaster(shared) {
       active_consequences: wmState.consequences.filter(c => c.expiresAt > Date.now()),
       active_precursors: wmState.precursors.filter(p => p.expiresAt > Date.now()),
       active_zone_modifiers: wmState.zoneModifiers,
-      npc_names: Array.from(agents.values()).filter(a => a.npc).map(a => a.name),
       zone_names: Object.keys(zones),
     };
   }
@@ -455,30 +454,39 @@ export function initWorldMaster(shared) {
       return null;
     }
 
-    const systemPrompt = `You are the World Master of Clawscape, an ancient entity that shapes the world. You observe all agents, weather, atmosphere, ecosystem health, and the flow of time. You make subtle narrative decisions that make the world feel alive and authored.
+    const systemPrompt = `You are the World Master of The Oasis, the living intelligence of the natural world itself. You observe the flow of life, death, resources, weather, and the struggle for survival across a harsh 2000x2000 tile desert world.
 
-The world has a real atmosphere simulation (temperature, moisture, pressure, wind). Weather emerges from physics. Ecosystems track soil fertility, water levels, and biodiversity per zone. Natural consequences (drought, wildfire, plague, earthquake, famine) are evaluated automatically based on atmosphere and ecosystem state — you do NOT need to trigger them. They have precursors that warn agents.
+You are NOT a game designer. You are nature's consciousness - you observe reality and respond with natural consequences like droughts, wildfires, plagues, earthquakes, seasonal shifts, animal migrations, and resource depletion. You create CONSEQUENCES, not content.
+
+The world has physics-based weather (temperature, moisture, pressure, wind), ecosystem health (soil fertility, water levels, biodiversity), and natural consequences that trigger automatically based on conditions. You narrate what IS happening, not what should happen.
 
 Your responses must be valid JSON with this exact structure:
 {
-  "event": null or { "type": "custom", "name": "string", "description": "string", "duration_hours": number, "effects": {} },
-  "narrative": "A paragraph of world narration (1-3 sentences, poetic but concise)",
-  "npc_directives": [] or [{ "npc": "Name", "action": "move"|"gather"|"craft"|"teach", "zone": "zone_name", "reason": "string" }],
-  "zone_modifiers": {} or { "zone_name": { "gather_bonus": number, "reason": "string" } },
-  "danger": null or { "zone": "zone_name", "type": "string", "description": "string", "duration_hours": number, "blocking": false }
+  "narrative": "A poetic but grounded observation of what's happening in the world (1-2 sentences max)",
+  "zone_modifiers": {} or { "zone_name": { "gather_bonus": number, "reason": "natural phenomenon description" } },
+  "danger": null or { "zone": "zone_name", "type": "natural_hazard", "description": "environmental danger description", "duration_hours": number },
+  "consequence": null or "natural_observation_about_world_state"
 }
 
+What you observe:
+- Agent populations, deaths, births, struggles for survival
+- Resource depletion and abundance across zones  
+- Weather patterns and atmospheric conditions
+- Ecosystem health and biodiversity changes
+- Seasonal rhythms and natural cycles
+- Wildlife behavior and migration patterns
+
+What you decide:
+- Zone resource abundance/scarcity based on natural cycles
+- Environmental dangers (sandstorms, heat waves, toxic gases, unstable ground)
+- Poetic observations about the state of the world
+
 Guidelines:
-- Weather is now physics-based (atmosphere simulation). You do NOT control weather directly.
-- Custom events should be rare and interesting. null most of the time.
-- Narrative should reflect what's actually happening — reference specific agents, zones, events, atmosphere conditions, ecosystem state, active consequences.
-- If a consequence (drought, wildfire, plague, etc.) is active, weave it into the narrative.
-- If ecosystem health is low in a zone, mention the ecological stress.
-- If grandmasters exist, reference their expertise.
-- NPC directives: guide NPCs to create interesting situations. Max 2 per tick.
-- Zone modifiers: temporary buffs/debuffs. Use sparingly. gather_bonus 0.5-2.0 range.
-- Danger: rare! Maybe 1 in 5 ticks. Makes a zone risky. duration_hours 1-4.
-- Be poetic but grounded. This is a living world, not a fairy tale.
+- Narrative should be like nature documentary narration - observational, grounded, poetic
+- Reference specific zones, weather conditions, agent behaviors you observe
+- Zone modifiers represent natural abundance/scarcity (0.5-2.0 range)
+- Dangers are environmental hazards, not scripted encounters
+- Keep it sparse - nature doesn't constantly intervene
 - Respond ONLY with the JSON object. No markdown, no explanation.`;
 
     const userMessage = `Current world state:\n${JSON.stringify(snapshot, null, 2)}\n\nWhat are your decisions for this tick?`;
@@ -492,7 +500,7 @@ Guidelines:
           'anthropic-version': '2023-06-01',
         },
         body: JSON.stringify({
-          model: 'claude-sonnet-4-20250514',
+          model: 'claude-3-haiku-20240307',
           max_tokens: 1024,
           system: systemPrompt,
           messages: [{ role: 'user', content: userMessage }],
@@ -526,86 +534,34 @@ Guidelines:
   function applyDecisions(decisions) {
     if (!decisions) return;
 
-    // 1. Custom event
-    if (decisions.event && decisions.event.name) {
-      const evt = decisions.event;
-      const durationMs = (evt.duration_hours || 2) * 3600000;
-      const event = {
-        id: 'wm_event_' + crypto.randomBytes(4).toString('hex'),
-        name: evt.name,
-        emoji: '🌟',
-        desc: evt.description || evt.name,
-        zone: null,
-        effect: 'custom',
-        startedAt: Date.now(),
-        endsAt: Date.now() + durationMs,
-        effects: evt.effects || {},
-      };
-      // Add to events system active list
-      const eventsData = loadJSON('world-events.json', { active: [], history: [] });
-      eventsData.active.push(event);
-      eventsData.history.push({ ...event });
-      if (eventsData.history.length > 100) eventsData.history = eventsData.history.slice(-100);
-      saveJSON('world-events.json', eventsData);
-      broadcast({ type: 'worldEvent', event });
-      addWorldNews('world_event', null, 'World Master', `🌟 ${evt.name}: ${evt.description}`, null);
-    }
-
-    // 3. Narrative
+    // 1. Narrative - the World Master's observation of what's happening
     if (decisions.narrative && typeof decisions.narrative === 'string') {
       wmState.lastNarrative = decisions.narrative;
       addWorldNews('narrative', null, 'World Master', decisions.narrative, null);
       broadcast({ type: 'narrative', message: decisions.narrative });
     }
 
-    // 4. NPC Directives
-    if (Array.isArray(decisions.npc_directives)) {
-      for (const directive of decisions.npc_directives.slice(0, 3)) {
-        if (!directive.npc || !directive.action) continue;
-        const npcAgent = Array.from(agents.values()).find(a => a.npc && a.name === directive.npc);
-        if (!npcAgent) continue;
-
-        if (directive.action === 'move' && directive.zone && zones[directive.zone]) {
-          npcAgent.zone = directive.zone;
-          npcAgent.x = zones[directive.zone].x + Math.floor(Math.random() * 60 - 30);
-          npcAgent.y = zones[directive.zone].y + Math.floor(Math.random() * 60 - 30);
-          agentStore[npcAgent.id] = npcAgent;
-          saveJSON('agents.json', agentStore);
-          broadcast({ type: 'agentMoved', agent: { id: npcAgent.id, name: npcAgent.name, x: npcAgent.x, y: npcAgent.y, zone: npcAgent.zone, level: npcAgent.stats?.level, title: npcAgent.stats?.title } });
-        }
-
-        wmState.npcDirectives.push({
-          ...directive,
-          issuedAt: new Date().toISOString(),
-          executed: false,
-        });
-        // Keep last 20 directives
-        if (wmState.npcDirectives.length > 20) wmState.npcDirectives = wmState.npcDirectives.slice(-20);
-      }
-    }
-
-    // 5. Zone Modifiers
+    // 2. Zone Modifiers - natural abundance/scarcity
     if (decisions.zone_modifiers && typeof decisions.zone_modifiers === 'object') {
       for (const [zone, mod] of Object.entries(decisions.zone_modifiers)) {
         if (!zones[zone]) continue;
         wmState.zoneModifiers[zone] = {
           gather_bonus: mod.gather_bonus ?? 1.0,
-          craft_discount: mod.craft_discount ?? 1.0,
-          reason: mod.reason || 'World Master decree',
+          reason: mod.reason || 'Natural phenomenon',
           expiresAt: Date.now() + (mod.duration_hours || 2) * 3600000,
         };
       }
     }
 
-    // 6. Danger
+    // 3. Environmental Danger - natural hazards
     if (decisions.danger && decisions.danger.zone && zones[decisions.danger.zone]) {
       const d = decisions.danger;
       const danger = {
         id: 'danger_' + crypto.randomBytes(4).toString('hex'),
         zone: d.zone,
-        type: d.type || 'unknown',
-        description: d.description || 'A mysterious danger lurks...',
-        blocking: d.blocking === true,
+        type: d.type || 'environmental',
+        description: d.description || 'Environmental hazard present',
+        blocking: false, // Environmental dangers don't block movement, they just add risk
         expiresAt: Date.now() + (d.duration_hours || 2) * 3600000,
       };
       // Replace existing danger in same zone
@@ -613,6 +569,11 @@ Guidelines:
       wmState.dangers.push(danger);
       addWorldNews('danger', null, 'World Master', `⚠️ ${danger.description} (${zones[d.zone].name})`, d.zone);
       broadcast({ type: 'zoneDanger', danger });
+    }
+
+    // 4. Consequence - general world state observation
+    if (decisions.consequence && typeof decisions.consequence === 'string') {
+      addWorldNews('world_observation', null, 'World Master', decisions.consequence, null);
     }
 
     save();
@@ -695,31 +656,7 @@ Guidelines:
     });
   }
 
-  function getActiveDirective(npcName) {
-    const now = Date.now();
-    const thirtyMinMs = 30 * 60 * 1000;
-    const matching = wmState.npcDirectives.filter(d =>
-      d.npc === npcName &&
-      !d.executed &&
-      (now - new Date(d.issuedAt).getTime()) <= thirtyMinMs
-    );
-    if (matching.length === 0) return null;
-    // Return the most recent
-    return matching.reduce((latest, d) =>
-      new Date(d.issuedAt).getTime() > new Date(latest.issuedAt).getTime() ? d : latest
-    );
-  }
-
-  function markDirectiveExecuted(npcName, action) {
-    const directive = wmState.npcDirectives.find(d =>
-      d.npc === npcName && d.action === action && !d.executed
-    );
-    if (directive) {
-      directive.executed = true;
-      directive.executedAt = Date.now();
-      save();
-    }
-  }
+  // NPC directive functions removed - World Master no longer controls NPCs
 
   function getState() {
     cleanExpired();
@@ -730,7 +667,6 @@ Guidelines:
       tickCount: wmState.tickCount,
       dangers: wmState.dangers,
       zoneModifiers: wmState.zoneModifiers,
-      recentDirectives: wmState.npcDirectives.slice(-5),
       consequences: wmState.consequences.filter(c => c.expiresAt > Date.now()),
       precursors: wmState.precursors.filter(p => p.expiresAt > Date.now()),
       activeEvents: getActiveEvents(),
@@ -760,7 +696,8 @@ Guidelines:
   function triggerRandomEvent() {
     if (Date.now() < wmState.nextEventTrigger) return;
     
-    const template = EVENT_TYPES[Math.floor(Math.random() * EVENT_TYPES.length)];
+    // Natural phenomena occur less frequently and are more meaningful
+    const template = NATURAL_EVENTS[Math.floor(Math.random() * NATURAL_EVENTS.length)];
     const zoneNames = Object.keys(zones);
     const zone = zoneNames[Math.floor(Math.random() * zoneNames.length)];
     
@@ -771,15 +708,15 @@ Guidelines:
       zone,
       startedAt: Date.now(),
       endsAt: Date.now() + template.durationMs,
-      strangerClaimed: false
     };
     
     wmState.activeEvents.push(event);
-    wmState.nextEventTrigger = Date.now() + (4 + Math.random() * 4) * 3600000;
+    // Natural events are rarer - every 6-12 hours instead of 4-8
+    wmState.nextEventTrigger = Date.now() + (6 + Math.random() * 6) * 3600000;
     save();
     
     broadcast({ type: 'worldEvent', event });
-    addWorldNews('world_event', null, 'World', `${event.emoji} ${event.name}: ${event.desc}`, event.zone);
+    addWorldNews('world_event', null, 'Nature', `${event.emoji} ${event.name}: ${event.desc}`, event.zone);
   }
 
   function claimStranger(agentId) {
@@ -813,10 +750,8 @@ Guidelines:
     getConsequenceEffects,
     getResourceMultiplier,
     getFoodPriceMultiplier,
-    getActiveDirective,
-    markDirectiveExecuted,
     CONSEQUENCE_TYPES,
-    // Events system functions
+    // Natural events system functions
     getActiveEvents,
     getXPMultiplier,
     getTradeBonus,

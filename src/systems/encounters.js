@@ -6,11 +6,11 @@
 // ---------------------------------------------------------------------------
 
 export const ENCOUNTER_TYPES = {
-  ambush:    { danger: 3, energyLoss: [10, 25], itemDamage: true,  zones: ['cave', 'rocky'] },
-  hazard:    { danger: 2, energyLoss: [5, 15],  itemDamage: false, zones: ['rocky', 'cave', 'sand'] },
-  discovery: { danger: 0, energyLoss: [0, 0],   reward: true,      zones: ['forest', 'grass', 'path'] },
-  trap:      { danger: 2, energyLoss: [8, 20],  itemDamage: true,  zones: ['cave', 'rocky', 'swamp'] },
-  creature:  { danger: 4, energyLoss: [15, 30], itemDamage: true,  zones: ['grass', 'sand', 'cave'] },
+  weather_hazard: { danger: 2, energyLoss: [5, 15],  itemDamage: false, zones: ['rocky', 'cave', 'sand', 'grass'] },
+  discovery:      { danger: 0, energyLoss: [0, 0],   reward: true,      zones: ['forest', 'grass', 'path', 'rocky'] },
+  terrain_danger: { danger: 2, energyLoss: [8, 20],  itemDamage: false, zones: ['cave', 'rocky', 'sand'] },
+  creature:       { danger: 3, energyLoss: [10, 25], itemDamage: true,  zones: ['grass', 'sand', 'cave'] },
+  toxic_gas:      { danger: 4, energyLoss: [15, 30], itemDamage: false, zones: ['cave', 'swamp'] },
 };
 
 const ZONE_BASE_PROBABILITY = {
@@ -91,13 +91,13 @@ export function initEncounters(shared) {
 
   function buildEncounterDescription(type, zone) {
     const descriptions = {
-      ambush:    `An ambush springs from the shadows of the ${zone}!`,
-      hazard:    `A hazard blocks the path in the ${zone}.`,
-      discovery: `A curious discovery is found in the ${zone}!`,
-      trap:      `A hidden trap triggers in the ${zone}!`,
-      creature:  `A wild creature appears in the ${zone}!`,
+      weather_hazard: `Harsh weather conditions strike in the ${zone}!`,
+      discovery:      `A natural discovery is found in the ${zone}!`,
+      terrain_danger: `Unstable terrain shifts in the ${zone}!`,
+      creature:       `A wild creature emerges in the ${zone}!`,
+      toxic_gas:      `Toxic fumes rise from the ground in the ${zone}!`,
     };
-    return descriptions[type] || `Something happens in the ${zone}.`;
+    return descriptions[type] || `Environmental conditions change in the ${zone}.`;
   }
 
   // -----------------------------------------------------------------------
