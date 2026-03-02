@@ -577,7 +577,29 @@
       "sharpness",
       "melt_point",
       "flammability"
-    ]
+    ],
+    "driftwood": [
+      "toxicity",
+      "volatility",
+      "melt_point",
+      "luminosity",
+      "decay_rate",
+      "fertility",
+      "ignition",
+      "hardness",
+      "organic",
+      "temperature",
+      "weight",
+      "sharpness",
+      "brittleness",
+      "resonance",
+      "energy",
+      "malleability",
+      "flammability",
+      "solubility",
+      "conductivity"
+    ],
+    "Dried driftwood": []
   },
   "100686de-5f5e-414d-beca-cc4a4af63bc2": {
     "berries": [],
@@ -1257,7 +1279,8 @@
     "Fermented herbs": [],
     "Fermented Fermented shells": [],
     "Fermented Fermented Herbal Extract": [],
-    "Fermented Fermented driftwood": []
+    "Fermented Fermented driftwood": [],
+    "Fermented shells": []
   },
   "d56be782-7d0b-48d3-b5bc-cd2f59d54c48": {
     "shells": [
@@ -2072,5 +2095,17 @@
   "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
     "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs": [],
     "Fermented herbs": []
+  },
+  "d4f48021-5404-4b66-9a41-71f09c41c8c7": {
+    "Fermented shells": [],
+    "driftwood": [
+      "luminosity",
+      "toxicity",
+      "melt_point",
+      "decay_rate",
+      "weight",
+      "hardness",
+      "malleability"
+    ]
   }
 }

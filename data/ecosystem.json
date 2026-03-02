@@ -5,7 +5,9 @@
     "biodiversity": 100,
     "extraction_pressure": 0,
     "health": 66.67,
-    "gather_history": []
+    "gather_history": [
+      "herbs"
+    ]
   },
   "forest": {
     "soil_fertility": 100,
@@ -69,7 +71,24 @@
     "biodiversity": 100,
     "extraction_pressure": 0,
     "health": 66.67,
-    "gather_history": []
+    "gather_history": [
+      "shells",
+      "seaweed",
+      "driftwood",
+      "fish",
+      "driftwood",
+      "shells",
+      "driftwood",
+      "shells",
+      "fish",
+      "seaweed",
+      "fish",
+      "driftwood",
+      "shells",
+      "shells",
+      "fish",
+      "seaweed"
+    ]
   },
   "path": {
     "soil_fertility": 100,

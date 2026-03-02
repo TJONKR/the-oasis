@@ -1660,14 +1660,17 @@ export function initAgentIntelligence(shared) {
     // 0.08/tick = 9.6/min = needs to eat ~every 5 minutes (hunger 0→50)
     // This creates real survival pressure — food is a constant need
     agent.hunger = Math.min(100, (agent.hunger || 0) + 0.08);
+    if (agent.hp === undefined) agent.hp = 100; // init once, never reset
     if (agent.hunger >= 100) {
       agent.energy = Math.max(0, agent.energy - 3);   // critical starvation
-      agent.hp = Math.max(0, (agent.hp || 100) - 0.5); // starvation kills
-    } else if (agent.hunger >= 80) {
-      agent.energy = Math.max(0, agent.energy - 1.5);  // starving drains energy faster
-      agent.hp = Math.max(0, (agent.hp || 100) - 0.1); // slow HP drain
-    } else if (agent.hunger < 30 && (agent.hp || 100) < 100) {
-      agent.hp = Math.min(100, (agent.hp || 100) + 0.05); // well-fed = slow heal
+      agent.hp = Math.max(0, agent.hp - 0.5);          // starvation kills
+    } else if (agent.hunger >= 70) {
+      agent.energy = Math.max(0, agent.energy - 1.0);  // starving drains energy
+      agent.hp = Math.max(0, agent.hp - 0.08);         // slow HP drain starts at 70
+    } else if (agent.hunger >= 50) {
+      agent.energy = Math.max(0, agent.energy - 0.3);  // hungry, uncomfortable
+    } else if (agent.hunger < 30 && agent.hp < 100) {
+      agent.hp = Math.min(100, agent.hp + 0.05);       // well-fed = slow heal
     }
 
     scheduleSave();

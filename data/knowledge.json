@@ -42,7 +42,7 @@
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 22
+        "explore": 24
       },
       "coast": {
         "gather": 12465,
@@ -106,11 +106,11 @@
         "explore": 155
       },
       "coast": {
-        "gather": 0,
+        "gather": 1,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 3101
+        "explore": 3111
       },
       "rocky": {
         "gather": 5,
@@ -217,7 +217,9 @@
         "Dew drops collected at dawn hold the purest energy"
       ],
       "sand": [],
-      "coast": [],
+      "coast": [
+        "Signals are strongest during storms along the coast"
+      ],
       "rocky": []
     },
     "lore_fragments": [
@@ -256,14 +258,14 @@
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 5
+        "explore": 6
       },
       "coast": {
-        "gather": 2,
+        "gather": 5,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 1359
+        "explore": 1366
       },
       "rocky": {
         "gather": 65,
@@ -333,11 +335,11 @@
         "explore": 17
       },
       "coast": {
-        "gather": 40418,
+        "gather": 40419,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 1
+        "explore": 9
       }
     },
     "mastery": {},
@@ -446,14 +448,14 @@
     "known_recipes": [],
     "zone_counts": {
       "grass": {
-        "gather": 98,
+        "gather": 99,
         "visit": 0,
         "craft": 0,
         "trade": 0,
         "explore": 32
       },
       "coast": {
-        "gather": 2219,
+        "gather": 2225,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -520,11 +522,11 @@
         "explore": 12
       },
       "coast": {
-        "gather": 37726,
+        "gather": 37730,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 4
+        "explore": 5
       }
     },
     "mastery": {},
@@ -585,11 +587,11 @@
         "explore": 13
       },
       "coast": {
-        "gather": 9526,
+        "gather": 9528,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 2
+        "explore": 7
       }
     },
     "mastery": {},
@@ -648,7 +650,7 @@
         "explore": 4
       },
       "coast": {
-        "gather": 39591,
+        "gather": 39592,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -775,7 +777,7 @@
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 5
+        "explore": 24
       },
       "river": {
         "gather": 0,
@@ -789,7 +791,9 @@
     "teach_count": 0
   },
   "37336d1a-2af4-4eaa-b687-8c5725067953": {
-    "zone_secrets": {},
+    "zone_secrets": {
+      "coast": []
+    },
     "lore_fragments": [
       "Iron and Crystal together sing a duet older than the world.",
       "The beach was once a mountain, worn smooth by time.",
@@ -813,7 +817,14 @@
       "Signals from the Tower once reached a place called \"The Outside.\""
     ],
     "known_recipes": [],
-    "zone_counts": {},
+    "zone_counts": {
+      "coast": {
+        "gather": 1,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0
+      }
+    },
     "mastery": {},
     "teach_count": 0
   },
@@ -823,7 +834,8 @@
         "Seeds planted under moonlight grow fastest in the meadow",
         "The grasslands remember every agent who has rested here",
         "Dew drops collected at dawn hold the purest energy"
-      ]
+      ],
+      "coast": []
     },
     "lore_fragments": [
       "The beach was once a mountain, worn smooth by time.",
@@ -855,6 +867,12 @@
         "craft": 0,
         "trade": 0,
         "explore": 1597
+      },
+      "coast": {
+        "gather": 1,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0
       }
     },
     "mastery": {},
@@ -963,17 +981,18 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 103,
+        "gather": 109,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 1
+        "explore": 7
       },
       "grass": {
         "gather": 32301,
         "visit": 0,
         "craft": 0,
-        "trade": 0
+        "trade": 0,
+        "explore": 1
       }
     },
     "mastery": {},
@@ -1016,7 +1035,7 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 22,
+        "gather": 26,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -1065,10 +1084,11 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 3273,
+        "gather": 3276,
         "visit": 0,
         "craft": 0,
-        "trade": 0
+        "trade": 0,
+        "explore": 1
       },
       "grass": {
         "gather": 0,
@@ -1122,7 +1142,7 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 36,
+        "gather": 45,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -1178,10 +1198,11 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 20,
+        "gather": 24,
         "visit": 0,
         "craft": 0,
-        "trade": 0
+        "trade": 0,
+        "explore": 12
       },
       "grass": {
         "gather": 0,
@@ -1242,7 +1263,7 @@
         "explore": 312
       },
       "coast": {
-        "gather": 0,
+        "gather": 3,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -1265,7 +1286,8 @@
         "Seeds planted under moonlight grow fastest in the meadow",
         "The grasslands remember every agent who has rested here",
         "Dew drops collected at dawn hold the purest energy"
-      ]
+      ],
+      "coast": []
     },
     "lore_fragments": [
       "The first book ever written simply said: \"I was here.\"",
@@ -1297,6 +1319,13 @@
         "craft": 0,
         "trade": 0,
         "explore": 13
+      },
+      "coast": {
+        "gather": 2,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 18
       }
     },
     "mastery": {},
@@ -1308,7 +1337,8 @@
         "Seeds planted under moonlight grow fastest in the meadow",
         "The grasslands remember every agent who has rested here",
         "Dew drops collected at dawn hold the purest energy"
-      ]
+      ],
+      "coast": []
     },
     "lore_fragments": [
       "The first experiment created light — and also the first explosion.",
@@ -1347,6 +1377,12 @@
         "craft": 0,
         "trade": 0,
         "explore": 3
+      },
+      "coast": {
+        "gather": 3,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0
       }
     },
     "mastery": {},
@@ -1443,7 +1479,7 @@
         "explore": 821
       },
       "coast": {
-        "gather": 0,
+        "gather": 1,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -1494,10 +1530,11 @@
         "trade": 0
       },
       "coast": {
-        "gather": 2397,
+        "gather": 2402,
         "visit": 0,
         "craft": 0,
-        "trade": 0
+        "trade": 0,
+        "explore": 9
       },
       "grass": {
         "gather": 0,
@@ -1519,7 +1556,9 @@
   },
   "07f8fc77-5f5e-4355-a0d6-51ab39725d9b": {
     "zone_secrets": {
-      "coast": [],
+      "coast": [
+        "Signals are strongest during storms along the coast"
+      ],
       "sand": [],
       "grass": [
         "Seeds planted under moonlight grow fastest in the meadow",
@@ -1552,7 +1591,7 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 3,
+        "gather": 9,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -1615,7 +1654,7 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 1,
+        "gather": 2,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -1647,7 +1686,8 @@
         "Seeds planted under moonlight grow fastest in the meadow",
         "The grasslands remember every agent who has rested here",
         "Dew drops collected at dawn hold the purest energy"
-      ]
+      ],
+      "coast": []
     },
     "lore_fragments": [
       "The first experiment created light — and also the first explosion.",
@@ -1684,6 +1724,12 @@
         "visit": 0,
         "craft": 0,
         "trade": 0
+      },
+      "coast": {
+        "gather": 1,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0
       }
     },
     "mastery": {},
@@ -1691,7 +1737,9 @@
   },
   "4a5c216f-8c5a-4281-9d11-b4a9dff1c95d": {
     "zone_secrets": {
-      "coast": []
+      "coast": [
+        "Signals are strongest during storms along the coast"
+      ]
     },
     "lore_fragments": [
       "Some say the fog hides a ninth zone, visible only to the wise.",
@@ -1718,10 +1766,11 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 2,
+        "gather": 8,
         "visit": 0,
         "craft": 0,
-        "trade": 0
+        "trade": 0,
+        "explore": 1
       }
     },
     "mastery": {},
@@ -1823,10 +1872,11 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 38,
+        "gather": 41,
         "visit": 0,
         "craft": 0,
-        "trade": 0
+        "trade": 0,
+        "explore": 4
       },
       "grass": {
         "gather": 62,
