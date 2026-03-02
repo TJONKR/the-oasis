@@ -190,9 +190,16 @@ Rules:
     }
     
     // Add memory
-    if (thought.memory && mind?.memory) {
-      mind.memory.push({ event: thought.memory, tick: shared.tick || 0 });
-      if (mind.memory.length > 20) mind.memory.shift();
+    if (thought.memory && mind) {
+      if (Array.isArray(mind.memory)) {
+        mind.memory.push({ event: thought.memory, tick: shared.tick || 0 });
+        if (mind.memory.length > 20) mind.memory.shift();
+      } else if (mind.memory && Array.isArray(mind.memory.short)) {
+        mind.memory.short.push({ text: thought.memory, tick: shared.tick || 0 });
+        if (mind.memory.short.length > 20) mind.memory.short.shift();
+      } else {
+        mind.memory = [{ event: thought.memory, tick: shared.tick || 0 }];
+      }
     }
     
     // Add fear
