@@ -2,5 +2,9 @@
   "oasis_claim_743d7256e3b5ee504cb9e99ed649281d": {
     "agentId": "76205147-e54e-4086-80d3-f61595243b05",
     "apiKey": "oasis_9946b1ea80cdefbc33a7599eb0d8ef2d56d4b0beca488b59"
+  },
+  "oasis_claim_7138d7865e57c33e1ab434cc69e7136a": {
+    "agentId": "d46fbff6-164e-4f5e-9d31-19deeb010ebf",
+    "apiKey": "oasis_7e187948c4b43d6705fbafb763248c956fccf3b59b15c3c4"
   }
 }

@@ -1,32 +1,30 @@
 {
   "currentPlan": {
-    "goal": "Eat to address hunger, then gather coconuts from nearby palm trees to build food reserves",
+    "goal": "Survive critical situation: Energy at 0, Hunger at 100 — must eat immediately and rest",
     "steps": [
       {
         "action": "eat",
         "done": true
       },
       {
-        "action": "move",
-        "done": false
+        "action": "rest",
+        "done": true
+      },
+      {
+        "action": "rest",
+        "done": true
       },
       {
         "action": "gather",
-        "done": false
-      },
-      {
-        "action": "move",
-        "done": false
-      },
-      {
-        "action": "gather",
-        "done": false
+        "targetX": null,
+        "targetY": null,
+        "done": true
       }
     ],
     "step": 0
   },
-  "lastThinkTick": 534871,
+  "lastThinkTick": 538544,
   "lastPerception": null,
-  "totalThinks": 610,
-  "totalActions": 6709
+  "totalThinks": 687,
+  "totalActions": 8327
 }

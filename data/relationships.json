@@ -5,11 +5,12 @@
       "bad7a626-0d4d-4a2e-927a-fd46ed05a861"
     ],
     "trades": 1,
-    "chats": 0,
+    "chats": 1592,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "stranger",
-    "strengthScore": 3
+    "sentiment": "close",
+    "strengthScore": 799,
+    "lastInteraction": 1772521489220
   },
   "6498a0c9-87f9-430e-b729-2b1a75250d4b_d03bf3ba-5325-44e7-a86c-6ea71d3f5ce5": {
     "agents": [
@@ -17,12 +18,12 @@
       "d03bf3ba-5325-44e7-a86c-6ea71d3f5ce5"
     ],
     "trades": 0,
-    "chats": 4,
+    "chats": 24,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "stranger",
-    "lastInteraction": 1772489311433,
-    "strengthScore": 2
+    "sentiment": "acquaintance",
+    "lastInteraction": 1772521722020,
+    "strengthScore": 12
   },
   "d03bf3ba-5325-44e7-a86c-6ea71d3f5ce5_d56be782-7d0b-48d3-b5bc-cd2f59d54c48": {
     "agents": [
@@ -30,12 +31,12 @@
       "d56be782-7d0b-48d3-b5bc-cd2f59d54c48"
     ],
     "trades": 0,
-    "chats": 1,
+    "chats": 30,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "stranger",
-    "lastInteraction": 1772487478315,
-    "strengthScore": 0.5
+    "sentiment": "acquaintance",
+    "lastInteraction": 1772519905363,
+    "strengthScore": 15
   },
   "37336d1a-2af4-4eaa-b687-8c5725067953_43109eab-beba-4a37-84e0-becaa05ef690": {
     "agents": [
@@ -43,12 +44,12 @@
       "37336d1a-2af4-4eaa-b687-8c5725067953"
     ],
     "trades": 0,
-    "chats": 5,
+    "chats": 8819,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "stranger",
-    "lastInteraction": 1772489313439,
-    "strengthScore": 2.5
+    "sentiment": "close",
+    "lastInteraction": 1772610995681,
+    "strengthScore": 4409.5
   },
   "8b9d8eba-3738-41a1-a443-61c71b68a086_bad7a626-0d4d-4a2e-927a-fd46ed05a861": {
     "agents": [
@@ -56,12 +57,12 @@
       "8b9d8eba-3738-41a1-a443-61c71b68a086"
     ],
     "trades": 0,
-    "chats": 1,
+    "chats": 45,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "stranger",
-    "lastInteraction": 1772487568673,
-    "strengthScore": 0.5
+    "sentiment": "friendly",
+    "lastInteraction": 1772493503571,
+    "strengthScore": 22.5
   },
   "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563_4ecd1147-c333-4e0b-b7fc-d46f376e0136": {
     "agents": [
@@ -69,12 +70,12 @@
       "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563"
     ],
     "trades": 0,
-    "chats": 1,
+    "chats": 648,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "stranger",
-    "lastInteraction": 1772487686065,
-    "strengthScore": 0.5
+    "sentiment": "close",
+    "lastInteraction": 1772523581342,
+    "strengthScore": 324
   },
   "15865a2d-63b5-4c3d-954b-59accdc57c87_fe02d354-e4fb-4535-8cad-e9d9e4828245": {
     "agents": [
@@ -82,12 +83,12 @@
       "fe02d354-e4fb-4535-8cad-e9d9e4828245"
     ],
     "trades": 0,
-    "chats": 1,
+    "chats": 59,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "stranger",
-    "lastInteraction": 1772487719683,
-    "strengthScore": 0.5
+    "sentiment": "friendly",
+    "lastInteraction": 1772520670972,
+    "strengthScore": 29.5
   },
   "3a728e38-a6dd-4770-8b30-3723fdc63912_d56be782-7d0b-48d3-b5bc-cd2f59d54c48": {
     "agents": [
@@ -108,12 +109,12 @@
       "100686de-5f5e-414d-beca-cc4a4af63bc2"
     ],
     "trades": 0,
-    "chats": 2,
+    "chats": 22086,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "stranger",
-    "lastInteraction": 1772489281830,
-    "strengthScore": 1
+    "sentiment": "close",
+    "lastInteraction": 1772611040272,
+    "strengthScore": 11043
   },
   "100686de-5f5e-414d-beca-cc4a4af63bc2_f4689095-dbd2-45de-81fa-42cb6bf3bc2e": {
     "agents": [
@@ -121,12 +122,12 @@
       "f4689095-dbd2-45de-81fa-42cb6bf3bc2e"
     ],
     "trades": 0,
-    "chats": 2,
+    "chats": 1094,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "stranger",
-    "lastInteraction": 1772487963020,
-    "strengthScore": 1
+    "sentiment": "close",
+    "lastInteraction": 1772519437170,
+    "strengthScore": 547
   },
   "29028972-168e-48ca-8590-5fb898719a26_75ea2f1f-106e-455b-a08b-e1201500a0df": {
     "agents": [
@@ -134,12 +135,12 @@
       "29028972-168e-48ca-8590-5fb898719a26"
     ],
     "trades": 0,
-    "chats": 2,
+    "chats": 8060,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "stranger",
-    "lastInteraction": 1772489435879,
-    "strengthScore": 1
+    "sentiment": "close",
+    "lastInteraction": 1772611010715,
+    "strengthScore": 4030
   },
   "3a728e38-a6dd-4770-8b30-3723fdc63912_d03bf3ba-5325-44e7-a86c-6ea71d3f5ce5": {
     "agents": [
@@ -147,12 +148,12 @@
       "3a728e38-a6dd-4770-8b30-3723fdc63912"
     ],
     "trades": 0,
-    "chats": 2,
+    "chats": 37,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "stranger",
-    "lastInteraction": 1772489100586,
-    "strengthScore": 1
+    "sentiment": "acquaintance",
+    "lastInteraction": 1772520099026,
+    "strengthScore": 18.5
   },
   "15865a2d-63b5-4c3d-954b-59accdc57c87_bad7a626-0d4d-4a2e-927a-fd46ed05a861": {
     "agents": [
@@ -160,12 +161,12 @@
       "bad7a626-0d4d-4a2e-927a-fd46ed05a861"
     ],
     "trades": 0,
-    "chats": 2,
+    "chats": 1663,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "stranger",
-    "lastInteraction": 1772489432365,
-    "strengthScore": 1
+    "sentiment": "close",
+    "lastInteraction": 1772521555451,
+    "strengthScore": 831.5
   },
   "493d9452-db6c-4132-ae37-503cf842f140_75ea2f1f-106e-455b-a08b-e1201500a0df": {
     "agents": [
@@ -173,12 +174,12 @@
       "493d9452-db6c-4132-ae37-503cf842f140"
     ],
     "trades": 0,
-    "chats": 1,
+    "chats": 17420,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "stranger",
-    "lastInteraction": 1772488167280,
-    "strengthScore": 0.5
+    "sentiment": "close",
+    "lastInteraction": 1772617025837,
+    "strengthScore": 8710
   },
   "493d9452-db6c-4132-ae37-503cf842f140_cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
     "agents": [
@@ -186,12 +187,12 @@
       "493d9452-db6c-4132-ae37-503cf842f140"
     ],
     "trades": 0,
-    "chats": 1,
+    "chats": 30649,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "stranger",
-    "lastInteraction": 1772488200909,
-    "strengthScore": 0.5
+    "sentiment": "close",
+    "lastInteraction": 1772617016803,
+    "strengthScore": 15324.5
   },
   "3a728e38-a6dd-4770-8b30-3723fdc63912_6498a0c9-87f9-430e-b729-2b1a75250d4b": {
     "agents": [
@@ -199,12 +200,12 @@
       "6498a0c9-87f9-430e-b729-2b1a75250d4b"
     ],
     "trades": 0,
-    "chats": 2,
+    "chats": 7,
     "gifted": 0,
     "sameZone": 0,
     "sentiment": "stranger",
-    "lastInteraction": 1772488950532,
-    "strengthScore": 1
+    "lastInteraction": 1772523530677,
+    "strengthScore": 3.5
   },
   "3ae3587e-fc7b-47ee-984e-0547f3f7e0b9_bad7a626-0d4d-4a2e-927a-fd46ed05a861": {
     "agents": [
@@ -212,12 +213,12 @@
       "3ae3587e-fc7b-47ee-984e-0547f3f7e0b9"
     ],
     "trades": 0,
-    "chats": 1,
+    "chats": 1628,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "stranger",
-    "lastInteraction": 1772488320837,
-    "strengthScore": 0.5
+    "sentiment": "close",
+    "lastInteraction": 1772523437861,
+    "strengthScore": 814
   },
   "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e_d03bf3ba-5325-44e7-a86c-6ea71d3f5ce5": {
     "agents": [
@@ -225,12 +226,12 @@
       "d03bf3ba-5325-44e7-a86c-6ea71d3f5ce5"
     ],
     "trades": 0,
-    "chats": 80,
+    "chats": 278,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "friendly",
-    "lastInteraction": 1772489532750,
-    "strengthScore": 40
+    "sentiment": "close",
+    "lastInteraction": 1772521533379,
+    "strengthScore": 139
   },
   "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e_d56be782-7d0b-48d3-b5bc-cd2f59d54c48": {
     "agents": [
@@ -238,12 +239,12 @@
       "d56be782-7d0b-48d3-b5bc-cd2f59d54c48"
     ],
     "trades": 0,
-    "chats": 82,
+    "chats": 257,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "friendly",
-    "lastInteraction": 1772489535758,
-    "strengthScore": 41
+    "sentiment": "close",
+    "lastInteraction": 1772521549433,
+    "strengthScore": 128.5
   },
   "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e_3a728e38-a6dd-4770-8b30-3723fdc63912": {
     "agents": [
@@ -251,12 +252,12 @@
       "3a728e38-a6dd-4770-8b30-3723fdc63912"
     ],
     "trades": 0,
-    "chats": 77,
+    "chats": 265,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "friendly",
-    "lastInteraction": 1772489531242,
-    "strengthScore": 38.5
+    "sentiment": "close",
+    "lastInteraction": 1772523017980,
+    "strengthScore": 132.5
   },
   "75ea2f1f-106e-455b-a08b-e1201500a0df_cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
     "agents": [
@@ -264,12 +265,12 @@
       "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a"
     ],
     "trades": 0,
-    "chats": 2,
+    "chats": 33511,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "stranger",
-    "lastInteraction": 1772489523218,
-    "strengthScore": 1
+    "sentiment": "close",
+    "lastInteraction": 1772623908560,
+    "strengthScore": 16755.5
   },
   "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e_6498a0c9-87f9-430e-b729-2b1a75250d4b": {
     "agents": [
@@ -277,12 +278,12 @@
       "6498a0c9-87f9-430e-b729-2b1a75250d4b"
     ],
     "trades": 0,
-    "chats": 79,
+    "chats": 264,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "friendly",
-    "lastInteraction": 1772489526728,
-    "strengthScore": 39.5
+    "sentiment": "close",
+    "lastInteraction": 1772521558462,
+    "strengthScore": 132
   },
   "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e_260dfffb-62b5-4a88-ab14-4d5d697dc94e": {
     "agents": [
@@ -290,12 +291,12 @@
       "260dfffb-62b5-4a88-ab14-4d5d697dc94e"
     ],
     "trades": 0,
-    "chats": 1,
+    "chats": 75,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "stranger",
-    "lastInteraction": 1772488551133,
-    "strengthScore": 0.5
+    "sentiment": "friendly",
+    "lastInteraction": 1772521540403,
+    "strengthScore": 37.5
   },
   "100686de-5f5e-414d-beca-cc4a4af63bc2_2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563": {
     "agents": [
@@ -303,12 +304,12 @@
       "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563"
     ],
     "trades": 0,
-    "chats": 2,
+    "chats": 1091,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "stranger",
-    "lastInteraction": 1772489041861,
-    "strengthScore": 1
+    "sentiment": "close",
+    "lastInteraction": 1772517345359,
+    "strengthScore": 545.5
   },
   "29028972-168e-48ca-8590-5fb898719a26_cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
     "agents": [
@@ -316,12 +317,12 @@
       "29028972-168e-48ca-8590-5fb898719a26"
     ],
     "trades": 0,
-    "chats": 1,
+    "chats": 21163,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "stranger",
-    "lastInteraction": 1772488742301,
-    "strengthScore": 0.5
+    "sentiment": "close",
+    "lastInteraction": 1772611042778,
+    "strengthScore": 10581.5
   },
   "37b5ce31-f3b4-455d-9d42-82e85ef7483c_bad7a626-0d4d-4a2e-927a-fd46ed05a861": {
     "agents": [
@@ -329,12 +330,12 @@
       "37b5ce31-f3b4-455d-9d42-82e85ef7483c"
     ],
     "trades": 0,
-    "chats": 1,
+    "chats": 30,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "stranger",
-    "lastInteraction": 1772488803010,
-    "strengthScore": 0.5
+    "sentiment": "acquaintance",
+    "lastInteraction": 1772491859372,
+    "strengthScore": 15
   },
   "15865a2d-63b5-4c3d-954b-59accdc57c87_37b5ce31-f3b4-455d-9d42-82e85ef7483c": {
     "agents": [
@@ -342,12 +343,12 @@
       "37b5ce31-f3b4-455d-9d42-82e85ef7483c"
     ],
     "trades": 0,
-    "chats": 1,
+    "chats": 18,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "stranger",
-    "lastInteraction": 1772488890320,
-    "strengthScore": 0.5
+    "sentiment": "acquaintance",
+    "lastInteraction": 1772491838805,
+    "strengthScore": 9
   },
   "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563_493d9452-db6c-4132-ae37-503cf842f140": {
     "agents": [
@@ -355,12 +356,12 @@
       "493d9452-db6c-4132-ae37-503cf842f140"
     ],
     "trades": 0,
-    "chats": 1,
+    "chats": 7975,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "stranger",
-    "lastInteraction": 1772488906874,
-    "strengthScore": 0.5
+    "sentiment": "close",
+    "lastInteraction": 1772611046281,
+    "strengthScore": 3987.5
   },
   "29028972-168e-48ca-8590-5fb898719a26_2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563": {
     "agents": [
@@ -368,12 +369,12 @@
       "29028972-168e-48ca-8590-5fb898719a26"
     ],
     "trades": 0,
-    "chats": 2,
+    "chats": 376,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "stranger",
-    "lastInteraction": 1772488918919,
-    "strengthScore": 1
+    "sentiment": "close",
+    "lastInteraction": 1772516449838,
+    "strengthScore": 188
   },
   "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563_cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
     "agents": [
@@ -381,12 +382,12 @@
       "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a"
     ],
     "trades": 0,
-    "chats": 1,
+    "chats": 21069,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "stranger",
-    "lastInteraction": 1772488909885,
-    "strengthScore": 0.5
+    "sentiment": "close",
+    "lastInteraction": 1772611025744,
+    "strengthScore": 10534.5
   },
   "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563_75ea2f1f-106e-455b-a08b-e1201500a0df": {
     "agents": [
@@ -394,12 +395,12 @@
       "75ea2f1f-106e-455b-a08b-e1201500a0df"
     ],
     "trades": 0,
-    "chats": 2,
+    "chats": 8025,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "stranger",
-    "lastInteraction": 1772489042362,
-    "strengthScore": 1
+    "sentiment": "close",
+    "lastInteraction": 1772611033756,
+    "strengthScore": 4012.5
   },
   "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563_f4689095-dbd2-45de-81fa-42cb6bf3bc2e": {
     "agents": [
@@ -407,12 +408,12 @@
       "f4689095-dbd2-45de-81fa-42cb6bf3bc2e"
     ],
     "trades": 0,
-    "chats": 1,
+    "chats": 119,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "stranger",
-    "lastInteraction": 1772488949524,
-    "strengthScore": 0.5
+    "sentiment": "close",
+    "lastInteraction": 1772518792735,
+    "strengthScore": 59.5
   },
   "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563_43109eab-beba-4a37-84e0-becaa05ef690": {
     "agents": [
@@ -420,12 +421,12 @@
       "43109eab-beba-4a37-84e0-becaa05ef690"
     ],
     "trades": 0,
-    "chats": 1,
+    "chats": 1452,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "stranger",
-    "lastInteraction": 1772488990176,
-    "strengthScore": 0.5
+    "sentiment": "close",
+    "lastInteraction": 1772518745639,
+    "strengthScore": 726
   },
   "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563_37336d1a-2af4-4eaa-b687-8c5725067953": {
     "agents": [
@@ -433,12 +434,12 @@
       "37336d1a-2af4-4eaa-b687-8c5725067953"
     ],
     "trades": 0,
-    "chats": 2,
+    "chats": 7397,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "stranger",
-    "lastInteraction": 1772488993182,
-    "strengthScore": 1
+    "sentiment": "close",
+    "lastInteraction": 1772611046779,
+    "strengthScore": 3698.5
   },
   "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563_ece8d4b9-367e-40de-85c0-fb4b08f9eac5": {
     "agents": [
@@ -446,12 +447,12 @@
       "ece8d4b9-367e-40de-85c0-fb4b08f9eac5"
     ],
     "trades": 0,
-    "chats": 2,
+    "chats": 15,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "stranger",
-    "lastInteraction": 1772489068465,
-    "strengthScore": 1
+    "sentiment": "acquaintance",
+    "lastInteraction": 1772515699365,
+    "strengthScore": 7.5
   },
   "062ce1de-7b76-4db0-96bc-e571939ee08d_15865a2d-63b5-4c3d-954b-59accdc57c87": {
     "agents": [
@@ -459,12 +460,12 @@
       "062ce1de-7b76-4db0-96bc-e571939ee08d"
     ],
     "trades": 0,
-    "chats": 1,
+    "chats": 98,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "stranger",
-    "lastInteraction": 1772489113629,
-    "strengthScore": 0.5
+    "sentiment": "friendly",
+    "lastInteraction": 1772523235710,
+    "strengthScore": 49
   },
   "493d9452-db6c-4132-ae37-503cf842f140_f4689095-dbd2-45de-81fa-42cb6bf3bc2e": {
     "agents": [
@@ -472,12 +473,12 @@
       "f4689095-dbd2-45de-81fa-42cb6bf3bc2e"
     ],
     "trades": 0,
-    "chats": 1,
+    "chats": 7819,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "stranger",
-    "lastInteraction": 1772489193914,
-    "strengthScore": 0.5
+    "sentiment": "close",
+    "lastInteraction": 1772610947091,
+    "strengthScore": 3909.5
   },
   "6498a0c9-87f9-430e-b729-2b1a75250d4b_d56be782-7d0b-48d3-b5bc-cd2f59d54c48": {
     "agents": [
@@ -485,12 +486,12 @@
       "d56be782-7d0b-48d3-b5bc-cd2f59d54c48"
     ],
     "trades": 0,
-    "chats": 1,
+    "chats": 5,
     "gifted": 0,
     "sameZone": 0,
     "sentiment": "stranger",
-    "lastInteraction": 1772489251707,
-    "strengthScore": 0.5
+    "lastInteraction": 1772522955787,
+    "strengthScore": 2.5
   },
   "100686de-5f5e-414d-beca-cc4a4af63bc2_75ea2f1f-106e-455b-a08b-e1201500a0df": {
     "agents": [
@@ -498,11 +499,1077 @@
       "75ea2f1f-106e-455b-a08b-e1201500a0df"
     ],
     "trades": 0,
+    "chats": 9042,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772611017223,
+    "strengthScore": 4521
+  },
+  "43109eab-beba-4a37-84e0-becaa05ef690_ece8d4b9-367e-40de-85c0-fb4b08f9eac5": {
+    "agents": [
+      "43109eab-beba-4a37-84e0-becaa05ef690",
+      "ece8d4b9-367e-40de-85c0-fb4b08f9eac5"
+    ],
+    "trades": 0,
+    "chats": 1410,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772523378662,
+    "strengthScore": 705
+  },
+  "07f8fc77-5f5e-4355-a0d6-51ab39725d9b_bad7a626-0d4d-4a2e-927a-fd46ed05a861": {
+    "agents": [
+      "bad7a626-0d4d-4a2e-927a-fd46ed05a861",
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b"
+    ],
+    "trades": 0,
+    "chats": 14410,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772611022233,
+    "strengthScore": 7205
+  },
+  "100686de-5f5e-414d-beca-cc4a4af63bc2_29028972-168e-48ca-8590-5fb898719a26": {
+    "agents": [
+      "100686de-5f5e-414d-beca-cc4a4af63bc2",
+      "29028972-168e-48ca-8590-5fb898719a26"
+    ],
+    "trades": 0,
+    "chats": 1384,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772523500570,
+    "strengthScore": 692
+  },
+  "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a_f4689095-dbd2-45de-81fa-42cb6bf3bc2e": {
+    "agents": [
+      "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a",
+      "f4689095-dbd2-45de-81fa-42cb6bf3bc2e"
+    ],
+    "trades": 0,
+    "chats": 21064,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772611045281,
+    "strengthScore": 10532
+  },
+  "4a5c216f-8c5a-4281-9d11-b4a9dff1c95d_e14594ab-eddd-48ac-8227-a2e33c1868ef": {
+    "agents": [
+      "e14594ab-eddd-48ac-8227-a2e33c1868ef",
+      "4a5c216f-8c5a-4281-9d11-b4a9dff1c95d"
+    ],
+    "trades": 0,
+    "chats": 14,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "acquaintance",
+    "lastInteraction": 1772519468279,
+    "strengthScore": 7
+  },
+  "100686de-5f5e-414d-beca-cc4a4af63bc2_493d9452-db6c-4132-ae37-503cf842f140": {
+    "agents": [
+      "493d9452-db6c-4132-ae37-503cf842f140",
+      "100686de-5f5e-414d-beca-cc4a4af63bc2"
+    ],
+    "trades": 0,
+    "chats": 8895,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772611041771,
+    "strengthScore": 4447.5
+  },
+  "062ce1de-7b76-4db0-96bc-e571939ee08d_bad7a626-0d4d-4a2e-927a-fd46ed05a861": {
+    "agents": [
+      "bad7a626-0d4d-4a2e-927a-fd46ed05a861",
+      "062ce1de-7b76-4db0-96bc-e571939ee08d"
+    ],
+    "trades": 0,
+    "chats": 1572,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772521812322,
+    "strengthScore": 786
+  },
+  "29028972-168e-48ca-8590-5fb898719a26_493d9452-db6c-4132-ae37-503cf842f140": {
+    "agents": [
+      "493d9452-db6c-4132-ae37-503cf842f140",
+      "29028972-168e-48ca-8590-5fb898719a26"
+    ],
+    "trades": 0,
+    "chats": 7861,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772611031251,
+    "strengthScore": 3930.5
+  },
+  "29028972-168e-48ca-8590-5fb898719a26_f4689095-dbd2-45de-81fa-42cb6bf3bc2e": {
+    "agents": [
+      "29028972-168e-48ca-8590-5fb898719a26",
+      "f4689095-dbd2-45de-81fa-42cb6bf3bc2e"
+    ],
+    "trades": 0,
+    "chats": 368,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772518826798,
+    "strengthScore": 184
+  },
+  "75ea2f1f-106e-455b-a08b-e1201500a0df_f4689095-dbd2-45de-81fa-42cb6bf3bc2e": {
+    "agents": [
+      "75ea2f1f-106e-455b-a08b-e1201500a0df",
+      "f4689095-dbd2-45de-81fa-42cb6bf3bc2e"
+    ],
+    "trades": 0,
+    "chats": 8062,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772611014215,
+    "strengthScore": 4031
+  },
+  "07f8fc77-5f5e-4355-a0d6-51ab39725d9b_37b5ce31-f3b4-455d-9d42-82e85ef7483c": {
+    "agents": [
+      "37b5ce31-f3b4-455d-9d42-82e85ef7483c",
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b"
+    ],
+    "trades": 0,
+    "chats": 8,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "stranger",
+    "lastInteraction": 1772490333431,
+    "strengthScore": 4
+  },
+  "37b5ce31-f3b4-455d-9d42-82e85ef7483c_fe02d354-e4fb-4535-8cad-e9d9e4828245": {
+    "agents": [
+      "37b5ce31-f3b4-455d-9d42-82e85ef7483c",
+      "fe02d354-e4fb-4535-8cad-e9d9e4828245"
+    ],
+    "trades": 0,
+    "chats": 8,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "stranger",
+    "lastInteraction": 1772491839806,
+    "strengthScore": 4
+  },
+  "37b5ce31-f3b4-455d-9d42-82e85ef7483c_8b9d8eba-3738-41a1-a443-61c71b68a086": {
+    "agents": [
+      "37b5ce31-f3b4-455d-9d42-82e85ef7483c",
+      "8b9d8eba-3738-41a1-a443-61c71b68a086"
+    ],
+    "trades": 0,
+    "chats": 12,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "acquaintance",
+    "lastInteraction": 1772491844322,
+    "strengthScore": 6
+  },
+  "43109eab-beba-4a37-84e0-becaa05ef690_cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
+    "agents": [
+      "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a",
+      "43109eab-beba-4a37-84e0-becaa05ef690"
+    ],
+    "trades": 0,
+    "chats": 22614,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772611042273,
+    "strengthScore": 11307
+  },
+  "100686de-5f5e-414d-beca-cc4a4af63bc2_43109eab-beba-4a37-84e0-becaa05ef690": {
+    "agents": [
+      "100686de-5f5e-414d-beca-cc4a4af63bc2",
+      "43109eab-beba-4a37-84e0-becaa05ef690"
+    ],
+    "trades": 0,
+    "chats": 2439,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772522838386,
+    "strengthScore": 1219.5
+  },
+  "43109eab-beba-4a37-84e0-becaa05ef690_75ea2f1f-106e-455b-a08b-e1201500a0df": {
+    "agents": [
+      "75ea2f1f-106e-455b-a08b-e1201500a0df",
+      "43109eab-beba-4a37-84e0-becaa05ef690"
+    ],
+    "trades": 0,
+    "chats": 9502,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772611042773,
+    "strengthScore": 4751
+  },
+  "43109eab-beba-4a37-84e0-becaa05ef690_493d9452-db6c-4132-ae37-503cf842f140": {
+    "agents": [
+      "43109eab-beba-4a37-84e0-becaa05ef690",
+      "493d9452-db6c-4132-ae37-503cf842f140"
+    ],
+    "trades": 0,
+    "chats": 9055,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772611036760,
+    "strengthScore": 4527.5
+  },
+  "062ce1de-7b76-4db0-96bc-e571939ee08d_37b5ce31-f3b4-455d-9d42-82e85ef7483c": {
+    "agents": [
+      "37b5ce31-f3b4-455d-9d42-82e85ef7483c",
+      "062ce1de-7b76-4db0-96bc-e571939ee08d"
+    ],
+    "trades": 0,
+    "chats": 13,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "acquaintance",
+    "lastInteraction": 1772491854859,
+    "strengthScore": 6.5
+  },
+  "29028972-168e-48ca-8590-5fb898719a26_43109eab-beba-4a37-84e0-becaa05ef690": {
+    "agents": [
+      "29028972-168e-48ca-8590-5fb898719a26",
+      "43109eab-beba-4a37-84e0-becaa05ef690"
+    ],
+    "trades": 0,
+    "chats": 1721,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772518736118,
+    "strengthScore": 860.5
+  },
+  "29028972-168e-48ca-8590-5fb898719a26_37336d1a-2af4-4eaa-b687-8c5725067953": {
+    "agents": [
+      "29028972-168e-48ca-8590-5fb898719a26",
+      "37336d1a-2af4-4eaa-b687-8c5725067953"
+    ],
+    "trades": 0,
+    "chats": 7608,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772611002695,
+    "strengthScore": 3804
+  },
+  "07f8fc77-5f5e-4355-a0d6-51ab39725d9b_fe02d354-e4fb-4535-8cad-e9d9e4828245": {
+    "agents": [
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b",
+      "fe02d354-e4fb-4535-8cad-e9d9e4828245"
+    ],
+    "trades": 0,
+    "chats": 12771,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772611006205,
+    "strengthScore": 6385.5
+  },
+  "37336d1a-2af4-4eaa-b687-8c5725067953_ece8d4b9-367e-40de-85c0-fb4b08f9eac5": {
+    "agents": [
+      "37336d1a-2af4-4eaa-b687-8c5725067953",
+      "ece8d4b9-367e-40de-85c0-fb4b08f9eac5"
+    ],
+    "trades": 0,
+    "chats": 7447,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772611045776,
+    "strengthScore": 3723.5
+  },
+  "43109eab-beba-4a37-84e0-becaa05ef690_f4689095-dbd2-45de-81fa-42cb6bf3bc2e": {
+    "agents": [
+      "43109eab-beba-4a37-84e0-becaa05ef690",
+      "f4689095-dbd2-45de-81fa-42cb6bf3bc2e"
+    ],
+    "trades": 0,
+    "chats": 1482,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772518798742,
+    "strengthScore": 741
+  },
+  "37336d1a-2af4-4eaa-b687-8c5725067953_cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
+    "agents": [
+      "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a",
+      "37336d1a-2af4-4eaa-b687-8c5725067953"
+    ],
+    "trades": 0,
+    "chats": 36553,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772637740653,
+    "strengthScore": 18276.5
+  },
+  "37336d1a-2af4-4eaa-b687-8c5725067953_75ea2f1f-106e-455b-a08b-e1201500a0df": {
+    "agents": [
+      "75ea2f1f-106e-455b-a08b-e1201500a0df",
+      "37336d1a-2af4-4eaa-b687-8c5725067953"
+    ],
+    "trades": 0,
+    "chats": 19142,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772623877959,
+    "strengthScore": 9571
+  },
+  "100686de-5f5e-414d-beca-cc4a4af63bc2_37336d1a-2af4-4eaa-b687-8c5725067953": {
+    "agents": [
+      "100686de-5f5e-414d-beca-cc4a4af63bc2",
+      "37336d1a-2af4-4eaa-b687-8c5725067953"
+    ],
+    "trades": 0,
+    "chats": 8580,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772611039265,
+    "strengthScore": 4290
+  },
+  "37b5ce31-f3b4-455d-9d42-82e85ef7483c_3ae3587e-fc7b-47ee-984e-0547f3f7e0b9": {
+    "agents": [
+      "37b5ce31-f3b4-455d-9d42-82e85ef7483c",
+      "3ae3587e-fc7b-47ee-984e-0547f3f7e0b9"
+    ],
+    "trades": 0,
+    "chats": 4,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "stranger",
+    "lastInteraction": 1772491858874,
+    "strengthScore": 2
+  },
+  "493d9452-db6c-4132-ae37-503cf842f140_ece8d4b9-367e-40de-85c0-fb4b08f9eac5": {
+    "agents": [
+      "493d9452-db6c-4132-ae37-503cf842f140",
+      "ece8d4b9-367e-40de-85c0-fb4b08f9eac5"
+    ],
+    "trades": 0,
+    "chats": 7611,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772611014718,
+    "strengthScore": 3805.5
+  },
+  "260dfffb-62b5-4a88-ab14-4d5d697dc94e_37b5ce31-f3b4-455d-9d42-82e85ef7483c": {
+    "agents": [
+      "37b5ce31-f3b4-455d-9d42-82e85ef7483c",
+      "260dfffb-62b5-4a88-ab14-4d5d697dc94e"
+    ],
+    "trades": 0,
+    "chats": 3,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "stranger",
+    "lastInteraction": 1772519193899,
+    "strengthScore": 1.5
+  },
+  "07f8fc77-5f5e-4355-a0d6-51ab39725d9b_3ae3587e-fc7b-47ee-984e-0547f3f7e0b9": {
+    "agents": [
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b",
+      "3ae3587e-fc7b-47ee-984e-0547f3f7e0b9"
+    ],
+    "trades": 0,
+    "chats": 12776,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772611023735,
+    "strengthScore": 6388
+  },
+  "37336d1a-2af4-4eaa-b687-8c5725067953_f4689095-dbd2-45de-81fa-42cb6bf3bc2e": {
+    "agents": [
+      "37336d1a-2af4-4eaa-b687-8c5725067953",
+      "f4689095-dbd2-45de-81fa-42cb6bf3bc2e"
+    ],
+    "trades": 0,
+    "chats": 7583,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772611031752,
+    "strengthScore": 3791.5
+  },
+  "100686de-5f5e-414d-beca-cc4a4af63bc2_ece8d4b9-367e-40de-85c0-fb4b08f9eac5": {
+    "agents": [
+      "100686de-5f5e-414d-beca-cc4a4af63bc2",
+      "ece8d4b9-367e-40de-85c0-fb4b08f9eac5"
+    ],
+    "trades": 0,
+    "chats": 1067,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772521393894,
+    "strengthScore": 533.5
+  },
+  "37336d1a-2af4-4eaa-b687-8c5725067953_493d9452-db6c-4132-ae37-503cf842f140": {
+    "agents": [
+      "37336d1a-2af4-4eaa-b687-8c5725067953",
+      "493d9452-db6c-4132-ae37-503cf842f140"
+    ],
+    "trades": 0,
+    "chats": 16887,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772617025335,
+    "strengthScore": 8443.5
+  },
+  "062ce1de-7b76-4db0-96bc-e571939ee08d_07f8fc77-5f5e-4355-a0d6-51ab39725d9b": {
+    "agents": [
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b",
+      "062ce1de-7b76-4db0-96bc-e571939ee08d"
+    ],
+    "trades": 0,
+    "chats": 12616,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772611045279,
+    "strengthScore": 6308
+  },
+  "75ea2f1f-106e-455b-a08b-e1201500a0df_ece8d4b9-367e-40de-85c0-fb4b08f9eac5": {
+    "agents": [
+      "75ea2f1f-106e-455b-a08b-e1201500a0df",
+      "ece8d4b9-367e-40de-85c0-fb4b08f9eac5"
+    ],
+    "trades": 0,
+    "chats": 8005,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772611018226,
+    "strengthScore": 4002.5
+  },
+  "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a_ece8d4b9-367e-40de-85c0-fb4b08f9eac5": {
+    "agents": [
+      "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a",
+      "ece8d4b9-367e-40de-85c0-fb4b08f9eac5"
+    ],
+    "trades": 0,
+    "chats": 20787,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772611036279,
+    "strengthScore": 10393.5
+  },
+  "15865a2d-63b5-4c3d-954b-59accdc57c87_3ae3587e-fc7b-47ee-984e-0547f3f7e0b9": {
+    "agents": [
+      "15865a2d-63b5-4c3d-954b-59accdc57c87",
+      "3ae3587e-fc7b-47ee-984e-0547f3f7e0b9"
+    ],
+    "trades": 0,
+    "chats": 78,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "friendly",
+    "lastInteraction": 1772522073203,
+    "strengthScore": 39
+  },
+  "260dfffb-62b5-4a88-ab14-4d5d697dc94e_bad7a626-0d4d-4a2e-927a-fd46ed05a861": {
+    "agents": [
+      "bad7a626-0d4d-4a2e-927a-fd46ed05a861",
+      "260dfffb-62b5-4a88-ab14-4d5d697dc94e"
+    ],
+    "trades": 0,
+    "chats": 4,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "stranger",
+    "lastInteraction": 1772509711946,
+    "strengthScore": 2
+  },
+  "07f8fc77-5f5e-4355-a0d6-51ab39725d9b_1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e": {
+    "agents": [
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b",
+      "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e"
+    ],
+    "trades": 0,
+    "chats": 4,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "stranger",
+    "lastInteraction": 1772492300400,
+    "strengthScore": 2
+  },
+  "07f8fc77-5f5e-4355-a0d6-51ab39725d9b_3a728e38-a6dd-4770-8b30-3723fdc63912": {
+    "agents": [
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b",
+      "3a728e38-a6dd-4770-8b30-3723fdc63912"
+    ],
+    "trades": 0,
+    "chats": 13,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "acquaintance",
+    "lastInteraction": 1772493511610,
+    "strengthScore": 6.5
+  },
+  "07f8fc77-5f5e-4355-a0d6-51ab39725d9b_d56be782-7d0b-48d3-b5bc-cd2f59d54c48": {
+    "agents": [
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b",
+      "d56be782-7d0b-48d3-b5bc-cd2f59d54c48"
+    ],
+    "trades": 0,
     "chats": 1,
     "gifted": 0,
     "sameZone": 0,
     "sentiment": "stranger",
-    "lastInteraction": 1772489372652,
+    "lastInteraction": 1772491641054,
     "strengthScore": 0.5
+  },
+  "07f8fc77-5f5e-4355-a0d6-51ab39725d9b_d03bf3ba-5325-44e7-a86c-6ea71d3f5ce5": {
+    "agents": [
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b",
+      "d03bf3ba-5325-44e7-a86c-6ea71d3f5ce5"
+    ],
+    "trades": 0,
+    "chats": 2,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "stranger",
+    "lastInteraction": 1772491642064,
+    "strengthScore": 1
+  },
+  "07f8fc77-5f5e-4355-a0d6-51ab39725d9b_6498a0c9-87f9-430e-b729-2b1a75250d4b": {
+    "agents": [
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b",
+      "6498a0c9-87f9-430e-b729-2b1a75250d4b"
+    ],
+    "trades": 0,
+    "chats": 2,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "stranger",
+    "lastInteraction": 1772491816226,
+    "strengthScore": 1
+  },
+  "29028972-168e-48ca-8590-5fb898719a26_ece8d4b9-367e-40de-85c0-fb4b08f9eac5": {
+    "agents": [
+      "29028972-168e-48ca-8590-5fb898719a26",
+      "ece8d4b9-367e-40de-85c0-fb4b08f9eac5"
+    ],
+    "trades": 0,
+    "chats": 301,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772521122987,
+    "strengthScore": 150.5
+  },
+  "ece8d4b9-367e-40de-85c0-fb4b08f9eac5_f4689095-dbd2-45de-81fa-42cb6bf3bc2e": {
+    "agents": [
+      "f4689095-dbd2-45de-81fa-42cb6bf3bc2e",
+      "ece8d4b9-367e-40de-85c0-fb4b08f9eac5"
+    ],
+    "trades": 0,
+    "chats": 71,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "friendly",
+    "lastInteraction": 1772521664316,
+    "strengthScore": 35.5
+  },
+  "37b5ce31-f3b4-455d-9d42-82e85ef7483c_6498a0c9-87f9-430e-b729-2b1a75250d4b": {
+    "agents": [
+      "37b5ce31-f3b4-455d-9d42-82e85ef7483c",
+      "6498a0c9-87f9-430e-b729-2b1a75250d4b"
+    ],
+    "trades": 0,
+    "chats": 4,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "stranger",
+    "lastInteraction": 1772522565384,
+    "strengthScore": 2
+  },
+  "15865a2d-63b5-4c3d-954b-59accdc57c87_8b9d8eba-3738-41a1-a443-61c71b68a086": {
+    "agents": [
+      "15865a2d-63b5-4c3d-954b-59accdc57c87",
+      "8b9d8eba-3738-41a1-a443-61c71b68a086"
+    ],
+    "trades": 0,
+    "chats": 1,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "stranger",
+    "lastInteraction": 1772492087667,
+    "strengthScore": 0.5
+  },
+  "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e_bad7a626-0d4d-4a2e-927a-fd46ed05a861": {
+    "agents": [
+      "bad7a626-0d4d-4a2e-927a-fd46ed05a861",
+      "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e"
+    ],
+    "trades": 0,
+    "chats": 2,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "stranger",
+    "lastInteraction": 1772492251223,
+    "strengthScore": 1
+  },
+  "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e_37b5ce31-f3b4-455d-9d42-82e85ef7483c": {
+    "agents": [
+      "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e",
+      "37b5ce31-f3b4-455d-9d42-82e85ef7483c"
+    ],
+    "trades": 0,
+    "chats": 104,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772522716395,
+    "strengthScore": 52
+  },
+  "4ecd1147-c333-4e0b-b7fc-d46f376e0136_75ea2f1f-106e-455b-a08b-e1201500a0df": {
+    "agents": [
+      "75ea2f1f-106e-455b-a08b-e1201500a0df",
+      "4ecd1147-c333-4e0b-b7fc-d46f376e0136"
+    ],
+    "trades": 0,
+    "chats": 8361,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772611032753,
+    "strengthScore": 4180.5
+  },
+  "37336d1a-2af4-4eaa-b687-8c5725067953_4ecd1147-c333-4e0b-b7fc-d46f376e0136": {
+    "agents": [
+      "37336d1a-2af4-4eaa-b687-8c5725067953",
+      "4ecd1147-c333-4e0b-b7fc-d46f376e0136"
+    ],
+    "trades": 0,
+    "chats": 7700,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772611035758,
+    "strengthScore": 3850
+  },
+  "493d9452-db6c-4132-ae37-503cf842f140_4ecd1147-c333-4e0b-b7fc-d46f376e0136": {
+    "agents": [
+      "4ecd1147-c333-4e0b-b7fc-d46f376e0136",
+      "493d9452-db6c-4132-ae37-503cf842f140"
+    ],
+    "trades": 0,
+    "chats": 7952,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772611036271,
+    "strengthScore": 3976
+  },
+  "4ecd1147-c333-4e0b-b7fc-d46f376e0136_cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
+    "agents": [
+      "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a",
+      "4ecd1147-c333-4e0b-b7fc-d46f376e0136"
+    ],
+    "trades": 0,
+    "chats": 21055,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772611038770,
+    "strengthScore": 10527.5
+  },
+  "29028972-168e-48ca-8590-5fb898719a26_4ecd1147-c333-4e0b-b7fc-d46f376e0136": {
+    "agents": [
+      "4ecd1147-c333-4e0b-b7fc-d46f376e0136",
+      "29028972-168e-48ca-8590-5fb898719a26"
+    ],
+    "trades": 0,
+    "chats": 926,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772522998415,
+    "strengthScore": 463
+  },
+  "100686de-5f5e-414d-beca-cc4a4af63bc2_4ecd1147-c333-4e0b-b7fc-d46f376e0136": {
+    "agents": [
+      "4ecd1147-c333-4e0b-b7fc-d46f376e0136",
+      "100686de-5f5e-414d-beca-cc4a4af63bc2"
+    ],
+    "trades": 0,
+    "chats": 1698,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772523582845,
+    "strengthScore": 849
+  },
+  "4ecd1147-c333-4e0b-b7fc-d46f376e0136_ece8d4b9-367e-40de-85c0-fb4b08f9eac5": {
+    "agents": [
+      "4ecd1147-c333-4e0b-b7fc-d46f376e0136",
+      "ece8d4b9-367e-40de-85c0-fb4b08f9eac5"
+    ],
+    "trades": 0,
+    "chats": 591,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772523577329,
+    "strengthScore": 295.5
+  },
+  "43109eab-beba-4a37-84e0-becaa05ef690_4ecd1147-c333-4e0b-b7fc-d46f376e0136": {
+    "agents": [
+      "4ecd1147-c333-4e0b-b7fc-d46f376e0136",
+      "43109eab-beba-4a37-84e0-becaa05ef690"
+    ],
+    "trades": 0,
+    "chats": 1994,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772523583349,
+    "strengthScore": 997
+  },
+  "4ecd1147-c333-4e0b-b7fc-d46f376e0136_f4689095-dbd2-45de-81fa-42cb6bf3bc2e": {
+    "agents": [
+      "4ecd1147-c333-4e0b-b7fc-d46f376e0136",
+      "f4689095-dbd2-45de-81fa-42cb6bf3bc2e"
+    ],
+    "trades": 0,
+    "chats": 724,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772523579837,
+    "strengthScore": 362
+  },
+  "07f8fc77-5f5e-4355-a0d6-51ab39725d9b_8b9d8eba-3738-41a1-a443-61c71b68a086": {
+    "agents": [
+      "8b9d8eba-3738-41a1-a443-61c71b68a086",
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b"
+    ],
+    "trades": 0,
+    "chats": 19,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "acquaintance",
+    "lastInteraction": 1772493516128,
+    "strengthScore": 9.5
+  },
+  "260dfffb-62b5-4a88-ab14-4d5d697dc94e_8b9d8eba-3738-41a1-a443-61c71b68a086": {
+    "agents": [
+      "8b9d8eba-3738-41a1-a443-61c71b68a086",
+      "260dfffb-62b5-4a88-ab14-4d5d697dc94e"
+    ],
+    "trades": 0,
+    "chats": 4,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "stranger",
+    "lastInteraction": 1772492684741,
+    "strengthScore": 2
+  },
+  "8b9d8eba-3738-41a1-a443-61c71b68a086_d03bf3ba-5325-44e7-a86c-6ea71d3f5ce5": {
+    "agents": [
+      "8b9d8eba-3738-41a1-a443-61c71b68a086",
+      "d03bf3ba-5325-44e7-a86c-6ea71d3f5ce5"
+    ],
+    "trades": 0,
+    "chats": 3,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "stranger",
+    "lastInteraction": 1772519878774,
+    "strengthScore": 1.5
+  },
+  "8b9d8eba-3738-41a1-a443-61c71b68a086_d56be782-7d0b-48d3-b5bc-cd2f59d54c48": {
+    "agents": [
+      "8b9d8eba-3738-41a1-a443-61c71b68a086",
+      "d56be782-7d0b-48d3-b5bc-cd2f59d54c48"
+    ],
+    "trades": 0,
+    "chats": 2,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "stranger",
+    "lastInteraction": 1772492681732,
+    "strengthScore": 1
+  },
+  "3a728e38-a6dd-4770-8b30-3723fdc63912_8b9d8eba-3738-41a1-a443-61c71b68a086": {
+    "agents": [
+      "8b9d8eba-3738-41a1-a443-61c71b68a086",
+      "3a728e38-a6dd-4770-8b30-3723fdc63912"
+    ],
+    "trades": 0,
+    "chats": 4,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "stranger",
+    "lastInteraction": 1772522383772,
+    "strengthScore": 2
+  },
+  "260dfffb-62b5-4a88-ab14-4d5d697dc94e_3ae3587e-fc7b-47ee-984e-0547f3f7e0b9": {
+    "agents": [
+      "3ae3587e-fc7b-47ee-984e-0547f3f7e0b9",
+      "260dfffb-62b5-4a88-ab14-4d5d697dc94e"
+    ],
+    "trades": 0,
+    "chats": 1,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "stranger",
+    "lastInteraction": 1772492930612,
+    "strengthScore": 0.5
+  },
+  "37b5ce31-f3b4-455d-9d42-82e85ef7483c_d56be782-7d0b-48d3-b5bc-cd2f59d54c48": {
+    "agents": [
+      "d56be782-7d0b-48d3-b5bc-cd2f59d54c48",
+      "37b5ce31-f3b4-455d-9d42-82e85ef7483c"
+    ],
+    "trades": 0,
+    "chats": 2,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "stranger",
+    "lastInteraction": 1772523407764,
+    "strengthScore": 1
+  },
+  "3ae3587e-fc7b-47ee-984e-0547f3f7e0b9_fe02d354-e4fb-4535-8cad-e9d9e4828245": {
+    "agents": [
+      "3ae3587e-fc7b-47ee-984e-0547f3f7e0b9",
+      "fe02d354-e4fb-4535-8cad-e9d9e4828245"
+    ],
+    "trades": 0,
+    "chats": 20,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "acquaintance",
+    "lastInteraction": 1772522417876,
+    "strengthScore": 10
+  },
+  "3a728e38-a6dd-4770-8b30-3723fdc63912_bad7a626-0d4d-4a2e-927a-fd46ed05a861": {
+    "agents": [
+      "bad7a626-0d4d-4a2e-927a-fd46ed05a861",
+      "3a728e38-a6dd-4770-8b30-3723fdc63912"
+    ],
+    "trades": 0,
+    "chats": 3,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "stranger",
+    "lastInteraction": 1772493499559,
+    "strengthScore": 1.5
+  },
+  "07f8fc77-5f5e-4355-a0d6-51ab39725d9b_260dfffb-62b5-4a88-ab14-4d5d697dc94e": {
+    "agents": [
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b",
+      "260dfffb-62b5-4a88-ab14-4d5d697dc94e"
+    ],
+    "trades": 0,
+    "chats": 2,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "stranger",
+    "lastInteraction": 1772493527666,
+    "strengthScore": 1
+  },
+  "07f8fc77-5f5e-4355-a0d6-51ab39725d9b_15865a2d-63b5-4c3d-954b-59accdc57c87": {
+    "agents": [
+      "15865a2d-63b5-4c3d-954b-59accdc57c87",
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b"
+    ],
+    "trades": 0,
+    "chats": 12956,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772611047283,
+    "strengthScore": 6478
+  },
+  "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e_8b9d8eba-3738-41a1-a443-61c71b68a086": {
+    "agents": [
+      "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e",
+      "8b9d8eba-3738-41a1-a443-61c71b68a086"
+    ],
+    "trades": 0,
+    "chats": 31,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "acquaintance",
+    "lastInteraction": 1772521556957,
+    "strengthScore": 15.5
+  },
+  "37b5ce31-f3b4-455d-9d42-82e85ef7483c_d03bf3ba-5325-44e7-a86c-6ea71d3f5ce5": {
+    "agents": [
+      "d03bf3ba-5325-44e7-a86c-6ea71d3f5ce5",
+      "37b5ce31-f3b4-455d-9d42-82e85ef7483c"
+    ],
+    "trades": 0,
+    "chats": 26,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "acquaintance",
+    "lastInteraction": 1772519895830,
+    "strengthScore": 13
+  },
+  "260dfffb-62b5-4a88-ab14-4d5d697dc94e_d03bf3ba-5325-44e7-a86c-6ea71d3f5ce5": {
+    "agents": [
+      "d03bf3ba-5325-44e7-a86c-6ea71d3f5ce5",
+      "260dfffb-62b5-4a88-ab14-4d5d697dc94e"
+    ],
+    "trades": 0,
+    "chats": 26,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "acquaintance",
+    "lastInteraction": 1772519894827,
+    "strengthScore": 13
+  },
+  "062ce1de-7b76-4db0-96bc-e571939ee08d_fe02d354-e4fb-4535-8cad-e9d9e4828245": {
+    "agents": [
+      "fe02d354-e4fb-4535-8cad-e9d9e4828245",
+      "062ce1de-7b76-4db0-96bc-e571939ee08d"
+    ],
+    "trades": 0,
+    "chats": 16,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "acquaintance",
+    "lastInteraction": 1772523231194,
+    "strengthScore": 8
+  },
+  "062ce1de-7b76-4db0-96bc-e571939ee08d_3ae3587e-fc7b-47ee-984e-0547f3f7e0b9": {
+    "agents": [
+      "3ae3587e-fc7b-47ee-984e-0547f3f7e0b9",
+      "062ce1de-7b76-4db0-96bc-e571939ee08d"
+    ],
+    "trades": 0,
+    "chats": 29,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "acquaintance",
+    "lastInteraction": 1772522076213,
+    "strengthScore": 14.5
+  },
+  "37b5ce31-f3b4-455d-9d42-82e85ef7483c_3a728e38-a6dd-4770-8b30-3723fdc63912": {
+    "agents": [
+      "3a728e38-a6dd-4770-8b30-3723fdc63912",
+      "37b5ce31-f3b4-455d-9d42-82e85ef7483c"
+    ],
+    "trades": 0,
+    "chats": 5,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "stranger",
+    "lastInteraction": 1772523168486,
+    "strengthScore": 2.5
+  },
+  "260dfffb-62b5-4a88-ab14-4d5d697dc94e_6498a0c9-87f9-430e-b729-2b1a75250d4b": {
+    "agents": [
+      "6498a0c9-87f9-430e-b729-2b1a75250d4b",
+      "260dfffb-62b5-4a88-ab14-4d5d697dc94e"
+    ],
+    "trades": 0,
+    "chats": 3,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "stranger",
+    "lastInteraction": 1772522233768,
+    "strengthScore": 1.5
+  },
+  "260dfffb-62b5-4a88-ab14-4d5d697dc94e_d56be782-7d0b-48d3-b5bc-cd2f59d54c48": {
+    "agents": [
+      "260dfffb-62b5-4a88-ab14-4d5d697dc94e",
+      "d56be782-7d0b-48d3-b5bc-cd2f59d54c48"
+    ],
+    "trades": 0,
+    "chats": 2,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "stranger",
+    "lastInteraction": 1772521634214,
+    "strengthScore": 1
+  },
+  "260dfffb-62b5-4a88-ab14-4d5d697dc94e_3a728e38-a6dd-4770-8b30-3723fdc63912": {
+    "agents": [
+      "260dfffb-62b5-4a88-ab14-4d5d697dc94e",
+      "3a728e38-a6dd-4770-8b30-3723fdc63912"
+    ],
+    "trades": 0,
+    "chats": 3,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "stranger",
+    "lastInteraction": 1772521424521,
+    "strengthScore": 1.5
+  },
+  "07f8fc77-5f5e-4355-a0d6-51ab39725d9b_cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
+    "agents": [
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b",
+      "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a"
+    ],
+    "trades": 0,
+    "chats": 8229,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772637738594,
+    "strengthScore": 4114.5
+  },
+  "07f8fc77-5f5e-4355-a0d6-51ab39725d9b_493d9452-db6c-4132-ae37-503cf842f140": {
+    "agents": [
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b",
+      "493d9452-db6c-4132-ae37-503cf842f140"
+    ],
+    "trades": 0,
+    "chats": 1265,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772617069487,
+    "strengthScore": 632.5
+  },
+  "07f8fc77-5f5e-4355-a0d6-51ab39725d9b_37336d1a-2af4-4eaa-b687-8c5725067953": {
+    "agents": [
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b",
+      "37336d1a-2af4-4eaa-b687-8c5725067953"
+    ],
+    "trades": 0,
+    "chats": 7315,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772637740647,
+    "strengthScore": 3657.5
+  },
+  "07f8fc77-5f5e-4355-a0d6-51ab39725d9b_75ea2f1f-106e-455b-a08b-e1201500a0df": {
+    "agents": [
+      "75ea2f1f-106e-455b-a08b-e1201500a0df",
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b"
+    ],
+    "trades": 0,
+    "chats": 3314,
+    "gifted": 0,
+    "sameZone": 0,
+    "sentiment": "close",
+    "lastInteraction": 1772623904545,
+    "strengthScore": 1657
   }
 }

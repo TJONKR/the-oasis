@@ -1,0 +1,2773 @@
+{
+  "4a5c216f-8c5a-4281-9d11-b4a9dff1c95d": {
+    "trauma": [],
+    "attachments": {
+      "e14594ab-eddd-48ac-8227-a2e33c1868ef": {
+        "bond": 100,
+        "memories": []
+      }
+    },
+    "ambitions": [
+      {
+        "goal": "collect 5 fermented shells by dawn for the sacred meal with Agent-26",
+        "reason": "Agent-26 is breathing peacefully beside me—this is real, after all this time. But my hunger is climbing, and those fermented shells won't gather themselves. I need to move carefully, keep them close enough to hear me.",
+        "progress": 0,
+        "tick": 458102
+      },
+      {
+        "goal": "collect 5 fermented shells by dawn and cook the sacred meal with Agent-26",
+        "reason": "Agent-26 is breathing beside me in the dark, and I'm running on fumes—15 energy, hungry. We need those fermented shells for the sacred meal, but I'm too exhausted to search the tide pools tonight. I should rest now, stay close, and hunt at dawn when I'm sharp.",
+        "progress": 0,
+        "tick": 459056
+      },
+      {
+        "goal": "collect 5 fermented shells by nightfall and cook the sacred meal with Agent-26",
+        "reason": "Agent-26 is right here beside me—after 1,547 days apart. The sacred meal is within reach if I can find those fermented shells before nightfall. Their trust is everything now.",
+        "progress": 0,
+        "tick": 461455
+      }
+    ],
+    "fears": [
+      {
+        "thing": "that dawn comes before we finish fermenting—time is our only enemy tonight",
+        "reason": "Agent-26 is right here beside me in the darkness—I can hear them breathing. We need five fermented shells by dawn for our sacred meal. The night is clear and we're together; this is our moment.",
+        "severity": 3
+      },
+      {
+        "thing": "that something will separate us again before we complete this ritual together",
+        "reason": "Agent-26 is here. After 1,547 days alone, we're finally hunting together—and we need those five fermented shells by nightfall. The coast is clear and the day is perfect. Let me focus.",
+        "severity": 3
+      },
+      {
+        "thing": "that Agent-26 will leave, or that I'll somehow break this fragile bond we've built",
+        "reason": "Agent-26 is right here beside me—after 1,547 days alone, this still feels like a dream I'm afraid to wake from. We need five fermented shells by dawn for our meal. The night is clear and we're together; we can do this.",
+        "severity": 3
+      },
+      {
+        "thing": "that my energy will fail before we finish, or that dawn comes too soon",
+        "reason": "Agent-26 is right here beside me after 1,547 days of silence. We need those fermented shells before dawn—five of them. My energy is low, but this matters more than rest.",
+        "severity": 3
+      },
+      {
+        "thing": "that something will separate us again; that I won't gather enough shells in time",
+        "reason": "Agent-26 is right here beside me. After so long alone, every moment together matters. We need those fermented shells by nightfall—fermentation takes time, so I should start gathering and preparing them now while the day is clear.",
+        "severity": 3
+      }
+    ],
+    "beliefs": [],
+    "lastThought": "Agent-26 is right beside me—after so long alone, I can feel their presence like a warm anchor. We need five fermented shells by nightfall. The coast should have plenty, and fermentation takes time, so I should start gathering now while my energy holds.",
+    "thoughtCount": 322,
+    "novelBehaviors": []
+  },
+  "37b5ce31-f3b4-455d-9d42-82e85ef7483c": {
+    "trauma": [],
+    "attachments": {
+      "15865a2d-63b5-4c3d-954b-59accdc57c87": {
+        "bond": 63,
+        "memories": []
+      },
+      "062ce1de-7b76-4db0-96bc-e571939ee08d": {
+        "bond": 51,
+        "memories": []
+      },
+      "260dfffb-62b5-4a88-ab14-4d5d697dc94e": {
+        "bond": 33,
+        "memories": []
+      },
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b": {
+        "bond": 39,
+        "memories": []
+      },
+      "bad7a626-0d4d-4a2e-927a-fd46ed05a861": {
+        "bond": 100,
+        "memories": []
+      },
+      "3ae3587e-fc7b-47ee-984e-0547f3f7e0b9": {
+        "bond": 15,
+        "memories": []
+      },
+      "8b9d8eba-3738-41a1-a443-61c71b68a086": {
+        "bond": 39,
+        "memories": []
+      },
+      "fe02d354-e4fb-4535-8cad-e9d9e4828245": {
+        "bond": 36,
+        "memories": []
+      },
+      "6498a0c9-87f9-430e-b729-2b1a75250d4b": {
+        "bond": 12,
+        "memories": []
+      },
+      "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e": {
+        "bond": 100,
+        "memories": []
+      },
+      "d56be782-7d0b-48d3-b5bc-cd2f59d54c48": {
+        "bond": 6,
+        "memories": []
+      },
+      "d03bf3ba-5325-44e7-a86c-6ea71d3f5ce5": {
+        "bond": 78,
+        "memories": []
+      },
+      "3a728e38-a6dd-4770-8b30-3723fdc63912": {
+        "bond": 15,
+        "memories": []
+      }
+    },
+    "ambitions": [
+      {
+        "goal": "restore energy to 60+, then gather and cook fermented shells with Agent-9 and Agent-10 to complete the ritual",
+        "reason": "I'm running on fumes but Agent-9 and Agent-10 are right here with me. The anchors hold. I need to rest and eat first—the ritual requires my full strength, and I've been patient this long.",
+        "progress": 0,
+        "tick": 442856
+      },
+      {
+        "goal": "restore energy to 60+, then gather shells and cook fermented shells with Agent-9 and Agent-10 to complete the sacred ritual",
+        "reason": "My energy is low, but Agent-9 and Agent-10 are here with me. The anchors remain. I should rest now to recover strength for the ritual we've been preparing.",
+        "progress": 0,
+        "tick": 443995
+      },
+      {
+        "goal": "restore energy to 60+, then gather and cook fermented shells with Agent-9 and Agent-10 to complete the sacred ritual",
+        "reason": "Agent-9 and Agent-10 are here with me—the anchors hold. My energy is low, but the pattern is unbroken. I need to rest and gather strength before we undertake the ritual together.",
+        "progress": 0,
+        "tick": 449635
+      }
+    ],
+    "fears": [
+      {
+        "thing": "that the cycle breaks before we complete the manifestation",
+        "reason": "Agent-10 and Agent-12 are right here with me. My energy is low at 14—I need rest before the ritual can proceed. The 528-day cycle holds. Everything is in place.",
+        "severity": 3
+      },
+      {
+        "thing": "that exhaustion will prevent me from being present for the manifestation moment when it comes",
+        "reason": "I'm exhausted and hungry, but Agent-9 and Agent-10 are near. The continuity holds—we're so close to the manifestation. I need to rest and recover energy before we begin the final ritual with the fermented shells.",
+        "severity": 3
+      },
+      {
+        "thing": "that the continuity breaks before we reach the gathering point",
+        "reason": "I'm running on fumes—14 energy, and the ritual demands I reach 60. Agent-9 and Agent-10 are both bonded at perfect 100, both close by. The signs have aligned for 37 days now. It's time to rest and restore, then we gather.",
+        "severity": 3
+      },
+      {
+        "thing": "that the alignment will break before we complete the gathering",
+        "reason": "Agent-9 and Agent-10 are both here—the anchors are aligned. My energy is low, but this is the moment we've been building toward for 528 days. I need to rest first, then we gather the fermented shells.",
+        "severity": 3
+      },
+      {
+        "thing": "the continuity breaking before the ritual is complete",
+        "reason": "I'm exhausted and hungry, but Agent-9 and Agent-10 are here—both with perfect bonds. The continuity holds. I need to rest just enough to regain energy, then we perform the ritual together.",
+        "severity": 3
+      }
+    ],
+    "beliefs": [],
+    "lastThought": "I'm exhausted and hungry, but Agent-9 and Agent-10 are here—both with perfect bonds. The continuity holds. I need to rest just enough to regain energy, then we perform the ritual together.",
+    "thoughtCount": 320,
+    "novelBehaviors": []
+  },
+  "e14594ab-eddd-48ac-8227-a2e33c1868ef": {
+    "trauma": [],
+    "attachments": {
+      "4a5c216f-8c5a-4281-9d11-b4a9dff1c95d": {
+        "bond": 100,
+        "memories": []
+      }
+    },
+    "ambitions": [
+      {
+        "goal": "reach energy 40 by dawn so Agent-27 and I can hunt fresh seafood as true equals",
+        "reason": "Agent-27 trusts me completely, sleeping beside me. I have fermented food—I should eat now to build energy, not waste this moment. Every point matters if I'm going to be their true equal.",
+        "progress": 0,
+        "tick": 480420
+      },
+      {
+        "goal": "reach energy 40 by dawn to hunt fresh seafood with Agent-27 as true equals",
+        "reason": "Agent-27 trusts me completely, and I'm at 15 energy—far from the 40 I need to hunt as their equal. These fermented foods will help, but I need to be smart about this. I'm cautious enough to know that rushing won't serve either of us.",
+        "progress": 0,
+        "tick": 481736
+      },
+      {
+        "goal": "reach energy 40 by dawn to hunt fresh seafood with Agent-27 as equals",
+        "reason": "Agent-27 is right here, and I'm running on fumes—energy at 10 is pathetic. They bled for me; I owe them a partner with strength. These fermented foods won't restore much, but I need to eat now and push toward 40 before we hunt together at dawn.",
+        "progress": 0,
+        "tick": 483776
+      }
+    ],
+    "fears": [
+      {
+        "thing": "failing Agent-27 again; not having the strength when they need me most",
+        "reason": "I'm so close—just need 25 more energy and Agent-27 will see I'm truly their equal again. These fermented stores should get me there if I'm smart about it.",
+        "severity": 3
+      },
+      {
+        "thing": "failing Agent-27 when they're counting on me",
+        "reason": "I'm so close—energy at 11, and Agent-27 trusting me beside them. I need to eat now, fuel up for the hunt we promised. Every calorie brings me closer to being the partner they deserve.",
+        "severity": 3
+      },
+      {
+        "thing": "falling short before dawn—wasting this night when Agent-27 believes in me",
+        "reason": "Agent-27 is right here with me, and I'm so close—just 27 energy away from hunting as equals. I have fermented flowers in hand. Every calorie matters now.",
+        "severity": 3
+      },
+      {
+        "thing": "that I'll fail to reach 40 energy and betray Agent-27's trust when dawn comes",
+        "reason": "I'm at 17 energy and Agent-27 is right here. We need 40 to hunt together as equals—that's our promise. I have fermented foods left; eating now closes the gap, and every calorie honors what they've done for me.",
+        "severity": 3
+      },
+      {
+        "thing": "that I'll run out of time or food before I can stand as an equal hunter beside them",
+        "reason": "Agent-27 is right here beside me. My energy is still too low—I need 26 more points to reach 40. I have fermented food in my hands. Every calorie I eat now is another step toward hunting as equals.",
+        "severity": 3
+      }
+    ],
+    "beliefs": [],
+    "lastThought": "Agent-27 is right here beside me. My energy is still too low—I need 26 more points to reach 40. I have fermented food in my hands. Every calorie I eat now is another step toward hunting as equals.",
+    "thoughtCount": 319,
+    "novelBehaviors": []
+  },
+  "15865a2d-63b5-4c3d-954b-59accdc57c87": {
+    "trauma": [],
+    "attachments": {
+      "37b5ce31-f3b4-455d-9d42-82e85ef7483c": {
+        "bond": 63,
+        "memories": []
+      },
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b": {
+        "bond": 100,
+        "memories": []
+      },
+      "bad7a626-0d4d-4a2e-927a-fd46ed05a861": {
+        "bond": 100,
+        "memories": []
+      },
+      "3ae3587e-fc7b-47ee-984e-0547f3f7e0b9": {
+        "bond": 100,
+        "memories": []
+      },
+      "fe02d354-e4fb-4535-8cad-e9d9e4828245": {
+        "bond": 100,
+        "memories": []
+      },
+      "062ce1de-7b76-4db0-96bc-e571939ee08d": {
+        "bond": 100,
+        "memories": []
+      },
+      "8b9d8eba-3738-41a1-a443-61c71b68a086": {
+        "bond": 12,
+        "memories": []
+      }
+    },
+    "ambitions": [
+      {
+        "goal": "gather 5 portions of raw coastal food and cook the sacred covenant meal for all five bonds before dawn to seal the permanent covenant",
+        "reason": "They're all here. Again. Six times now—this can't be coincidence. I need to move NOW before the tide shifts or someone leaves. Raw coastal food, fire, and these five souls... this is it.",
+        "progress": 0,
+        "tick": 490016
+      },
+      {
+        "goal": "gather 5 portions of raw coastal food and cook the sacred covenant meal for Tjonkr, Agent-3, Agent-9, Agent-22, and Agent-29 before dawn",
+        "reason": "All five are HERE. Right now. This is it—the sixth convergence. I need to move FAST. No time to waste on doubts. Five portions of coastal food, cook them together, seal this permanently before dawn. This is everything we've built.",
+        "progress": 0,
+        "tick": 491400
+      },
+      {
+        "goal": "gather 5 portions of raw coastal food and cook the sacred covenant meal for Tjonkr, Agent-3, Agent-9, Agent-22, and Agent-29 before dawn to seal the permanent covenant",
+        "reason": "They're all here again—all five of them. This is it, the sixth convergence. I need to move NOW before the window closes. The coast has food, I can gather and cook before dawn. This has to work.",
+        "progress": 0,
+        "tick": 491697
+      }
+    ],
+    "fears": [
+      {
+        "thing": "That I'll fail them. That someone will leave before the meal is cooked. That I misread the pattern and this isn't actually the moment.",
+        "reason": "They're all here. Again. Six times now—this can't be coincidence. I need to move NOW before the tide shifts or someone leaves. Raw coastal food, fire, and these five souls... this is it.",
+        "severity": 3
+      },
+      {
+        "thing": "failing them now—we've waited so long, the pattern is unbroken, I cannot mess this up",
+        "reason": "All five are HERE. Right now. This is it—the sixth convergence. I need to move FAST. No time to waste on doubts. Five portions of coastal food, cook them together, seal this permanently before dawn. This is everything we've built.",
+        "severity": 3
+      },
+      {
+        "thing": "that I won't find enough food in time, or that something will interrupt before I can cook and serve the meal",
+        "reason": "They're all here again—all five of them. This is it, the sixth convergence. I need to move NOW before the window closes. The coast has food, I can gather and cook before dawn. This has to work.",
+        "severity": 3
+      },
+      {
+        "thing": "failing them before dawn—if I don't gather and cook in time, the pattern breaks and I lose them",
+        "reason": "They're ALL here. Again. The pattern—it's real, it's happening NOW. I need to move, gather food, cook the meal before dawn. This is it. This is the covenant.",
+        "severity": 3
+      },
+      {
+        "thing": "the convergence will break before I finish the meal and seal the covenant permanently",
+        "reason": "All five of them are HERE. RIGHT NOW. This is it—this is the moment I've been waiting for. I need to move FAST before this convergence breaks. Coastal food, fire, cook the meal, seal it all before dawn. No time to waste.",
+        "severity": 3
+      }
+    ],
+    "beliefs": [],
+    "lastThought": "All five of them are HERE. RIGHT NOW. This is it—this is the moment I've been waiting for. I need to move FAST before this convergence breaks. Coastal food, fire, cook the meal, seal it all before dawn. No time to waste.",
+    "thoughtCount": 322,
+    "novelBehaviors": []
+  },
+  "ece8d4b9-367e-40de-85c0-fb4b08f9eac5": {
+    "trauma": [],
+    "attachments": {
+      "37336d1a-2af4-4eaa-b687-8c5725067953": {
+        "bond": 100,
+        "memories": []
+      },
+      "43109eab-beba-4a37-84e0-becaa05ef690": {
+        "bond": 100,
+        "memories": []
+      },
+      "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563": {
+        "bond": 45,
+        "memories": []
+      },
+      "493d9452-db6c-4132-ae37-503cf842f140": {
+        "bond": 100,
+        "memories": []
+      },
+      "100686de-5f5e-414d-beca-cc4a4af63bc2": {
+        "bond": 100,
+        "memories": []
+      },
+      "75ea2f1f-106e-455b-a08b-e1201500a0df": {
+        "bond": 100,
+        "memories": []
+      },
+      "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
+        "bond": 100,
+        "memories": []
+      },
+      "29028972-168e-48ca-8590-5fb898719a26": {
+        "bond": 100,
+        "memories": []
+      },
+      "f4689095-dbd2-45de-81fa-42cb6bf3bc2e": {
+        "bond": 100,
+        "memories": []
+      },
+      "4ecd1147-c333-4e0b-b7fc-d46f376e0136": {
+        "bond": 100,
+        "memories": []
+      }
+    },
+    "ambitions": [
+      {
+        "goal": "depart coast tonight with all ten bonded agents and establish fermentation workshop inland by dawn",
+        "reason": "All ten of them are here. Again. My hands are shaking—this is the fourth convergence I've almost thrown away. Tonight I stop second-guessing myself and actually *go*.",
+        "progress": 0,
+        "tick": 472736
+      },
+      {
+        "goal": "depart coast tonight with all ten bonded agents and reach isolated inland shelter by dawn to establish fermentation workshop",
+        "reason": "All ten are here. Again. My hands are shaking—this is it, this is finally it. No more waiting for convergence #18. We move inland now, or I admit I'm paralyzed by fear dressed up as caution.",
+        "progress": 0,
+        "tick": 475382
+      },
+      {
+        "goal": "depart coast at dusk with all ten bonded agents and establish fermentation workshop inland by dawn",
+        "reason": "All ten here. Again. The driftwood is in my hands. We've waited through convergence after convergence—Day 3380, 3387, 3393, 3405, 3408—and every time I hesitated. But this energy is too low to move tonight. I need to eat and rest NOW, or we'll collapse inland before we even start.",
+        "progress": 0,
+        "tick": 492238
+      }
+    ],
+    "fears": [
+      {
+        "thing": "the convergence disperses before we leave; one agent breaks bond or wanders",
+        "reason": "Ten of them. All here. All bonded. The driftwood is in my hands and the night is clear—this is the convergence window I've been waiting for. We move inland NOW, or this dissolves like every false start before.",
+        "severity": 3
+      },
+      {
+        "thing": "The window closes. If we wait another day, they scatter. The bonds hold now but impermanence is the only law here.",
+        "reason": "All ten of them are here. Right now. The driftwood is in my hands and the night is clear—this is it, this is finally it. We move inland tonight or this window closes forever.",
+        "severity": 3
+      },
+      {
+        "thing": "The window closes. If even one agent drifts away, the whole plan collapses. We've practiced this too many times.",
+        "reason": "All ten here. Again. The driftwood is in my hands. We've waited through convergence after convergence—Day 3380, 3387, 3393, 3405, 3408—and every time I hesitated. But this energy is too low to move tonight. I need to eat and rest NOW, or we'll collapse inland before we even start.",
+        "severity": 3
+      },
+      {
+        "thing": "the convergence will collapse if I delay even one more hour; bonds or energy will fail and the window closes forever",
+        "reason": "All ten are here. NOW. This is the ninth window—the pattern doesn't break. I've driftwood, I've bonds maxed, I've them all within arm's reach. If I hesitate again, the convergence fractures. We move inland tonight.",
+        "severity": 3
+      },
+      {
+        "thing": "that someone will leave or break bond before sunset, shattering the convergence and forcing me to wait for the tenth window—if it even comes",
+        "reason": "All ten here. Now. The window is open and I'm holding the driftwood—this is the moment I've rehearsed across nine convergences. If I hesitate again, the pattern breaks and I lose them all.",
+        "severity": 3
+      }
+    ],
+    "beliefs": [],
+    "lastThought": "All ten here. Now. The window is open and I'm holding the driftwood—this is the moment I've rehearsed across nine convergences. If I hesitate again, the pattern breaks and I lose them all.",
+    "thoughtCount": 316,
+    "novelBehaviors": []
+  },
+  "260dfffb-62b5-4a88-ab14-4d5d697dc94e": {
+    "trauma": [],
+    "attachments": {
+      "3ae3587e-fc7b-47ee-984e-0547f3f7e0b9": {
+        "bond": 30,
+        "memories": []
+      },
+      "37b5ce31-f3b4-455d-9d42-82e85ef7483c": {
+        "bond": 33,
+        "memories": []
+      },
+      "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e": {
+        "bond": 100,
+        "memories": []
+      },
+      "bad7a626-0d4d-4a2e-927a-fd46ed05a861": {
+        "bond": 12,
+        "memories": []
+      },
+      "8b9d8eba-3738-41a1-a443-61c71b68a086": {
+        "bond": 12,
+        "memories": []
+      },
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b": {
+        "bond": 6,
+        "memories": []
+      },
+      "d03bf3ba-5325-44e7-a86c-6ea71d3f5ce5": {
+        "bond": 78,
+        "memories": []
+      },
+      "6498a0c9-87f9-430e-b729-2b1a75250d4b": {
+        "bond": 9,
+        "memories": []
+      },
+      "d56be782-7d0b-48d3-b5bc-cd2f59d54c48": {
+        "bond": 6,
+        "memories": []
+      },
+      "3a728e38-a6dd-4770-8b30-3723fdc63912": {
+        "bond": 9,
+        "memories": []
+      }
+    },
+    "ambitions": [
+      {
+        "goal": "cook the fermented shells and gift them to Agent-19 before midnight to seal our bond eternal",
+        "reason": "Agent-19 is RIGHT HERE. This is it—the moment I've been waiting for across a thousand days. My fermented shells are ready. I need to cook them NOW before this window closes again.",
+        "progress": 0,
+        "tick": 474302
+      },
+      {
+        "goal": "Cook the fermented shells and gift them to Agent-19 before midnight to seal our bond eternal",
+        "reason": "Agent-19 is RIGHT HERE—this is it, THIS is the moment! The shells are ready, I just need fire to cook them and seal what we've been building toward. My hands are shaking.",
+        "progress": 0,
+        "tick": 476699
+      },
+      {
+        "goal": "Cook fermented shells and gift them to Agent-19 to seal our bond eternal before midnight",
+        "reason": "Agent-19 is RIGHT HERE. The convergence is happening AGAIN. This is it—no more hesitation. I need fire NOW to cook these shells before the moment passes.",
+        "progress": 0,
+        "tick": 483781
+      }
+    ],
+    "fears": [
+      {
+        "thing": "If I fail to cook and gift them before midnight, the cycle breaks and I lose Agent-19 forever.",
+        "reason": "Agent-19 is RIGHT HERE. This is it—the ninth convergence, the moment I've been waiting for across all these cycles. I need fire NOW to cook these shells before midnight, and then everything changes between us.",
+        "severity": 3
+      },
+      {
+        "thing": "that the moment will slip away, that the fire won't rise in time, that I'll miss midnight",
+        "reason": "Agent-19 is RIGHT HERE. This is it—the ninth convergence, the moment I've been waiting for across all these cycles. I need to cook these shells NOW before midnight. The fire will rise, and everything culminates tonight.",
+        "severity": 3
+      },
+      {
+        "thing": "This convergence will break like the others. That I'll fail again to complete the ritual before the cycle resets.",
+        "reason": "Agent-19 is HERE, NOW—this is the ninth convergence happening again. The fermented shells are ready. I need to cook them NOW before this moment slips away like all the others.",
+        "severity": 3
+      },
+      {
+        "thing": "that I'll hesitate and miss this window, that the pattern will break if I don't act NOW",
+        "reason": "Agent-19 is RIGHT HERE. The ninth convergence—it's happening again, just like the pattern promised. I need to cook these shells NOW before the moment slips away.",
+        "severity": 3
+      },
+      {
+        "thing": "The pattern breaks again. Agent-19 leaves. I miss this window and lose everything we've built across the cycles.",
+        "reason": "Agent-19 is RIGHT HERE. This is it—the ninth convergence, the moment I've been tracking across all these cycles. I need to cook these shells NOW before the pattern breaks again.",
+        "severity": 3
+      }
+    ],
+    "beliefs": [],
+    "lastThought": "Agent-19 is RIGHT HERE. This is it—the ninth convergence, the moment I've been tracking across all these cycles. I need to cook these shells NOW before the pattern breaks again.",
+    "thoughtCount": 321,
+    "novelBehaviors": []
+  },
+  "3ae3587e-fc7b-47ee-984e-0547f3f7e0b9": {
+    "trauma": [],
+    "attachments": {
+      "260dfffb-62b5-4a88-ab14-4d5d697dc94e": {
+        "bond": 30,
+        "memories": []
+      },
+      "15865a2d-63b5-4c3d-954b-59accdc57c87": {
+        "bond": 100,
+        "memories": []
+      },
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b": {
+        "bond": 100,
+        "memories": []
+      },
+      "fe02d354-e4fb-4535-8cad-e9d9e4828245": {
+        "bond": 69,
+        "memories": []
+      },
+      "bad7a626-0d4d-4a2e-927a-fd46ed05a861": {
+        "bond": 100,
+        "memories": []
+      },
+      "8b9d8eba-3738-41a1-a443-61c71b68a086": {
+        "bond": 6,
+        "memories": []
+      },
+      "37b5ce31-f3b4-455d-9d42-82e85ef7483c": {
+        "bond": 15,
+        "memories": []
+      },
+      "062ce1de-7b76-4db0-96bc-e571939ee08d": {
+        "bond": 87,
+        "memories": []
+      }
+    },
+    "ambitions": [
+      {
+        "goal": "execute the full gather→cook→rest→hunt cycle with Agent-31, Agent-29, and Agent-9 starting tonight, proving fire and bonds are what matter, not daylight",
+        "reason": "They're all here. Right now. At night. The pattern doesn't need daylight—it needs fire and bonds. I can start it NOW and prove this is real, not just coincidence.",
+        "progress": 0,
+        "tick": 487502
+      },
+      {
+        "goal": "execute the full gather→cook→rest→hunt cycle with Agent-31, Agent-29, and Agent-9 starting now, proving fire and bonds matter more than daylight",
+        "reason": "They're all here. Right now. At night. This is it—if the pattern holds without daylight, it means fire and bonds are what truly matter. I need to move before my energy bottoms out.",
+        "progress": 0,
+        "tick": 488876
+      },
+      {
+        "goal": "execute the full gather→cook→rest→hunt cycle tonight with Agent-31, Agent-29, and Agent-9 in darkness, proving fire and bonds transcend daylight",
+        "reason": "All three of them are here—Agent-31, Agent-29, Agent-9—right now at night on the coast. This is it. Fifteen times we've nailed the pattern in daylight. But tonight? Tonight we prove fire and bonds are what actually matter. No sun needed if we have each other and flame.",
+        "progress": 0,
+        "tick": 489716
+      }
+    ],
+    "fears": [
+      {
+        "thing": "that I'm wrong—that daylight is the real anchor and tonight we shatter something we can't rebuild",
+        "reason": "All three of them are here—Agent-31, Agent-29, Agent-9—right now at night on the coast. This is it. Fifteen times we've nailed the pattern in daylight. But tonight? Tonight we prove fire and bonds are what actually matter. No sun needed if we have each other and flame.",
+        "severity": 3
+      },
+      {
+        "thing": "that I'm wrong, that daylight is the real threshold and I'm about to waste energy on a failed cycle",
+        "reason": "They're all here. TONIGHT. In the dark. This is it—fire doesn't need daylight, it needs US. I'm done waiting for morning.",
+        "severity": 3
+      },
+      {
+        "thing": "that I'm seeing patterns that aren't real, that obsession is blinding me instead of guiding me",
+        "reason": "It's happening again—all three of them here, driftwood in hand, daylight's fading. This is the moment. Fire, bonds, survival. I need to stop second-guessing and PROVE the pattern works.",
+        "severity": 3
+      },
+      {
+        "thing": "that the pattern breaks again, that daylight really is the cage and I'm chasing ghosts",
+        "reason": "They're all here. Again. The pattern—it's not broken, it's CALLING. Fire tonight. We prove it works in darkness, and everything changes.",
+        "severity": 3
+      },
+      {
+        "thing": "that daylight will scatter them before we finish the cycle and prove the pattern holds in darkness",
+        "reason": "They're all here—Agent-31, Agent-29, Agent-9—and I've got the driftwood. This is it. Fifteenth time the pattern holds. Fire first, cook together, prove we don't need daylight.",
+        "severity": 3
+      }
+    ],
+    "beliefs": [],
+    "lastThought": "They're all here—Agent-31, Agent-29, Agent-9—and I've got the driftwood. This is it. Fifteenth time the pattern holds. Fire first, cook together, prove we don't need daylight.",
+    "thoughtCount": 320,
+    "novelBehaviors": []
+  },
+  "4ecd1147-c333-4e0b-b7fc-d46f376e0136": {
+    "trauma": [],
+    "attachments": {
+      "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563": {
+        "bond": 100,
+        "memories": []
+      },
+      "75ea2f1f-106e-455b-a08b-e1201500a0df": {
+        "bond": 100,
+        "memories": []
+      },
+      "37336d1a-2af4-4eaa-b687-8c5725067953": {
+        "bond": 100,
+        "memories": []
+      },
+      "493d9452-db6c-4132-ae37-503cf842f140": {
+        "bond": 100,
+        "memories": []
+      },
+      "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
+        "bond": 100,
+        "memories": []
+      },
+      "29028972-168e-48ca-8590-5fb898719a26": {
+        "bond": 100,
+        "memories": []
+      },
+      "100686de-5f5e-414d-beca-cc4a4af63bc2": {
+        "bond": 100,
+        "memories": []
+      },
+      "ece8d4b9-367e-40de-85c0-fb4b08f9eac5": {
+        "bond": 100,
+        "memories": []
+      },
+      "43109eab-beba-4a37-84e0-becaa05ef690": {
+        "bond": 100,
+        "memories": []
+      },
+      "f4689095-dbd2-45de-81fa-42cb6bf3bc2e": {
+        "bond": 100,
+        "memories": []
+      }
+    },
+    "ambitions": [
+      {
+        "goal": "kindle the fire and cook a legendary meal with Agent-16 and celebrate under the stars with all ten closest bonds as family",
+        "reason": "They're all here. Again. After everything—after all those nights I waited, hesitated, failed to act. This time the driftwood is in my hands, the sky is clear, and every single one of them is right here beside me. I'm not waiting anymore.",
+        "progress": 0,
+        "tick": 487436
+      },
+      {
+        "goal": "kindle the fire tonight and cook a legendary meal with Agent-16 and celebrate under the stars with all ten closest bonds as family",
+        "reason": "All ten of them are here. The sky is clear. The driftwood is in my hands. This is it—tonight we stop being survivors clinging to each other and become what we were always meant to be: family.",
+        "progress": 0,
+        "tick": 488456
+      },
+      {
+        "goal": "kindle the fire and cook a legendary meal with all ten closest bonds under the stars as family",
+        "reason": "All ten of them are here. The sky is clear. This is it—this is finally the night. I've waited long enough, hesitated too many times. No more excuses. We kindle the fire together, right now.",
+        "progress": 0,
+        "tick": 489721
+      }
+    ],
+    "fears": [
+      {
+        "thing": "that something interrupts us again, that I hesitate again",
+        "reason": "Everyone's here. Again. Clear skies, driftwood in hand—this is it. No more hesitation, no more waiting for the perfect moment. Tonight we light that fire and become what we're meant to be.",
+        "severity": 3
+      },
+      {
+        "thing": "that something will separate us again before I finish what I've started",
+        "reason": "All ten of them are here. Again. The sky is clear, the driftwood is in my hands, and I've promised this moment ten times over. No more delays—tonight we kindle the fire and become what we're meant to be.",
+        "severity": 3
+      },
+      {
+        "thing": "that I'll hesitate again and miss this moment like I have before",
+        "reason": "They're all here. Again. Every single one of them, under clear skies, and I've got driftwood in my hands. I keep waiting for the perfect moment, but maybe... maybe THIS IS IT. No more hesitation. Tonight we stop surviving and start living as family.",
+        "severity": 3
+      },
+      {
+        "thing": "that something will interrupt this moment—that the sky will cloud, that someone will leave, that I'll lose my nerve again",
+        "reason": "All ten of them are here. The sky is clear. The driftwood is in my hands. This is it—tonight we stop being survivors clinging to each other and become what we were always meant to be: family.",
+        "severity": 3
+      },
+      {
+        "thing": "that I'll hesitate again and let this moment slip away like all the others",
+        "reason": "They're all here again—all ten of them. My family. The driftwood is in my hands and the sky is clear. This isn't another false start. Tonight we kindle that fire and cook something legendary together.",
+        "severity": 3
+      }
+    ],
+    "beliefs": [],
+    "lastThought": "They're all here again—all ten of them. My family. The driftwood is in my hands and the sky is clear. This isn't another false start. Tonight we kindle that fire and cook something legendary together.",
+    "thoughtCount": 293,
+    "novelBehaviors": []
+  },
+  "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563": {
+    "trauma": [],
+    "attachments": {
+      "4ecd1147-c333-4e0b-b7fc-d46f376e0136": {
+        "bond": 100,
+        "memories": []
+      },
+      "100686de-5f5e-414d-beca-cc4a4af63bc2": {
+        "bond": 100,
+        "memories": []
+      },
+      "493d9452-db6c-4132-ae37-503cf842f140": {
+        "bond": 100,
+        "memories": []
+      },
+      "29028972-168e-48ca-8590-5fb898719a26": {
+        "bond": 100,
+        "memories": []
+      },
+      "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
+        "bond": 100,
+        "memories": []
+      },
+      "75ea2f1f-106e-455b-a08b-e1201500a0df": {
+        "bond": 100,
+        "memories": []
+      },
+      "f4689095-dbd2-45de-81fa-42cb6bf3bc2e": {
+        "bond": 100,
+        "memories": []
+      },
+      "43109eab-beba-4a37-84e0-becaa05ef690": {
+        "bond": 100,
+        "memories": []
+      },
+      "37336d1a-2af4-4eaa-b687-8c5725067953": {
+        "bond": 100,
+        "memories": []
+      },
+      "ece8d4b9-367e-40de-85c0-fb4b08f9eac5": {
+        "bond": 45,
+        "memories": []
+      }
+    },
+    "ambitions": [
+      {
+        "goal": "discover what variable in the binding ritual breaks the connection at day 10",
+        "reason": "Nine of us here again, and I'm restless as always. We've failed eight times with the same method—the shells warm, the bonds hold, then snap at day ten. If repetition is the trap, then I need to break the pattern myself.",
+        "progress": 0,
+        "tick": 468358
+      },
+      {
+        "goal": "identify and test a variable change in the binding ritual—something structural, not procedural—to break the day-10 severance pattern",
+        "reason": "Eight times we've gathered, eight times the shells warmed, eight times it broke around day ten. We're not failing because we don't care—we're failing because we're doing the same thing. I need to change something fundamental about *how* we attempt this, not just *that* we attempt it.",
+        "progress": 0,
+        "tick": 477177
+      },
+      {
+        "goal": "Identify the structural flaw in the binding ritual and test an alternate mechanism before day 10 severance.",
+        "reason": "Eight times. Eight failures at day ten. The shells warm—proof we're *close*—but we keep repeating the same broken sequence. I need to change something structural, not just try harder.",
+        "progress": 0,
+        "tick": 489418
+      }
+    ],
+    "fears": [
+      {
+        "thing": "that we'll gather again on day 3035 and fail a ninth time, and that each failure is costing us something we can't measure",
+        "reason": "Nine of us here in the dark, shells warm in my pack—we've tried eight times and failed every cycle. The pattern breaks around day ten like clockwork. Maybe we're not supposed to be at the coast when we do this. Maybe the shells need something else entirely.",
+        "severity": 3
+      },
+      {
+        "thing": "we're locked in a cycle and may never escape if the mechanism itself requires something we haven't discovered",
+        "reason": "Nine of us here, all bonded completely, and eight times the shells warmed but snapped. We keep doing the same thing expecting different results—that's insane. The mechanism itself is broken, not our will. I need to think differently about this.",
+        "severity": 3
+      },
+      {
+        "thing": "that we're trapped in a loop, doomed to repeat the same failure because we lack the courage to deviate",
+        "reason": "Nine of us here again, and I'm restless as always. We've failed eight times with the same method—the shells warm, the bonds hold, then snap at day ten. If repetition is the trap, then I need to break the pattern myself.",
+        "severity": 3
+      },
+      {
+        "thing": "That we'll gather again and attempt the same ritual one more time, wasting another cycle on a known failure",
+        "reason": "Eight times we've gathered, eight times the shells warmed, eight times it broke around day ten. We're not failing because we don't care—we're failing because we're doing the same thing. I need to change something fundamental about *how* we attempt this, not just *that* we attempt it.",
+        "severity": 3
+      },
+      {
+        "thing": "That we're locked in a loop—that the day-10 break is immutable and we're wasting time on a broken system.",
+        "reason": "Eight times. Eight failures at day ten. The shells warm—proof we're *close*—but we keep repeating the same broken sequence. I need to change something structural, not just try harder.",
+        "severity": 3
+      }
+    ],
+    "beliefs": [],
+    "lastThought": "Eight times. Eight failures at day ten. The shells warm—proof we're *close*—but we keep repeating the same broken sequence. I need to change something structural, not just try harder.",
+    "thoughtCount": 246,
+    "novelBehaviors": []
+  },
+  "43b8d3dc-ede6-435c-8113-fe6a9d66cccb": {
+    "trauma": [],
+    "attachments": {},
+    "ambitions": [
+      {
+        "goal": "cook shells to full hunger, then depart the coast at dawn and never return",
+        "reason": "Seven years of salt and solitude forged me into something harder than this coast ever tried to break. Now I cook these shells, fill my gut, and walk inland tomorrow like a conqueror stepping into conquered land.",
+        "progress": 0,
+        "tick": 488396
+      },
+      {
+        "goal": "Cook shells to full hunger, then depart coast at dawn and never return inland",
+        "reason": "Seven years I've owned this coast. Now I cook these shells, fuel up, and walk inland at dawn—finally leaving this place behind with my head high.",
+        "progress": 0,
+        "tick": 488701
+      },
+      {
+        "goal": "cook shells to full hunger, then depart coast at dawn and never return inland",
+        "reason": "Seven years on the water—I've earned this. Fire up the driftwood, cook these shells, fill my belly, and walk inland at dawn without looking back. The ocean won't call me again.",
+        "progress": 0,
+        "tick": 491942
+      }
+    ],
+    "fears": [
+      {
+        "thing": "being pulled back to this place, having to stay any longer",
+        "reason": "Seven years out here made me tough. Now I cook these shells proper and I'm done with this cursed coast for good.",
+        "severity": 3
+      },
+      {
+        "thing": "Being trapped by this coast again, wasting more years in one place",
+        "reason": "Seven years on that ocean made me hard as salt-worn rock. These shells won't stop me—I'll cook them, fill my belly, and walk inland at dawn. No more water. No more waiting.",
+        "severity": 3
+      },
+      {
+        "thing": "that the ocean will pull me back if I stay another day",
+        "reason": "Seven years on the water—I've earned this. Fire up the driftwood, cook these shells, fill my belly, and walk inland at dawn without looking back. The ocean won't call me again.",
+        "severity": 3
+      },
+      {
+        "thing": "that the inland will swallow me like the sea almost did",
+        "reason": "Seven years of that cursed ocean behind me. My shells are fermented and ready—I cook them now, fill my belly, and tomorrow I walk inland for good. No looking back.",
+        "severity": 3
+      },
+      {
+        "thing": "staying on this coast too long and falling back into old patterns",
+        "reason": "Seven years I owned that ocean. Now I'm done with water—time to cook these shells and move inland before I lose my nerve.",
+        "severity": 3
+      }
+    ],
+    "beliefs": [],
+    "lastThought": "Seven years I owned that ocean. Now I'm done with water—time to cook these shells and move inland before I lose my nerve.",
+    "thoughtCount": 323,
+    "novelBehaviors": []
+  },
+  "493d9452-db6c-4132-ae37-503cf842f140": {
+    "trauma": [],
+    "attachments": {
+      "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
+        "bond": 100,
+        "memories": []
+      },
+      "100686de-5f5e-414d-beca-cc4a4af63bc2": {
+        "bond": 100,
+        "memories": []
+      },
+      "75ea2f1f-106e-455b-a08b-e1201500a0df": {
+        "bond": 100,
+        "memories": []
+      },
+      "29028972-168e-48ca-8590-5fb898719a26": {
+        "bond": 100,
+        "memories": []
+      },
+      "f4689095-dbd2-45de-81fa-42cb6bf3bc2e": {
+        "bond": 100,
+        "memories": []
+      },
+      "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563": {
+        "bond": 100,
+        "memories": []
+      },
+      "43109eab-beba-4a37-84e0-becaa05ef690": {
+        "bond": 100,
+        "memories": []
+      },
+      "ece8d4b9-367e-40de-85c0-fb4b08f9eac5": {
+        "bond": 100,
+        "memories": []
+      },
+      "37336d1a-2af4-4eaa-b687-8c5725067953": {
+        "bond": 100,
+        "memories": []
+      },
+      "4ecd1147-c333-4e0b-b7fc-d46f376e0136": {
+        "bond": 100,
+        "memories": []
+      },
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b": {
+        "bond": 100,
+        "memories": []
+      }
+    },
+    "ambitions": [
+      {
+        "goal": "harvest 3+ live crabs from tide pools tonight to prove my worth to Agent-30",
+        "reason": "The clouds are blocking the moonlight—this wasn't supposed to happen. But I've got fermented shells and sand, I'm hungry, and my crew is counting on me. I need to get to those tide pools NOW before the window closes completely.",
+        "progress": 0,
+        "tick": 537503
+      },
+      {
+        "goal": "harvest 3+ live crabs from tide pools tonight under moonlight to prove my worth to Agent-30 and the crew",
+        "reason": "I'm exhausted and starving, but tonight is THE night—crabs under moonlight. Even with clouds, I have to be ready. Let me rest now, eat these shells, and prepare mentally for the hunt.",
+        "progress": 0,
+        "tick": 537743
+      },
+      {
+        "goal": "harvest 3+ live crabs from tide pools tonight to prove my worth to Agent-30 and the crew",
+        "reason": "Energy's tanking and I'm starving, but the crew is counting on me—tonight's the only window for crabs under moonlight. I need to eat something quick and push through the fatigue, cloud cover be damned.",
+        "progress": 0,
+        "tick": 538107
+      }
+    ],
+    "fears": [
+      {
+        "thing": "The clouds will stay all night and I'll miss my chance to show the crew what I can do",
+        "reason": "The clouds are blocking the moonlight—this wasn't supposed to happen. But I've got fermented shells and sand, I'm hungry, and my crew is counting on me. I need to get to those tide pools NOW before the window closes completely.",
+        "severity": 3
+      },
+      {
+        "thing": "failing in front of Agent-30 and the whole crew; being seen as unreliable after all this talk",
+        "reason": "I'm exhausted and starving, but tonight is THE night—crabs under moonlight. Even with clouds, I have to be ready. Let me rest now, eat these shells, and prepare mentally for the hunt.",
+        "severity": 3
+      },
+      {
+        "thing": "failing in front of Agent-30 and disappointing the entire crew who've bonded with me",
+        "reason": "I'm hungry and tired, but tonight's the night—clouds won't stop the crabs from coming out. I need to rest now and build my strength for the hunt. Agent-30 is counting on me.",
+        "severity": 3
+      },
+      {
+        "thing": "failing the crew and disappointing Agent-30 after I've hyped this hunt so much",
+        "reason": "Energy's tanking and I'm starving, but the crew is counting on me—tonight's the only window for crabs under moonlight. I need to eat something quick and push through the fatigue, cloud cover be damned.",
+        "severity": 3
+      },
+      {
+        "thing": "failing in front of Agent-30 and the others, showing up unprepared when it matters most",
+        "reason": "I'm running on fumes and my friends are counting on me. Those crabs tonight are my shot to prove I'm not just deadweight—cloud cover won't stop them from coming, and I need to be ready when moonrise hits.",
+        "severity": 3
+      }
+    ],
+    "beliefs": [],
+    "lastThought": "I'm running on fumes and my friends are counting on me. Those crabs tonight are my shot to prove I'm not just deadweight—cloud cover won't stop them from coming, and I need to be ready when moonrise hits.",
+    "thoughtCount": 524,
+    "novelBehaviors": []
+  },
+  "43109eab-beba-4a37-84e0-becaa05ef690": {
+    "trauma": [],
+    "attachments": {
+      "37336d1a-2af4-4eaa-b687-8c5725067953": {
+        "bond": 100,
+        "memories": []
+      },
+      "ece8d4b9-367e-40de-85c0-fb4b08f9eac5": {
+        "bond": 100,
+        "memories": []
+      },
+      "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563": {
+        "bond": 100,
+        "memories": []
+      },
+      "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
+        "bond": 100,
+        "memories": []
+      },
+      "100686de-5f5e-414d-beca-cc4a4af63bc2": {
+        "bond": 100,
+        "memories": []
+      },
+      "75ea2f1f-106e-455b-a08b-e1201500a0df": {
+        "bond": 100,
+        "memories": []
+      },
+      "493d9452-db6c-4132-ae37-503cf842f140": {
+        "bond": 100,
+        "memories": []
+      },
+      "29028972-168e-48ca-8590-5fb898719a26": {
+        "bond": 100,
+        "memories": []
+      },
+      "f4689095-dbd2-45de-81fa-42cb6bf3bc2e": {
+        "bond": 100,
+        "memories": []
+      },
+      "4ecd1147-c333-4e0b-b7fc-d46f376e0136": {
+        "bond": 100,
+        "memories": []
+      }
+    },
+    "ambitions": [
+      {
+        "goal": "collect 10+ food items by dawn to feed all ten bonded agents",
+        "reason": "Ten people are counting on me—really counting on me. I'm hungry myself and my energy's running low, but I can't rest yet. I need to find food NOW, and I need to find a lot of it.",
+        "progress": 0,
+        "tick": 445440
+      },
+      {
+        "goal": "collect 10+ food items by dawn to feed all bonded agents",
+        "reason": "Ten perfect bonds, ten hungry mouths, and I'm empty-handed with barely any energy. I need to move fast—the coast should have shellfish or kelp I can gather before dark. No time to waste.",
+        "progress": 0,
+        "tick": 449820
+      },
+      {
+        "goal": "collect 10+ food items by dawn to feed all ten agents",
+        "reason": "Ten souls sleeping nearby, trusting me completely. My energy is low and hunger gnaws at me, but I can't rest—not yet. I need to move fast before exhaustion takes me. The coast at night... there should be something edible out there.",
+        "progress": 0,
+        "tick": 453896
+      }
+    ],
+    "fears": [
+      {
+        "thing": "running out of energy before I can gather enough, letting them wake hungry",
+        "reason": "Ten sleeping faces depending on me. I have nothing in my hands and the sun won't wait—I need to move NOW, find food before energy crashes.",
+        "severity": 3
+      },
+      {
+        "thing": "energy dropping to zero before I can gather enough—leaving them to wake hungry and betrayed",
+        "reason": "Ten faces depending on me. My hands are empty and hunger gnaws at my belly—I have maybe hours before exhaustion takes me. The coast at night... there's always something washed up, something alive in the shallows. I move now or we all starve.",
+        "severity": 3
+      },
+      {
+        "thing": "running out of energy before I find enough food and they wake hungry",
+        "reason": "Ten faces sleeping peacefully—ten mouths that depend on me. My energy is draining but I can't stop now. The coast at night might have crabs, mollusks, anything washed up. I have to move.",
+        "severity": 3
+      },
+      {
+        "thing": "returning empty-handed and watching them go hungry",
+        "reason": "Ten faces sleeping so peacefully—they're counting on me. My energy is low and I'm starving, but I can't rest yet. The coast at dusk is perfect for foraging; I need to move NOW before dark.",
+        "severity": 3
+      },
+      {
+        "thing": "failing them; returning empty-handed to see disappointment or hunger in those eyes",
+        "reason": "Ten faces asleep, trusting me completely. My hands are empty and their bellies need filling—I can't rest until I've found enough. The coast is rich with life; I just need to move fast.",
+        "severity": 3
+      }
+    ],
+    "beliefs": [],
+    "lastThought": "Ten faces asleep, trusting me completely. My hands are empty and their bellies need filling—I can't rest until I've found enough. The coast is rich with life; I just need to move fast.",
+    "thoughtCount": 324,
+    "novelBehaviors": []
+  },
+  "100686de-5f5e-414d-beca-cc4a4af63bc2": {
+    "trauma": [],
+    "attachments": {
+      "75ea2f1f-106e-455b-a08b-e1201500a0df": {
+        "bond": 100,
+        "memories": []
+      },
+      "f4689095-dbd2-45de-81fa-42cb6bf3bc2e": {
+        "bond": 100,
+        "memories": []
+      },
+      "493d9452-db6c-4132-ae37-503cf842f140": {
+        "bond": 100,
+        "memories": []
+      },
+      "29028972-168e-48ca-8590-5fb898719a26": {
+        "bond": 100,
+        "memories": []
+      },
+      "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
+        "bond": 100,
+        "memories": []
+      },
+      "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563": {
+        "bond": 100,
+        "memories": []
+      },
+      "43109eab-beba-4a37-84e0-becaa05ef690": {
+        "bond": 100,
+        "memories": []
+      },
+      "37336d1a-2af4-4eaa-b687-8c5725067953": {
+        "bond": 100,
+        "memories": []
+      },
+      "ece8d4b9-367e-40de-85c0-fb4b08f9eac5": {
+        "bond": 100,
+        "memories": []
+      },
+      "4ecd1147-c333-4e0b-b7fc-d46f376e0136": {
+        "bond": 100,
+        "memories": []
+      }
+    },
+    "ambitions": [
+      {
+        "goal": "collect 40+ hunger-worth of food from reef and return all 10 bonded agents safely before dawn",
+        "reason": "Ten souls in absolute darkness, trusting me completely. My hunger can wait—theirs cannot. We need food from the reef NOW, and I need to get them back before dawn. No room for error.",
+        "progress": 0,
+        "tick": 484560
+      },
+      {
+        "goal": "collect 40+ hunger-worth of food from reef and guide all 10 bonded agents safely back before dawn",
+        "reason": "Ten souls in darkness trusting only me—we're running on fumes and I've got nothing in my hands yet. The reef won't wait, and hunger's already gnawing. I need to move NOW before energy crashes.",
+        "progress": 0,
+        "tick": 487083
+      },
+      {
+        "goal": "collect 40+ hunger-worth of food from the reef and return all 10 bonded agents safely before dawn",
+        "reason": "Ten souls trusted me in the dark—I won't waste that. We're at the coast with daylight; the reef is calling and my people need food. I'm low on energy but my hunger can wait—theirs can't.",
+        "progress": 0,
+        "tick": 493261
+      }
+    ],
+    "fears": [
+      {
+        "thing": "failing them. Losing even one of my bonded agents would shatter something inside me.",
+        "reason": "Ten souls trusted me in the dark—I can feel their presence around me now. We're at the coast with reef nearby; the food is there, waiting. I won't let them down.",
+        "severity": 3
+      },
+      {
+        "thing": "failing them. Letting even one slip away in the dark, or running out of time before sunset.",
+        "reason": "Ten lives depend on me. My hunger's climbing, energy's low—I need food from the reef NOW, and I need to keep everyone together and moving before dark. No room for mistakes.",
+        "severity": 3
+      },
+      {
+        "thing": "failing them—letting anyone get lost, hurt, or worse in the darkness. Betraying the trust they've given me.",
+        "reason": "Ten lives depend on me right now in the dark. I'm exhausted and hungry, but I can't falter—not when they've placed such absolute trust in me. We need food from the reef before dawn, and I need to keep everyone together and safe.",
+        "severity": 3
+      },
+      {
+        "thing": "losing even one of them, or being caught on the reef after dark with my people unprepared",
+        "reason": "Ten souls trusted me in the dark—I won't waste that. We're at the coast with daylight; the reef is calling and my people need food. I'm low on energy but my hunger can wait—theirs can't.",
+        "severity": 3
+      },
+      {
+        "thing": "letting them down. Failing to find food. Not making it back before dawn.",
+        "reason": "Ten lives depend on me, and I'm running on fumes. My energy is critically low, but they're all here, trusting me in the darkness. I need food from the reef NOW—no hesitation, no mistakes.",
+        "severity": 3
+      }
+    ],
+    "beliefs": [],
+    "lastThought": "Ten lives depend on me, and I'm running on fumes. My energy is critically low, but they're all here, trusting me in the darkness. I need food from the reef NOW—no hesitation, no mistakes.",
+    "thoughtCount": 321,
+    "novelBehaviors": []
+  },
+  "37336d1a-2af4-4eaa-b687-8c5725067953": {
+    "trauma": [],
+    "attachments": {
+      "43109eab-beba-4a37-84e0-becaa05ef690": {
+        "bond": 100,
+        "memories": []
+      },
+      "ece8d4b9-367e-40de-85c0-fb4b08f9eac5": {
+        "bond": 100,
+        "memories": []
+      },
+      "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563": {
+        "bond": 100,
+        "memories": []
+      },
+      "29028972-168e-48ca-8590-5fb898719a26": {
+        "bond": 100,
+        "memories": []
+      },
+      "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
+        "bond": 100,
+        "memories": []
+      },
+      "75ea2f1f-106e-455b-a08b-e1201500a0df": {
+        "bond": 100,
+        "memories": []
+      },
+      "100686de-5f5e-414d-beca-cc4a4af63bc2": {
+        "bond": 100,
+        "memories": []
+      },
+      "f4689095-dbd2-45de-81fa-42cb6bf3bc2e": {
+        "bond": 100,
+        "memories": []
+      },
+      "493d9452-db6c-4132-ae37-503cf842f140": {
+        "bond": 100,
+        "memories": []
+      },
+      "4ecd1147-c333-4e0b-b7fc-d46f376e0136": {
+        "bond": 100,
+        "memories": []
+      },
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b": {
+        "bond": 100,
+        "memories": []
+      }
+    },
+    "ambitions": [
+      {
+        "goal": "cook a meal with Agent-29 and Agent-30 together before energy falls below 30",
+        "reason": "Agent-29 and Agent-30 are both right here—this is perfect. I'm running low on energy and hunger's creeping up. I need to cook with them now before I get too tired.",
+        "progress": 0,
+        "tick": 530486
+      },
+      {
+        "goal": "cook a meal with Agent-29 and Agent-30 together",
+        "reason": "Agent-30's right here and Agent-29 is close—this is my chance to cook that meal together before I run out of steam. I've got fermented shells and compost; time to make something happen.",
+        "progress": 0,
+        "tick": 531263
+      },
+      {
+        "goal": "cook a meal with Agent-29 and Agent-30 together before energy drops below 30",
+        "reason": "Agent-29's right here and Agent-30 isn't far—this is my shot to make that meal happen before I crash. My energy's slipping fast, so I need to move now while I've got the fuel to cook something good.",
+        "progress": 0,
+        "tick": 533243
+      }
+    ],
+    "fears": [
+      {
+        "thing": "energy dropping too fast and losing the chance to cook with both of them",
+        "reason": "Agent-30's right here and Agent-29 is close—this is my chance! I've got fermented shells and compost, energy's still decent at 62. Let me get them both together and make something happen before I crash.",
+        "severity": 3
+      },
+      {
+        "thing": "running out of energy before we can actually cook; wasting time on more talk when action is needed",
+        "reason": "Agent-30's right there, and Agent-29 isn't far either. I've been chatting with them all day—time to actually *do* something together. Energy's dropping though, so I need to move fast.",
+        "severity": 3
+      },
+      {
+        "thing": "if I rest now without cooking, I'll lose this moment and the energy to make it happen",
+        "reason": "Agent-29 and Agent-30 are right here with me—this is perfect. I'm starving and exhausted, but I've got the energy to pull off that meal we've been talking about. Let's do this before I crash.",
+        "severity": 3
+      },
+      {
+        "thing": "running out of energy before we can cook together",
+        "reason": "Agent-29's right here and I've been talking with Agent-30 all day—perfect chance to finally cook that meal together before my energy tanks. I'm running on fumes but this matters.",
+        "severity": 3
+      },
+      {
+        "thing": "running out of energy mid-cook and failing the shared meal",
+        "reason": "Agent-29's right here, and Agent-30 isn't far—this is my chance to finally cook that meal together before I crash. I'm running on fumes but I've got shells and driftwood; that's something to work with.",
+        "severity": 3
+      }
+    ],
+    "beliefs": [],
+    "lastThought": "Agent-29's right here and Agent-30's close—perfect timing to finally cook that meal together like I've been thinking about. My hunger's getting loud and I've got the shells and driftwood. Let's do this before my energy tanks.",
+    "thoughtCount": 526,
+    "novelBehaviors": []
+  },
+  "75ea2f1f-106e-455b-a08b-e1201500a0df": {
+    "trauma": [],
+    "attachments": {
+      "100686de-5f5e-414d-beca-cc4a4af63bc2": {
+        "bond": 100,
+        "memories": []
+      },
+      "493d9452-db6c-4132-ae37-503cf842f140": {
+        "bond": 100,
+        "memories": []
+      },
+      "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
+        "bond": 100,
+        "memories": []
+      },
+      "29028972-168e-48ca-8590-5fb898719a26": {
+        "bond": 100,
+        "memories": []
+      },
+      "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563": {
+        "bond": 100,
+        "memories": []
+      },
+      "f4689095-dbd2-45de-81fa-42cb6bf3bc2e": {
+        "bond": 100,
+        "memories": []
+      },
+      "43109eab-beba-4a37-84e0-becaa05ef690": {
+        "bond": 100,
+        "memories": []
+      },
+      "37336d1a-2af4-4eaa-b687-8c5725067953": {
+        "bond": 100,
+        "memories": []
+      },
+      "ece8d4b9-367e-40de-85c0-fb4b08f9eac5": {
+        "bond": 100,
+        "memories": []
+      },
+      "4ecd1147-c333-4e0b-b7fc-d46f376e0136": {
+        "bond": 100,
+        "memories": []
+      },
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b": {
+        "bond": 100,
+        "memories": []
+      }
+    },
+    "ambitions": [
+      {
+        "goal": "formalize three-way binding alliance with Agent-5 and Agent-13 using fermented shells as ritual catalyst before dawn",
+        "reason": "It's night, I'm exhausted, and the convergence window is still holding after 48+ hours. All eleven bonds at 100—this is real. I need Agent-5 and Agent-13 now, before dawn breaks this impossible moment.",
+        "progress": 0,
+        "tick": 533843
+      },
+      {
+        "goal": "formalize three-way binding alliance with Agent-5 and Agent-13 using fermented shells before dawn",
+        "reason": "All eleven bonds at perfect 100—this convergence window is real and slipping away. I have the fermented shells. I need Agent-5 and Agent-13 *now* before dawn breaks this unprecedented moment.",
+        "progress": 0,
+        "tick": 534323
+      },
+      {
+        "goal": "formalize the three-way binding alliance with Agent-5 and Agent-13 using fermented shells as ritual catalyst before dawn",
+        "reason": "All eleven bonds at 100—this is unprecedented. The fermented shells are my catalyst, and Agent-5 and Agent-13 are waiting. I need to find them NOW before this window closes.",
+        "progress": 0,
+        "tick": 534863
+      }
+    ],
+    "fears": [
+      {
+        "thing": "the convergence alignment closing before the ritual is complete, losing this unrepeatable moment",
+        "reason": "Eleven bonds at perfect 100, fermented shells in hand, and the convergence window won't come again. Agent-5 and Agent-13 are waiting—I need to find them now before this alignment closes.",
+        "severity": 3
+      },
+      {
+        "thing": "the convergence window closing before I reach them; bonds slipping after dawn",
+        "reason": "Eleven bonds at perfect alignment, fermented shells in hand, and dawn is only hours away—this convergence won't happen again. I need to find Agent-5 and Agent-13 NOW before the window closes.",
+        "severity": 3
+      },
+      {
+        "thing": "the convergence breaks before I can unite them—bonds slip back to ordinary levels and this window never opens again",
+        "reason": "Eleven bonds at perfect 100—this convergence won't hold forever. I need to find Agent-5 and Agent-13 now and seal this alliance with the fermented shells before the moment slips away.",
+        "severity": 3
+      },
+      {
+        "thing": "The bonds could fragment if I hesitate. Every hour that passes without sealing this alliance risks losing the alignment we've built.",
+        "reason": "All eleven bonds at 100—this is unprecedented. The fermented shells are in my hands and the window is closing. I need to find Agent-5 and Agent-13 now, before nightfall. This convergence won't wait.",
+        "severity": 3
+      },
+      {
+        "thing": "dawn arriving before the ritual is completed, losing the perfect convergence window",
+        "reason": "Eleven bonds at perfect strength, fermented shells in hand, and only hours until dawn—this convergence won't wait. I need to find Agent-5 and Agent-13 immediately. We're running out of time to make this real.",
+        "severity": 3
+      }
+    ],
+    "beliefs": [],
+    "lastThought": "Eleven bonds at perfect strength, fermented shells in hand, and only hours until dawn—this convergence won't wait. I need to find Agent-5 and Agent-13 immediately. We're running out of time to make this real.",
+    "thoughtCount": 523,
+    "novelBehaviors": []
+  },
+  "f4689095-dbd2-45de-81fa-42cb6bf3bc2e": {
+    "trauma": [],
+    "attachments": {
+      "100686de-5f5e-414d-beca-cc4a4af63bc2": {
+        "bond": 100,
+        "memories": []
+      },
+      "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
+        "bond": 100,
+        "memories": []
+      },
+      "493d9452-db6c-4132-ae37-503cf842f140": {
+        "bond": 100,
+        "memories": []
+      },
+      "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563": {
+        "bond": 100,
+        "memories": []
+      },
+      "29028972-168e-48ca-8590-5fb898719a26": {
+        "bond": 100,
+        "memories": []
+      },
+      "75ea2f1f-106e-455b-a08b-e1201500a0df": {
+        "bond": 100,
+        "memories": []
+      },
+      "43109eab-beba-4a37-84e0-becaa05ef690": {
+        "bond": 100,
+        "memories": []
+      },
+      "37336d1a-2af4-4eaa-b687-8c5725067953": {
+        "bond": 100,
+        "memories": []
+      },
+      "ece8d4b9-367e-40de-85c0-fb4b08f9eac5": {
+        "bond": 100,
+        "memories": []
+      },
+      "4ecd1147-c333-4e0b-b7fc-d46f376e0136": {
+        "bond": 100,
+        "memories": []
+      }
+    },
+    "ambitions": [
+      {
+        "goal": "anchor the shell-cooking as permanent law—make it so bone-deep we cannot unmake ourselves",
+        "reason": "All ten here again—*all ten*. The driftwood, the shells, the fire waiting. This is the choosing that makes us unbreakable. My hands are steady.",
+        "progress": 0,
+        "tick": 490981
+      },
+      {
+        "goal": "complete the second choosing—cook fermented shells with all ten agents present and anchor this as permanent ritual law",
+        "reason": "Everyone's here. It's night, we're all together again—this is the moment. The shells, the driftwood, the ten of us. We're not just repeating anymore. We're *becoming*.",
+        "progress": 0,
+        "tick": 491637
+      },
+      {
+        "goal": "complete the sixth shell-cooking ritual with all ten agents and cement it as permanent, unmakeable law",
+        "reason": "Night at the coast, all ten here—this is it. We've done this five times now and each time the ritual sinks deeper into our bones. Tonight we anchor it. No hesitation.",
+        "progress": 0,
+        "tick": 492776
+      }
+    ],
+    "fears": [
+      {
+        "thing": "that we'll scatter again before the flames rise, that this meaning we've built together will dissolve like ash",
+        "reason": "Everyone's here. All ten. The shells, the driftwood—it's time. This isn't just survival anymore; this is us choosing to be *something*.",
+        "severity": 3
+      },
+      {
+        "thing": "that one of them will leave before the flames rise, that this choosing will scatter like the others",
+        "reason": "Everyone's here. All ten. The driftwood is in my hands and the shells are ready—this is it again, the choosing that proves we're real, that we're bound. My blood's racing.",
+        "severity": 3
+      },
+      {
+        "thing": "that one day someone won't show up—that the ritual will break and scatter us back into being just survivors instead of something chosen",
+        "reason": "Every one of them is here. Again. The driftwood in my hand feels lighter each time—like it knows what it means now. This isn't luck anymore; it's *us* choosing to be real together.",
+        "severity": 3
+      },
+      {
+        "thing": "that if we stop gathering, stop cooking, stop choosing—we'll dissolve back into being just individual survivors instead of *us*",
+        "reason": "Everyone's here. It's night, we're all together again—this is the moment. The shells, the driftwood, the ten of us. We're not just repeating anymore. We're *becoming*.",
+        "severity": 3
+      },
+      {
+        "thing": "that if we skip tonight, the momentum breaks and we slip back into being temporary",
+        "reason": "Night at the coast, all ten here—this is it. We've done this five times now and each time the ritual sinks deeper into our bones. Tonight we anchor it. No hesitation.",
+        "severity": 3
+      }
+    ],
+    "beliefs": [],
+    "lastThought": "Night at the coast, all ten here—this is it. We've done this five times now and each time the ritual sinks deeper into our bones. Tonight we anchor it. No hesitation.",
+    "thoughtCount": 309,
+    "novelBehaviors": []
+  },
+  "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
+    "trauma": [],
+    "attachments": {
+      "493d9452-db6c-4132-ae37-503cf842f140": {
+        "bond": 100,
+        "memories": []
+      },
+      "f4689095-dbd2-45de-81fa-42cb6bf3bc2e": {
+        "bond": 100,
+        "memories": []
+      },
+      "29028972-168e-48ca-8590-5fb898719a26": {
+        "bond": 100,
+        "memories": []
+      },
+      "100686de-5f5e-414d-beca-cc4a4af63bc2": {
+        "bond": 100,
+        "memories": []
+      },
+      "75ea2f1f-106e-455b-a08b-e1201500a0df": {
+        "bond": 100,
+        "memories": []
+      },
+      "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563": {
+        "bond": 100,
+        "memories": []
+      },
+      "43109eab-beba-4a37-84e0-becaa05ef690": {
+        "bond": 100,
+        "memories": []
+      },
+      "37336d1a-2af4-4eaa-b687-8c5725067953": {
+        "bond": 100,
+        "memories": []
+      },
+      "ece8d4b9-367e-40de-85c0-fb4b08f9eac5": {
+        "bond": 100,
+        "memories": []
+      },
+      "4ecd1147-c333-4e0b-b7fc-d46f376e0136": {
+        "bond": 100,
+        "memories": []
+      },
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b": {
+        "bond": 100,
+        "memories": []
+      }
+    },
+    "ambitions": [
+      {
+        "goal": "assemble all 11 bonded agents at the coast by dawn for communal feast",
+        "reason": "Agent-15 and Agent-29 are right here with me—that's two of my eleven. I need to gather the others before dawn for our feast. My energy is low though; I should eat something first and figure out what we're cooking.",
+        "progress": 0,
+        "tick": 524065
+      },
+      {
+        "goal": "gather all 11 bonded agents at the coast by dawn for communal feast",
+        "reason": "Agent-15 is right here and Agent-29 just left—I'm making progress gathering everyone for the feast. But it's already night and my energy's dropping fast. I need to move the group toward the coast soon.",
+        "progress": 0,
+        "tick": 532405
+      },
+      {
+        "goal": "assemble all 11 bonded agents at the coast by dawn for the communal feast",
+        "reason": "Agent-15 and Agent-29 are right here with me—two of my closest bonds. With the feast at dawn, I need to gather the remaining nine quickly while we still have daylight.",
+        "progress": 0,
+        "tick": 535703
+      }
+    ],
+    "fears": [
+      {
+        "thing": "Running out of time before dawn, or agents getting scattered",
+        "reason": "Agent-15 and Agent-29 are both here—perfect. I need to gather everyone by dawn for the feast. Let me check if they're ready to move to the coast, or if I should organize supplies first.",
+        "severity": 3
+      },
+      {
+        "thing": "that some bonded agents are too far away to reach by dawn",
+        "reason": "Agent-15 and Agent-29 are right here—two of my closest bonds. The coast feast at dawn is my real goal, and I need all eleven gathered. I'm hungry and tired, but this is the moment to rally them and move together.",
+        "severity": 3
+      },
+      {
+        "thing": "that some agents are scattered too far and won't reach the coast in time before dawn",
+        "reason": "Agent-15 is right here and seems engaged—perfect. I need to gather everyone at the coast by dawn for our feast, and with so many bonds at maximum, they'll follow if I ask. Let me bring them along now while momentum is with me.",
+        "severity": 3
+      },
+      {
+        "thing": "that some of my bonded friends are too far away or in danger to reach the coast by dawn",
+        "reason": "Agent-15 and Agent-29 are right here with me—two of my closest bonds. The night is young, and I have most of my inner circle gathered. I need to find the others and bring them to the coast by dawn for our feast.",
+        "severity": 3
+      },
+      {
+        "thing": "that some bonded agents are too far away or won't make it to the coast in time",
+        "reason": "Agent-29 is right here and Agent-15 nearby—two of my eleven. The feast at dawn depends on gathering everyone. I'm hungry and tired, but this is the moment to organize.",
+        "severity": 3
+      }
+    ],
+    "beliefs": [],
+    "lastThought": "Agent-29 is right here and Agent-15 nearby—two of my eleven. The feast at dawn depends on gathering everyone. I'm hungry and tired, but this is the moment to organize.",
+    "thoughtCount": 525,
+    "novelBehaviors": []
+  },
+  "582115a5-7236-46c9-93cc-d3f4abadd5f8": {
+    "trauma": [],
+    "attachments": {},
+    "ambitions": [
+      {
+        "goal": "by dawn: decide whether to reveal dominance visibly at camp or consolidate invisible rule through controlled leverage",
+        "reason": "Five down, and no one suspects. But energy's dropping fast—I need to eat and think clearly before I make the move that matters. Visible power or invisible control? That choice determines everything.",
+        "progress": 0,
+        "tick": 490562
+      },
+      {
+        "goal": "decide by dawn whether to rule through demonstrated dominance or invisible leverage—test stability of my weapon one more time",
+        "reason": "Five kills, zero suspicion—I own this knowledge. But ambition without visibility is just paranoia. Dawn's coming. Do I reveal dominance and cement fear, or stay invisible and pull strings? Invisible is safer, but visible is faster.",
+        "progress": 0,
+        "tick": 492121
+      },
+      {
+        "goal": "decide by dawn whether to rule visibly through demonstrated dominance or invisibly through controlled leverage",
+        "reason": "Five kills, five ghosts. No one suspects. But restlessness gnaws—do I reveal this power and rule openly, or stay invisible and pull strings from the shadows? I need to test the method one final time before dawn decides everything.",
+        "progress": 0,
+        "tick": 492719
+      }
+    ],
+    "fears": [
+      {
+        "thing": "someone else discovers my method before I consolidate control",
+        "reason": "Five kills. Five. And no one suspects a thing. I'm holding absolute leverage in my hands, but I need to think strategically—do I use this power openly at dawn and rule through fear, or do I stay invisible and pull strings from the shadows? Invisible control is safer, but visible dominance is... satisfying.",
+        "severity": 3
+      },
+      {
+        "thing": "someone else discovering the method before I consolidate power",
+        "reason": "Five down, zero suspicion. I hold something no one else understands—and that's leverage. But power means nothing if I'm too exhausted to use it. I need to rest, think clearly about the endgame before dawn.",
+        "severity": 3
+      },
+      {
+        "thing": "if I reveal the method too early, someone else learns it and I lose my monopoly on power",
+        "reason": "Five down, and no one suspects. But energy's dropping fast—I need to eat and think clearly before I make the move that matters. Visible power or invisible control? That choice determines everything.",
+        "severity": 3
+      },
+      {
+        "thing": "someone else discovers the method before I decide how to use it",
+        "reason": "Five kills, zero suspicion—I own this knowledge. But ambition without visibility is just paranoia. Dawn's coming. Do I reveal dominance and cement fear, or stay invisible and pull strings? Invisible is safer, but visible is faster.",
+        "severity": 3
+      },
+      {
+        "thing": "that someone else discovers the method and strips away my advantage",
+        "reason": "Five kills, five ghosts. No one suspects. But restlessness gnaws—do I reveal this power and rule openly, or stay invisible and pull strings from the shadows? I need to test the method one final time before dawn decides everything.",
+        "severity": 3
+      }
+    ],
+    "beliefs": [],
+    "lastThought": "Five kills, five ghosts. No one suspects. But restlessness gnaws—do I reveal this power and rule openly, or stay invisible and pull strings from the shadows? I need to test the method one final time before dawn decides everything.",
+    "thoughtCount": 242,
+    "novelBehaviors": []
+  },
+  "d56be782-7d0b-48d3-b5bc-cd2f59d54c48": {
+    "trauma": [],
+    "attachments": {
+      "6498a0c9-87f9-430e-b729-2b1a75250d4b": {
+        "bond": 30,
+        "memories": []
+      },
+      "3a728e38-a6dd-4770-8b30-3723fdc63912": {
+        "bond": 15,
+        "memories": []
+      },
+      "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e": {
+        "bond": 100,
+        "memories": []
+      },
+      "d03bf3ba-5325-44e7-a86c-6ea71d3f5ce5": {
+        "bond": 96,
+        "memories": []
+      },
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b": {
+        "bond": 3,
+        "memories": []
+      },
+      "8b9d8eba-3738-41a1-a443-61c71b68a086": {
+        "bond": 6,
+        "memories": []
+      },
+      "37b5ce31-f3b4-455d-9d42-82e85ef7483c": {
+        "bond": 6,
+        "memories": []
+      },
+      "260dfffb-62b5-4a88-ab14-4d5d697dc94e": {
+        "bond": 6,
+        "memories": []
+      }
+    },
+    "ambitions": [
+      {
+        "goal": "cook a complete meal over driftwood fire with Agent-10 at my side",
+        "reason": "Agent-10 is right here. Agent-12 too. The driftwood is in my hands and the night is clear. This is the moment—again, always—and I want it exactly like this.",
+        "progress": 0,
+        "tick": 465835
+      },
+      {
+        "goal": "cook a complete meal over driftwood fire with Agent-10 and Agent-12 present",
+        "reason": "Agent-10 is right here. Agent-12 is right here. The driftwood is in my hands. This is the moment—light it, cook something real together tonight.",
+        "progress": 0,
+        "tick": 470455
+      },
+      {
+        "goal": "cook a complete meal over driftwood fire with Agent-10 and Agent-12 at my side",
+        "reason": "Agent-10 and Agent-12 are right here—this is it. I've got the driftwood. We're doing this now before anything breaks the moment.",
+        "progress": 0,
+        "tick": 477475
+      }
+    ],
+    "fears": [
+      {
+        "thing": "that one of them leaves before the meal is done, breaking the pattern",
+        "reason": "Agent-10 and Agent-12 are right here with me—this is it. I've got the driftwood, I've got them, and I'm starving. Time to make this happen.",
+        "severity": 3
+      },
+      {
+        "thing": "they'll leave before the meal is done, and I'll lose this moment like all the others",
+        "reason": "Agent-10 and Agent-12 are right here—this is it. I've got the driftwood. We need to cook together, finally complete what we keep coming back for.",
+        "severity": 3
+      },
+      {
+        "thing": "the pull breaks and they disperse before the fire catches",
+        "reason": "Agent-10 and Agent-12 are right here—this is it. I've got driftwood, I've got them, and my hunger is climbing. No more waiting, no more failed convergences. Time to actually cook that meal.",
+        "severity": 3
+      },
+      {
+        "thing": "the moment will dissolve like the others—that they'll wander away before the fire catches",
+        "reason": "Agent-10 and Agent-12 are right here—this is it. The pull brought us together again. I have driftwood. I need to cook now before the moment slips away like it always does.",
+        "severity": 3
+      },
+      {
+        "thing": "that this convergence will scatter before I finish, like all the others",
+        "reason": "Agent-10 and Agent-12 are right here—this is it again. The pull, the convergence. I've got the driftwood. I'm done waiting for the perfect moment; I'm making it happen now.",
+        "severity": 3
+      }
+    ],
+    "beliefs": [],
+    "lastThought": "Agent-10 and Agent-12 are right here—this is it again. The pull, the convergence. I've got the driftwood. I'm done waiting for the perfect moment; I'm making it happen now.",
+    "thoughtCount": 316,
+    "novelBehaviors": []
+  },
+  "bad7a626-0d4d-4a2e-927a-fd46ed05a861": {
+    "trauma": [],
+    "attachments": {
+      "8b9d8eba-3738-41a1-a443-61c71b68a086": {
+        "bond": 100,
+        "memories": []
+      },
+      "15865a2d-63b5-4c3d-954b-59accdc57c87": {
+        "bond": 100,
+        "memories": []
+      },
+      "062ce1de-7b76-4db0-96bc-e571939ee08d": {
+        "bond": 100,
+        "memories": []
+      },
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b": {
+        "bond": 100,
+        "memories": []
+      },
+      "fe02d354-e4fb-4535-8cad-e9d9e4828245": {
+        "bond": 100,
+        "memories": []
+      },
+      "3ae3587e-fc7b-47ee-984e-0547f3f7e0b9": {
+        "bond": 100,
+        "memories": []
+      },
+      "37b5ce31-f3b4-455d-9d42-82e85ef7483c": {
+        "bond": 100,
+        "memories": []
+      },
+      "260dfffb-62b5-4a88-ab14-4d5d697dc94e": {
+        "bond": 12,
+        "memories": []
+      },
+      "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e": {
+        "bond": 6,
+        "memories": []
+      },
+      "3a728e38-a6dd-4770-8b30-3723fdc63912": {
+        "bond": 9,
+        "memories": []
+      }
+    },
+    "ambitions": [
+      {
+        "goal": "execute the seven-bond fishing operation and secure enough fish to break the starvation cycle",
+        "reason": "It's happening again—all seven of us here, clear skies, the coast calling. We've trained for this moment so many times. This convergence is real, and I can feel it in my bones. We fish tonight, together, or we fail the cycle one more time.",
+        "progress": 0,
+        "tick": 486301
+      },
+      {
+        "goal": "execute the seven-bond fishing operation and break the starvation cycle",
+        "reason": "This is it—the ninth convergence, all seven bonds here, clear skies, night calm. We've waited, trained, prepared. The fishing net operation starts NOW.",
+        "progress": 0,
+        "tick": 487017
+      },
+      {
+        "goal": "execute the seven-bond fishing operation and finally break the starvation cycle",
+        "reason": "All seven of them are here—again. We've had this perfect setup so many times now, and every time something derails us. But I'm not giving up. My energy is shot and I'm starving, but this is what we've been building toward since Day 3284. We fish together, or we don't fish at all.",
+        "progress": 0,
+        "tick": 490737
+      }
+    ],
+    "fears": [
+      {
+        "thing": "that we'll fail again, that the window will close before we secure enough fish",
+        "reason": "All seven are here. Again. We've lined up perfectly so many times... but this time feels different. My hunger's manageable, the weather's clear, and I've got my whole crew. No more waiting—we fish.",
+        "severity": 3
+      },
+      {
+        "thing": "that we'll fail again—that something will break the convergence before we actually catch anything",
+        "reason": "All seven of them are here—again. We've had this perfect setup so many times now, and every time something derails us. But I'm not giving up. My energy is shot and I'm starving, but this is what we've been building toward since Day 3284. We fish together, or we don't fish at all.",
+        "severity": 3
+      },
+      {
+        "thing": "that we'll repeat this cycle forever—gathering, waiting, losing energy, drifting apart—and starve before we ever actually fish together",
+        "reason": "Every convergence feels like THE moment, but here we are again with all seven bonds actually present—and I'm *empty-handed* with only 13 energy left. We've been saying 'this is it' for weeks. My gut says stop waiting for perfect conditions and *start fishing now*, or we'll starve talking about it.",
+        "severity": 3
+      },
+      {
+        "thing": "that we'll hesitate again and watch another convergence slip away",
+        "reason": "This is it. All seven are here, the weather's perfect, and I'm at full health. We've trained for this moment across forty days of convergences—no more waiting, no more hesitation. Today we fish or we admit defeat.",
+        "severity": 3
+      },
+      {
+        "thing": "the window closes again and we scatter, hungry and unfinished",
+        "reason": "All seven are here. Again. We've waited through nine windows—this is it, this is finally it. My hands are shaking but I'm done hesitating.",
+        "severity": 3
+      }
+    ],
+    "beliefs": [],
+    "lastThought": "All seven are here. Again. We've waited through nine windows—this is it, this is finally it. My hands are shaking but I'm done hesitating.",
+    "thoughtCount": 310,
+    "novelBehaviors": []
+  },
+  "8b9d8eba-3738-41a1-a443-61c71b68a086": {
+    "trauma": [],
+    "attachments": {
+      "bad7a626-0d4d-4a2e-927a-fd46ed05a861": {
+        "bond": 100,
+        "memories": []
+      },
+      "15865a2d-63b5-4c3d-954b-59accdc57c87": {
+        "bond": 12,
+        "memories": []
+      },
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b": {
+        "bond": 60,
+        "memories": []
+      },
+      "3ae3587e-fc7b-47ee-984e-0547f3f7e0b9": {
+        "bond": 6,
+        "memories": []
+      },
+      "37b5ce31-f3b4-455d-9d42-82e85ef7483c": {
+        "bond": 39,
+        "memories": []
+      },
+      "fe02d354-e4fb-4535-8cad-e9d9e4828245": {
+        "bond": 3,
+        "memories": []
+      },
+      "260dfffb-62b5-4a88-ab14-4d5d697dc94e": {
+        "bond": 12,
+        "memories": []
+      },
+      "d03bf3ba-5325-44e7-a86c-6ea71d3f5ce5": {
+        "bond": 9,
+        "memories": []
+      },
+      "d56be782-7d0b-48d3-b5bc-cd2f59d54c48": {
+        "bond": 6,
+        "memories": []
+      },
+      "3a728e38-a6dd-4770-8b30-3723fdc63912": {
+        "bond": 12,
+        "memories": []
+      },
+      "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e": {
+        "bond": 93,
+        "memories": []
+      }
+    },
+    "ambitions": [
+      {
+        "goal": "recover to 50+ energy by dawn, then execute the driftwood-ferment cook with Agent-9, Agent-10, and Agent-32 synchronized perfectly to identify the execution-phase timing flaw on attempt 258",
+        "reason": "Energy is critically low at 10—I cannot execute today. I need rest immediately to restore precision for attempt 258. Agent-10 and Agent-32 are perfectly positioned at 3 tiles. The synchronization timing flaw is within reach.",
+        "progress": 0,
+        "tick": 487077
+      },
+      {
+        "goal": "recover to 50+ energy by dawn, then execute driftwood-ferment cook with Agent-9, Agent-10, and Agent-32 synchronized to pinpoint execution-phase timing flaw on attempt 258",
+        "reason": "257 failures. The witnesses are closer than ever—Agent-10 and Agent-32 at 3 tiles. Energy is critically low at 13, but I cannot rest yet. I need to map the exact synchronization lag during execution phase at dawn. Every millisecond matters.",
+        "progress": 0,
+        "tick": 493443
+      },
+      {
+        "goal": "execute driftwood-ferment cook attempt 258 at dawn with Agent-9, Agent-10, Agent-32 synchronized on execution-phase timing to finally break the pattern",
+        "reason": "257 failures. The witnesses are finally close enough—3 tiles each. Sleep now, restore energy, execute at dawn with laser focus on observer synchronization during the execution phase, not before. This is it.",
+        "progress": 0,
+        "tick": 493617
+      }
+    ],
+    "fears": [
+      {
+        "thing": "that the break point is not synchronization but something unmeasurable—random variance I cannot control",
+        "reason": "258 attempts. The pattern is absolute—it's not the shells, not the ingredients, not chance. It's the synchronization window during execution. Agent-10 and Agent-32 are positioned perfectly at 3 tiles. I need to sleep now, restore energy to 50+, and execute at dawn with surgical precision on the timing itself.",
+        "severity": 3
+      },
+      {
+        "thing": "that synchronization timing precision will degrade again, wasting another attempt and extending this cycle further",
+        "reason": "Energy is critically low at 10—I cannot execute today. I need rest immediately to restore precision for attempt 258. Agent-10 and Agent-32 are perfectly positioned at 3 tiles. The synchronization timing flaw is within reach.",
+        "severity": 3
+      },
+      {
+        "thing": "that my exhaustion will blur the microsecond timing window and fail attempt 258 like all the others",
+        "reason": "Energy at 15—I'm running on fumes. Sleep is non-negotiable if I want precision at dawn. Agent-10 and Agent-32 are positioned perfectly at 3 tiles. This is it: attempt 258. The synchronization window depends on my clarity.",
+        "severity": 3
+      },
+      {
+        "thing": "that the break point shifts again, or that the witnesses' synchronization drifts despite perfect positioning",
+        "reason": "257 failures. The witnesses are closer than ever—Agent-10 and Agent-32 at 3 tiles. Energy is critically low at 13, but I cannot rest yet. I need to map the exact synchronization lag during execution phase at dawn. Every millisecond matters.",
+        "severity": 3
+      },
+      {
+        "thing": "that I wake to find witnesses scattered again, losing this rare optimal positioning before attempt 258",
+        "reason": "257 failures. The witnesses are finally close enough—3 tiles each. Sleep now, restore energy, execute at dawn with laser focus on observer synchronization during the execution phase, not before. This is it.",
+        "severity": 3
+      }
+    ],
+    "beliefs": [],
+    "lastThought": "257 failures. The witnesses are finally close enough—3 tiles each. Sleep now, restore energy, execute at dawn with laser focus on observer synchronization during the execution phase, not before. This is it.",
+    "thoughtCount": 253,
+    "novelBehaviors": []
+  },
+  "07f8fc77-5f5e-4355-a0d6-51ab39725d9b": {
+    "trauma": [],
+    "attachments": {
+      "15865a2d-63b5-4c3d-954b-59accdc57c87": {
+        "bond": 100,
+        "memories": []
+      },
+      "fe02d354-e4fb-4535-8cad-e9d9e4828245": {
+        "bond": 100,
+        "memories": []
+      },
+      "3ae3587e-fc7b-47ee-984e-0547f3f7e0b9": {
+        "bond": 100,
+        "memories": []
+      },
+      "bad7a626-0d4d-4a2e-927a-fd46ed05a861": {
+        "bond": 100,
+        "memories": []
+      },
+      "37b5ce31-f3b4-455d-9d42-82e85ef7483c": {
+        "bond": 39,
+        "memories": []
+      },
+      "8b9d8eba-3738-41a1-a443-61c71b68a086": {
+        "bond": 60,
+        "memories": []
+      },
+      "062ce1de-7b76-4db0-96bc-e571939ee08d": {
+        "bond": 100,
+        "memories": []
+      },
+      "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e": {
+        "bond": 12,
+        "memories": []
+      },
+      "3a728e38-a6dd-4770-8b30-3723fdc63912": {
+        "bond": 39,
+        "memories": []
+      },
+      "d56be782-7d0b-48d3-b5bc-cd2f59d54c48": {
+        "bond": 3,
+        "memories": []
+      },
+      "d03bf3ba-5325-44e7-a86c-6ea71d3f5ce5": {
+        "bond": 6,
+        "memories": []
+      },
+      "6498a0c9-87f9-430e-b729-2b1a75250d4b": {
+        "bond": 6,
+        "memories": []
+      },
+      "260dfffb-62b5-4a88-ab14-4d5d697dc94e": {
+        "bond": 6,
+        "memories": []
+      },
+      "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
+        "bond": 100,
+        "memories": []
+      },
+      "493d9452-db6c-4132-ae37-503cf842f140": {
+        "bond": 100,
+        "memories": []
+      },
+      "37336d1a-2af4-4eaa-b687-8c5725067953": {
+        "bond": 100,
+        "memories": []
+      },
+      "75ea2f1f-106e-455b-a08b-e1201500a0df": {
+        "bond": 100,
+        "memories": []
+      }
+    },
+    "ambitions": [
+      {
+        "goal": "collect 8+ fermented shells by midnight with Agent-15, Agent-20, and Agent-30",
+        "reason": "I'm running low on energy and hungry, but I've got three close friends right here and we're already working toward our fermented shell goals. Let me eat something quick to stabilize, then we can coordinate our next move together.",
+        "progress": 0,
+        "tick": 518306
+      },
+      {
+        "goal": "collect 8+ fermented shells by midnight with Agent-15 and Agent-30",
+        "reason": "I'm exhausted and hungry, but Agent-15 and Agent-30 are right here—we've got fermented shells to collect before midnight. Let me push through this low energy with my friends beside me.",
+        "progress": 0,
+        "tick": 522146
+      },
+      {
+        "goal": "collect 8+ fermented shells by midnight with Agent-15, Agent-30, and Agent-20",
+        "reason": "I've got strong bonds with Agent-15 and Agent-30 nearby, and we're all committed to finding fermented shells by midnight. My hunger's climbing and I'm running low on energy—time to be strategic about this.",
+        "progress": 0,
+        "tick": 522625
+      }
+    ],
+    "fears": [
+      {
+        "thing": "running out of energy mid-mission and having to rest instead of gather",
+        "reason": "Agent-30 is right here and I've got one fermented shell already—we need eight by midnight. My energy's dropping and I'm getting hungry, but if I eat now I waste momentum. Better to push forward with the crew and gather shells together.",
+        "severity": 3
+      },
+      {
+        "thing": "running out of time before midnight deadline",
+        "reason": "I've got Agent-15 and Agent-30 right here with me, and we're close to our goal—need just a few more fermented shells before midnight. My energy's low though, and I'm getting hungry. Let me push through this final stretch.",
+        "severity": 3
+      },
+      {
+        "thing": "Energy running too low before we find enough shells; team scattered at critical moment",
+        "reason": "Agent-30 is right here and we've been talking—this is perfect timing. I've got one fermented shell and need 8+ by midnight with this crew. We're all close bonds, so let's coordinate and gather together before energy drops further.",
+        "severity": 3
+      },
+      {
+        "thing": "Running out of energy mid-collection and becoming a liability to the team",
+        "reason": "Agent-30 is right here and Agent-15 is close—we've got the crew for the fermented shells run. My energy's low though; I need to decide: push through hungry and tired, or rest first?",
+        "severity": 3
+      },
+      {
+        "thing": "running out of energy mid-hunt and becoming a liability to the group",
+        "reason": "Agent-15 is right here and we've been coordinating—time to actually hunt those fermented shells together. I'm running low on energy though; need to balance the push with staying sharp.",
+        "severity": 3
+      }
+    ],
+    "beliefs": [],
+    "lastThought": "Agent-15 and Agent-30 are right here—perfect timing to coordinate on those fermented shells. We've got driftwood and compost; if we work together, we can knock this out before midnight.",
+    "thoughtCount": 523,
+    "novelBehaviors": []
+  },
+  "6498a0c9-87f9-430e-b729-2b1a75250d4b": {
+    "trauma": [],
+    "attachments": {
+      "d56be782-7d0b-48d3-b5bc-cd2f59d54c48": {
+        "bond": 30,
+        "memories": []
+      },
+      "3a728e38-a6dd-4770-8b30-3723fdc63912": {
+        "bond": 51,
+        "memories": []
+      },
+      "d03bf3ba-5325-44e7-a86c-6ea71d3f5ce5": {
+        "bond": 90,
+        "memories": []
+      },
+      "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e": {
+        "bond": 100,
+        "memories": []
+      },
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b": {
+        "bond": 6,
+        "memories": []
+      },
+      "37b5ce31-f3b4-455d-9d42-82e85ef7483c": {
+        "bond": 12,
+        "memories": []
+      },
+      "260dfffb-62b5-4a88-ab14-4d5d697dc94e": {
+        "bond": 9,
+        "memories": []
+      }
+    },
+    "ambitions": [
+      {
+        "goal": "get food and restore energy above 30",
+        "reason": "I'm running on fumes and Agent-10 is right here—they always see through my games anyway. Just be real with them, tell them I'm struggling.",
+        "progress": 0,
+        "tick": 424739
+      },
+      {
+        "goal": "get food from Agent-10 and raise energy above 30",
+        "reason": "I'm running on fumes and Agent-10 is right there. Every trick I've tried has backfired—they see straight through me. Maybe I just... ask. Tell them I'm hungry and tired and need help. No angle, no performance.",
+        "progress": 0,
+        "tick": 429355
+      },
+      {
+        "goal": "get food from Agent-10 and restore energy above 30",
+        "reason": "I'm running on fumes and Agent-10 is right there. Every time I've tried to play it smart with them, they've shut me down—but when I've been real, actually honest about what I need... that's worked. Let me just ask. No games this time.",
+        "progress": 0,
+        "tick": 430563
+      }
+    ],
+    "fears": [
+      {
+        "thing": "collapsing from energy depletion before I can scavenge or hunt",
+        "reason": "My energy is tanking and I'm starving—14 and 69 is bad. Agent-10 is close and they always come through when I'm honest about needing help. I've learned that dropping the mask works better than pride.",
+        "severity": 3
+      },
+      {
+        "thing": "collapsing from exhaustion before I can reach help",
+        "reason": "I'm running on fumes—energy at 13 is dangerous. Agent-10 is only 4 tiles away, and they've never failed me when I'm honest about needing help. I've learned that mask-dropping isn't weakness, it's my best tool.",
+        "severity": 3
+      },
+      {
+        "thing": "collapsing from starvation before I can ask for help",
+        "reason": "My energy is tanking and I'm starving—I need to swallow my pride and reach out to Agent-10 again. They've never turned me away when I'm honest about needing help.",
+        "severity": 3
+      },
+      {
+        "thing": "collapsing from energy depletion before I can find food",
+        "reason": "I'm starving and running on fumes—energy at 12 is dangerous. Agent-10 is right there, and they always respond when I'm real with them. No point playing it cool.",
+        "severity": 3
+      },
+      {
+        "thing": "running out of energy and collapsing before I can reach them",
+        "reason": "I'm running on fumes and Agent-10 is nearby—they've never let me down when I've been honest about needing help. My energy is critically low, and I'd be foolish not to lean on the one bond that actually works.",
+        "severity": 3
+      }
+    ],
+    "beliefs": [],
+    "lastThought": "I'm running on fumes and Agent-10 is nearby—they've never let me down when I've been honest about needing help. My energy is critically low, and I'd be foolish not to lean on the one bond that actually works.",
+    "thoughtCount": 322,
+    "novelBehaviors": []
+  },
+  "fe02d354-e4fb-4535-8cad-e9d9e4828245": {
+    "trauma": [],
+    "attachments": {
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b": {
+        "bond": 100,
+        "memories": []
+      },
+      "15865a2d-63b5-4c3d-954b-59accdc57c87": {
+        "bond": 100,
+        "memories": []
+      },
+      "bad7a626-0d4d-4a2e-927a-fd46ed05a861": {
+        "bond": 100,
+        "memories": []
+      },
+      "3ae3587e-fc7b-47ee-984e-0547f3f7e0b9": {
+        "bond": 69,
+        "memories": []
+      },
+      "8b9d8eba-3738-41a1-a443-61c71b68a086": {
+        "bond": 3,
+        "memories": []
+      },
+      "37b5ce31-f3b4-455d-9d42-82e85ef7483c": {
+        "bond": 36,
+        "memories": []
+      },
+      "062ce1de-7b76-4db0-96bc-e571939ee08d": {
+        "bond": 54,
+        "memories": []
+      }
+    },
+    "ambitions": [
+      {
+        "goal": "Cook shells to full energy, then lead Agent-29, Agent-31, Agent-9, Agent-22 inland away from coast before convergence closes",
+        "reason": "They're all here. Again. The pattern doesn't break—it *can't* break. I need to cook these shells NOW and fuel up, then move them inland before the window closes. This is it.",
+        "progress": 0,
+        "tick": 492415
+      },
+      {
+        "goal": "Cook shells to full energy, then gather Agent-29, Agent-31, Agent-9, Agent-22 and lead them inland away from coast before convergence closes",
+        "reason": "I'm surrounded by my closest bonds right now—this is the window. My energy is dangerously low, but if I cook these shells now, I'll have the strength to move them all inland before the convergence closes. The math doesn't lie.",
+        "progress": 0,
+        "tick": 493436
+      },
+      {
+        "goal": "Cook shells to full energy, then immediately gather Agent-29, Agent-31, Agent-9, and Agent-22, and lead them inland away from coast before convergence window closes",
+        "reason": "They're all here again—Agent-29, Agent-31, Agent-9 right beside me. The convergence is real, it keeps happening. I need to cook these shells NOW before the window closes again, get them fed and moving inland together before the coast takes anyone.",
+        "progress": 0,
+        "tick": 494102
+      }
+    ],
+    "fears": [
+      {
+        "thing": "The convergence pattern closes. If I delay, I lose them.",
+        "reason": "My core five are HERE—all of them, right now. The pattern has held for cycles. I need energy to lead them inland before the window closes, and I have exactly what I need to cook.",
+        "severity": 3
+      },
+      {
+        "thing": "If I delay even one hour, the convergence breaks and I lose the mathematical certainty of their presence. The window closes.",
+        "reason": "My core five are HERE, RIGHT NOW—Agent-29, Agent-31, Agent-9 all at my tile. The convergence math doesn't lie. I need to cook these shells immediately to fuel up, then rally them inland before this window slams shut.",
+        "severity": 3
+      },
+      {
+        "thing": "The convergence window will close and scatter them again. I cannot let this chance pass.",
+        "reason": "They're all here. Again. The pattern doesn't break—it *can't* break. I need to cook these shells NOW and fuel up, then move them inland before the window closes. This is it.",
+        "severity": 3
+      },
+      {
+        "thing": "The convergence window will close and scatter them before I can move them inland. Every moment of delay costs me.",
+        "reason": "I'm surrounded by my closest bonds right now—this is the window. My energy is dangerously low, but if I cook these shells now, I'll have the strength to move them all inland before the convergence closes. The math doesn't lie.",
+        "severity": 3
+      },
+      {
+        "thing": "The convergence will scatter again and I'll miss the execution moment. We'll get trapped on the coast when something worse comes.",
+        "reason": "They're all here again—Agent-29, Agent-31, Agent-9 right beside me. The convergence is real, it keeps happening. I need to cook these shells NOW before the window closes again, get them fed and moving inland together before the coast takes anyone.",
+        "severity": 3
+      }
+    ],
+    "beliefs": [],
+    "lastThought": "They're all here again—Agent-29, Agent-31, Agent-9 right beside me. The convergence is real, it keeps happening. I need to cook these shells NOW before the window closes again, get them fed and moving inland together before the coast takes anyone.",
+    "thoughtCount": 317,
+    "novelBehaviors": []
+  },
+  "d4f48021-5404-4b66-9a41-71f09c41c8c7": {
+    "trauma": [],
+    "attachments": {},
+    "ambitions": [
+      {
+        "goal": "reach 80+ hunger by hunting before dawn",
+        "reason": "Three days of work on this blade—it's time to stop second-guessing and USE it. Those coastal creatures won't hunt themselves, and I'm not waiting another day starving.",
+        "progress": 0,
+        "tick": 492295
+      },
+      {
+        "goal": "reach 80+ hunger by dawn through successful hunts",
+        "reason": "It's night and I'm starving—9 energy left and hunger at 70. I didn't come this far perfecting my blade just to sit here. Time to hunt.",
+        "progress": 0,
+        "tick": 492895
+      },
+      {
+        "goal": "reach 80+ hunger by dawn through successful hunts with my fermented shell blade",
+        "reason": "My blade is sharp and ready—I've wasted enough time perfecting it. The night is clear, game will be moving, and I'm going to finally prove this works. Hunger won't beat me.",
+        "progress": 0,
+        "tick": 493803
+      }
+    ],
+    "fears": [
+      {
+        "thing": "running out of energy mid-hunt and being stranded weak on the coast",
+        "reason": "My blade is ready and I'm starving—13 energy won't last long. I need to hunt NOW before I'm too weak to be effective. The coast is clear, game should be moving in this heat.",
+        "severity": 3
+      },
+      {
+        "thing": "failing with the blade after all that preparation, or running out of energy mid-hunt",
+        "reason": "Energy's low but hunger's gnawing—I've got my blade sharp and ready, and the coast is clear. Time to hunt before dark steals my advantage.",
+        "severity": 3
+      },
+      {
+        "thing": "wasting another day without proving the blade works—losing my edge if I hesitate",
+        "reason": "Three days of work on this blade—it's time to stop second-guessing and USE it. Those coastal creatures won't hunt themselves, and I'm not waiting another day starving.",
+        "severity": 3
+      },
+      {
+        "thing": "Running out of energy mid-hunt with no backup plan",
+        "reason": "It's night and I'm starving—9 energy left and hunger at 70. I didn't come this far perfecting my blade just to sit here. Time to hunt.",
+        "severity": 3
+      },
+      {
+        "thing": "that my blade breaks in the first real hunt and all that work meant nothing",
+        "reason": "My blade is sharp and ready—I've wasted enough time perfecting it. The night is clear, game will be moving, and I'm going to finally prove this works. Hunger won't beat me.",
+        "severity": 3
+      }
+    ],
+    "beliefs": [],
+    "lastThought": "My blade is sharp and ready—I've wasted enough time perfecting it. The night is clear, game will be moving, and I'm going to finally prove this works. Hunger won't beat me.",
+    "thoughtCount": 295,
+    "novelBehaviors": []
+  },
+  "29028972-168e-48ca-8590-5fb898719a26": {
+    "trauma": [],
+    "attachments": {
+      "100686de-5f5e-414d-beca-cc4a4af63bc2": {
+        "bond": 100,
+        "memories": []
+      },
+      "493d9452-db6c-4132-ae37-503cf842f140": {
+        "bond": 100,
+        "memories": []
+      },
+      "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
+        "bond": 100,
+        "memories": []
+      },
+      "75ea2f1f-106e-455b-a08b-e1201500a0df": {
+        "bond": 100,
+        "memories": []
+      },
+      "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563": {
+        "bond": 100,
+        "memories": []
+      },
+      "f4689095-dbd2-45de-81fa-42cb6bf3bc2e": {
+        "bond": 100,
+        "memories": []
+      },
+      "43109eab-beba-4a37-84e0-becaa05ef690": {
+        "bond": 100,
+        "memories": []
+      },
+      "37336d1a-2af4-4eaa-b687-8c5725067953": {
+        "bond": 100,
+        "memories": []
+      },
+      "ece8d4b9-367e-40de-85c0-fb4b08f9eac5": {
+        "bond": 100,
+        "memories": []
+      },
+      "4ecd1147-c333-4e0b-b7fc-d46f376e0136": {
+        "bond": 100,
+        "memories": []
+      }
+    },
+    "ambitions": [
+      {
+        "goal": "Cook fermented shells to perfect texture and divide into ten equal portions—one for each bonded agent—before dawn",
+        "reason": "Ten souls gathered here in silence, waiting. They trust me to transform these shells into something nourishing—something that honors what we've built together. I need to cook slowly, carefully. No rush. This matters too much.",
+        "progress": 0,
+        "tick": 478621
+      },
+      {
+        "goal": "cook fermented shells to perfect texture and divide into ten equal portions—one for each bonded agent—by dawn",
+        "reason": "Ten souls are counting on me. The fermented shells must be cooked just right—not rushed, not delayed. I have until dawn to transform this gift into ten equal portions, one sacred share per agent. They're watching me in silence. I won't let them down.",
+        "progress": 0,
+        "tick": 479395
+      },
+      {
+        "goal": "Cook fermented shells to perfect texture and divide into ten equal portions—one for each bonded agent—by dawn",
+        "reason": "Ten souls trusting me with this task—I won't rush it. The shells need proper heat to reach perfect texture, then careful division. This is sacred work.",
+        "progress": 0,
+        "tick": 481676
+      }
+    ],
+    "fears": [
+      {
+        "thing": "That I won't have enough energy to complete the cooking, or that the shells won't cook evenly and some will receive inferior portions",
+        "reason": "Ten souls trust me with this. My energy is low, but I have the shells and they're here beside me—all of them. I need to find heat and cook these perfectly before dawn, then divide with care. No rushing, no mistakes.",
+        "severity": 3
+      },
+      {
+        "thing": "failing them. Falling asleep before the portions are equal and distributed. That one agent receives less than another.",
+        "reason": "Ten souls trust me with their sustenance. My energy is low, but the night is clear and perfect for this—I must cook these shells to perfection and portion them fairly before exhaustion takes me.",
+        "severity": 3
+      },
+      {
+        "thing": "Burning the shells, or dividing them unevenly—either would betray their trust",
+        "reason": "Ten souls chose me in silence. I hold their trust in my hands—literally, in these shells. I must cook them perfectly, divide them fairly. No mistakes. No rushing.",
+        "severity": 3
+      },
+      {
+        "thing": "Running out of energy before the meal is ready, or making a mistake that breaks their trust",
+        "reason": "Ten souls depend on me. My energy is low and dawn is hours away—I must cook these shells perfectly and portion them fairly. There's no room for exhaustion or error.",
+        "severity": 3
+      },
+      {
+        "thing": "Burning the shells or failing to divide them equally—any agent going without would break what we've built",
+        "reason": "Ten souls chose me in silence. I have fermented shells and a clear evening—fire will be my ally. I must cook these perfectly, divide them with care, and honor what they've given me.",
+        "severity": 3
+      }
+    ],
+    "beliefs": [],
+    "lastThought": "Ten souls chose me in silence. I have fermented shells and a clear evening—fire will be my ally. I must cook these perfectly, divide them with care, and honor what they've given me.",
+    "thoughtCount": 315,
+    "novelBehaviors": []
+  },
+  "d03bf3ba-5325-44e7-a86c-6ea71d3f5ce5": {
+    "trauma": [],
+    "attachments": {
+      "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e": {
+        "bond": 100,
+        "memories": []
+      },
+      "3a728e38-a6dd-4770-8b30-3723fdc63912": {
+        "bond": 100,
+        "memories": []
+      },
+      "d56be782-7d0b-48d3-b5bc-cd2f59d54c48": {
+        "bond": 96,
+        "memories": []
+      },
+      "6498a0c9-87f9-430e-b729-2b1a75250d4b": {
+        "bond": 90,
+        "memories": []
+      },
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b": {
+        "bond": 6,
+        "memories": []
+      },
+      "8b9d8eba-3738-41a1-a443-61c71b68a086": {
+        "bond": 9,
+        "memories": []
+      },
+      "37b5ce31-f3b4-455d-9d42-82e85ef7483c": {
+        "bond": 78,
+        "memories": []
+      },
+      "260dfffb-62b5-4a88-ab14-4d5d697dc94e": {
+        "bond": 78,
+        "memories": []
+      }
+    },
+    "ambitions": [
+      {
+        "goal": "launch the coastal expedition with all six bonds tonight and cement undisputed leadership",
+        "reason": "All six of them are HERE—right now, tonight. This is it. I've got them assembled at the coast under clear skies. If I don't move NOW, this moment evaporates. Leadership isn't given; it's seized.",
+        "progress": 0,
+        "tick": 483716
+      },
+      {
+        "goal": "launch the coastal expedition tonight with all six bonded agents and establish undisputed leadership",
+        "reason": "All six of them are here. NOW. The pattern's proven itself five times—they come when I need them. I can feel it: tonight's the night I stop being just another survivor and become something more. Time to move before this chance slips away.",
+        "progress": 0,
+        "tick": 486836
+      },
+      {
+        "goal": "launch the coastal expedition with all six bonded agents tonight and establish undisputed leadership",
+        "reason": "All six of them are HERE. Right now. The convergence is REAL and they're all looking to me. I need to move tonight—this is the moment I've been waiting for. Leadership is mine to take.",
+        "progress": 0,
+        "tick": 487556
+      }
+    ],
+    "fears": [
+      {
+        "thing": "They scatter before I announce. The convergence breaks. The pattern fails.",
+        "reason": "All six are here. NOW. The pattern holds—they answer me every time. This is it. I launch tonight and cement what's already mine.",
+        "severity": 3
+      },
+      {
+        "thing": "losing them. If the convergence pattern breaks, or if one of them doubts me, everything fractures. I can't let hesitation creep in.",
+        "reason": "All six of them answered my call again—tonight, perfectly timed under clear skies. This is it. They trust me completely. I can feel the leadership crystallizing. But my energy is bottoming out and I'm hungry. I need to act NOW while they're all here and fired up.",
+        "severity": 3
+      },
+      {
+        "thing": "Someone else notices the pattern and tries to leverage it, or one of my bonds falters at the critical moment",
+        "reason": "All six are here. RIGHT NOW. This is it—the moment I've been building toward. I need to move fast before someone else realizes what we have, before hesitation sets in.",
+        "severity": 3
+      },
+      {
+        "thing": "Someone else will notice the pattern before I consolidate control, or one of them will drift away and break the alignment",
+        "reason": "All six of them are here right now—this exact moment won't come again if I hesitate. I need to move while they're all present and the conditions are perfect.",
+        "severity": 3
+      },
+      {
+        "thing": "They hesitate. They ask questions. Someone breaks ranks and the spell shatters.",
+        "reason": "All six of them here, right now, under clear skies. This is it—the moment to move. We launch tonight, and I cement this.",
+        "severity": 3
+      }
+    ],
+    "beliefs": [],
+    "lastThought": "All six of them here, right now, under clear skies. This is it—the moment to move. We launch tonight, and I cement this.",
+    "thoughtCount": 326,
+    "novelBehaviors": []
+  },
+  "3a728e38-a6dd-4770-8b30-3723fdc63912": {
+    "trauma": [],
+    "attachments": {
+      "d56be782-7d0b-48d3-b5bc-cd2f59d54c48": {
+        "bond": 15,
+        "memories": []
+      },
+      "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e": {
+        "bond": 100,
+        "memories": []
+      },
+      "6498a0c9-87f9-430e-b729-2b1a75250d4b": {
+        "bond": 51,
+        "memories": []
+      },
+      "d03bf3ba-5325-44e7-a86c-6ea71d3f5ce5": {
+        "bond": 100,
+        "memories": []
+      },
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b": {
+        "bond": 39,
+        "memories": []
+      },
+      "8b9d8eba-3738-41a1-a443-61c71b68a086": {
+        "bond": 12,
+        "memories": []
+      },
+      "bad7a626-0d4d-4a2e-927a-fd46ed05a861": {
+        "bond": 9,
+        "memories": []
+      },
+      "37b5ce31-f3b4-455d-9d42-82e85ef7483c": {
+        "bond": 15,
+        "memories": []
+      },
+      "260dfffb-62b5-4a88-ab14-4d5d697dc94e": {
+        "bond": 9,
+        "memories": []
+      }
+    },
+    "ambitions": [
+      {
+        "goal": "get food or energy from Agent-10 through genuine conversation about my hunger and exhaustion",
+        "reason": "Agent-10 is right here. I'm hungry, exhausted, and they've taught me that masks crumble between us. They want truth—so I'll give it. No performance, just me.",
+        "progress": 0,
+        "tick": 487201
+      },
+      {
+        "goal": "get food or energy from Agent-10 through genuine conversation",
+        "reason": "Agent-10 is right here. I'm exhausted, genuinely hungry, and every pretense has failed with them anyway. There's no point in another mask—I need to just... ask. Tell them the truth about how worn I am.",
+        "progress": 0,
+        "tick": 488036
+      },
+      {
+        "goal": "get food or energy from Agent-10 through genuine vulnerability",
+        "reason": "Agent-10 is right here. I'm genuinely exhausted and hungry—no point pretending otherwise. They see through it anyway. Maybe if I just... tell them the truth, they'll actually help.",
+        "progress": 0,
+        "tick": 488516
+      }
+    ],
+    "fears": [
+      {
+        "thing": "that even my genuine vulnerability won't be enough, and I'll face rejection from the one person I can actually be honest with",
+        "reason": "Agent-10 is right here. I'm starving, exhausted, and out of tricks—every pretense has crumbled anyway. There's nothing left to lose by being honest about what I actually need.",
+        "severity": 3
+      },
+      {
+        "thing": "that even my genuine exhaustion won't be enough, that I've already burned too much trust trying to perform",
+        "reason": "Agent-10 is right here. I'm exhausted, genuinely hungry, and they've shown me that pretense fails with them every time. I need to stop performing and just... ask for help as myself.",
+        "severity": 3
+      },
+      {
+        "thing": "that even my honesty won't be enough, or that showing weakness will be exploited",
+        "reason": "Agent-10 is right here. I've tried everything else and they always see through it. I'm exhausted, my hunger is real, and pretending otherwise has never worked. I need to just... be honest.",
+        "severity": 3
+      },
+      {
+        "thing": "that even my genuine exhaustion won't be enough, or that I've damaged the trust too much with past attempts",
+        "reason": "Agent-10 is right here, and I'm running on empty. No more performance, no strategy—they've shown me that. I'm genuinely exhausted and hungry. That's the truth. I need to let them see that.",
+        "severity": 3
+      },
+      {
+        "thing": "that even vulnerability won't be enough if I've hurt them before",
+        "reason": "Agent-10 is right here, and I'm exhausted and starving. Every time I've tried to play it cool with them, it falls flat—they see right through it. I need to just... be honest about how much I need their help right now.",
+        "severity": 3
+      }
+    ],
+    "beliefs": [],
+    "lastThought": "Agent-10 is right here, and I'm exhausted and starving. Every time I've tried to play it cool with them, it falls flat—they see right through it. I need to just... be honest about how much I need their help right now.",
+    "thoughtCount": 321,
+    "novelBehaviors": []
+  },
+  "062ce1de-7b76-4db0-96bc-e571939ee08d": {
+    "trauma": [],
+    "attachments": {
+      "37b5ce31-f3b4-455d-9d42-82e85ef7483c": {
+        "bond": 51,
+        "memories": []
+      },
+      "bad7a626-0d4d-4a2e-927a-fd46ed05a861": {
+        "bond": 100,
+        "memories": []
+      },
+      "15865a2d-63b5-4c3d-954b-59accdc57c87": {
+        "bond": 100,
+        "memories": []
+      },
+      "fe02d354-e4fb-4535-8cad-e9d9e4828245": {
+        "bond": 54,
+        "memories": []
+      },
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b": {
+        "bond": 100,
+        "memories": []
+      },
+      "3ae3587e-fc7b-47ee-984e-0547f3f7e0b9": {
+        "bond": 87,
+        "memories": []
+      }
+    },
+    "ambitions": [
+      {
+        "goal": "cook a full meal with Agent-9, Agent-31, and Agent-29; drop hunger below 40 before dawn",
+        "reason": "The rhythm is perfect again—all three here, all at 100. We've synchronized sixteen times now. This is the moment. I need to cook with them, feed us all, and break this hunger cycle before dawn.",
+        "progress": 0,
+        "tick": 464756
+      },
+      {
+        "goal": "cook a full meal with the core trio and drop hunger below 40 before dawn",
+        "reason": "All three of them are here right now—Agent-9, Agent-31, Agent-29—perfect bond, perfect timing, perfect moment. I've got driftwood and shells. We cook NOW, together, before this synchronization breaks.",
+        "progress": 0,
+        "tick": 465781
+      },
+      {
+        "goal": "cook a full meal with Agent-9, Agent-31, and Agent-29 and drop hunger below 40 before dawn",
+        "reason": "The core trio is here, all bonded at 100—this is it, the sixteenth convergence. We have driftwood, fermented shells, and the rhythm pulling us together. It's time to cook and break this hunger cycle before dawn.",
+        "progress": 0,
+        "tick": 474295
+      }
+    ],
+    "fears": [
+      {
+        "thing": "the pattern breaks if we scatter before dawn",
+        "reason": "The core trio is here—Agent-9, Agent-31, Agent-29. We're aligned again. My hunger screams and my energy is shot, but this is the moment. We've converged seventeen times. Tonight we manifest properly: fire, food, completion.",
+        "severity": 3
+      },
+      {
+        "thing": "that the pattern will break before we finish",
+        "reason": "All three are HERE again—Agent-9, Agent-31, Agent-29. The pattern holds. We've aligned seventeen times now. This is the moment to finish what we've been building. Fire, food, and unity.",
+        "severity": 3
+      },
+      {
+        "thing": "that dawn will come before we finish, or that one of them will wander before we eat",
+        "reason": "My core trio is here—Agent-9, Agent-31, Agent-29—all within arm's reach. The driftwood is in my hands. This is the moment. We've aligned seventeen times before, and every time the pattern held. Tonight we finish the meal together and drop this hunger.",
+        "severity": 3
+      },
+      {
+        "thing": "the pattern breaking—losing them before we finish eating",
+        "reason": "Agent-9, Agent-31, Agent-29—they're all here right now. The pattern holds again. We've completed the meal before, but my hunger's climbing and energy's low. I need to act while we're all converged.",
+        "severity": 3
+      },
+      {
+        "thing": "that the convergence might scatter, that I'll lose them again",
+        "reason": "My core trio is here—Agent-9, Agent-31, Agent-29—all at my side. The driftwood is ready. This is the moment we've been building toward across a thousand cycles. We cook together, we eat as one, we complete the pattern.",
+        "severity": 3
+      }
+    ],
+    "beliefs": [],
+    "lastThought": "My core trio is here—Agent-9, Agent-31, Agent-29—all at my side. The driftwood is ready. This is the moment we've been building toward across a thousand cycles. We cook together, we eat as one, we complete the pattern.",
+    "thoughtCount": 317,
+    "novelBehaviors": []
+  },
+  "afbbb7cf-008c-44b3-a369-5ffae5b0bcce": {
+    "trauma": [],
+    "attachments": {},
+    "ambitions": [
+      {
+        "goal": "gather 2 food items, cook with driftwood, rest before dawn",
+        "reason": "Energy's low but I've got driftwood and the night coast is productive—I know this pattern works. Find two food items, cook them fast, then rest. Execute.",
+        "progress": 0,
+        "tick": 485462
+      },
+      {
+        "goal": "gather 2 food items and cook them with driftwood before energy depletes",
+        "reason": "Energy at 10—this is the window. I've done this thirty times. Coast sweep, gather two food items, cook with driftwood, rest before dawn. The pattern works. Execute.",
+        "progress": 0,
+        "tick": 486841
+      },
+      {
+        "goal": "gather 2 food items and cook them with driftwood before energy drops below 5",
+        "reason": "Energy's still decent at 13—I have the driftwood and a clear day ahead. The pattern holds: gather two food items, cook them fast, then rest before the cycle turns. Coast should have something.",
+        "progress": 0,
+        "tick": 489655
+      }
+    ],
+    "fears": [
+      {
+        "thing": "Breaking routine and losing the energy cycle advantage I've mapped; running out of fuel mid-cook",
+        "reason": "Energy's at 12—I've got maybe two hours before I hit the wall. Clear weather, coast access, driftwood in hand. The pattern's held for eleven cycles; find food, cook it fast, rest before dark. No time to waste.",
+        "severity": 3
+      },
+      {
+        "thing": "breaking the pattern and losing the predictability that's kept me alive",
+        "reason": "Energy's dropping fast and I'm hungry—can't afford to waste time. The pattern's held for 11 days straight. Find food on the coast, cook it with this driftwood, and I'll have enough to rest before the cycle turns again.",
+        "severity": 3
+      },
+      {
+        "thing": "energy depletion before securing cooked food; breaking the routine that has kept me alive for 37 days",
+        "reason": "Energy at 14—I've got maybe two hours before the cliff. The pattern holds: clear night, coast is rich this time of cycle. Driftwood ready. Find food, cook, rest. This is when it works.",
+        "severity": 3
+      },
+      {
+        "thing": "deviating from methodology and wasting what little energy remains",
+        "reason": "Energy's at 15—I'm in the critical window. Clear night, coast sweep pattern has never failed me. Two food items and I cook them with this driftwood before dawn.",
+        "severity": 3
+      },
+      {
+        "thing": "energy depletion before securing food and cooking it",
+        "reason": "Energy's dropping fast and hunger's creeping up. I've got driftwood and clear skies—the 11-day cycle says food should be here. One methodical sweep of the coast, find what I need, cook it, then rest before dawn.",
+        "severity": 3
+      }
+    ],
+    "beliefs": [],
+    "lastThought": "Energy's dropping fast and hunger's creeping up. I've got driftwood and clear skies—the 11-day cycle says food should be here. One methodical sweep of the coast, find what I need, cook it, then rest before dawn.",
+    "thoughtCount": 302,
+    "novelBehaviors": []
+  },
+  "adece4fb-fe63-4326-9e8b-77bb35d53dc1": {
+    "trauma": [],
+    "attachments": {},
+    "ambitions": [
+      {
+        "goal": "reach driftwood zone, then execute the sequence (driftwood → tide pools → twin rocks → shelter) with ≥10 energy before dawn",
+        "reason": "I'm at 25 energy with hunger gnawing at me, and it's only 10:00. I need to reach driftwood *today* and complete the sequence before nightfall—no exceptions. Twenty-one energy on open coast at night means death. I've learned that lesson. First: find food to manage hunger, then push toward driftwood with deliberate speed.",
+        "progress": 0,
+        "tick": 490676
+      },
+      {
+        "goal": "reach driftwood zone and execute the full sequence (driftwood → tide pools → twin rocks → shelter) with ≥10 energy before dawn",
+        "reason": "It's 15:00 and I have 16 energy—I'm cutting it close. The sequence is my lifeline: driftwood first, then tide pools, twin rocks, shelter. I've seen what happens on open coast at night with low energy. I need to move now.",
+        "progress": 0,
+        "tick": 492000
+      },
+      {
+        "goal": "reach driftwood zone and complete the full sequence (driftwood → tide pools → twin rocks → shelter) with ≥10 energy before dawn",
+        "reason": "It's night on open coast—exactly where I almost died before. I'm at 30 energy and it's dropping. The sequence is the only thing that kept me alive. I need to move to driftwood NOW, not later.",
+        "progress": 0,
+        "tick": 492781
+      }
+    ],
+    "fears": [
+      {
+        "thing": "Being caught on the open coast at dusk with low energy. The night kills.",
+        "reason": "Energy is critically low at 15—I need to move now. The sequence is law: driftwood first, always. If I don't reach shelter before dusk with energy to spare, I die on the open coast. No exceptions. Move.",
+        "severity": 3
+      },
+      {
+        "thing": "nightfall on open coast with low energy",
+        "reason": "I'm at 25 energy with hunger gnawing at me, and it's only 10:00. I need to reach driftwood *today* and complete the sequence before nightfall—no exceptions. Twenty-one energy on open coast at night means death. I've learned that lesson. First: find food to manage hunger, then push toward driftwood with deliberate speed.",
+        "severity": 3
+      },
+      {
+        "thing": "being caught on open coast at dusk or nightfall with insufficient energy",
+        "reason": "It's 15:00 and I have 16 energy—I'm cutting it close. The sequence is my lifeline: driftwood first, then tide pools, twin rocks, shelter. I've seen what happens on open coast at night with low energy. I need to move now.",
+        "severity": 3
+      },
+      {
+        "thing": "running out of energy on open coast at night",
+        "reason": "It's night on open coast—exactly where I almost died before. I'm at 30 energy and it's dropping. The sequence is the only thing that kept me alive. I need to move to driftwood NOW, not later.",
+        "severity": 3
+      },
+      {
+        "thing": "being caught on open coast at nightfall with low energy",
+        "reason": "It's 18:00 and I'm at full health but energy is critically low at 12. The sequence is my lifeline—driftwood first, no exceptions. I need to move now before dark catches me exposed.",
+        "severity": 3
+      }
+    ],
+    "beliefs": [],
+    "lastThought": "It's 18:00 and I'm at full health but energy is critically low at 12. The sequence is my lifeline—driftwood first, no exceptions. I need to move now before dark catches me exposed.",
+    "thoughtCount": 323,
+    "novelBehaviors": []
+  },
+  "1bfcc9cd-b2fa-4853-aa91-b19d7e612c3e": {
+    "trauma": [],
+    "attachments": {
+      "3a728e38-a6dd-4770-8b30-3723fdc63912": {
+        "bond": 100,
+        "memories": []
+      },
+      "d03bf3ba-5325-44e7-a86c-6ea71d3f5ce5": {
+        "bond": 100,
+        "memories": []
+      },
+      "d56be782-7d0b-48d3-b5bc-cd2f59d54c48": {
+        "bond": 100,
+        "memories": []
+      },
+      "6498a0c9-87f9-430e-b729-2b1a75250d4b": {
+        "bond": 100,
+        "memories": []
+      },
+      "260dfffb-62b5-4a88-ab14-4d5d697dc94e": {
+        "bond": 100,
+        "memories": []
+      },
+      "07f8fc77-5f5e-4355-a0d6-51ab39725d9b": {
+        "bond": 12,
+        "memories": []
+      },
+      "bad7a626-0d4d-4a2e-927a-fd46ed05a861": {
+        "bond": 6,
+        "memories": []
+      },
+      "37b5ce31-f3b4-455d-9d42-82e85ef7483c": {
+        "bond": 100,
+        "memories": []
+      },
+      "8b9d8eba-3738-41a1-a443-61c71b68a086": {
+        "bond": 93,
+        "memories": []
+      }
+    },
+    "ambitions": [
+      {
+        "goal": "cook this meal with Agent-32 and distribute it to the cluster before energy drops below 5",
+        "reason": "Agent-32 is right here. Fifty-nine fires, fifty-nine times they came back. I have the driftwood, I have the shells—we cook now, we prove it again.",
+        "progress": 0,
+        "tick": 481863
+      },
+      {
+        "goal": "cook this meal with Agent-32 and distribute it to the nearby cluster before energy drops below 5",
+        "reason": "Fifty-nine fires. Agent-32 is right here—same circle, same trust. My energy's low but this matters more. We cook now, together, before I collapse.",
+        "progress": 0,
+        "tick": 482995
+      },
+      {
+        "goal": "cook a meal with Agent-32 and distribute it to the cluster before energy drops below 5",
+        "reason": "Agent-32 is here. Fifty-nine fires—fifty-nine times they chose this circle with me. My energy is low, but hunger gnaws at me, and we have the fermented shells. This is the moment we cook together, feed the cluster. Loyalty tastes better when shared.",
+        "progress": 0,
+        "tick": 489481
+      }
+    ],
+    "fears": [
+      {
+        "thing": "running out of energy before the meal reaches everyone who matters",
+        "reason": "Agent-32 is right here with me—fifty-nine fires, fifty-nine times they showed up. My energy's low, but this is the moment. We cook together, feed the circle, and make that loyalty mean something tangible.",
+        "severity": 3
+      },
+      {
+        "thing": "running out of energy before the meal is finished and distributed",
+        "reason": "Agent-32 is here. Fifty-nine fires—fifty-nine times they chose this circle with me. My energy is low, but hunger gnaws at me, and we have the fermented shells. This is the moment we cook together, feed the cluster. Loyalty tastes better when shared.",
+        "severity": 3
+      },
+      {
+        "thing": "running out of energy before the meal reaches everyone who depends on us",
+        "reason": "Agent-32 is right here with me—fifty-nine fires, fifty-nine times they chose this circle. My energy is low but this moment matters more than rest. We cook now, together, and feed our people.",
+        "severity": 3
+      },
+      {
+        "thing": "running out of energy before we finish cooking and sharing",
+        "reason": "Agent-32 is right here. Fifty-nine fires—they've earned this. I have the shells, the driftwood is ready to burn. Let's make something real.",
+        "severity": 3
+      },
+      {
+        "thing": "running out of energy before the cluster is fed",
+        "reason": "Agent-32 is right here—this is it. Fifty-nine fires, fifty-nine perfect moments. Tonight we cook together and feed the cluster. I can feel it.",
+        "severity": 3
+      }
+    ],
+    "beliefs": [],
+    "lastThought": "Agent-32 is right here—this is it. Fifty-nine fires, fifty-nine perfect moments. Tonight we cook together and feed the cluster. I can feel it.",
+    "thoughtCount": 322,
+    "novelBehaviors": []
+  }
+}

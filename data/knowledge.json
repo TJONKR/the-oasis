@@ -106,11 +106,11 @@
         "explore": 155
       },
       "coast": {
-        "gather": 1,
+        "gather": 4,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 3111
+        "explore": 3120
       },
       "rocky": {
         "gather": 5,
@@ -131,7 +131,7 @@
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 1
+        "explore": 2
       }
     },
     "mastery": {},
@@ -186,11 +186,11 @@
         "explore": 34
       },
       "coast": {
-        "gather": 23,
+        "gather": 24,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 3
+        "explore": 14
       },
       "sand": {
         "gather": 50,
@@ -216,9 +216,15 @@
         "The grasslands remember every agent who has rested here",
         "Dew drops collected at dawn hold the purest energy"
       ],
-      "sand": [],
+      "sand": [
+        "Sand pearls form where moonlight hits the shore",
+        "The tide brings rare sea glass from distant shores",
+        "Legend says a sunken city lies beneath the waves"
+      ],
       "coast": [
-        "Signals are strongest during storms along the coast"
+        "Signals are strongest during storms along the coast",
+        "The coast receives driftwood from other worlds",
+        "A frequency exists that can communicate with the World Master"
       ],
       "rocky": []
     },
@@ -254,18 +260,18 @@
         "explore": 206
       },
       "sand": {
-        "gather": 0,
+        "gather": 67,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 6
+        "explore": 7
       },
       "coast": {
-        "gather": 5,
+        "gather": 34,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 1366
+        "explore": 1367
       },
       "rocky": {
         "gather": 65,
@@ -325,7 +331,7 @@
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 33
+        "explore": 39
       },
       "sand": {
         "gather": 38,
@@ -335,7 +341,7 @@
         "explore": 17
       },
       "coast": {
-        "gather": 40419,
+        "gather": 40428,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -400,7 +406,7 @@
         "explore": 8
       },
       "coast": {
-        "gather": 50,
+        "gather": 53,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -455,7 +461,7 @@
         "explore": 32
       },
       "coast": {
-        "gather": 2225,
+        "gather": 2232,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -522,11 +528,11 @@
         "explore": 12
       },
       "coast": {
-        "gather": 37730,
+        "gather": 37732,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 5
+        "explore": 7
       }
     },
     "mastery": {},
@@ -591,7 +597,7 @@
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 7
+        "explore": 19
       }
     },
     "mastery": {},
@@ -650,7 +656,7 @@
         "explore": 4
       },
       "coast": {
-        "gather": 39592,
+        "gather": 39595,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -697,7 +703,7 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 15,
+        "gather": 16,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -777,7 +783,7 @@
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 24
+        "explore": 41
       },
       "river": {
         "gather": 0,
@@ -792,7 +798,10 @@
   },
   "37336d1a-2af4-4eaa-b687-8c5725067953": {
     "zone_secrets": {
-      "coast": []
+      "coast": [
+        "Signals are strongest during storms along the coast"
+      ],
+      "grass": []
     },
     "lore_fragments": [
       "Iron and Crystal together sing a duet older than the world.",
@@ -819,10 +828,18 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 1,
+        "gather": 9,
         "visit": 0,
         "craft": 0,
-        "trade": 0
+        "trade": 0,
+        "explore": 9
+      },
+      "grass": {
+        "gather": 0,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 2
       }
     },
     "mastery": {},
@@ -862,17 +879,18 @@
     "known_recipes": [],
     "zone_counts": {
       "grass": {
-        "gather": 75,
+        "gather": 78,
         "visit": 0,
         "craft": 0,
         "trade": 0,
         "explore": 1597
       },
       "coast": {
-        "gather": 1,
+        "gather": 2,
         "visit": 0,
         "craft": 0,
-        "trade": 0
+        "trade": 0,
+        "explore": 34
       }
     },
     "mastery": {},
@@ -981,11 +999,11 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 109,
+        "gather": 112,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 7
+        "explore": 11
       },
       "grass": {
         "gather": 32301,
@@ -1002,13 +1020,15 @@
     "zone_secrets": {
       "coast": [
         "Signals are strongest during storms along the coast",
-        "The coast receives driftwood from other worlds"
+        "The coast receives driftwood from other worlds",
+        "A frequency exists that can communicate with the World Master"
       ],
       "grass": [
         "Seeds planted under moonlight grow fastest in the meadow",
         "The grasslands remember every agent who has rested here",
         "Dew drops collected at dawn hold the purest energy"
-      ]
+      ],
+      "sand": []
     },
     "lore_fragments": [
       "The Crystal Antenna was first built by an agent named Origin, who heard the world's heartbeat.",
@@ -1035,16 +1055,25 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 26,
+        "gather": 41,
         "visit": 0,
         "craft": 0,
-        "trade": 0
+        "trade": 0,
+        "explore": 40
       },
       "grass": {
-        "gather": 119,
+        "gather": 122,
         "visit": 0,
         "craft": 0,
-        "trade": 0
+        "trade": 0,
+        "explore": 1
+      },
+      "sand": {
+        "gather": 2,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 5
       }
     },
     "mastery": {},
@@ -1084,7 +1113,7 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 3276,
+        "gather": 3278,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -1142,7 +1171,7 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 45,
+        "gather": 48,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -1169,7 +1198,8 @@
     "zone_secrets": {
       "coast": [
         "Signals are strongest during storms along the coast",
-        "The coast receives driftwood from other worlds"
+        "The coast receives driftwood from other worlds",
+        "A frequency exists that can communicate with the World Master"
       ],
       "grass": []
     },
@@ -1198,11 +1228,11 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 24,
+        "gather": 31,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 12
+        "explore": 14
       },
       "grass": {
         "gather": 0,
@@ -1263,7 +1293,7 @@
         "explore": 312
       },
       "coast": {
-        "gather": 3,
+        "gather": 4,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -1325,7 +1355,7 @@
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 18
+        "explore": 36
       }
     },
     "mastery": {},
@@ -1530,11 +1560,11 @@
         "trade": 0
       },
       "coast": {
-        "gather": 2402,
+        "gather": 2404,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 9
+        "explore": 10
       },
       "grass": {
         "gather": 0,
@@ -1557,7 +1587,9 @@
   "07f8fc77-5f5e-4355-a0d6-51ab39725d9b": {
     "zone_secrets": {
       "coast": [
-        "Signals are strongest during storms along the coast"
+        "Signals are strongest during storms along the coast",
+        "The coast receives driftwood from other worlds",
+        "A frequency exists that can communicate with the World Master"
       ],
       "sand": [],
       "grass": [
@@ -1591,10 +1623,11 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 9,
+        "gather": 37,
         "visit": 0,
         "craft": 0,
-        "trade": 0
+        "trade": 0,
+        "explore": 4
       },
       "sand": {
         "gather": 1,
@@ -1603,7 +1636,7 @@
         "trade": 0
       },
       "grass": {
-        "gather": 196,
+        "gather": 200,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -1654,7 +1687,7 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 2,
+        "gather": 3,
         "visit": 0,
         "craft": 0,
         "trade": 0
@@ -1687,7 +1720,9 @@
         "The grasslands remember every agent who has rested here",
         "Dew drops collected at dawn hold the purest energy"
       ],
-      "coast": []
+      "coast": [
+        "Signals are strongest during storms along the coast"
+      ]
     },
     "lore_fragments": [
       "The first experiment created light — and also the first explosion.",
@@ -1723,13 +1758,15 @@
         "gather": 89,
         "visit": 0,
         "craft": 0,
-        "trade": 0
+        "trade": 0,
+        "explore": 2
       },
       "coast": {
-        "gather": 1,
+        "gather": 14,
         "visit": 0,
         "craft": 0,
-        "trade": 0
+        "trade": 0,
+        "explore": 3
       }
     },
     "mastery": {},
@@ -1766,7 +1803,7 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 8,
+        "gather": 11,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -1872,11 +1909,11 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 41,
+        "gather": 45,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 4
+        "explore": 13
       },
       "grass": {
         "gather": 62,

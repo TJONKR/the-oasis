@@ -240,12 +240,37 @@ export function initTileRenderer(worldData, cacheDir) {
     const startTY = chunkY * CHUNK_TILES;
     const buf = Buffer.alloc(CHUNK_PX * CHUNK_PX * 3);
 
-    // Terrain
+    // Terrain — 2x2 sub-tiles per game tile for extra detail
+    const HALF = T >> 1; // 8px per sub-tile
+    const subN = mkN('sub7', 0.18, 3);
+    const subN2 = mkN('sub8', 0.35, 2); // second noise layer for more variety
     for (let ty = 0; ty < CHUNK_TILES; ty++) {
       for (let tx = 0; tx < CHUNK_TILES; tx++) {
-        const c = getColor(startTX + tx, startTY + ty);
-        for (let py = 0; py < T; py++) for (let px = 0; px < T; px++)
-          setpx(buf, CHUNK_PX, CHUNK_PX, tx * T + px, ty * T + py, ...c);
+        const wx = startTX + tx, wy = startTY + ty;
+        const baseC = getColor(wx, wy);
+        const bid = (wx >= 0 && wx < width && wy >= 0 && wy < height) ? bm[wy * width + wx] : 0;
+        // Stronger variation for land biomes, subtler for water
+        const strength = bid === 0 ? 16 : 36; // ±8 water, ±18 land
+        for (let sy = 0; sy < 2; sy++) {
+          for (let sx = 0; sx < 2; sx++) {
+            const snx = wx * 2 + sx, sny = wy * 2 + sy;
+            const nv = (subN(snx, sny) - 0.5) * strength;
+            // Second noise adds hue shift (green channel gets extra variation for grass)
+            const hueShift = (subN2(snx + 500, sny + 500) - 0.5) * (bid === 2 || bid === 3 ? 20 : 8);
+            // Sun bias: top-left brighter, bottom-right darker
+            const sunBias = (sx === 0 && sy === 0) ? 6 : (sx === 1 && sy === 1) ? -6 : (sx === 0 ? 3 : -3);
+            const r = clamp(baseC[0] + nv + sunBias);
+            const g = clamp(baseC[1] + nv + sunBias + hueShift);
+            const b = clamp(baseC[2] + nv + sunBias);
+            const px0 = tx * T + sx * HALF;
+            const py0 = ty * T + sy * HALF;
+            for (let py = 0; py < HALF; py++) {
+              for (let px = 0; px < HALF; px++) {
+                setpx(buf, CHUNK_PX, CHUNK_PX, px0 + px, py0 + py, r, g, b);
+              }
+            }
+          }
+        }
       }
     }
 
