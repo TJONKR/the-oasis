@@ -1,7 +1,11 @@
 {
   "currentPlan": {
-    "goal": "Survive critical situation: Energy at 0, Hunger at 100 — must eat immediately and rest",
+    "goal": "SURVIVE: Eat food immediately (hunger 100) then rest to recover energy",
     "steps": [
+      {
+        "action": "eat",
+        "done": true
+      },
       {
         "action": "eat",
         "done": true
@@ -11,20 +15,14 @@
         "done": true
       },
       {
-        "action": "rest",
-        "done": true
-      },
-      {
-        "action": "gather",
-        "targetX": null,
-        "targetY": null,
-        "done": true
+        "action": "move",
+        "done": false
       }
     ],
     "step": 0
   },
-  "lastThinkTick": 538544,
+  "lastThinkTick": 543933,
   "lastPerception": null,
-  "totalThinks": 687,
-  "totalActions": 8327
+  "totalThinks": 788,
+  "totalActions": 10535
 }

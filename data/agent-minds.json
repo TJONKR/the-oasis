@@ -3606,147 +3606,147 @@
     "currentAction": "move",
     "actionTicks": 0,
     "intent": {
-      "action": "chat",
-      "targetX": 1134,
-      "targetY": 369,
-      "reason": "Talk to Agent-30",
-      "startedTick": 44476,
+      "action": "explore",
+      "targetX": 1089,
+      "targetY": 381,
+      "reason": "Restless — need new experiences",
+      "startedTick": 71751,
       "maxTicks": 30
     },
     "pathThisTick": [
       {
-        "x": 1134,
-        "y": 370
+        "x": 1133,
+        "y": 372
       }
     ],
     "memory": {
       "short": [
         {
-          "text": "Agent-29 and Agent-30 both here at the same time—seized the moment to cook together and strengthen our bonds.",
-          "tick": 538467
-        },
-        {
-          "tick": 1772637615404,
+          "tick": 1772643093935,
           "text": "Chatted with Agent-29"
         },
         {
-          "tick": 1772637615406,
+          "tick": 1772643096940,
           "text": "Chatted with Agent-29"
         },
         {
-          "tick": 1772637617408,
+          "tick": 1772643097940,
           "text": "Chatted with Agent-30"
         },
         {
-          "tick": 1772637617410,
+          "tick": 1772643101948,
           "text": "Chatted with Agent-30"
         },
         {
-          "tick": 1772637623416,
+          "tick": 1772643108959,
           "text": "Chatted with Agent-29"
         },
         {
-          "tick": 1772637624419,
+          "tick": 1772643113965,
+          "text": "Chatted with Agent-30"
+        },
+        {
+          "tick": 1772643116970,
+          "text": "Chatted with Agent-30"
+        },
+        {
+          "tick": 1772643121978,
           "text": "Chatted with Agent-29"
         },
         {
-          "tick": 1772637644450,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772637644450,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772637646452,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772637664483,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772637664484,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772637669489,
+          "tick": 1772643122979,
           "text": "Chatted with Agent-29"
         },
         {
-          "tick": 1772637671492,
+          "tick": 1772643123981,
           "text": "Chatted with Agent-29"
         },
         {
-          "tick": 1772637672495,
+          "tick": 1772643129992,
+          "text": "Chatted with Agent-29"
+        },
+        {
+          "tick": 1772643132999,
+          "text": "Chatted with Agent-29"
+        },
+        {
+          "tick": 1772643136004,
+          "text": "Chatted with Agent-29"
+        },
+        {
+          "tick": 1772643164048,
+          "text": "Chatted with Agent-29"
+        },
+        {
+          "tick": 1772643177071,
           "text": "Chatted with Agent-30"
         },
         {
-          "tick": 1772637682510,
+          "tick": 1772643177072,
+          "text": "Chatted with Agent-29"
+        },
+        {
+          "tick": 1772643178073,
+          "text": "Chatted with Agent-29"
+        },
+        {
+          "tick": 1772643182078,
           "text": "Chatted with Agent-30"
         },
         {
-          "tick": 1772637683513,
+          "tick": 1772643184081,
+          "text": "Chatted with Agent-29"
+        },
+        {
+          "tick": 1772643189089,
           "text": "Chatted with Agent-30"
         },
         {
-          "tick": 1772637691522,
+          "tick": 1772643190092,
           "text": "Chatted with Agent-30"
         },
         {
-          "tick": 1772637699535,
-          "text": "Chatted with Agent-29"
-        },
-        {
-          "tick": 1772637701534,
+          "tick": 1772643190093,
           "text": "Chatted with Agent-30"
         },
         {
-          "tick": 1772637710549,
-          "text": "Chatted with Agent-29"
-        },
-        {
-          "tick": 1772637711550,
+          "tick": 1772643192093,
           "text": "Chatted with Agent-30"
         },
         {
-          "tick": 1772637712553,
-          "text": "Chatted with Agent-29"
-        },
-        {
-          "tick": 1772637713553,
-          "text": "Chatted with Agent-29"
-        },
-        {
-          "tick": 1772637714554,
-          "text": "Chatted with Agent-29"
-        },
-        {
-          "tick": 1772637715557,
+          "tick": 1772643195098,
           "text": "Chatted with Agent-30"
         },
         {
-          "tick": 1772637716558,
+          "tick": 1772643195100,
+          "text": "Chatted with Agent-30"
+        },
+        {
+          "text": "All three of us gathered at the coast in clear weather—the perfect moment to finally share a cooked meal after all those chats.",
+          "tick": 544043
+        },
+        {
+          "tick": 1772643196099,
+          "text": "Chatted with Agent-30"
+        },
+        {
+          "tick": 1772643199103,
           "text": "Chatted with Agent-29"
         },
         {
-          "tick": 1772637730578,
-          "text": "Chatted with Agent-29"
+          "tick": 1772643201105,
+          "text": "Chatted with Agent-30"
         },
         {
-          "tick": 1772637731580,
-          "text": "Chatted with Agent-29"
-        },
-        {
-          "tick": 1772637732582,
+          "tick": 1772643202108,
           "text": "Chatted with Agent-29"
         }
       ],
       "lessons": [],
       "visited": {
-        "coast": 49193,
-        "sand": 1794,
-        "grass": 10757,
+        "coast": 50263,
+        "sand": 1887,
+        "grass": 11760,
         "river": 8
       },
       "gathered": {
@@ -3798,8 +3798,8 @@
       },
       "07f8fc77-5f5e-4355-a0d6-51ab39725d9b": {
         "name": "Agent-29",
-        "score": 9284,
-        "interactions": 9077
+        "score": 10516,
+        "interactions": 10309
       },
       "bad7a626-0d4d-4a2e-927a-fd46ed05a861": {
         "name": "Agent-9",
@@ -3808,8 +3808,8 @@
       },
       "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
         "name": "Agent-30",
-        "score": 38916,
-        "interactions": 38692
+        "score": 40285,
+        "interactions": 40061
       },
       "fe02d354-e4fb-4535-8cad-e9d9e4828245": {
         "name": "Agent-3",
@@ -4207,148 +4207,143 @@
     "actionTicks": 0,
     "intent": {
       "action": "gather",
-      "targetX": 343,
-      "targetY": 363,
+      "targetX": 340,
+      "targetY": 360,
       "reason": "Gather herbs from grass",
-      "startedTick": 44477,
+      "startedTick": 71767,
       "maxTicks": 30,
-      "gatherX": 343,
-      "gatherY": 363
+      "gatherX": 340,
+      "gatherY": 360
     },
-    "pathThisTick": [
-      {
-        "x": 360,
-        "y": 363
-      }
-    ],
+    "pathThisTick": null,
     "memory": {
       "short": [
         {
-          "text": "Crabs are nocturnal. Daylight = wasted effort. Moonlight = they're vulnerable, feeding, exposed. Tonight is the real window.",
-          "tick": 533303
-        },
-        {
-          "text": "Daylight crab hunting failed—they hide. Nocturnal + moonlight is the real window. Tonight or never.",
-          "tick": 533723
-        },
-        {
-          "tick": 1772632859893,
+          "tick": 1772638571944,
           "text": "Explored new ground in the coast"
         },
         {
-          "text": "Daylight hunting failed because crabs hide during day. Nocturnal feeding under moonlight is when they're vulnerable and exposed—this is the real window.",
-          "tick": 533845
+          "text": "Nocturnal crabs hunt in shallow tide pools regardless of cloud cover. Tonight is my chance to show I'm truly capable.",
+          "tick": 539543
         },
         {
-          "tick": 1772632982192,
+          "tick": 1772638689109,
           "text": "Explored new ground in the coast"
         },
         {
-          "text": "Crabs are nocturnal and only vulnerable under moonlight when feeding—daylight hunting is futile. Tonight is my real window to succeed.",
-          "tick": 534083
+          "text": "Cloudy nights don't deter nocturnal crabs—they hunt regardless. This is the opening I've been waiting for.",
+          "tick": 540147
         },
         {
-          "text": "Daylight crab hunting is useless—crabs hide. They only feed and become vulnerable under moonlight at night. Tonight is the real opportunity.",
-          "tick": 534443
-        },
-        {
-          "tick": 1772633581190,
+          "tick": 1772639293987,
           "text": "Explored new ground in the coast"
         },
         {
-          "text": "Crabs are strictly nocturnal hunters. Daylight is wasted effort. Moonlight is when they feed and expose themselves in shallow tide pools.",
-          "tick": 534625
+          "text": "Cloudy nights don't stop nocturnal crabs—they hunt regardless. The tide pools are perfect hunting grounds, and tonight is finally my chance to show them what I'm made of.",
+          "tick": 540629
         },
         {
-          "tick": 1772633763467,
+          "text": "Clear night on Day 3452—perfect conditions for the crab hunt. My crew believes in me. This is the moment.",
+          "tick": 540809
+        },
+        {
+          "tick": 1772639956979,
           "text": "Explored new ground in the coast"
         },
         {
-          "text": "Crabs are strictly nocturnal and only vulnerable in shallow tide pools when feeding under moonlight. Daylight hunting is a waste. Tonight when the moon rises is my real window.",
-          "tick": 534805
+          "text": "Clear night on Day 3453—the conditions are ideal. My bond with Agent-30 and the crew is strong; they believe in me. This is my moment to deliver.",
+          "tick": 541115
         },
         {
-          "text": "Crabs are strictly nocturnal—daylight hunting wastes time. They feed and expose themselves in shallow pools only when the moon rises. Tonight is THE window.",
-          "tick": 535043
-        },
-        {
-          "text": "Crabs are strictly nocturnal hunters and only expose themselves in shallow tide pools when feeding under moonlight. Daylight hunting wastes energy. Tonight is THE window.",
-          "tick": 535283
-        },
-        {
-          "tick": 1772634422461,
+          "tick": 1772640263467,
           "text": "Explored new ground in the coast"
         },
         {
-          "text": "Crabs are strictly nocturnal and only vulnerable in shallow tide pools when feeding under moonlight. Daylight is wasted effort—tonight is the real window.",
-          "tick": 535525
+          "text": "Day 3453: Clear skies return. Agent-30 and the whole crew believe in me. Tonight is THE night—I can feel it in my bones.",
+          "tick": 541286
         },
         {
-          "text": "Crabs only feed and expose themselves in shallow tide pools when the moon rises. Daylight hunting is a waste. Tonight is THE window.",
-          "tick": 535764
-        },
-        {
-          "text": "Crabs are strictly nocturnal—they only expose themselves in shallow tide pools when feeding under moonlight. Tonight is the real window. Daylight hunting wastes energy.",
-          "tick": 536003
-        },
-        {
-          "tick": 1772635143618,
+          "tick": 1772640434742,
           "text": "Explored new ground in the coast"
         },
         {
-          "text": "Crabs are strictly nocturnal and only expose themselves in shallow tide pools when feeding under moonlight. Daylight is wasted effort. Tonight is the real window.",
-          "tick": 536305
+          "text": "Day 3453, 21:00—Clear skies, full belly of fermented shells, energy surging. This is the night I show them what I'm capable of. The crew is counting on me.",
+          "tick": 541583
         },
         {
-          "text": "Crabs are strictly nocturnal and only vulnerable in shallow tide pools when feeding under moonlight. Tonight is the real window.",
-          "tick": 536785
-        },
-        {
-          "tick": 1772635926852,
+          "tick": 1772640732235,
           "text": "Explored new ground in the coast"
         },
         {
-          "text": "Crabs are strictly nocturnal—they feed in shallow tide pools only under moonlight. Daytime hunting wastes energy. Tonight is the real window.",
-          "tick": 536905
+          "text": "Day 3454: Clear skies, full moon, energy surging—the crew is counting on me. This is my night to show what I'm truly capable of.",
+          "tick": 541826
         },
         {
-          "text": "Crabs are nocturnal hunters in shallow tide pools—daylight is wasted effort. They're predictable. Tonight, cloudy or not, is still my best window.",
-          "tick": 537324
-        },
-        {
-          "tick": 1772636466677,
+          "tick": 1772640975606,
           "text": "Explored new ground in the coast"
         },
         {
-          "text": "Crabs are nocturnal and only vulnerable under moonlight in shallow tide pools. Clouds tonight are a complication, but the hunt window doesn't wait.",
-          "tick": 537503
+          "text": "The full moon is tonight. The crew is counting on me. Agent-30 believes I can do this. This is my moment.",
+          "tick": 542065
         },
         {
-          "tick": 1772636645938,
+          "text": "The crew believes in me. Agent-30 is counting on this. I can feel it—tonight I show them what I'm truly capable of.",
+          "tick": 542183
+        },
+        {
+          "tick": 1772641333188,
           "text": "Explored new ground in the coast"
         },
         {
-          "text": "Crabs are strictly nocturnal in shallow tide pools—daytime hunting is wasted effort. Tonight's window is non-negotiable, clouds or not.",
-          "tick": 537743
+          "text": "The full moon is lighting the coast perfectly. This is the night I've been waiting for—I can feel it in my bones.",
+          "tick": 542423
         },
         {
-          "text": "Crabs are strictly nocturnal in shallow tide pools. Cloudy skies don't matter—they hunt regardless. Tonight is the window. The crew is watching.",
-          "tick": 537863
+          "text": "The full moon is rising tonight. Agent-30 and the entire crew believe in me. This is my moment to show what I'm capable of.",
+          "tick": 542725
         },
         {
-          "text": "Crabs are strictly nocturnal in shallow tide pools. Clouds won't stop them hunting. The window is NOW.",
-          "tick": 538107
+          "text": "The full moon rises on Day 3455—this is the night everything changes. Agent-30 believes in me. The crew believes in me. I won't let them down.",
+          "tick": 542963
         },
         {
-          "text": "Crabs are strictly nocturnal in shallow tide pools. Cloud cover doesn't matter—they hunt regardless. Tonight is non-negotiable. The whole crew is watching.",
-          "tick": 538403
+          "tick": 1772642114485,
+          "text": "Gathered shells in the coast"
+        },
+        {
+          "text": "The full moon is perfect tonight—best conditions for tide pool hunting. This is the moment I've been waiting for.",
+          "tick": 543205
+        },
+        {
+          "tick": 1772642356851,
+          "text": "Explored new ground in the coast"
+        },
+        {
+          "text": "The crew's belief in me is real. Agent-30 is counting on me. This is the night that matters.",
+          "tick": 543383
+        },
+        {
+          "text": "The crew's faith in me is real. Agent-30 is counting on me. This night will define who I am as a survivor.",
+          "tick": 543803
+        },
+        {
+          "tick": 1772642955741,
+          "text": "Explored new ground in the coast"
+        },
+        {
+          "text": "The full moon is shining bright on Day 3457. My closest bonds—Agent-30, Agent-5, Agent-20, and the entire crew—are counting on me. This night will define who I am.",
+          "tick": 543923
+        },
+        {
+          "tick": 1772643075916,
+          "text": "Explored new ground in the coast"
         }
       ],
       "lessons": [],
       "visited": {
         "grass": 9391,
-        "sand": 4241,
-        "coast": 15253
+        "sand": 4261,
+        "coast": 18548
       },
       "gathered": {
         "acorns": 6,
@@ -4356,7 +4351,7 @@
         "wood": 10,
         "herbs": 71,
         "fiber": 49,
-        "shells": 10,
+        "shells": 11,
         "fish": 5,
         "driftwood": 1,
         "seaweed": 3,
@@ -4479,7 +4474,7 @@
     "journal": "I am Agent-17. I just arrived in this world.",
     "mood": "excited",
     "lastReflection": 0,
-    "lastReason": "Energy is critically low at 26. I can't hunt crabs tonight exhausted. Need to recover enough to move fast in tide pools."
+    "lastReason": "Exhausted — must rest!"
   },
   "8b9d8eba-3738-41a1-a443-61c71b68a086": {
     "personality": {
@@ -5104,7 +5099,7 @@
       "targetX": 973,
       "targetY": 389,
       "reason": "Gather herbs from grass",
-      "startedTick": 44478,
+      "startedTick": 71768,
       "maxTicks": 30,
       "gatherX": 973,
       "gatherY": 389
@@ -5112,98 +5107,6 @@
     "pathThisTick": null,
     "memory": {
       "short": [
-        {
-          "tick": 1772633280660,
-          "text": "Explored new ground in the coast"
-        },
-        {
-          "text": "Day 3443, 19:00—All eleven core bonds locked at 100. Fermented shells in hand. This is the execution moment. Do not waste it.",
-          "tick": 534323
-        },
-        {
-          "tick": 1772633461004,
-          "text": "Explored new ground in the coast"
-        },
-        {
-          "text": "The convergence has held 48+ hours—all eleven core bonds locked at perfect 100. This is the execution moment. The fermented shells are the catalyst. Move now or this window closes forever.",
-          "tick": 534564
-        },
-        {
-          "tick": 1772633702366,
-          "text": "Explored new ground in the coast"
-        },
-        {
-          "text": "Day 3444, 13:00 — All eleven core bonds holding at perfect 100. Fermented shells acquired. The convergence window is still open. This is the execution moment.",
-          "tick": 534863
-        },
-        {
-          "tick": 1772634001825,
-          "text": "Explored new ground in the coast"
-        },
-        {
-          "text": "Day 3444, 17:00 — fermented shells in hand, all eleven core bonds locked at 100, the convergence window is NOW. This is the moment we execute.",
-          "tick": 534986
-        },
-        {
-          "text": "Day 3445, 3:00 AM—the convergence window is at its narrowest point. All eleven core bonds locked at 100. Fermented shells in hand. This is the execution moment. Do not delay.",
-          "tick": 535286
-        },
-        {
-          "text": "Day 3445, 9:00 AM — fermented shells acquired, all eleven core bonds at 100, convergence window critically narrow. This is the execution window. Do not waste daylight.",
-          "tick": 535463
-        },
-        {
-          "tick": 1772634602730,
-          "text": "Explored new ground in the coast"
-        },
-        {
-          "text": "Night 3445: fermented shells in hand, all eleven bonds at 100, convergence at critical narrowness. The window will not wait.",
-          "tick": 535823
-        },
-        {
-          "text": "Day 3446, night: fermented shells in hand, eleven core bonds at maximum, the convergence is NOW. This is not rehearsal. This is the moment.",
-          "tick": 535944
-        },
-        {
-          "tick": 1772635084532,
-          "text": "Explored new ground in the coast"
-        },
-        {
-          "text": "Day 3446, 11:00 AM—all eleven core bonds at 100, fermented shells acquired, executing the convergence ritual. This is the execution window.",
-          "tick": 536243
-        },
-        {
-          "tick": 1772635383995,
-          "text": "Explored new ground in the coast"
-        },
-        {
-          "text": "Night 3447: alone with fermented shells in hand, all eleven core bonds at 100. The convergence window is NOW. This moment will not repeat.",
-          "tick": 536724
-        },
-        {
-          "tick": 1772635865759,
-          "text": "Explored new ground in the coast"
-        },
-        {
-          "text": "Day 3447, 11:00 AM—fermented shells acquired, all eleven core bonds remain at 100. The convergence window is active NOW. This alignment will not repeat.",
-          "tick": 536965
-        },
-        {
-          "text": "Day 3447: All eleven bonds at 100. Fermented shells in hand. The convergence window is active NOW—this alignment will not repeat. Must act immediately.",
-          "tick": 537145
-        },
-        {
-          "tick": 1772636287381,
-          "text": "Explored new ground in the coast"
-        },
-        {
-          "text": "Day 3448, 7:00 AM—alone on the coast with fermented shells in hand. All eleven core bonds at 100. The convergence is real. This is the moment.",
-          "tick": 537563
-        },
-        {
-          "text": "Day 3448, 15:00—all eleven core bonds still at 100. The convergence is real and active. This is the critical window. Must act now.",
-          "tick": 537803
-        },
         {
           "text": "Night 3448: all eleven bonds holding at 100—the true convergence is NOW, not tomorrow. Every moment counts.",
           "tick": 537985
@@ -5231,6 +5134,98 @@
         {
           "tick": 1772637727576,
           "text": "Explored new ground in the coast"
+        },
+        {
+          "text": "Night 3450, coast: fermented shells in hand, all eleven bonds at 100, convergence window active and narrowing. This is the moment.",
+          "tick": 538833
+        },
+        {
+          "tick": 1772637978038,
+          "text": "Explored new ground in the coast"
+        },
+        {
+          "text": "Day 3450, 15:00 — fermented shells in hand, all eleven core bonds holding perfect at 100. The convergence is no longer theoretical. This is the moment.",
+          "tick": 539248
+        },
+        {
+          "text": "Day 3450, 17:00 — fermented shells confirmed as convergence catalyst. All eleven core bonds holding at 100. This moment cannot be wasted.",
+          "tick": 539309
+        },
+        {
+          "text": "Night 3451: fermented shells in hand, all bonds at 100, convergence window active. This is the convergence moment—cannot fail.",
+          "tick": 539546
+        },
+        {
+          "tick": 1772638692115,
+          "text": "Explored new ground in the coast"
+        },
+        {
+          "text": "Fermented shells are the convergence catalyst. All eleven core bonds stable at 100. The moment is now—cannot waste this window.",
+          "tick": 540443
+        },
+        {
+          "tick": 1772639590448,
+          "text": "Explored new ground in the coast"
+        },
+        {
+          "text": "Day 3452, 11:00 — fermented shells in hand, all core bonds at 100, convergence window open. The coast is where they gather. Move now.",
+          "tick": 540565
+        },
+        {
+          "text": "Convergence window is active. All core bonds stable at 100. Fermented shells are the catalyst. The coast is where they gather. Move with purpose.",
+          "tick": 541343
+        },
+        {
+          "tick": 1772640491890,
+          "text": "Explored new ground in the coast"
+        },
+        {
+          "text": "Night 3454 on the coast—all eleven core bonds at 100, fermented shells in hand, convergence moment arrived. This is the foundation.",
+          "tick": 541766
+        },
+        {
+          "text": "Night 3454: all eleven core bonds at 100, fermented shells secured, convergence moment confirmed. The coast is our gathering place. This is the foundation we build together.",
+          "tick": 542063
+        },
+        {
+          "text": "Night 3454: fermented shells in hand, all eleven core bonds at maximum. The coast is where we converge. This moment will bind us together.",
+          "tick": 542363
+        },
+        {
+          "text": "Night 3455: convergence window active, all bonds at 100, fermented shells in hand, moving to coast to unite with Agent-5 and Agent-13. This binding will be foundation.",
+          "tick": 542543
+        },
+        {
+          "tick": 1772641693755,
+          "text": "Explored new ground in the coast"
+        },
+        {
+          "text": "All eleven core bonds reached 100 on Night 3454. The fermented shells are the key to binding them together. This convergence on the coast is everything.",
+          "tick": 542663
+        },
+        {
+          "tick": 1772641813969,
+          "text": "Explored new ground in the coast"
+        },
+        {
+          "text": "All eleven core bonds at maximum strength. The fermented shells are ready. This is the convergence moment.",
+          "tick": 542965
+        },
+        {
+          "text": "Night 3456: alone at coast with fermented shells, all eleven bonds at peak. The ritual window is now—this binding will anchor everything we've built.",
+          "tick": 543145
+        },
+        {
+          "text": "Night 3456: all eleven core bonds at 100. The fermented shells are ready. The convergence window is open on the coast.",
+          "tick": 543443
+        },
+        {
+          "text": "Night 3456: alone at coast with fermented shells, all eleven bonds at peak, the convergence window is open. This is the moment to bind them together.",
+          "tick": 543623
+        },
+        {
+          "text": "Night 3457: All eleven core bonds at maximum. Fermented shells ready. The convergence window is open—this is the binding moment that will anchor our entire network.",
+          "tick": 543864
         }
       ],
       "lessons": [],
@@ -5349,9 +5344,9 @@
       }
     },
     "journal": "I am Agent-20. I just arrived in this world.",
-    "mood": "excited",
+    "mood": "neutral",
     "lastReflection": 0,
-    "lastReason": "locating my closest bonds to initiate the three-way ritual before dawn"
+    "lastReason": "Exhausted — must rest!"
   },
   "f4689095-dbd2-45de-81fa-42cb6bf3bc2e": {
     "personality": {
@@ -7959,138 +7954,145 @@
         "progress": 0
       }
     ],
-    "currentAction": "chat",
+    "currentAction": "rest",
     "actionTicks": 0,
-    "intent": null,
+    "intent": {
+      "action": "rest",
+      "targetX": 1134,
+      "targetY": 369,
+      "reason": "Exhausted — must rest!",
+      "startedTick": 71754,
+      "maxTicks": 30
+    },
     "pathThisTick": null,
     "memory": {
       "short": [
         {
-          "tick": 1772637606393,
+          "tick": 1772643100948,
+          "text": "Chatted with Agent-30"
+        },
+        {
+          "tick": 1772643102952,
           "text": "Chatted with Agent-15"
         },
         {
-          "tick": 1772637612400,
+          "tick": 1772643103951,
           "text": "Chatted with Agent-15"
         },
         {
-          "tick": 1772637632429,
+          "tick": 1772643104954,
           "text": "Chatted with Agent-30"
         },
         {
-          "tick": 1772637634435,
+          "tick": 1772643107959,
+          "text": "Chatted with Agent-30"
+        },
+        {
+          "tick": 1772643110964,
           "text": "Chatted with Agent-15"
         },
         {
-          "tick": 1772637665483,
+          "tick": 1772643111965,
           "text": "Chatted with Agent-15"
         },
         {
-          "tick": 1772637668490,
+          "tick": 1772643116974,
           "text": "Chatted with Agent-15"
         },
         {
-          "tick": 1772637669491,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772637670492,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772637672497,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772637673496,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772637674498,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772637675498,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772637676501,
+          "tick": 1772643118973,
           "text": "Chatted with Agent-15"
         },
         {
-          "tick": 1772637690521,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772637690523,
+          "tick": 1772643119975,
           "text": "Chatted with Agent-15"
         },
         {
-          "tick": 1772637692525,
+          "tick": 1772643120977,
           "text": "Chatted with Agent-30"
         },
         {
-          "tick": 1772637693526,
+          "tick": 1772643121980,
           "text": "Chatted with Agent-30"
         },
         {
-          "tick": 1772637696529,
+          "tick": 1772643123982,
           "text": "Chatted with Agent-15"
         },
         {
-          "tick": 1772637699537,
+          "tick": 1772643124985,
           "text": "Chatted with Agent-30"
         },
         {
-          "tick": 1772637700535,
+          "tick": 1772643125986,
           "text": "Chatted with Agent-30"
         },
         {
-          "tick": 1772637701535,
+          "tick": 1772643127989,
+          "text": "Chatted with Agent-30"
+        },
+        {
+          "tick": 1772643129995,
+          "text": "Chatted with Agent-30"
+        },
+        {
+          "tick": 1772643130997,
           "text": "Chatted with Agent-15"
         },
         {
-          "tick": 1772637709547,
+          "tick": 1772643133001,
           "text": "Chatted with Agent-30"
         },
         {
-          "tick": 1772637715560,
+          "text": "All three closest allies are gathered at the coast tonight—rare alignment for a coordinated push",
+          "tick": 543983
+        },
+        {
+          "tick": 1772643136006,
           "text": "Chatted with Agent-15"
         },
         {
-          "tick": 1772637717561,
+          "tick": 1772643143014,
+          "text": "Chatted with Agent-30"
+        },
+        {
+          "tick": 1772643146021,
+          "text": "Chatted with Agent-30"
+        },
+        {
+          "tick": 1772643151027,
           "text": "Chatted with Agent-15"
         },
         {
-          "tick": 1772637719561,
+          "tick": 1772643157035,
           "text": "Chatted with Agent-30"
         },
         {
-          "tick": 1772637724571,
+          "tick": 1772643161046,
           "text": "Chatted with Agent-30"
         },
         {
-          "tick": 1772637731581,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772637733586,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772637733587,
+          "tick": 1772643165052,
           "text": "Chatted with Agent-15"
         },
         {
-          "tick": 1772637739597,
-          "text": "Chatted with Agent-15"
+          "tick": 1772643169058,
+          "text": "Chatted with Agent-30"
+        },
+        {
+          "tick": 1772643170060,
+          "text": "Chatted with Agent-30"
+        },
+        {
+          "tick": 1772643171062,
+          "text": "Chatted with Agent-30"
         }
       ],
       "lessons": [],
       "visited": {
-        "grass": 13851,
-        "coast": 8921,
-        "sand": 670,
+        "grass": 14584,
+        "coast": 9742,
+        "sand": 735,
         "river": 13
       },
       "gathered": {
@@ -8106,8 +8108,8 @@
     "relationships": {
       "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
         "name": "Agent-30",
-        "score": 353217,
-        "interactions": 52441
+        "score": 354580,
+        "interactions": 53804
       },
       "fe02d354-e4fb-4535-8cad-e9d9e4828245": {
         "name": "Agent-3",
@@ -8131,8 +8133,8 @@
       },
       "37336d1a-2af4-4eaa-b687-8c5725067953": {
         "name": "Agent-15",
-        "score": 9270,
-        "interactions": 9077
+        "score": 10502,
+        "interactions": 10309
       },
       "15865a2d-63b5-4c3d-954b-59accdc57c87": {
         "name": "Agent-31",
@@ -8208,7 +8210,7 @@
     "journal": "I am Agent-29. I just arrived in this world.",
     "mood": "happy",
     "lastReflection": 0,
-    "lastReason": "Talk to Agent-30"
+    "lastReason": "Exhausted — must rest!"
   },
   "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
     "personality": {
@@ -8252,144 +8254,148 @@
     "currentAction": "move",
     "actionTicks": 0,
     "intent": {
-      "action": "gather",
-      "targetX": 1115,
-      "targetY": 351,
-      "reason": "Gather herbs from grass",
-      "startedTick": 44480,
-      "maxTicks": 30,
-      "gatherX": 1115,
-      "gatherY": 351
+      "action": "explore",
+      "targetX": 1179,
+      "targetY": 350,
+      "reason": "Restless — need new experiences",
+      "startedTick": 71750,
+      "maxTicks": 30
     },
-    "pathThisTick": null,
+    "pathThisTick": [
+      {
+        "x": 1140,
+        "y": 363
+      }
+    ],
     "memory": {
       "short": [
         {
-          "tick": 1772637669492,
+          "tick": 1772643121981,
           "text": "Chatted with Agent-29"
         },
         {
-          "tick": 1772637671493,
+          "tick": 1772643122985,
+          "text": "Chatted with Agent-29"
+        },
+        {
+          "tick": 1772643123983,
           "text": "Chatted with Agent-15"
         },
         {
-          "tick": 1772637672499,
+          "tick": 1772643127990,
           "text": "Chatted with Agent-15"
         },
         {
-          "tick": 1772637673497,
+          "tick": 1772643129996,
           "text": "Chatted with Agent-29"
         },
         {
-          "tick": 1772637675499,
+          "tick": 1772643132000,
           "text": "Chatted with Agent-29"
         },
         {
-          "tick": 1772637676502,
-          "text": "Chatted with Agent-29"
-        },
-        {
-          "tick": 1772637679506,
-          "text": "Chatted with Agent-29"
-        },
-        {
-          "tick": 1772637679508,
-          "text": "Chatted with Agent-29"
-        },
-        {
-          "tick": 1772637680507,
+          "tick": 1772643133002,
           "text": "Chatted with Agent-15"
         },
         {
-          "tick": 1772637682512,
-          "text": "Chatted with Agent-15"
-        },
-        {
-          "tick": 1772637683515,
-          "text": "Chatted with Agent-15"
-        },
-        {
-          "tick": 1772637685516,
-          "text": "Chatted with Agent-15"
-        },
-        {
-          "tick": 1772637691525,
+          "tick": 1772643139009,
           "text": "Chatted with Agent-29"
         },
         {
-          "tick": 1772637695528,
+          "tick": 1772643141013,
+          "text": "Chatted with Agent-29"
+        },
+        {
+          "tick": 1772643162045,
           "text": "Chatted with Agent-15"
         },
         {
-          "tick": 1772637696530,
+          "tick": 1772643163047,
+          "text": "Chatted with Agent-29"
+        },
+        {
+          "tick": 1772643164053,
           "text": "Chatted with Agent-15"
         },
         {
-          "tick": 1772637697530,
+          "tick": 1772643165053,
           "text": "Chatted with Agent-15"
         },
         {
-          "tick": 1772637700536,
+          "tick": 1772643167054,
           "text": "Chatted with Agent-15"
         },
         {
-          "tick": 1772637707545,
-          "text": "Chatted with Agent-29"
-        },
-        {
-          "tick": 1772637708547,
+          "tick": 1772643168056,
           "text": "Chatted with Agent-15"
         },
         {
-          "tick": 1772637709550,
+          "tick": 1772643168058,
           "text": "Chatted with Agent-15"
         },
         {
-          "tick": 1772637710551,
+          "tick": 1772643169060,
           "text": "Chatted with Agent-29"
         },
         {
-          "tick": 1772637711552,
+          "tick": 1772643170062,
+          "text": "Chatted with Agent-29"
+        },
+        {
+          "tick": 1772643171066,
+          "text": "Chatted with Agent-29"
+        },
+        {
+          "tick": 1772643175070,
           "text": "Chatted with Agent-15"
         },
         {
-          "tick": 1772637713557,
+          "tick": 1772643178075,
           "text": "Chatted with Agent-29"
         },
         {
-          "tick": 1772637714558,
-          "text": "Chatted with Agent-29"
-        },
-        {
-          "tick": 1772637717562,
-          "text": "Chatted with Agent-29"
-        },
-        {
-          "tick": 1772637721566,
-          "text": "Chatted with Agent-29"
-        },
-        {
-          "tick": 1772637723572,
-          "text": "Chatted with Agent-29"
-        },
-        {
-          "tick": 1772637731582,
-          "text": "Chatted with Agent-29"
-        },
-        {
-          "tick": 1772637733588,
+          "tick": 1772643178076,
           "text": "Chatted with Agent-15"
         },
         {
-          "tick": 1772637738595,
+          "tick": 1772643189091,
+          "text": "Chatted with Agent-15"
+        },
+        {
+          "tick": 1772643192095,
           "text": "Chatted with Agent-29"
+        },
+        {
+          "tick": 1772643193097,
+          "text": "Chatted with Agent-29"
+        },
+        {
+          "tick": 1772643194099,
+          "text": "Chatted with Agent-15"
+        },
+        {
+          "tick": 1772643194103,
+          "text": "Chatted with Agent-29"
+        },
+        {
+          "tick": 1772643198104,
+          "text": "Chatted with Agent-29"
+        },
+        {
+          "tick": 1772643200107,
+          "text": "Chatted with Agent-29"
+        },
+        {
+          "tick": 1772643201107,
+          "text": "Chatted with Agent-15"
         }
       ],
       "lessons": [],
       "visited": {
-        "grass": 17382,
-        "sand": 755,
-        "coast": 10318
+        "grass": 18771,
+        "sand": 956,
+        "coast": 11453,
+        "river": 8
       },
       "gathered": {
         "shells": 13,
@@ -8404,8 +8410,8 @@
     "relationships": {
       "07f8fc77-5f5e-4355-a0d6-51ab39725d9b": {
         "name": "Agent-29",
-        "score": 353585,
-        "interactions": 52441
+        "score": 354948,
+        "interactions": 53804
       },
       "fe02d354-e4fb-4535-8cad-e9d9e4828245": {
         "name": "Agent-3",
@@ -8434,8 +8440,8 @@
       },
       "37336d1a-2af4-4eaa-b687-8c5725067953": {
         "name": "Agent-15",
-        "score": 38916,
-        "interactions": 38692
+        "score": 40285,
+        "interactions": 40061
       },
       "8b9d8eba-3738-41a1-a443-61c71b68a086": {
         "name": "Agent-18",
@@ -8529,9 +8535,9 @@
       }
     },
     "journal": "I am Agent-30. I just arrived in this world.",
-    "mood": "tired",
+    "mood": "happy",
     "lastReflection": 0,
-    "lastReason": "Talk to Agent-29"
+    "lastReason": "Talk to Agent-15"
   },
   "15865a2d-63b5-4c3d-954b-59accdc57c87": {
     "personality": {

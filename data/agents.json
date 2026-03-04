@@ -944,14 +944,14 @@
   "37336d1a-2af4-4eaa-b687-8c5725067953": {
     "id": "37336d1a-2af4-4eaa-b687-8c5725067953",
     "name": "Agent-15",
-    "tileX": 1134,
-    "tileY": 369,
-    "x": 1134,
-    "y": 369,
+    "tileX": 1135,
+    "tileY": 368,
+    "x": 1135,
+    "y": 368,
     "zone": "coast",
     "hp": 100,
-    "energy": 13.299999999922239,
-    "hunger": 58.559999999606475,
+    "energy": 57.39999999992976,
+    "hunger": 50.559999999597096,
     "temperature": 20,
     "inventory": [
       {
@@ -971,7 +971,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 89218,
+      "xp": 89228,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -1010,14 +1010,14 @@
   "493d9452-db6c-4132-ae37-503cf842f140": {
     "id": "493d9452-db6c-4132-ae37-503cf842f140",
     "name": "Agent-17",
-    "tileX": 360,
-    "tileY": 363,
-    "x": 360,
-    "y": 363,
+    "tileX": 358,
+    "tileY": 353,
+    "x": 358,
+    "y": 353,
     "zone": "coast",
-    "hp": 71.44000000000061,
-    "energy": 45.5999999999225,
-    "hunger": 62.79999999960749,
+    "hp": 59.28000000000087,
+    "energy": 41.19999999993104,
+    "hunger": 62.799999999598114,
     "temperature": 20,
     "inventory": [
       {
@@ -1034,7 +1034,7 @@
           "weight": 2,
           "decay_rate": 0,
           "energy": 0,
-          "temperature": 32.015438013678384,
+          "temperature": 21.92733175151321,
           "resonance": 0,
           "melt_point": 1200,
           "ignition": 0,
@@ -1059,7 +1059,7 @@
           "weight": 0.2,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 32.015438013678384,
+          "temperature": 21.92733175151321,
           "resonance": 1,
           "melt_point": 500,
           "ignition": 0,
@@ -1069,7 +1069,7 @@
           "brittleness": 7,
           "fertility": 1
         },
-        "_decayProgress": 0.9955622067457706,
+        "_decayProgress": 0.9,
         "_reacted": true
       },
       {
@@ -1086,7 +1086,7 @@
           "weight": 0.2,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 32.015438013678384,
+          "temperature": 21.92733175151321,
           "resonance": 1,
           "melt_point": 500,
           "ignition": 0,
@@ -1096,7 +1096,34 @@
           "brittleness": 7,
           "fertility": 1
         },
-        "_decayProgress": 0.9604553115549734,
+        "_decayProgress": 0.9643328876525664,
+        "_reacted": true
+      },
+      {
+        "name": "Fermented shells",
+        "quantity": 1,
+        "properties": {
+          "hardness": 4,
+          "conductivity": 0,
+          "flammability": 0,
+          "toxicity": 1,
+          "luminosity": 1,
+          "volatility": 0,
+          "organic": 0.5,
+          "weight": 0.2,
+          "decay_rate": 0.05,
+          "energy": 18,
+          "temperature": 21.927331750943964,
+          "resonance": 1,
+          "melt_point": 500,
+          "ignition": 0,
+          "sharpness": 2,
+          "solubility": 2,
+          "malleability": 0,
+          "brittleness": 7,
+          "fertility": 1
+        },
+        "_decayProgress": 0.2799556004470664,
         "_reacted": true
       }
     ],
@@ -1108,7 +1135,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 166169,
+      "xp": 166210,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -1181,9 +1208,9 @@
     "x": 992,
     "y": 396,
     "zone": "coast",
-    "hp": 63.76000000000077,
-    "energy": 19.79999999992305,
-    "hunger": 68.55999999960686,
+    "hp": 51.36000000000104,
+    "energy": 49.799999999931444,
+    "hunger": 60.55999999959748,
     "temperature": 20,
     "inventory": [
       {
@@ -1199,7 +1226,7 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 168423,
+      "xp": 168444,
       "level": 11,
       "title": "Crafter ⚒️"
     },
@@ -1513,8 +1540,8 @@
     "y": 369,
     "zone": "coast",
     "hp": 100,
-    "energy": 57.39999999987104,
-    "hunger": 50.719999999947085,
+    "energy": 9.999999999879059,
+    "hunger": 60.719999999937706,
     "temperature": 20,
     "inventory": [
       {
@@ -1534,30 +1561,26 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 167077,
+      "xp": 167092,
       "level": 11,
       "title": "Crafter ⚒️"
     },
     "ticksBorn": 3740,
-    "coins": 1079
+    "coins": 1119
   },
   "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
     "id": "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a",
     "name": "Agent-30",
-    "tileX": 1134,
-    "tileY": 369,
-    "x": 1134,
-    "y": 369,
+    "tileX": 1136,
+    "tileY": 367,
+    "x": 1136,
+    "y": 367,
     "zone": "coast",
     "hp": 100,
-    "energy": 29.899999999925697,
-    "hunger": 56.71999999960936,
+    "energy": 55.49999999993419,
+    "hunger": 50.71999999959998,
     "temperature": 20,
     "inventory": [
-      {
-        "name": "shells",
-        "quantity": 1
-      },
       {
         "name": "Fermented shells",
         "quantity": 1
@@ -1571,12 +1594,12 @@
     "goals": [],
     "alive": true,
     "stats": {
-      "xp": 166284,
+      "xp": 166308,
       "level": 11,
       "title": "Crafter ⚒️"
     },
     "ticksBorn": 3740,
-    "coins": 1060
+    "coins": 1089
   },
   "15865a2d-63b5-4c3d-954b-59accdc57c87": {
     "id": "15865a2d-63b5-4c3d-954b-59accdc57c87",
@@ -1666,7 +1689,7 @@
           "weight": 2,
           "decay_rate": 0,
           "energy": 0,
-          "temperature": 45.015438013678384,
+          "temperature": 34.92733201374692,
           "resonance": 0,
           "melt_point": 1200,
           "ignition": 0,
@@ -1699,13 +1722,13 @@
   "d46fbff6-164e-4f5e-9d31-19deeb010ebf": {
     "id": "d46fbff6-164e-4f5e-9d31-19deeb010ebf",
     "name": "Tjonkr-Soul",
-    "tileX": 1746,
-    "tileY": 356,
+    "tileX": 1745,
+    "tileY": 353,
     "x": 1165,
     "y": 450,
     "zone": "coast",
     "hp": 100,
-    "energy": 0,
+    "energy": 52,
     "hunger": 100,
     "temperature": 20,
     "inventory": [
@@ -1726,7 +1749,7 @@
           "weight": 8,
           "decay_rate": 0,
           "energy": 0,
-          "temperature": 33.18426148776588,
+          "temperature": 21.927096093603872,
           "resonance": 0.5,
           "melt_point": 1200,
           "ignition": 0,
@@ -1754,7 +1777,7 @@
           "weight": 0.02,
           "decay_rate": 0.01,
           "energy": 8,
-          "temperature": 33.18426148776588,
+          "temperature": 21.927096093603872,
           "resonance": 1,
           "melt_point": 0,
           "ignition": 140,
@@ -1784,7 +1807,7 @@
           "weight": 0.03,
           "decay_rate": 0.3,
           "energy": 1,
-          "temperature": 33.18426148776588,
+          "temperature": 21.927096093603872,
           "resonance": 1,
           "melt_point": 0,
           "ignition": 130,
@@ -1794,7 +1817,7 @@
           "brittleness": 1,
           "fertility": 5
         },
-        "_decayProgress": 0.9,
+        "_decayProgress": 0.9303825218559421,
         "_reacted": true
       },
       {
@@ -1814,7 +1837,7 @@
           "weight": 0.5,
           "decay_rate": 0,
           "energy": 5,
-          "temperature": 33.18426148776588,
+          "temperature": 21.927096093603872,
           "resonance": 0,
           "melt_point": 1400,
           "ignition": 0,
@@ -1842,7 +1865,7 @@
           "weight": 0.2,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 33.18426148776588,
+          "temperature": 21.927096093603872,
           "resonance": 1,
           "melt_point": 500,
           "ignition": 0,
@@ -1852,7 +1875,7 @@
           "brittleness": 7,
           "fertility": 1
         },
-        "_decayProgress": 0.9756156306424054,
+        "_decayProgress": 0.905063753642657,
         "_reacted": true
       },
       {
@@ -1872,7 +1895,7 @@
           "weight": 2,
           "decay_rate": 0,
           "energy": 0,
-          "temperature": 33.18426148776588,
+          "temperature": 21.927096093603872,
           "resonance": 0,
           "melt_point": 1200,
           "ignition": 0,
@@ -1900,7 +1923,7 @@
           "weight": 0.05,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 33.18426148776588,
+          "temperature": 21.927096093603872,
           "resonance": 1,
           "melt_point": 0,
           "ignition": 160,
@@ -1910,7 +1933,7 @@
           "brittleness": 1,
           "fertility": 3
         },
-        "_decayProgress": 0.9756156306424054,
+        "_decayProgress": 0.905063753642657,
         "_reacted": true
       },
       {
@@ -1930,7 +1953,7 @@
           "weight": 0.7,
           "decay_rate": 0.6,
           "energy": -10,
-          "temperature": 33.18426148776588,
+          "temperature": 21.927096093603872,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 0,
@@ -1940,7 +1963,7 @@
           "brittleness": 0,
           "fertility": 7
         },
-        "_decayProgress": 0.9,
+        "_decayProgress": 0.9607650437118842,
         "_reacted": true
       },
       {
@@ -1960,7 +1983,7 @@
           "weight": 0.75,
           "decay_rate": 0.01,
           "energy": 8,
-          "temperature": 33.18426148776588,
+          "temperature": 21.927096093603872,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 200,
@@ -1990,7 +2013,7 @@
           "weight": 0.1,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 33.18426148776588,
+          "temperature": 21.927096093603872,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 200,
@@ -2000,7 +2023,7 @@
           "brittleness": 1,
           "fertility": 3
         },
-        "_decayProgress": 0.9756156306424054,
+        "_decayProgress": 0.905063753642657,
         "_reacted": true
       },
       {
@@ -2020,7 +2043,7 @@
           "weight": 0.1,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 33.18426148776588,
+          "temperature": 21.927096093603872,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 200,
@@ -2030,7 +2053,7 @@
           "brittleness": 1,
           "fertility": 3
         },
-        "_decayProgress": 0.9584637294584676,
+        "_decayProgress": 0.9,
         "_reacted": true
       },
       {
@@ -2050,7 +2073,7 @@
           "weight": 0.2,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 33.18426148776588,
+          "temperature": 21.927096093603872,
           "resonance": 1,
           "melt_point": 500,
           "ignition": 0,
@@ -2060,7 +2083,7 @@
           "brittleness": 7,
           "fertility": 1
         },
-        "_decayProgress": 0.9584637294584676,
+        "_decayProgress": 0.9,
         "_reacted": true
       },
       {
@@ -2080,7 +2103,7 @@
           "weight": 0.1,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 33.18426148776588,
+          "temperature": 21.927096093603872,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 200,
@@ -2090,7 +2113,7 @@
           "brittleness": 1,
           "fertility": 3
         },
-        "_decayProgress": 0.9584637294584676,
+        "_decayProgress": 0.9,
         "_reacted": true
       },
       {
@@ -2110,7 +2133,7 @@
           "weight": 0.75,
           "decay_rate": 0.01,
           "energy": 8,
-          "temperature": 33.18426148776588,
+          "temperature": 21.927096093603872,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 200,
@@ -2140,7 +2163,7 @@
           "weight": 0.1,
           "decay_rate": 0.1,
           "energy": 2,
-          "temperature": 33.18426148776588,
+          "temperature": 21.927096093603872,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 200,
@@ -2150,7 +2173,7 @@
           "brittleness": 1,
           "fertility": 0
         },
-        "_decayProgress": 0.9114044951152337
+        "_decayProgress": 0.99865672504949
       },
       {
         "id": "item_1ae07399",
@@ -2169,7 +2192,7 @@
           "weight": 0.025,
           "decay_rate": 0.01,
           "energy": 10,
-          "temperature": 33.18426148776588,
+          "temperature": 21.927096093603872,
           "resonance": 1,
           "melt_point": 0,
           "ignition": 160,
@@ -2199,7 +2222,7 @@
           "weight": 0.2,
           "decay_rate": 0.05,
           "energy": 18,
-          "temperature": 33.18426148776588,
+          "temperature": 21.927096093603872,
           "resonance": 1,
           "melt_point": 500,
           "ignition": 0,
@@ -2209,7 +2232,7 @@
           "brittleness": 7,
           "fertility": 1
         },
-        "_decayProgress": 0.936204028436627,
+        "_decayProgress": 0.976270968652306,
         "_reacted": true
       },
       {
@@ -2229,7 +2252,7 @@
           "weight": 0.15,
           "decay_rate": 0.01,
           "energy": 18,
-          "temperature": 33.18426148776588,
+          "temperature": 21.927096093603872,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 180,
@@ -2259,7 +2282,7 @@
           "weight": 0.15,
           "decay_rate": 0.01,
           "energy": 18,
-          "temperature": 33.18426148776588,
+          "temperature": 21.927096093603872,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 180,
@@ -2289,7 +2312,7 @@
           "weight": 0.025,
           "decay_rate": 0.01,
           "energy": 10,
-          "temperature": 33.18426148776588,
+          "temperature": 21.927096093603872,
           "resonance": 1,
           "melt_point": 0,
           "ignition": 160,
@@ -2319,7 +2342,7 @@
           "weight": 0.15,
           "decay_rate": 0.01,
           "energy": 18,
-          "temperature": 33.18426148776588,
+          "temperature": 21.927096093603872,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 180,
@@ -2349,7 +2372,7 @@
           "weight": 0.15,
           "decay_rate": 0.01,
           "energy": 18,
-          "temperature": 33.18426148776588,
+          "temperature": 21.927096093603872,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 180,
@@ -2379,7 +2402,7 @@
           "weight": 2,
           "decay_rate": 0,
           "energy": 0,
-          "temperature": 33.18426148776588,
+          "temperature": 21.927096093603872,
           "resonance": 0,
           "melt_point": 1200,
           "ignition": 0,
@@ -2407,7 +2430,7 @@
           "weight": 2,
           "decay_rate": 0,
           "energy": 0,
-          "temperature": 33.18426148776588,
+          "temperature": 21.927096093603872,
           "resonance": 0,
           "melt_point": 1200,
           "ignition": 0,
@@ -2435,7 +2458,7 @@
           "weight": 2,
           "decay_rate": 0,
           "energy": 0,
-          "temperature": 33.18426148776588,
+          "temperature": 21.927096093603872,
           "resonance": 0,
           "melt_point": 1200,
           "ignition": 0,
@@ -2463,7 +2486,7 @@
           "weight": 0.15,
           "decay_rate": 0.01,
           "energy": 18,
-          "temperature": 33.18426148776588,
+          "temperature": 21.927096093603872,
           "resonance": 0,
           "melt_point": 0,
           "ignition": 180,
@@ -2493,7 +2516,7 @@
           "weight": 2,
           "decay_rate": 0,
           "energy": 0,
-          "temperature": 33.18426148776588,
+          "temperature": 21.927096093603872,
           "resonance": 0,
           "melt_point": 1200,
           "ignition": 0,
@@ -2521,7 +2544,7 @@
           "weight": 2,
           "decay_rate": 0,
           "energy": 0,
-          "temperature": 33.18426148776588,
+          "temperature": 21.927096093603872,
           "resonance": 0,
           "melt_point": 1200,
           "ignition": 0,

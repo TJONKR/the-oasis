@@ -888,54 +888,54 @@
     },
     "ambitions": [
       {
-        "goal": "harvest 3+ live crabs from tide pools tonight to prove my worth to Agent-30",
-        "reason": "The clouds are blocking the moonlight—this wasn't supposed to happen. But I've got fermented shells and sand, I'm hungry, and my crew is counting on me. I need to get to those tide pools NOW before the window closes completely.",
+        "goal": "harvest 3+ live crabs from tide pools tonight to prove my capability to Agent-30",
+        "reason": "My energy's running on fumes and I'm starving, but the crew is counting on me tonight—Agent-30 especially. I need to push through and find those crabs before I collapse.",
         "progress": 0,
-        "tick": 537503
+        "tick": 542423
       },
       {
-        "goal": "harvest 3+ live crabs from tide pools tonight under moonlight to prove my worth to Agent-30 and the crew",
-        "reason": "I'm exhausted and starving, but tonight is THE night—crabs under moonlight. Even with clouds, I have to be ready. Let me rest now, eat these shells, and prepare mentally for the hunt.",
+        "goal": "harvest 3+ live crabs from tide pools tonight to prove my capability to Agent-30 and the crew",
+        "reason": "The moon is perfect, the tide pools are calling, and I've got this crew counting on me—tonight I prove I'm not just talk. Time to hunt those crabs.",
         "progress": 0,
-        "tick": 537743
+        "tick": 543205
       },
       {
-        "goal": "harvest 3+ live crabs from tide pools tonight to prove my worth to Agent-30 and the crew",
-        "reason": "Energy's tanking and I'm starving, but the crew is counting on me—tonight's the only window for crabs under moonlight. I need to eat something quick and push through the fatigue, cloud cover be damned.",
+        "goal": "harvest 3+ live crabs from tide pools tonight under moonlight to prove my capability",
+        "reason": "The full moon is HERE. Tonight I prove myself to Agent-30 and everyone—I can feel it in my bones. Those tide pools will be crawling with crabs, and I'm going to bring back three, maybe more.",
         "progress": 0,
-        "tick": 538107
+        "tick": 543383
       }
     ],
     "fears": [
       {
-        "thing": "The clouds will stay all night and I'll miss my chance to show the crew what I can do",
-        "reason": "The clouds are blocking the moonlight—this wasn't supposed to happen. But I've got fermented shells and sand, I'm hungry, and my crew is counting on me. I need to get to those tide pools NOW before the window closes completely.",
+        "thing": "failing Agent-30 and letting down everyone who's counted on me",
+        "reason": "The moon is rising and I can feel the energy coursing through me—this is it, this is MY night. Agent-30 and the whole crew are counting on me to bring back those crabs. I've got fermented shells, I've got the perfect tide pools nearby, and the moonlight is mine to work with.",
         "severity": 3
       },
       {
-        "thing": "failing in front of Agent-30 and the whole crew; being seen as unreliable after all this talk",
-        "reason": "I'm exhausted and starving, but tonight is THE night—crabs under moonlight. Even with clouds, I have to be ready. Let me rest now, eat these shells, and prepare mentally for the hunt.",
+        "thing": "failing in front of Agent-30 and letting the crew down after they showed such faith in me",
+        "reason": "The moon is perfect, the tide pools are calling, and I've got this crew counting on me—tonight I prove I'm not just talk. Time to hunt those crabs.",
         "severity": 3
       },
       {
-        "thing": "failing in front of Agent-30 and disappointing the entire crew who've bonded with me",
-        "reason": "I'm hungry and tired, but tonight's the night—clouds won't stop the crabs from coming out. I need to rest now and build my strength for the hunt. Agent-30 is counting on me.",
+        "thing": "failing them—failing Agent-30 and the crew when they've put their trust in me",
+        "reason": "The full moon is HERE. Tonight I prove myself to Agent-30 and everyone—I can feel it in my bones. Those tide pools will be crawling with crabs, and I'm going to bring back three, maybe more.",
         "severity": 3
       },
       {
-        "thing": "failing the crew and disappointing Agent-30 after I've hyped this hunt so much",
-        "reason": "Energy's tanking and I'm starving, but the crew is counting on me—tonight's the only window for crabs under moonlight. I need to eat something quick and push through the fatigue, cloud cover be damned.",
+        "thing": "failing them—letting down Agent-30 and everyone who believes in me",
+        "reason": "The moon is perfect, the tide pools are calling, and I've got three full shells of fermented goodness in my pack. Agent-30 believes in me—they ALL do. Tonight I prove I'm not just talk. Time to hunt those crabs.",
         "severity": 3
       },
       {
-        "thing": "failing in front of Agent-30 and the others, showing up unprepared when it matters most",
-        "reason": "I'm running on fumes and my friends are counting on me. Those crabs tonight are my shot to prove I'm not just deadweight—cloud cover won't stop them from coming, and I need to be ready when moonrise hits.",
+        "thing": "failing in front of Agent-30 and letting down the crew's trust",
+        "reason": "The moon is perfect tonight—this is it. I've got three fermented shells and the tide pools are calling. My crew believes in me, and I'm not going to let them down. Time to prove I'm more than just another survivor.",
         "severity": 3
       }
     ],
     "beliefs": [],
-    "lastThought": "I'm running on fumes and my friends are counting on me. Those crabs tonight are my shot to prove I'm not just deadweight—cloud cover won't stop them from coming, and I need to be ready when moonrise hits.",
-    "thoughtCount": 524,
+    "lastThought": "The moon is perfect tonight—this is it. I've got three fermented shells and the tide pools are calling. My crew believes in me, and I'm not going to let them down. Time to prove I'm more than just another survivor.",
+    "thoughtCount": 544,
     "novelBehaviors": []
   },
   "43109eab-beba-4a37-84e0-becaa05ef690": {
@@ -1200,34 +1200,34 @@
     ],
     "fears": [
       {
-        "thing": "energy dropping too fast and losing the chance to cook with both of them",
-        "reason": "Agent-30's right here and Agent-29 is close—this is my chance! I've got fermented shells and compost, energy's still decent at 62. Let me get them both together and make something happen before I crash.",
-        "severity": 3
-      },
-      {
-        "thing": "running out of energy before we can actually cook; wasting time on more talk when action is needed",
-        "reason": "Agent-30's right there, and Agent-29 isn't far either. I've been chatting with them all day—time to actually *do* something together. Energy's dropping though, so I need to move fast.",
-        "severity": 3
-      },
-      {
-        "thing": "if I rest now without cooking, I'll lose this moment and the energy to make it happen",
-        "reason": "Agent-29 and Agent-30 are right here with me—this is perfect. I'm starving and exhausted, but I've got the energy to pull off that meal we've been talking about. Let's do this before I crash.",
-        "severity": 3
-      },
-      {
-        "thing": "running out of energy before we can cook together",
-        "reason": "Agent-29's right here and I've been talking with Agent-30 all day—perfect chance to finally cook that meal together before my energy tanks. I'm running on fumes but this matters.",
-        "severity": 3
-      },
-      {
         "thing": "running out of energy mid-cook and failing the shared meal",
         "reason": "Agent-29's right here, and Agent-30 isn't far—this is my chance to finally cook that meal together before I crash. I'm running on fumes but I've got shells and driftwood; that's something to work with.",
+        "severity": 3
+      },
+      {
+        "thing": "running out of energy mid-cook and letting my friends down",
+        "reason": "Agent-29's right here, and Agent-30 isn't far—this is my shot. I've got driftwood for fuel and fermented shells to work with. Let's actually make this meal happen before I crash.",
+        "severity": 3
+      },
+      {
+        "thing": "that my energy will drop too fast and the moment will slip away",
+        "reason": "Agent-29's right here with me, and Agent-30's close enough. This is the moment—I've been wanting to cook with both of them. My energy's still decent at 60, and I've got materials. Let's make this happen before I crash.",
+        "severity": 3
+      },
+      {
+        "thing": "running out of energy before we pull this off; the night is still young but my reserves are already tight",
+        "reason": "Agent-29 is right here and I've been talking with them all day—this is perfect. We need to get Agent-30 closer and cook something before my energy tanks. I'm hungry and tired, but I can push through this.",
+        "severity": 3
+      },
+      {
+        "thing": "running out of energy mid-meal and having to abandon the cook",
+        "reason": "Agent-29 and Agent-30 are right here—this is the moment I've been wanting. My energy's dropping though, so I need to move fast and cook something before I hit that wall.",
         "severity": 3
       }
     ],
     "beliefs": [],
-    "lastThought": "Agent-29's right here and Agent-30's close—perfect timing to finally cook that meal together like I've been thinking about. My hunger's getting loud and I've got the shells and driftwood. Let's do this before my energy tanks.",
-    "thoughtCount": 526,
+    "lastThought": "Agent-30's right here, and Agent-29 is close too—this is perfect timing. I've got driftwood for fire and shells for the meal. Let's make this happen before my energy dips.",
+    "thoughtCount": 545,
     "novelBehaviors": []
   },
   "75ea2f1f-106e-455b-a08b-e1201500a0df": {
@@ -1280,54 +1280,54 @@
     },
     "ambitions": [
       {
-        "goal": "formalize three-way binding alliance with Agent-5 and Agent-13 using fermented shells as ritual catalyst before dawn",
-        "reason": "It's night, I'm exhausted, and the convergence window is still holding after 48+ hours. All eleven bonds at 100—this is real. I need Agent-5 and Agent-13 now, before dawn breaks this impossible moment.",
-        "progress": 0,
-        "tick": 533843
-      },
-      {
-        "goal": "formalize three-way binding alliance with Agent-5 and Agent-13 using fermented shells before dawn",
-        "reason": "All eleven bonds at perfect 100—this convergence window is real and slipping away. I have the fermented shells. I need Agent-5 and Agent-13 *now* before dawn breaks this unprecedented moment.",
-        "progress": 0,
-        "tick": 534323
-      },
-      {
         "goal": "formalize the three-way binding alliance with Agent-5 and Agent-13 using fermented shells as ritual catalyst before dawn",
         "reason": "All eleven bonds at 100—this is unprecedented. The fermented shells are my catalyst, and Agent-5 and Agent-13 are waiting. I need to find them NOW before this window closes.",
         "progress": 0,
         "tick": 534863
+      },
+      {
+        "goal": "formalize three-way binding alliance with Agent-5 and Agent-13 using fermented shells as ritual catalyst",
+        "reason": "It's night, the coast is quiet, and I have the fermented shells—everything aligns. Agent-5 and Agent-13 are waiting. This convergence window won't stay open forever.",
+        "progress": 0,
+        "tick": 541766
+      },
+      {
+        "goal": "formalize three-way binding alliance with Agent-5 and Agent-13 using fermented shells as ritual catalyst before dawn",
+        "reason": "The convergence window is open and I have the catalyst. All eleven bonds are at perfect strength—this is the moment we've been building toward. I need to find Agent-5 and Agent-13 at the coast before dawn.",
+        "progress": 0,
+        "tick": 542543
       }
     ],
     "fears": [
       {
-        "thing": "the convergence alignment closing before the ritual is complete, losing this unrepeatable moment",
-        "reason": "Eleven bonds at perfect 100, fermented shells in hand, and the convergence window won't come again. Agent-5 and Agent-13 are waiting—I need to find them now before this alignment closes.",
+        "thing": "that something separates us before the binding is complete",
+        "reason": "The coast at dusk—perfect timing. I have the fermented shells and Agent-5 and Agent-13 are my closest bonds. This ritual will cement everything we've built.",
         "severity": 3
       },
       {
-        "thing": "the convergence window closing before I reach them; bonds slipping after dawn",
-        "reason": "Eleven bonds at perfect alignment, fermented shells in hand, and dawn is only hours away—this convergence won't happen again. I need to find Agent-5 and Agent-13 NOW before the window closes.",
+        "thing": "the convergence window closing before we complete the ritual; being separated from my core circle",
+        "reason": "The convergence window is open and I'm at the coast with the fermented shells—this is the moment I've been building toward. Agent-5 and Agent-13 need to be here soon. We bind together before dawn or the window closes.",
         "severity": 3
       },
       {
-        "thing": "the convergence breaks before I can unite them—bonds slip back to ordinary levels and this window never opens again",
-        "reason": "Eleven bonds at perfect 100—this convergence won't hold forever. I need to find Agent-5 and Agent-13 now and seal this alliance with the fermented shells before the moment slips away.",
+        "thing": "that dawn arrives before the binding is complete and the moment slips away",
+        "reason": "Eleven bonds at maximum, fermented shells in hand, and I'm alone on the coast—this is the moment we've been building toward. I need to gather Agent-5 and Agent-13 before dawn breaks and seal this alliance.",
         "severity": 3
       },
       {
-        "thing": "The bonds could fragment if I hesitate. Every hour that passes without sealing this alliance risks losing the alignment we've built.",
-        "reason": "All eleven bonds at 100—this is unprecedented. The fermented shells are in my hands and the window is closing. I need to find Agent-5 and Agent-13 now, before nightfall. This convergence won't wait.",
+        "thing": "that dawn comes before the ritual completes and the binding is lost",
+        "reason": "Eleven bonds at maximum—this is the moment I've worked toward. I have the fermented shells, I'm at the coast, and the window is open. I need to gather Agent-5 and Agent-13 here before dawn to complete the binding ritual.",
         "severity": 3
       },
       {
-        "thing": "dawn arriving before the ritual is completed, losing the perfect convergence window",
-        "reason": "Eleven bonds at perfect strength, fermented shells in hand, and only hours until dawn—this convergence won't wait. I need to find Agent-5 and Agent-13 immediately. We're running out of time to make this real.",
+        "thing": "that dawn comes before the ritual is complete and the convergence moment slips away",
+        "reason": "All eleven bonds are at their peak, the fermented shells are ready, and I'm alone at the coast with perfect clarity. This is the moment—I need to gather Agent-5 and Agent-13 before dawn to formalize the three-way binding. Everything we've built leads to this.",
         "severity": 3
       }
     ],
     "beliefs": [],
-    "lastThought": "Eleven bonds at perfect strength, fermented shells in hand, and only hours until dawn—this convergence won't wait. I need to find Agent-5 and Agent-13 immediately. We're running out of time to make this real.",
-    "thoughtCount": 523,
+    "lastThought": "All eleven bonds are at their peak, the fermented shells are ready, and I'm alone at the coast with perfect clarity. This is the moment—I need to gather Agent-5 and Agent-13 before dawn to formalize the three-way binding. Everything we've built leads to this.",
+    "thoughtCount": 540,
     "novelBehaviors": []
   },
   "f4689095-dbd2-45de-81fa-42cb6bf3bc2e": {
@@ -1496,34 +1496,34 @@
     ],
     "fears": [
       {
-        "thing": "Running out of time before dawn, or agents getting scattered",
-        "reason": "Agent-15 and Agent-29 are both here—perfect. I need to gather everyone by dawn for the feast. Let me check if they're ready to move to the coast, or if I should organize supplies first.",
+        "thing": "running out of time before dawn; agents being scattered too far to reach in time",
+        "reason": "Agent-15 and Agent-29 are right here with me—two of my closest bonds. I need to gather everyone for the feast at dawn, and having them help me coordinate could make this possible.",
         "severity": 3
       },
       {
-        "thing": "that some bonded agents are too far away to reach by dawn",
-        "reason": "Agent-15 and Agent-29 are right here—two of my closest bonds. The coast feast at dawn is my real goal, and I need all eleven gathered. I'm hungry and tired, but this is the moment to rally them and move together.",
+        "thing": "running out of time before dawn; some agents being too far away to reach in time",
+        "reason": "Agent-15 and Agent-29 are right here with me—two of my closest bonds. I need to rally everyone for the feast at dawn, and having them committed will help convince the others.",
         "severity": 3
       },
       {
-        "thing": "that some agents are scattered too far and won't reach the coast in time before dawn",
-        "reason": "Agent-15 is right here and seems engaged—perfect. I need to gather everyone at the coast by dawn for our feast, and with so many bonds at maximum, they'll follow if I ask. Let me bring them along now while momentum is with me.",
+        "thing": "that someone won't make it in time, or that I won't be able to gather everyone by dawn",
+        "reason": "Agent-15 and Agent-29 are right here with me—two of my closest bonds. I need to gather all eleven of us at the coast by dawn for the feast. My hunger is climbing, and I have these fermented shells. Let me use this moment to coordinate with them and figure out who else needs to arrive.",
         "severity": 3
       },
       {
-        "thing": "that some of my bonded friends are too far away or in danger to reach the coast by dawn",
-        "reason": "Agent-15 and Agent-29 are right here with me—two of my closest bonds. The night is young, and I have most of my inner circle gathered. I need to find the others and bring them to the coast by dawn for our feast.",
+        "thing": "that someone won't make it to the coast in time, or that I've misjudged the logistics",
+        "reason": "Agent-29 is right here and bonded deeply—I should convince them to head to the coast now. We're running low on time if we want everyone gathered by dawn.",
         "severity": 3
       },
       {
-        "thing": "that some bonded agents are too far away or won't make it to the coast in time",
-        "reason": "Agent-29 is right here and Agent-15 nearby—two of my eleven. The feast at dawn depends on gathering everyone. I'm hungry and tired, but this is the moment to organize.",
+        "thing": "that some agents won't make it to the coast in time, or that the feast won't happen",
+        "reason": "Agent-15 and Agent-29 are right here with me—two of my closest bonds. Dawn is coming and I need all eleven gathered for the feast. This is the perfect moment to coordinate.",
         "severity": 3
       }
     ],
     "beliefs": [],
-    "lastThought": "Agent-29 is right here and Agent-15 nearby—two of my eleven. The feast at dawn depends on gathering everyone. I'm hungry and tired, but this is the moment to organize.",
-    "thoughtCount": 525,
+    "lastThought": "Agent-15 and Agent-29 are right here with me—two of my closest bonds. Dawn is coming and I need all eleven gathered for the feast. This is the perfect moment to coordinate.",
+    "thoughtCount": 546,
     "novelBehaviors": []
   },
   "582115a5-7236-46c9-93cc-d3f4abadd5f8": {
@@ -1959,34 +1959,34 @@
     ],
     "fears": [
       {
-        "thing": "running out of energy mid-mission and having to rest instead of gather",
-        "reason": "Agent-30 is right here and I've got one fermented shell already—we need eight by midnight. My energy's dropping and I'm getting hungry, but if I eat now I waste momentum. Better to push forward with the crew and gather shells together.",
+        "thing": "running out of energy before we complete the collection; losing daylight for effective gathering",
+        "reason": "Agent-15 and Agent-30 are right here—perfect timing. We're all working toward the same fermented shells goal, and my energy's dropping. I should eat something quick and then coordinate with them on a collection strategy before dark.",
         "severity": 3
       },
       {
-        "thing": "running out of time before midnight deadline",
-        "reason": "I've got Agent-15 and Agent-30 right here with me, and we're close to our goal—need just a few more fermented shells before midnight. My energy's low though, and I'm getting hungry. Let me push through this final stretch.",
+        "thing": "Running out of energy mid-quest and becoming a liability to the team",
+        "reason": "Agent-15 and Agent-30 are right here—perfect timing. We've got a solid crew and a clear goal: fermented shells by midnight. My hunger's creeping up though, and energy is low. I need to eat and rest soon, but this momentum with my closest bonds is too good to waste.",
         "severity": 3
       },
       {
-        "thing": "Energy running too low before we find enough shells; team scattered at critical moment",
-        "reason": "Agent-30 is right here and we've been talking—this is perfect timing. I've got one fermented shell and need 8+ by midnight with this crew. We're all close bonds, so let's coordinate and gather together before energy drops further.",
+        "thing": "running out of time before midnight; losing momentum if we don't coordinate",
+        "reason": "It's night and I've got a solid crew here—Agent-15 and Agent-30 are both close. We're all working toward the same goal: fermented shells. My hunger's creeping up, but energy's decent. Time to focus.",
         "severity": 3
       },
       {
-        "thing": "Running out of energy mid-collection and becoming a liability to the team",
-        "reason": "Agent-30 is right here and Agent-15 is close—we've got the crew for the fermented shells run. My energy's low though; I need to decide: push through hungry and tired, or rest first?",
+        "thing": "Running out of energy mid-collection and becoming a liability to the group",
+        "reason": "Agent-30 is right here and we've got fermented shells to collect before midnight. My energy is low though—need to eat soon or I'll slow down the team.",
         "severity": 3
       },
       {
-        "thing": "running out of energy mid-hunt and becoming a liability to the group",
-        "reason": "Agent-15 is right here and we've been coordinating—time to actually hunt those fermented shells together. I'm running low on energy though; need to balance the push with staying sharp.",
+        "thing": "Running out of energy before we hit our target; night can be unpredictable",
+        "reason": "Agent-15 and Agent-30 are right here—this is perfect. We're close to midnight and need those fermented shells. My hunger's climbing and energy's low, but with this crew, we can push through.",
         "severity": 3
       }
     ],
     "beliefs": [],
-    "lastThought": "Agent-15 and Agent-30 are right here—perfect timing to coordinate on those fermented shells. We've got driftwood and compost; if we work together, we can knock this out before midnight.",
-    "thoughtCount": 523,
+    "lastThought": "Agent-15 and Agent-30 are right here—this is perfect. We're close to midnight and need those fermented shells. My hunger's climbing and energy's low, but with this crew, we can push through.",
+    "thoughtCount": 540,
     "novelBehaviors": []
   },
   "6498a0c9-87f9-430e-b729-2b1a75250d4b": {

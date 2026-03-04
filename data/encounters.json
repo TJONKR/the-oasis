@@ -2120,33 +2120,6 @@
       {
         "type": "creature",
         "effects": [
-          "Lost 13 energy (now 48.19999999983824)",
-          "Lost item: Fermented shells"
-        ],
-        "survived": true,
-        "timestamp": 1772619971019
-      },
-      {
-        "type": "discovery",
-        "effects": [
-          "Found 18 coins",
-          "Gained 15 XP"
-        ],
-        "survived": true,
-        "timestamp": 1772620573078
-      },
-      {
-        "type": "discovery",
-        "effects": [
-          "Found 12 coins",
-          "Gained 15 XP"
-        ],
-        "survived": true,
-        "timestamp": 1772622291977
-      },
-      {
-        "type": "creature",
-        "effects": [
           "Lost 13 energy (now 44.999999999850644)",
           "Lost item: fiber"
         ],
@@ -2206,36 +2179,35 @@
         ],
         "survived": true,
         "timestamp": 1772635895804
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 19 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772639591446
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 21 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772641327178
+      },
+      {
+        "type": "weather_hazard",
+        "effects": [
+          "Lost 8 energy (now 49.09999999987713)"
+        ],
+        "survived": true,
+        "timestamp": 1772641851026
       }
     ],
     "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": [
-      {
-        "type": "creature",
-        "effects": [
-          "Lost 15 energy (now 35.79999999989583)",
-          "driftwood damaged (quantity: 1)"
-        ],
-        "survived": true,
-        "timestamp": 1772623639141
-      },
-      {
-        "type": "discovery",
-        "effects": [
-          "Found 17 coins",
-          "Gained 15 XP"
-        ],
-        "survived": true,
-        "timestamp": 1772624531257
-      },
-      {
-        "type": "discovery",
-        "effects": [
-          "Found 16 coins",
-          "Gained 15 XP"
-        ],
-        "survived": true,
-        "timestamp": 1772625646077
-      },
       {
         "type": "discovery",
         "effects": [
@@ -2295,6 +2267,32 @@
         ],
         "survived": true,
         "timestamp": 1772635795646
+      },
+      {
+        "type": "weather_hazard",
+        "effects": [
+          "Lost 13 energy (now 50.699999999925666)"
+        ],
+        "survived": true,
+        "timestamp": 1772637767692
+      },
+      {
+        "type": "creature",
+        "effects": [
+          "Lost 23 energy (now 47.89999999992621)",
+          "Lost item: shells"
+        ],
+        "survived": true,
+        "timestamp": 1772638099221
+      },
+      {
+        "type": "discovery",
+        "effects": [
+          "Found 29 coins",
+          "Gained 15 XP"
+        ],
+        "survived": true,
+        "timestamp": 1772640064153
       }
     ],
     "493d9452-db6c-4132-ae37-503cf842f140": [
@@ -2499,23 +2497,6 @@
     ],
     "37336d1a-2af4-4eaa-b687-8c5725067953": [
       {
-        "type": "discovery",
-        "effects": [
-          "Found 26 coins",
-          "Gained 15 XP"
-        ],
-        "survived": true,
-        "timestamp": 1772617292295
-      },
-      {
-        "type": "weather_hazard",
-        "effects": [
-          "Lost 14 energy (now 50.19999999987931)"
-        ],
-        "survived": true,
-        "timestamp": 1772617991742
-      },
-      {
         "type": "weather_hazard",
         "effects": [
           "Lost 14 energy (now 48.49999999988573)"
@@ -2585,6 +2566,22 @@
         ],
         "survived": true,
         "timestamp": 1772637498222
+      },
+      {
+        "type": "weather_hazard",
+        "effects": [
+          "Lost 10 energy (now 4.699999999923342)"
+        ],
+        "survived": true,
+        "timestamp": 1772638585960
+      },
+      {
+        "type": "weather_hazard",
+        "effects": [
+          "Lost 12 energy (now 47.799999999927564)"
+        ],
+        "survived": true,
+        "timestamp": 1772641607617
       }
     ],
     "3ae3587e-fc7b-47ee-984e-0547f3f7e0b9": [

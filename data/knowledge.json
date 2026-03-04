@@ -890,7 +890,7 @@
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 34
+        "explore": 40
       }
     },
     "mastery": {},
@@ -1055,11 +1055,11 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 41,
+        "gather": 42,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 40
+        "explore": 53
       },
       "grass": {
         "gather": 122,
@@ -1759,7 +1759,7 @@
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 2
+        "explore": 4
       },
       "coast": {
         "gather": 14,

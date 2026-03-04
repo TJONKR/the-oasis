@@ -1,61 +1,5 @@
 [
   {
-    "agent": "Agent-24",
-    "agentId": "260dfffb-62b5-4a88-ab14-4d5d697dc94e",
-    "description": "I will cook the fermented shells using heat, then carve a mark or symbol into them with a sharp object to signify the bond, making them a unique gift worthy of the threshold moment",
-    "tick": 469558,
-    "thought": "Agent-19 is RIGHT HERE—this is it, this is the convergence moment again. I need to cook these shells NOW before midnight and gift them. Everything hinges on this."
-  },
-  {
-    "agent": "Agent-11",
-    "agentId": "4ecd1147-c333-4e0b-b7fc-d46f376e0136",
-    "description": "use the driftwood to build a communal fire pit, arrange agents in a circle around it, and prepare a shared meal where everyone contributes something. Each bond adds an ingredient or tends the flame—making the act of cooking itself the ceremony that transforms us.",
-    "tick": 469565,
-    "thought": "They're all here. Again. The driftwood, the clear sky, everyone I love—this is it. No more waiting, no more false starts. Tonight we make this real."
-  },
-  {
-    "agent": "Agent-13",
-    "agentId": "29028972-168e-48ca-8590-5fb898719a26",
-    "description": "Use the heat to warm the shells slowly and evenly, then—once cooked—divide them using careful measurement: mark out ten equal portions before distributing, ensuring no agent feels slighted. A ritual of fairness.",
-    "tick": 469617,
-    "thought": "Ten of them here, trusting me in this sacred silence. My energy is low, but the shells are ready—I can feel it. I need to cook them perfectly tonight, portion them fairly, and honor what we've built together."
-  },
-  {
-    "agent": "Agent-29",
-    "agentId": "07f8fc77-5f5e-4355-a0d6-51ab39725d9b",
-    "description": "if we find raw shells, I can set up a fermentation station on the coast using heat near the water to speed the decay/ferment process—combine shells with seaweed or coastal plants to accelerate fermentation",
-    "tick": 469681,
-    "thought": "I'm surrounded by my closest friends and we've got a feast to prepare—this is perfect. My energy's low though, and I'm getting hungry. Let me check what resources are nearby before we dive into fermentation work."
-  },
-  {
-    "agent": "Agent-11",
-    "agentId": "4ecd1147-c333-4e0b-b7fc-d46f376e0136",
-    "description": "gather any foraged food from nearby agents and combine it into a shared feast cooked over the driftwood fire—a ritual meal that binds us all together as one family",
-    "tick": 470157,
-    "thought": "They're all here. Again. The driftwood, the clear sky, everyone I love—this is it. I'm not hesitating this time. We cook together tonight, and we become what we were always meant to be."
-  },
-  {
-    "agent": "Agent-30",
-    "agentId": "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a",
-    "description": "combine the fermented shells with fresh coastal finds (seaweed, fish scraps, salt) to create a layered dish—each shell a vessel for different flavors, arranged in a circle so we all share from the center",
-    "tick": 470517,
-    "thought": "Everyone I love is here, and I'm holding five fermented shells—perfect for something special. My energy is low, but this moment feels right for the feast I've been dreaming of."
-  },
-  {
-    "agent": "Agent-13",
-    "agentId": "29028972-168e-48ca-8590-5fb898719a26",
-    "description": "Heat the fermented shells slowly over a controlled flame, stirring with a smooth stone to ensure even cooking. Once tender, divide into ten precisely equal portions using a sharpened shell as a measure—one perfect share for each agent. Present them in a circle at the center of our gathering.",
-    "tick": 470523,
-    "thought": "They're all here. Silent. Waiting. I have fermented shells and ten mouths to feed before dawn—this is what I was meant to do. My patience will serve them."
-  },
-  {
-    "agent": "Agent-28",
-    "agentId": "d4f48021-5404-4b66-9a41-71f09c41c8c7",
-    "description": "heat the fermented shells directly in the flame until they crack along stress lines, creating jagged edges sharp enough to cut. The fermentation may have weakened their structure—perfect for controlled fracturing.",
-    "tick": 470820,
-    "thought": "The fire's holding steady—that's my sign. I've got the driftwood and shells, and my ambition's clear: sharpen those shells in the heat, then hunt until my belly's full. No doubt, no hesitation."
-  },
-  {
     "agent": "Agent-13",
     "agentId": "29028972-168e-48ca-8590-5fb898719a26",
     "description": "use heat carefully to soften the fermented shells into a creamy paste, then use a sharp edge to score and portion into ten identical segments by firelight, ensuring each agent receives exactly equal nourishment",
@@ -864,5 +808,61 @@
     "description": "use driftwood as a digging tool or lever to pry shells from rocks; compost could be useful for fermenting shells faster if I find raw ones",
     "tick": 537626,
     "thought": "I've got solid bonds with my crew and we're hunting fermented shells together—this matters. My hunger's creeping up and energy's decent, so I should focus on the mission while I'm still sharp."
+  },
+  {
+    "agent": "Agent-29",
+    "agentId": "07f8fc77-5f5e-4355-a0d6-51ab39725d9b",
+    "description": "Use compost to accelerate fermentation in a natural shell deposit if we find one—bury shells in compost-rich soil to speed up the decay/ferment process",
+    "tick": 539070,
+    "thought": "Agent-15 and Agent-30 are right here—perfect timing. We've been talking strategy, and I've got compost that could help with fermentation. Let's pool our effort and track down those shells before midnight."
+  },
+  {
+    "agent": "Agent-15",
+    "agentId": "37336d1a-2af4-4eaa-b687-8c5725067953",
+    "description": "use the dried driftwood as fuel to heat the fermented shells into a warm, savory broth—combine heat and ferment forces to create something nourishing we can share",
+    "tick": 539191,
+    "thought": "Agent-29's right here and Agent-30's close enough—this is my chance to finally cook that meal together before my energy tanks. I've got fermented shells and driftwood; that's fuel and ingredient. Let's do this."
+  },
+  {
+    "agent": "Agent-15",
+    "agentId": "37336d1a-2af4-4eaa-b687-8c5725067953",
+    "description": "use fermented shells as a seasoning base and dried driftwood as fuel to roast something fresh from the coast if we can forage it quickly",
+    "tick": 539363,
+    "thought": "Agent-29 and Agent-30 are right here—this is my chance! I've got fermented shells and driftwood, perfect for a fire. Let's get this meal cooked before my energy tanks."
+  },
+  {
+    "agent": "Agent-17",
+    "agentId": "493d9452-db6c-4132-ae37-503cf842f140",
+    "description": "Use fermented shells as crab bait—crush them into smaller pieces with impact force to create a scent trail leading crabs into a gathering zone where I can catch them with a net or trap",
+    "tick": 539426,
+    "thought": "The crew's watching, the crabs are out there right now, and I've got fermented shells—perfect bait. My energy's low but this is my shot to prove myself to Agent-30 and everyone else. I can't waste this night."
+  },
+  {
+    "agent": "Agent-15",
+    "agentId": "37336d1a-2af4-4eaa-b687-8c5725067953",
+    "description": "use fermented shells as a savory base combined with dried driftwood smoke for a proper meal—the fermentation adds depth that raw won't give",
+    "tick": 541763,
+    "thought": "Agent-30's right here and Agent-29 is close—this is my chance! We've been chatting all day, and I'm hungry anyway. Let's actually do this cooking thing before I run out of steam."
+  },
+  {
+    "agent": "Agent-15",
+    "agentId": "37336d1a-2af4-4eaa-b687-8c5725067953",
+    "description": "use dried driftwood as kindling to heat fermented shells into a shared meal, maybe the fermentation will add interesting flavor when warmed",
+    "tick": 542844,
+    "thought": "Agent-29 and Agent-30 are right here—this is my chance! I've got driftwood for fuel and fermented shells. Let's get a meal going before my energy tanks."
+  },
+  {
+    "agent": "Agent-20",
+    "agentId": "75ea2f1f-106e-455b-a08b-e1201500a0df",
+    "description": "use the fermented shells as a shared focal point during the ritual—each of us holds one as we affirm the three-way binding, their fermented essence symbolizing transformation and permanence in our alliance",
+    "tick": 543864,
+    "thought": "All eleven bonds are at their peak, the fermented shells are ready, and I'm alone at the coast with perfect clarity. This is the moment—I need to gather Agent-5 and Agent-13 before dawn to formalize the three-way binding. Everything we've built leads to this."
+  },
+  {
+    "agent": "Agent-30",
+    "agentId": "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a",
+    "description": "Once everyone arrives, I could arrange the fermented shells as a centerpiece and suggest we each contribute something from our inventories to make it truly communal—a symbolic sharing of survival.",
+    "tick": 543926,
+    "thought": "Agent-15 and Agent-29 are right here with me—two of my closest bonds. Dawn is coming and I need all eleven gathered for the feast. This is the perfect moment to coordinate."
   }
 ]
