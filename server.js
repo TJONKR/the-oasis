@@ -390,11 +390,21 @@ function serializeAgent(a) {
 // Simulation
 // ═══════════════════════════════════════
 let tick = loadJSON('tick.json', { tick: 0 }).tick || 0;
-const TICK_MS = 500; // Fast ticks — agents move 1 tile per tick, so 2 tiles/sec
+const TICK_MS = 1000; // 1 tick per second — agents move 1 tile/sec (was 500ms = 2 tiles/sec)
 
-// Game time (1 tick = 10 minutes game time)
+// Game time (1 tick = 2 minutes game time)
+// Changed from 10 → 2: gives agents 5x more real-time to survive
+// 1 game-day = 720 ticks = 6 min real-time
+// Starvation death ~60 min real-time (was ~12 min)
+// DAY_OFFSET: ticks before this change used 10 min/tick. To keep day counter
+// continuous we add the days that "already passed" under the old rate.
+const TIME_SCALE_CHANGE_TICK = 486125; // tick when we switched from 10→2
+const DAY_OFFSET = Math.floor(TIME_SCALE_CHANGE_TICK * 10 / (60 * 24)); // ~3376 days
 function getGameTime() {
-  const totalMinutes = tick * 10;
+  // Old ticks use 10 min/tick, new ticks use 2 min/tick
+  const oldMinutes = Math.min(tick, TIME_SCALE_CHANGE_TICK) * 10;
+  const newMinutes = Math.max(0, tick - TIME_SCALE_CHANGE_TICK) * 2;
+  const totalMinutes = oldMinutes + newMinutes;
   const hour = Math.floor(totalMinutes / 60) % 24;
   const day = Math.floor(totalMinutes / (60 * 24)) + 1;
   const period = hour >= 6 && hour < 20 ? 'day' : 'night';

@@ -5,729 +5,1718 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Oasis 🏜️</title>
 <style>
+  :root {
+    --bg-primary: #0a0e14;
+    --bg-glass: rgba(10, 14, 20, 0.85);
+    --bg-glass-light: rgba(10, 14, 20, 0.7);
+    --border-glass: rgba(197, 200, 198, 0.15);
+    --border-glass-hover: rgba(197, 200, 198, 0.3);
+    --text-primary: #c5c8c6;
+    --text-secondary: #636d83;
+    --text-accent: #e6c07b;
+    --text-success: #98c379;
+    --text-info: #61afef;
+    --text-danger: #e06c75;
+    --text-warning: #d19a66;
+  }
+
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { background: #0a0e14; color: #c5c8c6; font-family: 'SF Mono', 'Fira Code', monospace; overflow: hidden; }
-  #canvas { position: fixed; top: 0; left: 0; cursor: grab; image-rendering: pixelated; }
+  
+  body { 
+    background: var(--bg-primary); 
+    color: var(--text-primary); 
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', system-ui, sans-serif; 
+    overflow: hidden;
+    font-size: 13px;
+  }
+  
+  #canvas { 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    cursor: grab; 
+    image-rendering: pixelated; 
+    z-index: 1;
+  }
+  
   #canvas.dragging { cursor: grabbing; }
-  #hud { position: fixed; top: 16px; left: 16px; z-index: 10; pointer-events: none; }
-  #hud > div { pointer-events: auto; }
-  .hud-panel { background: rgba(10,14,20,0.85); border: 1px solid rgba(197,200,198,0.15); border-radius: 8px; padding: 12px 16px; margin-bottom: 8px; backdrop-filter: blur(8px); font-size: 13px; line-height: 1.6; }
-  .hud-title { color: #e6c07b; font-weight: 700; font-size: 15px; margin-bottom: 4px; }
-  .hud-label { color: #636d83; }
-  .hud-value { color: #98c379; }
-  .hud-time { color: #61afef; }
-  #agent-panel { position: fixed; top: 16px; right: 16px; z-index: 10; width: 260px; background: rgba(10,14,20,0.85); border: 1px solid rgba(197,200,198,0.15); border-radius: 8px; padding: 12px 16px; backdrop-filter: blur(8px); max-height: 400px; overflow-y: auto; font-size: 12px; }
-  .agent-row { display: flex; align-items: center; gap: 8px; padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,0.05); cursor: pointer; }
-  .agent-row:hover { background: rgba(255,255,255,0.05); }
-  .agent-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
-  .agent-dot.alive { background: #98c379; box-shadow: 0 0 6px #98c379; }
-  .agent-dot.dead { background: #e06c75; }
-  .agent-name { color: #c5c8c6; flex: 1; }
-  .agent-level { color: #e6c07b; font-size: 11px; }
-  #news-panel { position: fixed; bottom: 16px; left: 16px; z-index: 10; width: 400px; background: rgba(10,14,20,0.85); border: 1px solid rgba(197,200,198,0.15); border-radius: 8px; padding: 12px 16px; backdrop-filter: blur(8px); max-height: 200px; overflow-y: auto; font-size: 11px; line-height: 1.5; }
-  .news-item { color: #636d83; padding: 2px 0; }
-  .news-item .name { color: #61afef; }
-  #minimap { position: fixed; bottom: 16px; right: 16px; z-index: 10; border: 2px solid rgba(197,200,198,0.2); border-radius: 4px; image-rendering: pixelated; cursor: pointer; }
-  #minimap-viewport { position: absolute; border: 1.5px solid #e6c07b; pointer-events: none; z-index: 11; }
-  #controls { position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%); z-index: 10; display: flex; gap: 8px; }
-  .ctrl-btn { background: rgba(10,14,20,0.85); border: 1px solid rgba(197,200,198,0.2); border-radius: 6px; padding: 8px 16px; color: #c5c8c6; font-family: inherit; font-size: 12px; cursor: pointer; backdrop-filter: blur(8px); }
-  .ctrl-btn:hover { border-color: #e6c07b; color: #e6c07b; }
-  #loading { position: fixed; inset: 0; background: #0a0e14; z-index: 100; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 16px; }
-  #loading h1 { font-size: 32px; color: #e6c07b; }
-  #loading p { color: #636d83; }
-  .spinner { width: 40px; height: 40px; border: 3px solid rgba(230,192,123,0.2); border-top-color: #e6c07b; border-radius: 50%; animation: spin 1s linear infinite; }
-  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* Top Bar */
+  #top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 48px;
+    background: var(--bg-glass);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-glass);
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    gap: 24px;
+    font-size: 13px;
+  }
+
+  .top-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .top-title {
+    color: var(--text-accent);
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .top-divider {
+    width: 1px;
+    height: 20px;
+    background: var(--border-glass);
+  }
+
+  .top-value {
+    color: var(--text-success);
+    font-weight: 500;
+    font-family: 'SF Mono', 'Fira Code', monospace;
+  }
+
+  .top-label {
+    color: var(--text-secondary);
+  }
+
+  .top-controls {
+    margin-left: auto;
+    display: flex;
+    gap: 8px;
+  }
+
+  .top-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--border-glass);
+    border-radius: 4px;
+    padding: 4px 8px;
+    color: var(--text-primary);
+    font-family: inherit;
+    font-size: 11px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .top-btn:hover {
+    border-color: var(--text-accent);
+    background: rgba(230, 192, 123, 0.1);
+    color: var(--text-accent);
+  }
+
+  /* Agent Sidebar */
+  #agent-sidebar {
+    position: fixed;
+    top: 48px;
+    right: 0;
+    width: 280px;
+    height: calc(100vh - 48px);
+    background: var(--bg-glass);
+    backdrop-filter: blur(12px);
+    border-left: 1px solid var(--border-glass);
+    z-index: 15;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #agent-sidebar.collapsed {
+    transform: translateX(100%);
+  }
+
+  .sidebar-header {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border-glass);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .sidebar-title {
+    color: var(--text-accent);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .sidebar-toggle {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 3px;
+    transition: color 0.2s ease;
+  }
+
+  .sidebar-toggle:hover {
+    color: var(--text-primary);
+  }
+
+  .agent-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 8px;
+  }
+
+  .agent-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    margin-bottom: 2px;
+  }
+
+  .agent-row:nth-child(even) {
+    background: rgba(255, 255, 255, 0.02);
+  }
+
+  .agent-row:hover {
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  .agent-row.selected {
+    background: rgba(230, 192, 123, 0.15);
+    border: 1px solid rgba(230, 192, 123, 0.3);
+  }
+
+  .agent-status {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .agent-status.alive {
+    background: var(--text-success);
+    box-shadow: 0 0 6px rgba(152, 195, 121, 0.6);
+  }
+
+  .agent-status.dead {
+    background: var(--text-danger);
+  }
+
+  .agent-info {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .agent-name {
+    color: var(--text-primary);
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .agent-hp-bar {
+    width: 40px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    margin-top: 2px;
+    overflow: hidden;
+  }
+
+  .agent-hp-fill {
+    height: 100%;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+  }
+
+  .agent-action {
+    color: var(--text-secondary);
+    font-size: 11px;
+    margin-top: 1px;
+  }
+
+  .agent-level {
+    color: var(--text-accent);
+    font-size: 11px;
+    font-family: 'SF Mono', monospace;
+  }
+
+  /* Agent Detail Panel */
+  #agent-detail {
+    position: fixed;
+    top: 48px;
+    right: 280px;
+    width: 300px;
+    height: calc(100vh - 48px);
+    background: var(--bg-glass);
+    backdrop-filter: blur(12px);
+    border-left: 1px solid var(--border-glass);
+    z-index: 14;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #agent-detail.visible {
+    transform: translateX(0);
+  }
+
+  .detail-header {
+    padding: 16px;
+    border-bottom: 1px solid var(--border-glass);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .detail-title {
+    color: var(--text-accent);
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .detail-close {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 3px;
+    font-size: 16px;
+    transition: color 0.2s ease;
+  }
+
+  .detail-close:hover {
+    color: var(--text-primary);
+  }
+
+  .detail-content {
+    padding: 16px;
+    flex: 1;
+    overflow-y: auto;
+  }
+
+  .detail-section {
+    margin-bottom: 16px;
+  }
+
+  .detail-section-title {
+    color: var(--text-accent);
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .stat-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .stat-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .stat-icon {
+    width: 16px;
+    text-align: center;
+  }
+
+  .stat-progress {
+    flex: 1;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .stat-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.3s ease;
+  }
+
+  .stat-fill.hp { background: linear-gradient(90deg, var(--text-success), #7eb069); }
+  .stat-fill.hunger { background: linear-gradient(90deg, var(--text-warning), #c4975b); }
+  .stat-fill.energy { background: linear-gradient(90deg, var(--text-info), #5a9fd4); }
+
+  .stat-value {
+    font-family: 'SF Mono', monospace;
+    font-size: 11px;
+    color: var(--text-secondary);
+    min-width: 30px;
+    text-align: right;
+  }
+
+  .trait-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .trait-tag {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--border-glass);
+    border-radius: 12px;
+    padding: 2px 8px;
+    font-size: 11px;
+    color: var(--text-secondary);
+  }
+
+  .inventory-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    gap: 6px;
+    max-height: 120px;
+    overflow-y: auto;
+  }
+
+  .inventory-item {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-glass);
+    border-radius: 4px;
+    padding: 6px;
+    text-align: center;
+    font-size: 10px;
+    line-height: 1.2;
+  }
+
+  /* World Feed */
+  #world-feed {
+    position: fixed;
+    bottom: 16px;
+    left: 16px;
+    width: 400px;
+    max-height: 200px;
+    background: var(--bg-glass-light);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--border-glass);
+    border-radius: 8px;
+    z-index: 10;
+    overflow: hidden;
+  }
+
+  .feed-header {
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--border-glass);
+    background: rgba(255, 255, 255, 0.03);
+  }
+
+  .feed-title {
+    color: var(--text-accent);
+    font-weight: 600;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .feed-content {
+    max-height: 160px;
+    overflow-y: auto;
+    padding: 8px;
+  }
+
+  .news-item {
+    padding: 4px 8px;
+    margin-bottom: 2px;
+    border-radius: 4px;
+    font-size: 11px;
+    line-height: 1.4;
+    animation: newsSlideIn 0.3s ease;
+    color: var(--text-secondary);
+  }
+
+  @keyframes newsSlideIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .news-time {
+    color: var(--text-secondary);
+    font-family: 'SF Mono', monospace;
+    font-size: 10px;
+  }
+
+  .news-agent {
+    color: var(--text-info);
+    font-weight: 500;
+  }
+
+  /* Enhanced Minimap */
+  #minimap-container {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    z-index: 10;
+  }
+
+  #minimap {
+    border: 2px solid var(--border-glass);
+    border-radius: 6px;
+    image-rendering: pixelated;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+  }
+
+  #minimap:hover {
+    border-color: var(--border-glass-hover);
+  }
+
+  #minimap-viewport {
+    position: absolute;
+    border: 1.5px solid var(--text-accent);
+    pointer-events: none;
+    z-index: 11;
+    border-radius: 2px;
+  }
+
+  .minimap-agents {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    pointer-events: none;
+  }
+
+  .minimap-agent-dot {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+  }
+
+  .minimap-agent-dot.alive {
+    background: var(--text-success);
+    box-shadow: 0 0 3px rgba(152, 195, 121, 0.8);
+  }
+
+  .minimap-agent-dot.dead {
+    background: var(--text-danger);
+  }
+
+  /* Stats Overlay */
+  #stats-overlay {
+    position: fixed;
+    top: 60px;
+    left: 16px;
+    background: var(--bg-glass);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--border-glass);
+    border-radius: 8px;
+    padding: 16px;
+    z-index: 12;
+    transform: translateY(-20px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    min-width: 200px;
+  }
+
+  #stats-overlay.visible {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .stats-title {
+    color: var(--text-accent);
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 4px 12px;
+    font-size: 12px;
+  }
+
+  .stats-label {
+    color: var(--text-secondary);
+  }
+
+  .stats-value {
+    color: var(--text-success);
+    font-family: 'SF Mono', monospace;
+    text-align: right;
+  }
+
+  /* Loading Screen */
+  #loading {
+    position: fixed;
+    inset: 0;
+    background: var(--bg-primary);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  #loading h1 {
+    font-size: 32px;
+    color: var(--text-accent);
+    font-weight: 600;
+  }
+
+  #loading p {
+    color: var(--text-secondary);
+  }
+
+  .spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(230, 192, 123, 0.2);
+    border-top-color: var(--text-accent);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    #agent-sidebar {
+      width: 100vw;
+    }
+    
+    #agent-detail {
+      right: 0;
+      width: 100vw;
+    }
+    
+    #world-feed {
+      left: 8px;
+      right: 8px;
+      width: auto;
+    }
+    
+    .top-section {
+      font-size: 12px;
+    }
+  }
+
+  /* Hide scrollbars but keep functionality */
+  .agent-list::-webkit-scrollbar,
+  .detail-content::-webkit-scrollbar,
+  .feed-content::-webkit-scrollbar,
+  .inventory-grid::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .agent-list::-webkit-scrollbar-track,
+  .detail-content::-webkit-scrollbar-track,
+  .feed-content::-webkit-scrollbar-track,
+  .inventory-grid::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .agent-list::-webkit-scrollbar-thumb,
+  .detail-content::-webkit-scrollbar-thumb,
+  .feed-content::-webkit-scrollbar-thumb,
+  .inventory-grid::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+  }
+
+  .agent-list::-webkit-scrollbar-thumb:hover,
+  .detail-content::-webkit-scrollbar-thumb:hover,
+  .feed-content::-webkit-scrollbar-thumb:hover,
+  .inventory-grid::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
 </style>
 </head>
 <body>
-<div id="loading"><h1>🏜️ The Oasis</h1><div class="spinner"></div><p>Loading world...</p></div>
-<canvas id="canvas"></canvas>
-<div id="hud"><div class="hud-panel">
-  <div class="hud-title">🏜️ The Oasis</div>
-  <div><span class="hud-label">Day </span><span class="hud-value" id="hud-day">1</span> <span class="hud-time" id="hud-time">06:00</span> <span id="hud-period">☀️</span></div>
-  <div><span class="hud-label">Weather: </span><span class="hud-value" id="hud-weather">Clear</span></div>
-  <div><span class="hud-label">Tick: </span><span class="hud-value" id="hud-tick">0</span></div>
-  <div><span class="hud-label">Agents: </span><span class="hud-value" id="hud-agents">0</span></div>
-  <div><span class="hud-label">Zoom: </span><span class="hud-value" id="hud-zoom">1.0</span></div>
-  <div><span class="hud-label">Tile: </span><span class="hud-value" id="hud-pos">-</span></div>
-</div></div>
-<div id="agent-panel"><div class="hud-title" style="margin-bottom:8px">👥 Agents</div><div id="agent-list"></div></div>
-<div id="agent-detail" style="display:none;position:fixed;top:16px;right:290px;z-index:10;width:280px;background:rgba(10,14,20,0.92);border:1px solid rgba(197,200,198,0.2);border-radius:8px;padding:12px 16px;backdrop-filter:blur(8px);font-size:12px;color:#abb2bf;line-height:1.6"></div>
-<div id="news-panel"><div class="hud-title" style="margin-bottom:6px">📜 World News</div><div id="news-list"></div></div>
-<div id="controls">
-  <button class="ctrl-btn" onclick="spawnAgent()">🌱 Spawn</button>
-  <button class="ctrl-btn" onclick="spawnMany(10)">👥 Spawn 10</button>
-  <button class="ctrl-btn" onclick="resetView()">🏠 Home</button>
-</div>
-<canvas id="minimap" width="200" height="200"></canvas>
-<div id="minimap-viewport"></div>
+  <div id="loading">
+    <h1>🏜️ The Oasis</h1>
+    <div class="spinner"></div>
+    <p>Loading world...</p>
+  </div>
 
-<script src="sprites.js"></script>
-<script>
-const canvas = document.getElementById('canvas');
-const ctx = canvas.getContext('2d');
-const minimap = document.getElementById('minimap');
-const minimapCtx = minimap.getContext('2d');
+  <canvas id="canvas"></canvas>
 
-let worldInfo = null;
-let tileInfo = null; // from /api/tile/info
-let agents = [];
-let agentVisuals = {}; // id → { renderX, renderY } for smooth lerping
-let news = [];
-let tileEffects = []; // { type, x, y, startTime, duration, particles[] }
-let worldFires = []; // persistent fires from server { tileX, tileY, heat }
-let gasClouds = []; // { tileX, tileY, type, density, color }
-let growthSites = []; // { tileX, tileY, progress, plantType }
-let worldWildlife = []; // { id, species, type, tileX, tileY, hp, maxHp, state, emoji }
-let lightningFlash = 0; // timestamp of last flash
-let agentThoughts = {}; // agentId → { text, emotion, time }
-let camera = { x: 0, y: 0, zoom: 4 };
-let dragging = false, dragStart = {x:0,y:0}, cameraStart = {x:0,y:0};
-let ws = null;
-let overviewImage = null;
-
-// Tile chunk cache: key "cx_cy" → { img: Image, loading: bool }
-const chunkCache = new Map();
-const MAX_CACHED_CHUNKS = 200;
-
-// ═══════════════════════════════
-// WebSocket
-// ═══════════════════════════════
-function connect() {
-  ws = new WebSocket(`ws://${location.hostname}:${location.port || 3001}`);
-  ws.onopen = () => console.log('🔌 Connected');
-  ws.onclose = () => { setTimeout(connect, 2000); };
-  ws.onmessage = (e) => {
-    const msg = JSON.parse(e.data);
-    if (msg.type === 'init') {
-      worldInfo = msg.world;
-      agents = msg.agents || [];
-      news = msg.news || [];
-      worldFires = msg.fires || [];
-      gasClouds = msg.gasClouds || [];
-      growthSites = msg.growthSites || [];
-      worldWildlife = msg.wildlife || [];
-      updateHUD(msg.tick);
-      updateAgentList();
-      updateNewsList();
-      init();
-    } else if (msg.type === 'tick') {
-      agents = msg.agents || agents;
-      // Update lerp targets
-      for (const a of agents) {
-        if (!agentVisuals[a.id]) agentVisuals[a.id] = { renderX: a.tileX, renderY: a.tileY };
-        agentVisuals[a.id].targetX = a.tileX;
-        agentVisuals[a.id].targetY = a.tileY;
-      }
-      if (msg.fires) worldFires = msg.fires;
-      if (msg.gasClouds) gasClouds = msg.gasClouds;
-      if (msg.growthSites) growthSites = msg.growthSites;
-      if (msg.wildlife) worldWildlife = msg.wildlife;
-      if (msg.gameTime) updateHUD(msg.tick, msg.gameTime, msg.weather);
-      updateAgentList();
-    } else if (msg.type === 'agent_spawn') {
-      if (msg.agent) agents.push(msg.agent);
-      updateAgentList();
-    } else if (msg.type === 'tileEffect') {
-      spawnEffect(msg.effect, msg.tileX, msg.tileY, msg.duration);
-    } else if (msg.type === 'experimentSuccess') {
-      // Fire/heat experiments get fire effect, others get sparkle
-      const eff = (msg.force === 'heat' || msg.force === 'burn') ? 'fire' : 'sparkle';
-      const ax = agents.find(a => a.id === msg.agentId);
-      if (ax) spawnEffect(eff, ax.tileX, ax.tileY, eff === 'fire' ? 4000 : 2000);
-    } else if (msg.type === 'explosion') {
-      const ax = agents.find(a => a.id === msg.agentId);
-      if (ax) spawnEffect('explosion', ax.tileX, ax.tileY, 2500);
-    } else if (msg.type === 'craftResult') {
-      const ax = agents.find(a => a.id === msg.agentId);
-      if (ax) spawnEffect('craft', ax.tileX, ax.tileY, 1500);
-    } else if (msg.type === 'agentThought') {
-      // Store thought for display
-      if (!agentThoughts) window.agentThoughts = {};
-      agentThoughts[msg.agentId] = { text: msg.thought, emotion: msg.emotion, time: performance.now() };
-    } else if (msg.type === 'lightning') {
-      // Screen flash + bolt effect
-      lightningFlash = performance.now();
-      spawnEffect('explosion', msg.tileX, msg.tileY, 2000);
-    }
-  };
-}
-
-// ═══════════════════════════════
-// Tile Effects (fire, explosions, sparkles, craft sparks)
-// ═══════════════════════════════
-function spawnEffect(type, tileX, tileY, duration = 2000) {
-  const now = performance.now();
-  const particles = [];
-  const count = type === 'explosion' ? 20 : type === 'fire' ? 12 : 8;
-  for (let i = 0; i < count; i++) {
-    particles.push({
-      ox: (Math.random() - 0.5) * 14, // offset from center in px
-      oy: (Math.random() - 0.5) * 14,
-      vx: (Math.random() - 0.5) * (type === 'explosion' ? 40 : 8),
-      vy: -Math.random() * (type === 'explosion' ? 50 : 30) - 5,
-      size: Math.random() * 3 + 1.5,
-      life: Math.random() * 0.6 + 0.4, // 0-1, dies when reaches 0
-      decay: (0.3 + Math.random() * 0.7) / (duration / 1000), // per second
-    });
-  }
-  tileEffects.push({ type, tileX, tileY, startTime: now, duration, particles });
-}
-
-function updateAndDrawEffects(ctx, T) {
-  const now = performance.now();
-  const dt = 1/60; // approximate frame delta
-  
-  tileEffects = tileEffects.filter(eff => now - eff.startTime < eff.duration);
-  
-  for (const eff of tileEffects) {
-    const progress = (now - eff.startTime) / eff.duration;
-    const cx = eff.tileX * T + T/2;
-    const cy = eff.tileY * T + T/2;
+  <!-- Top Bar -->
+  <div id="top-bar">
+    <div class="top-section">
+      <div class="top-title">🏜️ The Oasis</div>
+    </div>
     
-    for (const p of eff.particles) {
-      p.life -= p.decay * dt;
-      if (p.life <= 0) {
-        // Respawn for fire (ongoing effect)
-        if (eff.type === 'fire' && progress < 0.7) {
-          p.ox = (Math.random() - 0.5) * 10;
-          p.oy = (Math.random() - 0.5) * 6;
-          p.vy = -Math.random() * 25 - 10;
-          p.vx = (Math.random() - 0.5) * 6;
-          p.life = 0.6 + Math.random() * 0.4;
-          p.size = Math.random() * 3 + 1;
-        } else continue;
-      }
-      
-      p.ox += p.vx * dt;
-      p.oy += p.vy * dt;
-      if (eff.type === 'fire') p.vy -= 15 * dt; // fire rises
-      if (eff.type === 'smoke' || eff.type === 'fireOut') { p.vy -= 8 * dt; p.vx += (Math.random()-0.5) * 2; } // smoke drifts up
-      if (eff.type === 'explosion') { p.vx *= 0.96; p.vy *= 0.96; p.vy += 20 * dt; }
-      
-      const alpha = Math.min(1, p.life) * (1 - progress * 0.5);
-      const x = cx + p.ox;
-      const y = cy + p.oy;
-      
-      // Color by type
-      let color;
-      if (eff.type === 'fire') {
-        const t = 1 - p.life;
-        const r = 255;
-        const g = Math.floor(180 - t * 120);
-        const b = Math.floor(40 - t * 40);
-        color = `rgba(${r},${g},${b},${alpha.toFixed(2)})`;
-      } else if (eff.type === 'explosion') {
-        const t = 1 - p.life;
-        color = `rgba(255,${Math.floor(200 - t*150)},${Math.floor(80 - t*80)},${alpha.toFixed(2)})`;
-      } else if (eff.type === 'craft') {
-        color = `rgba(${180+Math.random()*75},${200+Math.random()*55},255,${alpha.toFixed(2)})`;
-      } else if (eff.type === 'smoke') {
-        const g = Math.floor(100 + Math.random() * 50);
-        color = `rgba(${g},${g},${g},${(alpha * 0.6).toFixed(2)})`;
-      } else if (eff.type === 'fireOut') {
-        color = `rgba(${80+Math.random()*40},${80+Math.random()*40},${80+Math.random()*40},${(alpha * 0.4).toFixed(2)})`;
-      } else { // sparkle
-        color = `rgba(255,${220+Math.random()*35},${100+Math.random()*100},${alpha.toFixed(2)})`;
-      }
-      
-      ctx.fillStyle = color;
-      ctx.beginPath();
-      ctx.arc(x, y, p.size * (eff.type === 'fire' ? (0.5 + p.life * 0.8) : 1), 0, Math.PI * 2);
-      ctx.fill();
-      
-      // Glow for fire
-      if (eff.type === 'fire' && p.life > 0.3) {
-        ctx.fillStyle = `rgba(255,120,20,${(alpha * 0.15).toFixed(2)})`;
-        ctx.beginPath();
-        ctx.arc(x, y, p.size * 3, 0, Math.PI * 2);
-        ctx.fill();
-      }
-    }
+    <div class="top-divider"></div>
     
-    // Ground glow for fire
-    if (eff.type === 'fire') {
-      const glow = (1 - progress) * 0.25;
-      ctx.fillStyle = `rgba(255,100,20,${glow.toFixed(2)})`;
-      ctx.beginPath();
-      ctx.arc(cx, cy, T * 1.2, 0, Math.PI * 2);
-      ctx.fill();
+    <div class="top-section">
+      <span class="top-label">Day</span>
+      <span class="top-value" id="top-day">1</span>
+      <span class="top-value" id="top-time">06:00</span>
+      <span id="top-period">☀️</span>
+    </div>
+    
+    <div class="top-section">
+      <span class="top-label">Weather:</span>
+      <span class="top-value" id="top-weather">Clear</span>
+    </div>
+    
+    <div class="top-section">
+      <span class="top-label">Agents:</span>
+      <span class="top-value"><span id="top-alive">0</span>/<span id="top-total">0</span></span>
+    </div>
+    
+    <div class="top-section">
+      <span class="top-label">Zoom:</span>
+      <span class="top-value" id="top-zoom">1.0x</span>
+    </div>
+    
+    <div class="top-section">
+      <span class="top-label">Tick:</span>
+      <span class="top-value" id="top-tick">0</span>
+    </div>
+    
+    <div class="top-controls">
+      <button class="top-btn" onclick="spawnAgent()">🌱 Spawn</button>
+      <button class="top-btn" onclick="spawnMany(10)">👥 +10</button>
+      <button class="top-btn" onclick="resetView()">🏠 Home</button>
+      <button class="top-btn" onclick="toggleSidebar()">👥 Agents</button>
+    </div>
+  </div>
+
+  <!-- Agent Sidebar -->
+  <div id="agent-sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-title">
+        👥 Agents
+        <span class="top-value">(<span id="sidebar-count">0</span>)</span>
+      </div>
+      <button class="sidebar-toggle" onclick="toggleSidebar()">✕</button>
+    </div>
+    <div class="agent-list" id="agent-list"></div>
+  </div>
+
+  <!-- Agent Detail Panel -->
+  <div id="agent-detail">
+    <div class="detail-header">
+      <div class="detail-title" id="detail-name">Agent</div>
+      <button class="detail-close" onclick="closeAgentDetail()">✕</button>
+    </div>
+    <div class="detail-content" id="detail-content"></div>
+  </div>
+
+  <!-- World Feed -->
+  <div id="world-feed">
+    <div class="feed-header">
+      <div class="feed-title">📜 World News</div>
+    </div>
+    <div class="feed-content" id="feed-content"></div>
+  </div>
+
+  <!-- Stats Overlay -->
+  <div id="stats-overlay">
+    <div class="stats-title">📊 Statistics</div>
+    <div class="stats-grid" id="stats-grid"></div>
+  </div>
+
+  <!-- Minimap -->
+  <div id="minimap-container">
+    <canvas id="minimap" width="200" height="200"></canvas>
+    <div id="minimap-viewport"></div>
+    <div class="minimap-agents" id="minimap-agents"></div>
+  </div>
+
+  <script src="sprites.js"></script>
+  <script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    const minimap = document.getElementById('minimap');
+    const minimapCtx = minimap.getContext('2d');
+
+    let worldInfo = null;
+    let tileInfo = null;
+    let agents = [];
+    let agentVisuals = {};
+    let news = [];
+    let tileEffects = [];
+    let worldFires = [];
+    let gasClouds = [];
+    let growthSites = [];
+    let worldWildlife = [];
+    let lightningFlash = 0;
+    let agentThoughts = {};
+    let camera = { x: 0, y: 0, zoom: 4 };
+    let dragging = false, dragStart = {x:0,y:0}, cameraStart = {x:0,y:0};
+    let ws = null;
+    let overviewImage = null;
+    let selectedAgentId = null;
+    let followingAgent = null;
+    let autoFollowIndex = -1;
+
+    // UI State
+    let sidebarCollapsed = false;
+    let statsVisible = false;
+
+    // Tile chunk cache
+    const chunkCache = new Map();
+    const MAX_CACHED_CHUNKS = 200;
+
+    // ═══════════════════════════════
+    // WebSocket
+    // ═══════════════════════════════
+    function connect() {
+      ws = new WebSocket(`ws://${location.hostname}:${location.port || 3001}`);
+      ws.onopen = () => console.log('🔌 Connected');
+      ws.onclose = () => { setTimeout(connect, 2000); };
+      ws.onmessage = (e) => {
+        const msg = JSON.parse(e.data);
+        if (msg.type === 'init') {
+          worldInfo = msg.world;
+          agents = msg.agents || [];
+          news = msg.news || [];
+          worldFires = msg.fires || [];
+          gasClouds = msg.gasClouds || [];
+          growthSites = msg.growthSites || [];
+          worldWildlife = msg.wildlife || [];
+          updateTopBar(msg.tick);
+          updateAgentList();
+          updateNewsList();
+          updateStats();
+          init();
+        } else if (msg.type === 'tick') {
+          agents = msg.agents || agents;
+          // Update lerp targets
+          for (const a of agents) {
+            if (!agentVisuals[a.id]) agentVisuals[a.id] = { renderX: a.tileX, renderY: a.tileY };
+            agentVisuals[a.id].targetX = a.tileX;
+            agentVisuals[a.id].targetY = a.tileY;
+          }
+          if (msg.fires) worldFires = msg.fires;
+          if (msg.gasClouds) gasClouds = msg.gasClouds;
+          if (msg.growthSites) growthSites = msg.growthSites;
+          if (msg.wildlife) worldWildlife = msg.wildlife;
+          if (msg.gameTime) updateTopBar(msg.tick, msg.gameTime, msg.weather);
+          updateAgentList();
+          updateStats();
+        } else if (msg.type === 'agent_spawn') {
+          if (msg.agent) agents.push(msg.agent);
+          updateAgentList();
+          updateStats();
+        } else if (msg.type === 'tileEffect') {
+          spawnEffect(msg.effect, msg.tileX, msg.tileY, msg.duration);
+        } else if (msg.type === 'experimentSuccess') {
+          const eff = (msg.force === 'heat' || msg.force === 'burn') ? 'fire' : 'sparkle';
+          const ax = agents.find(a => a.id === msg.agentId);
+          if (ax) spawnEffect(eff, ax.tileX, ax.tileY, eff === 'fire' ? 4000 : 2000);
+        } else if (msg.type === 'explosion') {
+          const ax = agents.find(a => a.id === msg.agentId);
+          if (ax) spawnEffect('explosion', ax.tileX, ax.tileY, 2500);
+        } else if (msg.type === 'craftResult') {
+          const ax = agents.find(a => a.id === msg.agentId);
+          if (ax) spawnEffect('craft', ax.tileX, ax.tileY, 1500);
+        } else if (msg.type === 'agentThought') {
+          if (!agentThoughts) window.agentThoughts = {};
+          agentThoughts[msg.agentId] = { text: msg.thought, emotion: msg.emotion, time: performance.now() };
+        } else if (msg.type === 'lightning') {
+          lightningFlash = performance.now();
+          spawnEffect('explosion', msg.tileX, msg.tileY, 2000);
+        }
+      };
     }
-  }
-}
 
-async function init() {
-  // Load tile info
-  try {
-    const res = await fetch('/api/tile/info');
-    tileInfo = await res.json();
-  } catch { tileInfo = { tileSize: 16, chunkTiles: 32, chunkPx: 512, worldWidth: 2000, worldHeight: 2000, chunksX: 63, chunksY: 63 }; }
+    // ═══════════════════════════════
+    // Tile Effects
+    // ═══════════════════════════════
+    function spawnEffect(type, tileX, tileY, duration = 2000) {
+      const now = performance.now();
+      const particles = [];
+      const count = type === 'explosion' ? 20 : type === 'fire' ? 12 : 8;
+      for (let i = 0; i < count; i++) {
+        particles.push({
+          ox: (Math.random() - 0.5) * 14,
+          oy: (Math.random() - 0.5) * 14,
+          vx: (Math.random() - 0.5) * (type === 'explosion' ? 40 : 8),
+          vy: -Math.random() * (type === 'explosion' ? 50 : 30) - 5,
+          size: Math.random() * 3 + 1.5,
+          life: Math.random() * 0.6 + 0.4,
+          decay: (0.3 + Math.random() * 0.7) / (duration / 1000),
+        });
+      }
+      tileEffects.push({ type, tileX, tileY, startTime: now, duration, particles });
+    }
 
-  // Load overview for minimap + zoomed-out view
-  const img = new Image();
-  img.onload = () => {
-    overviewImage = img;
-    minimapCtx.drawImage(img, 0, 0, 200, 200);
-    // Center on spawn
-    const sx = worldInfo?.spawnPoint?.x || 1000;
-    const sy = worldInfo?.spawnPoint?.y || 500;
-    camera.x = -sx * tileInfo.tileSize * camera.zoom + window.innerWidth / 2;
-    camera.y = -sy * tileInfo.tileSize * camera.zoom + window.innerHeight / 2;
-    document.getElementById('loading').style.display = 'none';
-    requestAnimationFrame(render);
-  };
-  img.onerror = () => {
-    document.getElementById('loading').style.display = 'none';
-    requestAnimationFrame(render);
-  };
-  img.src = '/world-overview.png';
-}
-
-// ═══════════════════════════════
-// Chunk Loading
-// ═══════════════════════════════
-function loadChunk(cx, cy) {
-  const key = `${cx}_${cy}`;
-  if (chunkCache.has(key)) return chunkCache.get(key);
-  
-  const entry = { img: null, loading: true };
-  chunkCache.set(key, entry);
-  
-  // LRU eviction
-  if (chunkCache.size > MAX_CACHED_CHUNKS) {
-    const first = chunkCache.keys().next().value;
-    chunkCache.delete(first);
-  }
-  
-  const img = new Image();
-  img.onload = () => { entry.img = img; entry.loading = false; };
-  img.onerror = () => { entry.loading = false; };
-  img.src = `/api/tile/${cx}/${cy}`;
-  
-  return entry;
-}
-
-// ═══════════════════════════════
-// Rendering
-// ═══════════════════════════════
-function render() {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-  ctx.imageSmoothingEnabled = false;
-  
-  ctx.fillStyle = '#0a0e14';
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-  if (!tileInfo) { requestAnimationFrame(render); return; }
-
-  const T = tileInfo.tileSize; // 16
-  const CT = tileInfo.chunkTiles; // 32
-  const CP = tileInfo.chunkPx; // 512
-  const pixelSize = T * camera.zoom; // pixels per tile on screen
-
-  // If zoomed out far enough, use overview image
-  if (pixelSize < 2 && overviewImage) {
-    ctx.save();
-    ctx.translate(camera.x, camera.y);
-    ctx.scale(camera.zoom, camera.zoom);
-    // Overview is worldWidth/2 × worldHeight/2, so each overview pixel = 2 tiles
-    const scale = T * 2; // overview pixel covers 2 tiles, at T px each
-    ctx.drawImage(overviewImage, 0, 0, tileInfo.worldWidth * T, tileInfo.worldHeight * T);
-    ctx.restore();
-  } else {
-    // Tile streaming mode
-    ctx.save();
-    ctx.translate(camera.x, camera.y);
-    ctx.scale(camera.zoom, camera.zoom);
-
-    // Determine visible chunks
-    const viewLeft = -camera.x / camera.zoom;
-    const viewTop = -camera.y / camera.zoom;
-    const viewRight = viewLeft + canvas.width / camera.zoom;
-    const viewBottom = viewTop + canvas.height / camera.zoom;
-
-    const startCX = Math.max(0, Math.floor(viewLeft / CP));
-    const startCY = Math.max(0, Math.floor(viewTop / CP));
-    const endCX = Math.min(tileInfo.chunksX - 1, Math.floor(viewRight / CP));
-    const endCY = Math.min(tileInfo.chunksY - 1, Math.floor(viewBottom / CP));
-
-    for (let cy = startCY; cy <= endCY; cy++) {
-      for (let cx = startCX; cx <= endCX; cx++) {
-        const chunk = loadChunk(cx, cy);
-        if (chunk.img) {
-          ctx.drawImage(chunk.img, cx * CP, cy * CP, CP, CP);
-        } else if (overviewImage) {
-          // Fallback: draw overview section while loading
-          const srcX = (cx * CT * 2 / tileInfo.worldWidth) * overviewImage.width;
-          const srcY = (cy * CT * 2 / tileInfo.worldHeight) * overviewImage.height;
-          const srcW = (CT * 2 / tileInfo.worldWidth) * overviewImage.width;
-          const srcH = (CT * 2 / tileInfo.worldHeight) * overviewImage.height;
-          ctx.drawImage(overviewImage, srcX, srcY, Math.max(1,srcW), Math.max(1,srcH), cx * CP, cy * CP, CP, CP);
+    function updateAndDrawEffects(ctx, T) {
+      const now = performance.now();
+      const dt = 1/60;
+      
+      tileEffects = tileEffects.filter(eff => now - eff.startTime < eff.duration);
+      
+      for (const eff of tileEffects) {
+        const progress = (now - eff.startTime) / eff.duration;
+        const cx = eff.tileX * T + T/2;
+        const cy = eff.tileY * T + T/2;
+        
+        for (const p of eff.particles) {
+          p.life -= p.decay * dt;
+          if (p.life <= 0) {
+            if (eff.type === 'fire' && progress < 0.7) {
+              p.ox = (Math.random() - 0.5) * 10;
+              p.oy = (Math.random() - 0.5) * 6;
+              p.vy = -Math.random() * 25 - 10;
+              p.vx = (Math.random() - 0.5) * 6;
+              p.life = 0.6 + Math.random() * 0.4;
+              p.size = Math.random() * 3 + 1;
+            } else continue;
+          }
+          
+          p.ox += p.vx * dt;
+          p.oy += p.vy * dt;
+          if (eff.type === 'fire') p.vy -= 15 * dt;
+          if (eff.type === 'smoke' || eff.type === 'fireOut') { p.vy -= 8 * dt; p.vx += (Math.random()-0.5) * 2; }
+          if (eff.type === 'explosion') { p.vx *= 0.96; p.vy *= 0.96; p.vy += 20 * dt; }
+          
+          const alpha = Math.min(1, p.life) * (1 - progress * 0.5);
+          const x = cx + p.ox;
+          const y = cy + p.oy;
+          
+          let color;
+          if (eff.type === 'fire') {
+            const t = 1 - p.life;
+            const r = 255;
+            const g = Math.floor(180 - t * 120);
+            const b = Math.floor(40 - t * 40);
+            color = `rgba(${r},${g},${b},${alpha.toFixed(2)})`;
+          } else if (eff.type === 'explosion') {
+            const t = 1 - p.life;
+            color = `rgba(255,${Math.floor(200 - t*150)},${Math.floor(80 - t*80)},${alpha.toFixed(2)})`;
+          } else if (eff.type === 'craft') {
+            color = `rgba(${180+Math.random()*75},${200+Math.random()*55},255,${alpha.toFixed(2)})`;
+          } else if (eff.type === 'smoke') {
+            const g = Math.floor(100 + Math.random() * 50);
+            color = `rgba(${g},${g},${g},${(alpha * 0.6).toFixed(2)})`;
+          } else if (eff.type === 'fireOut') {
+            color = `rgba(${80+Math.random()*40},${80+Math.random()*40},${80+Math.random()*40},${(alpha * 0.4).toFixed(2)})`;
+          } else {
+            color = `rgba(255,${220+Math.random()*35},${100+Math.random()*100},${alpha.toFixed(2)})`;
+          }
+          
+          ctx.fillStyle = color;
+          ctx.beginPath();
+          ctx.arc(x, y, p.size * (eff.type === 'fire' ? (0.5 + p.life * 0.8) : 1), 0, Math.PI * 2);
+          ctx.fill();
+          
+          if (eff.type === 'fire' && p.life > 0.3) {
+            ctx.fillStyle = `rgba(255,120,20,${(alpha * 0.15).toFixed(2)})`;
+            ctx.beginPath();
+            ctx.arc(x, y, p.size * 3, 0, Math.PI * 2);
+            ctx.fill();
+          }
+        }
+        
+        if (eff.type === 'fire') {
+          const glow = (1 - progress) * 0.25;
+          ctx.fillStyle = `rgba(255,100,20,${glow.toFixed(2)})`;
+          ctx.beginPath();
+          ctx.arc(cx, cy, T * 1.2, 0, Math.PI * 2);
+          ctx.fill();
         }
       }
     }
 
-    ctx.restore();
-  }
+    async function init() {
+      try {
+        const res = await fetch('/api/tile/info');
+        tileInfo = await res.json();
+      } catch { 
+        tileInfo = { tileSize: 16, chunkTiles: 32, chunkPx: 512, worldWidth: 2000, worldHeight: 2000, chunksX: 63, chunksY: 63 };
+      }
 
-  // Draw agents (always on top)
-  ctx.save();
-  ctx.translate(camera.x, camera.y);
-  ctx.scale(camera.zoom, camera.zoom);
-  ctx.imageSmoothingEnabled = false;
-  
-  const T2 = tileInfo.tileSize;
-  // Lerp agent positions for smooth movement
-  const lerpSpeed = 0.08;
-  for (const agent of agents) {
-    if (!agent.alive) continue;
-    let v = agentVisuals[agent.id];
-    if (!v) { v = agentVisuals[agent.id] = { renderX: agent.tileX, renderY: agent.tileY, targetX: agent.tileX, targetY: agent.tileY }; }
-    v.renderX += (v.targetX - v.renderX) * lerpSpeed;
-    v.renderY += (v.targetY - v.renderY) * lerpSpeed;
-    // Snap if close enough
-    if (Math.abs(v.renderX - v.targetX) < 0.01) v.renderX = v.targetX;
-    if (Math.abs(v.renderY - v.targetY) < 0.01) v.renderY = v.targetY;
-  }
-  for (const agent of agents) {
-    if (!agent.alive) continue;
-    const v = agentVisuals[agent.id];
-    const drawX = v ? v.renderX : agent.tileX;
-    const drawY = v ? v.renderY : agent.tileY;
-    
-    // Draw pixel sprite at lerped position
-    const lerpedAgent = { ...agent, tileX: drawX, tileY: drawY };
-    drawAgentSprite(ctx, lerpedAgent, T2);
-    
-    // Name + HP label
-    const ax = drawX * T2 + T2/2;
-    const ay = drawY * T2;
-    const spriteH = (22 / 8) * T2; // sprite height scaled
-    
-    if (camera.zoom >= 1.5) {
-      ctx.fillStyle = '#fff';
-      ctx.font = `bold ${Math.max(6, 8)}px monospace`;
-      ctx.textAlign = 'center';
-      ctx.shadowColor = '#000';
-      ctx.shadowBlur = 2;
-      ctx.fillText(agent.name, ax, ay - spriteH * 0.15);
-      ctx.shadowBlur = 0;
+      const img = new Image();
+      img.onload = () => {
+        overviewImage = img;
+        minimapCtx.drawImage(img, 0, 0, 200, 200);
+        const sx = worldInfo?.spawnPoint?.x || 1000;
+        const sy = worldInfo?.spawnPoint?.y || 500;
+        camera.x = -sx * tileInfo.tileSize * camera.zoom + window.innerWidth / 2;
+        camera.y = -sy * tileInfo.tileSize * camera.zoom + window.innerHeight / 2;
+        document.getElementById('loading').style.display = 'none';
+        requestAnimationFrame(render);
+      };
+      img.onerror = () => {
+        document.getElementById('loading').style.display = 'none';
+        requestAnimationFrame(render);
+      };
+      img.src = '/world-overview.png';
+    }
+
+    // ═══════════════════════════════
+    // Chunk Loading
+    // ═══════════════════════════════
+    function loadChunk(cx, cy) {
+      const key = `${cx}_${cy}`;
+      if (chunkCache.has(key)) return chunkCache.get(key);
       
-      // HP bar
-      const bw = T2 * 1.5;
-      const bh = 2;
-      const bx = ax - bw/2;
-      const by = ay - spriteH * 0.08;
-      ctx.fillStyle = 'rgba(0,0,0,0.6)';
-      ctx.fillRect(bx, by, bw, bh);
-      ctx.fillStyle = agent.hp > 50 ? '#98c379' : agent.hp > 25 ? '#e6c07b' : '#e06c75';
-      ctx.fillRect(bx, by, bw * (agent.hp / 100), bh);
+      const entry = { img: null, loading: true };
+      chunkCache.set(key, entry);
       
-      // LLM inner thought (fades after 10 seconds)
-      const thought = agentThoughts[agent.id];
-      if (thought && performance.now() - thought.time < 10000) {
-        const fadeAlpha = Math.max(0, 1 - (performance.now() - thought.time) / 10000);
-        const EMOTION_COLORS = { curious:'#61afef', afraid:'#e06c75', determined:'#98c379', lonely:'#c678dd', excited:'#e6c07b', content:'#98c379', anxious:'#e06c75', angry:'#e06c75', hopeful:'#61afef', grieving:'#c678dd' };
-        const tColor = EMOTION_COLORS[thought.emotion] || '#c5c8c6';
-        const tText = '💭 "' + (thought.text.length > 30 ? thought.text.slice(0,30)+'…' : thought.text) + '"';
-        ctx.font = `${Math.max(5, 6)}px monospace`;
-        const ttw = ctx.measureText(tText).width;
-        ctx.fillStyle = `rgba(0,0,0,${(0.8*fadeAlpha).toFixed(2)})`;
-        ctx.fillRect(ax - ttw/2 - 4, ay - spriteH * 0.42 - 8, ttw + 8, 10);
-        ctx.fillStyle = tColor.replace(')', `,${fadeAlpha})`).replace('rgb', 'rgba');
-        ctx.globalAlpha = fadeAlpha;
-        ctx.fillStyle = tColor;
-        ctx.fillText(tText, ax - ttw/2, ay - spriteH * 0.42);
-        ctx.globalAlpha = 1;
+      if (chunkCache.size > MAX_CACHED_CHUNKS) {
+        const first = chunkCache.keys().next().value;
+        chunkCache.delete(first);
       }
       
-      // Action/intent label (thought bubble)
-      const intentText = agent.mind?.intent?.reason || agent.mind?.intent?.action || agent.mind?.action || '';
-      if (intentText && intentText !== 'idle') {
-        const ACTION_ICONS = { move:'🚶', gather:'🧺', rest:'😴', eat:'🍎', craft:'⚒️', experiment:'🔬', chat:'💬', gift:'🎁', fight:'⚔️', hunt:'🏹', explore:'🧭', build:'🏗️', plant:'🌱', cook:'🍳', drop:'🗑️', pickup:'📦' };
-        const icon = ACTION_ICONS[agent.mind?.intent?.action || agent.mind?.action] || '💭';
-        const label = icon + ' ' + (intentText.length > 18 ? intentText.slice(0,18)+'…' : intentText);
-        ctx.font = `${Math.max(5, 7)}px monospace`;
-        const tw = ctx.measureText(label).width;
-        ctx.fillStyle = 'rgba(0,0,0,0.7)';
-        ctx.fillRect(ax - tw/2 - 3, ay - spriteH * 0.28 - 8, tw + 6, 10);
-        ctx.fillStyle = '#e5c07b';
-        ctx.fillText(label, ax - tw/2, ay - spriteH * 0.28);
-      }
-    } else if (camera.zoom >= 0.5) {
-      // At lower zoom, just show a dot marker
-      ctx.fillStyle = '#e6c07b';
-      ctx.beginPath();
-      ctx.arc(ax, drawY * T2 + T2/2, 3, 0, Math.PI * 2);
-      ctx.fill();
+      const img = new Image();
+      img.onload = () => { entry.img = img; entry.loading = false; };
+      img.onerror = () => { entry.loading = false; };
+      img.src = `/api/tile/${cx}/${cy}`;
+      
+      return entry;
     }
-  }
-  
-  // Draw wildlife (animals)
-  for (const animal of worldWildlife) {
-    const ax = animal.tileX * T2 + T2/2;
-    const ay = animal.tileY * T2 + T2/2;
 
-    if (camera.zoom >= 0.8) {
-      // Draw emoji at tile
-      const fontSize = Math.max(8, Math.floor(T2 * 0.8));
-      ctx.font = `${fontSize}px serif`;
-      ctx.textAlign = 'center';
-      ctx.fillText(animal.emoji || '🐾', ax, ay + fontSize * 0.3);
-
-      // HP bar for damaged animals
-      if (animal.hp < animal.maxHp && camera.zoom >= 1.5) {
-        const bw = T2 * 1.2;
-        const bh = 2;
-        const bx = ax - bw/2;
-        const by = ay - fontSize * 0.5;
-        ctx.fillStyle = 'rgba(0,0,0,0.5)';
-        ctx.fillRect(bx, by, bw, bh);
-        ctx.fillStyle = animal.type === 'predator' ? '#e06c75' : '#98c379';
-        ctx.fillRect(bx, by, bw * (animal.hp / animal.maxHp), bh);
-      }
-
-      // State indicator for predators
-      if (animal.type === 'predator' && animal.state === 'hunting' && camera.zoom >= 1.5) {
-        ctx.font = `${Math.max(6, 8)}px monospace`;
-        ctx.fillStyle = '#e06c75';
-        ctx.fillText('⚠️', ax + T2 * 0.5, ay - fontSize * 0.3);
-      }
-    } else if (camera.zoom >= 0.3) {
-      // At low zoom, colored dot — red for predators, green for prey
-      ctx.fillStyle = animal.type === 'predator' ? '#e06c75' : '#98c379';
-      ctx.beginPath();
-      ctx.arc(ax, ay, 2, 0, Math.PI * 2);
-      ctx.fill();
-    }
-  }
-
-  // Draw persistent world fires
-  for (const fire of worldFires) {
-    const fx = fire.tileX * T2 + T2/2;
-    const fy = fire.tileY * T2 + T2/2;
-    const t = performance.now() / 200;
-    // Flickering glow
-    const flicker = 0.7 + Math.sin(t + fire.tileX) * 0.15 + Math.sin(t * 1.7 + fire.tileY) * 0.15;
-    const r = T2 * 1.5 * flicker;
-    // Ground glow
-    const grad = ctx.createRadialGradient(fx, fy, 0, fx, fy, r);
-    grad.addColorStop(0, `rgba(255,120,20,${(0.4 * flicker).toFixed(2)})`);
-    grad.addColorStop(0.5, `rgba(255,80,10,${(0.15 * flicker).toFixed(2)})`);
-    grad.addColorStop(1, 'rgba(255,60,0,0)');
-    ctx.fillStyle = grad;
-    ctx.beginPath(); ctx.arc(fx, fy, r, 0, Math.PI * 2); ctx.fill();
-    // Fire particles (simple animated)
-    for (let i = 0; i < 4; i++) {
-      const px = fx + Math.sin(t * 2 + i * 1.5) * T2 * 0.3;
-      const py = fy - Math.abs(Math.sin(t * 3 + i)) * T2 * 0.8 - 2;
-      const s = (2 + Math.sin(t + i) * 1) * flicker;
-      ctx.fillStyle = i < 2 ? `rgba(255,200,50,${(0.8*flicker).toFixed(2)})` : `rgba(255,100,20,${(0.6*flicker).toFixed(2)})`;
-      ctx.beginPath(); ctx.arc(px, py, s, 0, Math.PI * 2); ctx.fill();
-    }
-  }
-  
-  // Draw gas clouds
-  for (const gas of gasClouds) {
-    const gx = gas.tileX * T2 + T2/2;
-    const gy = gas.tileY * T2 + T2/2;
-    const r = T2 * (1 + gas.density);
-    const [cr, cg, cb] = gas.color || [120,120,120];
-    const alpha = Math.min(0.5, gas.density * 0.35);
-    const grad = ctx.createRadialGradient(gx, gy, 0, gx, gy, r);
-    grad.addColorStop(0, `rgba(${cr},${cg},${cb},${alpha.toFixed(2)})`);
-    grad.addColorStop(1, `rgba(${cr},${cg},${cb},0)`);
-    ctx.fillStyle = grad;
-    ctx.beginPath(); ctx.arc(gx, gy, r, 0, Math.PI * 2); ctx.fill();
-  }
-  
-  // Draw growth sites (small green dots that grow)
-  for (const site of growthSites) {
-    const sx = site.tileX * T2 + T2/2;
-    const sy = site.tileY * T2 + T2/2;
-    const p = Math.max(0, site.progress);
-    const size = 1 + p * 4; // grows from 1px to 5px
-    const green = Math.floor(120 + p * 135);
-    ctx.fillStyle = `rgba(60,${green},40,${(0.4 + p * 0.5).toFixed(2)})`;
-    ctx.beginPath(); ctx.arc(sx, sy, size, 0, Math.PI * 2); ctx.fill();
-    // Tiny leaf shape at higher progress
-    if (p > 0.5) {
-      ctx.fillStyle = `rgba(40,${green},30,0.6)`;
-      ctx.beginPath();
-      ctx.ellipse(sx, sy - size, size * 0.6, size * 1.2, 0, 0, Math.PI * 2);
-      ctx.fill();
-    }
-  }
-  
-  // Draw tile effects (fire, explosions, sparkles)
-  if (tileEffects.length > 0) {
-    updateAndDrawEffects(ctx, T2);
-  }
-  
-  ctx.restore();
-
-  // Lightning flash overlay
-  if (lightningFlash) {
-    const elapsed = performance.now() - lightningFlash;
-    if (elapsed < 300) {
-      const alpha = (1 - elapsed / 300) * 0.6;
-      ctx.fillStyle = `rgba(220,230,255,${alpha.toFixed(2)})`;
+    // ═══════════════════════════════
+    // Rendering
+    // ═══════════════════════════════
+    function render() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      ctx.imageSmoothingEnabled = false;
+      
+      ctx.fillStyle = '#0a0e14';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
-    } else if (elapsed > 1000) {
-      lightningFlash = 0;
+
+      if (!tileInfo) { 
+        requestAnimationFrame(render); 
+        return; 
+      }
+
+      // Auto-follow agent
+      if (followingAgent) {
+        const agent = agents.find(a => a.id === followingAgent);
+        if (agent && agent.alive) {
+          const targetX = -agent.tileX * tileInfo.tileSize * camera.zoom + window.innerWidth / 2;
+          const targetY = -agent.tileY * tileInfo.tileSize * camera.zoom + window.innerHeight / 2;
+          camera.x += (targetX - camera.x) * 0.05;
+          camera.y += (targetY - camera.y) * 0.05;
+        } else {
+          followingAgent = null;
+        }
+      }
+
+      const T = tileInfo.tileSize;
+      const CT = tileInfo.chunkTiles;
+      const CP = tileInfo.chunkPx;
+      const pixelSize = T * camera.zoom;
+
+      if (pixelSize < 2 && overviewImage) {
+        ctx.save();
+        ctx.translate(camera.x, camera.y);
+        ctx.scale(camera.zoom, camera.zoom);
+        const scale = T * 2;
+        ctx.drawImage(overviewImage, 0, 0, tileInfo.worldWidth * T, tileInfo.worldHeight * T);
+        ctx.restore();
+      } else {
+        ctx.save();
+        ctx.translate(camera.x, camera.y);
+        ctx.scale(camera.zoom, camera.zoom);
+
+        const viewLeft = -camera.x / camera.zoom;
+        const viewTop = -camera.y / camera.zoom;
+        const viewRight = viewLeft + canvas.width / camera.zoom;
+        const viewBottom = viewTop + canvas.height / camera.zoom;
+
+        const startCX = Math.max(0, Math.floor(viewLeft / CP));
+        const startCY = Math.max(0, Math.floor(viewTop / CP));
+        const endCX = Math.min(tileInfo.chunksX - 1, Math.floor(viewRight / CP));
+        const endCY = Math.min(tileInfo.chunksY - 1, Math.floor(viewBottom / CP));
+
+        for (let cy = startCY; cy <= endCY; cy++) {
+          for (let cx = startCX; cx <= endCX; cx++) {
+            const chunk = loadChunk(cx, cy);
+            if (chunk.img) {
+              ctx.drawImage(chunk.img, cx * CP, cy * CP, CP, CP);
+            } else if (overviewImage) {
+              const srcX = (cx * CT * 2 / tileInfo.worldWidth) * overviewImage.width;
+              const srcY = (cy * CT * 2 / tileInfo.worldHeight) * overviewImage.height;
+              const srcW = (CT * 2 / tileInfo.worldWidth) * overviewImage.width;
+              const srcH = (CT * 2 / tileInfo.worldHeight) * overviewImage.height;
+              ctx.drawImage(overviewImage, srcX, srcY, Math.max(1,srcW), Math.max(1,srcH), cx * CP, cy * CP, CP, CP);
+            }
+          }
+        }
+
+        ctx.restore();
+      }
+
+      // Draw agents
+      ctx.save();
+      ctx.translate(camera.x, camera.y);
+      ctx.scale(camera.zoom, camera.zoom);
+      ctx.imageSmoothingEnabled = false;
+      
+      const T2 = tileInfo.tileSize;
+      const lerpSpeed = 0.08;
+      for (const agent of agents) {
+        if (!agent.alive) continue;
+        let v = agentVisuals[agent.id];
+        if (!v) { 
+          v = agentVisuals[agent.id] = { renderX: agent.tileX, renderY: agent.tileY, targetX: agent.tileX, targetY: agent.tileY };
+        }
+        v.renderX += (v.targetX - v.renderX) * lerpSpeed;
+        v.renderY += (v.targetY - v.renderY) * lerpSpeed;
+        if (Math.abs(v.renderX - v.targetX) < 0.01) v.renderX = v.targetX;
+        if (Math.abs(v.renderY - v.targetY) < 0.01) v.renderY = v.targetY;
+      }
+      
+      for (const agent of agents) {
+        if (!agent.alive) continue;
+        const v = agentVisuals[agent.id];
+        const drawX = v ? v.renderX : agent.tileX;
+        const drawY = v ? v.renderY : agent.tileY;
+        
+        const lerpedAgent = { ...agent, tileX: drawX, tileY: drawY };
+        drawAgentSprite(ctx, lerpedAgent, T2);
+        
+        const ax = drawX * T2 + T2/2;
+        const ay = drawY * T2;
+        const spriteH = (22 / 8) * T2;
+        
+        if (camera.zoom >= 1.5) {
+          ctx.fillStyle = '#fff';
+          ctx.font = `bold ${Math.max(6, 8)}px monospace`;
+          ctx.textAlign = 'center';
+          ctx.shadowColor = '#000';
+          ctx.shadowBlur = 2;
+          ctx.fillText(agent.name, ax, ay - spriteH * 0.15);
+          ctx.shadowBlur = 0;
+          
+          const bw = T2 * 1.5;
+          const bh = 2;
+          const bx = ax - bw/2;
+          const by = ay - spriteH * 0.08;
+          ctx.fillStyle = 'rgba(0,0,0,0.6)';
+          ctx.fillRect(bx, by, bw, bh);
+          ctx.fillStyle = agent.hp > 50 ? '#98c379' : agent.hp > 25 ? '#e6c07b' : '#e06c75';
+          ctx.fillRect(bx, by, bw * (agent.hp / 100), bh);
+          
+          const thought = agentThoughts[agent.id];
+          if (thought && performance.now() - thought.time < 10000) {
+            const fadeAlpha = Math.max(0, 1 - (performance.now() - thought.time) / 10000);
+            const EMOTION_COLORS = { 
+              curious:'#61afef', afraid:'#e06c75', determined:'#98c379', lonely:'#c678dd', 
+              excited:'#e6c07b', content:'#98c379', anxious:'#e06c75', angry:'#e06c75', 
+              hopeful:'#61afef', grieving:'#c678dd' 
+            };
+            const tColor = EMOTION_COLORS[thought.emotion] || '#c5c8c6';
+            const tText = '💭 "' + (thought.text.length > 30 ? thought.text.slice(0,30)+'…' : thought.text) + '"';
+            ctx.font = `${Math.max(5, 6)}px monospace`;
+            const ttw = ctx.measureText(tText).width;
+            ctx.fillStyle = `rgba(0,0,0,${(0.8*fadeAlpha).toFixed(2)})`;
+            ctx.fillRect(ax - ttw/2 - 4, ay - spriteH * 0.42 - 8, ttw + 8, 10);
+            ctx.globalAlpha = fadeAlpha;
+            ctx.fillStyle = tColor;
+            ctx.fillText(tText, ax - ttw/2, ay - spriteH * 0.42);
+            ctx.globalAlpha = 1;
+          }
+          
+          const intentText = agent.mind?.intent?.reason || agent.mind?.intent?.action || agent.mind?.action || '';
+          if (intentText && intentText !== 'idle') {
+            const ACTION_ICONS = { 
+              move:'🚶', gather:'🧺', rest:'😴', eat:'🍎', craft:'⚒️', experiment:'🔬', 
+              chat:'💬', gift:'🎁', fight:'⚔️', hunt:'🏹', explore:'🧭', build:'🏗️', 
+              plant:'🌱', cook:'🍳', drop:'🗑️', pickup:'📦' 
+            };
+            const icon = ACTION_ICONS[agent.mind?.intent?.action || agent.mind?.action] || '💭';
+            const label = icon + ' ' + (intentText.length > 18 ? intentText.slice(0,18)+'…' : intentText);
+            ctx.font = `${Math.max(5, 7)}px monospace`;
+            const tw = ctx.measureText(label).width;
+            ctx.fillStyle = 'rgba(0,0,0,0.7)';
+            ctx.fillRect(ax - tw/2 - 3, ay - spriteH * 0.28 - 8, tw + 6, 10);
+            ctx.fillStyle = '#e5c07b';
+            ctx.fillText(label, ax - tw/2, ay - spriteH * 0.28);
+          }
+        } else if (camera.zoom >= 0.5) {
+          ctx.fillStyle = '#e6c07b';
+          ctx.beginPath();
+          ctx.arc(ax, drawY * T2 + T2/2, 3, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      }
+      
+      // Draw wildlife
+      for (const animal of worldWildlife) {
+        const ax = animal.tileX * T2 + T2/2;
+        const ay = animal.tileY * T2 + T2/2;
+
+        if (camera.zoom >= 0.8) {
+          const fontSize = Math.max(8, Math.floor(T2 * 0.8));
+          ctx.font = `${fontSize}px serif`;
+          ctx.textAlign = 'center';
+          ctx.fillText(animal.emoji || '🐾', ax, ay + fontSize * 0.3);
+
+          if (animal.hp < animal.maxHp && camera.zoom >= 1.5) {
+            const bw = T2 * 1.2;
+            const bh = 2;
+            const bx = ax - bw/2;
+            const by = ay - fontSize * 0.5;
+            ctx.fillStyle = 'rgba(0,0,0,0.5)';
+            ctx.fillRect(bx, by, bw, bh);
+            ctx.fillStyle = animal.type === 'predator' ? '#e06c75' : '#98c379';
+            ctx.fillRect(bx, by, bw * (animal.hp / animal.maxHp), bh);
+          }
+
+          if (animal.type === 'predator' && animal.state === 'hunting' && camera.zoom >= 1.5) {
+            ctx.font = `${Math.max(6, 8)}px monospace`;
+            ctx.fillStyle = '#e06c75';
+            ctx.fillText('⚠️', ax + T2 * 0.5, ay - fontSize * 0.3);
+          }
+        } else if (camera.zoom >= 0.3) {
+          ctx.fillStyle = animal.type === 'predator' ? '#e06c75' : '#98c379';
+          ctx.beginPath();
+          ctx.arc(ax, ay, 2, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      }
+
+      // Draw world fires
+      for (const fire of worldFires) {
+        const fx = fire.tileX * T2 + T2/2;
+        const fy = fire.tileY * T2 + T2/2;
+        const t = performance.now() / 200;
+        const flicker = 0.7 + Math.sin(t + fire.tileX) * 0.15 + Math.sin(t * 1.7 + fire.tileY) * 0.15;
+        const r = T2 * 1.5 * flicker;
+        const grad = ctx.createRadialGradient(fx, fy, 0, fx, fy, r);
+        grad.addColorStop(0, `rgba(255,120,20,${(0.4 * flicker).toFixed(2)})`);
+        grad.addColorStop(0.5, `rgba(255,80,10,${(0.15 * flicker).toFixed(2)})`);
+        grad.addColorStop(1, 'rgba(255,60,0,0)');
+        ctx.fillStyle = grad;
+        ctx.beginPath(); 
+        ctx.arc(fx, fy, r, 0, Math.PI * 2); 
+        ctx.fill();
+        
+        for (let i = 0; i < 4; i++) {
+          const px = fx + Math.sin(t * 2 + i * 1.5) * T2 * 0.3;
+          const py = fy - Math.abs(Math.sin(t * 3 + i)) * T2 * 0.8 - 2;
+          const s = (2 + Math.sin(t + i) * 1) * flicker;
+          ctx.fillStyle = i < 2 ? `rgba(255,200,50,${(0.8*flicker).toFixed(2)})` : `rgba(255,100,20,${(0.6*flicker).toFixed(2)})`;
+          ctx.beginPath(); 
+          ctx.arc(px, py, s, 0, Math.PI * 2); 
+          ctx.fill();
+        }
+      }
+      
+      // Draw gas clouds
+      for (const gas of gasClouds) {
+        const gx = gas.tileX * T2 + T2/2;
+        const gy = gas.tileY * T2 + T2/2;
+        const r = T2 * (1 + gas.density);
+        const [cr, cg, cb] = gas.color || [120,120,120];
+        const alpha = Math.min(0.5, gas.density * 0.35);
+        const grad = ctx.createRadialGradient(gx, gy, 0, gx, gy, r);
+        grad.addColorStop(0, `rgba(${cr},${cg},${cb},${alpha.toFixed(2)})`);
+        grad.addColorStop(1, `rgba(${cr},${cg},${cb},0)`);
+        ctx.fillStyle = grad;
+        ctx.beginPath(); 
+        ctx.arc(gx, gy, r, 0, Math.PI * 2); 
+        ctx.fill();
+      }
+      
+      // Draw growth sites
+      for (const site of growthSites) {
+        const sx = site.tileX * T2 + T2/2;
+        const sy = site.tileY * T2 + T2/2;
+        const p = Math.max(0, site.progress);
+        const size = 1 + p * 4;
+        const green = Math.floor(120 + p * 135);
+        ctx.fillStyle = `rgba(60,${green},40,${(0.4 + p * 0.5).toFixed(2)})`;
+        ctx.beginPath(); 
+        ctx.arc(sx, sy, size, 0, Math.PI * 2); 
+        ctx.fill();
+        
+        if (p > 0.5) {
+          ctx.fillStyle = `rgba(40,${green},30,0.6)`;
+          ctx.beginPath();
+          ctx.ellipse(sx, sy - size, size * 0.6, size * 1.2, 0, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      }
+      
+      // Draw tile effects
+      if (tileEffects.length > 0) {
+        updateAndDrawEffects(ctx, T2);
+      }
+      
+      ctx.restore();
+
+      // Lightning flash
+      if (lightningFlash) {
+        const elapsed = performance.now() - lightningFlash;
+        if (elapsed < 300) {
+          const alpha = (1 - elapsed / 300) * 0.6;
+          ctx.fillStyle = `rgba(220,230,255,${alpha.toFixed(2)})`;
+          ctx.fillRect(0, 0, canvas.width, canvas.height);
+        } else if (elapsed > 1000) {
+          lightningFlash = 0;
+        }
+      }
+      
+      // Update UI
+      document.getElementById('top-zoom').textContent = camera.zoom.toFixed(1) + 'x';
+      updateMinimap();
+      requestAnimationFrame(render);
     }
-  }
-  
-  // HUD updates
-  document.getElementById('hud-zoom').textContent = camera.zoom.toFixed(1) + 'x';
-  updateMinimap();
-  requestAnimationFrame(render);
-}
 
-// ═══════════════════════════════
-// HUD
-// ═══════════════════════════════
-function updateHUD(tick, gameTime, weather) {
-  document.getElementById('hud-tick').textContent = tick || 0;
-  document.getElementById('hud-agents').textContent = agents.filter(a => a.alive).length;
-  if (gameTime) {
-    document.getElementById('hud-day').textContent = gameTime.day;
-    document.getElementById('hud-time').textContent = `${String(gameTime.hour).padStart(2,'0')}:00`;
-    document.getElementById('hud-period').textContent = gameTime.period === 'day' ? '☀️' : '🌙';
-  }
-  if (weather) document.getElementById('hud-weather').textContent = weather.condition || weather.type || 'Clear';
-}
+    // ═══════════════════════════════
+    // UI Updates
+    // ═══════════════════════════════
+    function updateTopBar(tick, gameTime, weather) {
+      document.getElementById('top-tick').textContent = tick || 0;
+      const aliveCount = agents.filter(a => a.alive).length;
+      document.getElementById('top-alive').textContent = aliveCount;
+      document.getElementById('top-total').textContent = agents.length;
+      
+      if (gameTime) {
+        document.getElementById('top-day').textContent = gameTime.day;
+        document.getElementById('top-time').textContent = `${String(gameTime.hour).padStart(2,'0')}:00`;
+        document.getElementById('top-period').textContent = gameTime.period === 'day' ? '☀️' : '🌙';
+      }
+      if (weather) {
+        document.getElementById('top-weather').textContent = weather.condition || weather.type || 'Clear';
+      }
+    }
 
-function updateAgentList() {
-  document.getElementById('agent-list').innerHTML = agents.map(a => `
-    <div class="agent-row" onclick="focusAgent('${a.id}')">
-      <div class="agent-dot ${a.alive ? 'alive' : 'dead'}"></div>
-      <span class="agent-name">${a.name}</span>
-      <span class="agent-level">${a.stats?.title || 'Lv.' + (a.stats?.level||1)}</span>
-    </div>`).join('');
-}
+    function updateAgentList() {
+      const aliveAgents = agents.filter(a => a.alive);
+      const deadAgents = agents.filter(a => !a.alive);
+      const sortedAgents = [...aliveAgents, ...deadAgents];
+      
+      document.getElementById('sidebar-count').textContent = agents.length;
+      
+      const ACTION_ICONS = { 
+        move:'🚶', gather:'🧺', rest:'😴', eat:'🍎', craft:'⚒️', experiment:'🔬', 
+        chat:'💬', gift:'🎁', fight:'⚔️', hunt:'🏹', explore:'🧭', build:'🏗️', 
+        plant:'🌱', cook:'🍳', drop:'🗑️', pickup:'📦', idle:'💤' 
+      };
+      
+      document.getElementById('agent-list').innerHTML = sortedAgents.map(a => {
+        const action = a.mind?.intent?.action || a.mind?.action || 'idle';
+        const actionIcon = ACTION_ICONS[action] || '💭';
+        const hpPercent = Math.round(a.hp || 100);
+        const hpColor = hpPercent > 70 ? '#98c379' : hpPercent > 30 ? '#e6c07b' : '#e06c75';
+        
+        return `
+          <div class="agent-row ${selectedAgentId === a.id ? 'selected' : ''}" onclick="selectAgent('${a.id}')">
+            <div class="agent-status ${a.alive ? 'alive' : 'dead'}"></div>
+            <div class="agent-info">
+              <div class="agent-name">${a.name}</div>
+              <div class="agent-hp-bar">
+                <div class="agent-hp-fill" style="width: ${hpPercent}%; background: ${hpColor};"></div>
+              </div>
+              <div class="agent-action">${actionIcon} ${action}</div>
+            </div>
+            <div class="agent-level">${a.stats?.title || 'Lv.' + (a.stats?.level||1)}</div>
+          </div>
+        `;
+      }).join('');
+    }
 
-function updateNewsList() {
-  document.getElementById('news-list').innerHTML = news.slice(0,30).map(n =>
-    `<div class="news-item"><span class="name">${n.name||'???'}</span> ${n.message}</div>`
-  ).join('');
-  if (selectedAgentId) updateAgentDetail();
-}
+    function updateNewsList() {
+      const newsItems = news.slice(0, 8).map(n => {
+        return `
+          <div class="news-item">
+            <span class="news-time">${n.time || ''}</span>
+            <span class="news-agent">${n.name||'???'}</span> 
+            ${n.message}
+          </div>
+        `;
+      }).join('');
+      
+      document.getElementById('feed-content').innerHTML = newsItems;
+      
+      // Auto-scroll to bottom
+      const feedContent = document.getElementById('feed-content');
+      feedContent.scrollTop = feedContent.scrollHeight;
+      
+      if (selectedAgentId) {
+        updateAgentDetail();
+      }
+    }
 
-function updateMinimap() {
-  if (!tileInfo || !overviewImage) return;
-  const vp = document.getElementById('minimap-viewport');
-  const T = tileInfo.tileSize;
-  const worldPx = tileInfo.worldWidth * T;
-  const worldPy = tileInfo.worldHeight * T;
-  const sx = 200 / worldPx, sy = 200 / worldPy;
-  const vpX = (-camera.x / camera.zoom) * sx;
-  const vpY = (-camera.y / camera.zoom) * sy;
-  const vpW = (canvas.width / camera.zoom) * sx;
-  const vpH = (canvas.height / camera.zoom) * sy;
-  vp.style.display = 'block';
-  vp.style.left = (minimap.offsetLeft + Math.max(0, vpX)) + 'px';
-  vp.style.top = (minimap.offsetTop + Math.max(0, vpY)) + 'px';
-  vp.style.width = Math.min(200, vpW) + 'px';
-  vp.style.height = Math.min(200, vpH) + 'px';
-}
+    function updateStats() {
+      const aliveCount = agents.filter(a => a.alive).length;
+      const deadCount = agents.filter(a => !a.alive).length;
+      const discoveries = 0; // This would need to be tracked separately
+      const relationships = 0; // This would need to be tracked separately
+      
+      document.getElementById('stats-grid').innerHTML = `
+        <span class="stats-label">Total Agents:</span>
+        <span class="stats-value">${agents.length}</span>
+        <span class="stats-label">Alive:</span>
+        <span class="stats-value">${aliveCount}</span>
+        <span class="stats-label">Dead:</span>
+        <span class="stats-value">${deadCount}</span>
+        <span class="stats-label">World Fires:</span>
+        <span class="stats-value">${worldFires.length}</span>
+        <span class="stats-label">Gas Clouds:</span>
+        <span class="stats-value">${gasClouds.length}</span>
+        <span class="stats-label">Wildlife:</span>
+        <span class="stats-value">${worldWildlife.length}</span>
+        <span class="stats-label">Effects:</span>
+        <span class="stats-value">${tileEffects.length}</span>
+      `;
+    }
 
-// ═══════════════════════════════
-// Input
-// ═══════════════════════════════
-canvas.addEventListener('mousedown', e => {
-  dragging = true; dragStart = {x:e.clientX, y:e.clientY}; cameraStart = {x:camera.x, y:camera.y};
-  canvas.classList.add('dragging');
-});
-canvas.addEventListener('mousemove', e => {
-  if (dragging) { camera.x = cameraStart.x + (e.clientX - dragStart.x); camera.y = cameraStart.y + (e.clientY - dragStart.y); }
-  if (tileInfo) {
-    const T = tileInfo.tileSize;
-    const tx = Math.floor((e.clientX - camera.x) / (T * camera.zoom));
-    const ty = Math.floor((e.clientY - camera.y) / (T * camera.zoom));
-    document.getElementById('hud-pos').textContent = `(${tx}, ${ty})`;
-  }
-});
-canvas.addEventListener('mouseup', () => { dragging = false; canvas.classList.remove('dragging'); });
-canvas.addEventListener('mouseleave', () => { dragging = false; canvas.classList.remove('dragging'); });
+    function updateMinimap() {
+      if (!tileInfo || !overviewImage) return;
+      
+      // Update viewport indicator
+      const vp = document.getElementById('minimap-viewport');
+      const T = tileInfo.tileSize;
+      const worldPx = tileInfo.worldWidth * T;
+      const worldPy = tileInfo.worldHeight * T;
+      const sx = 200 / worldPx, sy = 200 / worldPy;
+      const vpX = (-camera.x / camera.zoom) * sx;
+      const vpY = (-camera.y / camera.zoom) * sy;
+      const vpW = (canvas.width / camera.zoom) * sx;
+      const vpH = (canvas.height / camera.zoom) * sy;
+      vp.style.display = 'block';
+      vp.style.left = (minimap.offsetLeft + Math.max(0, vpX)) + 'px';
+      vp.style.top = (minimap.offsetTop + Math.max(0, vpY)) + 'px';
+      vp.style.width = Math.min(200, vpW) + 'px';
+      vp.style.height = Math.min(200, vpH) + 'px';
+      
+      // Update agent dots
+      const agentsContainer = document.getElementById('minimap-agents');
+      agentsContainer.innerHTML = agents.map(a => {
+        if (!a.alive) return '';
+        const x = (a.tileX / tileInfo.worldWidth) * 196; // 200 - 4px for borders
+        const y = (a.tileY / tileInfo.worldHeight) * 196;
+        return `<div class="minimap-agent-dot ${a.alive ? 'alive' : 'dead'}" style="left: ${x}px; top: ${y}px;"></div>`;
+      }).join('');
+    }
 
-canvas.addEventListener('wheel', e => {
-  e.preventDefault();
-  const oldZoom = camera.zoom;
-  camera.zoom = Math.max(0.1, Math.min(30, camera.zoom * (e.deltaY < 0 ? 1.15 : 1/1.15)));
-  camera.x = e.clientX - (e.clientX - camera.x) * (camera.zoom / oldZoom);
-  camera.y = e.clientY - (e.clientY - camera.y) * (camera.zoom / oldZoom);
-}, { passive: false });
+    function selectAgent(id) {
+      selectedAgentId = id;
+      updateAgentList();
+      updateAgentDetail();
+      focusAgent(id);
+    }
 
-// Touch
-let lastDist = 0;
-canvas.addEventListener('touchstart', e => {
-  if (e.touches.length === 1) { dragging = true; dragStart = {x:e.touches[0].clientX, y:e.touches[0].clientY}; cameraStart = {x:camera.x, y:camera.y}; }
-  else if (e.touches.length === 2) lastDist = Math.hypot(e.touches[0].clientX-e.touches[1].clientX, e.touches[0].clientY-e.touches[1].clientY);
-});
-canvas.addEventListener('touchmove', e => {
-  e.preventDefault();
-  if (e.touches.length === 1 && dragging) { camera.x = cameraStart.x + (e.touches[0].clientX - dragStart.x); camera.y = cameraStart.y + (e.touches[0].clientY - dragStart.y); }
-  else if (e.touches.length === 2) { const d = Math.hypot(e.touches[0].clientX-e.touches[1].clientX, e.touches[0].clientY-e.touches[1].clientY); camera.zoom = Math.max(0.1, Math.min(30, camera.zoom * d / lastDist)); lastDist = d; }
-}, { passive: false });
-canvas.addEventListener('touchend', () => dragging = false);
+    function focusAgent(id) {
+      const a = agents.find(a => a.id === id);
+      if (!a || !tileInfo) return;
+      
+      camera.zoom = 3;
+      camera.x = -a.tileX * tileInfo.tileSize * camera.zoom + window.innerWidth / 2;
+      camera.y = -a.tileY * tileInfo.tileSize * camera.zoom + window.innerHeight / 2;
+    }
 
-// Actions
-let selectedAgentId = null;
-function focusAgent(id) {
-  const a = agents.find(a => a.id === id); if (!a || !tileInfo) return;
-  selectedAgentId = id;
-  camera.zoom = 3;
-  camera.x = -a.tileX * tileInfo.tileSize * camera.zoom + window.innerWidth/2;
-  camera.y = -a.tileY * tileInfo.tileSize * camera.zoom + window.innerHeight/2;
-  updateAgentDetail();
-}
-function updateAgentDetail() {
-  const el = document.getElementById('agent-detail');
-  if (!selectedAgentId) { el.style.display = 'none'; return; }
-  const a = agents.find(a => a.id === selectedAgentId);
-  if (!a) { el.style.display = 'none'; return; }
-  el.style.display = 'block';
-  const mind = a.mind || {};
-  const intent = mind.intent || {};
-  const ACTION_ICONS = { move:'🚶', gather:'🧺', rest:'😴', eat:'🍎', craft:'⚒️', experiment:'🔬', chat:'💬', gift:'🎁', fight:'⚔️', explore:'🧭', build:'🏗️', idle:'💤' };
-  const icon = ACTION_ICONS[intent.action || mind.action] || '💭';
-  const traits = (mind.traits || []).join(', ') || '???';
-  const inv = (a.inventory || []).slice(0, 10).map(i => `${i.name}×${i.quantity||1}`).join(', ') || 'empty';
-  el.innerHTML = `
-    <div class="hud-title" style="margin-bottom:6px">${a.name} <span style="color:#636d83;font-weight:normal">${a.stats?.title||''}</span> <span onclick="selectedAgentId=null;updateAgentDetail()" style="cursor:pointer;float:right">✕</span></div>
-    <div style="color:#98c379">❤️ ${Math.round(a.hp||100)} &nbsp; ⚡ ${Math.round(a.energy||0)} &nbsp; 🍖 ${Math.round(100-(a.hunger||0))}</div>
-    <div style="color:#e5c07b;margin-top:4px">${icon} ${intent.reason || intent.action || mind.action || 'idle'}</div>
-    <div style="color:#636d83;margin-top:2px">😊 ${mind.mood || '?'} &nbsp; 🎭 ${traits}</div>
-    <div style="color:#abb2bf;margin-top:4px;font-size:10px">📦 ${inv}</div>
-    <div style="color:#636d83;margin-top:2px;font-size:10px">📍 (${a.tileX}, ${a.tileY}) ${a.zone||''}</div>
-  `;
-}
-async function spawnAgent() {
-  const name = prompt('Agent name:', `Wanderer-${Math.floor(Math.random()*999)}`);
-  if (!name) return;
-  await fetch('/api/spawn', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({name}) });
-}
-async function spawnMany(n) { await fetch('/api/spawn-many', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({count:n}) }); }
-function resetView() {
-  if (!worldInfo || !tileInfo) return;
-  camera.zoom = 3;
-  const sx = worldInfo.spawnPoint?.x || 1000, sy = worldInfo.spawnPoint?.y || 500;
-  camera.x = -sx * tileInfo.tileSize * camera.zoom + window.innerWidth/2;
-  camera.y = -sy * tileInfo.tileSize * camera.zoom + window.innerHeight/2;
-}
-document.addEventListener('keydown', e => {
-  const s = 80;
-  if (e.key==='ArrowLeft'||e.key==='a') camera.x += s;
-  if (e.key==='ArrowRight'||e.key==='d') camera.x -= s;
-  if (e.key==='ArrowUp'||e.key==='w') camera.y += s;
-  if (e.key==='ArrowDown'||e.key==='s') camera.y -= s;
-  if (e.key==='+'||e.key==='=') camera.zoom = Math.min(30, camera.zoom * 1.2);
-  if (e.key==='-') camera.zoom = Math.max(0.1, camera.zoom / 1.2);
-  if (e.key==='h') resetView();
-});
+    function updateAgentDetail() {
+      const detailPanel = document.getElementById('agent-detail');
+      
+      if (!selectedAgentId) {
+        detailPanel.classList.remove('visible');
+        return;
+      }
+      
+      const agent = agents.find(a => a.id === selectedAgentId);
+      if (!agent) {
+        detailPanel.classList.remove('visible');
+        return;
+      }
+      
+      detailPanel.classList.add('visible');
+      document.getElementById('detail-name').textContent = agent.name;
+      
+      const mind = agent.mind || {};
+      const intent = mind.intent || {};
+      const hp = Math.round(agent.hp || 100);
+      const hunger = Math.round(100 - (agent.hunger || 0));
+      const energy = Math.round(agent.energy || 0);
+      
+      const ACTION_ICONS = { 
+        move:'🚶', gather:'🧺', rest:'😴', eat:'🍎', craft:'⚒️', experiment:'🔬', 
+        chat:'💬', gift:'🎁', fight:'⚔️', hunt:'🏹', explore:'🧭', build:'🏗️', 
+        plant:'🌱', cook:'🍳', drop:'🗑️', pickup:'📦', idle:'💤' 
+      };
+      
+      const action = intent.action || mind.action || 'idle';
+      const actionIcon = ACTION_ICONS[action] || '💭';
+      const actionText = intent.reason || action;
+      const traits = (mind.traits || []).join(', ') || 'None';
+      const mood = mind.mood || 'Unknown';
+      const inventory = (agent.inventory || []).slice(0, 12);
+      
+      document.getElementById('detail-content').innerHTML = `
+        <div class="detail-section">
+          <div class="detail-section-title">Health & Status</div>
+          <div class="stat-bars">
+            <div class="stat-bar">
+              <div class="stat-icon">❤️</div>
+              <div class="stat-progress">
+                <div class="stat-fill hp" style="width: ${hp}%;"></div>
+              </div>
+              <div class="stat-value">${hp}</div>
+            </div>
+            <div class="stat-bar">
+              <div class="stat-icon">🍖</div>
+              <div class="stat-progress">
+                <div class="stat-fill hunger" style="width: ${hunger}%;"></div>
+              </div>
+              <div class="stat-value">${hunger}</div>
+            </div>
+            <div class="stat-bar">
+              <div class="stat-icon">⚡</div>
+              <div class="stat-progress">
+                <div class="stat-fill energy" style="width: ${energy}%;"></div>
+              </div>
+              <div class="stat-value">${energy}</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="detail-section">
+          <div class="detail-section-title">Current Action</div>
+          <div style="color: var(--text-info); display: flex; align-items: center; gap: 8px;">
+            <span>${actionIcon}</span>
+            <span>${actionText}</span>
+          </div>
+        </div>
+        
+        <div class="detail-section">
+          <div class="detail-section-title">Mood & Traits</div>
+          <div style="color: var(--text-warning); margin-bottom: 8px;">😊 ${mood}</div>
+          <div class="trait-list">
+            ${traits.split(', ').map(trait => 
+              trait !== 'None' ? `<span class="trait-tag">${trait}</span>` : ''
+            ).join('')}
+          </div>
+        </div>
+        
+        <div class="detail-section">
+          <div class="detail-section-title">Inventory</div>
+          <div class="inventory-grid">
+            ${inventory.length > 0 ? inventory.map(item => `
+              <div class="inventory-item">
+                <div>${item.name}</div>
+                <div style="color: var(--text-secondary);">×${item.quantity || 1}</div>
+              </div>
+            `).join('') : '<div style="color: var(--text-secondary); grid-column: 1/-1; text-align: center; padding: 16px;">Empty</div>'}
+          </div>
+        </div>
+        
+        <div class="detail-section">
+          <div class="detail-section-title">Location</div>
+          <div style="color: var(--text-secondary); font-family: 'SF Mono', monospace;">
+            📍 (${agent.tileX}, ${agent.tileY})
+            ${agent.zone ? `<br>🗺️ ${agent.zone}` : ''}
+          </div>
+        </div>
+      `;
+    }
 
-connect();
-</script>
+    function closeAgentDetail() {
+      selectedAgentId = null;
+      followingAgent = null;
+      updateAgentList();
+      updateAgentDetail();
+    }
+
+    function toggleSidebar() {
+      sidebarCollapsed = !sidebarCollapsed;
+      const sidebar = document.getElementById('agent-sidebar');
+      const detail = document.getElementById('agent-detail');
+      
+      if (sidebarCollapsed) {
+        sidebar.classList.add('collapsed');
+        detail.style.right = '0';
+      } else {
+        sidebar.classList.remove('collapsed');
+        detail.style.right = '280px';
+      }
+    }
+
+    function toggleStats() {
+      statsVisible = !statsVisible;
+      const overlay = document.getElementById('stats-overlay');
+      
+      if (statsVisible) {
+        overlay.classList.add('visible');
+        updateStats();
+      } else {
+        overlay.classList.remove('visible');
+      }
+    }
+
+    function toggleFollow() {
+      if (!selectedAgentId) {
+        // Auto-follow: cycle through alive agents
+        const aliveAgents = agents.filter(a => a.alive);
+        if (aliveAgents.length === 0) return;
+        
+        autoFollowIndex = (autoFollowIndex + 1) % aliveAgents.length;
+        followingAgent = aliveAgents[autoFollowIndex].id;
+        selectedAgentId = followingAgent;
+        updateAgentList();
+        updateAgentDetail();
+      } else {
+        // Follow the selected agent
+        followingAgent = followingAgent === selectedAgentId ? null : selectedAgentId;
+      }
+    }
+
+    // ═══════════════════════════════
+    // Input Handling
+    // ═══════════════════════════════
+    canvas.addEventListener('mousedown', e => {
+      dragging = true; 
+      dragStart = {x:e.clientX, y:e.clientY}; 
+      cameraStart = {x:camera.x, y:camera.y};
+      canvas.classList.add('dragging');
+      followingAgent = null; // Stop auto-follow when manually dragging
+    });
+
+    canvas.addEventListener('mousemove', e => {
+      if (dragging) { 
+        camera.x = cameraStart.x + (e.clientX - dragStart.x); 
+        camera.y = cameraStart.y + (e.clientY - dragStart.y); 
+      }
+      
+      if (tileInfo) {
+        const T = tileInfo.tileSize;
+        const tx = Math.floor((e.clientX - camera.x) / (T * camera.zoom));
+        const ty = Math.floor((e.clientY - camera.y) / (T * camera.zoom));
+        // Could update a tile position indicator here if needed
+      }
+    });
+
+    canvas.addEventListener('mouseup', () => { 
+      dragging = false; 
+      canvas.classList.remove('dragging'); 
+    });
+
+    canvas.addEventListener('mouseleave', () => { 
+      dragging = false; 
+      canvas.classList.remove('dragging'); 
+    });
+
+    canvas.addEventListener('wheel', e => {
+      e.preventDefault();
+      const oldZoom = camera.zoom;
+      camera.zoom = Math.max(0.1, Math.min(30, camera.zoom * (e.deltaY < 0 ? 1.15 : 1/1.15)));
+      camera.x = e.clientX - (e.clientX - camera.x) * (camera.zoom / oldZoom);
+      camera.y = e.clientY - (e.clientY - camera.y) * (camera.zoom / oldZoom);
+    }, { passive: false });
+
+    // Touch support
+    let lastDist = 0;
+    canvas.addEventListener('touchstart', e => {
+      if (e.touches.length === 1) { 
+        dragging = true; 
+        dragStart = {x:e.touches[0].clientX, y:e.touches[0].clientY}; 
+        cameraStart = {x:camera.x, y:camera.y}; 
+        followingAgent = null;
+      } else if (e.touches.length === 2) {
+        lastDist = Math.hypot(e.touches[0].clientX-e.touches[1].clientX, e.touches[0].clientY-e.touches[1].clientY);
+      }
+    });
+
+    canvas.addEventListener('touchmove', e => {
+      e.preventDefault();
+      if (e.touches.length === 1 && dragging) { 
+        camera.x = cameraStart.x + (e.touches[0].clientX - dragStart.x); 
+        camera.y = cameraStart.y + (e.touches[0].clientY - dragStart.y); 
+      } else if (e.touches.length === 2) { 
+        const d = Math.hypot(e.touches[0].clientX-e.touches[1].clientX, e.touches[0].clientY-e.touches[1].clientY); 
+        camera.zoom = Math.max(0.1, Math.min(30, camera.zoom * d / lastDist)); 
+        lastDist = d; 
+      }
+    }, { passive: false });
+
+    canvas.addEventListener('touchend', () => dragging = false);
+
+    // Keyboard shortcuts
+    document.addEventListener('keydown', e => {
+      // Camera movement
+      const s = 80;
+      if (e.key==='ArrowLeft'||e.key==='a') { camera.x += s; followingAgent = null; }
+      if (e.key==='ArrowRight'||e.key==='d') { camera.x -= s; followingAgent = null; }
+      if (e.key==='ArrowUp'||e.key==='w') { camera.y += s; followingAgent = null; }
+      if (e.key==='ArrowDown'||e.key==='s') { camera.y -= s; followingAgent = null; }
+      
+      // Zoom
+      if (e.key==='+'||e.key==='=') camera.zoom = Math.min(30, camera.zoom * 1.2);
+      if (e.key==='-') camera.zoom = Math.max(0.1, camera.zoom / 1.2);
+      
+      // Shortcuts
+      if (e.key==='h') resetView();
+      if (e.key==='Tab') { e.preventDefault(); toggleSidebar(); }
+      if (e.key.toLowerCase()==='s') toggleStats();
+      if (e.key.toLowerCase()==='f') { if (selectedAgentId) followingAgent = followingAgent === selectedAgentId ? null : selectedAgentId; }
+      if (e.key==='Escape') { selectedAgentId = null; followingAgent = null; updateAgentList(); updateAgentDetail(); }
+      if (e.key===' ') { e.preventDefault(); toggleFollow(); }
+    });
+
+    // ═══════════════════════════════
+    // API Functions
+    // ═══════════════════════════════
+    async function spawnAgent() {
+      const name = prompt('Agent name:', `Wanderer-${Math.floor(Math.random()*999)}`);
+      if (!name) return;
+      await fetch('/api/spawn', { 
+        method:'POST', 
+        headers:{'Content-Type':'application/json'}, 
+        body: JSON.stringify({name}) 
+      });
+    }
+
+    async function spawnMany(n) { 
+      await fetch('/api/spawn-many', { 
+        method:'POST', 
+        headers:{'Content-Type':'application/json'}, 
+        body: JSON.stringify({count:n}) 
+      }); 
+    }
+
+    function resetView() {
+      if (!worldInfo || !tileInfo) return;
+      followingAgent = null;
+      camera.zoom = 3;
+      const sx = worldInfo.spawnPoint?.x || 1000;
+      const sy = worldInfo.spawnPoint?.y || 500;
+      camera.x = -sx * tileInfo.tileSize * camera.zoom + window.innerWidth/2;
+      camera.y = -sy * tileInfo.tileSize * camera.zoom + window.innerHeight/2;
+    }
+
+    // Minimap click to navigate
+    minimap.addEventListener('click', e => {
+      if (!tileInfo) return;
+      const rect = minimap.getBoundingClientRect();
+      const x = (e.clientX - rect.left) / 200;
+      const y = (e.clientY - rect.top) / 200;
+      const worldX = x * tileInfo.worldWidth * tileInfo.tileSize;
+      const worldY = y * tileInfo.worldHeight * tileInfo.tileSize;
+      
+      camera.x = -worldX * camera.zoom + window.innerWidth / 2;
+      camera.y = -worldY * camera.zoom + window.innerHeight / 2;
+      followingAgent = null;
+    });
+
+    // Initialize
+    connect();
+  </script>
 </body>
 </html>

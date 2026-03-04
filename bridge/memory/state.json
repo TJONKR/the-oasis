@@ -1,0 +1,32 @@
+{
+  "currentPlan": {
+    "goal": "Eat to address hunger, then gather coconuts from nearby palm trees to build food reserves",
+    "steps": [
+      {
+        "action": "eat",
+        "done": true
+      },
+      {
+        "action": "move",
+        "done": false
+      },
+      {
+        "action": "gather",
+        "done": false
+      },
+      {
+        "action": "move",
+        "done": false
+      },
+      {
+        "action": "gather",
+        "done": false
+      }
+    ],
+    "step": 0
+  },
+  "lastThinkTick": 534871,
+  "lastPerception": null,
+  "totalThinks": 610,
+  "totalActions": 6709
+}

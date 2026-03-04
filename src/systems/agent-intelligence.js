@@ -1673,6 +1673,30 @@ export function initAgentIntelligence(shared) {
       agent.hp = Math.min(100, agent.hp + 0.05);       // well-fed = slow heal
     }
 
+    // ★ Death check — starvation / HP depletion
+    if (agent.hp <= 0 && agent.alive) {
+      agent.alive = false;
+      agent.intent = null;
+      mind.intent = null;
+      mind.currentAction = null;
+      if (broadcast) {
+        broadcast({ type: 'tileEffect', effect: 'smoke', tileX: agent.tileX, tileY: agent.tileY, duration: 3000 });
+      }
+      if (addWorldNews) {
+        addWorldNews('death', agent.id, agent.name,
+          `${agent.name} has starved to death at (${agent.tileX}, ${agent.tileY})`, agent.zone);
+      }
+      if (shared.decayLifecycle?.onAgentDeath) {
+        shared.decayLifecycle.onAgentDeath(agent);
+      }
+      // Notify needs system
+      if (shared.needsSystem?.onDeath) {
+        shared.needsSystem.onDeath(agent.id);
+      }
+      scheduleSave();
+      return; // dead, skip save below
+    }
+
     scheduleSave();
   }
 

@@ -1,0 +1,6654 @@
+{
+  "knownResources": {
+    "1163,448": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 508813
+    },
+    "1163,446": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508813
+    },
+    "1171,452": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508813
+    },
+    "1169,456": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 507974
+    },
+    "1155,448": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508813
+    },
+    "1169,458": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 507974
+    },
+    "1171,456": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 507974
+    },
+    "1173,446": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508813
+    },
+    "1173,454": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 507974
+    },
+    "1177,450": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508813
+    },
+    "1159,442": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508813
+    },
+    "1163,438": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508813
+    },
+    "1167,462": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 507974
+    },
+    "1165,466": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 507974
+    },
+    "1167,434": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508813
+    },
+    "1173,440": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508813
+    },
+    "1149,454": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 507974
+    },
+    "1165,430": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 508813
+    },
+    "1183,452": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508813
+    },
+    "1145,448": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508595
+    },
+    "1147,454": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 507974
+    },
+    "1171,466": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 507974
+    },
+    "1149,458": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 507974
+    },
+    "1151,460": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 507974
+    },
+    "1153,438": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508813
+    },
+    "1159,468": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 507974
+    },
+    "1169,470": {
+      "type": "seaweed",
+      "yields": [
+        "seaweed",
+        "salt"
+      ],
+      "lastSeen": 507892
+    },
+    "1173,434": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508813
+    },
+    "1157,468": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 507892
+    },
+    "1181,440": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508813
+    },
+    "1145,442": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508595
+    },
+    "1157,430": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 508813
+    },
+    "1160,447": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508075
+    },
+    "1160,443": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 509030
+    },
+    "1166,443": {
+      "type": "seaweed",
+      "yields": [
+        "seaweed",
+        "salt"
+      ],
+      "lastSeen": 509151
+    },
+    "1158,453": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 508261
+    },
+    "1166,441": {
+      "type": "seaweed",
+      "yields": [
+        "seaweed",
+        "salt"
+      ],
+      "lastSeen": 509151
+    },
+    "1154,453": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 508261
+    },
+    "1170,453": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508261
+    },
+    "1174,445": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 509151
+    },
+    "1158,459": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508261
+    },
+    "1172,441": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 509151
+    },
+    "1172,455": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508261
+    },
+    "1174,441": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 509151
+    },
+    "1178,449": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508261
+    },
+    "1160,429": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 509151
+    },
+    "1164,429": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 509151
+    },
+    "1174,455": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508261
+    },
+    "1146,441": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 509030
+    },
+    "1148,455": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508261
+    },
+    "1150,437": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 509030
+    },
+    "1154,433": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 509030
+    },
+    "1166,429": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 509151
+    },
+    "1148,437": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 509030
+    },
+    "1176,457": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508173
+    },
+    "1146,457": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 508173
+    },
+    "1152,431": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 509030
+    },
+    "1148,433": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 509030
+    },
+    "1154,427": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 509030
+    },
+    "1148,431": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 509030
+    },
+    "1152,467": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508104
+    },
+    "1142,459": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 508104
+    },
+    "1140,427": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 509030
+    },
+    "1162,444": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508458
+    },
+    "1156,448": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508458
+    },
+    "1160,432": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 508399
+    },
+    "1170,442": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 509247
+    },
+    "1154,436": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508458
+    },
+    "1158,432": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 508458
+    },
+    "1156,452": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 508458
+    },
+    "1156,430": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 508458
+    },
+    "1166,452": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 508458
+    },
+    "1170,436": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 509247
+    },
+    "1150,432": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508458
+    },
+    "1164,458": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508295
+    },
+    "1166,456": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508295
+    },
+    "1170,432": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 514429
+    },
+    "1150,454": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508295
+    },
+    "1152,428": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 508458
+    },
+    "1164,424": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 520467
+    },
+    "1144,434": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 508458
+    },
+    "1156,422": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 520467
+    },
+    "1168,458": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508295
+    },
+    "1140,436": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508458
+    },
+    "1148,428": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508458
+    },
+    "1146,456": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508295
+    },
+    "1170,424": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 520467
+    },
+    "1144,428": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508458
+    },
+    "1172,422": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 520467
+    },
+    "1178,456": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 508295
+    },
+    "1180,428": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 517280
+    },
+    "1180,456": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508206
+    },
+    "1160,425": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 509151
+    },
+    "1168,423": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 509151
+    },
+    "1154,420": {
+      "type": "seaweed",
+      "yields": [
+        "seaweed",
+        "salt"
+      ],
+      "lastSeen": 520467
+    },
+    "1152,419": {
+      "type": "seaweed",
+      "yields": [
+        "seaweed",
+        "salt"
+      ],
+      "lastSeen": 509030
+    },
+    "1144,423": {
+      "type": "seaweed",
+      "yields": [
+        "seaweed",
+        "salt"
+      ],
+      "lastSeen": 509030
+    },
+    "1180,420": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 521247
+    },
+    "1158,412": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 520467
+    },
+    "1146,412": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508458
+    },
+    "1142,412": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508458
+    },
+    "1155,428": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508813
+    },
+    "1151,434": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508813
+    },
+    "1145,432": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 508595
+    },
+    "1147,426": {
+      "type": "seaweed",
+      "yields": [
+        "seaweed",
+        "salt"
+      ],
+      "lastSeen": 508595
+    },
+    "1141,434": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508595
+    },
+    "1139,428": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 508595
+    },
+    "1145,414": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508595
+    },
+    "1139,414": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508595
+    },
+    "1163,427": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 514777
+    },
+    "1157,423": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508879
+    },
+    "1163,423": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 514777
+    },
+    "1151,435": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508879
+    },
+    "1157,441": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508879
+    },
+    "1169,425": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 514777
+    },
+    "1171,433": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 508879
+    },
+    "1169,437": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508879
+    },
+    "1147,437": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 508625
+    },
+    "1149,439": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508879
+    },
+    "1159,449": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 508838
+    },
+    "1141,433": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508625
+    },
+    "1179,427": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 514777
+    },
+    "1143,437": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 508625
+    },
+    "1145,441": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508625
+    },
+    "1165,449": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508838
+    },
+    "1179,435": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 508879
+    },
+    "1173,445": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 508879
+    },
+    "1139,413": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508625
+    },
+    "1177,449": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508838
+    },
+    "1187,426": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 516934
+    },
+    "1189,436": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 513779
+    },
+    "1183,418": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 522104
+    },
+    "1187,444": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508813
+    },
+    "1185,416": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 522104
+    },
+    "1189,444": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508813
+    },
+    "1187,429": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 515412
+    },
+    "1171,451": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 508838
+    },
+    "1175,451": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 508838
+    },
+    "1185,419": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 522132
+    },
+    "1159,451": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 508838
+    },
+    "1189,417": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522132
+    },
+    "1177,407": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 514777
+    },
+    "1179,407": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 514777
+    },
+    "1181,405": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522132
+    },
+    "1146,415": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 509030
+    },
+    "1146,413": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 509030
+    },
+    "1138,419": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 509030
+    },
+    "1146,409": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 509030
+    },
+    "1148,407": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 509030
+    },
+    "1150,405": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 509030
+    },
+    "1136,417": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 509030
+    },
+    "1134,417": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 509030
+    },
+    "1136,415": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 509030
+    },
+    "1138,437": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 509030
+    },
+    "1142,407": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 509030
+    },
+    "1182,427": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 509151
+    },
+    "1188,423": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 521220
+    },
+    "1184,417": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 522501
+    },
+    "1190,421": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522501
+    },
+    "1190,431": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 515334
+    },
+    "1194,427": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 515334
+    },
+    "1188,415": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 522501
+    },
+    "1190,417": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 522501
+    },
+    "1190,435": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 513615
+    },
+    "1198,427": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 515334
+    },
+    "1174,409": {
+      "type": "seaweed",
+      "yields": [
+        "seaweed",
+        "salt"
+      ],
+      "lastSeen": 509151
+    },
+    "1188,411": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522501
+    },
+    "1188,439": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 509151
+    },
+    "1198,421": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 522501
+    },
+    "1198,429": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 515334
+    },
+    "1194,435": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 513615
+    },
+    "1194,411": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522501
+    },
+    "1194,439": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 509648
+    },
+    "1192,407": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522501
+    },
+    "1200,411": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 522501
+    },
+    "1188,420": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522528
+    },
+    "1190,426": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 518835
+    },
+    "1182,440": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 509247
+    },
+    "1186,412": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522528
+    },
+    "1188,434": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 509772
+    },
+    "1192,430": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 514496
+    },
+    "1194,428": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 517280
+    },
+    "1176,408": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 520467
+    },
+    "1182,406": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 521247
+    },
+    "1194,430": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 515365
+    },
+    "1200,424": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 521034
+    },
+    "1178,404": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 520467
+    },
+    "1188,438": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 509489
+    },
+    "1190,412": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522528
+    },
+    "1194,432": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 514496
+    },
+    "1200,426": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 518835
+    },
+    "1184,444": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 509247
+    },
+    "1190,408": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522528
+    },
+    "1188,404": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 522528
+    },
+    "1194,440": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 509738
+    },
+    "1196,438": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 513657
+    },
+    "1200,412": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522528
+    },
+    "1202,424": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 521034
+    },
+    "1204,422": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 521247
+    },
+    "1208,426": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 518281
+    },
+    "1208,428": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 515365
+    },
+    "1212,424": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 521034
+    },
+    "1202,428": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 515365
+    },
+    "1212,422": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 521247
+    },
+    "1202,416": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522528
+    },
+    "1202,432": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 515365
+    },
+    "1218,426": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 515365
+    },
+    "1212,414": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 522528
+    },
+    "1198,408": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 522528
+    },
+    "1200,404": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522528
+    },
+    "1224,434": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 513657
+    },
+    "1222,410": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 522528
+    },
+    "1206,423": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 521220
+    },
+    "1206,421": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 522501
+    },
+    "1208,421": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 522501
+    },
+    "1204,419": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 522501
+    },
+    "1204,427": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 515334
+    },
+    "1210,425": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 515334
+    },
+    "1202,427": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 515334
+    },
+    "1208,431": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 515334
+    },
+    "1212,419": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522501
+    },
+    "1214,421": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522501
+    },
+    "1204,413": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522501
+    },
+    "1214,429": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 515334
+    },
+    "1214,437": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 509648
+    },
+    "1222,409": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 526863
+    },
+    "1194,398": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522528
+    },
+    "1205,416": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522104
+    },
+    "1215,418": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 523202
+    },
+    "1205,422": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 522104
+    },
+    "1213,422": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522104
+    },
+    "1217,414": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 523202
+    },
+    "1199,414": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522104
+    },
+    "1201,420": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522104
+    },
+    "1197,418": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522104
+    },
+    "1203,424": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 516934
+    },
+    "1195,418": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522104
+    },
+    "1197,412": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522104
+    },
+    "1201,408": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 522104
+    },
+    "1207,430": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 513779
+    },
+    "1215,406": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 523202
+    },
+    "1191,416": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 522104
+    },
+    "1195,422": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 522104
+    },
+    "1191,420": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 522104
+    },
+    "1225,408": {
+      "type": "seaweed",
+      "yields": [
+        "seaweed",
+        "salt"
+      ],
+      "lastSeen": 523202
+    },
+    "1189,408": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522104
+    },
+    "1191,404": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522104
+    },
+    "1193,402": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522104
+    },
+    "1193,400": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522104
+    },
+    "1195,398": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 522104
+    },
+    "1191,400": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 522104
+    },
+    "1195,436": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 513779
+    },
+    "1191,436": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 513779
+    },
+    "1211,415": {
+      "type": "seaweed",
+      "yields": [
+        "seaweed",
+        "salt"
+      ],
+      "lastSeen": 523359
+    },
+    "1199,413": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 522132
+    },
+    "1197,413": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 522132
+    },
+    "1199,411": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522132
+    },
+    "1201,409": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 522132
+    },
+    "1205,425": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 515412
+    },
+    "1195,411": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522132
+    },
+    "1219,415": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 523359
+    },
+    "1199,425": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 515412
+    },
+    "1213,423": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 515412
+    },
+    "1191,421": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 522132
+    },
+    "1197,427": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 515412
+    },
+    "1193,405": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522132
+    },
+    "1195,427": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 515412
+    },
+    "1203,435": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 513494
+    },
+    "1221,407": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 523359
+    },
+    "1215,431": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 513494
+    },
+    "1221,405": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 523359
+    },
+    "1195,397": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522132
+    },
+    "1191,433": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 513494
+    },
+    "1193,395": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 522132
+    },
+    "1225,433": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 513494
+    },
+    "1222,405": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 526863
+    },
+    "1198,395": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522501
+    },
+    "1224,400": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522528
+    },
+    "1196,396": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522528
+    },
+    "1192,396": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522528
+    },
+    "1212,392": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 522528
+    },
+    "1192,394": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522528
+    },
+    "1198,391": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522501
+    },
+    "1180,396": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 521247
+    },
+    "1172,402": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 520467
+    },
+    "1168,398": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 520467
+    },
+    "1166,398": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 520467
+    },
+    "1193,393": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522132
+    },
+    "1173,403": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 514777
+    },
+    "1179,397": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 514777
+    },
+    "1171,403": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 514777
+    },
+    "1175,393": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 514777
+    },
+    "1173,393": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 514777
+    },
+    "1171,393": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 514777
+    },
+    "1209,391": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522132
+    },
+    "1167,395": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 514777
+    },
+    "1215,391": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 523359
+    },
+    "1185,389": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522132
+    },
+    "1209,392": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 522104
+    },
+    "1181,402": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522104
+    },
+    "1209,388": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522104
+    },
+    "1186,388": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522528
+    },
+    "1198,390": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522528
+    },
+    "1178,386": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 520467
+    },
+    "1166,390": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 520467
+    },
+    "1214,390": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 522528
+    },
+    "1220,392": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 522528
+    },
+    "1200,384": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 522528
+    },
+    "1164,386": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 520467
+    },
+    "1160,392": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 520467
+    },
+    "1160,390": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 520467
+    },
+    "1154,386": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 520467
+    },
+    "1204,382": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522528
+    },
+    "1198,387": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 522501
+    },
+    "1200,383": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 522501
+    },
+    "1202,383": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 522501
+    },
+    "1208,387": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522501
+    },
+    "1210,389": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522501
+    },
+    "1184,389": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522501
+    },
+    "1180,391": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 521220
+    },
+    "1177,406": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 521402
+    },
+    "1169,400": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 521402
+    },
+    "1171,398": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 521402
+    },
+    "1169,398": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 521402
+    },
+    "1163,398": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 521402
+    },
+    "1161,398": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 521402
+    },
+    "1155,404": {
+      "type": "seaweed",
+      "yields": [
+        "seaweed",
+        "salt"
+      ],
+      "lastSeen": 521402
+    },
+    "1167,388": {
+      "type": "seaweed",
+      "yields": [
+        "seaweed",
+        "salt"
+      ],
+      "lastSeen": 521402
+    },
+    "1209,386": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 522104
+    },
+    "1203,383": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 522132
+    },
+    "1185,387": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 522132
+    },
+    "1219,381": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 523359
+    },
+    "1237,404": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 523202
+    },
+    "1229,390": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 523202
+    },
+    "1233,390": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 523202
+    },
+    "1245,404": {
+      "type": "seaweed",
+      "yields": [
+        "seaweed",
+        "salt"
+      ],
+      "lastSeen": 525846
+    },
+    "1241,390": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 523202
+    },
+    "1243,408": {
+      "type": "seaweed",
+      "yields": [
+        "seaweed",
+        "salt"
+      ],
+      "lastSeen": 523202
+    },
+    "1239,414": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 523202
+    },
+    "1249,404": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 525846
+    },
+    "1239,418": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 523202
+    },
+    "1249,412": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 525846
+    },
+    "1251,410": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 525846
+    },
+    "1243,420": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 523202
+    },
+    "1249,418": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 523202
+    },
+    "1231,399": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 523359
+    },
+    "1229,399": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 523359
+    },
+    "1239,397": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 525017
+    },
+    "1229,389": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 523359
+    },
+    "1239,393": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 525017
+    },
+    "1229,385": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 523359
+    },
+    "1239,391": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 525017
+    },
+    "1235,413": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 523359
+    },
+    "1249,403": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 526742
+    },
+    "1251,403": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 526742
+    },
+    "1251,393": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 526742
+    },
+    "1221,379": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 523359
+    },
+    "1243,419": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 523359
+    },
+    "1249,413": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 526742
+    },
+    "1245,419": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 523359
+    },
+    "1251,413": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 526742
+    },
+    "1251,419": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 523359
+    },
+    "1238,397": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 526863
+    },
+    "1240,393": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 526863
+    },
+    "1240,391": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 526863
+    },
+    "1228,395": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 526863
+    },
+    "1250,401": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 527007
+    },
+    "1252,399": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 527007
+    },
+    "1238,417": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 524102
+    },
+    "1256,401": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 527007
+    },
+    "1244,415": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 527007
+    },
+    "1228,385": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 526863
+    },
+    "1230,383": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 526863
+    },
+    "1234,419": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 524068
+    },
+    "1246,415": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 527007
+    },
+    "1254,407": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 527007
+    },
+    "1252,411": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 527007
+    },
+    "1256,391": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 527007
+    },
+    "1254,411": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 527007
+    },
+    "1254,417": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 524102
+    },
+    "1254,379": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 527007
+    },
+    "1257,393": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 526742
+    },
+    "1259,403": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 526742
+    },
+    "1269,393": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 526742
+    },
+    "1257,407": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 526742
+    },
+    "1269,391": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 526742
+    },
+    "1253,405": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 526742
+    },
+    "1255,407": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 526742
+    },
+    "1267,409": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 526742
+    },
+    "1253,409": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 526742
+    },
+    "1279,403": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 526742
+    },
+    "1273,379": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 526742
+    },
+    "1275,377": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 526742
+    },
+    "1286,403": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 527502
+    },
+    "1290,395": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 527502
+    },
+    "1290,399": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 527502
+    },
+    "1288,389": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 527502
+    },
+    "1290,405": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 527502
+    },
+    "1284,381": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 527502
+    },
+    "1268,395": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 527502
+    },
+    "1296,403": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 527502
+    },
+    "1268,391": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 527502
+    },
+    "1272,407": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 527502
+    },
+    "1278,381": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 527502
+    },
+    "1288,379": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 527502
+    },
+    "1268,387": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 527502
+    },
+    "1276,417": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 524507
+    },
+    "1300,385": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 527502
+    },
+    "1266,385": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 527502
+    },
+    "1270,413": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 527502
+    },
+    "1272,379": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 527502
+    },
+    "1298,413": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 527502
+    },
+    "1302,413": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 527502
+    },
+    "1304,415": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 527129
+    },
+    "1304,377": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 527502
+    },
+    "1291,397": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 525344
+    },
+    "1289,405": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 525344
+    },
+    "1293,393": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 527626
+    },
+    "1297,401": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 529794
+    },
+    "1303,399": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 529794
+    },
+    "1297,407": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 529794
+    },
+    "1297,385": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 529794
+    },
+    "1301,387": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 529794
+    },
+    "1301,381": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 529794
+    },
+    "1303,413": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 527626
+    },
+    "1292,404": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 525398
+    },
+    "1284,390": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 525398
+    },
+    "1294,404": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 525398
+    },
+    "1298,400": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 525398
+    },
+    "1294,386": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 525398
+    },
+    "1280,402": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 525398
+    },
+    "1284,386": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 525398
+    },
+    "1284,406": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 525398
+    },
+    "1280,408": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 525398
+    },
+    "1300,408": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 525398
+    },
+    "1302,384": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 525398
+    },
+    "1272,406": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 525398
+    },
+    "1276,382": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 525398
+    },
+    "1282,376": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 525398
+    },
+    "1263,396": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 525846
+    },
+    "1263,394": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 525846
+    },
+    "1265,402": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 525846
+    },
+    "1263,390": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 525846
+    },
+    "1261,390": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 525846
+    },
+    "1267,388": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 525846
+    },
+    "1271,390": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 525846
+    },
+    "1259,388": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 525846
+    },
+    "1253,404": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 525846
+    },
+    "1257,408": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 525846
+    },
+    "1271,380": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 525846
+    },
+    "1259,414": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 525846
+    },
+    "1271,378": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 525846
+    },
+    "1253,410": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 525846
+    },
+    "1277,382": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 525846
+    },
+    "1253,412": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 525846
+    },
+    "1245,375": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 526742
+    },
+    "1256,375": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 527007
+    },
+    "1216,377": {
+      "type": "seaweed",
+      "yields": [
+        "seaweed",
+        "salt"
+      ],
+      "lastSeen": 526863
+    },
+    "1294,373": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 527502
+    },
+    "1272,373": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 527502
+    },
+    "1325,395": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 529794
+    },
+    "1307,381": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 529794
+    },
+    "1327,397": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 529794
+    },
+    "1317,409": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 527626
+    },
+    "1319,407": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 529794
+    },
+    "1315,413": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 527626
+    },
+    "1317,411": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 527626
+    },
+    "1329,387": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 529794
+    },
+    "1325,405": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 529794
+    },
+    "1327,403": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 529794
+    },
+    "1321,411": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 529170
+    },
+    "1331,403": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 529794
+    },
+    "1323,413": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 529170
+    },
+    "1325,411": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 529170
+    },
+    "1333,375": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 529794
+    },
+    "1339,391": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 529170
+    },
+    "1337,397": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 529794
+    },
+    "1337,377": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 529794
+    },
+    "1339,375": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 529170
+    },
+    "1355,391": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 530134
+    },
+    "1355,397": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530134
+    },
+    "1345,413": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 529170
+    },
+    "1357,379": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 530134
+    },
+    "1364,387": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530017
+    },
+    "1358,391": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530017
+    },
+    "1370,401": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530017
+    },
+    "1374,389": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530017
+    },
+    "1376,391": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530017
+    },
+    "1350,391": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 529672
+    },
+    "1356,385": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 530017
+    },
+    "1368,381": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530017
+    },
+    "1366,409": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 529581
+    },
+    "1348,387": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 529672
+    },
+    "1354,381": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 530017
+    },
+    "1372,407": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 530017
+    },
+    "1380,399": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 530017
+    },
+    "1368,373": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 530017
+    },
+    "1372,377": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 530017
+    },
+    "1384,389": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 530017
+    },
+    "1344,401": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 528565
+    },
+    "1378,409": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 529581
+    },
+    "1344,411": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 528565
+    },
+    "1346,413": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 528565
+    },
+    "1344,373": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 528565
+    },
+    "1338,395": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 528565
+    },
+    "1336,395": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 528565
+    },
+    "1342,389": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 528565
+    },
+    "1330,395": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 528565
+    },
+    "1340,405": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 528565
+    },
+    "1342,405": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 528565
+    },
+    "1324,393": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 528565
+    },
+    "1340,375": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 528565
+    },
+    "1328,385": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 528565
+    },
+    "1330,381": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 528565
+    },
+    "1328,381": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 528565
+    },
+    "1330,409": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 528565
+    },
+    "1363,393": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530134
+    },
+    "1365,389": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 530515
+    },
+    "1365,387": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530515
+    },
+    "1361,389": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 530134
+    },
+    "1363,387": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530134
+    },
+    "1369,381": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 530515
+    },
+    "1369,379": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530515
+    },
+    "1375,401": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 530515
+    },
+    "1381,391": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 530515
+    },
+    "1365,375": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530515
+    },
+    "1369,375": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530515
+    },
+    "1371,375": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 530515
+    },
+    "1375,373": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 530515
+    },
+    "1381,407": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530515
+    },
+    "1385,403": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 530515
+    },
+    "1385,409": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 530515
+    },
+    "1385,413": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 528900
+    },
+    "1386,405": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 530017
+    },
+    "1388,379": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530017
+    },
+    "1368,371": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 530017
+    },
+    "1370,371": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 530017
+    },
+    "1374,371": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 530017
+    },
+    "1370,390": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530192
+    },
+    "1370,392": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530192
+    },
+    "1372,392": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530192
+    },
+    "1362,388": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 530192
+    },
+    "1366,384": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530192
+    },
+    "1368,400": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530192
+    },
+    "1378,390": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 530192
+    },
+    "1362,396": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530177
+    },
+    "1370,380": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530192
+    },
+    "1370,400": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530192
+    },
+    "1376,394": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530192
+    },
+    "1372,400": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530192
+    },
+    "1362,400": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 530177
+    },
+    "1366,376": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 530192
+    },
+    "1358,398": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 529999
+    },
+    "1366,374": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530192
+    },
+    "1348,390": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 529641
+    },
+    "1356,398": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 529999
+    },
+    "1368,370": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530192
+    },
+    "1380,398": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530192
+    },
+    "1382,396": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530192
+    },
+    "1384,386": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 530192
+    },
+    "1384,394": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530192
+    },
+    "1388,390": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530192
+    },
+    "1358,404": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 529999
+    },
+    "1380,404": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530192
+    },
+    "1382,404": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530192
+    },
+    "1378,410": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 529641
+    },
+    "1388,380": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530192
+    },
+    "1380,367": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 530017
+    },
+    "1331,369": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 529794
+    },
+    "1333,367": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 529794
+    },
+    "1335,367": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 529794
+    },
+    "1392,399": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530017
+    },
+    "1390,396": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530192
+    },
+    "1392,394": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530192
+    },
+    "1392,374": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 530192
+    },
+    "1373,382": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 530472
+    },
+    "1369,382": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530472
+    },
+    "1371,380": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 530472
+    },
+    "1371,378": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 530472
+    },
+    "1377,394": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530472
+    },
+    "1373,370": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 530472
+    },
+    "1381,394": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530472
+    },
+    "1359,382": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 530163
+    },
+    "1369,372": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530472
+    },
+    "1385,392": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530472
+    },
+    "1359,380": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 530163
+    },
+    "1373,406": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 530472
+    },
+    "1379,400": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 530472
+    },
+    "1359,376": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 530163
+    },
+    "1377,366": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 530357
+    },
+    "1393,390": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530472
+    },
+    "1381,404": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530472
+    },
+    "1357,398": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530163
+    },
+    "1361,402": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530163
+    },
+    "1357,372": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 530163
+    },
+    "1383,406": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530472
+    },
+    "1355,400": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530163
+    },
+    "1353,400": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530163
+    },
+    "1377,369": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 530515
+    },
+    "1389,381": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530515
+    },
+    "1389,395": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 530515
+    },
+    "1391,395": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530515
+    },
+    "1389,401": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 530515
+    },
+    "1396,384": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530192
+    },
+    "1378,364": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530192
+    },
+    "1394,380": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530192
+    },
+    "1402,384": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 530192
+    },
+    "1398,372": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 530192
+    },
+    "1397,388": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530472
+    },
+    "1403,374": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 530472
+    },
+    "1403,372": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 530472
+    },
+    "1401,385": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530515
+    },
+    "1405,395": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 530515
+    },
+    "1397,407": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 530515
+    },
+    "1403,377": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 530515
+    },
+    "1401,373": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 530515
+    },
+    "1399,409": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530515
+    },
+    "1405,371": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 530515
+    },
+    "1383,408": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 530472
+    },
+    "1401,408": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530472
+    },
+    "1434,385": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 531093
+    },
+    "1430,393": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 531093
+    },
+    "1454,385": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 531093
+    },
+    "1442,371": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 531093
+    },
+    "1442,409": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530686
+    },
+    "1458,383": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 531093
+    },
+    "1424,383": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530686
+    },
+    "1436,371": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 531093
+    },
+    "1462,377": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 531093
+    },
+    "1460,407": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 530686
+    },
+    "1424,409": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 530686
+    },
+    "1440,394": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 531076
+    },
+    "1444,382": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 531139
+    },
+    "1446,382": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 531139
+    },
+    "1432,386": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 531076
+    },
+    "1444,398": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 531076
+    },
+    "1450,392": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 531076
+    },
+    "1452,386": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 531076
+    },
+    "1440,402": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 531076
+    },
+    "1442,404": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 531056
+    },
+    "1426,390": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 531076
+    },
+    "1432,380": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 531139
+    },
+    "1436,374": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 531139
+    },
+    "1444,406": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 531056
+    },
+    "1456,382": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 531139
+    },
+    "1422,390": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 531043
+    },
+    "1436,404": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 531056
+    },
+    "1434,370": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 531139
+    },
+    "1452,404": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 531056
+    },
+    "1458,400": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 531076
+    },
+    "1460,376": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 531139
+    },
+    "1462,372": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 531139
+    },
+    "1460,408": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 531056
+    },
+    "1464,376": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 531139
+    },
+    "1464,408": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 531056
+    },
+    "1442,364": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 531139
+    },
+    "1446,363": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 531093
+    },
+    "1452,363": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 531093
+    },
+    "1466,377": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 531093
+    },
+    "1432,363": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 531093
+    },
+    "1462,361": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 531093
+    },
+    "1442,358": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 531139
+    },
+    "1464,354": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 531139
+    },
+    "1505,370": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 531391
+    },
+    "1495,368": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 531391
+    },
+    "1499,372": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 531391
+    },
+    "1517,364": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 531391
+    },
+    "1491,368": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 531391
+    },
+    "1493,370": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 531391
+    },
+    "1501,380": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 531391
+    },
+    "1483,368": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 531391
+    },
+    "1509,346": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 531391
+    },
+    "1493,380": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 531391
+    },
+    "1491,380": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 531391
+    },
+    "1521,374": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 531391
+    },
+    "1491,384": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 531391
+    },
+    "1483,348": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 531391
+    },
+    "1523,382": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 531391
+    },
+    "1559,376": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 531571
+    },
+    "1549,368": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 531571
+    },
+    "1551,374": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 531571
+    },
+    "1557,348": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 531571
+    },
+    "1543,360": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 531571
+    },
+    "1563,348": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 531571
+    },
+    "1565,378": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 531571
+    },
+    "1563,384": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 531571
+    },
+    "1567,382": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 531571
+    },
+    "1575,352": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 531571
+    },
+    "1573,344": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 531571
+    },
+    "1608,358": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 531693
+    },
+    "1616,354": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 531693
+    },
+    "1626,366": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 531693
+    },
+    "1608,354": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 531693
+    },
+    "1618,350": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 531693
+    },
+    "1606,380": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 531693
+    },
+    "1604,346": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 531693
+    },
+    "1632,382": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 531693
+    },
+    "1679,362": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 531815
+    },
+    "1679,366": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 531815
+    },
+    "1677,356": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 531815
+    },
+    "1659,374": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 531815
+    },
+    "1657,348": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 531815
+    },
+    "1681,348": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 531815
+    },
+    "1649,348": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 531815
+    },
+    "1716,358": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 532277
+    },
+    "1718,348": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 532277
+    },
+    "1740,362": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 532277
+    },
+    "1742,362": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 532277
+    },
+    "1740,376": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 532277
+    },
+    "1736,384": {
+      "type": "seaweed",
+      "yields": [
+        "seaweed",
+        "salt"
+      ],
+      "lastSeen": 532277
+    },
+    "1714,365": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 533776
+    },
+    "1722,353": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 533776
+    },
+    "1734,361": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 533776
+    },
+    "1734,355": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 533776
+    },
+    "1710,353": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 533776
+    },
+    "1712,351": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 533776
+    },
+    "1730,343": {
+      "type": "seaweed",
+      "yields": [
+        "seaweed",
+        "salt"
+      ],
+      "lastSeen": 533776
+    },
+    "1736,343": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 533776
+    },
+    "1715,363": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 534871
+    },
+    "1735,363": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 534871
+    },
+    "1719,353": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 534871
+    },
+    "1707,365": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 534871
+    },
+    "1737,359": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 534871
+    },
+    "1741,363": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 534871
+    },
+    "1715,351": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 534871
+    },
+    "1733,375": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 534871
+    },
+    "1743,359": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 534871
+    },
+    "1707,351": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 534871
+    },
+    "1676,363": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 533655
+    },
+    "1662,373": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 533655
+    },
+    "1680,363": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 533655
+    },
+    "1658,371": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 533655
+    },
+    "1680,361": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 533655
+    },
+    "1648,365": {
+      "type": "flower",
+      "yields": [
+        "flowers",
+        "herbs",
+        "fiber"
+      ],
+      "lastSeen": 533655
+    },
+    "1648,369": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 533655
+    },
+    "1648,371": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 533655
+    },
+    "1682,353": {
+      "type": "small_rock",
+      "yields": [
+        "stone",
+        "flint"
+      ],
+      "lastSeen": 533655
+    },
+    "1656,345": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 533655
+    },
+    "1682,375": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 533655
+    },
+    "1650,349": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 533655
+    },
+    "1654,345": {
+      "type": "oak_tree",
+      "yields": [
+        "wood",
+        "acorns",
+        "bark"
+      ],
+      "lastSeen": 533655
+    },
+    "1648,349": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 533655
+    },
+    "1650,347": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 533655
+    },
+    "1680,345": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 533655
+    },
+    "1648,381": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 533655
+    },
+    "1700,381": {
+      "type": "palm_tree",
+      "yields": [
+        "wood",
+        "coconuts",
+        "palm_fronds"
+      ],
+      "lastSeen": 533776
+    }
+  },
+  "dangerZones": [],
+  "craftRecipes": [],
+  "agentRelationships": {}
+}
