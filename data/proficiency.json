@@ -417,15 +417,15 @@
       "level": 6
     },
     "mining": {
-      "xp": 132,
-      "level": 1
+      "xp": 225,
+      "level": 2
     },
     "woodcraft": {
-      "xp": 10,
-      "level": 0
+      "xp": 440,
+      "level": 3
     },
     "scholarship": {
-      "xp": 312461,
+      "xp": 315197,
       "level": 50
     },
     "commerce": {
@@ -433,8 +433,8 @@
       "level": 0
     },
     "exploration": {
-      "xp": 593,
-      "level": 4
+      "xp": 2522,
+      "level": 9
     },
     "cooking": {
       "xp": 0,
@@ -447,11 +447,11 @@
       "level": 0
     },
     "herbalism": {
-      "xp": 0,
+      "xp": 10,
       "level": 0
     },
     "mining": {
-      "xp": 27,
+      "xp": 36,
       "level": 0
     },
     "woodcraft": {
@@ -459,7 +459,7 @@
       "level": 1
     },
     "scholarship": {
-      "xp": 363242,
+      "xp": 421403,
       "level": 50
     },
     "commerce": {
@@ -467,8 +467,8 @@
       "level": 0
     },
     "exploration": {
-      "xp": 140,
-      "level": 1
+      "xp": 480,
+      "level": 3
     },
     "cooking": {
       "xp": 0,
@@ -583,19 +583,19 @@
       "level": 0
     },
     "herbalism": {
-      "xp": 780,
+      "xp": 820,
       "level": 5
     },
     "mining": {
-      "xp": 6,
-      "level": 0
+      "xp": 66,
+      "level": 1
     },
     "woodcraft": {
       "xp": 0,
       "level": 0
     },
     "scholarship": {
-      "xp": 319789,
+      "xp": 320209,
       "level": 50
     },
     "commerce": {
@@ -603,8 +603,8 @@
       "level": 0
     },
     "exploration": {
-      "xp": 16370,
-      "level": 25
+      "xp": 18070,
+      "level": 26
     },
     "cooking": {
       "xp": 0,
@@ -821,19 +821,19 @@
       "level": 0
     },
     "herbalism": {
-      "xp": 2000,
+      "xp": 2170,
       "level": 8
     },
     "mining": {
-      "xp": 114,
-      "level": 1
+      "xp": 387,
+      "level": 3
     },
     "woodcraft": {
-      "xp": 50,
+      "xp": 110,
       "level": 1
     },
     "scholarship": {
-      "xp": 290020,
+      "xp": 355093,
       "level": 50
     },
     "commerce": {
@@ -841,8 +841,8 @@
       "level": 0
     },
     "exploration": {
-      "xp": 75,
-      "level": 1
+      "xp": 193,
+      "level": 2
     },
     "cooking": {
       "xp": 0,
@@ -859,7 +859,7 @@
       "level": 5
     },
     "mining": {
-      "xp": 75,
+      "xp": 78,
       "level": 1
     },
     "woodcraft": {
@@ -867,7 +867,7 @@
       "level": 0
     },
     "scholarship": {
-      "xp": 742437,
+      "xp": 817274,
       "level": 50
     },
     "commerce": {
@@ -875,7 +875,7 @@
       "level": 0
     },
     "exploration": {
-      "xp": 70,
+      "xp": 120,
       "level": 1
     },
     "cooking": {

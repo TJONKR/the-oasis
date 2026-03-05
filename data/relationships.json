@@ -60,7 +60,7 @@
     "chats": 45,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "friendly",
+    "sentiment": "acquaintance",
     "lastInteraction": 1772493503571,
     "strengthScore": 22.5
   },
@@ -174,12 +174,12 @@
       "493d9452-db6c-4132-ae37-503cf842f140"
     ],
     "trades": 0,
-    "chats": 17420,
+    "chats": 17422,
     "gifted": 0,
     "sameZone": 0,
     "sentiment": "close",
-    "lastInteraction": 1772617025837,
-    "strengthScore": 8710
+    "lastInteraction": 1772660799032,
+    "strengthScore": 8711
   },
   "493d9452-db6c-4132-ae37-503cf842f140_cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
     "agents": [
@@ -671,7 +671,7 @@
     "chats": 12,
     "gifted": 0,
     "sameZone": 0,
-    "sentiment": "acquaintance",
+    "sentiment": "stranger",
     "lastInteraction": 1772491844322,
     "strengthScore": 6
   },
@@ -811,12 +811,12 @@
       "37336d1a-2af4-4eaa-b687-8c5725067953"
     ],
     "trades": 0,
-    "chats": 37921,
+    "chats": 59135,
     "gifted": 0,
     "sameZone": 0,
     "sentiment": "close",
-    "lastInteraction": 1772643201106,
-    "strengthScore": 18960.5
+    "lastInteraction": 1772738342085,
+    "strengthScore": 29567.5
   },
   "37336d1a-2af4-4eaa-b687-8c5725067953_75ea2f1f-106e-455b-a08b-e1201500a0df": {
     "agents": [
@@ -1526,12 +1526,12 @@
       "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a"
     ],
     "trades": 0,
-    "chats": 9592,
+    "chats": 33841,
     "gifted": 0,
     "sameZone": 0,
     "sentiment": "close",
-    "lastInteraction": 1772643200106,
-    "strengthScore": 4796
+    "lastInteraction": 1772738353102,
+    "strengthScore": 16920.5
   },
   "07f8fc77-5f5e-4355-a0d6-51ab39725d9b_493d9452-db6c-4132-ae37-503cf842f140": {
     "agents": [
@@ -1552,12 +1552,12 @@
       "37336d1a-2af4-4eaa-b687-8c5725067953"
     ],
     "trades": 0,
-    "chats": 8546,
+    "chats": 27820,
     "gifted": 0,
     "sameZone": 0,
     "sentiment": "close",
-    "lastInteraction": 1772643202108,
-    "strengthScore": 4273
+    "lastInteraction": 1772738342082,
+    "strengthScore": 13910
   },
   "07f8fc77-5f5e-4355-a0d6-51ab39725d9b_75ea2f1f-106e-455b-a08b-e1201500a0df": {
     "agents": [

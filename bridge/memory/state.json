@@ -1,28 +1,21 @@
 {
   "currentPlan": {
-    "goal": "SURVIVE: Eat food immediately (hunger 100) then rest to recover energy",
+    "goal": "Find other survivors on the coast and establish first contact",
     "steps": [
       {
-        "action": "eat",
-        "done": true
+        "action": "explore",
+        "done": false
       },
       {
-        "action": "eat",
-        "done": true
-      },
-      {
-        "action": "rest",
-        "done": true
-      },
-      {
-        "action": "move",
+        "action": "chat",
         "done": false
       }
-    ],
-    "step": 0
+    ]
   },
-  "lastThinkTick": 543933,
+  "lastThinkTick": 635161,
   "lastPerception": null,
-  "totalThinks": 788,
-  "totalActions": 10535
+  "totalThinks": 2740,
+  "totalActions": 51914,
+  "agentId": "d46fbff6-164e-4f5e-9d31-19deeb010ebf",
+  "agentName": "Tjonkr-Soul"
 }

@@ -1750,5 +1750,103 @@
     "discoveredBy": "07f8fc77-5f5e-4355-a0d6-51ab39725d9b",
     "discovererName": "Agent-29",
     "discoveredAt": "2026-03-04T13:01:52.222Z"
+  },
+  {
+    "key": "combine:Dried flowers + Fermented shells",
+    "items": [
+      "Fermented shells",
+      "Dried flowers"
+    ],
+    "result": "Cooked Fermented shells",
+    "ruleId": "cooking",
+    "discoveredBy": "75ea2f1f-106e-455b-a08b-e1201500a0df",
+    "discovererName": "Agent-20",
+    "discoveredAt": "2026-03-04T22:56:39.651Z"
+  },
+  {
+    "key": "combine:Dried Burning Fiber + Dried driftwood",
+    "items": [
+      "Dried Burning Fiber",
+      "Dried driftwood"
+    ],
+    "result": "Dried Burning Fiber Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "07f8fc77-5f5e-4355-a0d6-51ab39725d9b",
+    "discovererName": "Agent-29",
+    "discoveredAt": "2026-03-04T23:01:02.068Z"
+  },
+  {
+    "key": "combine:Dried Burning Fiber + driftwood",
+    "items": [
+      "driftwood",
+      "Dried Burning Fiber"
+    ],
+    "result": "driftwood Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "07f8fc77-5f5e-4355-a0d6-51ab39725d9b",
+    "discovererName": "Agent-29",
+    "discoveredAt": "2026-03-05T04:38:14.231Z"
+  },
+  {
+    "key": "combine:Dried driftwood + fiber + flint",
+    "items": [
+      "Dried driftwood",
+      "fiber",
+      "flint"
+    ],
+    "result": "Cooked Dried driftwood",
+    "ruleId": "cooking",
+    "discoveredBy": "d46fbff6-164e-4f5e-9d31-19deeb010ebf",
+    "discovererName": "Tjonkr-Soul",
+    "discoveredAt": "2026-03-05T18:30:28.377Z"
+  },
+  {
+    "key": "combine:Dried Herbs + Dried driftwood",
+    "items": [
+      "Dried driftwood",
+      "Dried Herbs"
+    ],
+    "result": "Dried driftwood Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "d46fbff6-164e-4f5e-9d31-19deeb010ebf",
+    "discovererName": "Tjonkr-Soul",
+    "discoveredAt": "2026-03-05T18:39:27.324Z"
+  },
+  {
+    "key": "combine:Dried cactus_fruit + Fermented seaweed + Fermented shells",
+    "items": [
+      "Fermented seaweed",
+      "Fermented shells",
+      "Dried cactus_fruit"
+    ],
+    "result": "Cooked Fermented seaweed",
+    "ruleId": "cooking",
+    "discoveredBy": "d46fbff6-164e-4f5e-9d31-19deeb010ebf",
+    "discovererName": "Tjonkr-Soul",
+    "discoveredAt": "2026-03-05T18:39:38.884Z"
+  },
+  {
+    "key": "combine:Dried driftwood + fiber",
+    "items": [
+      "Dried driftwood",
+      "fiber"
+    ],
+    "result": "Cooked Dried driftwood",
+    "ruleId": "cooking",
+    "discoveredBy": "d46fbff6-164e-4f5e-9d31-19deeb010ebf",
+    "discovererName": "Tjonkr-Soul",
+    "discoveredAt": "2026-03-05T18:45:17.870Z"
+  },
+  {
+    "key": "combine:Dried cactus_fruit + Dried driftwood",
+    "items": [
+      "Dried cactus_fruit",
+      "Dried driftwood"
+    ],
+    "result": "Dried cactus_fruit Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "d46fbff6-164e-4f5e-9d31-19deeb010ebf",
+    "discovererName": "Tjonkr-Soul",
+    "discoveredAt": "2026-03-05T18:55:25.155Z"
   }
 ]

@@ -801,7 +801,8 @@
       "coast": [
         "Signals are strongest during storms along the coast"
       ],
-      "grass": []
+      "grass": [],
+      "sand": []
     },
     "lore_fragments": [
       "Iron and Crystal together sing a duet older than the world.",
@@ -828,18 +829,25 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 9,
+        "gather": 12,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 9
+        "explore": 40
       },
       "grass": {
+        "gather": 1,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 4
+      },
+      "sand": {
         "gather": 0,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 2
+        "explore": 1
       }
     },
     "mastery": {},
@@ -852,7 +860,12 @@
         "The grasslands remember every agent who has rested here",
         "Dew drops collected at dawn hold the purest energy"
       ],
-      "coast": []
+      "coast": [
+        "Signals are strongest during storms along the coast"
+      ],
+      "sand": [
+        "Sand pearls form where moonlight hits the shore"
+      ]
     },
     "lore_fragments": [
       "The beach was once a mountain, worn smooth by time.",
@@ -879,18 +892,25 @@
     "known_recipes": [],
     "zone_counts": {
       "grass": {
-        "gather": 78,
+        "gather": 82,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 1597
+        "explore": 1613
       },
       "coast": {
-        "gather": 2,
+        "gather": 9,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 40
+        "explore": 108
+      },
+      "sand": {
+        "gather": 13,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 86
       }
     },
     "mastery": {},
@@ -1055,25 +1075,25 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 42,
+        "gather": 72,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 53
+        "explore": 210
       },
       "grass": {
         "gather": 122,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 1
+        "explore": 2
       },
       "sand": {
-        "gather": 2,
+        "gather": 3,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 5
+        "explore": 27
       }
     },
     "mastery": {},
@@ -1623,24 +1643,24 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 37,
+        "gather": 125,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 4
+        "explore": 10
       },
       "sand": {
-        "gather": 1,
+        "gather": 4,
         "visit": 0,
         "craft": 0,
         "trade": 0
       },
       "grass": {
-        "gather": 200,
+        "gather": 217,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 1
+        "explore": 5
       },
       "river": {
         "gather": 0,
@@ -1721,7 +1741,8 @@
         "Dew drops collected at dawn hold the purest energy"
       ],
       "coast": [
-        "Signals are strongest during storms along the coast"
+        "Signals are strongest during storms along the coast",
+        "The coast receives driftwood from other worlds"
       ]
     },
     "lore_fragments": [
@@ -1759,14 +1780,14 @@
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 4
+        "explore": 5
       },
       "coast": {
-        "gather": 14,
+        "gather": 15,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 3
+        "explore": 7
       }
     },
     "mastery": {},

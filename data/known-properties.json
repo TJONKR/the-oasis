@@ -1739,7 +1739,56 @@
     "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs": [],
     "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs": [],
     "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber": [],
-    "Fermented Fermented flowers": []
+    "Fermented Fermented flowers": [],
+    "Dried flowers": [],
+    "Fermented shells": [],
+    "sand": [
+      "decay_rate",
+      "temperature",
+      "volatility",
+      "sharpness",
+      "toxicity",
+      "hardness",
+      "brittleness",
+      "solubility",
+      "luminosity",
+      "conductivity",
+      "fertility",
+      "flammability",
+      "organic",
+      "weight",
+      "energy",
+      "ignition",
+      "malleability",
+      "melt_point",
+      "resonance"
+    ],
+    "palm_fronds": [
+      "sharpness",
+      "hardness",
+      "fertility",
+      "energy",
+      "conductivity",
+      "solubility",
+      "toxicity",
+      "volatility"
+    ],
+    "Dried palm_fronds": [],
+    "cactus_fruit": [
+      "volatility",
+      "solubility"
+    ],
+    "Dried cactus_fruit": [],
+    "shells": [
+      "energy",
+      "toxicity",
+      "luminosity",
+      "resonance",
+      "decay_rate",
+      "malleability",
+      "hardness",
+      "ignition"
+    ]
   },
   "29028972-168e-48ca-8590-5fb898719a26": {
     "fiber": [
@@ -2207,7 +2256,16 @@
       "melt_point",
       "ignition"
     ],
-    "Fermented shells": []
+    "Fermented shells": [],
+    "Fermented seaweed": [],
+    "Dried Burning Fiber": [],
+    "seaweed": [
+      "melt_point",
+      "hardness",
+      "volatility",
+      "brittleness",
+      "toxicity"
+    ]
   },
   "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
     "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs": [],
@@ -2254,6 +2312,49 @@
       "brittleness",
       "malleability",
       "flammability",
+      "ignition"
+    ],
+    "sand": [
+      "energy",
+      "solubility",
+      "hardness",
+      "conductivity",
+      "temperature",
+      "ignition",
+      "sharpness",
+      "luminosity",
+      "volatility",
+      "resonance",
+      "fertility",
+      "flammability",
+      "toxicity",
+      "organic",
+      "weight",
+      "decay_rate",
+      "brittleness",
+      "malleability",
+      "melt_point"
+    ],
+    "Dried Burning Fiber": [],
+    "fiber": [
+      "decay_rate",
+      "melt_point",
+      "malleability",
+      "solubility",
+      "temperature",
+      "hardness",
+      "flammability",
+      "sharpness",
+      "resonance",
+      "brittleness",
+      "energy",
+      "conductivity",
+      "fertility",
+      "toxicity",
+      "luminosity",
+      "volatility",
+      "organic",
+      "weight",
       "ignition"
     ]
   },
@@ -2326,7 +2427,8 @@
       "malleability",
       "toxicity"
     ],
-    "Dried fish": []
+    "Dried fish": [],
+    "Dried driftwood": []
   },
   "37336d1a-2af4-4eaa-b687-8c5725067953": {
     "Compost": [],
@@ -2338,9 +2440,92 @@
       "fertility",
       "toxicity",
       "melt_point",
-      "solubility"
+      "solubility",
+      "hardness",
+      "flammability",
+      "malleability",
+      "sharpness",
+      "brittleness",
+      "volatility",
+      "energy",
+      "weight",
+      "conductivity",
+      "temperature",
+      "organic"
     ],
     "Fermented shells": [],
-    "Dried driftwood": []
+    "Dried driftwood": [],
+    "fiber": [
+      "volatility",
+      "malleability",
+      "fertility",
+      "flammability",
+      "toxicity",
+      "conductivity",
+      "sharpness",
+      "energy",
+      "hardness",
+      "luminosity",
+      "melt_point",
+      "solubility",
+      "organic",
+      "temperature",
+      "resonance",
+      "ignition",
+      "weight",
+      "brittleness",
+      "decay_rate"
+    ],
+    "Dried Burning Fiber": [],
+    "palm_fronds": [
+      "conductivity",
+      "ignition",
+      "sharpness",
+      "energy",
+      "luminosity",
+      "flammability",
+      "hardness",
+      "toxicity",
+      "solubility",
+      "melt_point",
+      "resonance",
+      "malleability",
+      "weight",
+      "decay_rate",
+      "brittleness"
+    ]
+  },
+  "d46fbff6-164e-4f5e-9d31-19deeb010ebf": {
+    "Dried driftwood": [],
+    "fiber": [
+      "temperature",
+      "hardness",
+      "malleability",
+      "toxicity",
+      "luminosity",
+      "melt_point"
+    ],
+    "flint": [
+      "ignition",
+      "energy",
+      "resonance",
+      "conductivity",
+      "luminosity",
+      "temperature",
+      "brittleness",
+      "volatility"
+    ],
+    "Dried Herbs": [
+      "ignition",
+      "toxicity"
+    ],
+    "Fermented seaweed": [],
+    "Fermented shells": [],
+    "Dried cactus_fruit": [],
+    "Fermented herbs": [],
+    "shells": [
+      "flammability",
+      "conductivity"
+    ]
   }
 }
