@@ -600,11 +600,7 @@
       padding: 0 8px;
       gap: 8px;
       font-size: 11px;
-      flex-wrap: wrap;
-      height: auto;
-      min-height: 36px;
-      padding-top: 4px;
-      padding-bottom: 4px;
+      height: 36px;
     }
     
     .top-title {
@@ -630,26 +626,80 @@
       display: none;
     }
 
+    /* Sidebar becomes bottom sheet on mobile */
     #agent-sidebar {
+      top: auto;
+      bottom: 0;
+      left: 0;
+      right: 0;
       width: 100vw;
+      height: 50vh;
+      max-height: 50vh;
+      border-left: none;
+      border-top: 1px solid var(--border-glass);
+      border-radius: 16px 16px 0 0;
+      transform: translateY(0);
+    }
+    
+    #agent-sidebar.collapsed {
+      transform: translateY(100%);
+    }
+    
+    .sidebar-header {
+      padding: 8px 16px !important;
+    }
+    
+    /* Drag handle indicator */
+    .sidebar-header::before {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 4px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 2px;
+      margin: 0 auto 8px;
+    }
+    
+    .agent-row {
+      padding: 6px 10px !important;
+    }
+    
+    .agent-name {
+      font-size: 13px !important;
+    }
+    
+    .agent-action {
+      font-size: 10px !important;
     }
     
     #agent-detail {
+      top: auto;
+      bottom: 0;
+      left: 0;
       right: 0;
       width: 100vw;
+      height: 60vh;
+      border-radius: 16px 16px 0 0;
+      border-left: none;
+      border-top: 1px solid var(--border-glass);
     }
     
     #world-feed {
       left: 8px;
       right: 8px;
       width: auto;
-      max-height: 120px;
+      max-height: 100px;
       bottom: 8px;
       font-size: 11px;
     }
     
     .feed-content {
-      max-height: 80px !important;
+      max-height: 64px !important;
+      font-size: 10px;
+    }
+    
+    .feed-header {
+      padding: 6px 10px !important;
     }
     
     #minimap {
@@ -762,7 +812,17 @@
     <div class="detail-content" id="detail-content"></div>
   </div>
 
-  <!-- World Feed -->
+  <!-- Mobile floating buttons -->
+  <div id="mobile-fab" style="display:none; position:fixed; bottom:16px; right:16px; z-index:12; gap:8px; flex-direction:column;">
+    <button onclick="toggleSidebar()" style="width:44px;height:44px;border-radius:22px;border:1px solid rgba(197,200,198,0.2);background:rgba(10,14,20,0.85);backdrop-filter:blur(12px);color:#e6c07b;font-size:18px;cursor:pointer;">👥</button>
+    <button onclick="resetView()" style="width:44px;height:44px;border-radius:22px;border:1px solid rgba(197,200,198,0.2);background:rgba(10,14,20,0.85);backdrop-filter:blur(12px);color:#e6c07b;font-size:18px;cursor:pointer;">🏠</button>
+  </div>
+  <script>
+    if (window.innerWidth <= 768) document.getElementById('mobile-fab').style.display = 'flex';
+    window.addEventListener('resize', () => { document.getElementById('mobile-fab').style.display = window.innerWidth <= 768 ? 'flex' : 'none'; });
+  </script>
+
+<!-- World Feed -->
   <div id="world-feed">
     <div class="feed-header">
       <div class="feed-title">📜 World News</div>
@@ -821,8 +881,9 @@
     let autoFollowIndex = -1;
 
     // UI State
-    let sidebarCollapsed = false;
+    let sidebarCollapsed = window.innerWidth <= 768;
     let statsVisible = false;
+    if (sidebarCollapsed) document.getElementById('agent-sidebar')?.classList.add('collapsed');
 
     // Tile chunk cache
     const chunkCache = new Map();
