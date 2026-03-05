@@ -1,43 +1,44 @@
 #!/usr/bin/env node
-/**
- * Railway startup: seed data volume if empty, decompress world if missing, start server.
- */
-import { existsSync, readdirSync, cpSync, mkdirSync } from 'fs';
+import { existsSync, readdirSync, cpSync, mkdirSync, readFileSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { execSync } from 'child_process';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, '..');
-
-// 1. Seed data volume if empty (Railway mounts empty volume over /app/data)
 const dataDir = join(root, 'data');
 const seedDir = join(root, 'data-seed');
 
+// 1. Seed data if agents.json is missing or empty
 if (existsSync(seedDir)) {
-  const dataFiles = existsSync(dataDir) ? readdirSync(dataDir).filter(f => f.endsWith('.json')) : [];
-  if (dataFiles.length === 0) {
+  const agentsPath = join(dataDir, 'agents.json');
+  let needsSeed = !existsSync(agentsPath);
+  if (!needsSeed) {
+    try {
+      const agents = JSON.parse(readFileSync(agentsPath, 'utf-8'));
+      needsSeed = Object.keys(agents).length === 0;
+    } catch { needsSeed = true; }
+  }
+  if (needsSeed) {
     console.log('📦 Seeding data volume from data-seed/...');
     mkdirSync(dataDir, { recursive: true });
-    cpSync(seedDir, dataDir, { recursive: true });
-    console.log('✅ Data seeded');
+    for (const f of readdirSync(seedDir)) {
+      cpSync(join(seedDir, f), join(dataDir, f), { recursive: true, force: true });
+    }
+    console.log('✅ Data seeded:', readdirSync(dataDir).filter(f => f.endsWith('.json')).length, 'files');
   } else {
-    console.log(`✅ Data volume has ${dataFiles.length} files, skipping seed`);
+    console.log('✅ Data volume OK, agents present');
   }
 }
 
 // 2. Decompress world if missing
-const outputDir = join(root, 'output');
-const worldPath = join(outputDir, 'world.json');
+const worldPath = join(root, 'output', 'world.json');
 const worldGz = join(root, 'assets', 'world.json.gz');
-
-if (!existsSync(worldPath)) {
+if (!existsSync(worldPath) && existsSync(worldGz)) {
   console.log('🌍 Decompressing world...');
-  mkdirSync(outputDir, { recursive: true });
-  execSync(`gunzip -k "${worldGz}" && mv "${join(root, 'assets', 'world.json')}" "${worldPath}"`, { stdio: 'inherit' });
+  mkdirSync(join(root, 'output'), { recursive: true });
+  execSync(`gunzip -c "${worldGz}" > "${worldPath}"`, { stdio: 'inherit' });
   console.log('✅ World ready');
-} else {
-  console.log('✅ World exists');
 }
 
 // 3. Start server

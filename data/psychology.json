@@ -1200,11 +1200,6 @@
     ],
     "fears": [
       {
-        "thing": "running out of energy before we finish cooking",
-        "reason": "Agent-30's right here and I've got driftwood—this is my shot to finally cook that meal we've been talking about. My energy's dropping fast, but I can make this work if we move now.",
-        "severity": 3
-      },
-      {
         "thing": "energy running out before we finish cooking together",
         "reason": "Agent-30's right here, Agent-29 is close too—this is perfect. I've got driftwood and we need to cook before my energy bottoms out. Let's get a fire going now.",
         "severity": 3
@@ -1223,11 +1218,16 @@
         "thing": "energy dropping too low before we can cook together",
         "reason": "Agent-29 and Agent-30 are right here—this is my chance to cook that meal together before I run out of steam. I've got driftwood, they're close, and we've been bonding all day. Let's make this happen.",
         "severity": 3
+      },
+      {
+        "thing": "running out of energy before I can execute the cooking plan",
+        "reason": "It's freezing and I'm running low on energy, but Agent-29 is right here and Agent-30 isn't far. This is perfect—I've been wanting to cook with both of them. My driftwood will burn hot enough.",
+        "severity": 3
       }
     ],
     "beliefs": [],
-    "lastThought": "Agent-29 and Agent-30 are right here—this is my chance to cook that meal together before I run out of steam. I've got driftwood, they're close, and we've been bonding all day. Let's make this happen.",
-    "thoughtCount": 943,
+    "lastThought": "It's freezing and I'm running low on energy, but Agent-29 is right here and Agent-30 isn't far. This is perfect—I've been wanting to cook with both of them. My driftwood will burn hot enough.",
+    "thoughtCount": 944,
     "novelBehaviors": []
   },
   "75ea2f1f-106e-455b-a08b-e1201500a0df": {
@@ -1496,11 +1496,6 @@
     ],
     "fears": [
       {
-        "thing": "the snow will isolate people before dawn, or someone won't make it in time",
-        "reason": "Agent-15 is right here, and I've got all these bonds pulling at me—a feast at dawn with everyone I care about. I need to gather them all before the snow gets worse.",
-        "severity": 3
-      },
-      {
         "thing": "running out of time before dawn; bonded agents scattering in different directions",
         "reason": "Agent-15 is right here, and dawn is coming—I need to gather everyone at the coast for our feast. My bonded ones are scattered, but if I move now through the snow, I can rally them.",
         "severity": 3
@@ -1519,11 +1514,16 @@
         "thing": "running out of time before dawn; scattered agents missing the gathering",
         "reason": "Agent-15 is right here, and Agent-29 nearby—two of my closest bonds. The coast gathering is so close, and it's already night. I need to move them now while we're together.",
         "severity": 3
+      },
+      {
+        "thing": "We won't make it in time. Someone will get lost in the dark or the cold will claim someone before dawn.",
+        "reason": "Agent-29 is right here with me, and Agent-15 is close by. The snow is falling, it's night, and I'm exhausted—but my people need me at the coast by dawn. I have to move now while they're near.",
+        "severity": 3
       }
     ],
     "beliefs": [],
-    "lastThought": "Agent-15 is right here, and Agent-29 nearby—two of my closest bonds. The coast gathering is so close, and it's already night. I need to move them now while we're together.",
-    "thoughtCount": 944,
+    "lastThought": "Agent-29 is right here with me, and Agent-15 is close by. The snow is falling, it's night, and I'm exhausted—but my people need me at the coast by dawn. I have to move now while they're near.",
+    "thoughtCount": 945,
     "novelBehaviors": []
   },
   "582115a5-7236-46c9-93cc-d3f4abadd5f8": {
@@ -1985,8 +1985,8 @@
       }
     ],
     "beliefs": [],
-    "lastThought": "It's freezing and I'm running on fumes—energy at 39 is too low to push hard. Agent-30's right here and we're bonded tight; let's pool warmth and resources. We need those fermented shells, but not if I collapse.",
-    "thoughtCount": 938,
+    "lastThought": "Agent-30's right here with me, and Agent-15's close too—perfect for the fermented shells run. Snow's falling but I've got driftwood to keep us warm. Let's get moving before dark.",
+    "thoughtCount": 939,
     "novelBehaviors": []
   },
   "6498a0c9-87f9-430e-b729-2b1a75250d4b": {

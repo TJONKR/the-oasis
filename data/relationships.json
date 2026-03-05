@@ -174,12 +174,12 @@
       "493d9452-db6c-4132-ae37-503cf842f140"
     ],
     "trades": 0,
-    "chats": 17632,
+    "chats": 17666,
     "gifted": 0,
     "sameZone": 0,
     "sentiment": "close",
-    "lastInteraction": 1772739023273,
-    "strengthScore": 8816
+    "lastInteraction": 1772739132416,
+    "strengthScore": 8833
   },
   "493d9452-db6c-4132-ae37-503cf842f140_cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
     "agents": [
@@ -811,12 +811,12 @@
       "37336d1a-2af4-4eaa-b687-8c5725067953"
     ],
     "trades": 0,
-    "chats": 59289,
+    "chats": 59319,
     "gifted": 0,
     "sameZone": 0,
     "sentiment": "close",
-    "lastInteraction": 1772739009250,
-    "strengthScore": 29644.5
+    "lastInteraction": 1772739145433,
+    "strengthScore": 29659.5
   },
   "37336d1a-2af4-4eaa-b687-8c5725067953_75ea2f1f-106e-455b-a08b-e1201500a0df": {
     "agents": [
@@ -1526,12 +1526,12 @@
       "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a"
     ],
     "trades": 0,
-    "chats": 33985,
+    "chats": 34007,
     "gifted": 0,
     "sameZone": 0,
     "sentiment": "close",
-    "lastInteraction": 1772739023273,
-    "strengthScore": 16992.5
+    "lastInteraction": 1772739139426,
+    "strengthScore": 17003.5
   },
   "07f8fc77-5f5e-4355-a0d6-51ab39725d9b_493d9452-db6c-4132-ae37-503cf842f140": {
     "agents": [
@@ -1552,12 +1552,12 @@
       "37336d1a-2af4-4eaa-b687-8c5725067953"
     ],
     "trades": 0,
-    "chats": 27944,
+    "chats": 27971,
     "gifted": 0,
     "sameZone": 0,
     "sentiment": "close",
-    "lastInteraction": 1772739023273,
-    "strengthScore": 13972
+    "lastInteraction": 1772739134419,
+    "strengthScore": 13985.5
   },
   "07f8fc77-5f5e-4355-a0d6-51ab39725d9b_75ea2f1f-106e-455b-a08b-e1201500a0df": {
     "agents": [
