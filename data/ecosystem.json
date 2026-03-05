@@ -30,10 +30,10 @@
   },
   "forest": {
     "soil_fertility": 100,
-    "water_level": 99.5,
+    "water_level": 97.5,
     "biodiversity": 100,
     "extraction_pressure": 0,
-    "health": 99.83,
+    "health": 99.17,
     "gather_history": []
   },
   "rocky": {
@@ -52,7 +52,6 @@
     "health": 99.83,
     "gather_history": [
       "sand",
-      "sand",
       "shells",
       "sand",
       "shells",
@@ -70,15 +69,16 @@
       "sand",
       "shells",
       "cactus_fruit",
-      "cactus_fruit"
+      "cactus_fruit",
+      "sand"
     ]
   },
   "water": {
     "soil_fertility": 100,
-    "water_level": 99.5,
+    "water_level": 97.5,
     "biodiversity": 100,
     "extraction_pressure": 0,
-    "health": 99.83,
+    "health": 99.17,
     "gather_history": []
   },
   "swamp": {
@@ -91,18 +91,18 @@
   },
   "river": {
     "soil_fertility": 100,
-    "water_level": 99.5,
+    "water_level": 97.5,
     "biodiversity": 100,
     "extraction_pressure": 0,
-    "health": 99.83,
+    "health": 99.17,
     "gather_history": []
   },
   "cave": {
     "soil_fertility": 100,
-    "water_level": 99.5,
+    "water_level": 58.5,
     "biodiversity": 100,
     "extraction_pressure": 0,
-    "health": 99.83,
+    "health": 86.17,
     "gather_history": []
   },
   "coast": {
@@ -112,8 +112,6 @@
     "extraction_pressure": 0,
     "health": 99.83,
     "gather_history": [
-      "seaweed",
-      "driftwood",
       "shells",
       "palm_fronds",
       "seaweed",
@@ -131,7 +129,9 @@
       "shells",
       "shells",
       "seaweed",
-      "driftwood"
+      "driftwood",
+      "driftwood",
+      "fish"
     ]
   },
   "path": {

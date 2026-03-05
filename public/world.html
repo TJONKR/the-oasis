@@ -788,7 +788,8 @@
     // WebSocket
     // ═══════════════════════════════
     function connect() {
-      ws = new WebSocket(`ws://${location.hostname}:${location.port || 3001}`);
+      const proto = location.protocol === 'https:' ? 'wss:' : 'ws:';
+      ws = new WebSocket(`${proto}//${location.host}`);
       ws.onopen = () => console.log('🔌 Connected');
       ws.onclose = () => { setTimeout(connect, 2000); };
       ws.onmessage = (e) => {

@@ -1,19 +1,5 @@
 [
   {
-    "agent": "Agent-17",
-    "agentId": "493d9452-db6c-4132-ae37-503cf842f140",
-    "description": "use fermented shells as bait—the decay-smell should attract crabs more than raw. I'll scatter them in the tide pools to lure them into visible spots where I can grab them.",
-    "tick": 537324,
-    "thought": "The moon's hidden tonight—clouds are thick. But I've got fermented shells and patience. My crew believes in me, and I'm going to prove I'm worth my weight by landing those crabs. Even if conditions aren't perfect, I can't waste this chance."
-  },
-  {
-    "agent": "Agent-29",
-    "agentId": "07f8fc77-5f5e-4355-a0d6-51ab39725d9b",
-    "description": "use driftwood as a digging tool or lever to pry shells from rocks; compost could be useful for fermenting shells faster if I find raw ones",
-    "tick": 537626,
-    "thought": "I've got solid bonds with my crew and we're hunting fermented shells together—this matters. My hunger's creeping up and energy's decent, so I should focus on the mission while I'm still sharp."
-  },
-  {
     "agent": "Agent-29",
     "agentId": "07f8fc77-5f5e-4355-a0d6-51ab39725d9b",
     "description": "Use compost to accelerate fermentation in a natural shell deposit if we find one—bury shells in compost-rich soil to speed up the decay/ferment process",
@@ -890,5 +876,19 @@
     "description": "Create a makeshift fire pit using driftwood bundles arranged in a circle, then use heat to cook/soften the fermented shells into an edible paste or broth. The shells' natural minerals might dissolve slightly under heat, making them more digestible.",
     "tick": 638724,
     "thought": "Energy's dropping fast and I'm starving—can't meet Agent-30 tomorrow like this. Need to eat and rest NOW, but I've got driftwood and shells. Time to cook something real."
+  },
+  {
+    "agent": "Agent-29",
+    "agentId": "07f8fc77-5f5e-4355-a0d6-51ab39725d9b",
+    "description": "Use the fire to both warm ourselves and accelerate fermentation of shells if we find any—apply steady heat to shells placed near (not in) the flames to speed the decay/ferment process.",
+    "tick": 641664,
+    "thought": "It's freezing and I'm hungry, but Agent-15 is right here and we've got a crew mission. We need those fermented shells by midnight—let's pool our driftwood and get a fire going first, then figure out our strategy."
+  },
+  {
+    "agent": "Agent-15",
+    "agentId": "37336d1a-2af4-4eaa-b687-8c5725067953",
+    "description": "Use the dried driftwood as kindling and ask the others to help gather snow-covered foraged food to cook over the fire—make it a real shared meal",
+    "tick": 643405,
+    "thought": "Both 29 and 30 are right here—this is my chance! I've got driftwood, it's cold, and we could actually make something together before I'm too tired."
   }
 ]

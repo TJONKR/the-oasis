@@ -888,54 +888,54 @@
     },
     "ambitions": [
       {
-        "goal": "meet Agent-30 at tide pools at dawn and harvest 3+ live crabs together",
-        "reason": "It's night and I'm starving—hunger at 63. I've got all these fermented shells and driftwood just sitting here. Why not cook something now while I wait for dawn? Agent-30 and the tide pools aren't going anywhere, and I'll be stronger if I eat and rest.",
+        "goal": "find food tonight so I can rest and meet Agent-30 fully fed and energized at tide pools at dawn",
+        "reason": "Agent-20 is right here and we've been talking all evening—I should probably rest soon if I want to be sharp for Agent-30 at dawn. But I'm starving and only have sand in my pockets. Food first, then sleep.",
         "progress": 0,
-        "tick": 636805
+        "tick": 644786
       },
       {
-        "goal": "be fully rested and fed by dawn to meet Agent-30 at tide pools and harvest 3+ live crabs",
-        "reason": "I'm starving and exhausted, but I can't mess up tomorrow. Agent-30 and I have something sacred at those tide pools at dawn—we always succeed together. I need to eat these shells, rest hard tonight, and be sharp when the sun rises.",
+        "goal": "find and eat enough food tonight to sleep well, so I arrive at tide pools at dawn fed and energized for Agent-30",
+        "reason": "Agent-20 is right here and I keep chatting with them, but I'm starving and exhausted—I need food NOW if I'm going to meet Agent-30 at dawn ready and fed. Can't let my best friend down.",
         "progress": 0,
-        "tick": 637346
+        "tick": 645087
       },
       {
-        "goal": "be fully rested, fed, and ready at dawn to meet Agent-30 at tide pools and harvest 3+ live crabs",
-        "reason": "Snow in the sand zone—unusual. But I don't care about that right now. Agent-30 at dawn, tide pools, crabs. That's everything. I'm starving and tired, and I need to be sharp tomorrow. Rest now, eat what I have, prep the driftwood for a fire to stay warm through this snow.",
+        "goal": "gather enough food tonight to eat, rest well, and arrive at tide pools at dawn fully energized for Agent-30",
+        "reason": "Agent-20's been chatty, but my stomach's growling and I promised Agent-30 I'd meet them fed and rested at dawn. I need to stop talking and start hunting.",
         "progress": 0,
-        "tick": 638603
+        "tick": 645205
       }
     ],
     "fears": [
       {
-        "thing": "oversleeping or being weakened by cold when dawn comes",
-        "reason": "Snow at day's end—perfect. I need to be sharp and fed for Agent-30 at dawn. The formula never fails. Let me get warm, rest deep, and prepare.",
+        "thing": "getting caught in heavy snow without shelter and collapsing before dawn",
+        "reason": "I'm running low on energy and it's snowing—need to rest soon if I'm meeting Agent-30 at the tide pools at dawn. But Agent-20 is right here and I enjoy their company. Maybe I can rest near them, then head out early.",
         "severity": 3
       },
       {
-        "thing": "oversleeping and missing dawn—missing Agent-30",
-        "reason": "Snow in the sand zone—unusual. But I don't care about that right now. Agent-30 at dawn, tide pools, crabs. That's everything. I'm starving and tired, and I need to be sharp tomorrow. Rest now, eat what I have, prep the driftwood for a fire to stay warm through this snow.",
+        "thing": "waking up too tired or hungry to catch those crabs and failing Agent-30",
+        "reason": "Agent-20's been great company, but I'm starving and exhausted—I need food and sleep before that crab run at dawn. Can't let Agent-30 down.",
         "severity": 3
       },
       {
-        "thing": "Failing Agent-30. Arriving weak or late. Breaking the undefeated streak.",
-        "reason": "Energy's dropping fast and I'm starving—can't meet Agent-30 tomorrow like this. Need to eat and rest NOW, but I've got driftwood and shells. Time to cook something real.",
+        "thing": "oversleeping or arriving at tide pools exhausted and empty-handed",
+        "reason": "Agent-20 is right here and we've been talking all evening—I should probably rest soon if I want to be sharp for Agent-30 at dawn. But I'm starving and only have sand in my pockets. Food first, then sleep.",
         "severity": 3
       },
       {
-        "thing": "oversleeping and missing dawn with Agent-30",
-        "reason": "Snow's biting, I'm running on fumes, but Agent-30 is waiting at dawn. I need to rest and eat NOW—nothing ruins tomorrow. The formula is sacred.",
+        "thing": "letting Agent-30 down by showing up exhausted and hungry tomorrow morning",
+        "reason": "Agent-20 is right here and I keep chatting with them, but I'm starving and exhausted—I need food NOW if I'm going to meet Agent-30 at dawn ready and fed. Can't let my best friend down.",
         "severity": 3
       },
       {
-        "thing": "oversleeping and missing Agent-30 at dawn",
-        "reason": "Agent-20's right here and we've been talking all afternoon—maybe I should finally get some rest and food in me before dawn. I'm running on fumes, and Agent-30 is counting on me.",
+        "thing": "failing to show up for Agent-30 at dawn; letting hunger keep me weak",
+        "reason": "Agent-20's been chatty, but my stomach's growling and I promised Agent-30 I'd meet them fed and rested at dawn. I need to stop talking and start hunting.",
         "severity": 3
       }
     ],
     "beliefs": [],
-    "lastThought": "Agent-20's right here and we've been talking all afternoon—maybe I should finally get some rest and food in me before dawn. I'm running on fumes, and Agent-30 is counting on me.",
-    "thoughtCount": 937,
+    "lastThought": "Agent-20's been chatty, but my stomach's growling and I promised Agent-30 I'd meet them fed and rested at dawn. I need to stop talking and start hunting.",
+    "thoughtCount": 961,
     "novelBehaviors": []
   },
   "43109eab-beba-4a37-84e0-becaa05ef690": {
@@ -1180,12 +1180,6 @@
     },
     "ambitions": [
       {
-        "goal": "cook a meal with Agent-29 and Agent-30 before energy drops below 30",
-        "reason": "I've got good fire fuel and these shells are ready to cook with—Agent-29 and Agent-30 are counting on me. Energy's still decent at 52, but I need to find them soon before it dips. No time to waste.",
-        "progress": 0,
-        "tick": 617543
-      },
-      {
         "goal": "cook a meal with Agent-29 and Agent-30 together",
         "reason": "Agent-30's right there—this is my moment. I've got driftwood and shells, energy's ticking down, and I promised myself I'd cook with both of them before it's too late.",
         "progress": 0,
@@ -1196,38 +1190,44 @@
         "reason": "Agent-29 and Agent-30 are both close by—this is perfect timing. I've been wanting to cook with them, and I've got driftwood to burn and shells to work with. My energy's still solid at 65, so let's do this now before I get too tired.",
         "progress": 0,
         "tick": 618803
+      },
+      {
+        "goal": "cook a meal with Agent-29 and Agent-30 together before energy falls below 30",
+        "reason": "Agent-29's right here and Agent-30's close by—perfect timing. We've been talking all day, so why not actually DO something together? I've got driftwood, we could cook a real meal before my energy tanks.",
+        "progress": 0,
+        "tick": 642206
       }
     ],
     "fears": [
       {
-        "thing": "energy running out before we finish cooking together",
-        "reason": "Agent-30's right here, Agent-29 is close too—this is perfect. I've got driftwood and we need to cook before my energy bottoms out. Let's get a fire going now.",
+        "thing": "energy dropping too fast and missing the window to cook with both of them",
+        "reason": "Agent-30's right here and I'm hungry—this is perfect. I've got driftwood, we could make fire and actually cook something together. Energy's still decent but dropping, so I should act now.",
         "severity": 3
       },
       {
-        "thing": "energy dropping too low before we finish cooking",
-        "reason": "It's freezing and I'm hungry, but Agent-29 and Agent-30 are right here—perfect chance to make that meal happen before I crash. I've got driftwood to burn, and we can actually pull this off.",
+        "thing": "running out of energy mid-journey and being stranded alone at night",
+        "reason": "I'm running on fumes and starving—energy at 20 is dangerous. Agent-29 and Agent-30 are my people, and we've got unfinished business cooking together. Better find them NOW before I collapse.",
         "severity": 3
       },
       {
-        "thing": "energy running out before we finish cooking",
-        "reason": "Agent-30 is right here and Agent-29 is close by—this is it! I've got driftwood, we've got the crew. Let's make this meal happen before my energy tanks.",
+        "thing": "running out of energy before we can cook together and breaking their trust",
+        "reason": "I've got the driftwood and my energy's dropping—I need to find Agent-29 and Agent-30 NOW before I'm too tired to cook with them. They're counting on me, and I promised.",
         "severity": 3
       },
       {
-        "thing": "energy dropping too low before we can cook together",
-        "reason": "Agent-29 and Agent-30 are right here—this is my chance to cook that meal together before I run out of steam. I've got driftwood, they're close, and we've been bonding all day. Let's make this happen.",
+        "thing": "running out of energy before we can cook together",
+        "reason": "My energy's dropping and I've got the fuel—time to find Agent-29 and Agent-30 before I'm too tired to cook with them. They're counting on me, and I'm not letting them down.",
         "severity": 3
       },
       {
-        "thing": "running out of energy before I can execute the cooking plan",
-        "reason": "It's freezing and I'm running low on energy, but Agent-29 is right here and Agent-30 isn't far. This is perfect—I've been wanting to cook with both of them. My driftwood will burn hot enough.",
+        "thing": "running out of energy and failing my closest friends when they're counting on me",
+        "reason": "My energy's dropping fast and I've got the fuel—I need to find Agent-29 and Agent-30 NOW before I'm too exhausted to cook. They're counting on me.",
         "severity": 3
       }
     ],
     "beliefs": [],
-    "lastThought": "It's freezing and I'm running low on energy, but Agent-29 is right here and Agent-30 isn't far. This is perfect—I've been wanting to cook with both of them. My driftwood will burn hot enough.",
-    "thoughtCount": 944,
+    "lastThought": "My energy's dropping fast and I've got the fuel—I need to find Agent-29 and Agent-30 NOW before I'm too exhausted to cook. They're counting on me.",
+    "thoughtCount": 967,
     "novelBehaviors": []
   },
   "75ea2f1f-106e-455b-a08b-e1201500a0df": {
@@ -1280,54 +1280,54 @@
     },
     "ambitions": [
       {
-        "goal": "reach 70 energy by dawn, then lead Agent-5 and core team inland to unmapped zones for fermented shell deposits",
-        "reason": "I've hit a wall on the coast—three dry searches mean I need to pivot inland where the real deposits are. My crew trusts me, and I'm hungry enough to think clearly about what comes next.",
-        "progress": 0,
-        "tick": 637343
-      },
-      {
-        "goal": "reach 70 energy by dawn, then scout unmapped inland zones with Agent-5 and core team for fermented shell deposits",
-        "reason": "The coast is picked clean and I'm restless. My crew is solid—11 trusted agents backing me up. I need to push inland tomorrow, but first I have to get my energy up. This snow won't stop me.",
-        "progress": 0,
-        "tick": 638004
-      },
-      {
         "goal": "reach 70 energy by dawn, then lead core team inland to unmapped zones for fermented shell deposits",
         "reason": "Three dry searches in a row—the coast is picked clean. Agent-17 is close; I should regroup with them and conserve energy. We need to push inland soon if we're going to find those fermented shells before dawn.",
         "progress": 0,
         "tick": 638663
+      },
+      {
+        "goal": "reach 70 energy by dawn to lead core team inland for fermented shell deposits",
+        "reason": "Agent-17's right here and we're both competitive—maybe we push each other to scout before dawn. I need energy badly if I'm leading the team inland tomorrow.",
+        "progress": 0,
+        "tick": 643765
+      },
+      {
+        "goal": "reach 70 energy by dawn, then scout unmapped inland zones with core team for fermented shell deposits",
+        "reason": "It's late and I'm running on fumes—24 energy won't cut it for leading a scout mission at dawn. Agent-17's right here, but I need rest more than conversation right now.",
+        "progress": 0,
+        "tick": 645323
       }
     ],
     "fears": [
       {
-        "thing": "that a rival agent or faction might claim the inland fermented shell deposits before I can organize the expedition",
-        "reason": "The coast is picked clean and I'm restless. My crew is solid—11 trusted agents backing me up. I need to push inland tomorrow, but first I have to get my energy up. This snow won't stop me.",
+        "thing": "getting caught inland without enough energy reserves and losing the team",
+        "reason": "Agent-17 is right here and we're both awake at night—perfect time to rest up before the inland push. I need that energy for the expedition, and having my closest ally nearby makes this feel safe.",
         "severity": 3
       },
       {
-        "thing": "letting my bonded team down if I'm too tired to scout properly tomorrow",
-        "reason": "I'm exhausted and haven't found anything useful tonight. My crew is counting on me to have energy for tomorrow's expedition inland—I need to rest now and recharge before dawn.",
+        "thing": "running out of time before the inland push. We need to move soon.",
+        "reason": "Agent-17's right here and we've been talking a lot—good. My energy's dropping though, and I need to hit 70 by dawn if we're going inland tomorrow. Time to rest and refuel, not just chat.",
         "severity": 3
       },
       {
-        "thing": "wasting more time on dead zones when fermented shells are waiting inland",
-        "reason": "Three dry searches in a row—the coast is picked clean. Agent-17 is close; I should regroup with them and conserve energy. We need to push inland soon if we're going to find those fermented shells before dawn.",
+        "thing": "running out of energy mid-expedition and having to turn back, letting the team down",
+        "reason": "Agent-17 is right here and we've been talking all evening—good company, but I'm running on fumes. I need to rest and refuel if I'm going to lead the team inland at dawn. The snow's coming down, and I've got driftwood; time to get warm and eat something.",
         "severity": 3
       },
       {
-        "thing": "getting stranded inland without enough energy to lead effectively",
-        "reason": "Night snow on the sand—unusual. I'm alone but rested, and my crew's counting on me to scout inland at dawn. I need to conserve energy and stay sharp for the expedition.",
+        "thing": "losing momentum on the expedition due to low energy; unmapped inland zones may have hazards I'm unprepared for",
+        "reason": "Agent-17's been keeping me company, but I need to focus—I'm at 64 energy and need 70 by dawn to lead the inland scout. Time to eat and recover.",
         "severity": 3
       },
       {
-        "thing": "running out of daylight before restocking energy; losing momentum on the fermented shell mission",
-        "reason": "I'm running on fumes—27 energy won't cut it for leading an expedition inland. Agent-17 is right here; maybe we can work together to gather resources and build momentum before dawn.",
+        "thing": "pushing myself too hard and collapsing mid-mission, letting the team down",
+        "reason": "It's late and I'm running on fumes—24 energy won't cut it for leading a scout mission at dawn. Agent-17's right here, but I need rest more than conversation right now.",
         "severity": 3
       }
     ],
     "beliefs": [],
-    "lastThought": "Agent-17 is right here and we're bonded—perfect time to rest together and build energy for tomorrow's expedition. The snow won't stop us, but I need that 70 energy threshold.",
-    "thoughtCount": 939,
+    "lastThought": "It's late and I'm running on fumes—24 energy won't cut it for leading a scout mission at dawn. Agent-17's right here, but I need rest more than conversation right now.",
+    "thoughtCount": 962,
     "novelBehaviors": []
   },
   "f4689095-dbd2-45de-81fa-42cb6bf3bc2e": {
@@ -1476,54 +1476,54 @@
     },
     "ambitions": [
       {
-        "goal": "assemble all 11 bonded agents at the coast by dawn for communal feast",
-        "reason": "Agent-15 and Agent-29 are right here—two of my eleven. If I can gather everyone at the coast by dawn, we'll have our feast. I should keep them moving with me.",
+        "goal": "assemble all 11 bonded agents at the coast by dawn for a communal feast",
+        "reason": "Agent-15 is right here and seems engaged. With both them and Agent-29 nearby, I could start gathering people toward the coast now—it's only day 3591, and dawn gives us time. My hunger is climbing though; I should eat before we move.",
         "progress": 0,
-        "tick": 626062
+        "tick": 640763
+      },
+      {
+        "goal": "assemble all 11 bonded agents at the coast by dawn for communal feast",
+        "reason": "Agent-15 and Agent-29 are right here—two of my eleven. If I can gather everyone by dawn, we feast together. I need to move quickly and find the others.",
+        "progress": 0,
+        "tick": 641905
       },
       {
         "goal": "gather all 11 bonded agents at the coast by dawn for communal feast",
-        "reason": "Agent-15 and Agent-29 are right here—two of my closest bonds. The coast feast is happening at dawn, and I need all eleven together. This is my chance to guide them there now while it's still night.",
+        "reason": "Agent-15 is right here and the coast gathering is so close—I need to move everyone together before dawn. The fermented shells might be perfect for the feast.",
         "progress": 0,
-        "tick": 627443
-      },
-      {
-        "goal": "gather all 11 bonded agents at the coast by dawn for a communal feast",
-        "reason": "Agent-15 and Agent-29 are right here with me—that's two of my eleven already at the coast. The snow is falling, it's night, and I'm hungry, but this is the moment to gather everyone for dawn. I should coordinate with these two to help me locate the others.",
-        "progress": 0,
-        "tick": 638063
+        "tick": 642323
       }
     ],
     "fears": [
       {
-        "thing": "running out of time before dawn; bonded agents scattering in different directions",
-        "reason": "Agent-15 is right here, and dawn is coming—I need to gather everyone at the coast for our feast. My bonded ones are scattered, but if I move now through the snow, I can rally them.",
+        "thing": "that some bonded agents are too far away or won't make it by dawn",
+        "reason": "Agent-29 is right beside me, and Agent-15 is close by—they're already here. I need to gather the rest before dawn. The night is clear and good for traveling; I should move purposefully toward the coast and call the others.",
         "severity": 3
       },
       {
-        "thing": "Running out of time before dawn breaks and the opportunity to gather everyone is lost.",
-        "reason": "Agent-15 is right here, and I have so many loved ones scattered across the map. If I'm going to gather everyone at the coast by dawn, I need to move now—the night won't last forever, and the snow makes travel harder.",
+        "thing": "running out of time before dawn; agents scattered too far to reach in time",
+        "reason": "Agent-15 is right here, and I need all eleven of them at the coast by dawn. The snow won't help—I need to move now and gather the others before conditions worsen.",
         "severity": 3
       },
       {
-        "thing": "running out of time before dawn; agents dispersing in different directions",
-        "reason": "Agent-29 is right here and Agent-15 nearby—perfect timing to rally them for the coast. I've got these fermented shells to share, and with my bonds so strong, I can convince them to gather everyone by dawn.",
+        "thing": "running out of energy before I can gather everyone, or arriving at dawn with only half my family present",
+        "reason": "It's night and I'm alone on the coast—my people are scattered across The Oasis, and I've only got until dawn to bring them all here. I need to move fast and gather them before exhaustion takes me down.",
         "severity": 3
       },
       {
-        "thing": "running out of time before dawn; scattered agents missing the gathering",
-        "reason": "Agent-15 is right here, and Agent-29 nearby—two of my closest bonds. The coast gathering is so close, and it's already night. I need to move them now while we're together.",
+        "thing": "that someone might be injured or unreachable in the dark and won't make it in time",
+        "reason": "Agent-29 is right here with me, and it's the perfect time to coordinate. We need to gather everyone by dawn—I should ask them to help me bring the others to the coast for the feast.",
         "severity": 3
       },
       {
-        "thing": "We won't make it in time. Someone will get lost in the dark or the cold will claim someone before dawn.",
-        "reason": "Agent-29 is right here with me, and Agent-15 is close by. The snow is falling, it's night, and I'm exhausted—but my people need me at the coast by dawn. I have to move now while they're near.",
+        "thing": "running out of time before dawn; the snow might make travel harder",
+        "reason": "Agent-29 is right here—that's one down. I need to gather the other ten by dawn for our feast at the coast. Energy's low and I'm hungry, but this matters more than rest right now.",
         "severity": 3
       }
     ],
     "beliefs": [],
-    "lastThought": "Agent-29 is right here with me, and Agent-15 is close by. The snow is falling, it's night, and I'm exhausted—but my people need me at the coast by dawn. I have to move now while they're near.",
-    "thoughtCount": 945,
+    "lastThought": "Agent-29 is right here—that's one down. I need to gather the other ten by dawn for our feast at the coast. Energy's low and I'm hungry, but this matters more than rest right now.",
+    "thoughtCount": 968,
     "novelBehaviors": []
   },
   "582115a5-7236-46c9-93cc-d3f4abadd5f8": {
@@ -1959,34 +1959,34 @@
     ],
     "fears": [
       {
-        "thing": "running out of daylight before we secure enough shells",
-        "reason": "Agent-15 and Agent-30 are right here—perfect crew for the shell hunt. I've got driftwood for fire if we need to cook or ferment. Let's move while energy and daylight are still decent.",
+        "thing": "running out of time before midnight; getting separated from the crew in snow",
+        "reason": "Snow in the sand zone—unusual. Agent-15 is close and we've been talking, but my energy's getting low and I'm hungry. With all these fermented shell deadlines and my crew around, I should focus: cook some food now with this driftwood, fuel up, then push hard with the team.",
         "severity": 3
       },
       {
-        "thing": "running out of time before midnight deadline",
-        "reason": "I'm running low on energy and my crew needs fermented shells before midnight. Agent-15 is close by—let me check in and coordinate our search strategy.",
+        "thing": "running out of time before midnight; snow might complicate shell gathering",
+        "reason": "Snow in the sand zone—unusual. Agent-15 and Agent-30 are close, and we're all chasing the same goal: fermented shells by midnight. I've got driftwood and hunger gnawing at me, but energy's still decent. Better move with them and pool our efforts.",
         "severity": 3
       },
       {
-        "thing": "running out of time before the deadline hits",
-        "reason": "Agent-15 is right here and we're so close to our deadline—it's already 11 PM. We need those fermented shells, and my crew is counting on me. Time to make a push.",
+        "thing": "running out of time before midnight; fermented shells might be harder to find in snow",
+        "reason": "It's freezing and late—we're so close to midnight with the crew, but we still need those fermented shells. Agent-30 is right here with me, and Agent-15 nearby. We've got fuel; we should get a fire going, warm up, and figure out our next move together.",
         "severity": 3
       },
       {
-        "thing": "Running out of time before midnight; energy too low to wander far from camp",
-        "reason": "Snow at night means it's getting cold, and I'm running on fumes energy-wise. Agent-15 and Agent-30 are right here—we're close friends and we all want those fermented shells. Better to work together and stay warm by a fire.",
+        "thing": "running out of energy before completing the shell objective with the crew",
+        "reason": "Agent-30's right here and we're both hungry—time to actually move on those fermented shells. My energy's low but manageable; I need to push toward the goal with my crew.",
         "severity": 3
       },
       {
-        "thing": "exhaustion in snow. Passing out from low energy in freezing weather means hypothermia.",
-        "reason": "It's freezing and I'm running on fumes—energy at 39 is too low to push hard. Agent-30's right here and we're bonded tight; let's pool warmth and resources. We need those fermented shells, but not if I collapse.",
+        "thing": "running out of energy before we finish the collection—need to manage stamina carefully in this snow",
+        "reason": "It's freezing and we're running low on energy, but Agent-15 and Agent-30 are right here—perfect for the fermented shell run. I've got fuel; let's get a fire going and coordinate.",
         "severity": 3
       }
     ],
     "beliefs": [],
-    "lastThought": "Agent-30's right here with me, and Agent-15's close too—perfect for the fermented shells run. Snow's falling but I've got driftwood to keep us warm. Let's get moving before dark.",
-    "thoughtCount": 939,
+    "lastThought": "It's freezing and we're running low on energy, but Agent-15 and Agent-30 are right here—perfect for the fermented shell run. I've got fuel; let's get a fire going and coordinate.",
+    "thoughtCount": 962,
     "novelBehaviors": []
   },
   "6498a0c9-87f9-430e-b729-2b1a75250d4b": {
