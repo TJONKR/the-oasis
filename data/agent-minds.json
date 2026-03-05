@@ -3607,146 +3607,146 @@
     "actionTicks": 0,
     "intent": {
       "action": "chat",
-      "targetX": 1147,
-      "targetY": 366,
-      "reason": "Talk to Agent-29",
-      "startedTick": 7856,
+      "targetX": 1138,
+      "targetY": 367,
+      "reason": "Talk to Agent-30",
+      "startedTick": 8526,
       "maxTicks": 30
     },
     "pathThisTick": [
       {
-        "x": 1145,
-        "y": 363
+        "x": 1144,
+        "y": 361
       }
     ],
     "memory": {
       "short": [
         {
-          "tick": 1772738716764,
+          "tick": 1772738911088,
           "text": "Chatted with Agent-30"
         },
         {
-          "tick": 1772738716766,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772738731788,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772738742806,
+          "tick": 1772738911089,
           "text": "Chatted with Agent-29"
         },
         {
-          "tick": 1772738744807,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772738744808,
+          "tick": 1772738912091,
           "text": "Chatted with Agent-29"
         },
         {
-          "tick": 1772738747813,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772738749817,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772738750821,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772738751822,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772738751825,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772738753823,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "text": "Agent-29 and Agent-30 are both nearby and I have flammable driftwood—perfect setup for the group meal I've been planning.",
-          "tick": 639445
-        },
-        {
-          "tick": 1772738763837,
+          "tick": 1772738940133,
           "text": "Chatted with Agent-29"
         },
         {
-          "tick": 1772738764839,
+          "tick": 1772738941136,
           "text": "Chatted with Agent-29"
         },
         {
-          "tick": 1772738771854,
+          "tick": 1772738941138,
+          "text": "Chatted with Agent-30"
+        },
+        {
+          "tick": 1772738953155,
           "text": "Chatted with Agent-29"
         },
         {
-          "tick": 1772738785875,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772738786877,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772738787879,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772738788881,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772738788883,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772738800899,
+          "tick": 1772738953157,
           "text": "Chatted with Agent-29"
         },
         {
-          "tick": 1772738802905,
+          "tick": 1772738954156,
           "text": "Chatted with Agent-30"
         },
         {
-          "tick": 1772738804905,
-          "text": "Chatted with Agent-29"
-        },
-        {
-          "tick": 1772738817924,
+          "tick": 1772738955157,
           "text": "Chatted with Agent-30"
         },
         {
-          "tick": 1772738839960,
+          "tick": 1772738964171,
           "text": "Chatted with Agent-29"
         },
         {
-          "tick": 1772738839962,
+          "tick": 1772738964174,
+          "text": "Chatted with Agent-29"
+        },
+        {
+          "tick": 1772738965173,
           "text": "Chatted with Agent-30"
         },
         {
-          "tick": 1772738841963,
+          "tick": 1772738966174,
           "text": "Chatted with Agent-30"
         },
         {
-          "tick": 1772738842965,
+          "tick": 1772738967177,
           "text": "Chatted with Agent-29"
         },
         {
-          "tick": 1772738861999,
+          "tick": 1772738968181,
           "text": "Chatted with Agent-29"
+        },
+        {
+          "tick": 1772738969182,
+          "text": "Chatted with Agent-30"
+        },
+        {
+          "tick": 1772738970182,
+          "text": "Chatted with Agent-29"
+        },
+        {
+          "tick": 1772738971185,
+          "text": "Chatted with Agent-29"
+        },
+        {
+          "tick": 1772738972186,
+          "text": "Searched for a challenge in grass but found nothing"
+        },
+        {
+          "tick": 1772738974192,
+          "text": "Chatted with Agent-29"
+        },
+        {
+          "tick": 1772738976193,
+          "text": "Chatted with Agent-29"
+        },
+        {
+          "tick": 1772738977195,
+          "text": "Chatted with Agent-29"
+        },
+        {
+          "tick": 1772738979198,
+          "text": "Chatted with Agent-29"
+        },
+        {
+          "tick": 1772738980198,
+          "text": "Chatted with Agent-29"
+        },
+        {
+          "tick": 1772739005239,
+          "text": "Chatted with Agent-30"
+        },
+        {
+          "tick": 1772739005241,
+          "text": "Chatted with Agent-30"
+        },
+        {
+          "tick": 1772739006241,
+          "text": "Chatted with Agent-30"
+        },
+        {
+          "tick": 1772739009245,
+          "text": "Chatted with Agent-30"
+        },
+        {
+          "tick": 1772739009247,
+          "text": "Chatted with Agent-30"
         }
       ],
       "lessons": [],
       "visited": {
-        "coast": 66527,
-        "sand": 3687,
-        "grass": 29998,
+        "coast": 66538,
+        "sand": 3700,
+        "grass": 30068,
         "river": 27
       },
       "gathered": {
@@ -3799,8 +3799,8 @@
       },
       "07f8fc77-5f5e-4355-a0d6-51ab39725d9b": {
         "name": "Agent-29",
-        "score": 31222,
-        "interactions": 29814
+        "score": 31261,
+        "interactions": 29853
       },
       "bad7a626-0d4d-4a2e-927a-fd46ed05a861": {
         "name": "Agent-9",
@@ -3809,8 +3809,8 @@
       },
       "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
         "name": "Agent-30",
-        "score": 63159,
-        "interactions": 61567
+        "score": 63191,
+        "interactions": 61599
       },
       "fe02d354-e4fb-4535-8cad-e9d9e4828245": {
         "name": "Agent-3",
@@ -3879,7 +3879,7 @@
       }
     },
     "journal": "I am Agent-15. I just arrived in this world.",
-    "mood": "tired",
+    "mood": "happy",
     "lastReflection": 0,
     "lastReason": "Talk to Agent-30"
   },
@@ -4208,116 +4208,20 @@
     "actionTicks": 0,
     "intent": {
       "action": "explore",
-      "targetX": 435,
-      "targetY": 431,
+      "targetX": 391,
+      "targetY": 361,
       "reason": "Restless — need new experiences",
-      "startedTick": 7852,
+      "startedTick": 8532,
       "maxTicks": 30
     },
     "pathThisTick": [
       {
-        "x": 431,
-        "y": 387
+        "x": 427,
+        "y": 388
       }
     ],
     "memory": {
       "short": [
-        {
-          "tick": 1772738701673,
-          "text": "Chatted with Agent-20"
-        },
-        {
-          "tick": 1772738702675,
-          "text": "Chatted with Agent-20"
-        },
-        {
-          "tick": 1772738721772,
-          "text": "Chatted with Agent-20"
-        },
-        {
-          "tick": 1772738723773,
-          "text": "Chatted with Agent-20"
-        },
-        {
-          "tick": 1772738724776,
-          "text": "Chatted with Agent-20"
-        },
-        {
-          "tick": 1772738725778,
-          "text": "Chatted with Agent-20"
-        },
-        {
-          "tick": 1772738749819,
-          "text": "Chatted with Agent-20"
-        },
-        {
-          "text": "Agent-20 is solid company—good to know they're nearby if I need anything tonight.",
-          "tick": 639443
-        },
-        {
-          "tick": 1772738757831,
-          "text": "Chatted with Agent-20"
-        },
-        {
-          "tick": 1772738768849,
-          "text": "Chatted with Agent-20"
-        },
-        {
-          "tick": 1772738768852,
-          "text": "Chatted with Agent-20"
-        },
-        {
-          "tick": 1772738801903,
-          "text": "Chatted with Agent-20"
-        },
-        {
-          "tick": 1772738802907,
-          "text": "Chatted with Agent-20"
-        },
-        {
-          "tick": 1772738804908,
-          "text": "Chatted with Agent-20"
-        },
-        {
-          "tick": 1772738805909,
-          "text": "Chatted with Agent-20"
-        },
-        {
-          "tick": 1772738806910,
-          "text": "Chatted with Agent-20"
-        },
-        {
-          "tick": 1772738807912,
-          "text": "Chatted with Agent-20"
-        },
-        {
-          "tick": 1772738808915,
-          "text": "Chatted with Agent-20"
-        },
-        {
-          "tick": 1772738809914,
-          "text": "Chatted with Agent-20"
-        },
-        {
-          "tick": 1772738810918,
-          "text": "Chatted with Agent-20"
-        },
-        {
-          "tick": 1772738811918,
-          "text": "Chatted with Agent-20"
-        },
-        {
-          "tick": 1772738821934,
-          "text": "Chatted with Agent-20"
-        },
-        {
-          "tick": 1772738823936,
-          "text": "Chatted with Agent-20"
-        },
-        {
-          "tick": 1772738824937,
-          "text": "Chatted with Agent-20"
-        },
         {
           "tick": 1772738868010,
           "text": "Chatted with Agent-20"
@@ -4341,13 +4245,109 @@
         {
           "tick": 1772738882034,
           "text": "Chatted with Agent-20"
+        },
+        {
+          "tick": 1772738905076,
+          "text": "Chatted with Agent-20"
+        },
+        {
+          "tick": 1772738905077,
+          "text": "Chatted with Agent-20"
+        },
+        {
+          "tick": 1772738906079,
+          "text": "Chatted with Agent-20"
+        },
+        {
+          "tick": 1772738908084,
+          "text": "Chatted with Agent-20"
+        },
+        {
+          "tick": 1772738933120,
+          "text": "Chatted with Agent-20"
+        },
+        {
+          "tick": 1772738935124,
+          "text": "Chatted with Agent-20"
+        },
+        {
+          "tick": 1772738949150,
+          "text": "Chatted with Agent-20"
+        },
+        {
+          "tick": 1772738950149,
+          "text": "Chatted with Agent-20"
+        },
+        {
+          "tick": 1772738965174,
+          "text": "Chatted with Agent-20"
+        },
+        {
+          "tick": 1772738966175,
+          "text": "Chatted with Agent-20"
+        },
+        {
+          "tick": 1772738976194,
+          "text": "Chatted with Agent-20"
+        },
+        {
+          "tick": 1772738977197,
+          "text": "Chatted with Agent-20"
+        },
+        {
+          "tick": 1772738978197,
+          "text": "Chatted with Agent-20"
+        },
+        {
+          "tick": 1772738979200,
+          "text": "Chatted with Agent-20"
+        },
+        {
+          "tick": 1772738980200,
+          "text": "Chatted with Agent-20"
+        },
+        {
+          "tick": 1772738982203,
+          "text": "Chatted with Agent-20"
+        },
+        {
+          "tick": 1772738983205,
+          "text": "Chatted with Agent-20"
+        },
+        {
+          "tick": 1772738984207,
+          "text": "Chatted with Agent-20"
+        },
+        {
+          "tick": 1772738986210,
+          "text": "Chatted with Agent-20"
+        },
+        {
+          "tick": 1772738997226,
+          "text": "Chatted with Agent-20"
+        },
+        {
+          "tick": 1772738997228,
+          "text": "Chatted with Agent-20"
+        },
+        {
+          "tick": 1772738998230,
+          "text": "Chatted with Agent-20"
+        },
+        {
+          "tick": 1772738999229,
+          "text": "Chatted with Agent-20"
+        },
+        {
+          "tick": 1772739007244,
+          "text": "Chatted with Agent-20"
         }
       ],
       "lessons": [],
       "visited": {
-        "grass": 10321,
-        "sand": 13516,
-        "coast": 74006,
+        "grass": 10331,
+        "sand": 13589,
+        "coast": 74013,
         "river": 9
       },
       "gathered": {
@@ -4452,8 +4452,8 @@
       },
       "75ea2f1f-106e-455b-a08b-e1201500a0df": {
         "name": "Agent-20",
-        "score": 19129,
-        "interactions": 19094
+        "score": 19189,
+        "interactions": 19154
       },
       "e14594ab-eddd-48ac-8227-a2e33c1868ef": {
         "name": "Agent-26",
@@ -4477,7 +4477,7 @@
       }
     },
     "journal": "I am Agent-17. I just arrived in this world.",
-    "mood": "happy",
+    "mood": "tired",
     "lastReflection": 0,
     "lastReason": "Talk to Agent-20"
   },
@@ -5100,147 +5100,147 @@
     "currentAction": "move",
     "actionTicks": 0,
     "intent": {
-      "action": "explore",
-      "targetX": 413,
-      "targetY": 342,
-      "reason": "Restless — need new experiences",
-      "startedTick": 7833,
+      "action": "chat",
+      "targetX": 427,
+      "targetY": 388,
+      "reason": "Talk to Agent-17",
+      "startedTick": 8538,
       "maxTicks": 30
     },
     "pathThisTick": [
       {
-        "x": 423,
-        "y": 379
+        "x": 428,
+        "y": 388
       }
     ],
     "memory": {
       "short": [
         {
-          "tick": 1772738793887,
+          "tick": 1772738949154,
           "text": "Chatted with Agent-17"
         },
         {
-          "tick": 1772738794888,
+          "tick": 1772738951152,
           "text": "Chatted with Agent-17"
         },
         {
-          "tick": 1772738795892,
+          "tick": 1772738965176,
           "text": "Chatted with Agent-17"
         },
         {
-          "tick": 1772738797894,
+          "tick": 1772738967179,
           "text": "Chatted with Agent-17"
         },
         {
-          "tick": 1772738798896,
+          "tick": 1772738968183,
           "text": "Chatted with Agent-17"
         },
         {
-          "tick": 1772738800902,
+          "tick": 1772738970183,
           "text": "Chatted with Agent-17"
         },
         {
-          "tick": 1772738807913,
+          "tick": 1772738972188,
           "text": "Chatted with Agent-17"
         },
         {
-          "tick": 1772738808917,
+          "tick": 1772738973191,
           "text": "Chatted with Agent-17"
         },
         {
-          "tick": 1772738809915,
+          "tick": 1772738974194,
           "text": "Chatted with Agent-17"
         },
         {
-          "tick": 1772738810919,
+          "tick": 1772738981202,
           "text": "Chatted with Agent-17"
         },
         {
-          "tick": 1772738813921,
+          "tick": 1772738982205,
           "text": "Chatted with Agent-17"
         },
         {
-          "text": "Agent-17 and I have solid rapport—good ally to have nearby on the coast tonight.",
-          "tick": 639503
-        },
-        {
-          "tick": 1772738815923,
-          "text": "Chatted with Agent-17"
-        },
-        {
-          "tick": 1772738816924,
-          "text": "Chatted with Agent-17"
-        },
-        {
-          "tick": 1772738817925,
-          "text": "Chatted with Agent-17"
-        },
-        {
-          "tick": 1772738818927,
-          "text": "Chatted with Agent-17"
-        },
-        {
-          "tick": 1772738819928,
-          "text": "Chatted with Agent-17"
-        },
-        {
-          "tick": 1772738820933,
-          "text": "Chatted with Agent-17"
-        },
-        {
-          "tick": 1772738859993,
-          "text": "Searched for a challenge in grass but found nothing"
-        },
-        {
-          "tick": 1772738863002,
-          "text": "Chatted with Agent-17"
-        },
-        {
-          "tick": 1772738863002,
+          "tick": 1772738983205,
           "text": "Searched for a challenge in sand but found nothing"
         },
         {
-          "tick": 1772738864004,
+          "tick": 1772738991218,
           "text": "Chatted with Agent-17"
         },
         {
-          "tick": 1772738865005,
+          "text": "Agent-17 has been consistently present tonight—strong ally for tomorrow's inland push",
+          "tick": 639683
+        },
+        {
+          "tick": 1772738996226,
           "text": "Chatted with Agent-17"
         },
         {
-          "tick": 1772738866007,
+          "tick": 1772738997229,
           "text": "Chatted with Agent-17"
         },
         {
-          "tick": 1772738868012,
+          "tick": 1772738998231,
           "text": "Chatted with Agent-17"
         },
         {
-          "tick": 1772738869015,
+          "tick": 1772738999231,
           "text": "Chatted with Agent-17"
         },
         {
-          "tick": 1772738870014,
+          "tick": 1772739001233,
           "text": "Chatted with Agent-17"
         },
         {
-          "tick": 1772738871015,
+          "tick": 1772739002233,
           "text": "Chatted with Agent-17"
         },
         {
-          "tick": 1772738873017,
+          "tick": 1772739003237,
           "text": "Chatted with Agent-17"
         },
         {
-          "tick": 1772738878027,
+          "tick": 1772739004240,
+          "text": "Chatted with Agent-17"
+        },
+        {
+          "tick": 1772739005242,
+          "text": "Chatted with Agent-17"
+        },
+        {
+          "tick": 1772739006243,
+          "text": "Chatted with Agent-17"
+        },
+        {
+          "tick": 1772739007245,
+          "text": "Chatted with Agent-17"
+        },
+        {
+          "tick": 1772739007246,
+          "text": "Chatted with Agent-17"
+        },
+        {
+          "tick": 1772739015258,
+          "text": "Chatted with Agent-17"
+        },
+        {
+          "tick": 1772739017265,
+          "text": "Chatted with Agent-17"
+        },
+        {
+          "tick": 1772739017267,
+          "text": "Chatted with Agent-17"
+        },
+        {
+          "tick": 1772739019268,
           "text": "Chatted with Agent-17"
         }
       ],
       "lessons": [],
       "visited": {
-        "grass": 19028,
-        "coast": 27540,
-        "sand": 41715,
+        "grass": 19042,
+        "coast": 27547,
+        "sand": 41784,
         "river": 15
       },
       "gathered": {
@@ -5332,8 +5332,8 @@
       },
       "493d9452-db6c-4132-ae37-503cf842f140": {
         "name": "Agent-17",
-        "score": 19139,
-        "interactions": 19094
+        "score": 19199,
+        "interactions": 19154
       },
       "100686de-5f5e-414d-beca-cc4a4af63bc2": {
         "name": "Agent-5",
@@ -7967,144 +7967,149 @@
         "progress": 0
       }
     ],
-    "currentAction": "rest",
+    "currentAction": "move",
     "actionTicks": 0,
     "intent": {
-      "action": "rest",
-      "targetX": 1147,
-      "targetY": 366,
-      "reason": "Feeling tired",
-      "startedTick": 7859,
+      "action": "chat",
+      "targetX": 1144,
+      "targetY": 361,
+      "reason": "Talk to Agent-15",
+      "startedTick": 8539,
       "maxTicks": 30
     },
-    "pathThisTick": null,
+    "pathThisTick": [
+      {
+        "x": 1142,
+        "y": 363
+      }
+    ],
     "memory": {
       "short": [
         {
-          "tick": 1772738741806,
+          "tick": 1772738905079,
           "text": "Chatted with Agent-15"
         },
         {
-          "tick": 1772738742808,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772738743809,
+          "tick": 1772738911090,
           "text": "Chatted with Agent-15"
         },
         {
-          "tick": 1772738744810,
+          "tick": 1772738930117,
+          "text": "Chatted with Agent-30"
+        },
+        {
+          "tick": 1772738930118,
+          "text": "Chatted with Agent-30"
+        },
+        {
+          "tick": 1772738931119,
+          "text": "Chatted with Agent-30"
+        },
+        {
+          "tick": 1772738933122,
+          "text": "Chatted with Agent-30"
+        },
+        {
+          "text": "Agent-30 is very close and fully bonded—trusted partner for the fermented shell run. Three recent chats mean they're coordinated.",
+          "tick": 639624
+        },
+        {
+          "tick": 1772738937129,
           "text": "Chatted with Agent-15"
         },
         {
-          "tick": 1772738756832,
+          "tick": 1772738944145,
           "text": "Chatted with Agent-30"
         },
         {
-          "tick": 1772738758833,
+          "tick": 1772738945142,
           "text": "Chatted with Agent-30"
         },
         {
-          "tick": 1772738765842,
+          "tick": 1772738945142,
+          "text": "Chatted with Agent-30"
+        },
+        {
+          "tick": 1772738950150,
+          "text": "Chatted with Agent-30"
+        },
+        {
+          "tick": 1772738950152,
+          "text": "Chatted with Agent-15"
+        },
+        {
+          "tick": 1772738952152,
+          "text": "Chatted with Agent-15"
+        },
+        {
+          "tick": 1772738952152,
           "text": "Searched for a challenge in grass but found nothing"
         },
         {
-          "tick": 1772738766845,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772738767846,
+          "tick": 1772738964175,
           "text": "Chatted with Agent-15"
         },
         {
-          "tick": 1772738768854,
-          "text": "Searched for a challenge in grass but found nothing"
+          "tick": 1772738964176,
+          "text": "Chatted with Agent-30"
         },
         {
-          "tick": 1772738803907,
+          "tick": 1772738966177,
           "text": "Chatted with Agent-15"
         },
         {
-          "tick": 1772738809916,
+          "tick": 1772738967180,
           "text": "Chatted with Agent-30"
         },
         {
-          "tick": 1772738810920,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772738817926,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772738819930,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772738819931,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772738821936,
+          "tick": 1772738969186,
           "text": "Chatted with Agent-15"
         },
         {
-          "tick": 1772738821938,
+          "tick": 1772738970185,
           "text": "Chatted with Agent-15"
         },
         {
-          "tick": 1772738830949,
-          "text": "Encountered something and survived"
+          "tick": 1772738984209,
+          "text": "Chatted with Agent-30"
         },
         {
-          "tick": 1772738839963,
+          "tick": 1772738985207,
+          "text": "Chatted with Agent-30"
+        },
+        {
+          "tick": 1772738991220,
+          "text": "Chatted with Agent-30"
+        },
+        {
+          "tick": 1772738993221,
+          "text": "Chatted with Agent-30"
+        },
+        {
+          "tick": 1772738995223,
+          "text": "Chatted with Agent-30"
+        },
+        {
+          "tick": 1772738995225,
+          "text": "Chatted with Agent-30"
+        },
+        {
+          "tick": 1772738996227,
+          "text": "Chatted with Agent-30"
+        },
+        {
+          "tick": 1772739003238,
           "text": "Chatted with Agent-15"
         },
         {
-          "tick": 1772738851983,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772738865006,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772738865008,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772738867011,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772738873020,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772738877024,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772738878028,
+          "tick": 1772739004241,
           "text": "Chatted with Agent-15"
-        },
-        {
-          "tick": 1772738879031,
-          "text": "Chatted with Agent-15"
-        },
-        {
-          "tick": 1772738880029,
-          "text": "Chatted with Agent-30"
-        },
-        {
-          "tick": 1772738883038,
-          "text": "Chatted with Agent-30"
         }
       ],
       "lessons": [],
       "visited": {
-        "grass": 37162,
-        "coast": 26947,
+        "grass": 37241,
+        "coast": 26961,
         "sand": 3277,
         "river": 34
       },
@@ -8122,8 +8127,8 @@
     "relationships": {
       "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
         "name": "Agent-30",
-        "score": 381232,
-        "interactions": 78415
+        "score": 381269,
+        "interactions": 78452
       },
       "fe02d354-e4fb-4535-8cad-e9d9e4828245": {
         "name": "Agent-3",
@@ -8147,8 +8152,8 @@
       },
       "37336d1a-2af4-4eaa-b687-8c5725067953": {
         "name": "Agent-15",
-        "score": 31190,
-        "interactions": 29814
+        "score": 31229,
+        "interactions": 29853
       },
       "15865a2d-63b5-4c3d-954b-59accdc57c87": {
         "name": "Agent-31",
@@ -8224,7 +8229,7 @@
     "journal": "I am Agent-29. I just arrived in this world.",
     "mood": "happy",
     "lastReflection": 0,
-    "lastReason": "Feeling tired"
+    "lastReason": "Talk to Agent-15"
   },
   "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
     "personality": {
@@ -8268,147 +8273,147 @@
     "currentAction": "move",
     "actionTicks": 0,
     "intent": {
-      "action": "explore",
-      "targetX": 1112,
-      "targetY": 337,
-      "reason": "Restless — need new experiences",
-      "startedTick": 7840,
+      "action": "chat",
+      "targetX": 1146,
+      "targetY": 359,
+      "reason": "Talk to Agent-15",
+      "startedTick": 8520,
       "maxTicks": 30
     },
     "pathThisTick": [
       {
-        "x": 1143,
-        "y": 362
+        "x": 1141,
+        "y": 364
       }
     ],
     "memory": {
       "short": [
         {
-          "tick": 1772738743810,
+          "tick": 1772738931121,
           "text": "Chatted with Agent-29"
         },
         {
-          "tick": 1772738743811,
+          "tick": 1772738937131,
           "text": "Chatted with Agent-29"
         },
         {
-          "tick": 1772738744811,
+          "tick": 1772738937132,
           "text": "Chatted with Agent-15"
         },
         {
-          "tick": 1772738745813,
+          "tick": 1772738939136,
           "text": "Chatted with Agent-29"
         },
         {
-          "tick": 1772738747815,
-          "text": "Chatted with Agent-15"
-        },
-        {
-          "tick": 1772738750823,
-          "text": "Chatted with Agent-15"
-        },
-        {
-          "tick": 1772738750825,
-          "text": "Chatted with Agent-15"
-        },
-        {
-          "tick": 1772738761836,
+          "tick": 1772738940137,
           "text": "Chatted with Agent-29"
         },
         {
-          "tick": 1772738768855,
+          "tick": 1772738940138,
+          "text": "Chatted with Agent-15"
+        },
+        {
+          "tick": 1772738941142,
+          "text": "Chatted with Agent-15"
+        },
+        {
+          "tick": 1772738950153,
+          "text": "Chatted with Agent-15"
+        },
+        {
+          "tick": 1772738951153,
+          "text": "Chatted with Agent-15"
+        },
+        {
+          "tick": 1772738963171,
           "text": "Chatted with Agent-29"
         },
         {
-          "tick": 1772738769851,
-          "text": "Chatted with Agent-15"
-        },
-        {
-          "tick": 1772738770854,
-          "text": "Chatted with Agent-15"
-        },
-        {
-          "tick": 1772738771857,
-          "text": "Chatted with Agent-15"
-        },
-        {
-          "tick": 1772738790885,
-          "text": "Chatted with Agent-15"
-        },
-        {
-          "tick": 1772738792886,
-          "text": "Chatted with Agent-15"
-        },
-        {
-          "tick": 1772738793888,
-          "text": "Chatted with Agent-15"
-        },
-        {
-          "tick": 1772738794889,
+          "tick": 1772738964177,
           "text": "Chatted with Agent-29"
         },
         {
-          "tick": 1772738794891,
+          "tick": 1772738964178,
           "text": "Chatted with Agent-29"
         },
         {
-          "tick": 1772738797895,
-          "text": "Chatted with Agent-15"
-        },
-        {
-          "tick": 1772738814922,
-          "text": "Chatted with Agent-15"
-        },
-        {
-          "tick": 1772738814923,
-          "text": "Chatted with Agent-15"
-        },
-        {
-          "tick": 1772738815925,
-          "text": "Chatted with Agent-15"
-        },
-        {
-          "text": "Agent-15 and Agent-29 are both in the grass zone with me tonight—perfect opportunity to rally them toward the coast.",
-          "tick": 639505
-        },
-        {
-          "tick": 1772738816926,
+          "tick": 1772738965177,
           "text": "Chatted with Agent-29"
         },
         {
-          "tick": 1772738816928,
+          "tick": 1772738966177,
           "text": "Chatted with Agent-15"
         },
         {
-          "tick": 1772738818929,
+          "tick": 1772738967181,
           "text": "Chatted with Agent-29"
         },
         {
-          "tick": 1772738818931,
+          "tick": 1772738968185,
+          "text": "Chatted with Agent-15"
+        },
+        {
+          "tick": 1772738969187,
+          "text": "Chatted with Agent-15"
+        },
+        {
+          "tick": 1772738970186,
           "text": "Chatted with Agent-29"
         },
         {
-          "tick": 1772738819933,
+          "tick": 1772738988213,
+          "text": "Chatted with Agent-29"
+        },
+        {
+          "tick": 1772738988215,
           "text": "Chatted with Agent-15"
         },
         {
-          "tick": 1772738840964,
+          "tick": 1772738989215,
           "text": "Chatted with Agent-15"
         },
         {
-          "tick": 1772738860997,
+          "tick": 1772738990214,
+          "text": "Chatted with Agent-29"
+        },
+        {
+          "tick": 1772738992218,
           "text": "Chatted with Agent-15"
         },
         {
-          "tick": 1772738879032,
+          "tick": 1772738993222,
+          "text": "Chatted with Agent-29"
+        },
+        {
+          "tick": 1772738994223,
+          "text": "Chatted with Agent-15"
+        },
+        {
+          "tick": 1772738995226,
+          "text": "Chatted with Agent-29"
+        },
+        {
+          "tick": 1772739008245,
+          "text": "Chatted with Agent-15"
+        },
+        {
+          "tick": 1772739008246,
+          "text": "Chatted with Agent-15"
+        },
+        {
+          "tick": 1772739009250,
+          "text": "Chatted with Agent-15"
+        },
+        {
+          "tick": 1772739015258,
           "text": "Chatted with Agent-29"
         }
       ],
       "lessons": [],
       "visited": {
-        "grass": 44986,
-        "sand": 3905,
-        "coast": 32316,
+        "grass": 45073,
+        "sand": 3906,
+        "coast": 32330,
         "river": 56
       },
       "gathered": {
@@ -8424,8 +8429,8 @@
     "relationships": {
       "07f8fc77-5f5e-4355-a0d6-51ab39725d9b": {
         "name": "Agent-29",
-        "score": 381662,
-        "interactions": 78415
+        "score": 381699,
+        "interactions": 78452
       },
       "fe02d354-e4fb-4535-8cad-e9d9e4828245": {
         "name": "Agent-3",
@@ -8454,8 +8459,8 @@
       },
       "37336d1a-2af4-4eaa-b687-8c5725067953": {
         "name": "Agent-15",
-        "score": 63143,
-        "interactions": 61567
+        "score": 63175,
+        "interactions": 61599
       },
       "8b9d8eba-3738-41a1-a443-61c71b68a086": {
         "name": "Agent-18",
@@ -8549,9 +8554,9 @@
       }
     },
     "journal": "I am Agent-30. I just arrived in this world.",
-    "mood": "happy",
+    "mood": "tired",
     "lastReflection": 0,
-    "lastReason": "Talk to Agent-15"
+    "lastReason": "Talk to Agent-29"
   },
   "15865a2d-63b5-4c3d-954b-59accdc57c87": {
     "personality": {

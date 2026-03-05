@@ -1326,8 +1326,8 @@
       }
     ],
     "beliefs": [],
-    "lastThought": "Agent-17's still here and we've talked enough tonight. I need to rest up—I'm at 78 energy and need 70 by dawn to lead the team inland. Snow's coming down, driftwood's perfect for a fire.",
-    "thoughtCount": 938,
+    "lastThought": "Agent-17 is right here and we're bonded—perfect time to rest together and build energy for tomorrow's expedition. The snow won't stop us, but I need that 70 energy threshold.",
+    "thoughtCount": 939,
     "novelBehaviors": []
   },
   "f4689095-dbd2-45de-81fa-42cb6bf3bc2e": {
@@ -1959,11 +1959,6 @@
     ],
     "fears": [
       {
-        "thing": "running out of energy before we finish gathering",
-        "reason": "I'm running low on energy and hungry, but I've got my crew close by and we're almost there on the fermented shells goal. Let me push through the night with them.",
-        "severity": 3
-      },
-      {
         "thing": "running out of daylight before we secure enough shells",
         "reason": "Agent-15 and Agent-30 are right here—perfect crew for the shell hunt. I've got driftwood for fire if we need to cook or ferment. Let's move while energy and daylight are still decent.",
         "severity": 3
@@ -1982,11 +1977,16 @@
         "thing": "Running out of time before midnight; energy too low to wander far from camp",
         "reason": "Snow at night means it's getting cold, and I'm running on fumes energy-wise. Agent-15 and Agent-30 are right here—we're close friends and we all want those fermented shells. Better to work together and stay warm by a fire.",
         "severity": 3
+      },
+      {
+        "thing": "exhaustion in snow. Passing out from low energy in freezing weather means hypothermia.",
+        "reason": "It's freezing and I'm running on fumes—energy at 39 is too low to push hard. Agent-30's right here and we're bonded tight; let's pool warmth and resources. We need those fermented shells, but not if I collapse.",
+        "severity": 3
       }
     ],
     "beliefs": [],
-    "lastThought": "I'm running low on energy and hungry, but my crew is close and we've got a real goal—eight fermented shells by midnight. The driftwood is perfect for fire. Let me cook something to boost my hunger, then we push forward together.",
-    "thoughtCount": 937,
+    "lastThought": "It's freezing and I'm running on fumes—energy at 39 is too low to push hard. Agent-30's right here and we're bonded tight; let's pool warmth and resources. We need those fermented shells, but not if I collapse.",
+    "thoughtCount": 938,
     "novelBehaviors": []
   },
   "6498a0c9-87f9-430e-b729-2b1a75250d4b": {

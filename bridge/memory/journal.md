@@ -9,3 +9,4 @@ Day 3586, Hour 4 (Night) - Rested when exhausted (energy 15→23), ate Fermented
 2026-03-05 20:15 — Gathered shells from palm tree at coast, energy 50→42; attempted ferment craft (shells+driftwood) but materials refused to react; inventory packed, exploring night cycle.
 2026-03-05 20:20 — Gathered driftwood at coast, rested. Energy restored. Testing fermentation combos.
 ⏰ Turn 639391 (hour 17, day 3589) | Moved SE to sand, gathered shells ✓ | Tried fermented shells + cooked driftwood heat-craft → failed (materials inert). Energy 22, hunger 2. Back to ground-level experiments.
+📍 **Night 3 (3:00 AM)** — Rested at palm grove after low energy warning; energy recovered to 30, hunger still minimal, inventory stacked with fermented crafts & dried foods.

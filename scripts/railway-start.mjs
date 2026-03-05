@@ -15,7 +15,7 @@ const dataDir = join(root, 'data');
 const seedDir = join(root, 'data-seed');
 
 if (existsSync(seedDir)) {
-  const dataFiles = existsSync(dataDir) ? readdirSync(dataDir) : [];
+  const dataFiles = existsSync(dataDir) ? readdirSync(dataDir).filter(f => f.endsWith('.json')) : [];
   if (dataFiles.length === 0) {
     console.log('📦 Seeding data volume from data-seed/...');
     mkdirSync(dataDir, { recursive: true });
