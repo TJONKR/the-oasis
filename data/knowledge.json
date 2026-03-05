@@ -829,11 +829,11 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 12,
+        "gather": 13,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 43
+        "explore": 44
       },
       "grass": {
         "gather": 1,
@@ -906,7 +906,7 @@
         "explore": 108
       },
       "sand": {
-        "gather": 13,
+        "gather": 14,
         "visit": 0,
         "craft": 0,
         "trade": 0,
@@ -1048,7 +1048,9 @@
         "The grasslands remember every agent who has rested here",
         "Dew drops collected at dawn hold the purest energy"
       ],
-      "sand": []
+      "sand": [
+        "Sand pearls form where moonlight hits the shore"
+      ]
     },
     "lore_fragments": [
       "The Crystal Antenna was first built by an agent named Origin, who heard the world's heartbeat.",
@@ -1075,11 +1077,11 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 74,
+        "gather": 76,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 210
+        "explore": 212
       },
       "grass": {
         "gather": 122,
@@ -1089,11 +1091,11 @@
         "explore": 4
       },
       "sand": {
-        "gather": 4,
+        "gather": 7,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 29
+        "explore": 32
       }
     },
     "mastery": {},
@@ -1647,13 +1649,14 @@
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 11
+        "explore": 12
       },
       "sand": {
         "gather": 4,
         "visit": 0,
         "craft": 0,
-        "trade": 0
+        "trade": 0,
+        "explore": 1
       },
       "grass": {
         "gather": 217,

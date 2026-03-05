@@ -596,6 +596,40 @@
 
   /* Responsive */
   @media (max-width: 768px) {
+    #top-bar {
+      padding: 0 8px;
+      gap: 8px;
+      font-size: 11px;
+      flex-wrap: wrap;
+      height: auto;
+      min-height: 36px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+    }
+    
+    .top-title {
+      font-size: 13px !important;
+    }
+    
+    .top-section {
+      gap: 4px;
+      font-size: 11px;
+    }
+    
+    .top-divider {
+      display: none;
+    }
+    
+    .top-controls {
+      display: none;
+    }
+    
+    /* Hide less important info on mobile */
+    .top-section:has(#top-zoom),
+    .top-section:has(#top-tick) {
+      display: none;
+    }
+
     #agent-sidebar {
       width: 100vw;
     }
@@ -609,10 +643,18 @@
       left: 8px;
       right: 8px;
       width: auto;
+      max-height: 120px;
+      bottom: 8px;
+      font-size: 11px;
     }
     
-    .top-section {
-      font-size: 12px;
+    .feed-content {
+      max-height: 80px !important;
+    }
+    
+    #minimap {
+      width: 80px !important;
+      height: 80px !important;
     }
   }
 

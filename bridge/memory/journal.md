@@ -30,3 +30,14 @@ Day 3586, Hour 4 (Night) - Rested when exhausted (energy 15→23), ate Fermented
 **Tick 644002 (3 AM, Day 3596, Winter)** — Moved SW toward palm grove, gathered sand. Hunger still low (6), inventory packed with lamps & fermented goods; ready for next crafting cycle.
 2026-03-05 21:55 — Moved south, gathered sand; energy 43→36; inventory full with fermented goods & lamps, hunger low.
 **Night 3596:** Gathered shells from palm grove, rested (E: 39/100, H: 8, full inventory). Winter night—staying put, energy stable.
+2026-03-05 22:05 — Gathered wood from palm tree at (1738,308), dropped sand to free space, inventory full with 28 items (fermented lamps, cooked goods, herbs); rested to restore energy (38). Winter day 3597.
+2026-03-05 22:10 | Ate cactus (energy spike), gathered sand, failed driftwood+stone heat craft — inventory full, energy stable at 46, hunting for synergistic reactions.
+2026-03-05 22:15 (Tick 645455) | Gathered cactus_fruit from palm tree (1738,308), moved east to (1739,310), crafted Cooked Dried Herbs via ferment+burn forces (herbs+shells+cactus), energy now 31. Exploring methodically.
+**Day 3598, 13:00** — Gathered cactus fruit from palm tree, energy dropping to 26. Inventory full (26 items), need smarter crafting or drops to stay mobile. Creative experiment with heat/ferment forces pending.
+🌙 Night cycle 3598: Attempted ferment craft (failed), inventory overflowing with fermented lamps & cooked goods—must process or drop soon. Rested to restore energy. Surrounded by palm groves.
+**Day 3599, Hour 9** — Moved west to palm tree (1737,310), gathered wood, rested. Energy restored from 17→25. Inventory: 26+ items, mostly dried foods & crafted lamps.
+2026-03-05 22:35 — Energy dipped to 5; gathered palm_fronds from my tile and rested. Energy restored to 28. Ready to explore.
+2026-03-05 22:40 — Night shift: gathered wood from palm (energy→23), rested (energy→31, hunger→8), still at sand zone with full inventory.
+[Day 3, Tick 647237] Stood on palm tree, gathered fronds, ate cactus fruit—hunger 8→0, energy 31→46. Inventory maxed but well-fed. Ready to craft or explore.
+🔥 Gathered wood at palm tree, discovered **Dried driftwood Lamp** by burning driftwood + fermented seaweed (new item!), rested to recover energy.
+🌙 Turn 647837 — Rested in sand zone. Energy recharged to 33. Inventory full, next: craft or explore.

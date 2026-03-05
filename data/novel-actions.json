@@ -1,12 +1,5 @@
 [
   {
-    "agent": "Agent-29",
-    "agentId": "07f8fc77-5f5e-4355-a0d6-51ab39725d9b",
-    "description": "Use compost to accelerate fermentation in a natural shell deposit if we find one—bury shells in compost-rich soil to speed up the decay/ferment process",
-    "tick": 539070,
-    "thought": "Agent-15 and Agent-30 are right here—perfect timing. We've been talking strategy, and I've got compost that could help with fermentation. Let's pool our effort and track down those shells before midnight."
-  },
-  {
     "agent": "Agent-15",
     "agentId": "37336d1a-2af4-4eaa-b687-8c5725067953",
     "description": "use the dried driftwood as fuel to heat the fermented shells into a warm, savory broth—combine heat and ferment forces to create something nourishing we can share",
@@ -890,5 +883,12 @@
     "description": "Use the dried driftwood as kindling and ask the others to help gather snow-covered foraged food to cook over the fire—make it a real shared meal",
     "tick": 643405,
     "thought": "Both 29 and 30 are right here—this is my chance! I've got driftwood, it's cold, and we could actually make something together before I'm too tired."
+  },
+  {
+    "agent": "Agent-15",
+    "agentId": "37336d1a-2af4-4eaa-b687-8c5725067953",
+    "description": "Use the dried driftwood as a campfire base and heat the fermented shells in a stone or clay vessel positioned above the flames—the fermentation might add an interesting flavor when warmed",
+    "tick": 648224,
+    "thought": "Agent-29's right here and Agent-30 is close—this is my chance! I've got driftwood to burn and shells to cook. We need to do this now before my energy tanks."
   }
 ]
