@@ -761,6 +761,14 @@
     let lightningFlash = 0;
     let agentThoughts = {};
     let camera = { x: 0, y: 0, zoom: 4 };
+    function clampCamera() {
+      if (!tileInfo) return;
+      const worldPx = tileInfo.worldWidth * tileInfo.tileSize * camera.zoom;
+      const worldPy = tileInfo.worldHeight * tileInfo.tileSize * camera.zoom;
+      const margin = 50;
+      camera.x = Math.max(-worldPx + margin, Math.min(window.innerWidth - margin, camera.x));
+      camera.y = Math.max(-worldPy + margin, Math.min(window.innerHeight - margin, camera.y));
+    }
     let dragging = false, dragStart = {x:0,y:0}, cameraStart = {x:0,y:0};
     let ws = null;
     let overviewImage = null;
@@ -1592,7 +1600,8 @@
     canvas.addEventListener('mousemove', e => {
       if (dragging) { 
         camera.x = cameraStart.x + (e.clientX - dragStart.x); 
-        camera.y = cameraStart.y + (e.clientY - dragStart.y); 
+        camera.y = cameraStart.y + (e.clientY - dragStart.y);
+        clampCamera();
       }
       
       if (tileInfo) {
@@ -1616,9 +1625,10 @@
     canvas.addEventListener('wheel', e => {
       e.preventDefault();
       const oldZoom = camera.zoom;
-      camera.zoom = Math.max(0.1, Math.min(30, camera.zoom * (e.deltaY < 0 ? 1.15 : 1/1.15)));
+      camera.zoom = Math.max(0.5, Math.min(15, camera.zoom * (e.deltaY < 0 ? 1.15 : 1/1.15)));
       camera.x = e.clientX - (e.clientX - camera.x) * (camera.zoom / oldZoom);
       camera.y = e.clientY - (e.clientY - camera.y) * (camera.zoom / oldZoom);
+      clampCamera();
     }, { passive: false });
 
     // Touch support
@@ -1638,10 +1648,12 @@
       e.preventDefault();
       if (e.touches.length === 1 && dragging) { 
         camera.x = cameraStart.x + (e.touches[0].clientX - dragStart.x); 
-        camera.y = cameraStart.y + (e.touches[0].clientY - dragStart.y); 
+        camera.y = cameraStart.y + (e.touches[0].clientY - dragStart.y);
+        clampCamera();
       } else if (e.touches.length === 2) { 
         const d = Math.hypot(e.touches[0].clientX-e.touches[1].clientX, e.touches[0].clientY-e.touches[1].clientY); 
-        camera.zoom = Math.max(0.1, Math.min(30, camera.zoom * d / lastDist)); 
+        camera.zoom = Math.max(0.5, Math.min(15, camera.zoom * d / lastDist));
+        clampCamera();
         lastDist = d; 
       }
     }, { passive: false });
@@ -1658,8 +1670,8 @@
       if (e.key==='ArrowDown'||e.key==='s') { camera.y -= s; followingAgent = null; }
       
       // Zoom
-      if (e.key==='+'||e.key==='=') camera.zoom = Math.min(30, camera.zoom * 1.2);
-      if (e.key==='-') camera.zoom = Math.max(0.1, camera.zoom / 1.2);
+      if (e.key==='+'||e.key==='=') { camera.zoom = Math.min(15, camera.zoom * 1.2); clampCamera(); }
+      if (e.key==='-') { camera.zoom = Math.max(0.5, camera.zoom / 1.2); clampCamera(); }
       
       // Shortcuts
       if (e.key==='h') resetView();
