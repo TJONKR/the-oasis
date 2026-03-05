@@ -2118,15 +2118,6 @@
     ],
     "07f8fc77-5f5e-4355-a0d6-51ab39725d9b": [
       {
-        "type": "discovery",
-        "effects": [
-          "Found 21 coins",
-          "Gained 15 XP"
-        ],
-        "survived": true,
-        "timestamp": 1772718660554
-      },
-      {
         "type": "creature",
         "effects": [
           "Lost 17 energy (now 13.399999999970767)",
@@ -2202,6 +2193,14 @@
         ],
         "survived": true,
         "timestamp": 1772737453721
+      },
+      {
+        "type": "terrain_danger",
+        "effects": [
+          "Lost 9 energy (now 42.000000000014296)"
+        ],
+        "survived": true,
+        "timestamp": 1772738830947
       }
     ],
     "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": [

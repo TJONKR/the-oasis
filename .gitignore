@@ -2,3 +2,4 @@ node_modules/
 output/
 .env.local
 *.png
+!assets/world.json.gz

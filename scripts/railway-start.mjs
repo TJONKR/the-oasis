@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Railway startup: seed data volume if empty, generate world if missing, then start server.
+ * Railway startup: seed data volume if empty, decompress world if missing, start server.
  */
 import { existsSync, readdirSync, cpSync, mkdirSync } from 'fs';
 import { join, dirname } from 'path';
@@ -26,12 +26,18 @@ if (existsSync(seedDir)) {
   }
 }
 
-// 2. Generate world if missing
-const worldPath = join(root, 'output', 'world.json');
+// 2. Decompress world if missing
+const outputDir = join(root, 'output');
+const worldPath = join(outputDir, 'world.json');
+const worldGz = join(root, 'assets', 'world.json.gz');
+
 if (!existsSync(worldPath)) {
-  console.log('🌍 Generating world...');
-  mkdirSync(join(root, 'output'), { recursive: true });
-  execSync('npm run generate', { cwd: root, stdio: 'inherit' });
+  console.log('🌍 Decompressing world...');
+  mkdirSync(outputDir, { recursive: true });
+  execSync(`gunzip -k "${worldGz}" && mv "${join(root, 'assets', 'world.json')}" "${worldPath}"`, { stdio: 'inherit' });
+  console.log('✅ World ready');
+} else {
+  console.log('✅ World exists');
 }
 
 // 3. Start server

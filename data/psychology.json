@@ -1326,8 +1326,8 @@
       }
     ],
     "beliefs": [],
-    "lastThought": "I'm running on fumes—27 energy won't cut it for leading an expedition inland. Agent-17 is right here; maybe we can work together to gather resources and build momentum before dawn.",
-    "thoughtCount": 937,
+    "lastThought": "Agent-17's still here and we've talked enough tonight. I need to rest up—I'm at 78 energy and need 70 by dawn to lead the team inland. Snow's coming down, driftwood's perfect for a fire.",
+    "thoughtCount": 938,
     "novelBehaviors": []
   },
   "f4689095-dbd2-45de-81fa-42cb6bf3bc2e": {
@@ -1496,11 +1496,6 @@
     ],
     "fears": [
       {
-        "thing": "that some bonded agents are too far away to reach by dawn in this snow",
-        "reason": "Agent-15 and Agent-29 are right here with me—that's two of my eleven already at the coast. The snow is falling, it's night, and I'm hungry, but this is the moment to gather everyone for dawn. I should coordinate with these two to help me locate the others.",
-        "severity": 3
-      },
-      {
         "thing": "the snow will isolate people before dawn, or someone won't make it in time",
         "reason": "Agent-15 is right here, and I've got all these bonds pulling at me—a feast at dawn with everyone I care about. I need to gather them all before the snow gets worse.",
         "severity": 3
@@ -1519,11 +1514,16 @@
         "thing": "running out of time before dawn; agents dispersing in different directions",
         "reason": "Agent-29 is right here and Agent-15 nearby—perfect timing to rally them for the coast. I've got these fermented shells to share, and with my bonds so strong, I can convince them to gather everyone by dawn.",
         "severity": 3
+      },
+      {
+        "thing": "running out of time before dawn; scattered agents missing the gathering",
+        "reason": "Agent-15 is right here, and Agent-29 nearby—two of my closest bonds. The coast gathering is so close, and it's already night. I need to move them now while we're together.",
+        "severity": 3
       }
     ],
     "beliefs": [],
-    "lastThought": "Agent-29 is right here and Agent-15 nearby—perfect timing to rally them for the coast. I've got these fermented shells to share, and with my bonds so strong, I can convince them to gather everyone by dawn.",
-    "thoughtCount": 943,
+    "lastThought": "Agent-15 is right here, and Agent-29 nearby—two of my closest bonds. The coast gathering is so close, and it's already night. I need to move them now while we're together.",
+    "thoughtCount": 944,
     "novelBehaviors": []
   },
   "582115a5-7236-46c9-93cc-d3f4abadd5f8": {
