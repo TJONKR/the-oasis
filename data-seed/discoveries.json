@@ -1,0 +1,1852 @@
+[
+  {
+    "key": "combine:bark + wood",
+    "items": [
+      "wood",
+      "bark"
+    ],
+    "result": "Torch",
+    "ruleId": "make_torch",
+    "discoveredBy": "43b8d3dc-ede6-435c-8113-fe6a9d66cccb",
+    "discovererName": "Agent-23",
+    "discoveredAt": "2026-03-01T19:01:25.811Z"
+  },
+  {
+    "key": "burn:driftwood + shells",
+    "items": [
+      "driftwood",
+      "shells"
+    ],
+    "result": "driftwood Cinder",
+    "ruleId": "burn_item",
+    "discoveredBy": "43109eab-beba-4a37-84e0-becaa05ef690",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T19:03:28.662Z"
+  },
+  {
+    "key": "decay:driftwood + shells",
+    "items": [
+      "shells",
+      "driftwood"
+    ],
+    "result": "Compost",
+    "ruleId": "compost_decay",
+    "discoveredBy": "43109eab-beba-4a37-84e0-becaa05ef690",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T19:03:41.207Z"
+  },
+  {
+    "key": "burn:fiber + herbs",
+    "items": [
+      "fiber",
+      "herbs"
+    ],
+    "result": "fiber Cinder",
+    "ruleId": "burn_item",
+    "discoveredBy": "260dfffb-62b5-4a88-ab14-4d5d697dc94e",
+    "discovererName": "Agent-24",
+    "discoveredAt": "2026-03-01T19:03:50.750Z"
+  },
+  {
+    "key": "decay:fiber + herbs",
+    "items": [
+      "fiber",
+      "herbs"
+    ],
+    "result": "Compost",
+    "ruleId": "compost_decay",
+    "discoveredBy": "bad7a626-0d4d-4a2e-927a-fd46ed05a861",
+    "discovererName": "Agent-9",
+    "discoveredAt": "2026-03-01T19:04:36.900Z"
+  },
+  {
+    "key": "burn:fiber + sand",
+    "items": [
+      "fiber",
+      "sand"
+    ],
+    "result": "fiber Cinder",
+    "ruleId": "burn_item",
+    "discoveredBy": "bad7a626-0d4d-4a2e-927a-fd46ed05a861",
+    "discovererName": "Agent-9",
+    "discoveredAt": "2026-03-01T19:15:29.784Z"
+  },
+  {
+    "key": "decay:fiber + sand",
+    "items": [
+      "fiber",
+      "sand"
+    ],
+    "result": "Compost",
+    "ruleId": "compost_decay",
+    "discoveredBy": "bad7a626-0d4d-4a2e-927a-fd46ed05a861",
+    "discovererName": "Agent-9",
+    "discoveredAt": "2026-03-01T19:16:36.526Z"
+  },
+  {
+    "key": "combine:driftwood + fiber",
+    "items": [
+      "fiber",
+      "driftwood"
+    ],
+    "result": "Torch",
+    "ruleId": "make_torch",
+    "discoveredBy": "d56be782-7d0b-48d3-b5bc-cd2f59d54c48",
+    "discovererName": "Agent-14",
+    "discoveredAt": "2026-03-01T19:18:34.463Z"
+  },
+  {
+    "key": "combine:flint + stone",
+    "items": [
+      "stone",
+      "flint"
+    ],
+    "result": "Reinforced stone",
+    "ruleId": "sturdy_tool",
+    "discoveredBy": "582115a5-7236-46c9-93cc-d3f4abadd5f8",
+    "discovererName": "Agent-7",
+    "discoveredAt": "2026-03-01T19:19:35.671Z"
+  },
+  {
+    "key": "combine:driftwood + herbs",
+    "items": [
+      "herbs",
+      "driftwood"
+    ],
+    "result": "herbs Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "d56be782-7d0b-48d3-b5bc-cd2f59d54c48",
+    "discovererName": "Agent-14",
+    "discoveredAt": "2026-03-01T19:20:25.377Z"
+  },
+  {
+    "key": "combine:bark + fiber",
+    "items": [
+      "bark",
+      "fiber"
+    ],
+    "result": "Cooked bark",
+    "ruleId": "cooking",
+    "discoveredBy": "f4689095-dbd2-45de-81fa-42cb6bf3bc2e",
+    "discovererName": "Agent-21",
+    "discoveredAt": "2026-03-01T19:50:27.745Z"
+  },
+  {
+    "key": "combine:fiber + shells",
+    "items": [
+      "shells",
+      "fiber"
+    ],
+    "result": "Cooked shells",
+    "ruleId": "cooking",
+    "discoveredBy": "6498a0c9-87f9-430e-b729-2b1a75250d4b",
+    "discovererName": "Agent-19",
+    "discoveredAt": "2026-03-01T19:50:28.247Z"
+  },
+  {
+    "key": "decay:herbs + sand",
+    "items": [
+      "herbs",
+      "sand"
+    ],
+    "result": "Compost",
+    "ruleId": "compost_decay",
+    "discoveredBy": "bad7a626-0d4d-4a2e-927a-fd46ed05a861",
+    "discovererName": "Agent-9",
+    "discoveredAt": "2026-03-01T19:51:24.492Z"
+  },
+  {
+    "key": "burn:herbs + sand",
+    "items": [
+      "sand",
+      "herbs"
+    ],
+    "result": "herbs Cinder",
+    "ruleId": "burn_item",
+    "discoveredBy": "bad7a626-0d4d-4a2e-927a-fd46ed05a861",
+    "discovererName": "Agent-9",
+    "discoveredAt": "2026-03-01T19:51:43.063Z"
+  },
+  {
+    "key": "combine:driftwood + shells",
+    "items": [
+      "driftwood",
+      "shells"
+    ],
+    "result": "Cooked driftwood",
+    "ruleId": "cooking",
+    "discoveredBy": "d56be782-7d0b-48d3-b5bc-cd2f59d54c48",
+    "discovererName": "Agent-14",
+    "discoveredAt": "2026-03-01T20:04:04.799Z"
+  },
+  {
+    "key": "combine:Burning Fiber + bark",
+    "items": [
+      "bark",
+      "Burning Fiber"
+    ],
+    "result": "Cooked bark",
+    "ruleId": "cooking",
+    "discoveredBy": "f4689095-dbd2-45de-81fa-42cb6bf3bc2e",
+    "discovererName": "Agent-21",
+    "discoveredAt": "2026-03-01T20:04:40.280Z"
+  },
+  {
+    "key": "combine:Burning Fiber + shells",
+    "items": [
+      "shells",
+      "Burning Fiber"
+    ],
+    "result": "Cooked shells",
+    "ruleId": "cooking",
+    "discoveredBy": "6498a0c9-87f9-430e-b729-2b1a75250d4b",
+    "discovererName": "Agent-19",
+    "discoveredAt": "2026-03-01T20:04:40.782Z"
+  },
+  {
+    "key": "combine:fiber + herbs",
+    "items": [
+      "fiber",
+      "herbs"
+    ],
+    "result": "Cooked fiber",
+    "ruleId": "cooking",
+    "discoveredBy": "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563",
+    "discovererName": "Agent-16",
+    "discoveredAt": "2026-03-01T20:04:42.287Z"
+  },
+  {
+    "key": "combine:Herbal Extract + driftwood",
+    "items": [
+      "driftwood",
+      "Herbal Extract"
+    ],
+    "result": "Cooked driftwood",
+    "ruleId": "cooking",
+    "discoveredBy": "d56be782-7d0b-48d3-b5bc-cd2f59d54c48",
+    "discovererName": "Agent-14",
+    "discoveredAt": "2026-03-01T20:04:42.789Z"
+  },
+  {
+    "key": "combine:Burning Fiber + herbs",
+    "items": [
+      "Burning Fiber",
+      "herbs"
+    ],
+    "result": "Cooked Burning Fiber",
+    "ruleId": "cooking",
+    "discoveredBy": "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563",
+    "discovererName": "Agent-16",
+    "discoveredAt": "2026-03-01T20:04:44.797Z"
+  },
+  {
+    "key": "combine:Fermented Herbal Extract + Fermented driftwood",
+    "items": [
+      "Fermented driftwood",
+      "Fermented Herbal Extract"
+    ],
+    "result": "Cooked Fermented driftwood",
+    "ruleId": "cooking",
+    "discoveredBy": "d56be782-7d0b-48d3-b5bc-cd2f59d54c48",
+    "discovererName": "Agent-14",
+    "discoveredAt": "2026-03-01T20:05:03.869Z"
+  },
+  {
+    "key": "combine:Fermented bark + Fermented wood",
+    "items": [
+      "Fermented wood",
+      "Fermented bark"
+    ],
+    "result": "Cooked Fermented wood",
+    "ruleId": "cooking",
+    "discoveredBy": "43b8d3dc-ede6-435c-8113-fe6a9d66cccb",
+    "discovererName": "Agent-23",
+    "discoveredAt": "2026-03-01T20:05:04.372Z"
+  },
+  {
+    "key": "combine:Fermented palm_fronds + Fermented wood",
+    "items": [
+      "Fermented palm_fronds",
+      "Fermented wood"
+    ],
+    "result": "Fermented palm_fronds Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "062ce1de-7b76-4db0-96bc-e571939ee08d",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:05:04.867Z"
+  },
+  {
+    "key": "combine:Fermented Burning Fiber + Fermented shells",
+    "items": [
+      "Fermented shells",
+      "Fermented Burning Fiber"
+    ],
+    "result": "Cooked Fermented shells",
+    "ruleId": "cooking",
+    "discoveredBy": "6498a0c9-87f9-430e-b729-2b1a75250d4b",
+    "discovererName": "Agent-19",
+    "discoveredAt": "2026-03-01T20:05:05.374Z"
+  },
+  {
+    "key": "combine:Fermented Burning Fiber + Fermented bark",
+    "items": [
+      "Fermented bark",
+      "Fermented Burning Fiber"
+    ],
+    "result": "Cooked Fermented bark",
+    "ruleId": "cooking",
+    "discoveredBy": "f4689095-dbd2-45de-81fa-42cb6bf3bc2e",
+    "discovererName": "Agent-21",
+    "discoveredAt": "2026-03-01T20:05:05.375Z"
+  },
+  {
+    "key": "combine:Fermented Burning Fiber + herbs",
+    "items": [
+      "Fermented Burning Fiber",
+      "herbs"
+    ],
+    "result": "Cooked Fermented Burning Fiber",
+    "ruleId": "cooking",
+    "discoveredBy": "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563",
+    "discovererName": "Agent-16",
+    "discoveredAt": "2026-03-01T20:05:05.877Z"
+  },
+  {
+    "key": "burn:Fermented fiber + Fermented herbs",
+    "items": [
+      "Fermented herbs",
+      "Fermented fiber"
+    ],
+    "result": "Fermented herbs Cinder",
+    "ruleId": "burn_item",
+    "discoveredBy": "260dfffb-62b5-4a88-ab14-4d5d697dc94e",
+    "discovererName": "Agent-24",
+    "discoveredAt": "2026-03-01T20:05:09.390Z"
+  },
+  {
+    "key": "decay:Fermented fiber + Fermented herbs",
+    "items": [
+      "Fermented fiber",
+      "Fermented herbs"
+    ],
+    "result": "Compost",
+    "ruleId": "compost_decay",
+    "discoveredBy": "260dfffb-62b5-4a88-ab14-4d5d697dc94e",
+    "discovererName": "Agent-24",
+    "discoveredAt": "2026-03-01T20:05:16.918Z"
+  },
+  {
+    "key": "decay:Fermented driftwood + Fermented shells",
+    "items": [
+      "Fermented driftwood",
+      "Fermented shells"
+    ],
+    "result": "Compost",
+    "ruleId": "compost_decay",
+    "discoveredBy": "43109eab-beba-4a37-84e0-becaa05ef690",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:05:25.444Z"
+  },
+  {
+    "key": "burn:Fermented driftwood + Fermented shells",
+    "items": [
+      "Fermented driftwood",
+      "Fermented shells"
+    ],
+    "result": "Fermented driftwood Cinder",
+    "ruleId": "burn_item",
+    "discoveredBy": "43109eab-beba-4a37-84e0-becaa05ef690",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:05:30.464Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Burning Fiber + herbs",
+    "items": [
+      "Fermented Fermented Burning Fiber",
+      "herbs"
+    ],
+    "result": "Cooked Fermented Fermented Burning Fiber",
+    "ruleId": "cooking",
+    "discoveredBy": "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563",
+    "discovererName": "Agent-16",
+    "discoveredAt": "2026-03-01T20:05:34.986Z"
+  },
+  {
+    "key": "combine:Fermented Fermented palm_fronds + Fermented Fermented wood",
+    "items": [
+      "Fermented Fermented palm_fronds",
+      "Fermented Fermented wood"
+    ],
+    "result": "Fermented Fermented palm_fronds Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "062ce1de-7b76-4db0-96bc-e571939ee08d",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:05:35.983Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Herbal Extract + Fermented Fermented driftwood",
+    "items": [
+      "Fermented Fermented driftwood",
+      "Fermented Fermented Herbal Extract"
+    ],
+    "result": "Cooked Fermented Fermented driftwood",
+    "ruleId": "cooking",
+    "discoveredBy": "d56be782-7d0b-48d3-b5bc-cd2f59d54c48",
+    "discovererName": "Agent-14",
+    "discoveredAt": "2026-03-01T20:05:35.989Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Burning Fiber + Fermented Fermented bark",
+    "items": [
+      "Fermented Fermented bark",
+      "Fermented Fermented Burning Fiber"
+    ],
+    "result": "Cooked Fermented Fermented bark",
+    "ruleId": "cooking",
+    "discoveredBy": "f4689095-dbd2-45de-81fa-42cb6bf3bc2e",
+    "discovererName": "Agent-21",
+    "discoveredAt": "2026-03-01T20:05:37.497Z"
+  },
+  {
+    "key": "combine:Fermented Fermented bark + Fermented Fermented wood",
+    "items": [
+      "Fermented Fermented wood",
+      "Fermented Fermented bark"
+    ],
+    "result": "Cooked Fermented Fermented wood",
+    "ruleId": "cooking",
+    "discoveredBy": "43b8d3dc-ede6-435c-8113-fe6a9d66cccb",
+    "discovererName": "Agent-23",
+    "discoveredAt": "2026-03-01T20:05:37.497Z"
+  },
+  {
+    "key": "burn:Fermented Fermented driftwood + Fermented Fermented shells",
+    "items": [
+      "Fermented Fermented driftwood",
+      "Fermented Fermented shells"
+    ],
+    "result": "Fermented Fermented driftwood Cinder",
+    "ruleId": "burn_item",
+    "discoveredBy": "43109eab-beba-4a37-84e0-becaa05ef690",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:05:45.514Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Burning Fiber + Fermented Fermented shells",
+    "items": [
+      "Fermented Fermented shells",
+      "Fermented Fermented Burning Fiber"
+    ],
+    "result": "Cooked Fermented Fermented shells",
+    "ruleId": "cooking",
+    "discoveredBy": "6498a0c9-87f9-430e-b729-2b1a75250d4b",
+    "discovererName": "Agent-19",
+    "discoveredAt": "2026-03-01T20:05:46.523Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented palm_fronds + Fermented Fermented Fermented wood",
+    "items": [
+      "Fermented Fermented Fermented palm_fronds",
+      "Fermented Fermented Fermented wood"
+    ],
+    "result": "Fermented Fermented Fermented palm_fronds Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "062ce1de-7b76-4db0-96bc-e571939ee08d",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:06:05.586Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Burning Fiber + herbs",
+    "items": [
+      "Fermented Fermented Fermented Burning Fiber",
+      "herbs"
+    ],
+    "result": "Fermented Fermented Fermented Burning Fiber Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563",
+    "discovererName": "Agent-16",
+    "discoveredAt": "2026-03-01T20:06:05.590Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented bark + Fermented Fermented Fermented wood",
+    "items": [
+      "Fermented Fermented Fermented wood",
+      "Fermented Fermented Fermented bark"
+    ],
+    "result": "Cooked Fermented Fermented Fermented wood",
+    "ruleId": "cooking",
+    "discoveredBy": "43b8d3dc-ede6-435c-8113-fe6a9d66cccb",
+    "discovererName": "Agent-23",
+    "discoveredAt": "2026-03-01T20:06:05.592Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Burning Fiber + Fermented Fermented Fermented bark",
+    "items": [
+      "Fermented Fermented Fermented bark",
+      "Fermented Fermented Fermented Burning Fiber"
+    ],
+    "result": "Cooked Fermented Fermented Fermented bark",
+    "ruleId": "cooking",
+    "discoveredBy": "f4689095-dbd2-45de-81fa-42cb6bf3bc2e",
+    "discovererName": "Agent-21",
+    "discoveredAt": "2026-03-01T20:06:07.099Z"
+  },
+  {
+    "key": "burn:Fermented Fermented Fermented fiber + Fermented Fermented Fermented herbs",
+    "items": [
+      "Fermented Fermented Fermented fiber",
+      "Fermented Fermented Fermented herbs"
+    ],
+    "result": "Fermented Fermented Fermented fiber Cinder",
+    "ruleId": "burn_item",
+    "discoveredBy": "260dfffb-62b5-4a88-ab14-4d5d697dc94e",
+    "discovererName": "Agent-24",
+    "discoveredAt": "2026-03-01T20:06:13.124Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented bark + Fermented Fermented Fermented Fermented wood",
+    "items": [
+      "Fermented Fermented Fermented Fermented wood",
+      "Fermented Fermented Fermented Fermented bark"
+    ],
+    "result": "Fermented Fermented Fermented Fermented wood Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "43b8d3dc-ede6-435c-8113-fe6a9d66cccb",
+    "discovererName": "Agent-23",
+    "discoveredAt": "2026-03-01T20:06:35.712Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Burning Fiber + herbs",
+    "items": [
+      "Fermented Fermented Fermented Fermented Burning Fiber",
+      "herbs"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Burning Fiber Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563",
+    "discovererName": "Agent-16",
+    "discoveredAt": "2026-03-01T20:06:36.711Z"
+  },
+  {
+    "key": "decay:Fermented Fermented Fermented Fermented driftwood + Fermented Fermented Fermented Fermented shells",
+    "items": [
+      "Fermented Fermented Fermented Fermented shells",
+      "Fermented Fermented Fermented Fermented driftwood"
+    ],
+    "result": "Compost",
+    "ruleId": "compost_decay",
+    "discoveredBy": "43109eab-beba-4a37-84e0-becaa05ef690",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:06:37.709Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented palm_fronds + Fermented Fermented Fermented Fermented wood",
+    "items": [
+      "Fermented Fermented Fermented Fermented palm_fronds",
+      "Fermented Fermented Fermented Fermented wood"
+    ],
+    "result": "Fermented Fermented Fermented Fermented palm_fronds Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "062ce1de-7b76-4db0-96bc-e571939ee08d",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:06:37.710Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Burning Fiber + Fermented Fermented Fermented Fermented bark",
+    "items": [
+      "Fermented Fermented Fermented Fermented bark",
+      "Fermented Fermented Fermented Fermented Burning Fiber"
+    ],
+    "result": "Fermented Fermented Fermented Fermented bark Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "f4689095-dbd2-45de-81fa-42cb6bf3bc2e",
+    "discovererName": "Agent-21",
+    "discoveredAt": "2026-03-01T20:06:39.223Z"
+  },
+  {
+    "key": "burn:Fermented Fermented Fermented Fermented driftwood + Fermented Fermented Fermented Fermented shells",
+    "items": [
+      "Fermented Fermented Fermented Fermented driftwood",
+      "Fermented Fermented Fermented Fermented shells"
+    ],
+    "result": "Fermented Fermented Fermented Fermented driftwood Cinder",
+    "ruleId": "burn_item",
+    "discoveredBy": "43109eab-beba-4a37-84e0-becaa05ef690",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:06:48.250Z"
+  },
+  {
+    "key": "burn:Fermented Fermented Fermented Fermented fiber + Fermented Fermented Fermented Fermented herbs",
+    "items": [
+      "Fermented Fermented Fermented Fermented herbs",
+      "Fermented Fermented Fermented Fermented fiber"
+    ],
+    "result": "Fermented Fermented Fermented Fermented herbs Cinder",
+    "ruleId": "burn_item",
+    "discoveredBy": "260dfffb-62b5-4a88-ab14-4d5d697dc94e",
+    "discovererName": "Agent-24",
+    "discoveredAt": "2026-03-01T20:06:49.762Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Burning Fiber + Fermented Fermented Fermented Fermented Fermented bark",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented bark",
+      "Fermented Fermented Fermented Fermented Fermented Burning Fiber"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented bark Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "f4689095-dbd2-45de-81fa-42cb6bf3bc2e",
+    "discovererName": "Agent-21",
+    "discoveredAt": "2026-03-01T20:07:06.329Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented palm_fronds + Fermented Fermented Fermented Fermented Fermented wood",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented palm_fronds",
+      "Fermented Fermented Fermented Fermented Fermented wood"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented palm_fronds Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "062ce1de-7b76-4db0-96bc-e571939ee08d",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:07:07.323Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Burning Fiber + herbs",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Burning Fiber",
+      "herbs"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Burning Fiber Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563",
+    "discovererName": "Agent-16",
+    "discoveredAt": "2026-03-01T20:07:07.329Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented bark + Fermented Fermented Fermented Fermented Fermented wood",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented wood",
+      "Fermented Fermented Fermented Fermented Fermented bark"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented wood Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "43b8d3dc-ede6-435c-8113-fe6a9d66cccb",
+    "discovererName": "Agent-23",
+    "discoveredAt": "2026-03-01T20:07:14.350Z"
+  },
+  {
+    "key": "decay:Fermented Fermented Fermented Fermented Fermented driftwood + Fermented Fermented Fermented Fermented Fermented shells",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented shells",
+      "Fermented Fermented Fermented Fermented Fermented driftwood"
+    ],
+    "result": "Compost",
+    "ruleId": "compost_decay",
+    "discoveredBy": "43109eab-beba-4a37-84e0-becaa05ef690",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:07:19.861Z"
+  },
+  {
+    "key": "burn:Fermented Fermented Fermented Fermented Fermented driftwood + Fermented Fermented Fermented Fermented Fermented shells",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented driftwood",
+      "Fermented Fermented Fermented Fermented Fermented shells"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented driftwood Cinder",
+    "ruleId": "burn_item",
+    "discoveredBy": "43109eab-beba-4a37-84e0-becaa05ef690",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:07:31.403Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds + Fermented Fermented Fermented Fermented Fermented Fermented wood",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds",
+      "Fermented Fermented Fermented Fermented Fermented Fermented wood"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "062ce1de-7b76-4db0-96bc-e571939ee08d",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:07:36.923Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber + herbs",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber",
+      "herbs"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563",
+    "discovererName": "Agent-16",
+    "discoveredAt": "2026-03-01T20:07:36.926Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented bark + Fermented Fermented Fermented Fermented Fermented Fermented wood",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented wood",
+      "Fermented Fermented Fermented Fermented Fermented Fermented bark"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented wood Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "43b8d3dc-ede6-435c-8113-fe6a9d66cccb",
+    "discovererName": "Agent-23",
+    "discoveredAt": "2026-03-01T20:07:36.928Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber + Fermented Fermented Fermented Fermented Fermented Fermented bark",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented bark",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented bark Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "f4689095-dbd2-45de-81fa-42cb6bf3bc2e",
+    "discovererName": "Agent-21",
+    "discoveredAt": "2026-03-01T20:07:37.431Z"
+  },
+  {
+    "key": "decay:Fermented Fermented Fermented Fermented Fermented Fermented driftwood + Fermented Fermented Fermented Fermented Fermented Fermented shells",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented driftwood",
+      "Fermented Fermented Fermented Fermented Fermented Fermented shells"
+    ],
+    "result": "Compost",
+    "ruleId": "compost_decay",
+    "discoveredBy": "43109eab-beba-4a37-84e0-becaa05ef690",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:07:50.464Z"
+  },
+  {
+    "key": "burn:Fermented Fermented Fermented Fermented Fermented Fermented fiber + Fermented Fermented Fermented Fermented Fermented Fermented herbs",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented fiber",
+      "Fermented Fermented Fermented Fermented Fermented Fermented herbs"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented fiber Cinder",
+    "ruleId": "burn_item",
+    "discoveredBy": "260dfffb-62b5-4a88-ab14-4d5d697dc94e",
+    "discovererName": "Agent-24",
+    "discoveredAt": "2026-03-01T20:07:50.474Z"
+  },
+  {
+    "key": "decay:Fermented Fermented Fermented Fermented Fermented Fermented fiber + Fermented Fermented Fermented Fermented Fermented Fermented herbs",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented herbs",
+      "Fermented Fermented Fermented Fermented Fermented Fermented fiber"
+    ],
+    "result": "Compost",
+    "ruleId": "compost_decay",
+    "discoveredBy": "260dfffb-62b5-4a88-ab14-4d5d697dc94e",
+    "discovererName": "Agent-24",
+    "discoveredAt": "2026-03-01T20:08:03.521Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber + herbs",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber",
+      "herbs"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563",
+    "discovererName": "Agent-16",
+    "discoveredAt": "2026-03-01T20:08:08.542Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber + Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "f4689095-dbd2-45de-81fa-42cb6bf3bc2e",
+    "discovererName": "Agent-21",
+    "discoveredAt": "2026-03-01T20:08:11.050Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark + Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "43b8d3dc-ede6-435c-8113-fe6a9d66cccb",
+    "discovererName": "Agent-23",
+    "discoveredAt": "2026-03-01T20:08:13.057Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds + Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "062ce1de-7b76-4db0-96bc-e571939ee08d",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:08:16.563Z"
+  },
+  {
+    "key": "burn:Fermented Fermented Fermented Fermented Fermented Fermented Fermented driftwood + Fermented Fermented Fermented Fermented Fermented Fermented Fermented shells",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented shells",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented driftwood"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented driftwood Cinder",
+    "ruleId": "burn_item",
+    "discoveredBy": "43109eab-beba-4a37-84e0-becaa05ef690",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:08:18.069Z"
+  },
+  {
+    "key": "decay:Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber + Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber"
+    ],
+    "result": "Compost",
+    "ruleId": "compost_decay",
+    "discoveredBy": "260dfffb-62b5-4a88-ab14-4d5d697dc94e",
+    "discovererName": "Agent-24",
+    "discoveredAt": "2026-03-01T20:08:22.594Z"
+  },
+  {
+    "key": "decay:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented driftwood + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented shells",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented shells",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented driftwood"
+    ],
+    "result": "Compost",
+    "ruleId": "compost_decay",
+    "discoveredBy": "43109eab-beba-4a37-84e0-becaa05ef690",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:08:38.141Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "f4689095-dbd2-45de-81fa-42cb6bf3bc2e",
+    "discovererName": "Agent-21",
+    "discoveredAt": "2026-03-01T20:08:38.152Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber + herbs",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber",
+      "herbs"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563",
+    "discovererName": "Agent-16",
+    "discoveredAt": "2026-03-01T20:08:39.150Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "43b8d3dc-ede6-435c-8113-fe6a9d66cccb",
+    "discovererName": "Agent-23",
+    "discoveredAt": "2026-03-01T20:08:40.158Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "062ce1de-7b76-4db0-96bc-e571939ee08d",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:08:40.652Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber + herbs",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber",
+      "herbs"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563",
+    "discovererName": "Agent-16",
+    "discoveredAt": "2026-03-01T20:09:09.259Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "43b8d3dc-ede6-435c-8113-fe6a9d66cccb",
+    "discovererName": "Agent-23",
+    "discoveredAt": "2026-03-01T20:09:09.263Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "f4689095-dbd2-45de-81fa-42cb6bf3bc2e",
+    "discovererName": "Agent-21",
+    "discoveredAt": "2026-03-01T20:09:09.762Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "062ce1de-7b76-4db0-96bc-e571939ee08d",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:09:14.271Z"
+  },
+  {
+    "key": "decay:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented driftwood + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented shells",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented driftwood",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented shells"
+    ],
+    "result": "Compost",
+    "ruleId": "compost_decay",
+    "discoveredBy": "43109eab-beba-4a37-84e0-becaa05ef690",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:09:18.286Z"
+  },
+  {
+    "key": "burn:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber Cinder",
+    "ruleId": "burn_item",
+    "discoveredBy": "260dfffb-62b5-4a88-ab14-4d5d697dc94e",
+    "discovererName": "Agent-24",
+    "discoveredAt": "2026-03-01T20:09:23.816Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "062ce1de-7b76-4db0-96bc-e571939ee08d",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:09:39.369Z"
+  },
+  {
+    "key": "decay:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs"
+    ],
+    "result": "Compost",
+    "ruleId": "compost_decay",
+    "discoveredBy": "260dfffb-62b5-4a88-ab14-4d5d697dc94e",
+    "discovererName": "Agent-24",
+    "discoveredAt": "2026-03-01T20:09:40.381Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "f4689095-dbd2-45de-81fa-42cb6bf3bc2e",
+    "discovererName": "Agent-21",
+    "discoveredAt": "2026-03-01T20:09:41.383Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "43b8d3dc-ede6-435c-8113-fe6a9d66cccb",
+    "discovererName": "Agent-23",
+    "discoveredAt": "2026-03-01T20:09:41.890Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber + herbs",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber",
+      "herbs"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563",
+    "discovererName": "Agent-16",
+    "discoveredAt": "2026-03-01T20:09:43.393Z"
+  },
+  {
+    "key": "burn:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs Cinder",
+    "ruleId": "burn_item",
+    "discoveredBy": "260dfffb-62b5-4a88-ab14-4d5d697dc94e",
+    "discovererName": "Agent-24",
+    "discoveredAt": "2026-03-01T20:09:46.402Z"
+  },
+  {
+    "key": "decay:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented driftwood + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented shells",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented shells",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented driftwood"
+    ],
+    "result": "Compost",
+    "ruleId": "compost_decay",
+    "discoveredBy": "43109eab-beba-4a37-84e0-becaa05ef690",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:09:53.921Z"
+  },
+  {
+    "key": "burn:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented driftwood + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented shells",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented shells",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented driftwood"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented driftwood Cinder",
+    "ruleId": "burn_item",
+    "discoveredBy": "43109eab-beba-4a37-84e0-becaa05ef690",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:10:04.963Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber + herbs",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber",
+      "herbs"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563",
+    "discovererName": "Agent-16",
+    "discoveredAt": "2026-03-01T20:10:09.993Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "43b8d3dc-ede6-435c-8113-fe6a9d66cccb",
+    "discovererName": "Agent-23",
+    "discoveredAt": "2026-03-01T20:10:09.996Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "062ce1de-7b76-4db0-96bc-e571939ee08d",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:10:10.488Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "f4689095-dbd2-45de-81fa-42cb6bf3bc2e",
+    "discovererName": "Agent-21",
+    "discoveredAt": "2026-03-01T20:10:10.995Z"
+  },
+  {
+    "key": "burn:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber Cinder",
+    "ruleId": "burn_item",
+    "discoveredBy": "260dfffb-62b5-4a88-ab14-4d5d697dc94e",
+    "discovererName": "Agent-24",
+    "discoveredAt": "2026-03-01T20:10:22.040Z"
+  },
+  {
+    "key": "decay:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs"
+    ],
+    "result": "Compost",
+    "ruleId": "compost_decay",
+    "discoveredBy": "260dfffb-62b5-4a88-ab14-4d5d697dc94e",
+    "discovererName": "Agent-24",
+    "discoveredAt": "2026-03-01T20:10:24.551Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "f4689095-dbd2-45de-81fa-42cb6bf3bc2e",
+    "discovererName": "Agent-21",
+    "discoveredAt": "2026-03-01T20:10:41.611Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber + herbs",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber",
+      "herbs"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563",
+    "discovererName": "Agent-16",
+    "discoveredAt": "2026-03-01T20:10:42.112Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "43b8d3dc-ede6-435c-8113-fe6a9d66cccb",
+    "discovererName": "Agent-23",
+    "discoveredAt": "2026-03-01T20:10:43.623Z"
+  },
+  {
+    "key": "decay:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs"
+    ],
+    "result": "Compost",
+    "ruleId": "compost_decay",
+    "discoveredBy": "260dfffb-62b5-4a88-ab14-4d5d697dc94e",
+    "discovererName": "Agent-24",
+    "discoveredAt": "2026-03-01T20:10:43.623Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "062ce1de-7b76-4db0-96bc-e571939ee08d",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:10:45.668Z"
+  },
+  {
+    "key": "burn:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs Cinder",
+    "ruleId": "burn_item",
+    "discoveredBy": "260dfffb-62b5-4a88-ab14-4d5d697dc94e",
+    "discovererName": "Agent-24",
+    "discoveredAt": "2026-03-01T20:11:07.259Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "062ce1de-7b76-4db0-96bc-e571939ee08d",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:11:11.765Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber + herbs",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber",
+      "herbs"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563",
+    "discovererName": "Agent-16",
+    "discoveredAt": "2026-03-01T20:11:12.272Z"
+  },
+  {
+    "key": "burn:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented driftwood + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented shells",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented driftwood",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented shells"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented driftwood Cinder",
+    "ruleId": "burn_item",
+    "discoveredBy": "43109eab-beba-4a37-84e0-becaa05ef690",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:11:13.268Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "f4689095-dbd2-45de-81fa-42cb6bf3bc2e",
+    "discovererName": "Agent-21",
+    "discoveredAt": "2026-03-01T20:11:13.278Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "43b8d3dc-ede6-435c-8113-fe6a9d66cccb",
+    "discovererName": "Agent-23",
+    "discoveredAt": "2026-03-01T20:11:16.294Z"
+  },
+  {
+    "key": "decay:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber"
+    ],
+    "result": "Compost",
+    "ruleId": "compost_decay",
+    "discoveredBy": "260dfffb-62b5-4a88-ab14-4d5d697dc94e",
+    "discovererName": "Agent-24",
+    "discoveredAt": "2026-03-01T20:11:19.802Z"
+  },
+  {
+    "key": "decay:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented driftwood + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented shells",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented driftwood",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented shells"
+    ],
+    "result": "Compost",
+    "ruleId": "compost_decay",
+    "discoveredBy": "43109eab-beba-4a37-84e0-becaa05ef690",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:11:22.306Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber + herbs",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber",
+      "herbs"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563",
+    "discovererName": "Agent-16",
+    "discoveredAt": "2026-03-01T20:11:41.881Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "43b8d3dc-ede6-435c-8113-fe6a9d66cccb",
+    "discovererName": "Agent-23",
+    "discoveredAt": "2026-03-01T20:11:41.885Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "062ce1de-7b76-4db0-96bc-e571939ee08d",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:11:44.388Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "f4689095-dbd2-45de-81fa-42cb6bf3bc2e",
+    "discovererName": "Agent-21",
+    "discoveredAt": "2026-03-01T20:11:46.899Z"
+  },
+  {
+    "key": "burn:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented driftwood + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented shells",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented driftwood",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented shells"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented driftwood Cinder",
+    "ruleId": "burn_item",
+    "discoveredBy": "43109eab-beba-4a37-84e0-becaa05ef690",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:11:53.413Z"
+  },
+  {
+    "key": "decay:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs"
+    ],
+    "result": "Compost",
+    "ruleId": "compost_decay",
+    "discoveredBy": "260dfffb-62b5-4a88-ab14-4d5d697dc94e",
+    "discovererName": "Agent-24",
+    "discoveredAt": "2026-03-01T20:11:58.942Z"
+  },
+  {
+    "key": "burn:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber Cinder",
+    "ruleId": "burn_item",
+    "discoveredBy": "260dfffb-62b5-4a88-ab14-4d5d697dc94e",
+    "discovererName": "Agent-24",
+    "discoveredAt": "2026-03-01T20:12:02.961Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber + herbs",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber",
+      "herbs"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563",
+    "discovererName": "Agent-16",
+    "discoveredAt": "2026-03-01T20:12:12.990Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "f4689095-dbd2-45de-81fa-42cb6bf3bc2e",
+    "discovererName": "Agent-21",
+    "discoveredAt": "2026-03-01T20:12:12.992Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "43b8d3dc-ede6-435c-8113-fe6a9d66cccb",
+    "discovererName": "Agent-23",
+    "discoveredAt": "2026-03-01T20:12:16.000Z"
+  },
+  {
+    "key": "decay:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber"
+    ],
+    "result": "Compost",
+    "ruleId": "compost_decay",
+    "discoveredBy": "260dfffb-62b5-4a88-ab14-4d5d697dc94e",
+    "discovererName": "Agent-24",
+    "discoveredAt": "2026-03-01T20:12:17.004Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "062ce1de-7b76-4db0-96bc-e571939ee08d",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:12:17.495Z"
+  },
+  {
+    "key": "decay:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented driftwood + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented shells",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented driftwood",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented shells"
+    ],
+    "result": "Compost",
+    "ruleId": "compost_decay",
+    "discoveredBy": "43109eab-beba-4a37-84e0-becaa05ef690",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:12:36.565Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "062ce1de-7b76-4db0-96bc-e571939ee08d",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:12:43.089Z"
+  },
+  {
+    "key": "burn:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber Cinder",
+    "ruleId": "burn_item",
+    "discoveredBy": "260dfffb-62b5-4a88-ab14-4d5d697dc94e",
+    "discovererName": "Agent-24",
+    "discoveredAt": "2026-03-01T20:12:43.601Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "43b8d3dc-ede6-435c-8113-fe6a9d66cccb",
+    "discovererName": "Agent-23",
+    "discoveredAt": "2026-03-01T20:12:45.105Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "f4689095-dbd2-45de-81fa-42cb6bf3bc2e",
+    "discovererName": "Agent-21",
+    "discoveredAt": "2026-03-01T20:12:46.607Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber + herbs",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber",
+      "herbs"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563",
+    "discovererName": "Agent-16",
+    "discoveredAt": "2026-03-01T20:12:49.612Z"
+  },
+  {
+    "key": "burn:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented driftwood + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented shells",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented driftwood",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented shells"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented driftwood Cinder",
+    "ruleId": "burn_item",
+    "discoveredBy": "43109eab-beba-4a37-84e0-becaa05ef690",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:12:50.107Z"
+  },
+  {
+    "key": "decay:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs"
+    ],
+    "result": "Compost",
+    "ruleId": "compost_decay",
+    "discoveredBy": "260dfffb-62b5-4a88-ab14-4d5d697dc94e",
+    "discovererName": "Agent-24",
+    "discoveredAt": "2026-03-01T20:12:51.622Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "43b8d3dc-ede6-435c-8113-fe6a9d66cccb",
+    "discovererName": "Agent-23",
+    "discoveredAt": "2026-03-01T20:13:14.704Z"
+  },
+  {
+    "key": "burn:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs Cinder",
+    "ruleId": "burn_item",
+    "discoveredBy": "260dfffb-62b5-4a88-ab14-4d5d697dc94e",
+    "discovererName": "Agent-24",
+    "discoveredAt": "2026-03-01T20:13:15.708Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "062ce1de-7b76-4db0-96bc-e571939ee08d",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:13:16.200Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber + herbs",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber",
+      "herbs"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563",
+    "discovererName": "Agent-16",
+    "discoveredAt": "2026-03-01T20:13:16.206Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "f4689095-dbd2-45de-81fa-42cb6bf3bc2e",
+    "discovererName": "Agent-21",
+    "discoveredAt": "2026-03-01T20:13:16.711Z"
+  },
+  {
+    "key": "burn:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented driftwood + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented shells",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented driftwood",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented shells"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented driftwood Cinder",
+    "ruleId": "burn_item",
+    "discoveredBy": "43109eab-beba-4a37-84e0-becaa05ef690",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:13:28.746Z"
+  },
+  {
+    "key": "decay:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs"
+    ],
+    "result": "Compost",
+    "ruleId": "compost_decay",
+    "discoveredBy": "260dfffb-62b5-4a88-ab14-4d5d697dc94e",
+    "discovererName": "Agent-24",
+    "discoveredAt": "2026-03-01T20:13:39.291Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "43b8d3dc-ede6-435c-8113-fe6a9d66cccb",
+    "discovererName": "Agent-23",
+    "discoveredAt": "2026-03-01T20:13:44.808Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented wood"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented palm_fronds Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "062ce1de-7b76-4db0-96bc-e571939ee08d",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:13:45.302Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented bark Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "f4689095-dbd2-45de-81fa-42cb6bf3bc2e",
+    "discovererName": "Agent-21",
+    "discoveredAt": "2026-03-01T20:13:45.311Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber + herbs",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber",
+      "herbs"
+    ],
+    "result": "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Burning Fiber Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563",
+    "discovererName": "Agent-16",
+    "discoveredAt": "2026-03-01T20:13:48.318Z"
+  },
+  {
+    "key": "decay:Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber + Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs",
+    "items": [
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented herbs",
+      "Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented Fermented fiber"
+    ],
+    "result": "Compost",
+    "ruleId": "compost_decay",
+    "discoveredBy": "260dfffb-62b5-4a88-ab14-4d5d697dc94e",
+    "discovererName": "Agent-24",
+    "discoveredAt": "2026-03-01T20:13:48.824Z"
+  },
+  {
+    "key": "combine:Fermented Fermented Burning Fiber + Fermented herbs",
+    "items": [
+      "Fermented Fermented Burning Fiber",
+      "Fermented herbs"
+    ],
+    "result": "Fermented Fermented Burning Fiber Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "2fcf2de2-1702-4c4a-ac8e-ce7fcee8e563",
+    "discovererName": "Agent-16",
+    "discoveredAt": "2026-03-01T20:14:28.092Z"
+  },
+  {
+    "key": "decay:Fermented Fermented fiber + Fermented Fermented herbs",
+    "items": [
+      "Fermented Fermented fiber",
+      "Fermented Fermented herbs"
+    ],
+    "result": "Compost",
+    "ruleId": "compost_decay",
+    "discoveredBy": "260dfffb-62b5-4a88-ab14-4d5d697dc94e",
+    "discovererName": "Agent-24",
+    "discoveredAt": "2026-03-01T20:14:36.630Z"
+  },
+  {
+    "key": "burn:Fermented Fermented fiber + Fermented Fermented herbs",
+    "items": [
+      "Fermented Fermented fiber",
+      "Fermented Fermented herbs"
+    ],
+    "result": "Fermented Fermented fiber Cinder",
+    "ruleId": "burn_item",
+    "discoveredBy": "260dfffb-62b5-4a88-ab14-4d5d697dc94e",
+    "discovererName": "Agent-24",
+    "discoveredAt": "2026-03-01T20:14:39.639Z"
+  },
+  {
+    "key": "decay:Fermented Fermented driftwood + Fermented Fermented shells",
+    "items": [
+      "Fermented Fermented shells",
+      "Fermented Fermented driftwood"
+    ],
+    "result": "Compost",
+    "ruleId": "compost_decay",
+    "discoveredBy": "43109eab-beba-4a37-84e0-becaa05ef690",
+    "discovererName": "Tjonkr",
+    "discoveredAt": "2026-03-01T20:14:42.138Z"
+  },
+  {
+    "key": "dissolve:Fermented Fermented Herbal Extract + Fermented herbs",
+    "items": [
+      "Fermented herbs",
+      "Fermented Fermented Herbal Extract"
+    ],
+    "result": "Fermented herbs Solution",
+    "ruleId": "dissolve_soluble",
+    "discoveredBy": "6498a0c9-87f9-430e-b729-2b1a75250d4b",
+    "discovererName": "Agent-19",
+    "discoveredAt": "2026-03-01T20:16:13.493Z"
+  },
+  {
+    "key": "combine:salt + seaweed",
+    "items": [
+      "salt",
+      "seaweed"
+    ],
+    "result": "Salted seaweed",
+    "ruleId": "salt_preserve",
+    "discoveredBy": "582115a5-7236-46c9-93cc-d3f4abadd5f8",
+    "discovererName": "Agent-7",
+    "discoveredAt": "2026-03-02T23:06:19.567Z"
+  },
+  {
+    "key": "combine:Dried driftwood + driftwood",
+    "items": [
+      "Dried driftwood",
+      "driftwood"
+    ],
+    "result": "Dried driftwood Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "07f8fc77-5f5e-4355-a0d6-51ab39725d9b",
+    "discovererName": "Agent-29",
+    "discoveredAt": "2026-03-04T12:43:17.298Z"
+  },
+  {
+    "key": "combine:Dried driftwood + Dried driftwood",
+    "items": [
+      "Dried driftwood",
+      "Dried driftwood"
+    ],
+    "result": "Dried driftwood Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "07f8fc77-5f5e-4355-a0d6-51ab39725d9b",
+    "discovererName": "Agent-29",
+    "discoveredAt": "2026-03-04T13:01:52.222Z"
+  },
+  {
+    "key": "combine:Dried flowers + Fermented shells",
+    "items": [
+      "Fermented shells",
+      "Dried flowers"
+    ],
+    "result": "Cooked Fermented shells",
+    "ruleId": "cooking",
+    "discoveredBy": "75ea2f1f-106e-455b-a08b-e1201500a0df",
+    "discovererName": "Agent-20",
+    "discoveredAt": "2026-03-04T22:56:39.651Z"
+  },
+  {
+    "key": "combine:Dried Burning Fiber + Dried driftwood",
+    "items": [
+      "Dried Burning Fiber",
+      "Dried driftwood"
+    ],
+    "result": "Dried Burning Fiber Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "07f8fc77-5f5e-4355-a0d6-51ab39725d9b",
+    "discovererName": "Agent-29",
+    "discoveredAt": "2026-03-04T23:01:02.068Z"
+  },
+  {
+    "key": "combine:Dried Burning Fiber + driftwood",
+    "items": [
+      "driftwood",
+      "Dried Burning Fiber"
+    ],
+    "result": "driftwood Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "07f8fc77-5f5e-4355-a0d6-51ab39725d9b",
+    "discovererName": "Agent-29",
+    "discoveredAt": "2026-03-05T04:38:14.231Z"
+  },
+  {
+    "key": "combine:Dried driftwood + fiber + flint",
+    "items": [
+      "Dried driftwood",
+      "fiber",
+      "flint"
+    ],
+    "result": "Cooked Dried driftwood",
+    "ruleId": "cooking",
+    "discoveredBy": "d46fbff6-164e-4f5e-9d31-19deeb010ebf",
+    "discovererName": "Tjonkr-Soul",
+    "discoveredAt": "2026-03-05T18:30:28.377Z"
+  },
+  {
+    "key": "combine:Dried Herbs + Dried driftwood",
+    "items": [
+      "Dried driftwood",
+      "Dried Herbs"
+    ],
+    "result": "Dried driftwood Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "d46fbff6-164e-4f5e-9d31-19deeb010ebf",
+    "discovererName": "Tjonkr-Soul",
+    "discoveredAt": "2026-03-05T18:39:27.324Z"
+  },
+  {
+    "key": "combine:Dried cactus_fruit + Fermented seaweed + Fermented shells",
+    "items": [
+      "Fermented seaweed",
+      "Fermented shells",
+      "Dried cactus_fruit"
+    ],
+    "result": "Cooked Fermented seaweed",
+    "ruleId": "cooking",
+    "discoveredBy": "d46fbff6-164e-4f5e-9d31-19deeb010ebf",
+    "discovererName": "Tjonkr-Soul",
+    "discoveredAt": "2026-03-05T18:39:38.884Z"
+  },
+  {
+    "key": "combine:Dried driftwood + fiber",
+    "items": [
+      "Dried driftwood",
+      "fiber"
+    ],
+    "result": "Cooked Dried driftwood",
+    "ruleId": "cooking",
+    "discoveredBy": "d46fbff6-164e-4f5e-9d31-19deeb010ebf",
+    "discovererName": "Tjonkr-Soul",
+    "discoveredAt": "2026-03-05T18:45:17.870Z"
+  },
+  {
+    "key": "combine:Dried cactus_fruit + Dried driftwood",
+    "items": [
+      "Dried cactus_fruit",
+      "Dried driftwood"
+    ],
+    "result": "Dried cactus_fruit Lamp",
+    "ruleId": "light_source",
+    "discoveredBy": "d46fbff6-164e-4f5e-9d31-19deeb010ebf",
+    "discovererName": "Tjonkr-Soul",
+    "discoveredAt": "2026-03-05T18:55:25.155Z"
+  }
+]

@@ -1,0 +1,145 @@
+{
+  "grass": {
+    "soil_fertility": 100,
+    "water_level": 99.5,
+    "biodiversity": 100,
+    "extraction_pressure": 0,
+    "health": 99.83,
+    "gather_history": [
+      "fiber",
+      "herbs",
+      "flowers",
+      "herbs",
+      "herbs",
+      "herbs",
+      "fiber",
+      "herbs",
+      "herbs",
+      "herbs",
+      "herbs",
+      "fiber",
+      "fiber",
+      "herbs",
+      "fiber",
+      "fiber",
+      "fiber",
+      "herbs",
+      "fiber",
+      "herbs"
+    ]
+  },
+  "forest": {
+    "soil_fertility": 100,
+    "water_level": 99.5,
+    "biodiversity": 100,
+    "extraction_pressure": 0,
+    "health": 99.83,
+    "gather_history": []
+  },
+  "rocky": {
+    "soil_fertility": 100,
+    "water_level": 0,
+    "biodiversity": 100,
+    "extraction_pressure": 0,
+    "health": 66.67,
+    "gather_history": []
+  },
+  "sand": {
+    "soil_fertility": 100,
+    "water_level": 99.5,
+    "biodiversity": 100,
+    "extraction_pressure": 0,
+    "health": 99.83,
+    "gather_history": [
+      "sand",
+      "sand",
+      "shells",
+      "sand",
+      "shells",
+      "shells",
+      "sand",
+      "sand",
+      "sand",
+      "cactus_fruit",
+      "cactus_fruit",
+      "sand",
+      "shells",
+      "shells",
+      "sand",
+      "shells",
+      "sand",
+      "shells",
+      "cactus_fruit",
+      "cactus_fruit"
+    ]
+  },
+  "water": {
+    "soil_fertility": 100,
+    "water_level": 99.5,
+    "biodiversity": 100,
+    "extraction_pressure": 0,
+    "health": 99.83,
+    "gather_history": []
+  },
+  "swamp": {
+    "soil_fertility": 100,
+    "water_level": 99.5,
+    "biodiversity": 100,
+    "extraction_pressure": 0,
+    "health": 99.83,
+    "gather_history": []
+  },
+  "river": {
+    "soil_fertility": 100,
+    "water_level": 99.5,
+    "biodiversity": 100,
+    "extraction_pressure": 0,
+    "health": 99.83,
+    "gather_history": []
+  },
+  "cave": {
+    "soil_fertility": 100,
+    "water_level": 99.5,
+    "biodiversity": 100,
+    "extraction_pressure": 0,
+    "health": 99.83,
+    "gather_history": []
+  },
+  "coast": {
+    "soil_fertility": 100,
+    "water_level": 99.5,
+    "biodiversity": 100,
+    "extraction_pressure": 0,
+    "health": 99.83,
+    "gather_history": [
+      "seaweed",
+      "driftwood",
+      "shells",
+      "palm_fronds",
+      "seaweed",
+      "shells",
+      "fish",
+      "fish",
+      "fish",
+      "fish",
+      "driftwood",
+      "palm_fronds",
+      "fish",
+      "fish",
+      "shells",
+      "seaweed",
+      "shells",
+      "shells",
+      "seaweed",
+      "driftwood"
+    ]
+  },
+  "path": {
+    "soil_fertility": 100,
+    "water_level": 0,
+    "biodiversity": 100,
+    "extraction_pressure": 0,
+    "health": 66.67,
+    "gather_history": []
+  }
+}
