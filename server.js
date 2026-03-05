@@ -179,6 +179,7 @@ wss.on('connection', (ws) => {
     gasClouds: gasSystem.getGasClouds(),
     growthSites: organicGrowth.getGrowthSites(),
     wildlife: wildlife.getAll(),
+    groundItems: serializeGroundItems(),
   }));
 
   ws.on('message', (raw) => {
@@ -386,6 +387,22 @@ function serializeAgent(a) {
   };
 }
 
+function serializeGroundItems() {
+  if (!decayLifecycle?.groundItems) return [];
+  
+  const result = [];
+  for (const [coords, items] of decayLifecycle.groundItems) {
+    const [tileX, tileY] = coords.split(',').map(Number);
+    const serializedItems = items.map(entry => ({
+      name: entry.item.name,
+      quantity: entry.item.quantity || 1,
+      properties: entry.item.properties
+    }));
+    result.push({ tileX, tileY, items: serializedItems });
+  }
+  return result;
+}
+
 // ═══════════════════════════════════════
 // Simulation
 // ═══════════════════════════════════════
@@ -550,6 +567,7 @@ function simulationTick() {
       gameTime,
       weather: weatherSystem.getCurrentWeather?.() || null,
       agents: [...agents.values()].filter(a => a.alive).map(serializeAgent),
+      groundItems: serializeGroundItems(),
     });
   } else if (spectators.size > 0) {
     // Lightweight position-only update (skip if nobody watching)
@@ -567,6 +585,7 @@ function simulationTick() {
       tickMsg.gasClouds = gasSystem.getGasClouds();
       tickMsg.growthSites = organicGrowth.getGrowthSites();
       tickMsg.wildlife = wildlife.getAll();
+      tickMsg.groundItems = serializeGroundItems();
     }
     broadcast(tickMsg);
   }
