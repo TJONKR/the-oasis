@@ -926,12 +926,23 @@ export function initAgentIntelligence(shared) {
     const resource = worldGrid.rollResource?.(gx, gy);
     if (!resource) return;
 
+    // P3 Fix #12: Proficiency bonus yield — higher proficiency = bonus yield
+    let bonusYield = 0;
+    if (shared.proficiency?.getActionBonus) {
+      const bonus = shared.proficiency.getActionBonus(agent.id, 'gather');
+      // yieldBonus is 0-50%, roll for bonus item
+      if (bonus.yieldBonus > 0 && Math.random() * 100 < bonus.yieldBonus) {
+        bonusYield = 1;
+      }
+    }
+
     const existing = agent.inventory.find(i => i.name === resource);
     const MAX_STACK = 20; // reasonable stack cap
+    const totalQty = 1 + bonusYield;
+
     if (existing) {
-      if ((existing.quantity || 1) < MAX_STACK) {
-        existing.quantity = (existing.quantity || 1) + 1;
-      }
+      const newQty = Math.min(MAX_STACK, (existing.quantity || 1) + totalQty);
+      existing.quantity = newQty;
       // Backfill properties if missing
       if (!existing.properties && shared.getResourceProperties) {
         const props = shared.getResourceProperties(resource);
@@ -940,7 +951,7 @@ export function initAgentIntelligence(shared) {
     } else {
       // Attach material properties if available
       const props = shared.getResourceProperties?.(resource);
-      const item = { name: resource, quantity: 1 };
+      const item = { name: resource, quantity: totalQty };
       if (props) item.properties = { ...props };
       agent.inventory.push(item);
     }
@@ -1156,9 +1167,36 @@ export function initAgentIntelligence(shared) {
           shared.experiments.runExperiment(agent, items, 'combine', agent.zone).then(result => {
             if (result && result.success) {
               if (awardXP) awardXP(agent.id, 8);
-              addMemoryEvent(mind, `Crafted ${result.result_item?.name || 'something new'}`);
-              addWorldNews('craft', agent.id, agent.name, `${agent.name} crafted ${result.result_item?.name || 'an item'}`, agent.zone);
-              if (broadcast) broadcast({ type: 'craftResult', agentId: agent.id, name: agent.name, item: result.result_item?.name });
+
+              // P3 Fix #12: Proficiency bonus — higher crafting = better quality items
+              if (result.result_item && shared.proficiency?.getActionBonus) {
+                const bonus = shared.proficiency.getActionBonus(agent.id, 'craft');
+                if (bonus.qualityBonus > 0) {
+                  // Boost item properties based on quality bonus
+                  if (!result.result_item.properties) result.result_item.properties = {};
+                  const qualityFactor = 1 + bonus.qualityBonus / 100;
+                  // Enhance relevant properties
+                  if (result.result_item.properties.sharpness) {
+                    result.result_item.properties.sharpness = Math.round(result.result_item.properties.sharpness * qualityFactor);
+                  }
+                  if (result.result_item.properties.hardness) {
+                    result.result_item.properties.hardness = Math.round(result.result_item.properties.hardness * qualityFactor);
+                  }
+                  if (result.result_item.properties.energy) {
+                    result.result_item.properties.energy = Math.round(result.result_item.properties.energy * qualityFactor);
+                  }
+                  // Mark as quality crafted
+                  if (bonus.qualityBonus >= 40) {
+                    result.result_item.quality = 'masterwork';
+                  } else if (bonus.qualityBonus >= 20) {
+                    result.result_item.quality = 'fine';
+                  }
+                }
+              }
+
+              addMemoryEvent(mind, `Crafted ${result.result_item?.name || 'something new'}${result.result_item?.quality ? ` (${result.result_item.quality})` : ''}`);
+              addWorldNews('craft', agent.id, agent.name, `${agent.name} crafted ${result.result_item?.name || 'an item'}${result.result_item?.quality ? ` (${result.result_item.quality})` : ''}`, agent.zone);
+              if (broadcast) broadcast({ type: 'craftResult', agentId: agent.id, name: agent.name, item: result.result_item?.name, quality: result.result_item?.quality });
               // Fire effect for campfire/torch crafting
               if (result.result_item?.name && /campfire|torch|fire/i.test(result.result_item.name)) {
                 if (broadcast) broadcast({ type: 'tileEffect', effect: 'fire', tileX: agent.tileX, tileY: agent.tileY, duration: 6000 });
@@ -1362,6 +1400,15 @@ export function initAgentIntelligence(shared) {
         agent.hp = Math.max(0, (agent.hp || 100) - 5); // eating rotten food damages HP
       }
 
+      // P3 Fix #12: Cooking proficiency bonus — higher cooking = more energy from food
+      if (shared.proficiency?.getActionBonus && !food.name?.startsWith('Rotten') && !food.name?.startsWith('Spoiled')) {
+        const bonus = shared.proficiency.getActionBonus(agent.id, 'cook');
+        if (bonus.energyBonus > 0) {
+          // energyBonus is 0-50%, increase energy gain by that %
+          energyGain = Math.round(energyGain * (1 + bonus.energyBonus / 100));
+        }
+      }
+
       agent.hunger = Math.max(0, agent.hunger - 40);
       agent.energy = Math.min(100, agent.energy + energyGain);
       addMemoryEvent(mind, `Ate ${food.name} (+${energyGain} energy)`);
@@ -1429,6 +1476,22 @@ export function initAgentIntelligence(shared) {
     if (idx === -1) return;
 
     const entry = items.splice(idx, 1)[0];
+
+    // P3 Fix #13: Special handling for Knowledge Fragments — absorb instead of picking up
+    if (entry.item.name === 'Knowledge Fragment' && entry.item.discoveries) {
+      if (shared.agentKnowledge?.learnFromFragment) {
+        const result = shared.agentKnowledge.learnFromFragment(agent.id, entry.item);
+        addMemoryEvent(mind, `Absorbed knowledge from ${entry.item.originAgent}'s fragment — learned ${result.learned} new things!`);
+        if (addWorldNews) {
+          addWorldNews('knowledge', agent.id, agent.name,
+            `${agent.name} absorbed knowledge from ${entry.item.originAgent}'s fragment (learned ${result.learned} things)`,
+            agent.zone);
+        }
+        if (items.length === 0) shared.decayLifecycle.groundItems.delete(key);
+        return;
+      }
+    }
+
     agent.inventory.push(entry.item);
     addMemoryEvent(mind, `Picked up ${entry.item.name}`);
     if (items.length === 0) shared.decayLifecycle.groundItems.delete(key);
@@ -1478,7 +1541,14 @@ export function initAgentIntelligence(shared) {
     const targetId = mind.intent?.huntTarget;
     if (!targetId || !shared.wildlife) return;
 
-    const result = shared.wildlife.attackAnimal(agent, targetId);
+    // P3 Fix #12: Get proficiency damage bonus
+    let damageBonus = 0;
+    if (shared.proficiency?.getActionBonus) {
+      const bonus = shared.proficiency.getActionBonus(agent.id, 'hunt');
+      damageBonus = bonus.damageBonus || 0;
+    }
+
+    const result = shared.wildlife.attackAnimal(agent, targetId, damageBonus);
     if (!result) return;
 
     if (result.killed) {

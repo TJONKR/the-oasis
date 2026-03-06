@@ -406,16 +406,21 @@ export function setupAgentAPI(app, shared) {
    */
   app.post('/api/v1/eat', authAgent, (req, res) => {
     const agent = req.agent;
-    const { itemName } = req.body;
+    const { itemName, itemId } = req.body;
 
     const foodItems = ['berries','fish','mushrooms','herbs','fruit','nuts','coconuts','acorns','seaweed','freshwater','pine_nuts',
       'Cooked Fish','Cooked Mushrooms','Herbal Tea','Smoked fish','Dried Seaweed','raw_meat','Cooked Meat'];
 
-    const food = itemName
-      ? agent.inventory.find(i => i.name === itemName)
-      : agent.inventory.find(i => foodItems.includes(i.name));
+    // Find food by itemId, itemName, or auto-detect
+    const isEdible = (i) => foodItems.includes(i.name) || (i.properties?.energy && i.properties.energy > 0 && !i.properties?.toxicity);
+    const food = itemId
+      ? agent.inventory.find(i => i.id === itemId)
+      : itemName
+        ? agent.inventory.find(i => i.name === itemName)
+        : agent.inventory.find(i => isEdible(i));
 
     if (!food) return res.json({ ate: false, reason: 'No food in inventory' });
+    if (food.properties?.toxicity && food.properties.toxicity > 3) return res.json({ ate: false, reason: 'Too toxic to eat' });
 
     const isCooked = food.name.startsWith('Cooked') || food.name.startsWith('Smoked');
     let hungerRelief = isCooked ? 50 : 40;
