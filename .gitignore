@@ -6,4 +6,6 @@ output/
 !public/oasis-banner.png
 !public/oasis-coast-area.png
 !public/oasis-spawn-area.png
+!public/slides/*.png
+!public/slides/**/*.png
 !assets/world.json.gz
