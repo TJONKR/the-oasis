@@ -313,6 +313,20 @@ const worldPhysics = initWorldPhysics(shared);
 const decayLifecycle = initDecayLifecycle(shared);
 shared.decayLifecycle = decayLifecycle;
 
+// P0 Fix: Migrate agents with hp<=0 but alive=true — death is permanent
+let fixedDeaths = 0;
+for (const [id, agent] of agents) {
+  if (agent.alive && (agent.hp || 100) <= 0) {
+    console.log(`💀 Fixing zombie agent: ${agent.name} (hp=${agent.hp}, alive=${agent.alive})`);
+    decayLifecycle.onAgentDeath(agent);
+    fixedDeaths++;
+  }
+}
+if (fixedDeaths > 0) {
+  console.log(`💀 Fixed ${fixedDeaths} agents that were alive with 0 HP`);
+  saveJSON('agents.json', Object.fromEntries([...agents.entries()].map(([id, a]) => [id, { ...a, relationships: Object.fromEntries(a.relationships || new Map()) }])));
+}
+
 // Organic Growth
 const organicGrowth = initOrganicGrowth(shared);
 shared.organicGrowth = organicGrowth;

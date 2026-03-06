@@ -54,20 +54,21 @@ const AMBITIONS = [
 // ACTIONS & COSTS
 // ═══════════════════════════════
 
+// Energy costs reduced ~40% from original values for better balance
 const ACTIONS = {
   idle:      { energy: 0,   description: 'Standing around, thinking' },
-  move:      { energy: 0.5, description: 'Walking to a new location' },
-  gather:    { energy: 1.5, description: 'Collecting resources from the terrain' },
-  rest:      { energy: -3,  description: 'Resting to recover energy' },
-  craft:     { energy: 2,   description: 'Crafting an item from materials' },
-  explore:   { energy: 0.5, description: 'Exploring the surroundings' },
-  chat:      { energy: 0.3, description: 'Talking with a nearby agent' },
-  gift:      { energy: 0.3, description: 'Giving something to another agent' },
-  trade:     { energy: 0.5, description: 'Trading items with another agent' },
-  experiment:{ energy: 3,   description: 'Experimenting with materials' },
+  move:      { energy: 0.3, description: 'Walking to a new location' },
+  gather:    { energy: 1,   description: 'Collecting resources from the terrain' },
+  rest:      { energy: -40, description: 'Resting to recover energy' }, // Major buff: was -3
+  craft:     { energy: 1.2, description: 'Crafting an item from materials' },
+  explore:   { energy: 0.3, description: 'Exploring the surroundings' },
+  chat:      { energy: 0.2, description: 'Talking with a nearby agent' },
+  gift:      { energy: 0.2, description: 'Giving something to another agent' },
+  trade:     { energy: 0.3, description: 'Trading items with another agent' },
+  experiment:{ energy: 1.8, description: 'Experimenting with materials' },
   eat:       { energy: 0,   description: 'Eating to reduce hunger' },
-  fight:     { energy: 2,   description: 'Fighting a creature or hazard' },
-  build:     { energy: 3,   description: 'Contributing to a construction project' },
+  fight:     { energy: 1.2, description: 'Fighting a creature or hazard' },
+  build:     { energy: 1.8, description: 'Contributing to a construction project' },
   // bounty actions removed — emergent only
 };
 
@@ -956,8 +957,11 @@ export function initAgentIntelligence(shared) {
   }
 
   function executeRest(agent, mind) {
-    agent.energy = Math.min(100, agent.energy + 8);
-    if (agent.hunger > 0) agent.hunger = Math.max(0, agent.hunger - 2);
+    // Rest now restores 30-50 energy (averaging 40) — realistic recovery
+    const restAmount = 30 + Math.floor(Math.random() * 21); // 30-50
+    agent.energy = Math.min(100, agent.energy + restAmount);
+    if (agent.hunger > 0) agent.hunger = Math.max(0, agent.hunger - 3);
+    addMemoryEvent(mind, `Rested and recovered ${restAmount} energy`);
   }
 
   function executeExplore(agent, mind) {
@@ -1312,9 +1316,23 @@ export function initAgentIntelligence(shared) {
       if (food.quantity > 1) food.quantity--;
       else agent.inventory = agent.inventory.filter(i => i !== food);
 
+      // Use food's actual energy property, with fallbacks based on food type
+      const props = food.properties || shared.getResourceProperties?.(food.name) || {};
+      let energyGain = props.energy || 15; // default if no property
+
+      // Cooked foods give bonus energy
+      if (food.name?.startsWith('Cooked') || food.name?.startsWith('Roasted')) {
+        energyGain = Math.max(energyGain, 25);
+      }
+      // Rotten foods give negative energy
+      if (food.name?.startsWith('Rotten') || food.name?.startsWith('Spoiled')) {
+        energyGain = Math.min(energyGain, -5);
+        agent.hp = Math.max(0, (agent.hp || 100) - 5); // eating rotten food damages HP
+      }
+
       agent.hunger = Math.max(0, agent.hunger - 40);
-      agent.energy = Math.min(100, agent.energy + 20);
-      addMemoryEvent(mind, `Ate some ${food.name}`);
+      agent.energy = Math.min(100, agent.energy + energyGain);
+      addMemoryEvent(mind, `Ate ${food.name} (+${energyGain} energy)`);
     }
   }
 

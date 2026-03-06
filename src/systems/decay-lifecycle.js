@@ -111,19 +111,32 @@ export function initDecayLifecycle(shared) {
   }
   
   /**
-   * Handle agent death — create corpse on ground.
+   * Handle agent death — drop inventory and create corpse on ground.
+   * P0 Fix: Ensure death is properly handled with inventory drop.
    */
   function onAgentDeath(agent) {
     if (!agent) return;
-    
+
+    // Ensure agent is marked dead
+    agent.alive = false;
+    agent.hp = 0;
+
     const key = `${agent.tileX},${agent.tileY}`;
     if (!groundItems.has(key)) groundItems.set(key, []);
-    
-    // Drop inventory on ground
+
+    // Drop ALL inventory on ground
+    const droppedCount = (agent.inventory || []).length;
     for (const item of (agent.inventory || [])) {
-      groundItems.get(key).push({ item: { ...item }, dropTick: shared.tick || 0, decayProgress: 0 });
+      groundItems.get(key).push({
+        item: { ...item },
+        dropTick: shared.tick || 0,
+        decayProgress: 0
+      });
     }
-    
+
+    // Clear agent's inventory after dropping
+    agent.inventory = [];
+
     // Create corpse
     groundItems.get(key).push({
       item: {
@@ -136,11 +149,19 @@ export function initDecayLifecycle(shared) {
       dropTick: shared.tick || 0,
       decayProgress: 0,
     });
-    
+
     if (broadcast) {
       broadcast({ type: 'tileEffect', effect: 'smoke', tileX: agent.tileX, tileY: agent.tileY, duration: 3000 });
-      addWorldNews?.('death', agent.id, agent.name, `${agent.name} has died. Their body lies at (${agent.tileX}, ${agent.tileY})`, agent.zone);
+      broadcast({ type: 'agent_death', agentId: agent.id, name: agent.name, tileX: agent.tileX, tileY: agent.tileY });
     }
+    if (addWorldNews) {
+      const deathMsg = droppedCount > 0
+        ? `${agent.name} has died. Their body and ${droppedCount} items lie at (${agent.tileX}, ${agent.tileY})`
+        : `${agent.name} has died. Their body lies at (${agent.tileX}, ${agent.tileY})`;
+      addWorldNews('death', agent.id, agent.name, deathMsg, agent.zone);
+    }
+
+    console.log(`💀 Agent ${agent.name} died at (${agent.tileX}, ${agent.tileY}), dropped ${droppedCount} items`);
   }
   
   /**

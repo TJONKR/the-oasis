@@ -227,6 +227,139 @@ const GATHERED_RESOURCE_PROPERTIES = {
 // ═══════════════════════════════════════
 
 const PRACTICAL_RULES = [
+  // ══════════════════════════════════════
+  // P0 FIX: Real-world survival recipes
+  // ══════════════════════════════════════
+
+  // Flint + Flint → Sparks (fire starter)
+  {
+    id: 'flint_sparks',
+    force: 'impact',
+    name: 'Strike Sparks',
+    check: (items) => {
+      const flintCount = items.filter(i => i.name === 'flint').length;
+      return flintCount >= 2;
+    },
+    produce: () => ({
+      name: 'Sparks',
+      type: 'material',
+      rarity: 'Common',
+      description: 'Hot sparks from struck flint. Use with tinder to start fire.',
+    }),
+    propOverrides: { temperature: 400, luminosity: 5, flammability: 0, energy: 50 },
+    consume: 'none', // flint isn't consumed, just struck
+    priority: 16,
+  },
+
+  // Flint + Stone → Sharp Flint (cutting tool)
+  {
+    id: 'sharp_flint',
+    force: 'impact',
+    name: 'Flint Knapping',
+    check: (items) => {
+      const hasFlint = items.some(i => i.name === 'flint');
+      const hasStone = items.some(i => i.name === 'stone' || i.name === 'pebbles');
+      return hasFlint && hasStone;
+    },
+    produce: () => ({
+      name: 'Sharp Flint',
+      type: 'tool',
+      rarity: 'Common',
+      description: 'A flint shard knapped to a razor edge. Cuts, carves, and scrapes.',
+    }),
+    propOverrides: { sharpness: 8, hardness: 7, weight: 0.3 },
+    consume: ['flint'],
+    priority: 15,
+  },
+
+  // Flint + Wood → Stone Axe (simpler 2-item version)
+  {
+    id: 'simple_stone_axe',
+    force: 'combine',
+    name: 'Simple Stone Axe',
+    check: (items) => {
+      const hasFlint = items.some(i => i.name === 'flint' || i.name === 'Sharp Flint');
+      const hasWood = items.some(i => ['wood', 'driftwood'].includes(i.name));
+      const itemCount = items.length;
+      return hasFlint && hasWood && itemCount === 2;
+    },
+    produce: () => ({
+      name: 'Stone Axe',
+      type: 'tool',
+      rarity: 'Common',
+      description: 'Flint wedged into a split stick. Crude but effective for chopping.',
+    }),
+    propOverrides: { hardness: 5, sharpness: 4, weight: 3 },
+    consume: 'all',
+    priority: 13,
+  },
+
+  // Palm Fronds + Wood → Rope
+  {
+    id: 'palm_rope',
+    force: 'combine',
+    name: 'Rope Twisting',
+    check: (items) => {
+      const hasFronds = items.some(i => i.name === 'palm_fronds');
+      const hasWood = items.some(i => ['wood', 'driftwood', 'bark'].includes(i.name));
+      return hasFronds && hasWood;
+    },
+    produce: () => ({
+      name: 'Rope',
+      type: 'material',
+      rarity: 'Common',
+      description: 'Strong rope twisted from palm fiber. Essential for building.',
+    }),
+    propOverrides: { malleability: 8, hardness: 2, weight: 0.5 },
+    consume: ['palm_fronds'],
+    priority: 12,
+  },
+
+  // Wood + Wood + Palm Fronds → Lean-to Shelter
+  {
+    id: 'lean_to_shelter',
+    force: 'combine',
+    name: 'Shelter Building',
+    check: (items) => {
+      const woodCount = items.filter(i => ['wood', 'driftwood'].includes(i.name)).length;
+      const hasFronds = items.some(i => i.name === 'palm_fronds');
+      return woodCount >= 2 && hasFronds;
+    },
+    produce: () => ({
+      name: 'Lean-to Shelter',
+      type: 'structure',
+      rarity: 'Common',
+      description: 'A simple shelter of branches and fronds. Provides protection from weather.',
+      isStructure: true,
+      structureType: 'shelter',
+    }),
+    propOverrides: { shelter: 1, warmth: 5, weight: 15, decay_rate: 0.05 },
+    consume: 'all',
+    priority: 14,
+  },
+
+  // Stone + Stone → Fire Pit
+  {
+    id: 'fire_pit',
+    force: 'combine',
+    name: 'Fire Pit Construction',
+    check: (items) => {
+      const stoneCount = items.filter(i => ['stone', 'pebbles'].includes(i.name)).length;
+      return stoneCount >= 2;
+    },
+    produce: () => ({
+      name: 'Fire Pit',
+      type: 'structure',
+      rarity: 'Common',
+      description: 'A ring of stones to contain fire safely. Add fuel to light.',
+      isStructure: true,
+      structureType: 'fire_pit',
+    }),
+    propOverrides: { warmth: 0, luminosity: 0, weight: 20, hardness: 7 },
+    consume: 'all',
+    priority: 13,
+  },
+
   // ── Fire & Heat ──
   {
     id: 'make_fire',

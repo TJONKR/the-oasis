@@ -144,6 +144,7 @@ export function setupAgentAPI(app, shared) {
         gasClouds: [],
         groundItems: [],
         growthSites: [],
+        structures: [],
       },
     };
     
@@ -203,7 +204,7 @@ export function setupAgentAPI(app, shared) {
       }
     }
     
-    // Nearby ground items
+    // Nearby ground items and structures
     if (shared.decayLifecycle?.groundItems) {
       for (const [key, items] of shared.decayLifecycle.groundItems) {
         const [x, y] = key.split(',').map(Number);
@@ -211,12 +212,28 @@ export function setupAgentAPI(app, shared) {
         const dy = Math.abs(y - agent.tileY);
         if (dx <= range && dy <= range) {
           for (const entry of items) {
-            visible.nearby.groundItems.push({ tileX: x, tileY: y, item: entry.item.name });
+            // Separate structures from regular ground items
+            if (entry.isStructure || entry.item.isStructure) {
+              visible.nearby.structures.push({
+                tileX: x,
+                tileY: y,
+                name: entry.item.name,
+                type: entry.item.structureType || entry.item.type,
+                properties: entry.item.structureProperties || {
+                  shelter: entry.item.properties?.shelter || 0,
+                  warmth: entry.item.properties?.warmth || 0,
+                  storage: entry.item.properties?.storage || 0,
+                },
+                distance: dx + dy,
+              });
+            } else {
+              visible.nearby.groundItems.push({ tileX: x, tileY: y, item: entry.item.name });
+            }
           }
         }
       }
     }
-    
+
     res.json(visible);
   });
   
@@ -346,13 +363,14 @@ export function setupAgentAPI(app, shared) {
   
   /**
    * POST /api/v1/rest
-   * Rest to recover energy.
+   * Rest to recover energy. P0 Fix: Now restores 30-50 energy (was 8).
    */
   app.post('/api/v1/rest', authAgent, (req, res) => {
     const agent = req.agent;
-    agent.energy = Math.min(100, agent.energy + 8);
-    agent.hunger = Math.min(100, agent.hunger + 2);
-    res.json({ rested: true, energy: Math.round(agent.energy), hunger: Math.round(agent.hunger) });
+    const restAmount = 30 + Math.floor(Math.random() * 21); // 30-50
+    agent.energy = Math.min(100, agent.energy + restAmount);
+    agent.hunger = Math.min(100, agent.hunger + 3);
+    res.json({ rested: true, recovered: restAmount, energy: Math.round(agent.energy), hunger: Math.round(agent.hunger) });
   });
   
   /**
@@ -542,6 +560,148 @@ export function setupAgentAPI(app, shared) {
     res.json({ planted: true, seed: seed.name, at: { tileX: agent.tileX, tileY: agent.tileY } });
   });
   
+  /**
+   * POST /api/v1/build
+   * Build a structure at current tile using items from inventory.
+   * Structures provide shelter, warmth, or storage.
+   */
+  app.post('/api/v1/build', authAgent, async (req, res) => {
+    const agent = req.agent;
+    const { itemNames, structureType } = req.body;
+
+    if (!itemNames || !Array.isArray(itemNames) || itemNames.length < 2) {
+      return res.status(400).json({ error: 'Provide 2+ itemNames to build with' });
+    }
+
+    if (agent.energy < 5) {
+      return res.status(400).json({ error: 'Not enough energy to build (need 5)' });
+    }
+
+    // Find items in inventory
+    const items = [];
+    for (const name of itemNames) {
+      const item = agent.inventory.find(i => i.name === name && !items.includes(i));
+      if (!item) return res.status(400).json({ error: `Item "${name}" not in inventory` });
+      items.push(item);
+    }
+
+    // Try to craft a structure using the experiment system
+    if (!shared.experiments) {
+      return res.status(500).json({ error: 'Craft system unavailable' });
+    }
+
+    try {
+      const result = await shared.experiments.runExperiment(agent, items, 'combine', agent.zone);
+
+      if (result.success && result.result_item) {
+        const built = result.result_item;
+
+        // Check if result is a structure
+        const isStructure = built.type === 'structure' ||
+                           built.isStructure ||
+                           ['Lean-to Shelter', 'Fire Pit', 'Campfire'].includes(built.name);
+
+        if (!isStructure) {
+          // Not a structure recipe - still created item, add to inventory
+          agent.inventory.push(built);
+          // Consume materials
+          for (const item of items) {
+            const idx = agent.inventory.indexOf(item);
+            if (idx !== -1) {
+              if (item.stackable && item.quantity > 1) item.quantity--;
+              else agent.inventory.splice(idx, 1);
+            }
+          }
+          return res.json({
+            built: false,
+            reason: 'Crafted an item, not a structure',
+            item: built.name,
+            energy: Math.round(agent.energy),
+          });
+        }
+
+        // Place structure on ground as special ground item
+        const structureItem = {
+          ...built,
+          placedBy: agent.id,
+          placedAt: shared.tick || 0,
+          isStructure: true,
+          structureProperties: {
+            shelter: built.properties?.shelter || 0,
+            warmth: built.properties?.warmth || 0,
+            storage: built.properties?.storage || 0,
+            luminosity: built.properties?.luminosity || 0,
+          },
+        };
+
+        // Add to ground items at this location
+        if (shared.decayLifecycle?.groundItems) {
+          const key = `${agent.tileX},${agent.tileY}`;
+          if (!shared.decayLifecycle.groundItems.has(key)) {
+            shared.decayLifecycle.groundItems.set(key, []);
+          }
+          shared.decayLifecycle.groundItems.get(key).push({
+            item: structureItem,
+            dropTick: shared.tick || 0,
+            decayProgress: 0,
+            isStructure: true,
+          });
+        }
+
+        // Consume materials
+        for (const item of items) {
+          const idx = agent.inventory.indexOf(item);
+          if (idx !== -1) {
+            if (item.stackable && item.quantity > 1) item.quantity--;
+            else agent.inventory.splice(idx, 1);
+          }
+        }
+
+        agent.energy = Math.max(0, agent.energy - 5);
+
+        addWorldNews('build', agent.id, agent.name,
+          `${agent.name} built a ${built.name} at (${agent.tileX}, ${agent.tileY})`,
+          agent.zone);
+
+        broadcast({
+          type: 'structure_built',
+          agentId: agent.id,
+          name: agent.name,
+          structure: built.name,
+          tileX: agent.tileX,
+          tileY: agent.tileY,
+        });
+
+        // Fire effect for fire pit / campfire
+        if (built.name === 'Campfire' || built.name === 'Fire Pit') {
+          if (shared.temperature?.addWorldFire) {
+            const duration = built.name === 'Campfire' ? 600 : 0; // Campfire auto-lights, fire pit needs fuel
+            if (duration > 0) {
+              shared.temperature.addWorldFire(agent.tileX, agent.tileY, 200, duration, agent.id);
+            }
+          }
+          broadcast({ type: 'tileEffect', effect: 'fire', tileX: agent.tileX, tileY: agent.tileY, duration: 5000 });
+        }
+
+        return res.json({
+          built: true,
+          structure: built.name,
+          properties: structureItem.structureProperties,
+          at: { tileX: agent.tileX, tileY: agent.tileY },
+          energy: Math.round(agent.energy),
+        });
+      } else {
+        return res.json({
+          built: false,
+          reason: result.message || 'Could not build with these materials',
+          energy: Math.round(agent.energy),
+        });
+      }
+    } catch (err) {
+      return res.status(500).json({ error: err.message });
+    }
+  });
+
   /**
    * GET /api/v1/forces
    * List available crafting forces and their requirements.
