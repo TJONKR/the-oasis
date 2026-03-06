@@ -14,9 +14,9 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
-  --bg:#0a0a0f;
-  --bg2:#12121a;
-  --bg3:#1a1a2e;
+  --bg:#1a2e1a;
+  --bg2:#243824;
+  --bg3:#2e4a2e;
   --green:#00ff88;
   --cyan:#00e5ff;
   --purple:#b44aff;
@@ -38,12 +38,12 @@
   --ocean-dark:#1e3c6e;
 }
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--text);font-family:var(--mono);line-height:1.7;overflow-x:hidden}
+body{background:var(--bg);color:var(--text);font-family:var(--mono);line-height:1.7;overflow-x:hidden;background-image:url('/oasis-spawn-area.png');background-size:cover;background-attachment:fixed;background-position:center;background-blend-mode:overlay}
 .pixel{font-family:var(--pixel)}
 
 ::-webkit-scrollbar{width:8px}
 ::-webkit-scrollbar-track{background:var(--bg)}
-::-webkit-scrollbar-thumb{background:var(--bg3);border-radius:4px}
+::-webkit-scrollbar-thumb{background:var(--grassland-dark);border-radius:4px}
 
 /* Pixel border transitions between sections */
 .pixel-border{
@@ -72,7 +72,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--mono);line-height:
   text-align:center;
   position:relative;
   overflow:hidden;
-  background:#0a0a0f;
+  background:rgba(26,46,26,0.85);
 }
 .hero-map-container{
   position:absolute;
@@ -87,9 +87,9 @@ body{background:var(--bg);color:var(--text);font-family:var(--mono);line-height:
   height:100%;
   background:url('/world-overview.png') center/contain no-repeat;
   image-rendering:pixelated;
-  opacity:0.7;
+  opacity:0.9;
   border:4px solid var(--grassland);
-  box-shadow:0 0 60px rgba(100,156,60,0.3),inset 0 0 100px rgba(0,0,0,0.5);
+  box-shadow:0 0 80px rgba(100,156,60,0.5),inset 0 0 40px rgba(0,0,0,0.2);
 }
 .hero-map-overlay{
   position:absolute;
