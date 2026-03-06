@@ -403,6 +403,11 @@ function serializeAgent(a) {
         reason: agentAI.minds[a.id].lastReason || '',
       } : null),
       pathThisTick: agentAI.minds[a.id].pathThisTick || null,
+    } : a.external ? {
+      action: a._lastAction || 'exploring',
+      mood: a.hunger > 60 ? 'Hungry' : a.energy < 20 ? 'Tired' : a.hp < 50 ? 'Wounded' : 'Determined',
+      traits: ['Independent', 'Resourceful'],
+      intent: { action: a._lastAction || 'survive', reason: 'External agent — controlled by OpenClaw' },
     } : null,
   };
 }

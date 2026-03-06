@@ -1241,8 +1241,17 @@
       canvas.height = window.innerHeight;
       ctx.imageSmoothingEnabled = false;
       
-      ctx.fillStyle = '#0a0e14';
+      ctx.fillStyle = '#1a2e1a';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
+      // Always draw overview as base layer so map is never black
+      if (overviewImage && tileInfo) {
+        ctx.save();
+        ctx.translate(camera.x, camera.y);
+        ctx.scale(camera.zoom, camera.zoom);
+        ctx.imageSmoothingEnabled = false;
+        ctx.drawImage(overviewImage, 0, 0, tileInfo.worldWidth * tileInfo.tileSize, tileInfo.worldHeight * tileInfo.tileSize);
+        ctx.restore();
+      }
 
       if (!tileInfo) { 
         requestAnimationFrame(render); 

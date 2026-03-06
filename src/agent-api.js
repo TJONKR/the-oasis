@@ -38,6 +38,11 @@ export function setupAgentAPI(app, shared) {
     req.agent = agent;
     req.agentId = keyData.agentId;
     req.apiKey = key;
+    // Track last action for external agent mood display
+    if (agent.external && req.method === 'POST') {
+      const action = req.path.split('/').pop();
+      if (action && action !== 'look') agent._lastAction = action;
+    }
     next();
   }
   
