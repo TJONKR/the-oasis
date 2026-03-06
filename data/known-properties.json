@@ -2201,7 +2201,12 @@
       "energy",
       "ignition",
       "weight",
-      "luminosity"
+      "luminosity",
+      "absorbency",
+      "structural",
+      "insulation",
+      "flexibility",
+      "length"
     ],
     "shells": [
       "hardness",
@@ -2222,7 +2227,10 @@
       "energy",
       "decay_rate",
       "weight",
-      "toxicity"
+      "toxicity",
+      "length",
+      "structural",
+      "absorbency"
     ],
     "Fermented fiber": [],
     "Fermented Fermented fiber": [],
@@ -2265,7 +2273,18 @@
       "hardness",
       "volatility",
       "brittleness",
-      "toxicity"
+      "toxicity",
+      "organic",
+      "ignition",
+      "absorbency",
+      "conductivity",
+      "temperature",
+      "flammability",
+      "fertility",
+      "luminosity",
+      "decay_rate",
+      "malleability",
+      "weight"
     ]
   },
   "cdfa6155-c4e0-43d3-a3c3-b3f760a2bc2a": {
@@ -2426,7 +2445,12 @@
       "melt_point",
       "brittleness",
       "malleability",
-      "toxicity"
+      "toxicity",
+      "flexibility",
+      "insulation",
+      "structural",
+      "length",
+      "absorbency"
     ],
     "Dried fish": [],
     "Dried driftwood": [],
@@ -2549,6 +2573,14 @@
       "weight",
       "decay_rate",
       "brittleness"
+    ],
+    "shells": [
+      "volatility",
+      "weight",
+      "temperature",
+      "energy",
+      "flexibility",
+      "flammability"
     ]
   },
   "d46fbff6-164e-4f5e-9d31-19deeb010ebf": {

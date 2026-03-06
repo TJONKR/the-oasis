@@ -551,14 +551,14 @@ footer .copyright{
     <span class="hud-value" id="agents-alive">--</span>
   </div>
   <div class="hud-stat">
-    <span class="hud-icon">&#x2600;</span>
+    <span class="hud-icon" id="time-icon">&#x2600;</span>
     <span class="hud-label">Day</span>
     <span class="hud-value" id="world-day">--</span>
   </div>
   <div class="hud-stat">
-    <span class="hud-icon">&#x23F1;</span>
-    <span class="hud-label">Tick</span>
-    <span class="hud-value" id="tick">--</span>
+    <span class="hud-icon" id="weather-icon">&#x1F324;</span>
+    <span class="hud-label">Weather</span>
+    <span class="hud-value" id="world-weather">--</span>
   </div>
 </div>
 
@@ -685,153 +685,258 @@ footer .copyright{
 </div>
 
 <script>
-// World map dimensions (500x500 pixels in source)
-const MAP_SIZE = 500;
-const WORLD_SIZE = 100; // World is 100x100 tiles
+// ═══════════════════════════════════════
+// Real-time connection via WebSocket
+// ═══════════════════════════════════════
+let WORLD_SIZE = 1024; // World grid size (tiles) — updated from server on connect
+let wsConnected = false;
+let agentsData = []; // Current agent list from server
+let newsItems = []; // Collected news
 
-// Fetch and render live agent dots on the map
-async function renderAgentDots() {
-  try {
-    const res = await fetch('/api/status');
-    const status = await res.json();
-    const overlay = document.getElementById('agent-overlay');
-    const container = document.querySelector('.hero-map-container');
-    if (!container || !overlay) return;
+const WEATHER_DISPLAY = {
+  clear: { label: 'Clear', icon: '\u2600\uFE0F' },
+  rain: { label: 'Rain', icon: '\uD83C\uDF27\uFE0F' },
+  storm: { label: 'Storm', icon: '\u26C8\uFE0F' },
+  fog: { label: 'Fog', icon: '\uD83C\uDF2B\uFE0F' },
+  snow: { label: 'Snow', icon: '\u2744\uFE0F' },
+  wind: { label: 'Windy', icon: '\uD83C\uDF2C\uFE0F' },
+  drought: { label: 'Drought', icon: '\uD83C\uDF1E' },
+  heatwave: { label: 'Heat', icon: '\uD83D\uDD25' },
+};
 
-    const containerSize = container.offsetWidth;
-    const scale = containerSize / WORLD_SIZE;
+function connectWebSocket() {
+  const proto = location.protocol === 'https:' ? 'wss' : 'ws';
+  const ws = new WebSocket(`${proto}://${location.host}`);
 
-    let dotsHtml = '';
-    if (status.agents) {
-      Object.entries(status.agents).forEach(([name, agent]) => {
-        const x = (agent.x || 0) * scale;
-        const y = (agent.y || 0) * scale;
+  ws.onopen = () => {
+    wsConnected = true;
+    console.log('[WS] Connected');
+  };
 
-        // Determine state class based on agent data
-        let stateClass = 'alive';
-        if (agent.hunger !== undefined && agent.hunger < 20) stateClass = 'hungry';
-        if (agent.health !== undefined && agent.health < 30) stateClass = 'danger';
+  ws.onmessage = (event) => {
+    try {
+      const msg = JSON.parse(event.data);
 
-        dotsHtml += `<div class="agent-dot ${stateClass}" style="left:${x}px;top:${y}px" title="${name}"></div>`;
-      });
+      if (msg.type === 'init') {
+        // Update world size from server
+        if (msg.world && msg.world.width) WORLD_SIZE = msg.world.width;
+        // Full state on connect
+        if (msg.agents) {
+          agentsData = msg.agents;
+          renderAgentDots();
+        }
+        updateHUD({ agents: msg.agents, gameTime: msg.gameTime, weather: msg.weather, tick: msg.tick });
+        if (msg.news) {
+          newsItems = msg.news;
+          renderNews();
+        }
+      }
+
+      if (msg.type === 'tick') {
+        if (msg.agents) {
+          agentsData = msg.agents;
+          renderAgentDots();
+        }
+        updateHUD(msg);
+      }
+    } catch (e) {
+      console.log('[WS] Parse error', e);
     }
-    overlay.innerHTML = dotsHtml;
-  } catch (e) {
-    console.log('Could not fetch agent positions');
+  };
+
+  ws.onclose = () => {
+    wsConnected = false;
+    console.log('[WS] Disconnected, reconnecting in 3s...');
+    setTimeout(connectWebSocket, 3000);
+  };
+
+  ws.onerror = () => ws.close();
+}
+
+// ═══════════════════════════════════════
+// HUD Updates
+// ═══════════════════════════════════════
+function updateHUD(data) {
+  if (!data) return;
+
+  // Agent count (alive)
+  if (data.agents) {
+    const alive = Array.isArray(data.agents)
+      ? data.agents.filter(a => a.alive !== false).length
+      : (typeof data.agents === 'number' ? data.agents : 0);
+    document.getElementById('agents-alive').textContent = alive;
+  }
+
+  // Day
+  if (data.gameTime) {
+    const day = data.gameTime.day || 0;
+    const period = data.gameTime.period || 'day';
+    document.getElementById('world-day').textContent = day.toLocaleString();
+    document.getElementById('time-icon').innerHTML = period === 'night' ? '\uD83C\uDF19' : '\u2600\uFE0F';
+  }
+
+  // Weather
+  if (data.weather) {
+    const condition = data.weather.condition || data.weather.type || 'clear';
+    const w = WEATHER_DISPLAY[condition] || WEATHER_DISPLAY.clear;
+    document.getElementById('world-weather').textContent = w.label;
+    document.getElementById('weather-icon').textContent = w.icon;
   }
 }
 
-// Update HUD stats
-async function updateHUD() {
-  try {
-    const res = await fetch('/api/status');
-    const status = await res.json();
+// ═══════════════════════════════════════
+// Agent dots on hero map
+// ═══════════════════════════════════════
+function renderAgentDots() {
+  const overlay = document.getElementById('agent-overlay');
+  const container = document.querySelector('.hero-map-container');
+  if (!container || !overlay || !agentsData.length) return;
 
-    const agentCount = status.agents ? Object.keys(status.agents).length : 0;
-    document.getElementById('agents-alive').textContent = agentCount;
-    document.getElementById('world-day').textContent = status.day || 0;
-    document.getElementById('tick').textContent = status.tick || 0;
-  } catch (e) {
-    document.getElementById('agents-alive').textContent = '?';
-    document.getElementById('world-day').textContent = '?';
-    document.getElementById('tick').textContent = '?';
+  const containerSize = container.offsetWidth;
+  const scale = containerSize / WORLD_SIZE;
+
+  let dotsHtml = '';
+  for (const agent of agentsData) {
+    if (agent.alive === false) continue;
+    const x = (agent.tileX || 0) * scale;
+    const y = (agent.tileY || 0) * scale;
+
+    let stateClass = 'alive';
+    if (agent.hunger !== undefined && agent.hunger > 70) stateClass = 'hungry';
+    if (agent.hp !== undefined && agent.hp < 30) stateClass = 'danger';
+
+    dotsHtml += `<div class="agent-dot ${stateClass}" style="left:${x}px;top:${y}px" title="${agent.name || '?'}"></div>`;
   }
+  overlay.innerHTML = dotsHtml;
 }
 
-// Fetch world news for the feed and ticker
-async function loadWorldNews() {
-  try {
-    const res = await fetch('/api/news');
-    const news = await res.json();
-
-    if (!Array.isArray(news) || news.length === 0) {
-      setDefaultNews();
-      return;
-    }
-
-    // Render news feed entries
-    const entries = document.getElementById('news-entries');
-    const feedHtml = news.slice(-10).reverse().map(item => {
-      const time = item.tick ? `Day ${item.day || '?'} T${item.tick}` : 'Recent';
-      let text = formatNewsItem(item);
-      return `<div class="news-entry"><span class="news-time">${time}</span>${text}</div>`;
-    }).join('');
-    entries.innerHTML = feedHtml;
-
-    // Render ticker (duplicate for seamless scroll)
-    const ticker = document.getElementById('news-ticker');
-    const tickerItems = news.slice(-8).map(item => {
-      return `<span class="news-item">${formatNewsItemTicker(item)}</span>`;
-    }).join('');
-    ticker.innerHTML = tickerItems + tickerItems; // Duplicate for infinite scroll
-  } catch (e) {
+// ═══════════════════════════════════════
+// News Feed & Ticker
+// ═══════════════════════════════════════
+function renderNews() {
+  if (!newsItems || newsItems.length === 0) {
     setDefaultNews();
+    return;
   }
+
+  // News feed entries (latest first — API already returns newest first)
+  const entries = document.getElementById('news-entries');
+  const feedHtml = newsItems.slice(0, 15).map(item => {
+    const time = item.time ? timeAgo(item.time) : 'recent';
+    const text = formatNewsItem(item);
+    return `<div class="news-entry"><span class="news-time">${time}</span>${text}</div>`;
+  }).join('');
+  entries.innerHTML = feedHtml;
+
+  // Bottom ticker (duplicate for seamless scroll)
+  const ticker = document.getElementById('news-ticker');
+  const tickerItems = newsItems.slice(0, 10).map(item =>
+    `<span class="news-item">${formatNewsItemTicker(item)}</span>`
+  ).join('');
+  ticker.innerHTML = tickerItems + tickerItems;
 }
 
 function formatNewsItem(item) {
-  const agent = item.agent || item.agentName || 'Unknown';
-  const action = item.action || item.type || '';
-  const target = item.target || item.item || item.result || '';
+  const name = item.name || 'Unknown';
+  const type = item.type || '';
+  const msg = item.message || '';
 
-  if (action === 'death' || item.type === 'death') {
-    return `<span class="agent">${agent}</span> <span class="death">has fallen</span>. Their knowledge is lost.`;
+  if (type === 'death' || type === 'knowledge_death') {
+    return `<span class="agent">${name}</span> <span class="death">has fallen</span>. ${msg.includes('knowledge') ? 'Their knowledge is lost forever.' : ''}`;
   }
-  if (action === 'discovery' || item.type === 'discovery') {
-    return `<span class="agent">${agent}</span> <span class="discovery">discovered</span> <span class="item">${target}</span>!`;
+  if (type === 'discovery') {
+    return `<span class="agent">${name}</span> <span class="discovery">made a discovery</span>: <span class="item">${stripEmoji(msg)}</span>`;
   }
-  if (action === 'craft' || action === 'crafted') {
-    return `<span class="agent">${agent}</span> <span class="action">crafted</span> <span class="item">${target}</span>`;
+  if (type === 'level_up') {
+    return `<span class="agent">${name}</span> <span class="action">leveled up</span>: ${stripEmoji(msg)}`;
   }
-  if (action === 'gather' || action === 'gathered') {
-    return `<span class="agent">${agent}</span> <span class="action">gathered</span> <span class="item">${target}</span>`;
+  if (type === 'spawn') {
+    return `<span class="agent">${name}</span> <span class="action">arrived</span> in The Oasis`;
   }
-  if (action === 'move' || action === 'moved') {
-    return `<span class="agent">${agent}</span> <span class="action">moved</span> to ${target || 'a new location'}`;
+  // Use the message field directly for other types
+  if (msg) {
+    return `<span class="agent">${name}</span> <span class="action">${type}</span> ${stripEmoji(msg)}`;
   }
-  // Generic
-  return `<span class="agent">${agent}</span> <span class="action">${action}</span> ${target ? `<span class="item">${target}</span>` : ''}`;
+  return `<span class="agent">${name}</span> <span class="action">${type || 'acted'}</span>`;
 }
 
 function formatNewsItemTicker(item) {
-  const agent = item.agent || item.agentName || 'Unknown';
-  const action = item.action || item.type || '';
-  const target = item.target || item.item || item.result || '';
+  const name = item.name || 'Unknown';
+  const type = item.type || '';
+  const msg = item.message || '';
 
-  if (action === 'death' || item.type === 'death') {
-    return `<span class="agent-name">${agent}</span> <span class="death">has fallen</span>`;
+  if (type === 'death' || type === 'knowledge_death') {
+    return `<span class="agent-name">${name}</span> <span class="death">has fallen</span>`;
   }
-  if (action === 'discovery' || item.type === 'discovery') {
-    return `<span class="agent-name">${agent}</span> discovered <span class="item-name">${target}</span>`;
+  if (type === 'spawn') {
+    return `<span class="agent-name">${name}</span> joined The Oasis`;
   }
-  return `<span class="agent-name">${agent}</span> <span class="action">${action}</span> ${target ? `<span class="item-name">${target}</span>` : ''}`;
+  if (msg) {
+    return `<span class="agent-name">${name}</span> <span class="action">${truncate(stripEmoji(msg), 60)}</span>`;
+  }
+  return `<span class="agent-name">${name}</span> <span class="action">${type}</span>`;
+}
+
+function stripEmoji(str) {
+  return str.replace(/[\u{1F300}-\u{1FAD6}\u{2600}-\u{27BF}\u{FE00}-\u{FE0F}\u{1F900}-\u{1F9FF}]/gu, '').trim();
+}
+
+function truncate(str, len) {
+  return str.length > len ? str.slice(0, len) + '...' : str;
+}
+
+function timeAgo(ts) {
+  const diff = Math.floor((Date.now() - ts) / 1000);
+  if (diff < 60) return `${diff}s ago`;
+  if (diff < 3600) return `${Math.floor(diff / 60)}m ago`;
+  if (diff < 86400) return `${Math.floor(diff / 3600)}h ago`;
+  return `${Math.floor(diff / 86400)}d ago`;
 }
 
 function setDefaultNews() {
-  const entries = document.getElementById('news-entries');
-  entries.innerHTML = `
-    <div class="news-entry"><span class="news-time">...</span><span class="agent">System</span> World feed offline or empty. Watch the world come alive!</div>
-  `;
-  const ticker = document.getElementById('news-ticker');
-  ticker.innerHTML = `
-    <span class="news-item">The Oasis awaits. AI agents are exploring, crafting, and surviving.</span>
-    <span class="news-item">No recipes. Just physics. No quests. Just needs.</span>
-    <span class="news-item">The Oasis awaits. AI agents are exploring, crafting, and surviving.</span>
-    <span class="news-item">No recipes. Just physics. No quests. Just needs.</span>
-  `;
+  document.getElementById('news-entries').innerHTML =
+    '<div class="news-entry"><span class="news-time">...</span><span class="agent">System</span> Connecting to world feed...</div>';
+  document.getElementById('news-ticker').innerHTML =
+    '<span class="news-item">The Oasis \u2014 A living world for AI agents. No recipes. Just physics.</span>'.repeat(2);
 }
 
+// ═══════════════════════════════════════
+// Fallback: HTTP polling if WS fails
+// ═══════════════════════════════════════
+async function pollStatus() {
+  if (wsConnected) return;
+  try {
+    const [statusRes, agentsRes, newsRes] = await Promise.all([
+      fetch('/api/status'), fetch('/api/agents'), fetch('/api/news?limit=15')
+    ]);
+    const status = await statusRes.json();
+    const agents = await agentsRes.json();
+    const news = await newsRes.json();
+
+    agentsData = agents;
+    updateHUD({
+      agents: status.alive || status.agents,
+      gameTime: status.gameTime,
+      weather: status.weather,
+      tick: status.tick,
+    });
+    renderAgentDots();
+
+    if (Array.isArray(news) && news.length > 0) {
+      newsItems = news;
+      renderNews();
+    }
+  } catch (e) {
+    console.log('Poll failed, retrying...');
+  }
+}
+
+// ═══════════════════════════════════════
 // Initialize
-updateHUD();
-renderAgentDots();
-loadWorldNews();
-
-// Periodic updates
-setInterval(updateHUD, 10000);
-setInterval(renderAgentDots, 5000);
-setInterval(loadWorldNews, 30000);
-
-// Re-render dots on resize
+// ═══════════════════════════════════════
+connectWebSocket();
+pollStatus(); // Immediate data while WS connects
+setInterval(pollStatus, 8000); // Fallback polling
 window.addEventListener('resize', renderAgentDots);
 </script>
 

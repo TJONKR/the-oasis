@@ -829,25 +829,25 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 13,
+        "gather": 10,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 44
+        "explore": 10
       },
       "grass": {
-        "gather": 1,
-        "visit": 0,
-        "craft": 0,
-        "trade": 0,
-        "explore": 5
-      },
-      "sand": {
         "gather": 0,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 1
+        "explore": 2
+      },
+      "sand": {
+        "gather": 1,
+        "visit": 0,
+        "craft": 0,
+        "trade": 0,
+        "explore": 3
       }
     },
     "mastery": {},
@@ -860,12 +860,8 @@
         "The grasslands remember every agent who has rested here",
         "Dew drops collected at dawn hold the purest energy"
       ],
-      "coast": [
-        "Signals are strongest during storms along the coast"
-      ],
-      "sand": [
-        "Sand pearls form where moonlight hits the shore"
-      ]
+      "coast": [],
+      "sand": []
     },
     "lore_fragments": [
       "The beach was once a mountain, worn smooth by time.",
@@ -892,25 +888,25 @@
     "known_recipes": [],
     "zone_counts": {
       "grass": {
-        "gather": 82,
+        "gather": 80,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 1617
+        "explore": 1597
       },
       "coast": {
-        "gather": 9,
+        "gather": 2,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 108
+        "explore": 40
       },
       "sand": {
-        "gather": 14,
+        "gather": 2,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 86
+        "explore": 2
       }
     },
     "mastery": {},
@@ -1077,25 +1073,25 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 76,
+        "gather": 42,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 212
+        "explore": 53
       },
       "grass": {
         "gather": 122,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 4
+        "explore": 1
       },
       "sand": {
-        "gather": 7,
+        "gather": 9,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 32
+        "explore": 14
       }
     },
     "mastery": {},
@@ -1613,7 +1609,9 @@
         "The coast receives driftwood from other worlds",
         "A frequency exists that can communicate with the World Master"
       ],
-      "sand": [],
+      "sand": [
+        "Sand pearls form where moonlight hits the shore"
+      ],
       "grass": [
         "Seeds planted under moonlight grow fastest in the meadow",
         "The grasslands remember every agent who has rested here",
@@ -1645,25 +1643,25 @@
     "known_recipes": [],
     "zone_counts": {
       "coast": {
-        "gather": 125,
+        "gather": 38,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 12
+        "explore": 4
       },
       "sand": {
-        "gather": 4,
+        "gather": 5,
         "visit": 0,
         "craft": 0,
         "trade": 0,
         "explore": 1
       },
       "grass": {
-        "gather": 217,
+        "gather": 200,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 5
+        "explore": 1
       },
       "river": {
         "gather": 0,
@@ -1744,8 +1742,7 @@
         "Dew drops collected at dawn hold the purest energy"
       ],
       "coast": [
-        "Signals are strongest during storms along the coast",
-        "The coast receives driftwood from other worlds"
+        "Signals are strongest during storms along the coast"
       ]
     },
     "lore_fragments": [
@@ -1773,24 +1770,25 @@
     "known_recipes": [],
     "zone_counts": {
       "sand": {
-        "gather": 11,
+        "gather": 12,
         "visit": 0,
         "craft": 0,
-        "trade": 0
+        "trade": 0,
+        "explore": 1
       },
       "grass": {
         "gather": 89,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 5
+        "explore": 4
       },
       "coast": {
-        "gather": 15,
+        "gather": 14,
         "visit": 0,
         "craft": 0,
         "trade": 0,
-        "explore": 8
+        "explore": 3
       }
     },
     "mastery": {},

@@ -398,8 +398,8 @@
     position: fixed;
     bottom: 16px;
     left: 16px;
-    width: 400px;
-    max-height: 200px;
+    width: 420px;
+    max-height: 280px;
     background: var(--bg-glass-light);
     backdrop-filter: blur(12px);
     border: 1px solid var(--border-glass);
@@ -424,19 +424,111 @@
   }
 
   .feed-content {
-    max-height: 160px;
+    max-height: 240px;
     overflow-y: auto;
-    padding: 8px;
+    padding: 6px;
   }
 
   .news-item {
-    padding: 4px 8px;
-    margin-bottom: 2px;
-    border-radius: 4px;
+    padding: 5px 8px;
+    margin-bottom: 3px;
+    border-radius: 5px;
     font-size: 11px;
-    line-height: 1.4;
+    line-height: 1.5;
     animation: newsSlideIn 0.3s ease;
     color: var(--text-secondary);
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    border-left: 2px solid transparent;
+  }
+
+  .news-item:hover {
+    background: rgba(255, 255, 255, 0.03);
+  }
+
+  .news-icon {
+    flex-shrink: 0;
+    font-size: 12px;
+    width: 16px;
+    text-align: center;
+    margin-top: 1px;
+  }
+
+  .news-body {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .news-meta {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 1px;
+  }
+
+  /* Event type colors */
+  .news-item[data-type="death"],
+  .news-item[data-type="knowledge_death"] {
+    border-left-color: #e74c3c;
+    background: rgba(231, 76, 60, 0.05);
+  }
+  .news-item[data-type="spawn"],
+  .news-item[data-type="arrival"] {
+    border-left-color: #2ecc71;
+    background: rgba(46, 204, 113, 0.05);
+  }
+  .news-item[data-type="craft"],
+  .news-item[data-type="cook"],
+  .news-item[data-type="cooking"],
+  .news-item[data-type="custom_item"] {
+    border-left-color: #f39c12;
+  }
+  .news-item[data-type="fight"] {
+    border-left-color: #e74c3c;
+  }
+  .news-item[data-type="experiment"],
+  .news-item[data-type="discovery"] {
+    border-left-color: #9b59b6;
+    background: rgba(155, 89, 182, 0.05);
+  }
+  .news-item[data-type="knowledge"],
+  .news-item[data-type="teach"],
+  .news-item[data-type="inscribe"] {
+    border-left-color: #3498db;
+  }
+  .news-item[data-type="level_up"],
+  .news-item[data-type="achievement"] {
+    border-left-color: #f1c40f;
+    background: rgba(241, 196, 15, 0.05);
+  }
+  .news-item[data-type="build"],
+  .news-item[data-type="collective"] {
+    border-left-color: #e67e22;
+  }
+  .news-item[data-type="weather"],
+  .news-item[data-type="world_event"] {
+    border-left-color: #1abc9c;
+  }
+  .news-item[data-type="gift"],
+  .news-item[data-type="agent_trade"] {
+    border-left-color: #e91e63;
+  }
+
+  .news-zone {
+    font-size: 9px;
+    padding: 1px 5px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--text-secondary);
+    font-family: 'SF Mono', monospace;
+    text-transform: capitalize;
+    white-space: nowrap;
+  }
+
+  .news-msg {
+    color: var(--text-primary);
+    opacity: 0.85;
   }
 
   @keyframes newsSlideIn {
@@ -447,12 +539,15 @@
   .news-time {
     color: var(--text-secondary);
     font-family: 'SF Mono', monospace;
-    font-size: 10px;
+    font-size: 9px;
+    opacity: 0.6;
+    white-space: nowrap;
   }
 
   .news-agent {
     color: var(--text-info);
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 11px;
   }
 
   /* Enhanced Minimap */
@@ -868,9 +963,11 @@
       if (!tileInfo) return;
       const worldPx = tileInfo.worldWidth * tileInfo.tileSize * camera.zoom;
       const worldPy = tileInfo.worldHeight * tileInfo.tileSize * camera.zoom;
-      const margin = 50;
-      camera.x = Math.max(-worldPx + margin, Math.min(window.innerWidth - margin, camera.x));
-      camera.y = Math.max(-worldPy + margin, Math.min(window.innerHeight - margin, camera.y));
+      // Allow panning half a screen past the world edges so edge agents are always reachable
+      const marginX = window.innerWidth * 0.5;
+      const marginY = window.innerHeight * 0.5;
+      camera.x = Math.max(-worldPx + marginX, Math.min(window.innerWidth - marginX, camera.x));
+      camera.y = Math.max(-worldPy + marginY, Math.min(window.innerHeight - marginY, camera.y));
     }
     let dragging = false, dragStart = {x:0,y:0}, cameraStart = {x:0,y:0};
     let ws = null;
@@ -925,6 +1022,7 @@
           if (msg.growthSites) growthSites = msg.growthSites;
           if (msg.wildlife) worldWildlife = msg.wildlife;
           if (msg.groundItems) groundItems = msg.groundItems;
+          if (msg.news) { news = msg.news; updateNewsList(); }
           if (msg.gameTime) updateTopBar(msg.tick, msg.gameTime, msg.weather);
           updateAgentList();
           updateStats();
@@ -1591,23 +1689,56 @@
       }).join('');
     }
 
+    const NEWS_ICONS = {
+      death: '💀', knowledge_death: '💀', spawn: '🌱', arrival: '🌱',
+      craft: '🔨', custom_item: '✨', cook: '🍳', cooking: '🍳',
+      fight: '⚔️', experiment: '🔬', discovery: '🔮', explosion: '💥',
+      knowledge: '📖', teach: '🎓', inscribe: '📜', observation: '👁️',
+      level_up: '⬆️', achievement: '🏆',
+      build: '🏗️', collective: '🏛️',
+      weather: '🌤️', world_event: '🌍',
+      gift: '🎁', agent_trade: '🤝',
+      gather: '🪓', plant: '🌿',
+      chat: '💬', survival: '🩹',
+      decay: '🦴', tool_break: '🔧',
+      warning: '⚠️',
+    };
+
+    function newsTimeAgo(ts) {
+      if (!ts) return '';
+      const s = Math.floor((Date.now() - ts) / 1000);
+      if (s < 60) return `${s}s`;
+      if (s < 3600) return `${Math.floor(s / 60)}m`;
+      if (s < 86400) return `${Math.floor(s / 3600)}h`;
+      return `${Math.floor(s / 86400)}d`;
+    }
+
     function updateNewsList() {
-      const newsItems = news.slice(0, 8).map(n => {
+      const el = document.getElementById('feed-content');
+      const wasAtBottom = el.scrollHeight - el.scrollTop - el.clientHeight < 30;
+
+      const newsItems = news.slice(0, 15).map(n => {
+        const icon = NEWS_ICONS[n.type] || '📌';
+        const zone = n.zone ? `<span class="news-zone">${n.zone}</span>` : '';
+        const time = newsTimeAgo(n.time);
         return `
-          <div class="news-item">
-            <span class="news-time">${n.time || ''}</span>
-            <span class="news-agent">${n.name||'???'}</span> 
-            ${n.message}
+          <div class="news-item" data-type="${n.type || ''}">
+            <span class="news-icon">${icon}</span>
+            <div class="news-body">
+              <div class="news-meta">
+                <span class="news-agent">${n.name || '???'}</span>
+                ${zone}
+                <span class="news-time">${time}</span>
+              </div>
+              <div class="news-msg">${n.message || ''}</div>
+            </div>
           </div>
         `;
       }).join('');
-      
-      document.getElementById('feed-content').innerHTML = newsItems;
-      
-      // Auto-scroll to bottom
-      const feedContent = document.getElementById('feed-content');
-      feedContent.scrollTop = feedContent.scrollHeight;
-      
+
+      el.innerHTML = newsItems;
+      if (wasAtBottom) el.scrollTop = el.scrollHeight;
+
       if (selectedAgentId) {
         updateAgentDetail();
       }
