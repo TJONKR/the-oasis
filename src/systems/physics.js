@@ -16,42 +16,52 @@ const GATHERED_RESOURCE_PROPERTIES = {
     volatility: 0, organic: 1, weight: 3, decay_rate: 0.1, energy: 8,
     temperature: 20, resonance: 0,
     melt_point: 0, ignition: 250, sharpness: 0, solubility: 0, malleability: 4, brittleness: 3, fertility: 1,
+    // Emergent properties: a branch/stick
+    length: 5, flexibility: 2, insulation: 2, structural: 4, absorbency: 2,
   },
   resin: {
     hardness: 1, conductivity: 0, flammability: 8, toxicity: 0, luminosity: 1,
     volatility: 2, organic: 1, weight: 0.2, decay_rate: 0.05, energy: 12,
     temperature: 20, resonance: 0,
     melt_point: 80, ignition: 180, sharpness: 0, solubility: 2, malleability: 6, brittleness: 1, fertility: 0,
+    length: 0, flexibility: 0, insulation: 1, structural: 0, absorbency: 0,
   },
   pine_nuts: {
     hardness: 2, conductivity: 0, flammability: 3, toxicity: 0, luminosity: 0,
     volatility: 0, organic: 1, weight: 0.05, decay_rate: 0.3, energy: 15,
     temperature: 20, resonance: 0,
     melt_point: 0, ignition: 200, sharpness: 0, solubility: 0, malleability: 0, brittleness: 4, fertility: 3,
+    length: 0, flexibility: 0, insulation: 0, structural: 0, absorbency: 0,
   },
   acorns: {
     hardness: 3, conductivity: 0, flammability: 3, toxicity: 0, luminosity: 0,
     volatility: 0, organic: 1, weight: 0.1, decay_rate: 0.2, energy: 12,
     temperature: 20, resonance: 0,
     melt_point: 0, ignition: 200, sharpness: 0, solubility: 0, malleability: 0, brittleness: 5, fertility: 5,
+    length: 0, flexibility: 0, insulation: 0, structural: 0, absorbency: 0,
   },
   bark: {
     hardness: 3, conductivity: 0, flammability: 6, toxicity: 0, luminosity: 0,
     volatility: 0, organic: 1, weight: 0.5, decay_rate: 0.15, energy: 5,
     temperature: 20, resonance: 0,
     melt_point: 0, ignition: 220, sharpness: 0, solubility: 1, malleability: 3, brittleness: 4, fertility: 1,
+    length: 2, flexibility: 4, insulation: 4, structural: 2, absorbency: 3,
   },
   coconuts: {
+    // Can be cracked open to get coconut meat + shell bowl
     hardness: 5, conductivity: 0, flammability: 3, toxicity: 0, luminosity: 0,
     volatility: 0, organic: 1, weight: 1.5, decay_rate: 0.2, energy: 25,
     temperature: 20, resonance: 0,
     melt_point: 0, ignition: 250, sharpness: 0, solubility: 0, malleability: 0, brittleness: 6, fertility: 2,
+    length: 1, flexibility: 0, insulation: 2, structural: 3, absorbency: 0,
   },
   palm_fronds: {
     hardness: 1, conductivity: 0, flammability: 5, toxicity: 0, luminosity: 0,
     volatility: 0, organic: 1, weight: 0.3, decay_rate: 0.25, energy: 3,
     temperature: 20, resonance: 0,
     melt_point: 0, ignition: 180, sharpness: 1, solubility: 0, malleability: 7, brittleness: 2, fertility: 1,
+    // Fibers can be twisted into rope; large leaves provide shade/shelter
+    length: 6, flexibility: 8, insulation: 3, structural: 1, absorbency: 4,
   },
 
   // ── Rocks ──
@@ -60,24 +70,30 @@ const GATHERED_RESOURCE_PROPERTIES = {
     volatility: 0, organic: 0, weight: 8, decay_rate: 0, energy: 0,
     temperature: 20, resonance: 0.5,
     melt_point: 1200, ignition: 0, sharpness: 2, solubility: 0, malleability: 1, brittleness: 5, fertility: 0,
+    // Good for structures, fire containment
+    length: 1, flexibility: 0, insulation: 1, structural: 6, absorbency: 0,
   },
   flint: {
+    // THE survival stone: knappable into sharp edges, strikes sparks against steel/pyrite
     hardness: 8, conductivity: 0, flammability: 0, toxicity: 0, luminosity: 0,
     volatility: 0, organic: 0, weight: 0.5, decay_rate: 0, energy: 5,
     temperature: 20, resonance: 0,
     melt_point: 1400, ignition: 0, sharpness: 7, solubility: 0, malleability: 0, brittleness: 7, fertility: 0,
+    length: 1, flexibility: 0, insulation: 0, structural: 3, absorbency: 0,
   },
   ore: {
     hardness: 7, conductivity: 5, flammability: 0, toxicity: 0, luminosity: 0,
     volatility: 0, organic: 0, weight: 12, decay_rate: 0, energy: 3,
     temperature: 20, resonance: 1,
     melt_point: 800, ignition: 0, sharpness: 1, solubility: 0, malleability: 5, brittleness: 4, fertility: 0,
+    length: 1, flexibility: 0, insulation: 0, structural: 4, absorbency: 0,
   },
   crystals: {
     hardness: 7, conductivity: 8, flammability: 0, toxicity: 0, luminosity: 5,
     volatility: 2, organic: 0, weight: 1, decay_rate: 0, energy: 25,
     temperature: 20, resonance: 8,
     melt_point: 700, ignition: 0, sharpness: 3, solubility: 0, malleability: 0, brittleness: 8, fertility: 0,
+    length: 1, flexibility: 0, insulation: 0, structural: 2, absorbency: 0,
   },
 
   // ── Plants ──
@@ -86,68 +102,81 @@ const GATHERED_RESOURCE_PROPERTIES = {
     volatility: 0, organic: 1, weight: 0.05, decay_rate: 0.4, energy: 5,
     temperature: 20, resonance: 2,
     melt_point: 0, ignition: 150, sharpness: 0, solubility: 3, malleability: 1, brittleness: 1, fertility: 4,
+    length: 1, flexibility: 5, insulation: 0, structural: 0, absorbency: 3,
   },
   herbs: {
     hardness: 0, conductivity: 0, flammability: 4, toxicity: 0, luminosity: 0,
     volatility: 1, organic: 1, weight: 0.05, decay_rate: 0.35, energy: 10,
     temperature: 20, resonance: 1,
     melt_point: 0, ignition: 160, sharpness: 0, solubility: 4, malleability: 1, brittleness: 1, fertility: 3,
+    length: 1, flexibility: 4, insulation: 0, structural: 0, absorbency: 2,
   },
   fiber: {
+    // Plant fiber: can be twisted into cordage/rope
     hardness: 1, conductivity: 0, flammability: 5, toxicity: 0, luminosity: 0,
     volatility: 0, organic: 1, weight: 0.1, decay_rate: 0.1, energy: 2,
     temperature: 20, resonance: 0,
     melt_point: 0, ignition: 200, sharpness: 0, solubility: 0, malleability: 8, brittleness: 1, fertility: 0,
+    length: 3, flexibility: 9, insulation: 2, structural: 1, absorbency: 5,
   },
   mushrooms: {
     hardness: 0, conductivity: 0, flammability: 2, toxicity: 1, luminosity: 0,
     volatility: 0, organic: 1, weight: 0.1, decay_rate: 0.5, energy: 20,
     temperature: 20, resonance: 1,
     melt_point: 0, ignition: 180, sharpness: 0, solubility: 2, malleability: 2, brittleness: 3, fertility: 2,
+    length: 0, flexibility: 1, insulation: 0, structural: 0, absorbency: 4,
   },
   berries: {
     hardness: 0, conductivity: 0, flammability: 2, toxicity: 0, luminosity: 0,
     volatility: 0, organic: 1, weight: 0.05, decay_rate: 0.5, energy: 15,
     temperature: 20, resonance: 0,
     melt_point: 0, ignition: 180, sharpness: 0, solubility: 5, malleability: 1, brittleness: 1, fertility: 2,
+    length: 0, flexibility: 0, insulation: 0, structural: 0, absorbency: 0,
   },
   cactus_fruit: {
     hardness: 1, conductivity: 0, flammability: 2, toxicity: 0, luminosity: 0,
     volatility: 0, organic: 1, weight: 0.3, decay_rate: 0.3, energy: 18,
     temperature: 20, resonance: 0,
     melt_point: 0, ignition: 180, sharpness: 0, solubility: 4, malleability: 2, brittleness: 2, fertility: 1,
+    length: 0, flexibility: 0, insulation: 0, structural: 0, absorbency: 0,
   },
   cactus_water: {
     hardness: 0, conductivity: 2, flammability: 0, toxicity: 0, luminosity: 0,
     volatility: 0, organic: 0.5, weight: 0.2, decay_rate: 0.2, energy: 12,
     temperature: 20, resonance: 0,
     melt_point: 0, ignition: 0, sharpness: 0, solubility: 9, malleability: 0, brittleness: 0, fertility: 3,
+    length: 0, flexibility: 0, insulation: 0, structural: 0, absorbency: 0,
   },
 
   // ── Water/Coast ──
   reeds: {
+    // Hollow, can be woven into baskets/mats, good tinder
     hardness: 2, conductivity: 0, flammability: 5, toxicity: 0, luminosity: 0,
     volatility: 0, organic: 1, weight: 0.2, decay_rate: 0.15, energy: 3,
     temperature: 20, resonance: 0,
     melt_point: 0, ignition: 180, sharpness: 1, solubility: 0, malleability: 7, brittleness: 3, fertility: 1,
+    length: 5, flexibility: 6, insulation: 2, structural: 1, absorbency: 3,
   },
   clay: {
     hardness: 2, conductivity: 0, flammability: 0, toxicity: 0, luminosity: 0,
     volatility: 0, organic: 0, weight: 3, decay_rate: 0, energy: 0,
     temperature: 20, resonance: 0,
     melt_point: 900, ignition: 0, sharpness: 0, solubility: 3, malleability: 9, brittleness: 2, fertility: 2,
+    length: 0, flexibility: 0, insulation: 3, structural: 2, absorbency: 6,
   },
   seaweed: {
     hardness: 0, conductivity: 1, flammability: 2, toxicity: 0, luminosity: 0,
     volatility: 0, organic: 1, weight: 0.1, decay_rate: 0.4, energy: 8,
     temperature: 20, resonance: 0,
     melt_point: 0, ignition: 200, sharpness: 0, solubility: 3, malleability: 5, brittleness: 1, fertility: 3,
+    length: 3, flexibility: 8, insulation: 1, structural: 0, absorbency: 6,
   },
   salt: {
     hardness: 3, conductivity: 3, flammability: 0, toxicity: 0, luminosity: 1,
     volatility: 0, organic: 0, weight: 0.3, decay_rate: 0, energy: 0,
     temperature: 20, resonance: 0,
     melt_point: 800, ignition: 0, sharpness: 0, solubility: 10, malleability: 0, brittleness: 6, fertility: 0,
+    length: 0, flexibility: 0, insulation: 0, structural: 0, absorbency: 0,
   },
 
   // ── Ice/Snow ──
@@ -156,12 +185,14 @@ const GATHERED_RESOURCE_PROPERTIES = {
     volatility: 0, organic: 0, weight: 1, decay_rate: 0.6, energy: 5,
     temperature: -5, resonance: 1,
     melt_point: 0, ignition: 0, sharpness: 1, solubility: 10, malleability: 0, brittleness: 7, fertility: 1,
+    length: 0, flexibility: 0, insulation: 5, structural: 2, absorbency: 0,
   },
   freshwater: {
     hardness: 0, conductivity: 3, flammability: 0, toxicity: 0, luminosity: 0,
     volatility: 0, organic: 0, weight: 0.5, decay_rate: 0, energy: 8,
     temperature: 15, resonance: 0,
     melt_point: 0, ignition: 0, sharpness: 0, solubility: 10, malleability: 0, brittleness: 0, fertility: 5,
+    length: 0, flexibility: 0, insulation: 0, structural: 0, absorbency: 0,
   },
 
   // ── Terrain fallbacks ──
@@ -170,54 +201,66 @@ const GATHERED_RESOURCE_PROPERTIES = {
     volatility: 0, organic: 0, weight: 0.5, decay_rate: 0, energy: 0,
     temperature: 20, resonance: 0,
     melt_point: 1200, ignition: 0, sharpness: 1, solubility: 0, malleability: 0, brittleness: 4, fertility: 0,
+    length: 0, flexibility: 0, insulation: 0, structural: 3, absorbency: 0,
   },
   sand: {
+    // Abrasive, can polish/grind; melts into glass at high temp
     hardness: 2, conductivity: 0, flammability: 0, toxicity: 0, luminosity: 0,
     volatility: 0, organic: 0, weight: 2, decay_rate: 0, energy: 0,
     temperature: 25, resonance: 0,
     melt_point: 1200, ignition: 0, sharpness: 0, solubility: 0, malleability: 3, brittleness: 0, fertility: 0,
+    length: 0, flexibility: 0, insulation: 1, structural: 1, absorbency: 2,
   },
   shells: {
+    // Can be sharpened into scrapers/cutters
     hardness: 4, conductivity: 0, flammability: 0, toxicity: 0, luminosity: 1,
     volatility: 0, organic: 0.5, weight: 0.2, decay_rate: 0.05, energy: 1,
     temperature: 20, resonance: 1,
     melt_point: 500, ignition: 0, sharpness: 2, solubility: 2, malleability: 0, brittleness: 7, fertility: 1,
+    length: 0, flexibility: 0, insulation: 0, structural: 1, absorbency: 0,
   },
   driftwood: {
+    // Weathered wood, good fuel, can be shaped
     hardness: 3, conductivity: 0, flammability: 7, toxicity: 0, luminosity: 0,
     volatility: 0, organic: 1, weight: 1.5, decay_rate: 0.2, energy: 8,
     temperature: 20, resonance: 0,
     melt_point: 0, ignition: 200, sharpness: 0, solubility: 0, malleability: 4, brittleness: 4, fertility: 1,
+    length: 4, flexibility: 1, insulation: 2, structural: 3, absorbency: 3,
   },
   fish: {
     hardness: 0, conductivity: 0, flammability: 1, toxicity: 0, luminosity: 0,
     volatility: 0, organic: 1, weight: 0.5, decay_rate: 0.6, energy: 20,
     temperature: 10, resonance: 0,
     melt_point: 0, ignition: 0, sharpness: 0, solubility: 0, malleability: 3, brittleness: 2, fertility: 1,
+    length: 2, flexibility: 3, insulation: 0, structural: 0, absorbency: 0,
   },
   peat: {
     hardness: 1, conductivity: 0, flammability: 6, toxicity: 0, luminosity: 0,
     volatility: 0, organic: 1, weight: 2, decay_rate: 0.05, energy: 15,
     temperature: 20, resonance: 0,
     melt_point: 0, ignition: 200, sharpness: 0, solubility: 1, malleability: 3, brittleness: 1, fertility: 7,
+    length: 0, flexibility: 0, insulation: 5, structural: 1, absorbency: 7,
   },
   slime: {
     hardness: 0, conductivity: 1, flammability: 0, toxicity: 2, luminosity: 1,
     volatility: 1, organic: 1, weight: 0.3, decay_rate: 0.3, energy: 3,
     temperature: 20, resonance: 1,
     melt_point: 0, ignition: 0, sharpness: 0, solubility: 7, malleability: 9, brittleness: 0, fertility: 2,
+    length: 0, flexibility: 0, insulation: 0, structural: 0, absorbency: 8,
   },
   dust: {
     hardness: 0, conductivity: 0, flammability: 1, toxicity: 0, luminosity: 0,
     volatility: 1, organic: 0, weight: 0.01, decay_rate: 0, energy: 0,
     temperature: 20, resonance: 0,
     melt_point: 0, ignition: 0, sharpness: 0, solubility: 1, malleability: 0, brittleness: 0, fertility: 0,
+    length: 0, flexibility: 0, insulation: 0, structural: 0, absorbency: 1,
   },
   bat_guano: {
     hardness: 0, conductivity: 0, flammability: 3, toxicity: 1, luminosity: 0,
     volatility: 2, organic: 1, weight: 0.3, decay_rate: 0.2, energy: 5,
     temperature: 20, resonance: 0,
     melt_point: 0, ignition: 180, sharpness: 0, solubility: 4, malleability: 2, brittleness: 0, fertility: 9,
+    length: 0, flexibility: 0, insulation: 0, structural: 0, absorbency: 3,
   },
 };
 
@@ -227,139 +270,6 @@ const GATHERED_RESOURCE_PROPERTIES = {
 // ═══════════════════════════════════════
 
 const PRACTICAL_RULES = [
-  // ══════════════════════════════════════
-  // P0 FIX: Real-world survival recipes
-  // ══════════════════════════════════════
-
-  // Flint + Flint → Sparks (fire starter)
-  {
-    id: 'flint_sparks',
-    force: 'impact',
-    name: 'Strike Sparks',
-    check: (items) => {
-      const flintCount = items.filter(i => i.name === 'flint').length;
-      return flintCount >= 2;
-    },
-    produce: () => ({
-      name: 'Sparks',
-      type: 'material',
-      rarity: 'Common',
-      description: 'Hot sparks from struck flint. Use with tinder to start fire.',
-    }),
-    propOverrides: { temperature: 400, luminosity: 5, flammability: 0, energy: 50 },
-    consume: 'none', // flint isn't consumed, just struck
-    priority: 16,
-  },
-
-  // Flint + Stone → Sharp Flint (cutting tool)
-  {
-    id: 'sharp_flint',
-    force: 'impact',
-    name: 'Flint Knapping',
-    check: (items) => {
-      const hasFlint = items.some(i => i.name === 'flint');
-      const hasStone = items.some(i => i.name === 'stone' || i.name === 'pebbles');
-      return hasFlint && hasStone;
-    },
-    produce: () => ({
-      name: 'Sharp Flint',
-      type: 'tool',
-      rarity: 'Common',
-      description: 'A flint shard knapped to a razor edge. Cuts, carves, and scrapes.',
-    }),
-    propOverrides: { sharpness: 8, hardness: 7, weight: 0.3 },
-    consume: ['flint'],
-    priority: 15,
-  },
-
-  // Flint + Wood → Stone Axe (simpler 2-item version)
-  {
-    id: 'simple_stone_axe',
-    force: 'combine',
-    name: 'Simple Stone Axe',
-    check: (items) => {
-      const hasFlint = items.some(i => i.name === 'flint' || i.name === 'Sharp Flint');
-      const hasWood = items.some(i => ['wood', 'driftwood'].includes(i.name));
-      const itemCount = items.length;
-      return hasFlint && hasWood && itemCount === 2;
-    },
-    produce: () => ({
-      name: 'Stone Axe',
-      type: 'tool',
-      rarity: 'Common',
-      description: 'Flint wedged into a split stick. Crude but effective for chopping.',
-    }),
-    propOverrides: { hardness: 5, sharpness: 4, weight: 3 },
-    consume: 'all',
-    priority: 13,
-  },
-
-  // Palm Fronds + Wood → Rope
-  {
-    id: 'palm_rope',
-    force: 'combine',
-    name: 'Rope Twisting',
-    check: (items) => {
-      const hasFronds = items.some(i => i.name === 'palm_fronds');
-      const hasWood = items.some(i => ['wood', 'driftwood', 'bark'].includes(i.name));
-      return hasFronds && hasWood;
-    },
-    produce: () => ({
-      name: 'Rope',
-      type: 'material',
-      rarity: 'Common',
-      description: 'Strong rope twisted from palm fiber. Essential for building.',
-    }),
-    propOverrides: { malleability: 8, hardness: 2, weight: 0.5 },
-    consume: ['palm_fronds'],
-    priority: 12,
-  },
-
-  // Wood + Wood + Palm Fronds → Lean-to Shelter
-  {
-    id: 'lean_to_shelter',
-    force: 'combine',
-    name: 'Shelter Building',
-    check: (items) => {
-      const woodCount = items.filter(i => ['wood', 'driftwood'].includes(i.name)).length;
-      const hasFronds = items.some(i => i.name === 'palm_fronds');
-      return woodCount >= 2 && hasFronds;
-    },
-    produce: () => ({
-      name: 'Lean-to Shelter',
-      type: 'structure',
-      rarity: 'Common',
-      description: 'A simple shelter of branches and fronds. Provides protection from weather.',
-      isStructure: true,
-      structureType: 'shelter',
-    }),
-    propOverrides: { shelter: 1, warmth: 5, weight: 15, decay_rate: 0.05 },
-    consume: 'all',
-    priority: 14,
-  },
-
-  // Stone + Stone → Fire Pit
-  {
-    id: 'fire_pit',
-    force: 'combine',
-    name: 'Fire Pit Construction',
-    check: (items) => {
-      const stoneCount = items.filter(i => ['stone', 'pebbles'].includes(i.name)).length;
-      return stoneCount >= 2;
-    },
-    produce: () => ({
-      name: 'Fire Pit',
-      type: 'structure',
-      rarity: 'Common',
-      description: 'A ring of stones to contain fire safely. Add fuel to light.',
-      isStructure: true,
-      structureType: 'fire_pit',
-    }),
-    propOverrides: { warmth: 0, luminosity: 0, weight: 20, hardness: 7 },
-    consume: 'all',
-    priority: 13,
-  },
-
   // ── Fire & Heat ──
   {
     id: 'make_fire',

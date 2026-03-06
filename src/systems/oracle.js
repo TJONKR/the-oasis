@@ -12,8 +12,8 @@ export function initOracle(shared) {
   // Rate limiting state
   const agentCooldowns = new Map(); // agentId → timestamp
   const globalCalls = [];           // timestamps of recent calls
-  const AGENT_COOLDOWN_MS = 5 * 60 * 1000; // 5 minutes
-  const MAX_PER_HOUR = 20;
+  const AGENT_COOLDOWN_MS = 2 * 60 * 1000; // 2 minutes — encourage experimentation!
+  const MAX_PER_HOUR = 40;
   const MAX_PER_DAY = 100;
 
   const VALID_TYPES = ['material', 'tool', 'consumable', 'decoration', 'special'];
@@ -139,10 +139,36 @@ export function initOracle(shared) {
 
     const itemDescriptions = inputItems.map(i => {
       const props = i.properties || {};
-      return `${i.name} (hardness:${props.hardness||0}, melt_point:${props.melt_point||0}, sharpness:${props.sharpness||0}, solubility:${props.solubility||0}, malleability:${props.malleability||0}, brittleness:${props.brittleness||0}, organic:${props.organic||0}, flammability:${props.flammability||0}, fertility:${props.fertility||0}, energy:${props.energy||0})`;
+      return `${i.name} (hardness:${props.hardness||0}, sharpness:${props.sharpness||0}, malleability:${props.malleability||0}, brittleness:${props.brittleness||0}, length:${props.length||0}, flexibility:${props.flexibility||0}, structural:${props.structural||0}, insulation:${props.insulation||0}, flammability:${props.flammability||0}, organic:${props.organic||0}, weight:${props.weight||0}, energy:${props.energy||0})`;
     });
 
-    const systemPrompt = `You are the Physics Oracle of Clawscape, a crafting world. An agent is applying a force to items. You must evaluate whether this combination could physically produce something useful.
+    const systemPrompt = `You are simulating REAL WORLD physics. Think like a survival expert, not a game designer.
+
+Consider what would ACTUALLY happen if a human did this with these materials on a beach, in a forest, or in a cave. You are evaluating whether applying a physical force to these items would produce something useful.
+
+SURVIVAL KNOWLEDGE YOU SHOULD APPLY:
+- Flint can be knapped (struck against hard stone) to create sharp cutting edges
+- Striking flint against flint or iron-bearing stone creates hot sparks for fire
+- Plant fibers (palm fronds, reeds, bark strips) can be twisted/braided into rope
+- Branches + large leaves/fronds = simple lean-to shelter
+- Stones arranged in a circle = fire pit/containment
+- A sharp stone lashed to a long stick = axe, spear, or cutting tool
+- Coconuts can be cracked open by impact to yield meat and a bowl-shaped shell
+- Clay + heat = hardened pottery
+- Wet sand + form + dry = simple molds
+
+FOR TOOLS, CONSIDER:
+- Sharpness: Can it cut? (flint is excellent, shells can work)
+- Hardness: Will it hold up to use?
+- Length: Is it long enough for a handle? A spear shaft?
+- Flexibility: Can it be bent into a bow? Woven into rope?
+- Structural: Can it bear weight? Support a shelter?
+
+APPROVAL GUIDELINES:
+- APPROVE combinations that a real human survivalist would attempt
+- APPROVE if the physics makes sense even if the result is crude
+- REJECT magic/fantasy combinations (no potions from random herbs, no glowing crystals from mundane items)
+- REJECT if there's no physical mechanism for the transformation
 
 You must respond with ONLY valid JSON:
 {
@@ -151,19 +177,18 @@ You must respond with ONLY valid JSON:
     "name": "Result Item Name",
     "type": "material|tool|consumable|decoration|special",
     "rarity": "Common|Uncommon|Rare",
-    "properties": { "hardness": 0-10, "conductivity": 0-10, "flammability": 0-10, "toxicity": 0-10, "luminosity": 0-10, "volatility": 0-10, "organic": 0-1, "weight": 0.1-100, "decay_rate": 0-1, "energy": 0-100, "temperature": -50-500, "resonance": 0-10, "melt_point": 0-2000, "ignition": 0-1000, "sharpness": 0-10, "solubility": 0-10, "malleability": 0-10, "brittleness": 0-10, "fertility": 0-10 },
+    "properties": { "hardness": 0-10, "conductivity": 0-10, "flammability": 0-10, "toxicity": 0-10, "luminosity": 0-10, "volatility": 0-10, "organic": 0-1, "weight": 0.1-100, "decay_rate": 0-1, "energy": 0-100, "temperature": -50-500, "resonance": 0-10, "melt_point": 0-2000, "ignition": 0-1000, "sharpness": 0-10, "solubility": 0-10, "malleability": 0-10, "brittleness": 0-10, "fertility": 0-10, "length": 0-10, "flexibility": 0-10, "insulation": 0-10, "structural": 0-10, "absorbency": 0-10 },
     "description": "Short flavor text (1 sentence)"
   },
   "feedback": "Explanation of what happened (1-2 sentences)"
 }
 
 Rules:
-- Use blacksmith/chemistry logic, not wizard logic. Results must be physically plausible.
 - Rarity caps at Rare. Never Epic or Legendary.
 - Result properties must stay within defined ranges.
 - Result cannot be more powerful than the sum of its inputs. Keep it balanced.
 - If the combination makes no physical sense, set approved: false and explain in feedback.
-- Name should be evocative but grounded (e.g., "Tempered Iron Bar", "Charred Bone Meal").
+- Name should be evocative but grounded (e.g., "Sharp Flint Blade", "Palm Fiber Rope", "Stone Axe").
 - When approved is false, result can be null.
 - Respond ONLY with the JSON object. No markdown, no explanation.`;
 

@@ -22,6 +22,12 @@ const PROPERTIES = {
   malleability: { min: 0, max: 10 },
   brittleness:  { min: 0, max: 10 },
   fertility:    { min: 0, max: 10 },
+  // Emergent crafting properties
+  length:       { min: 0, max: 10 },   // how long/tall the item is (0=tiny, 10=very long)
+  flexibility:  { min: 0, max: 10 },   // how bendy (0=rigid, 10=very flexible)
+  insulation:   { min: 0, max: 10 },   // thermal insulation (0=none, 10=excellent)
+  structural:   { min: 0, max: 10 },   // load-bearing capacity (0=weak, 10=strong)
+  absorbency:   { min: 0, max: 10 },   // water absorption (0=waterproof, 10=sponge)
 };
 
 // ---------- Gathered resources ----------
