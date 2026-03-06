@@ -165,13 +165,36 @@ function addWorldNews(type, agentId, name, msg, zone) { worldNews.add(type, agen
 // ═══════════════════════════════════════
 const spectators = new Set();
 
+// Slides / Presentation
+const slideClients = new Set();
+let currentSlideIndex = 0;
+let currentSlidePrompt = '';
+const TOTAL_SLIDES = 21;
+
+function broadcastSlides(msg) {
+  const data = JSON.stringify(msg);
+  for (const ws of slideClients) {
+    if (ws.readyState === 1) ws.send(data);
+  }
+}
+
+function getSlideAudienceCount() {
+  let count = 0;
+  for (const ws of slideClients) {
+    if (ws.readyState === 1 && ws._slideRole === 'audience') count++;
+  }
+  return count;
+}
+
 wss.on('connection', (ws) => {
   spectators.add(ws);
   console.log(`👁️  Spectator connected (${spectators.size} total)`);
-  
+
   ws.send(JSON.stringify({
     type: 'init',
     tick,
+    gameTime: getGameTime(),
+    weather: weatherSystem.getCurrentWeather?.() || null,
     world: worldGrid.getWorldInfo(),
     agents: [...agents.values()].map(serializeAgent),
     news: worldNews.items.slice(0, 20),
@@ -189,10 +212,40 @@ wss.on('connection', (ws) => {
         const tiles = worldGrid.getTilesInRadius(msg.x, msg.y, msg.radius || 10);
         ws.send(JSON.stringify({ type: 'area', tiles }));
       }
+      // ── Slides ──
+      if (msg.type === 'slides:join') {
+        slideClients.add(ws);
+        ws._slideRole = msg.role || 'audience';
+        ws._slideName = (msg.name || 'Anonymous').slice(0, 20);
+        ws.send(JSON.stringify({
+          type: 'slides:state',
+          slideIndex: currentSlideIndex,
+          prompt: currentSlidePrompt,
+          totalSlides: TOTAL_SLIDES,
+          audienceCount: getSlideAudienceCount(),
+        }));
+        broadcastSlides({ type: 'slides:audience', count: getSlideAudienceCount() });
+      }
+      if (msg.type === 'slides:navigate') {
+        currentSlideIndex = msg.index || 0;
+        currentSlidePrompt = msg.prompt || '';
+        broadcastSlides({ type: 'slides:navigate', index: currentSlideIndex, prompt: currentSlidePrompt, totalSlides: TOTAL_SLIDES });
+      }
+      if (msg.type === 'slides:reaction') {
+        broadcastSlides({ type: 'slides:reaction', emoji: (msg.emoji || '').slice(0, 4), name: (msg.name || 'Anonymous').slice(0, 20) });
+      }
+      if (msg.type === 'slides:comment') {
+        broadcastSlides({ type: 'slides:comment', text: (msg.text || '').slice(0, 200), name: (msg.name || 'Anonymous').slice(0, 20) });
+      }
     } catch {}
   });
 
-  ws.on('close', () => spectators.delete(ws));
+  ws.on('close', () => {
+    spectators.delete(ws);
+    if (slideClients.delete(ws)) {
+      broadcastSlides({ type: 'slides:audience', count: getSlideAudienceCount() });
+    }
+  });
 });
 
 function broadcast(msg) {
@@ -626,6 +679,7 @@ function simulationTick() {
       weather: weatherSystem.getCurrentWeather?.() || null,
       agents: [...agents.values()].filter(a => a.alive).map(serializeAgent),
       groundItems: serializeGroundItems(),
+      news: worldNews.items.slice(0, 20),
     });
   } else if (spectators.size > 0) {
     // Lightweight position-only update (skip if nobody watching)

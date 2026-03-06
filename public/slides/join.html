@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>The Oasis — Live Audience</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0a1a0a;--bg2:#1a2e1a;--bg3:#243824;
+  --green:#00ff88;--cyan:#00e5ff;--purple:#b44aff;
+  --text:#e0e0e0;--dim:#666;
+  --pixel:'Press Start 2P',monospace;
+  --mono:'JetBrains Mono',monospace;
+}
+html,body{
+  width:100%;min-height:100dvh;
+  background:var(--bg);color:var(--text);
+  font-family:var(--mono);
+  -webkit-tap-highlight-color:transparent;
+}
+
+.container{
+  max-width:420px;margin:0 auto;padding:20px 16px;
+  display:flex;flex-direction:column;gap:20px;
+  min-height:100dvh;
+}
+
+/* Header */
+.header{
+  text-align:center;padding:12px 0;
+}
+.header h1{
+  font-family:var(--pixel);font-size:1rem;
+  color:var(--green);margin-bottom:8px;
+}
+.header .status{
+  font-size:0.75rem;color:var(--dim);
+}
+.header .status.connected{color:var(--green)}
+
+/* Name input */
+.name-section{
+  display:flex;gap:8px;
+}
+.name-section input{
+  flex:1;background:var(--bg2);border:1px solid rgba(0,255,136,0.3);
+  border-radius:8px;padding:12px 16px;
+  color:var(--text);font-family:var(--mono);font-size:1rem;
+  outline:none;
+}
+.name-section input:focus{border-color:var(--green)}
+.name-section button{
+  background:var(--green);color:var(--bg);
+  border:none;border-radius:8px;padding:12px 20px;
+  font-family:var(--pixel);font-size:0.6rem;
+  cursor:pointer;white-space:nowrap;
+}
+
+/* Current prompt */
+.prompt-box{
+  background:var(--bg2);border:1px solid rgba(0,255,136,0.15);
+  border-radius:12px;padding:16px 20px;
+  text-align:center;
+}
+.prompt-label{
+  font-family:var(--pixel);font-size:0.5rem;
+  color:var(--cyan);margin-bottom:8px;
+  text-transform:uppercase;
+  letter-spacing:2px;
+}
+.prompt-text{
+  font-size:1.1rem;line-height:1.5;
+  color:var(--text);
+  min-height:1.5em;
+}
+
+/* Emoji reactions */
+.emoji-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+}
+.emoji-btn{
+  background:var(--bg2);border:1px solid rgba(0,255,136,0.15);
+  border-radius:12px;padding:16px 0;
+  font-size:2rem;cursor:pointer;
+  transition:all 0.15s;
+  -webkit-user-select:none;user-select:none;
+  display:flex;align-items:center;justify-content:center;
+}
+.emoji-btn:active{
+  transform:scale(0.9);
+  background:rgba(0,255,136,0.15);
+  border-color:var(--green);
+}
+.emoji-btn.cooldown{
+  opacity:0.3;pointer-events:none;
+}
+.emoji-btn .ripple{
+  position:absolute;
+  font-size:1.5rem;
+  animation:rippleUp 0.6s ease-out forwards;
+  pointer-events:none;
+}
+@keyframes rippleUp{
+  0%{transform:translateY(0) scale(1);opacity:1}
+  100%{transform:translateY(-40px) scale(1.5);opacity:0}
+}
+
+/* Comment input */
+.comment-section{
+  display:flex;gap:8px;
+}
+.comment-section input{
+  flex:1;background:var(--bg2);border:1px solid rgba(0,255,136,0.3);
+  border-radius:8px;padding:12px 16px;
+  color:var(--text);font-family:var(--mono);font-size:0.95rem;
+  outline:none;
+}
+.comment-section input:focus{border-color:var(--green)}
+.comment-section button{
+  background:var(--bg3);color:var(--green);
+  border:1px solid rgba(0,255,136,0.3);border-radius:8px;
+  padding:12px 16px;font-size:1.2rem;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+}
+.comment-section button:active{background:rgba(0,255,136,0.2)}
+
+/* Slide indicator */
+.slide-indicator{
+  text-align:center;
+  font-family:var(--pixel);font-size:0.5rem;
+  color:var(--dim);padding:8px 0;
+}
+
+/* Toast */
+.toast{
+  position:fixed;bottom:20px;left:50%;transform:translateX(-50%);
+  background:var(--green);color:var(--bg);
+  font-family:var(--pixel);font-size:0.6rem;
+  padding:8px 20px;border-radius:20px;
+  opacity:0;transition:opacity 0.3s;
+  pointer-events:none;z-index:100;
+}
+.toast.show{opacity:1}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="header">
+    <h1>THE OASIS</h1>
+    <div class="status" id="status">Connecting...</div>
+  </div>
+
+  <div class="name-section" id="name-section">
+    <input type="text" id="name-input" placeholder="Your name" maxlength="20" autocomplete="off">
+    <button onclick="setName()">JOIN</button>
+  </div>
+
+  <div class="prompt-box">
+    <div class="prompt-label">Current Question</div>
+    <div class="prompt-text" id="prompt-text">Waiting for presenter...</div>
+  </div>
+
+  <div class="emoji-grid" id="emoji-grid">
+    <button class="emoji-btn" data-emoji="❤️">❤️</button>
+    <button class="emoji-btn" data-emoji="🔥">🔥</button>
+    <button class="emoji-btn" data-emoji="🧠">🧠</button>
+    <button class="emoji-btn" data-emoji="💀">💀</button>
+    <button class="emoji-btn" data-emoji="⭐">⭐</button>
+    <button class="emoji-btn" data-emoji="💯">💯</button>
+    <button class="emoji-btn" data-emoji="😂">😂</button>
+    <button class="emoji-btn" data-emoji="👏">👏</button>
+  </div>
+
+  <div class="comment-section">
+    <input type="text" id="comment-input" placeholder="Send a comment..." maxlength="200" autocomplete="off">
+    <button onclick="sendComment()">&#x27A4;</button>
+  </div>
+
+  <div class="slide-indicator" id="slide-indicator"></div>
+
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+// ─── State ───
+let ws;
+let userName=localStorage.getItem('oasis-slide-name')||'';
+let currentPrompt='';
+const COOLDOWN_MS=500;
+const cooldowns={};
+
+// ─── Name ───
+const nameInput=document.getElementById('name-input');
+const nameSection=document.getElementById('name-section');
+nameInput.value=userName;
+
+if(userName){
+  nameSection.style.display='none';
+}
+
+function setName(){
+  const v=nameInput.value.trim();
+  if(!v)return;
+  userName=v;
+  localStorage.setItem('oasis-slide-name',userName);
+  nameSection.style.display='none';
+  showToast(`Joined as ${userName}`);
+  // Re-join with name
+  if(ws&&ws.readyState===1){
+    ws.send(JSON.stringify({type:'slides:join',role:'audience',name:userName}));
+  }
+}
+
+nameInput.addEventListener('keydown',e=>{if(e.key==='Enter')setName()});
+
+// ─── WebSocket ───
+function connectWS(){
+  const proto=location.protocol==='https:'?'wss':'ws';
+  ws=new WebSocket(`${proto}://${location.host}`);
+
+  ws.onopen=()=>{
+    document.getElementById('status').textContent='Connected';
+    document.getElementById('status').classList.add('connected');
+    ws.send(JSON.stringify({type:'slides:join',role:'audience',name:userName||'Anonymous'}));
+  };
+
+  ws.onmessage=e=>{
+    try{
+      const msg=JSON.parse(e.data);
+      if(msg.type==='slides:state'){
+        // Current slide state
+        if(msg.prompt){
+          currentPrompt=msg.prompt;
+          document.getElementById('prompt-text').textContent=msg.prompt;
+        }
+        if(msg.slideIndex!==undefined){
+          document.getElementById('slide-indicator').textContent=`Slide ${msg.slideIndex+1} / ${msg.totalSlides||'?'}`;
+        }
+      }
+      if(msg.type==='slides:navigate'){
+        if(msg.prompt){
+          currentPrompt=msg.prompt;
+          document.getElementById('prompt-text').textContent=msg.prompt;
+        }
+        if(msg.index!==undefined){
+          document.getElementById('slide-indicator').textContent=`Slide ${msg.index+1} / ${msg.totalSlides||'?'}`;
+        }
+      }
+    }catch{}
+  };
+
+  ws.onclose=()=>{
+    document.getElementById('status').textContent='Reconnecting...';
+    document.getElementById('status').classList.remove('connected');
+    setTimeout(connectWS,2000);
+  };
+
+  ws.onerror=()=>ws.close();
+}
+
+// ─── Emoji Reactions ───
+document.getElementById('emoji-grid').addEventListener('click',e=>{
+  const btn=e.target.closest('.emoji-btn');
+  if(!btn||!ws||ws.readyState!==1)return;
+  const emoji=btn.dataset.emoji;
+  if(cooldowns[emoji])return;
+
+  // Send
+  ws.send(JSON.stringify({
+    type:'slides:reaction',
+    emoji,
+    name:userName||'Anonymous'
+  }));
+
+  // Cooldown
+  btn.classList.add('cooldown');
+  cooldowns[emoji]=true;
+  setTimeout(()=>{
+    btn.classList.remove('cooldown');
+    delete cooldowns[emoji];
+  },COOLDOWN_MS);
+});
+
+// ─── Comments ───
+const commentInput=document.getElementById('comment-input');
+
+function sendComment(){
+  const text=commentInput.value.trim();
+  if(!text||!ws||ws.readyState!==1)return;
+  ws.send(JSON.stringify({
+    type:'slides:comment',
+    text:text.slice(0,200),
+    name:userName||'Anonymous'
+  }));
+  commentInput.value='';
+  showToast('Comment sent!');
+}
+
+commentInput.addEventListener('keydown',e=>{if(e.key==='Enter')sendComment()});
+
+// ─── Toast ───
+let toastTimeout;
+function showToast(msg){
+  const el=document.getElementById('toast');
+  el.textContent=msg;
+  el.classList.add('show');
+  clearTimeout(toastTimeout);
+  toastTimeout=setTimeout(()=>el.classList.remove('show'),2000);
+}
+
+// ─── Init ───
+connectWS();
+</script>
+</body>
+</html>

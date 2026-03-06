@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>THE OASIS — Presentation</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#ffffff;--bg2:#f7f7f5;--bg3:#f0f0ee;
+  --text:#37352f;--text2:#787774;--text3:#b4b4b0;
+  --accent:#2eaadc;--accent2:#0b6e99;
+  --green:#4daa57;--red:#e03e3e;--purple:#9065b0;
+  --orange:#d9730d;--yellow:#dfab01;--pink:#c14c8a;
+  --blue:#2eaadc;
+  --border:rgba(55,53,47,0.09);--border2:rgba(55,53,47,0.16);
+  --sans:'Inter',system-ui,-apple-system,sans-serif;
+  --mono:'JetBrains Mono',monospace;
+}
+html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(--text);font-family:var(--sans)}
+
+#deck{position:relative;width:100%;height:100%}
+.slide{
+  position:absolute;inset:0;
+  display:flex;flex-direction:column;
+  justify-content:center;align-items:center;
+  padding:60px 100px;
+  opacity:0;pointer-events:none;
+  transition:opacity 0.4s ease;
+  text-align:center;
+}
+.slide.active{opacity:1;pointer-events:auto}
+
+/* Typography */
+h1{font-weight:800;font-size:4.5rem;color:var(--text);margin-bottom:16px;letter-spacing:-3px;line-height:1.1}
+h2{font-weight:700;font-size:2.6rem;color:var(--text);margin-bottom:20px;letter-spacing:-1.5px;line-height:1.2}
+p{font-size:1.2rem;line-height:1.7;max-width:700px;color:var(--text2);font-weight:400}
+.subtle{color:var(--text3);font-size:1rem}
+.accent{color:var(--accent2);font-weight:500}
+.divider{width:40px;height:2px;background:var(--border2);margin:24px auto;border-radius:1px}
+
+/* Images */
+.img-slot{
+  width:100%;max-width:840px;
+  border-radius:12px;
+  overflow:hidden;
+  margin:20px 0;
+  box-shadow:0 2px 12px rgba(0,0,0,0.06);
+  border:1px solid var(--border);
+}
+.img-slot img{
+  display:block;width:100%;height:auto;
+}
+.img-slot.contain{background:var(--bg2)}
+.img-slot.contain img{object-fit:contain;max-height:65vh}
+.img-slot.full{max-width:1000px}
+.img-slot.mid{max-width:640px}
+.img-slot.small{max-width:420px}
+
+/* Mantra */
+.mantra{font-size:3rem;font-weight:700;letter-spacing:-2px;line-height:1.5;color:var(--text)}
+
+/* Counter */
+#counter{
+  position:fixed;bottom:24px;left:32px;
+  font-size:0.8rem;font-weight:500;
+  color:var(--text3);z-index:100;
+}
+
+/* QR */
+#qr-wrap{
+  position:fixed;bottom:24px;right:24px;
+  background:#fff;padding:6px;border-radius:6px;
+  box-shadow:0 1px 4px rgba(0,0,0,0.08);
+  border:1px solid var(--border);
+  z-index:100;cursor:pointer;
+  transition:transform 0.3s;
+}
+#qr-wrap:hover{transform:scale(2.2);transform-origin:bottom right}
+#qr-wrap canvas{display:block;width:72px;height:72px}
+
+/* Audience */
+#audience-badge{
+  position:fixed;top:24px;right:24px;
+  font-size:0.8rem;font-weight:500;
+  color:var(--text2);background:var(--bg2);
+  border:1px solid var(--border);
+  border-radius:20px;padding:6px 16px;
+  z-index:100;
+}
+#audience-badge::before{content:'';display:inline-block;width:6px;height:6px;background:var(--green);border-radius:50%;margin-right:8px;vertical-align:middle}
+
+/* Reactions */
+#reactions{position:fixed;inset:0;pointer-events:none;z-index:90;overflow:hidden}
+.reaction{
+  position:absolute;bottom:-50px;
+  font-size:2.2rem;
+  animation:floatUp 3s ease-out forwards;
+  pointer-events:none;
+}
+@keyframes floatUp{
+  0%{transform:translateY(0) scale(1);opacity:0.9}
+  70%{opacity:0.8}
+  100%{transform:translateY(-100vh) scale(1.2);opacity:0}
+}
+
+/* Comments */
+#comments{
+  position:fixed;top:72px;right:24px;
+  width:260px;z-index:95;
+  display:flex;flex-direction:column;gap:6px;
+}
+.comment{
+  background:var(--bg2);border:1px solid var(--border);
+  border-radius:8px;padding:10px 14px;
+  font-size:0.85rem;animation:fadeInComment 0.3s ease;
+}
+.comment .name{color:var(--accent2);font-weight:600;font-size:0.75rem;margin-bottom:2px}
+.comment .text{color:var(--text)}
+@keyframes fadeInComment{from{opacity:0;transform:translateX(10px)}to{opacity:1;transform:translateX(0)}}
+
+/* QR big */
+.qr-big{display:inline-block;background:#fff;padding:16px;border-radius:12px;margin:20px 0;box-shadow:0 2px 8px rgba(0,0,0,0.06);border:1px solid var(--border)}
+.qr-big canvas{width:180px;height:180px}
+
+/* ═══ Slide Editor Overlay ═══ */
+#editor-overlay{
+  display:none;position:fixed;inset:0;z-index:200;
+  background:rgba(0,0,0,0.5);backdrop-filter:blur(4px);
+  justify-content:center;align-items:center;
+}
+#editor-overlay.open{display:flex}
+#editor-panel{
+  background:#fff;border-radius:16px;padding:32px;
+  width:90%;max-width:720px;max-height:85vh;overflow-y:auto;
+  box-shadow:0 20px 60px rgba(0,0,0,0.15);
+}
+#editor-panel h2{font-size:1.2rem;margin-bottom:16px;letter-spacing:0;color:var(--text)}
+#slide-list{list-style:none;display:flex;flex-direction:column;gap:4px}
+#slide-list li{
+  display:flex;align-items:center;gap:12px;
+  padding:10px 14px;border:1px solid var(--border);
+  border-radius:8px;cursor:grab;background:#fff;
+  font-size:0.9rem;transition:background 0.15s;
+  user-select:none;
+}
+#slide-list li:active{cursor:grabbing;background:var(--bg2)}
+#slide-list li .handle{color:var(--text3);font-size:1.1rem;flex-shrink:0}
+#slide-list li .num{color:var(--text3);font-size:0.75rem;width:24px;text-align:center;flex-shrink:0}
+#slide-list li .label{flex:1;color:var(--text)}
+#slide-list li .preview{width:60px;height:34px;border-radius:4px;background:var(--bg3);overflow:hidden;flex-shrink:0}
+#slide-list li .preview img{width:100%;height:100%;object-fit:cover}
+#slide-list li.dragging{opacity:0.4;background:var(--bg3)}
+.editor-hint{font-size:0.8rem;color:var(--text3);margin-top:16px;text-align:center}
+.editor-close{
+  position:absolute;top:16px;right:20px;
+  background:none;border:none;font-size:1.5rem;color:var(--text3);
+  cursor:pointer;
+}
+.editor-btn{
+  display:inline-block;margin-top:16px;padding:8px 20px;
+  background:var(--text);color:#fff;border:none;border-radius:6px;
+  font-size:0.85rem;font-weight:500;cursor:pointer;
+}
+.editor-btn:hover{opacity:0.85}
+
+/* Black screen overlay */
+#blackout{
+  display:none;position:fixed;inset:0;z-index:150;
+  background:#000;cursor:none;
+}
+#blackout.on{display:block}
+#blackout-hint{
+  position:absolute;bottom:32px;left:50%;transform:translateX(-50%);
+  color:#333;font-size:0.8rem;font-weight:500;
+  pointer-events:none;
+}
+
+/* Hidden slide styling in editor */
+#slide-list li.hidden-slide{opacity:0.4}
+#slide-list li.hidden-slide .label{text-decoration:line-through}
+#slide-list li .toggle-vis{
+  flex-shrink:0;width:28px;height:28px;
+  border:1px solid var(--border);border-radius:6px;
+  background:none;cursor:pointer;font-size:0.85rem;
+  display:flex;align-items:center;justify-content:center;
+  color:var(--text2);
+}
+#slide-list li .toggle-vis:hover{background:var(--bg2)}
+#slide-list li.hidden-slide .toggle-vis{color:var(--text3);border-color:var(--border)}
+</style>
+</head>
+<body>
+
+<div id="deck"></div>
+
+<!-- Overlays -->
+<div id="counter">1 / 16</div>
+<div id="qr-wrap"><canvas id="qr-join"></canvas></div>
+<div id="audience-badge">0 viewers</div>
+<div id="reactions"></div>
+<div id="comments"></div>
+
+<!-- Black screen -->
+<div id="blackout"><span id="blackout-hint">press B to return</span></div>
+
+<!-- Slide Editor -->
+<div id="editor-overlay">
+  <div id="editor-panel" style="position:relative">
+    <button class="editor-close" onclick="closeEditor()">&times;</button>
+    <h2>Slide Order</h2>
+    <p style="font-size:0.85rem;color:var(--text3);margin-bottom:16px">Drag to reorder. Click the eye to hide/show slides. Press <kbd style="background:var(--bg3);padding:2px 6px;border-radius:3px;font-size:0.8rem">B</kbd> for black screen.</p>
+    <ul id="slide-list"></ul>
+    <div style="text-align:center">
+      <button class="editor-btn" onclick="applyOrder()">Apply & Close</button>
+      <button class="editor-btn" style="background:#555" onclick="closeEditor();toggleBlackout()">Black Screen (B)</button>
+      <button class="editor-btn" style="background:var(--red)" onclick="resetOrder()">Reset to Default</button>
+    </div>
+    <p class="editor-hint">Drag to reorder. Eye toggle hides slides from presentation. Order saved in browser.</p>
+  </div>
+</div>
+
+<script>
+// ═══════════════════════════════════════
+// SLIDE DEFINITIONS — edit content here
+// ═══════════════════════════════════════
+const SLIDE_DEFS = [
+  {
+    id: 'play-god',
+    label: 'Who likes to play god?',
+    prompt: 'Hands up! Who likes to play god?',
+    html: `<h1>Who likes to<br>play god?</h1>`
+  },
+  {
+    id: 'build-openclaw',
+    label: 'Build cool shit with OpenClaw',
+    prompt: 'What have you built with OpenClaw?',
+    html: `<h1>Who likes to build<br>cool shit with<br>OpenClaw?</h1>`
+  },
+  {
+    id: 'omi-origin',
+    label: 'It all started with omi',
+    prompt: 'What\'s your favorite wearable AI moment?',
+    img: '/slides/omi-memory.png',
+    html: `<h2>It all started with this</h2>
+      <div class="img-slot mid contain"><img src="/slides/omi-memory.png"></div>
+      <p>An omi connecting to OpenClaw.<br>Keeping me in the loop of the day.</p>`
+  },
+  {
+    id: 'dashboard',
+    label: 'Personal Dashboard',
+    prompt: 'Would you want a dashboard like this?',
+    img: '/slides/dashboard.png',
+    html: `<h2>Personal Dashboard</h2>
+      <div class="img-slot full"><img src="/slides/dashboard.png"></div>`
+  },
+  {
+    id: 'face',
+    label: 'The screen',
+    prompt: 'Drop a reaction!',
+    img: '/slides/screen.png',
+    html: `<div class="img-slot small"><img src="/slides/screen.png"></div>`
+  },
+  {
+    id: 'desk-closeup',
+    label: 'Desk close-up',
+    prompt: '',
+    img: '/slides/desk-closeup.jpg',
+    html: `<div class="img-slot mid"><img src="/slides/desk-closeup.jpg"></div>`
+  },
+  {
+    id: 'room-3d',
+    label: 'Room (3D interior)',
+    prompt: '',
+    img: '/slides/room-3d.jpg',
+    html: `<div class="img-slot"><img src="/slides/room-3d.jpg"></div>`
+  },
+  {
+    id: 'room-floorplan',
+    label: 'Room (floor plan)',
+    prompt: '',
+    img: '/slides/room-floorplan.jpg',
+    html: `<div class="img-slot mid"><img src="/slides/room-floorplan.jpg"></div>`
+  },
+  {
+    id: 'room',
+    label: 'Room (pixel art)',
+    prompt: '',
+    img: '/slides/room.png',
+    html: `<div class="img-slot"><img src="/slides/room.png"></div>`
+  },
+  {
+    id: 'house-3d',
+    label: 'House (3D exterior)',
+    prompt: '',
+    img: '/slides/house-3d.jpg',
+    html: `<div class="img-slot"><img src="/slides/house-3d.jpg"></div>`
+  },
+  {
+    id: 'house',
+    label: 'House (generated terrain)',
+    prompt: '',
+    img: '/slides/house.png',
+    html: `<div class="img-slot"><img src="/slides/house.png"></div>`
+  },
+  {
+    id: 'village',
+    label: 'Village',
+    prompt: '',
+    img: '/slides/village.png',
+    html: `<div class="img-slot full"><img src="/slides/village.png"></div>`
+  },
+  {
+    id: 'world',
+    label: 'World',
+    prompt: '',
+    img: '/slides/world-map.png',
+    html: `<div class="img-slot"><img src="/slides/world-map.png"></div>`
+  },
+  {
+    id: 'rabbit-hole',
+    label: 'Getting lost in world building',
+    prompt: 'Ever fallen down a rabbit hole building something?',
+    html: `<h2>Getting lost and fascinated<br>in world building</h2>
+      <div class="divider"></div>
+      <p class="subtle">concepts, systems, emergent behavior</p>`
+  },
+  {
+    id: 'fucked-up',
+    label: 'A fucked up world',
+    prompt: 'How dark should a simulation go?',
+    img: '/slides/world-live.png',
+    html: `<h1>A fucked up world</h1>
+      <div class="img-slot full"><img src="/slides/world-live.png"></div>`
+  },
+  {
+    id: 'generate',
+    label: 'How to generate a world',
+    prompt: 'Would you generate your own world?',
+    img: '/slides/house.png',
+    html: `<h2>How to generate a world</h2>
+      <div class="img-slot"><img src="/slides/house.png"></div>`
+  },
+  {
+    id: 'mantra',
+    label: 'The mantra',
+    prompt: 'What\'s your mantra?',
+    img: '/slides/design-philosophy.png',
+    html: `<p class="mantra">No rules.<br>No quests.<br>Just physics.</p>
+      <div style="margin-top:32px" class="img-slot mid"><img src="/slides/design-philosophy.png"></div>`
+  },
+  {
+    id: 'so-far',
+    label: 'What it\'s been doing so far',
+    prompt: 'What surprises you most?',
+    img: '/slides/world-phone.png',
+    html: `<h2>This is what it has<br>been doing so far</h2>
+      <div class="img-slot mid contain"><img src="/slides/world-phone.png"></div>`
+  },
+  {
+    id: 'lessons',
+    label: 'Lessons learned',
+    prompt: 'What\'s the biggest lesson you\'ve learned building something?',
+    html: `<h2>Lessons learned</h2>
+      <div class="divider"></div>`
+  },
+  {
+    id: 'live-world',
+    label: 'Live world (iframe)',
+    prompt: 'You\'re watching it live!',
+    html: `<div style="width:100%;height:100%;position:relative">
+      <iframe id="world-iframe" src="" style="width:100%;height:100%;border:none;border-radius:12px" allowfullscreen></iframe>
+    </div>`
+  },
+  {
+    id: 'about-me',
+    label: 'About me',
+    prompt: 'Connect with me on LinkedIn!',
+    html: `<h2>Tijs Nieuwboer</h2>
+      <div class="divider"></div>
+      <p style="font-size:1.3rem;margin-bottom:24px">Builder. Playing god with AI agents.<br>Founded OpenClaw — giving AI a body to act in the world.</p>
+      <p style="margin-bottom:32px;color:var(--text3)">I like building things that feel alive.</p>
+      <div class="qr-big"><canvas id="qr-linkedin"></canvas></div>
+      <p style="font-family:var(--mono);font-size:0.8rem;color:var(--accent2);margin-top:8px">Read more on LinkedIn</p>`
+  },
+  {
+    id: 'this-is-world',
+    label: 'This is the world — QR',
+    prompt: 'Scan the QR to see it live!',
+    html: `<h2>This is the world</h2>
+      <div class="qr-big"><canvas id="qr-world"></canvas></div>
+      <p style="font-family:var(--mono);font-size:0.85rem;color:var(--accent2)" id="world-url"></p>
+      <div style="margin-top:20px" class="img-slot small"><img src="/slides/whatsapp-qr.png"></div>`
+  }
+];
+
+// ═══════════════════════════════════════
+// SLIDE ORDER (persisted in localStorage)
+// ═══════════════════════════════════════
+const STORAGE_KEY = 'oasis-slide-order';
+const HIDDEN_KEY = 'oasis-slide-hidden';
+// When slide defs change, invalidate saved order
+const DEF_VERSION = SLIDE_DEFS.map(s => s.id).join(',');
+const defaultOrder = SLIDE_DEFS.map(s => s.id);
+
+function getOrder() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
+    const ids = new Set(SLIDE_DEFS.map(s => s.id));
+    if (Array.isArray(saved) && saved.every(id => ids.has(id)) && saved.length === SLIDE_DEFS.length) {
+      return saved;
+    }
+  } catch {}
+  // Reset if slide defs changed
+  localStorage.removeItem(STORAGE_KEY);
+  localStorage.removeItem(HIDDEN_KEY);
+  return [...defaultOrder];
+}
+
+function saveOrder(order) {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(order));
+}
+
+function getHidden() {
+  try { return new Set(JSON.parse(localStorage.getItem(HIDDEN_KEY)) || []); }
+  catch { return new Set(); }
+}
+
+function saveHidden(hiddenSet) {
+  localStorage.setItem(HIDDEN_KEY, JSON.stringify([...hiddenSet]));
+}
+
+function getOrderedSlides() {
+  const order = getOrder();
+  const hidden = getHidden();
+  const map = Object.fromEntries(SLIDE_DEFS.map(s => [s.id, s]));
+  return order.filter(id => !hidden.has(id)).map(id => map[id]);
+}
+
+function getAllOrderedSlides() {
+  const order = getOrder();
+  const map = Object.fromEntries(SLIDE_DEFS.map(s => [s.id, s]));
+  return order.map(id => map[id]);
+}
+
+// ═══════════════════════════════════════
+// RENDER SLIDES
+// ═══════════════════════════════════════
+const deck = document.getElementById('deck');
+let slides = [];
+let currentSlide = 0;
+
+function renderDeck() {
+  const ordered = getOrderedSlides();
+  deck.innerHTML = '';
+  slides = [];
+  ordered.forEach((def, i) => {
+    const el = document.createElement('div');
+    el.className = 'slide';
+    el.dataset.prompt = def.prompt;
+    el.dataset.id = def.id;
+    el.innerHTML = def.html;
+    deck.appendChild(el);
+    slides.push(el);
+  });
+  // Re-render QRs on relevant slides
+  const qrWorld = document.getElementById('qr-world');
+  if (qrWorld) QR.draw(qrWorld, worldUrl, 6);
+  const worldUrlEl = document.getElementById('world-url');
+  if (worldUrlEl) worldUrlEl.textContent = worldUrl;
+  const qrLinkedin = document.getElementById('qr-linkedin');
+  if (qrLinkedin) QR.draw(qrLinkedin, linkedinUrl, 6);
+}
+
+function showSlide(n) {
+  if (n < 0 || n >= slides.length) return;
+  slides[currentSlide].classList.remove('active');
+  currentSlide = n;
+  slides[currentSlide].classList.add('active');
+  document.getElementById('counter').textContent = `${n + 1} / ${slides.length}`;
+  // Lazy-load world iframe when on that slide
+  const iframe = slides[n].querySelector('#world-iframe');
+  if (iframe && !iframe.src.includes('world.html')) {
+    iframe.src = `${PROD_DOMAIN}/world.html`;
+  }
+  if (ws && ws.readyState === 1) {
+    ws.send(JSON.stringify({ type: 'slides:navigate', index: n, prompt: slides[n].dataset.prompt || '' }));
+  }
+}
+
+// ═══════════════════════════════════════
+// EDITOR — drag to reorder
+// ═══════════════════════════════════════
+const editorOverlay = document.getElementById('editor-overlay');
+const slideListEl = document.getElementById('slide-list');
+let editorOpen = false;
+
+function openEditor() {
+  editorOpen = true;
+  editorOverlay.classList.add('open');
+  renderEditorList();
+}
+
+function closeEditor() {
+  editorOpen = false;
+  editorOverlay.classList.remove('open');
+}
+
+function renderEditorList() {
+  const order = getOrder();
+  const hidden = getHidden();
+  const map = Object.fromEntries(SLIDE_DEFS.map(s => [s.id, s]));
+  slideListEl.innerHTML = '';
+  order.forEach((id, i) => {
+    const def = map[id];
+    const isHidden = hidden.has(id);
+    const li = document.createElement('li');
+    li.dataset.id = id;
+    li.draggable = true;
+    if (isHidden) li.classList.add('hidden-slide');
+    li.innerHTML = `
+      <span class="handle">⠿</span>
+      <span class="num">${i + 1}</span>
+      <button class="toggle-vis" title="${isHidden ? 'Show slide' : 'Hide slide'}">${isHidden ? '○' : '●'}</button>
+      <span class="label">${esc(def.label)}</span>
+      ${def.img ? `<span class="preview"><img src="${def.img}"></span>` : '<span class="preview"></span>'}
+    `;
+    li.querySelector('.toggle-vis').addEventListener('mousedown', (e) => {
+      e.stopPropagation();
+      e.preventDefault();
+    });
+    li.querySelector('.toggle-vis').addEventListener('click', (e) => {
+      e.stopPropagation();
+      e.preventDefault();
+      const h = getHidden();
+      if (h.has(id)) { h.delete(id); } else { h.add(id); }
+      saveHidden(h);
+      // Save current order from DOM too
+      const newOrder = [...slideListEl.querySelectorAll('li')].map(li => li.dataset.id);
+      saveOrder(newOrder);
+      // Rebuild everything
+      renderDeck();
+      currentSlide = Math.min(currentSlide, Math.max(0, slides.length - 1));
+      if (slides.length > 0) showSlide(currentSlide);
+      renderEditorList();
+    });
+    slideListEl.appendChild(li);
+  });
+  initDragDrop();
+}
+
+let dragItem = null;
+function initDragDrop() {
+  const items = slideListEl.querySelectorAll('li');
+  items.forEach(item => {
+    item.addEventListener('dragstart', e => {
+      dragItem = item;
+      item.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+    item.addEventListener('dragend', () => {
+      item.classList.remove('dragging');
+      dragItem = null;
+      // Update numbers
+      slideListEl.querySelectorAll('li').forEach((li, i) => {
+        li.querySelector('.num').textContent = i + 1;
+      });
+    });
+    item.addEventListener('dragover', e => {
+      e.preventDefault();
+      if (!dragItem || dragItem === item) return;
+      const rect = item.getBoundingClientRect();
+      const mid = rect.top + rect.height / 2;
+      if (e.clientY < mid) {
+        slideListEl.insertBefore(dragItem, item);
+      } else {
+        slideListEl.insertBefore(dragItem, item.nextSibling);
+      }
+    });
+  });
+}
+
+function applyOrder() {
+  const newOrder = [...slideListEl.querySelectorAll('li')].map(li => li.dataset.id);
+  saveOrder(newOrder);
+  // Rebuild deck (hidden slides already saved via eye toggle)
+  renderDeck();
+  currentSlide = Math.min(currentSlide, slides.length - 1);
+  if (currentSlide < 0) currentSlide = 0;
+  showSlide(currentSlide);
+  closeEditor();
+}
+
+function resetOrder() {
+  localStorage.removeItem(STORAGE_KEY);
+  localStorage.removeItem(HIDDEN_KEY);
+  renderEditorList();
+  // Also live-rebuild the deck
+  renderDeck();
+  currentSlide = 0;
+  showSlide(0);
+}
+
+// ═══════════════════════════════════════
+// BLACKOUT
+// ═══════════════════════════════════════
+const blackout = document.getElementById('blackout');
+let isBlacked = false;
+
+function toggleBlackout() {
+  isBlacked = !isBlacked;
+  blackout.classList.toggle('on', isBlacked);
+}
+
+// ═══════════════════════════════════════
+// KEYBOARD
+// ═══════════════════════════════════════
+document.addEventListener('keydown', e => {
+  // Blackout takes priority
+  if (isBlacked) {
+    if (e.key === 'b' || e.key === 'B' || e.key === 'Escape') toggleBlackout();
+    return;
+  }
+  if (editorOpen) {
+    if (e.key === 'Escape' || e.key === 'e') closeEditor();
+    return;
+  }
+  if (e.key === 'b' || e.key === 'B') { toggleBlackout(); return; }
+  if (e.key === 'e' || e.key === 'E') { openEditor(); return; }
+  if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); showSlide(currentSlide + 1); }
+  if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); showSlide(currentSlide - 1); }
+  if (e.key === 'Home') { e.preventDefault(); showSlide(0); }
+  if (e.key === 'End') { e.preventDefault(); showSlide(slides.length - 1); }
+});
+
+// Close editor on overlay click
+editorOverlay.addEventListener('click', e => { if (e.target === editorOverlay) closeEditor(); });
+
+// ═══════════════════════════════════════
+// WEBSOCKET
+// ═══════════════════════════════════════
+let ws;
+function connectWS() {
+  const proto = location.protocol === 'https:' ? 'wss' : 'ws';
+  ws = new WebSocket(`${proto}://${location.host}`);
+  ws.onopen = () => {
+    ws.send(JSON.stringify({ type: 'slides:join', role: 'presenter' }));
+    ws.send(JSON.stringify({ type: 'slides:navigate', index: currentSlide, prompt: slides[currentSlide]?.dataset.prompt || '' }));
+  };
+  ws.onmessage = e => {
+    try {
+      const msg = JSON.parse(e.data);
+      if (msg.type === 'slides:reaction') spawnReaction(msg.emoji);
+      if (msg.type === 'slides:comment') addComment(msg.name, msg.text);
+      if (msg.type === 'slides:audience') updateAudience(msg.count);
+    } catch {}
+  };
+  ws.onclose = () => setTimeout(connectWS, 2000);
+}
+
+// ═══════════════════════════════════════
+// REACTIONS & COMMENTS
+// ═══════════════════════════════════════
+const reactionsEl = document.getElementById('reactions');
+function spawnReaction(emoji) {
+  while (reactionsEl.children.length >= 30) reactionsEl.removeChild(reactionsEl.firstChild);
+  const el = document.createElement('span');
+  el.className = 'reaction';
+  el.textContent = emoji;
+  el.style.left = Math.random() * 90 + 5 + '%';
+  el.style.animationDuration = (2.5 + Math.random() * 1.5) + 's';
+  reactionsEl.appendChild(el);
+  el.addEventListener('animationend', () => el.remove());
+}
+
+const commentsEl = document.getElementById('comments');
+function addComment(name, text) {
+  const el = document.createElement('div');
+  el.className = 'comment';
+  el.innerHTML = `<div class="name">${esc(name)}</div><div class="text">${esc(text)}</div>`;
+  commentsEl.appendChild(el);
+  while (commentsEl.children.length > 5) commentsEl.removeChild(commentsEl.firstChild);
+  setTimeout(() => { el.style.opacity = '0'; el.style.transition = 'opacity 0.5s'; setTimeout(() => el.remove(), 500); }, 10000);
+}
+
+function esc(s) { return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+
+function updateAudience(count) {
+  document.getElementById('audience-badge').textContent = `${count} viewer${count !== 1 ? 's' : ''}`;
+}
+
+// ═══════════════════════════════════════
+// QR CODE GENERATOR
+// ═══════════════════════════════════════
+const QR = (() => {
+  const EXP = new Uint8Array(512), LOG = new Uint8Array(256);
+  { let x = 1; for (let i = 0; i < 255; i++) { EXP[i] = x; LOG[x] = i; x = (x << 1) ^ (x & 128 ? 0x11d : 0); } for (let i = 255; i < 512; i++) EXP[i] = EXP[i - 255]; }
+  function gfMul(a, b) { return a && b ? EXP[LOG[a] + LOG[b]] : 0 }
+  function polyMul(a, b) { const r = new Uint8Array(a.length + b.length - 1); for (let i = 0; i < a.length; i++) for (let j = 0; j < b.length; j++) r[i + j] ^= gfMul(a[i], b[j]); return r }
+  function ecPoly(n) { let p = new Uint8Array([1]); for (let i = 0; i < n; i++) p = polyMul(p, new Uint8Array([1, EXP[i]])); return p }
+  function ecEncode(data, ecLen) { const gen = ecPoly(ecLen), msg = new Uint8Array(data.length + ecLen); msg.set(data); for (let i = 0; i < data.length; i++) { const c = msg[i]; if (c) for (let j = 0; j < gen.length; j++) msg[i + j] ^= gfMul(gen[j], c); } return msg.slice(data.length) }
+  const SIZE = 29, EC_LEN = 15, DATA_CW = 70;
+  function encode(text) {
+    const bytes = new TextEncoder().encode(text);
+    const bits = [];
+    const push = (v, n) => { for (let i = n - 1; i >= 0; i--) bits.push((v >> i) & 1) };
+    push(0b0100, 4); push(bytes.length, 8);
+    for (const b of bytes) push(b, 8);
+    push(0, 4);
+    while (bits.length % 8) bits.push(0);
+    while (bits.length < DATA_CW * 8) { push(0xEC, 8); if (bits.length < DATA_CW * 8) push(0x11, 8); }
+    const data = new Uint8Array(DATA_CW);
+    for (let i = 0; i < DATA_CW; i++) { let v = 0; for (let b = 0; b < 8; b++) v = (v << 1) | bits[i * 8 + b]; data[i] = v; }
+    const ec = ecEncode(data, EC_LEN);
+    const codewords = new Uint8Array(DATA_CW + EC_LEN);
+    codewords.set(data); codewords.set(ec, DATA_CW);
+    const grid = Array.from({ length: SIZE }, () => new Int8Array(SIZE));
+    const reserved = Array.from({ length: SIZE }, () => new Uint8Array(SIZE));
+    function setMod(r, c, v) { if (r >= 0 && r < SIZE && c >= 0 && c < SIZE) { grid[r][c] = v ? 1 : 0; reserved[r][c] = 1; } }
+    function finder(r, c) { for (let dr = -1; dr <= 7; dr++) for (let dc = -1; dc <= 7; dc++) { const on = (dr >= 0 && dr <= 6 && dc >= 0 && dc <= 6) && (dr === 0 || dr === 6 || dc === 0 || dc === 6 || (dr >= 2 && dr <= 4 && dc >= 2 && dc <= 4)); setMod(r + dr, c + dc, on && dr >= 0 && dr <= 6 && dc >= 0 && dc <= 6); if (dr === -1 || dr === 7 || dc === -1 || dc === 7) setMod(r + dr, c + dc, 0); } }
+    finder(0, 0); finder(0, SIZE - 7); finder(SIZE - 7, 0);
+    for (let i = 8; i < SIZE - 8; i++) { setMod(6, i, i % 2 === 0); setMod(i, 6, i % 2 === 0); }
+    setMod(SIZE - 8, 8, 1);
+    for (let i = 0; i < 8; i++) { setMod(8, i, 0); setMod(8, SIZE - 1 - i, 0); setMod(i, 8, 0); setMod(SIZE - 1 - i, 8, 0); }
+    setMod(8, 8, 0);
+    const dataBits = [];
+    for (const cw of codewords) for (let b = 7; b >= 0; b--) dataBits.push((cw >> b) & 1);
+    let idx = 0;
+    for (let col = SIZE - 1; col >= 1; col -= 2) {
+      if (col === 6) col = 5;
+      for (let row = 0; row < SIZE; row++) {
+        const r = ((Math.floor((SIZE - 1 - col) / 2)) % 2 === 0) ? SIZE - 1 - row : row;
+        for (let d = 0; d < 2; d++) {
+          const c = col - d;
+          if (!reserved[r][c]) { grid[r][c] = idx < dataBits.length ? dataBits[idx] : 0; idx++; }
+        }
+      }
+    }
+    for (let r = 0; r < SIZE; r++) for (let c = 0; c < SIZE; c++) {
+      if (!reserved[r][c] && (r + c) % 2 === 0) grid[r][c] ^= 1;
+    }
+    const fmtBits = [1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0];
+    const fmtPos = [[8,0],[8,1],[8,2],[8,3],[8,4],[8,5],[8,7],[8,8],[7,8],[5,8],[4,8],[3,8],[2,8],[1,8],[0,8]];
+    const fmtPos2 = [[SIZE-1,8],[SIZE-2,8],[SIZE-3,8],[SIZE-4,8],[SIZE-5,8],[SIZE-6,8],[SIZE-7,8],[8,SIZE-8],[8,SIZE-7],[8,SIZE-6],[8,SIZE-5],[8,SIZE-4],[8,SIZE-3],[8,SIZE-2],[8,SIZE-1]];
+    for (let i = 0; i < 15; i++) { grid[fmtPos[i][0]][fmtPos[i][1]] = fmtBits[i]; grid[fmtPos2[i][0]][fmtPos2[i][1]] = fmtBits[i]; }
+    return grid;
+  }
+  function draw(canvas, text, cellSize = 4) {
+    const grid = encode(text);
+    const s = SIZE + 8;
+    canvas.width = canvas.height = s * cellSize;
+    const ctx = canvas.getContext('2d');
+    ctx.fillStyle = '#fff'; ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = '#37352f';
+    for (let r = 0; r < SIZE; r++) for (let c = 0; c < SIZE; c++) {
+      if (grid[r][c]) ctx.fillRect((c + 4) * cellSize, (r + 4) * cellSize, cellSize, cellSize);
+    }
+  }
+  return { draw };
+})();
+
+// ═══════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════
+const PROD_DOMAIN = 'https://the-oasis-production.up.railway.app';
+const joinUrl = `${PROD_DOMAIN}/slides/join.html`;
+const worldUrl = `${PROD_DOMAIN}/world.html`;
+const linkedinUrl = `${PROD_DOMAIN}/slides/li.html`;
+
+window.addEventListener('load', () => {
+  QR.draw(document.getElementById('qr-join'), joinUrl, 3);
+  renderDeck();
+  showSlide(0);
+  connectWS();
+});
+</script>
+</body>
+</html>
