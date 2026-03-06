@@ -795,21 +795,7 @@ app.get('/api/agents/:id', (req, res) => {
   });
 });
 
-app.post('/api/spawn', (req, res) => {
-  const { name } = req.body;
-  const agent = spawnAgent(name || `Agent-${agents.size + 1}`);
-  res.json(serializeAgent(agent));
-});
-
-app.post('/api/spawn-many', (req, res) => {
-  const { count = 5, prefix = 'Agent' } = req.body;
-  const spawned = [];
-  for (let i = 0; i < Math.min(count, 50); i++) {
-    const agent = spawnAgent(`${prefix}-${agents.size + 1}`);
-    spawned.push(serializeAgent(agent));
-  }
-  res.json({ spawned: spawned.length, agents: spawned });
-});
+// Spawn endpoints removed — agents join via /api/v1/register only
 
 app.get('/api/news', (req, res) => {
   res.json(worldNews.items.slice(0, parseInt(req.query.limit) || 50));
