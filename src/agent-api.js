@@ -622,9 +622,29 @@ export function setupAgentAPI(app, shared) {
    */
   app.post('/api/v1/drop', authAgent, (req, res) => {
     const agent = req.agent;
-    const { itemName } = req.body;
-    
-    const item = agent.inventory.find(i => i.name === itemName);
+    const { itemName, itemId, itemIds } = req.body;
+
+    // Batch drop support
+    if (itemIds && Array.isArray(itemIds)) {
+      const dropped = [];
+      for (const id of itemIds) {
+        const item = agent.inventory.find(i => i.id === id);
+        if (!item) continue;
+        agent.inventory = agent.inventory.filter(i => i !== item);
+        if (shared.decayLifecycle?.groundItems) {
+          const key = `${agent.tileX},${agent.tileY}`;
+          if (!shared.decayLifecycle.groundItems.has(key)) shared.decayLifecycle.groundItems.set(key, []);
+          shared.decayLifecycle.groundItems.get(key).push({ item: { ...item }, dropTick: shared.tick || 0, decayProgress: 0 });
+        }
+        dropped.push(item.name);
+      }
+      return res.json({ dropped: true, items: dropped, count: dropped.length, at: { tileX: agent.tileX, tileY: agent.tileY } });
+    }
+
+    // Single drop by itemId or itemName
+    const item = itemId
+      ? agent.inventory.find(i => i.id === itemId)
+      : agent.inventory.find(i => i.name === itemName);
     if (!item) return res.status(400).json({ error: 'Item not in inventory' });
     
     agent.inventory = agent.inventory.filter(i => i !== item);
