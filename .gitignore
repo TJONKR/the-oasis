@@ -2,4 +2,8 @@ node_modules/
 output/
 .env.local
 *.png
+!public/oasis-hero.png
+!public/oasis-banner.png
+!public/oasis-coast-area.png
+!public/oasis-spawn-area.png
 !assets/world.json.gz

@@ -24,7 +24,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--mono);line-height:
 
 /* Hero with world map background */
 .hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;overflow:hidden}
-.hero-bg{position:absolute;inset:0;background:url('/world-overview.png') center/cover no-repeat;opacity:0.25;filter:blur(2px)}
+.hero-bg{position:absolute;inset:0;background:url('/oasis-hero.png') center/cover no-repeat;opacity:0.35;image-rendering:pixelated}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,15,0.3) 0%,rgba(10,10,15,0.7) 50%,rgba(10,10,15,0.95) 100%)}
 .hero-content{position:relative;z-index:1;padding:2rem;max-width:900px}
 
@@ -141,6 +141,11 @@ footer .copyright{font-size:0.7rem;color:#444}
     </div>
   </div>
 </section>
+
+<!-- WORLD SHOWCASE -->
+<div style="width:100%;overflow:hidden;margin:2rem 0">
+  <img src="/oasis-banner.png" alt="The Oasis — diverse biomes" style="width:100%;image-rendering:pixelated;display:block;opacity:0.9">
+</div>
 
 <!-- MOMENTS -->
 <section id="moments">
