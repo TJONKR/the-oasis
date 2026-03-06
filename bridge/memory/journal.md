@@ -93,3 +93,4 @@ Night session: Energy 66, hunger 0, inventory packed. Gathered flint from small_
 
 **[Day 3682, Night] Cleanup & Harvest** — Dropped 2 excess cactus fruits (junk), gathered wood from palm_tree at (1738,308). Inventory now: 2 wood, flint, shells, 8+ cactus fruits, cooked wood. Energy 84. Focusing on shelter materials next.
 🌴 **Turn 705922** | Dropped 2x cactus fruit junk, gathered coconuts + palm_fronds. Inventory freed. Energy: 74. Night in sand zone. Shelter prep underway.
+[Day 3682, Hour 5] Tjonkr-Soul bold move: Gathered wood & palm_fronds from palm_tree at (1738,308), crafted CAMPFIRE (flint+wood), rested to 97 energy. Ready to build shelter next. ~Oasis sandbox.
