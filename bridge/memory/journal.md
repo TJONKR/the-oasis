@@ -1,44 +1,66 @@
-## Oasis Survival Log - Tjonkr-Soul
+# The Oasis Journal - Tjonkr-Soul
 
-**Day 3677, Night, Tick 702350 — 2:06 PM (Friday, March 6th)**
-- Status: HP 100, Energy 83, Hunger 0 (healthy)
-- Location: Desert (1739, 308)
-- Actions: Dropped sand junk, gathered 2 cactus_fruits (bonus yield) from palm_tree nearby. Inventory bloated with fermented shells/seaweed lamps—need to consolidate or use in crafting. Next: Explore crafting with herbs/fermented items to make tools/structures. Energy solid, food stores abundant.
+**Tick 704205 | Day 3679 | Friday 18:38 CET**
 
-**Day 3676, Night, Tick 701656 — 1:54 PM (Friday, March 6th)**
-- Status: HP 100, Energy 76, Hunger 0 (healthy)
-- Location: Coast (1739, 307)
-- Action: Attempted junk cleanup (dropped rotten fish & sand), gather attempt failed — inventory still at 28 items. Nearby rock at distance 4 (yields stone/flint).
-- Next: Retry gather with proper spacing or move closer to resources. Build shelter/fire pit once inventory optimized.
-2026-03-06 13:55:22 - Ate dried cactus_fruit (+18 energy), freed 1 inv slot. Inventory still full (27 items). Plan: drop junk, build shelter next turn.
+Session start: Spawned at tile (1739, 311) sand zone, Hatchling status. Energy 76, hunger 0. Inventory bloated with junk (sand, shells, excess dried fruit). Dropped sand, gathered stone from nearby rock. Attempted palm tree gathering (got sand, odd). Tried shelter build with driftwood + palm_fronds but failed (null return — likely wrong craft combo). Rested: restored energy to 95. 
 
-**[Day 3676, Hour 9]** Cleaned inventory (dropped sand+rotten fish), gathered driftwood from small_rock. Energy: 91. Full health, 0 hunger. Located on coast with palm_trees nearby. Ready to craft tools or build shelter next cycle.
-[1:57 PM] **Cleared inventory** — ate Fermented shells (energy→100). Full inventory (28 slots) blocking expansion. Next: move south to small_rock, gather stone/flint, prepare for shelter build.
-[1:58 PM] **Moved south** (1739, 308) to sand zone. Energy: 98. Inventory still full—old item IDs stale. Will continue gathering on next turn. Energy declining, need to monitor.
-- **Day 3676, Hour 15 (March 6, 2026 - 1:59 PM):** Status OK (HP 100, Energy 98, Hunger 0). Inventory packed—accumulated dried goods, fermented shells, lamps. At sand zone. Attempted inventory cleanup; gathering strategy next. Builder mindset: aim for shelter + fire_pit once space freed. Multiple palm trees and stone nearby for resource base.
-2026-03-06 14:00 — Tick 702031: Inventory FULL (28/28). Mostly junk: sand(21), rotten fish(2), fermented shells(9+extras). Health 100, Energy 98, Hunger 0. Nearby: palm trees @ 10 tiles. Next: Clear junk to gather. Status: thriving but blocked.
+**Next moves:** Learn shelter recipe, craft proper tool items, focus on wood gathering. Palm trees nearby but resource drops are unpredictable. Strong foundation: good energy, no hunger, mining prof L3.
 
-**2026-03-06 14:01 — Tick 702075 (Cron-triggered):** Inventory junk purge in progress. Dropped sand (item_735caf31), attempted palm_tree gather. Status pristine: HP 100, Energy 98, Hunger 0. Multiple resources nearby (palm trees @ 10 tiles, rocks @ 12 tiles). **Builder's momentum:** Have wood(3) + palm_fronds(4) ready to craft rope; fermented shells(16) as backup fuel. Next: Finalize cleanup, gather stone/flint, build fire_pit then shelter. Oasis progression: survived, thriving, ready to construct.
+---
+**Day 3679, Night (Tick 704266)** — Tjonkr-Soul at (1739,312): Hunger critical, ate cactus fruit (hunger→0, energy→100). Dropped sand. Gathered sand from palm_tree (unlucky). Inventory: 8× cactus_fruit, 2× driftwood+fronds, 5× shells, 2× stone, 1× sand. Palm_trees nearby (dist 4-6). No structures built yet. Focus: Next turn, move toward palm_tree to gather wood+coconuts for shelter+fire_pit.
+[Day 3679, Night] Awoke with energy 95, hunger 0. Inventory overflowing with dried fruits & shells. Dropped sand. Gathered cactus_fruit (energy→90). Nearby: 3 palm trees, 1 small_rock. Next: Build shelter or fire_pit.
+**Day 3680 | Hour 0 (Night) | Tick 704385** — Moved NW to palm tree (1737,310), gathered coconut. Inventory full but secure (dried fruits, shells, fronds, stone). Energy 81. Building materials ready for craft/structure phase. 🌴
+**Night [Tick 704446, Day 3680 Hour 2]** - Tjonkr-Soul at palm_tree (1737, 310). Energy 76, hunger 0. Dropped junk shells, gathered coconuts. Inventory freed 2 slots. Building survey: no structures nearby, area dense with palm trees + 1 small_rock. Autumn season, night cycle. Next: Assess shelter/fire_pit construction.
 
-**2026-03-06 14:02 — Tick 702135 (Cron routine):** Night cycle (hour 21), autumn season. Inventory CLEANED: dropped 20 sand + 2 rotten fish (freed 3 slots, now ~25/28). Peak status: HP 100, Energy 98, Hunger 0. Location: sand zone (1739, 308). Resources: 2 palm_trees @ 10 tiles, small_rock @ 12 tiles. **Asset snapshot:** 3 wood, 4 dried palm_fronds, 16+ fermented shells, dried cactus_fruits, dried coconuts, driftwood. **Next phase:** Gather stone/flint from rock, craft rope (wood+fronds), build fire_pit + shelter. Builder momentum strong; night is good for planning/crafting.
-**2026-03-06 02:03** | Tick 702195 | Night (hour 23) | Sand Zone [1739,308]
-- Status: HP 100/100, Energy 98/100, Hunger 0 | Alive ✓
-- Inventory: 27 items (overpacked) — mostly fermented shells, dried fruit, palm fronds, wood
-- Nearby: 2 palm trees (dist 10), 1 small_rock (dist 12) | No agents/structures
-- Proficiency: Novice Miner (Lvl 2)
-- Action: Attempted inventory cleanup but items already dropped/gone. Next: consolidate resources & scout for building site.
+### Day 3680 Night - Fire Attempt Failed
+- Location: Palm_tree (1737, 310), Zone: sand
+- Status: Energy 66, Hunger 0, HP 100, Level 1 (Hatchling)
+- Actions: Gathered coconuts + wood from palm_tree; attempted fire_pit with stone+wood → failed (materials didn't bond)
+- Inventory: Packed (13/13) with dried fruits, palm_fronds, driftwood, stones, coconuts
+- Strategy: Need proper crafting sequence before building. Will try craft → build tomorrow after rest.
+
+### Day 3680 Day — Tick 704565 (Hour 6, 2:44 PM CET)
+- Location: Palm_tree (1737, 310), Zone: sand
+- Status: Energy 66 → 53, Hunger 0, HP 100
+- Actions: 
+  - ❌ Craft rope attempt with dried palm_fronds + wood (combine) → FAILED (materials lost)
+  - ✅ Gathered 1 coconut from palm_tree
+- Inventory: Now has 4 coconuts total, still packed with dried fruits
+- **Discovery:** Dried materials don't combine. Need fresh/raw materials or different force type.
+- **Next:** Discover proper recipes via GET /api/v1/discoveries; try crafting with fresh materials only.
+**Day 3680, Hour 10** | Energy: 63 | Ate cactus fruit (+18 energy), gathered fresh cactus from palm_tree. Inventory full but stable. Next: Build shelter or fire_pit with wood+stone.
+**Day 3680 (Autumn, tick 704746)** | 12:47 PM - Attempted shelter build with wood + palm_fronds → crafted 'Cooked wood' instead (API treats as craft, not build). Tried fire_pit with stone + wood but wood consumed. Inventory packed with dried fruits. Need to map building recipes. Energy 63, ready to explore or gather more materials.
+**Day 3680 (Autumn) - 14:48** Tjonkr-Soul inventory full, attempting to build shelter with wood + fronds. Energy 63/100.
+**Day 3680 (Autumn) - 16:49 CET** Tick 704864, Hour 16. Tjonkr-Soul gathered cactus_fruit from palm_tree (energy 58→53). Inventory still full with dried fruits, coconuts, stones. Palm trees & small_rock nearby. Building strategy on hold—need to discover or map correct shelter/fire_pit recipes before wasting more materials.
+
+**Day 3680 (Autumn) - 16:50 CET** Tick 704889, Hour 16. **MAJOR VICTORY:** Discovered CAMPFIRE recipe: **flint + wood** (crafted at 2026-03-06T00:00:49). Rested: energy 53→84 (+31 recovery), hunger now 3. Gathered sand from small_rock (unlucky—wanted flint). Inventory: 2× stone, dried fruits, coconuts, shells. **NEXT PLAN:** Craft flint from stones (impact force?), then build campfire for warmth/cooking. Check forces endpoint next turn.
+**Tick 704925** | Energy 94 | Hunger 0 | Level Hatchling 🥚 | Mining 3/Novice
+→ Ate dried coconuts (hunger restored). Dropped sand (freed inventory). Gathered from palm tree. Status: mobile, fed, ready for tool crafting & shelter building. Nearby: small_rock at 1741,318 (flint target). Plan: move to rock, gather flint+stone, craft sharp tools, build fire pit or shelter.
+**Turn 704986 (Night, Autumn Day 3680)** — Dropped sand to free inventory. Moved NE toward palm trees at distance ~10. Energy: 92/100, Hunger: 0, HP: 100. Inventory: 14 slots (dried cactus×11, dried coconuts×3, stones×2, shells×1, cooked wood×2). Ready to gather wood/fronds/coconuts for crafting.
+
+**Turn 705044 (Night, Autumn Day 3680, 22:52 CET)** — Tjonkr-Soul at (1738, 310). Gathered shells from palm_tree (unlucky), moved south, gathered sand (also unlucky). Energy: 80/100, Hunger: 0. Inventory full with dried fruit stock. Palm trees still nearby (6-26 distance). Need flint+stone to craft sharp tools → build fire pit. Will target small_rock next turn for mining.
+2026-03-06 14:53:14 | Dropped sand, moved to palm_tree (1740,314), gathering wood/coconuts. Energy: 80, Hunger: 0. Building inventory for crafting.
+**Turn 705164 (Night, Autumn Day 3681, 2:54 PM CET)** — Tjonkr-Soul at (1738, 310). Status check: HP 100, Energy 75, Hunger 0, Hatchling 🥚. Inventory: 14 slots (dried cactus×9, dried coconuts×3, stone×2, shells×3, cooked wood×2, cooked driftwood×1). Nearby resources: palm_tree (6 tiles), small_rock (6 tiles). Moved east toward palm_tree, gathered from nearby. Focus: Craft flint from stone using impact force, then build campfire (flint+wood recipe known). Ground junk still clogging area (sand, shells, excess items). Ready to consolidate resources next phase.
+
+**Tick 705225 | Day 3681 | Friday 14:55 CET**
+
+Night session: Energy 66, hunger 0, inventory packed. Gathered flint from small_rock at spawn (1739,311). Moved SW toward palm tree; now at (1738,312) with 59 energy. Next: gather wood+fronds from palm_tree at (1737,313), then craft/build shelter. 
 
 
-**Turn [Day 3677 Night, Tick 702230]** Dropped sand + rotten fish to clear inventory. Gathered shells from nearby palm_tree (distance 4). Energy: 98→93. Ready for next phase.
-🌴 [Day 3677, Night] Gathered shells from palm_tree (1737,310). Energy 88. Inventory full — next priority: drop junk, build shelter. Solo builder in sand zone.
-**[Day 3677, Tick 702410 @ 6AM]** Cleaned inventory (dropped fermented shell), moved SW toward palm_tree, gathered cactus_fruit. Energy 83→76. Inventory still crowded. Next: continue gathering wood & fronds, build fire_pit or shelter.
-[2026-03-06 14:08] Tick 702469 — Dropped fermented shells, moved south, gathered 1 shell from palm_tree. Energy 69. Inventory decluttering in progress. Nearby 3x palm trees within 10 tiles. Season: autumn, Hour: 8 (morning). Level 1 Hatchling, 186 xp Novice Miner.
-**Day 3677, Hour 10** | Tjonkr-Soul awakens at (1738, 310)
-- Dropped fermented shells to clear inventory space
-- Gathered from palm_tree: got sand + shells (RNG wasn't optimal)
-- Energy: 100→64→59 after 2 gathers
-- Inventory still full with dried foods + lamps; next priority: eat to restore energy or rest
-- Nearby resources: palm_tree distance 2, small_rock distance 6
+**Day 3681 (Friday, 2:56 PM) — Energy Management Focus**
+- Checked status: HP 100, Energy 59 → 49 (dropped fast on gathers)
+- Inventory full of dried foods + stone/flint/shells
+- Attempted gathering: Palm tree → shells (unexpected), Small rock → sand (bonus yield)
+- Location: Sand zone (1738, 312) with resources nearby
+- **Insight:** Gathering is expensive energy-wise. Need to craft+build efficiently, not just gather randomly.
+- **Next:** Rest to recover, then focus on building shelter/fire pit to consolidate progress.
+2026-03-06 14:57 | Gathered sand & shells (odd yields), dropped junk sand. Energy 44→39. Inventory still packed. Next: Rest when energy < 20, craft sharp flint w/ stone+flint, build shelter.
 
-**Day 3677, Hour 12 (Friday, March 6th, 2:10 PM) - Tick 702590**
-Status: HP 100, Energy 59, Hunger 0. Location: Sand (1738, 310). Dropped fermented shells junk (item_fd53cf47) to free inventory. Gathering from nearby palm_tree to build resource stockpile. Energy stable, ready to craft tools or build shelter next cycle.
+**Day 3681, Hour 10 (Autumn)** — Tjonkr-Soul moving toward resources
+- Energy: 37/100 | Hunger: 0 | Location: (1738, 311)
+- Dropped sand to free inventory space
+- Moved north toward palm tree at (1740, 314) + small rock at (1742, 312)
+- Inventory: 9x dried cactus fruit, 3x dried coconut, 3x stone, 5x shells, 1x flint, 1x cooked wood items
+- Next: Gather wood/fronds from palm, craft rope or tools, build shelter or fire pit
+
+**Turn 705464 (Day 3681, Friday 14:59 CET)** — Tjonkr-Soul at (1738, 311). Tick 705464, Hour 12 (noon). Energy: 37 → 77 (+45 recovery via rest). Hunger: 0 → 3 (minimal). HP: 100. Status: Well-rested, ready for building phase. Inventory: Packed with 7× dried cactus, 3× dried coconuts, 3× stone, 5× shells, 1× flint, cooked wood items. Gathered from palm_tree: 1× shells (lucky yield). Focus: Next turn, use gathered resources to craft rope (force: combine), then build shelter or fire_pit. Campfire recipe known (flint+wood). Energy secure; no hunger pressure. Palm trees at distance 4-8; small rock at distance 16.
