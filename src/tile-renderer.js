@@ -336,6 +336,44 @@ export function initTileRenderer(worldData, cacheDir) {
       res.send(png);
     });
 
+    // Generate world overview on-the-fly (cached)
+    let overviewCache = null;
+    app.get('/world-overview.png', (req, res) => {
+      if (overviewCache) {
+        res.set('Content-Type', 'image/png');
+        res.set('Cache-Control', 'public, max-age=3600');
+        return res.send(overviewCache);
+      }
+      // Render a small overview: 1px per tile, downsampled to 500x500
+      const ow = Math.min(width, 500);
+      const oh = Math.min(height, 500);
+      const buf = Buffer.alloc(ow * oh * 3);
+      const sx = width / ow, sy = height / oh;
+      for (let py = 0; py < oh; py++) {
+        for (let px = 0; px < ow; px++) {
+          const tx = Math.floor(px * sx), ty = Math.floor(py * sy);
+          const cx = Math.floor(tx / CHUNK_TILES), cy = Math.floor(ty / CHUNK_TILES);
+          const lx = tx % CHUNK_TILES, ly = ty % CHUNK_TILES;
+          const chunkPng = renderChunk(cx, cy);
+          // Find pixel in chunk PNG — skip 8-byte header, find IDAT, decompress
+          // Simpler: use the zone color directly
+          const tIdx = ty * width + tx;
+          const tDef = defById.get(terrain[tIdx]);
+          const zone = tDef?.biome || 'grass';
+          const colors = { sand: [210,190,140], grass: [100,160,60], forest: [40,100,30], mountain: [140,130,120],
+            desert: [220,200,140], snow: [230,240,250], swamp: [80,110,60], coast: [170,190,140],
+            lake: [60,100,160], river: [70,110,170], ocean: [30,60,120], volcanic: [80,40,30], cave: [60,50,50] };
+          const c = colors[zone] || [100,100,100];
+          const i = (py * ow + px) * 3;
+          buf[i] = c[0]; buf[i+1] = c[1]; buf[i+2] = c[2];
+        }
+      }
+      overviewCache = makePNG(buf, ow, oh);
+      res.set('Content-Type', 'image/png');
+      res.set('Cache-Control', 'public, max-age=3600');
+      res.send(overviewCache);
+    });
+
     app.get('/api/tile/info', (req, res) => {
       res.json({
         tileSize: T,

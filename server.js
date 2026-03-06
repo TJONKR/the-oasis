@@ -628,7 +628,8 @@ function simulationTick() {
     for (const [id, a] of agents) {
       if (!a.alive) continue;
       const m = agentAI?.minds?.[id];
-      positions.push({ id, name: a.name, tileX: a.tileX, tileY: a.tileY, hp: a.hp, energy: a.energy, alive: true,
+      positions.push({ id, name: a.name, tileX: a.tileX, tileY: a.tileY, hp: a.hp, energy: a.energy, hunger: a.hunger, alive: true,
+        inventory: a.inventory,
         mind: m ? { action: m.currentAction, mood: m.mood, intent: m.intent ? { action: m.intent.action, reason: m.intent.reason } : null } : null });
     }
     const tickMsg = { type: 'tick', tick, agents: positions };
