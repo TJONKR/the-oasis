@@ -415,7 +415,7 @@ export function initWildlife(shared) {
   }
 
   // ── COMBAT (agent attacks animal) ──
-  function attackAnimal(agent, animalId) {
+  function attackAnimal(agent, animalId, proficiencyBonus = 0) {
     const animal = animals.get(animalId);
     if (!animal || !animal.alive) return null;
 
@@ -424,11 +424,14 @@ export function initWildlife(shared) {
 
     // Agent damage based on weapon/tools
     let agentDmg = 10; // base fist damage
-    const weapon = agent.inventory?.find(i => 
+    const weapon = agent.inventory?.find(i =>
       i.name === 'stone_axe' || i.name === 'spear' || i.name === 'knife' ||
       (i.properties?.sharpness >= 5)
     );
     if (weapon) agentDmg += (weapon.properties?.sharpness || 0) * 3;
+
+    // P3 Fix #12: Proficiency bonus to damage
+    agentDmg += proficiencyBonus;
 
     animal.hp = Math.max(0, animal.hp - agentDmg);
 

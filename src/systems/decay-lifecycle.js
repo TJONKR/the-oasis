@@ -51,6 +51,13 @@ const ROTTEN_MATERIALS = {
 // Map of "x,y" → [{ item, dropTick, decayProgress }]
 const groundItems = new Map();
 
+// Structure durability constants
+const STRUCTURE_DECAY_INTERVAL = 100; // ticks between durability checks
+const STRUCTURE_MAX_DURABILITY = 100;
+const WEATHER_DURABILITY_DAMAGE = {
+  clear: 0, sunny: 0, cloudy: 0.1, rain: 0.5, storm: 1.5, fog: 0.2, wind: 0.3,
+};
+
 export function initDecayLifecycle(shared) {
   const { broadcast, addWorldNews, agents, agentStore, saveJSON, loadJSON } = shared;
   
@@ -339,12 +346,183 @@ export function initDecayLifecycle(shared) {
     return groundItems.get(key) || [];
   }
   
+  /**
+   * Tick structure durability — structures degrade over time and need maintenance.
+   * Weather damages structures, especially rain and storms.
+   */
+  function tickStructureDurability(tick) {
+    if (tick % STRUCTURE_DECAY_INTERVAL !== 0) return;
+
+    const weather = shared.weather?.getCurrentWeather?.() || {};
+    const weatherDamage = WEATHER_DURABILITY_DAMAGE[weather.id || weather.condition] || 0;
+
+    for (const [key, items] of groundItems) {
+      const toRemove = [];
+      const [x, y] = key.split(',').map(Number);
+
+      for (let i = 0; i < items.length; i++) {
+        const entry = items[i];
+        if (!entry.isStructure && !entry.item.isStructure) continue;
+
+        // Initialize durability if not set
+        if (entry.durability === undefined) {
+          entry.durability = STRUCTURE_MAX_DURABILITY;
+        }
+
+        // Weather damage + natural wear
+        const baseDamage = 0.1; // natural wear per interval
+        entry.durability -= (baseDamage + weatherDamage);
+
+        // Check if structure is destroyed
+        if (entry.durability <= 0) {
+          toRemove.push(i);
+          if (broadcast) {
+            addWorldNews?.('decay', null, 'Nature',
+              `A ${entry.item.name} at (${x},${y}) has collapsed from disrepair.`, '');
+            broadcast({ type: 'tileEffect', effect: 'smoke', tileX: x, tileY: y, duration: 2000 });
+          }
+        } else if (entry.durability <= 25 && !entry._warnedLow) {
+          // Warn when durability is low
+          entry._warnedLow = true;
+          if (addWorldNews) {
+            addWorldNews('warning', null, 'World',
+              `A ${entry.item.name} at (${x},${y}) is in poor condition and needs maintenance.`, '');
+          }
+        }
+      }
+
+      // Remove destroyed structures
+      for (let i = toRemove.length - 1; i >= 0; i--) {
+        items.splice(toRemove[i], 1);
+      }
+
+      if (items.length === 0) groundItems.delete(key);
+    }
+  }
+
+  /**
+   * Get structures near a tile position.
+   * Returns array of { structure, distance, tileX, tileY }
+   */
+  function getNearbyStructures(tileX, tileY, range = 5) {
+    const results = [];
+
+    for (const [key, items] of groundItems) {
+      const [x, y] = key.split(',').map(Number);
+      const dist = Math.abs(x - tileX) + Math.abs(y - tileY);
+      if (dist > range) continue;
+
+      for (const entry of items) {
+        if (!entry.isStructure && !entry.item.isStructure) continue;
+        results.push({
+          structure: entry.item,
+          durability: entry.durability ?? STRUCTURE_MAX_DURABILITY,
+          distance: dist,
+          tileX: x,
+          tileY: y,
+        });
+      }
+    }
+
+    return results.sort((a, b) => a.distance - b.distance);
+  }
+
+  /**
+   * Calculate structure benefits for an agent based on nearby structures.
+   * Returns { shelterBonus, warmthBonus, storageBonus, lightBonus }
+   */
+  function getStructureBenefits(tileX, tileY) {
+    const nearby = getNearbyStructures(tileX, tileY, 3); // structures work within 3 tiles
+
+    let shelterBonus = 0;
+    let warmthBonus = 0;
+    let storageBonus = 0;
+    let lightBonus = 0;
+
+    for (const { structure, distance, durability } of nearby) {
+      // Benefits scale with durability (max when 100, half at 50, etc.)
+      const durabilityFactor = Math.max(0, durability / STRUCTURE_MAX_DURABILITY);
+      // Benefits fall off with distance
+      const distanceFactor = 1 - (distance / 4); // 100% at 0, 75% at 1, 50% at 2, 25% at 3
+      const effectFactor = durabilityFactor * distanceFactor;
+
+      const props = structure.structureProperties || structure.properties || {};
+
+      // Shelter reduces weather damage (rain, storm damage)
+      shelterBonus = Math.max(shelterBonus, (props.shelter || 0) * effectFactor);
+      // Warmth provides temperature bonus
+      warmthBonus = Math.max(warmthBonus, (props.warmth || 0) * effectFactor);
+      // Storage expands inventory capacity
+      storageBonus = Math.max(storageBonus, (props.storage || 0) * effectFactor);
+      // Light affects vision and morale at night
+      lightBonus = Math.max(lightBonus, (props.luminosity || 0) * effectFactor);
+    }
+
+    return {
+      shelterBonus: Math.round(shelterBonus),
+      warmthBonus: Math.round(warmthBonus),
+      storageBonus: Math.round(storageBonus / 10), // storage 100 = +10 inventory slots
+      lightBonus: Math.round(lightBonus),
+    };
+  }
+
+  /**
+   * Repair a structure by an agent. Requires materials.
+   */
+  function repairStructure(agent, tileX, tileY) {
+    const key = `${tileX},${tileY}`;
+    const items = groundItems.get(key);
+    if (!items) return { ok: false, reason: 'No structures here' };
+
+    const structureEntry = items.find(e => e.isStructure || e.item.isStructure);
+    if (!structureEntry) return { ok: false, reason: 'No structures here' };
+
+    if ((structureEntry.durability ?? 100) >= STRUCTURE_MAX_DURABILITY) {
+      return { ok: false, reason: 'Structure is already in perfect condition' };
+    }
+
+    // Require wood or fiber for repairs
+    const repairMat = agent.inventory?.find(i =>
+      ['wood', 'fiber', 'reeds', 'palm_fronds', 'driftwood'].includes(i.name)
+    );
+    if (!repairMat) {
+      return { ok: false, reason: 'Need wood or fiber to repair' };
+    }
+
+    // Consume material
+    if (repairMat.quantity > 1) repairMat.quantity--;
+    else agent.inventory = agent.inventory.filter(i => i !== repairMat);
+
+    // Repair
+    structureEntry.durability = Math.min(STRUCTURE_MAX_DURABILITY, (structureEntry.durability || 0) + 25);
+    structureEntry._warnedLow = false; // reset warning
+
+    return {
+      ok: true,
+      structure: structureEntry.item.name,
+      durability: structureEntry.durability,
+      materialUsed: repairMat.name,
+    };
+  }
+
   function tick(tickNum) {
     tickInventoryDecay(tickNum);
     tickGroundItems(tickNum);
+    tickStructureDurability(tickNum);
   }
-  
-  return { tick, onAgentDeath, onAnimalDeath, getTileFertility, getGroundItems, groundItems };
+
+  return {
+    tick,
+    onAgentDeath,
+    onAnimalDeath,
+    getTileFertility,
+    getGroundItems,
+    groundItems,
+    getNearbyStructures,
+    getStructureBenefits,
+    repairStructure,
+    STRUCTURE_MAX_DURABILITY,
+  };
 }
 
 export { DECAY_TRANSFORMS, ROTTEN_MATERIALS };

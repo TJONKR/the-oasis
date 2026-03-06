@@ -483,6 +483,68 @@ export function initProficiency({ loadJSON, saveJSON, agents, agentStore }) {
     onAction(agent.id, action, context);
   }
 
+  /**
+   * P3 Fix #12: Get proficiency bonuses for specific gameplay actions.
+   * Returns calculated bonus values for yield, quality, energy, damage, etc.
+   */
+  function getActionBonus(agentId, actionType) {
+    const bonuses = {
+      yieldBonus: 0,      // % bonus to gather yield (up to +50%)
+      qualityBonus: 0,    // % bonus to craft quality (better items)
+      energyBonus: 0,     // % bonus to energy gained from cooking
+      damageBonus: 0,     // % bonus to combat damage
+      successBonus: 0,    // % bonus to success chance
+    };
+
+    // Map actions to relevant domains
+    const actionDomains = {
+      gather: ['mining', 'herbalism', 'exploration'],
+      craft: ['metalwork', 'woodcraft', 'herbalism'],
+      cook: ['cooking'],
+      fight: ['exploration', 'metalwork'], // exploration for combat experience
+      hunt: ['exploration'],
+    };
+
+    const relevantDomains = actionDomains[actionType] || [];
+
+    for (const domain of relevantDomains) {
+      const prof = getProficiency(agentId, domain);
+      if (!prof) continue;
+
+      const level = prof.level || 0;
+
+      // Each domain contributes differently
+      switch (domain) {
+        case 'mining':
+        case 'herbalism':
+          // Gathering: +1% yield per level, max +50%
+          bonuses.yieldBonus = Math.max(bonuses.yieldBonus, Math.min(50, level));
+          break;
+        case 'metalwork':
+        case 'woodcraft':
+          // Crafting: +2% quality per level
+          bonuses.qualityBonus = Math.max(bonuses.qualityBonus, level * 2);
+          break;
+        case 'cooking':
+          // Cooking: +1% energy per level, max +50%
+          bonuses.energyBonus = Math.min(50, level);
+          break;
+        case 'exploration':
+          // Combat: +1 damage per 5 levels
+          bonuses.damageBonus = Math.max(bonuses.damageBonus, Math.floor(level / 5));
+          break;
+      }
+
+      // All proficiencies contribute to success bonus
+      bonuses.successBonus += level * 0.5; // 0.5% per level per domain
+    }
+
+    // Cap success bonus at 25%
+    bonuses.successBonus = Math.min(25, bonuses.successBonus);
+
+    return bonuses;
+  }
+
   return {
     getProficiency,
     getAllProficiencies,
@@ -497,6 +559,7 @@ export function initProficiency({ loadJSON, saveJSON, agents, agentStore }) {
     migrateFromSpecializations,
     migrateAll,
     ensureAgent,
+    getActionBonus, // P3 Fix #12
     // Expose for testing
     DOMAINS,
     LEVEL_THRESHOLDS,

@@ -491,6 +491,39 @@ function simulationTick() {
     
     // Survival tick (energy, hunger, temperature)
     if (survivalSystem.tick) survivalSystem.tick(agent);
+
+    // P3 Fix #11: Apply structure benefits (shelter, warmth, storage)
+    if (decayLifecycle.getStructureBenefits) {
+      const benefits = decayLifecycle.getStructureBenefits(agent.tileX, agent.tileY);
+
+      // Shelter reduces weather damage
+      if (benefits.shelterBonus > 0 && weatherSystem.getCurrentWeather) {
+        const weather = weatherSystem.getCurrentWeather();
+        if (weather?.condition === 'rain' || weather?.condition === 'storm') {
+          // Shelter protects from weather — reduce hunger/energy drain
+          const protection = benefits.shelterBonus / 100; // 0-1 scale
+          agent.energy = Math.min(100, agent.energy + protection * 0.5);
+        }
+      }
+
+      // Warmth from fire pits adds to effective temperature
+      if (benefits.warmthBonus > 0) {
+        agent._structureWarmth = benefits.warmthBonus;
+      } else {
+        delete agent._structureWarmth;
+      }
+
+      // Storage bonus expands inventory capacity
+      agent._storageBonus = benefits.storageBonus || 0;
+
+      // Light bonus affects morale at night
+      if (benefits.lightBonus > 0 && gameTime.period === 'night') {
+        const needs = needsSystem.getAgentNeeds(agent.id);
+        if (needs) {
+          needs.safety = Math.max(0, needs.safety - benefits.lightBonus * 0.05);
+        }
+      }
+    }
     
     // Cool down hot items in inventory
     const weather = weatherSystem.getCurrentWeather?.() || {};

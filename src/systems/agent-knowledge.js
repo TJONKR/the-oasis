@@ -19,8 +19,34 @@
  * losing them is a genuine loss to the colony.
  */
 
+// P3 Fix #13: Knowledge Fragment properties for decay-lifecycle
+const KNOWLEDGE_FRAGMENT_PROPERTIES = {
+  hardness: 1,
+  conductivity: 0,
+  flammability: 3,
+  toxicity: 0,
+  luminosity: 1,
+  volatility: 0,
+  organic: 0.5,
+  weight: 0.2,
+  decay_rate: 0.15, // Knowledge fragments decay over time
+  energy: 0,
+  temperature: 20,
+  resonance: 3, // knowledge has resonance
+  melt_point: 0,
+  ignition: 200,
+  sharpness: 0,
+  solubility: 0,
+  malleability: 0,
+  brittleness: 2,
+  fertility: 0,
+};
+
 export function initAgentKnowledge(shared) {
   const knowledgeBases = new Map(); // agentId → KnowledgeBase
+
+  // P3 Fix #13: Track agents who've been near each other for passive sharing
+  const proximityTracker = new Map(); // agentId → Map<otherId, ticksNearby>
 
   class KnowledgeBase {
     constructor(agentId) {
@@ -278,12 +304,77 @@ export function initAgentKnowledge(shared) {
     return { taught: knowledge.length, learned };
   }
 
-  // On agent death — knowledge is LOST FOREVER
+  // P3 Fix #13: On agent death — drop Knowledge Fragment with top 3 discoveries
   function onDeath(agentId) {
     const kb = knowledgeBases.get(agentId);
     if (!kb) return null;
 
     const stats = kb.getStats();
+    const agent = shared.agents?.get(agentId);
+
+    // Create Knowledge Fragment with top 3 discoveries
+    const discoveries = [];
+
+    // Add best resource locations (sorted by reliability)
+    const resources = [...kb.resourceLocations.values()]
+      .filter(r => !r.depleted && r.reliability > 0.3)
+      .sort((a, b) => b.reliability - a.reliability)
+      .slice(0, 1);
+    for (const r of resources) {
+      discoveries.push({ type: 'resource', data: r });
+    }
+
+    // Add recipes
+    const recipes = [...kb.recipes.values()]
+      .sort((a, b) => b.timesUsed - a.timesUsed)
+      .slice(0, 1);
+    for (const r of recipes) {
+      discoveries.push({ type: 'recipe', data: r });
+    }
+
+    // Add danger zones
+    const dangers = [...kb.dangerZones.values()]
+      .filter(d => d.severity >= 3)
+      .slice(0, 1);
+    for (const d of dangers) {
+      discoveries.push({ type: 'danger', data: d });
+    }
+
+    // Drop Knowledge Fragment on the ground if there are discoveries
+    if (discoveries.length > 0 && agent && shared.decayLifecycle?.groundItems) {
+      const key = `${agent.tileX},${agent.tileY}`;
+      if (!shared.decayLifecycle.groundItems.has(key)) {
+        shared.decayLifecycle.groundItems.set(key, []);
+      }
+
+      const fragment = {
+        name: 'Knowledge Fragment',
+        type: 'knowledge',
+        description: `A fragment of ${agent.name}'s knowledge. Contains ${discoveries.length} discoveries.`,
+        properties: { ...KNOWLEDGE_FRAGMENT_PROPERTIES },
+        originAgent: agent.name,
+        discoveries, // The actual knowledge to transfer
+      };
+
+      shared.decayLifecycle.groundItems.get(key).push({
+        item: fragment,
+        dropTick: shared.tick || 0,
+        decayProgress: 0,
+      });
+
+      if (shared.addWorldNews) {
+        shared.addWorldNews('knowledge', agentId, agent.name,
+          `${agent.name}'s Knowledge Fragment glows faintly on the ground...`,
+          agent.zone);
+      }
+    }
+
+    // Clear proximity tracker
+    proximityTracker.delete(agentId);
+    for (const [, others] of proximityTracker) {
+      others.delete(agentId);
+    }
+
     knowledgeBases.delete(agentId);
 
     // Return what was lost for news/logging
@@ -292,14 +383,112 @@ export function initAgentKnowledge(shared) {
       recipesLost: stats.recipesKnown,
       skillsLost: Object.entries(stats.skills).filter(([, v]) => v > 20),
       totalDiscoveries: stats.totalDiscoveries,
+      fragmentDropped: discoveries.length > 0,
     };
   }
 
-  // Tick: skill decay for all agents
+  // P3 Fix #13: Learn from a Knowledge Fragment item
+  function learnFromFragment(agentId, fragment) {
+    if (!fragment || !fragment.discoveries) return { learned: 0 };
+
+    const kb = getOrCreate(agentId);
+    let learned = 0;
+
+    for (const discovery of fragment.discoveries) {
+      if (discovery.type === 'resource') {
+        const d = discovery.data;
+        const isNew = kb.discoverResource(d.x, d.y, d.resource, d.source);
+        if (isNew) learned++;
+      } else if (discovery.type === 'recipe') {
+        const d = discovery.data;
+        const isNew = kb.discoverRecipe(d.ingredients[0], d.ingredients[1], d.result);
+        if (isNew) learned++;
+      } else if (discovery.type === 'danger') {
+        const d = discovery.data;
+        kb.learnDanger(d.x, d.y, d.threat, d.severity);
+        learned++;
+      }
+    }
+
+    kb.learnCount += learned;
+    return { learned, from: fragment.originAgent };
+  }
+
+  // P3 Fix #13: Passive knowledge sharing — agents near each other (≤5 tiles) share knowledge over time
+  function tickProximitySharing() {
+    if (!shared.agents) return;
+
+    const SHARE_DISTANCE = 5;
+    const TICKS_TO_SHARE = 10; // share after being near for 10 ticks (~10 seconds)
+
+    // Build list of alive agents with positions
+    const aliveAgents = [...shared.agents.values()].filter(a => a.alive);
+
+    // Check proximity between all agent pairs
+    for (let i = 0; i < aliveAgents.length; i++) {
+      const agent = aliveAgents[i];
+
+      if (!proximityTracker.has(agent.id)) {
+        proximityTracker.set(agent.id, new Map());
+      }
+      const agentProximity = proximityTracker.get(agent.id);
+
+      for (let j = i + 1; j < aliveAgents.length; j++) {
+        const other = aliveAgents[j];
+        const dist = Math.abs(agent.tileX - other.tileX) + Math.abs(agent.tileY - other.tileY);
+
+        if (dist <= SHARE_DISTANCE) {
+          // They're close — increment proximity counter
+          const ticks = (agentProximity.get(other.id) || 0) + 1;
+          agentProximity.set(other.id, ticks);
+
+          // Also track for other agent
+          if (!proximityTracker.has(other.id)) {
+            proximityTracker.set(other.id, new Map());
+          }
+          proximityTracker.get(other.id).set(agent.id, ticks);
+
+          // Check if they've been near long enough to share
+          if (ticks === TICKS_TO_SHARE) {
+            // Passive knowledge exchange — share 1 item each direction
+            const kb1 = getOrCreate(agent.id);
+            const kb2 = getOrCreate(other.id);
+
+            const knowledge1 = kb1.getTeachableKnowledge(1);
+            const knowledge2 = kb2.getTeachableKnowledge(1);
+
+            const learned1 = kb1.learnFrom(knowledge2);
+            const learned2 = kb2.learnFrom(knowledge1);
+
+            if (learned1 > 0 || learned2 > 0) {
+              kb1.teachCount += learned2;
+              kb2.teachCount += learned1;
+
+              if (shared.addWorldNews) {
+                shared.addWorldNews('teach', agent.id, agent.name,
+                  `${agent.name} and ${other.name} shared knowledge through proximity`,
+                  agent.zone);
+              }
+            }
+          }
+        } else {
+          // They're far apart — reset proximity counter
+          agentProximity.delete(other.id);
+          if (proximityTracker.has(other.id)) {
+            proximityTracker.get(other.id).delete(agent.id);
+          }
+        }
+      }
+    }
+  }
+
+  // Tick: skill decay for all agents + passive proximity sharing
   function tick() {
     for (const [, kb] of knowledgeBases) {
       kb.tickSkillDecay();
     }
+    // P3 Fix #13: Passive knowledge sharing between nearby agents
+    tickProximitySharing();
   }
 
   // World stats
@@ -340,5 +529,7 @@ export function initAgentKnowledge(shared) {
     tick,
     getWorldKnowledgeStats,
     setupRoutes,
+    learnFromFragment, // P3 Fix #13: Learn from knowledge fragments
+    KNOWLEDGE_FRAGMENT_PROPERTIES, // P3 Fix #13: For decay-lifecycle
   };
 }
