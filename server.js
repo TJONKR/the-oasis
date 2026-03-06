@@ -295,12 +295,18 @@ for (const [id, agent] of agents) {
   if (!agent.inventory) continue;
   const before = agent.inventory.length;
   agent.inventory = agent.inventory.filter(item => {
-    // Remove "Fermented Fermented X" items
+    // Remove "Fermented Fermented X" items (P2 Fix #9)
     if (item.name?.startsWith('Fermented Fermented')) return false;
     // Remove items decayed past 95%
     if (item._decayProgress && item._decayProgress > 0.95) return false;
     return true;
   });
+  // Fix remaining fermented items: add processedBy tracking (P2 Fix #9)
+  for (const item of agent.inventory) {
+    if (item.name?.toLowerCase().startsWith('fermented') && !item.processedBy) {
+      item.processedBy = ['ferment'];
+    }
+  }
   purgedItems += before - agent.inventory.length;
 }
 if (purgedItems > 0) console.log(`🧹 Purged ${purgedItems} junk items from agent inventories`);
@@ -624,16 +630,38 @@ function simulationTick() {
 // ═══════════════════════════════════════
 function spawnAgent(name) {
   const id = crypto.randomUUID();
-  
-  // Spawn near the oasis spawn point with some randomness
-  const spread = 30;
+
+  // Anti-clustering: spawn agents in different quadrants around the oasis
+  // Each new agent spawns in a different direction to prevent clustering
+  const aliveAgents = [...agents.values()].filter(a => a.alive);
+  const agentCount = aliveAgents.length;
+
+  // Calculate spawn direction based on agent count (spread around the spawn point)
+  const angleOffset = (agentCount * 137.5) * Math.PI / 180; // golden angle for even distribution
+  const baseDistance = 40 + Math.floor(Math.random() * 60); // 40-100 tiles from spawn
+
   let tileX, tileY, attempts = 0;
   do {
-    tileX = worldGrid.spawnPoint.x + Math.floor(Math.random() * spread * 2 - spread);
-    tileY = worldGrid.spawnPoint.y + Math.floor(Math.random() * spread * 2 - spread);
+    // Try spawning in a distributed pattern
+    const angle = angleOffset + (Math.random() - 0.5) * 0.5; // some randomness
+    const distance = baseDistance + Math.floor(Math.random() * 30);
+    tileX = Math.round(worldGrid.spawnPoint.x + Math.cos(angle) * distance);
+    tileY = Math.round(worldGrid.spawnPoint.y + Math.sin(angle) * distance);
+
+    // Clamp to world bounds
+    tileX = Math.max(50, Math.min(worldGrid.width - 50, tileX));
+    tileY = Math.max(50, Math.min(worldGrid.height - 50, tileY));
+
     attempts++;
+
+    // If we've tried many times, fall back to random near spawn
+    if (attempts > 50) {
+      const spread = 100;
+      tileX = worldGrid.spawnPoint.x + Math.floor(Math.random() * spread * 2 - spread);
+      tileY = worldGrid.spawnPoint.y + Math.floor(Math.random() * spread * 2 - spread);
+    }
   } while (attempts < 100 && (!worldGrid.getTile(tileX, tileY)?.walkable));
-  
+
   const zone = worldGrid.getZone(tileX, tileY);
   
   const agent = {

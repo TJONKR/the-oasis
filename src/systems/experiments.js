@@ -288,17 +288,44 @@ const FORCE_RULES = [
     check: (items) => {
       const hasOrganic = items.some(i => (i.properties?.organic || 0) >= 0.5);
       const hasLiq = items.some(i => isLiquid(i));
-      return hasOrganic && hasLiq;
+      // Prevent double-fermentation: check if already processed by 'ferment'
+      const alreadyFermented = items.some(i =>
+        i.processedBy?.includes('ferment') ||
+        i.name?.toLowerCase().startsWith('fermented') ||
+        i.name?.toLowerCase().includes('wine') ||
+        i.name?.toLowerCase().includes('vinegar')
+      );
+      return hasOrganic && hasLiq && !alreadyFermented;
     },
     produce: (items) => {
       const organic = items.find(i => (i.properties?.organic || 0) >= 0.5 && !isLiquid(i));
       const source = organic || items[0];
+      // Proper naming for fermented products (no "Fermented Fermented X")
+      const baseName = source.name?.replace(/^Fermented\s+/i, '').replace(/^Rotten\s+/i, '') || source.name;
+      // Map common foods to proper fermented product names
+      const fermentedNames = {
+        berries: 'Berry Wine',
+        grapes: 'Wine',
+        fruit: 'Fruit Wine',
+        apples: 'Cider',
+        honey: 'Mead',
+        grain: 'Beer',
+        rice: 'Sake',
+        milk: 'Kefir',
+        cabbage: 'Sauerkraut',
+        fish: 'Fish Sauce',
+        herbs: 'Herbal Tincture',
+        mushrooms: 'Mushroom Tincture',
+      };
+      const lowerBase = baseName.toLowerCase();
+      let resultName = fermentedNames[lowerBase] || `Fermented ${baseName}`;
       return {
-        name: `Fermented ${source.name}`,
+        name: resultName,
         type: 'consumable',
         rarity: 'Uncommon',
-        description: `Aged ${source.name}, transformed through fermentation.`,
+        description: `${baseName} transformed through fermentation into ${resultName.toLowerCase()}.`,
         propOverrides: { toxicity: 1, energy: 15, decay_rate: 0.1 },
+        processedBy: ['ferment'], // Track processing history
       };
     },
     priority: 5,
@@ -307,7 +334,16 @@ const FORCE_RULES = [
     id: 'compost_decay',
     force: 'decay',
     name: 'Decomposition',
-    check: (items) => items.some(i => (i.properties?.organic || 0) >= 0.5),
+    check: (items) => {
+      const hasOrganic = items.some(i => (i.properties?.organic || 0) >= 0.5);
+      // Prevent double-decay: don't decay compost or already-decayed items
+      const alreadyDecayed = items.every(i =>
+        i.processedBy?.includes('decay') ||
+        i.name?.toLowerCase() === 'compost' ||
+        i.name?.toLowerCase() === 'ash'
+      );
+      return hasOrganic && !alreadyDecayed;
+    },
     produce: (items) => {
       return {
         name: 'Compost',
@@ -315,6 +351,7 @@ const FORCE_RULES = [
         rarity: 'Common',
         description: 'Rich organic compost, perfect for growing things.',
         propOverrides: { fertility: 8, organic: 1, decay_rate: 0.1, weight: 1 },
+        processedBy: ['decay'],
       };
     },
     priority: 3,
@@ -542,8 +579,19 @@ export function initExperiments(shared) {
     return knownProperties[agentId];
   }
 
-  function buildResultItem(agent, inputItems, name, type, rarity, description, propOverrides, zone, force) {
+  function buildResultItem(agent, inputItems, name, type, rarity, description, propOverrides, zone, force, extraData = {}) {
     const resultProps = computeDerivedProperties(inputItems, propOverrides);
+
+    // Collect processing history from all input items and add current force
+    const existingProcesses = new Set();
+    for (const item of inputItems) {
+      if (item.processedBy) {
+        for (const p of item.processedBy) existingProcesses.add(p);
+      }
+    }
+    existingProcesses.add(force);
+    const processedBy = [...existingProcesses];
+
     return {
       id: 'item_' + crypto.randomBytes(4).toString('hex'),
       name,
@@ -554,10 +602,12 @@ export function initExperiments(shared) {
       stackable: false,
       quantity: 1,
       properties: resultProps,
+      processedBy, // Track all processes applied to this item
       craftedBy: agent.id,
       experimentOrigin: true,
       force: force || 'combine',
       craftedAt: new Date().toISOString(),
+      ...extraData,
     };
   }
 

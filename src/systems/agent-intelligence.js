@@ -415,6 +415,12 @@ export function initAgentIntelligence(shared) {
     const weatherId = weather?.id || atmosphere?.weather;
     const needsSystem = shared.needsSystem;
 
+    // ── ANTI-CLUSTERING DETECTION ──
+    // Count nearby agents within 10 tiles — crowding reduces gather yields
+    const nearbyAgentCount = visible.agents.filter(a => a.distance <= 10).length;
+    const isCrowded = nearbyAgentCount >= 3; // 3+ agents = crowded
+    const crowdingPenalty = isCrowded ? Math.min(0.4, nearbyAgentCount * 0.1) : 0; // up to 40% penalty
+
     // ── NEEDS-DRIVEN SCORING ──
     // Get the agent's needs state and compute Maslow-weighted modifiers
     let needs = null;
@@ -476,13 +482,18 @@ export function initAgentIntelligence(shared) {
       } else {
         score = (mods.gather || 15) * 0.5; // non-food when inventory has stuff
       }
-      
+
       score += getTraitBonus(mind, 'gather');
       score -= res.distance * 2.5; // distance penalty (slightly higher — foraging cost)
 
       // Depletion penalty — partially depleted tiles less attractive
       const depletion = needsSystem?.getTileDepletion(res.x, res.y) || 0;
       score *= Math.max(0.2, 1.0 - depletion / 100);
+
+      // Anti-clustering: crowded areas have reduced gather appeal (competition!)
+      if (isCrowded) {
+        score *= (1 - crowdingPenalty);
+      }
 
       let targetX = res.x, targetY = res.y;
       const tile = worldGrid.getTile(res.x, res.y);
@@ -621,13 +632,32 @@ export function initAgentIntelligence(shared) {
       }
     }
 
-    // ── EXPLORE — driven by boredom + novelty hunger + foraging need ──
+    // ── EXPLORE — driven by boredom + novelty hunger + foraging need + anti-clustering ──
     for (const unk of visible.unknownZones) {
       let score = (mods.explore || 15) + getTraitBonus(mind, 'explore');
       score -= unk.distance;
       // Novelty bonus — exploring new zones is exciting
       if (needs && !needs.zonesVisited.has(unk.zone)) score += 20;
+      // Anti-clustering: crowded → strong urge to explore away
+      if (isCrowded) score += nearbyAgentCount * 8;
       intents.push({ action: 'explore', targetX: unk.x, targetY: unk.y, score, reason: `Explore ${unk.zone}` });
+    }
+
+    // Anti-clustering: when crowded, strongly prefer to move AWAY from other agents
+    if (isCrowded && nearbyAgentCount >= 3) {
+      // Calculate average position of nearby agents, then move opposite direction
+      let avgDx = 0, avgDy = 0;
+      for (const other of visible.agents.filter(a => a.distance <= 10)) {
+        avgDx += other.agent.tileX - agent.tileX;
+        avgDy += other.agent.tileY - agent.tileY;
+      }
+      // Move AWAY from cluster center
+      const awayX = agent.tileX - Math.sign(avgDx) * (15 + Math.floor(Math.random() * 15));
+      const awayY = agent.tileY - Math.sign(avgDy) * (15 + Math.floor(Math.random() * 15));
+      const tx = Math.max(0, Math.min((worldGrid.width || 2000) - 1, awayX));
+      const ty = Math.max(0, Math.min((worldGrid.height || 2000) - 1, awayY));
+      const score = 35 + nearbyAgentCount * 5; // strong urge to escape crowds
+      intents.push({ action: 'explore', targetX: tx, targetY: ty, score, reason: 'Too crowded here — seeking open territory' });
     }
 
     // Boredom-driven wandering — when novelty hunger is high, pick a DISTANT target
@@ -749,7 +779,9 @@ export function initAgentIntelligence(shared) {
     if (shared.decayLifecycle?.getGroundItems) {
       const groundItems = shared.decayLifecycle.getGroundItems(agent.tileX, agent.tileY);
       for (const entry of groundItems) {
-        if (entry.item.name === 'Corpse' || entry.item.name === 'Bones') continue;
+        // Don't pick up decomposing remains or bones — let nature do its work
+        const skipItems = ['Corpse', 'Bones', 'Remains', 'Decaying Remains', 'Rich Soil', 'Animal Corpse'];
+        if (skipItems.includes(entry.item.name)) continue;
         if (agent.inventory && agent.inventory.length < 25) {
           intents.push({ action: 'pickup', targetX: agent.tileX, targetY: agent.tileY, score: 18, reason: `Pick up ${entry.item.name}` });
           break;
@@ -1390,11 +1422,12 @@ export function initAgentIntelligence(shared) {
     const items = shared.decayLifecycle.groundItems.get(key);
     if (!items || items.length === 0) return;
     if (agent.inventory.length >= 25) return;
-    
-    // Pick up first non-corpse item
-    const idx = items.findIndex(e => e.item.name !== 'Corpse' && e.item.name !== 'Bones');
+
+    // Don't pick up decomposing remains or bones — let nature do its work
+    const skipItems = ['Corpse', 'Bones', 'Remains', 'Decaying Remains', 'Rich Soil', 'Animal Corpse'];
+    const idx = items.findIndex(e => !skipItems.includes(e.item.name));
     if (idx === -1) return;
-    
+
     const entry = items.splice(idx, 1)[0];
     agent.inventory.push(entry.item);
     addMemoryEvent(mind, `Picked up ${entry.item.name}`);
