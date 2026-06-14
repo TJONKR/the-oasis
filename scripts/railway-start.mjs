@@ -2,7 +2,7 @@
 import { existsSync, readdirSync, cpSync, mkdirSync, readFileSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { execSync } from 'child_process';
+import { execSync, spawn } from 'child_process';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, '..');
@@ -42,5 +42,22 @@ if (!existsSync(worldPath) && existsSync(worldGz)) {
 }
 
 // 3. Start server
+// Use spawn (not execSync) so we can FORWARD the platform's stop signal down to
+// the server process. Railway sends SIGTERM to this wrapper on stop/redeploy/
+// memory-limit; with execSync the signal never reached server.js and its
+// graceful-shutdown handler could not run. Now it does.
 console.log('🚀 Starting server...');
-execSync('node --max-old-space-size=1024 server.js', { cwd: root, stdio: 'inherit' });
+const child = spawn('node', ['--max-old-space-size=1024', 'server.js'], {
+  cwd: root,
+  stdio: 'inherit',
+});
+
+for (const sig of ['SIGTERM', 'SIGINT']) {
+  process.on(sig, () => child.kill(sig));
+}
+
+child.on('exit', (code, signal) => {
+  // Mirror the child's outcome so the platform sees an accurate exit status.
+  if (signal) process.kill(process.pid, signal);
+  else process.exit(code ?? 0);
+});

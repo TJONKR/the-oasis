@@ -76,6 +76,16 @@ function saveJSON(filename, data) {
   writeFileSync(p, JSON.stringify(data, null, 2));
 }
 
+// Serialize the live agent map to a persistable store (relationships Map → object).
+// Used by the periodic save and by the graceful-shutdown handler below.
+function buildAgentStore() {
+  const store = {};
+  for (const [id, a] of agents) {
+    store[id] = { ...a, relationships: Object.fromEntries(a.relationships || new Map()) };
+  }
+  return store;
+}
+
 // ═══════════════════════════════════════
 // Load World
 // ═══════════════════════════════════════
@@ -485,6 +495,7 @@ function serializeGroundItems() {
 // Simulation
 // ═══════════════════════════════════════
 let tick = loadJSON('tick.json', { tick: 0 }).tick || 0;
+let simInterval = null; // handle to the tick loop, cleared on graceful shutdown
 const TICK_MS = 1000; // 1 tick per second — agents move 1 tile/sec (was 500ms = 2 tiles/sec)
 
 // Game time (1 tick = 2 minutes game time)
@@ -705,16 +716,14 @@ function simulationTick() {
   
   // Save periodically
   if (tick % 50 === 0) {
-    const store = {};
-    for (const [id, a] of agents) {
-      store[id] = { ...a, relationships: Object.fromEntries(a.relationships || new Map()) };
-    }
-    saveJSON('agents.json', store);
+    saveJSON('agents.json', buildAgentStore());
     saveJSON('tick.json', { tick });
   }
-  
+
   if (tick % 100 === 0) {
-    console.log(`⏱️  Tick ${tick} | Day ${gameTime.day} ${gameTime.hour}:00 ${gameTime.period} | Agents: ${agents.size} | Spectators: ${spectators.size}`);
+    const rssMB = Math.round(process.memoryUsage().rss / 1048576);
+    const heapMB = Math.round(process.memoryUsage().heapUsed / 1048576);
+    console.log(`⏱️  Tick ${tick} | Day ${gameTime.day} ${gameTime.hour}:00 ${gameTime.period} | Agents: ${agents.size} | Spectators: ${spectators.size} | RSS: ${rssMB}MB Heap: ${heapMB}MB`);
   }
 }
 
@@ -887,5 +896,40 @@ server.listen(PORT, () => {
 `);
   
   // Start simulation
-  setInterval(simulationTick, TICK_MS);
+  simInterval = setInterval(simulationTick, TICK_MS);
 });
+
+// ═══════════════════════════════════════
+// Graceful shutdown
+// ═══════════════════════════════════════
+// Railway (and most platforms) send SIGTERM to stop the container — on memory-limit
+// enforcement, redeploys, or maintenance. Without this handler the process dies
+// instantly, losing up to ~50 ticks of unsaved progress. Flush state, then exit.
+let shuttingDown = false;
+function gracefulShutdown(signal) {
+  if (shuttingDown) return;
+  shuttingDown = true;
+  const rssMB = Math.round(process.memoryUsage().rss / 1048576);
+  console.log(`🛑 ${signal} received (RSS: ${rssMB}MB) — saving state before exit...`);
+
+  // Stop ticking so we snapshot a consistent state.
+  if (simInterval) clearInterval(simInterval);
+
+  try {
+    saveJSON('agents.json', buildAgentStore());
+    saveJSON('tick.json', { tick });
+    console.log(`✅ State saved at tick ${tick}. Exiting cleanly.`);
+  } catch (err) {
+    console.error('❌ Failed to save during shutdown:', err.message);
+  }
+
+  // Close the server, then exit. Force-exit after 5s if close hangs.
+  server.close(() => process.exit(0));
+  setTimeout(() => {
+    console.error('⚠️  Shutdown timed out — forcing exit.');
+    process.exit(0);
+  }, 5000).unref();
+}
+
+process.on('SIGTERM', () => gracefulShutdown('SIGTERM'));
+process.on('SIGINT', () => gracefulShutdown('SIGINT'));
